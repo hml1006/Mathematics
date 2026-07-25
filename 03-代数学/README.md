@@ -1,0 +1,13 @@
+# 三、代数学 (Algebra)
+
+- 第 28 级：线性代数 (Linear Algebra)
+- 第 29 级：抽象代数基础 (Abstract Algebra)
+- 第 30 级：群论 (Group Theory)
+- 第 31 级：环论与域论 (Ring Theory and Field Theory)
+- 第 32 级：伽罗瓦理论 (Galois Theory)
+- 第 33 级：表示论 (Representation Theory)
+- 第 34 级：交换代数 (Commutative Algebra)
+- 第 35 级：同调代数 (Homological Algebra)
+- 第 36 级：李群与李代数 (Lie Groups and Lie Algebras)
+- 第 37 级：Hopf 代数与量子群 (Hopf Algebras and Quantum Groups)
+- 第 38 级：代数 K 理论 (Algebraic K-Theory)
