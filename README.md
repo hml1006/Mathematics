@@ -1,6 +1,8 @@
 # **数学天梯攀爬教程**
 
 > 从初等到高等，循序渐进，构建完整的数学知识体系。
+>
+> 本教程按**学习阶段**组织，同一阶段内不同数学分支的平行主题同步学习，以体现数学各分支之间的内在联系。
 
 ---
 
@@ -8,237 +10,277 @@
 
 ```
 Mathematics/
-├── 01-初等数学/          # 第 1-8 级
-├── 02-分析学/            # 第 9-27 级
-├── 03-代数学/            # 第 28-38 级
-├── 04-几何学与拓扑学/    # 第 39-59 级
-├── 05-微分方程与动力系统/ # 第 60-64 级
-├── 06-概率论与数理统计/   # 第 65-77 级
-├── 07-离散数学与数论/     # 第 78-89 级
-├── 08-应用数学/          # 第 90-111 级
-├── 09-数学基础与逻辑/     # 第 112-120 级
-├── 10-现代数学前沿/       # 第 121-132 级
+├── 01-初等数学/                # 第一阶段：初等数学（第 1-8 级）
+├── 02-微积分与线性代数/        # 第二阶段：微积分与线性代数（第 9-16 级）
+├── 03-核心理论/                # 第三阶段：核心理论（第 17-30 级）
+├── 04-进阶理论/                # 第四阶段：进阶理论（第 31-52 级）
+├── 05-高阶专题I-分析几何统计/  # 第五阶段：高阶专题 I（第 53-71 级）
+├── 06-高阶专题II-代数数论离散/ # 第六阶段：高阶专题 II（第 72-91 级）
+├── 07-应用数学/                # 第七阶段：应用数学（第 92-121 级）
+├── 08-数学基础深化/            # 第八阶段：数学基础深化（第 122-130 级）
+├── 09-现代数学前沿/            # 第九阶段：现代数学前沿（第 131-151 级）
 └── README.md
 ```
 
 ---
 
-## 一、初等数学 (Elementary Mathematics) → [进入](01-初等数学/README.md)
+## 第一阶段：初等数学
+
+> 数学学习的起点，涵盖算术、代数、几何与概率的初步知识。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 1 级 | 算术基础 | Basic Arithmetic |
-| 第 2 级 | 初等代数 | Elementary Algebra |
-| 第 3 级 | 平面几何 | Plane Geometry |
-| 第 4 级 | 立体几何 | Solid Geometry |
-| 第 5 级 | 三角函数 | Trigonometry |
-| 第 6 级 | 平面解析几何 | Plane Analytic Geometry |
-| 第 7 级 | 数列与数学归纳法 | Sequences and Mathematical Induction |
-| 第 8 级 | 排列组合与概率初步 | Permutations, Combinations & Introduction to Probability |
+| 第 1 级 | [算术基础](01-初等数学/第01级-算术基础.md) | Basic Arithmetic |
+| 第 2 级 | [初等代数](01-初等数学/第02级-初等代数.md) | Elementary Algebra |
+| 第 3 级 | [平面几何](01-初等数学/第03级-平面几何.md) | Plane Geometry |
+| 第 4 级 | [立体几何](01-初等数学/第04级-立体几何.md) | Solid Geometry |
+| 第 5 级 | [三角函数](01-初等数学/第05级-三角函数.md) | Trigonometry |
+| 第 6 级 | [平面解析几何](01-初等数学/第06级-平面解析几何.md) | Plane Analytic Geometry |
+| 第 7 级 | [数列与数学归纳法](01-初等数学/第07级-数列与数学归纳法.md) | Sequences and Mathematical Induction |
+| 第 8 级 | [排列组合与概率初步](01-初等数学/第08级-排列组合与概率初步.md) | Permutations, Combinations & Introduction to Probability |
 
 ---
 
-## 二、分析学 (Analysis) → [进入](02-分析学/README.md)
+## 第二阶段：微积分与线性代数
+
+> 高等数学的基石，同时学习分析学与代数学的核心工具。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 9 级 | 集合论基础 | Foundations of Set Theory |
-| 第 10 级 | 实数系与极限 | Real Number System and Limits |
-| 第 11 级 | 单变量微积分 | Single-Variable Calculus |
-| 第 12 级 | 多变量微积分 | Multivariable Calculus |
-| 第 13 级 | 级数理论 | Series Theory |
-| 第 14 级 | 实分析 | Real Analysis |
-| 第 15 级 | 复分析 | Complex Analysis |
-| 第 16 级 | 多元复分析 | Several Complex Variables |
-| 第 17 级 | 泛函分析 | Functional Analysis |
-| 第 18 级 | 谱理论 | Spectral Theory |
-| 第 19 级 | 调和分析 | Harmonic Analysis |
-| 第 20 级 | 位势论 | Potential Theory |
-| 第 21 级 | 测度论 | Measure Theory |
-| 第 22 级 | 算子代数 | Operator Algebras |
-| 第 23 级 | 几何分析 | Geometric Analysis |
-| 第 24 级 | 变分法 | Calculus of Variations |
-| 第 25 级 | 最优传输 | Optimal Transport |
-| 第 26 级 | 渐近分析 | Asymptotic Analysis |
-| 第 27 级 | 积分方程 | Integral Equations |
+| 第 9 级 | [集合论基础](02-微积分与线性代数/第09级-集合论基础.md) | Foundations of Set Theory |
+| 第 10 级 | [实数系与极限](02-微积分与线性代数/第10级-实数系与极限.md) | Real Number System and Limits |
+| 第 11 级 | [单变量微积分](02-微积分与线性代数/第11级-单变量微积分.md) | Single-Variable Calculus |
+| 第 12 级 | [多变量微积分](02-微积分与线性代数/第12级-多变量微积分.md) | Multivariable Calculus |
+| 第 13 级 | [级数理论](02-微积分与线性代数/第13级-级数理论.md) | Series Theory |
+| 第 14 级 | [线性代数](02-微积分与线性代数/第14级-线性代数.md) | Linear Algebra |
+| 第 15 级 | [多重线性代数](02-微积分与线性代数/第15级-多重线性代数.md) | Multilinear Algebra |
+| 第 16 级 | [解析几何](02-微积分与线性代数/第16级-解析几何.md) | Analytic Geometry |
 
 ---
 
-## 三、代数学 (Algebra) → [进入](03-代数学/README.md)
+## 第三阶段：核心理论
+
+> 从计算转向证明，同时学习分析、代数、拓扑、微分方程、概率与离散数学的核心理论。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 28 级 | 线性代数 | Linear Algebra |
-| 第 29 级 | 抽象代数基础 | Abstract Algebra |
-| 第 30 级 | 群论 | Group Theory |
-| 第 31 级 | 环论与域论 | Ring Theory and Field Theory |
-| 第 32 级 | 伽罗瓦理论 | Galois Theory |
-| 第 33 级 | 表示论 | Representation Theory |
-| 第 34 级 | 交换代数 | Commutative Algebra |
-| 第 35 级 | 同调代数 | Homological Algebra |
-| 第 36 级 | 李群与李代数 | Lie Groups and Lie Algebras |
-| 第 37 级 | Hopf 代数与量子群 | Hopf Algebras and Quantum Groups |
-| 第 38 级 | 代数 K 理论 | Algebraic K-Theory |
+| 第 17 级 | [实分析](03-核心理论/第17级-实分析.md) | Real Analysis |
+| 第 18 级 | [复分析](03-核心理论/第18级-复分析.md) | Complex Analysis |
+| 第 19 级 | [抽象代数基础](03-核心理论/第19级-抽象代数基础.md) | Abstract Algebra |
+| 第 20 级 | [群论](03-核心理论/第20级-群论.md) | Group Theory |
+| 第 21 级 | [点集拓扑学](03-核心理论/第21级-点集拓扑学.md) | Point-Set Topology |
+| 第 22 级 | [非欧几里得几何](03-核心理论/第22级-非欧几里得几何.md) | Non-Euclidean Geometry |
+| 第 23 级 | [常微分方程](03-核心理论/第23级-常微分方程.md) | Ordinary Differential Equations (ODE) |
+| 第 24 级 | [概率论基础](03-核心理论/第24级-概率论基础.md) | Probability Theory |
+| 第 25 级 | [数理统计](03-核心理论/第25级-数理统计.md) | Mathematical Statistics |
+| 第 26 级 | [统计推断](03-核心理论/第26级-统计推断.md) | Statistical Inference |
+| 第 27 级 | [初等数论](03-核心理论/第27级-初等数论.md) | Elementary Number Theory |
+| 第 28 级 | [组合数学](03-核心理论/第28级-组合数学.md) | Combinatorics |
+| 第 29 级 | [图论](03-核心理论/第29级-图论.md) | Graph Theory |
+| 第 30 级 | [数理逻辑](03-核心理论/第30级-数理逻辑.md) | Mathematical Logic |
 
 ---
 
-## 四、几何学与拓扑学 (Geometry and Topology) → [进入](04-几何学与拓扑学/README.md)
+## 第四阶段：进阶理论
+
+> 深化核心理论，深入学习分析、代数、几何、拓扑、PDE 与动力系统。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 39 级 | 解析几何 | Analytic Geometry |
-| 第 40 级 | 仿射几何 | Affine Geometry |
-| 第 41 级 | 射影几何 | Projective Geometry |
-| 第 42 级 | 微分几何 | Differential Geometry |
-| 第 43 级 | 点集拓扑学 | Point-Set Topology |
-| 第 44 级 | 代数拓扑 | Algebraic Topology |
-| 第 45 级 | 同伦论 | Homotopy Theory |
-| 第 46 级 | 微分拓扑 | Differential Topology |
-| 第 47 级 | 流形与张量分析 | Manifolds and Tensor Analysis |
-| 第 48 级 | 黎曼几何 | Riemannian Geometry |
-| 第 49 级 | 代数几何 | Algebraic Geometry |
-| 第 50 级 | 纽结理论 | Knot Theory |
-| 第 51 级 | 辛几何 | Symplectic Geometry |
-| 第 52 级 | 接触几何 | Contact Geometry |
-| 第 53 级 | 计算几何 | Computational Geometry |
-| 第 54 级 | 凸几何 | Convex Geometry |
-| 第 55 级 | 复几何 | Complex Geometry |
-| 第 56 级 | 低维拓扑 | Low-Dimensional Topology |
-| 第 57 级 | 辛拓扑 | Symplectic Topology |
-| 第 58 级 | 分形几何 | Fractal Geometry |
-| 第 59 级 | 几何群论 | Geometric Group Theory |
+| 第 31 级 | [多元复分析](04-进阶理论/第31级-多元复分析.md) | Several Complex Variables |
+| 第 32 级 | [泛函分析](04-进阶理论/第32级-泛函分析.md) | Functional Analysis |
+| 第 33 级 | [谱理论](04-进阶理论/第33级-谱理论.md) | Spectral Theory |
+| 第 34 级 | [测度论](04-进阶理论/第34级-测度论.md) | Measure Theory |
+| 第 35 级 | [变分法](04-进阶理论/第35级-变分法.md) | Calculus of Variations |
+| 第 36 级 | [泛代数](04-进阶理论/第36级-泛代数.md) | Universal Algebra |
+| 第 37 级 | [环论与域论](04-进阶理论/第37级-环论与域论.md) | Ring Theory and Field Theory |
+| 第 38 级 | [伽罗瓦理论](04-进阶理论/第38级-伽罗瓦理论.md) | Galois Theory |
+| 第 39 级 | [表示论](04-进阶理论/第39级-表示论.md) | Representation Theory |
+| 第 40 级 | [交换代数](04-进阶理论/第40级-交换代数.md) | Commutative Algebra |
+| 第 41 级 | [同调代数](04-进阶理论/第41级-同调代数.md) | Homological Algebra |
+| 第 42 级 | [微分几何](04-进阶理论/第42级-微分几何.md) | Differential Geometry |
+| 第 43 级 | [代数拓扑](04-进阶理论/第43级-代数拓扑.md) | Algebraic Topology |
+| 第 44 级 | [同伦论](04-进阶理论/第44级-同伦论.md) | Homotopy Theory |
+| 第 45 级 | [微分拓扑](04-进阶理论/第45级-微分拓扑.md) | Differential Topology |
+| 第 46 级 | [流形与张量分析](04-进阶理论/第46级-流形与张量分析.md) | Manifolds and Tensor Analysis |
+| 第 47 级 | [黎曼几何](04-进阶理论/第47级-黎曼几何.md) | Riemannian Geometry |
+| 第 48 级 | [代数几何](04-进阶理论/第48级-代数几何.md) | Algebraic Geometry |
+| 第 49 级 | [偏微分方程](04-进阶理论/第49级-偏微分方程.md) | Partial Differential Equations (PDE) |
+| 第 50 级 | [动力系统与混沌](04-进阶理论/第50级-动力系统与混沌.md) | Dynamical Systems and Chaos |
+| 第 51 级 | [随机过程](04-进阶理论/第51级-随机过程.md) | Stochastic Processes |
+| 第 52 级 | [数学哲学](04-进阶理论/第52级-数学哲学.md) | Philosophy of Mathematics |
 
 ---
 
-## 五、微分方程与动力系统 (Differential Equations and Dynamical Systems) → [进入](05-微分方程与动力系统/README.md)
+## 第五阶段：高阶专题 I — 分析、几何与统计
+
+> 深入分析学、几何学与统计学的专门化主题。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 60 级 | 常微分方程 | Ordinary Differential Equations (ODE) |
-| 第 61 级 | 偏微分方程 | Partial Differential Equations (PDE) |
-| 第 62 级 | 动力系统与混沌 | Dynamical Systems and Chaos |
-| 第 63 级 | 分歧理论 | Bifurcation Theory |
-| 第 64 级 | 随机微分方程 | Stochastic Differential Equations (SDE) |
+| 第 53 级 | [调和分析](05-高阶专题I-分析几何统计/第53级-调和分析.md) | Harmonic Analysis |
+| 第 54 级 | [傅立叶分析](05-高阶专题I-分析几何统计/第54级-傅立叶分析.md) | Fourier Analysis |
+| 第 55 级 | [位势论](05-高阶专题I-分析几何统计/第55级-位势论.md) | Potential Theory |
+| 第 56 级 | [算子代数](05-高阶专题I-分析几何统计/第56级-算子代数.md) | Operator Algebras |
+| 第 57 级 | [几何分析](05-高阶专题I-分析几何统计/第57级-几何分析.md) | Geometric Analysis |
+| 第 58 级 | [最优传输](05-高阶专题I-分析几何统计/第58级-最优传输.md) | Optimal Transport |
+| 第 59 级 | [渐近分析](05-高阶专题I-分析几何统计/第59级-渐近分析.md) | Asymptotic Analysis |
+| 第 60 级 | [积分方程](05-高阶专题I-分析几何统计/第60级-积分方程.md) | Integral Equations |
+| 第 61 级 | [仿射几何](05-高阶专题I-分析几何统计/第61级-仿射几何.md) | Affine Geometry |
+| 第 62 级 | [射影几何](05-高阶专题I-分析几何统计/第62级-射影几何.md) | Projective Geometry |
+| 第 63 级 | [纽结理论](05-高阶专题I-分析几何统计/第63级-纽结理论.md) | Knot Theory |
+| 第 64 级 | [辛几何](05-高阶专题I-分析几何统计/第64级-辛几何.md) | Symplectic Geometry |
+| 第 65 级 | [接触几何](05-高阶专题I-分析几何统计/第65级-接触几何.md) | Contact Geometry |
+| 第 66 级 | [凸几何](05-高阶专题I-分析几何统计/第66级-凸几何.md) | Convex Geometry |
+| 第 67 级 | [复几何](05-高阶专题I-分析几何统计/第67级-复几何.md) | Complex Geometry |
+| 第 68 级 | [低维拓扑](05-高阶专题I-分析几何统计/第68级-低维拓扑.md) | Low-Dimensional Topology |
+| 第 69 级 | [辛拓扑](05-高阶专题I-分析几何统计/第69级-辛拓扑.md) | Symplectic Topology |
+| 第 70 级 | [几何拓扑](05-高阶专题I-分析几何统计/第70级-几何拓扑.md) | Geometric Topology |
+| 第 71 级 | [多元统计分析](05-高阶专题I-分析几何统计/第71级-多元统计分析.md) | Multivariate Statistics |
 
 ---
 
-## 六、概率论与数理统计 (Probability and Mathematical Statistics) → [进入](06-概率论与数理统计/README.md)
+## 第六阶段：高阶专题 II — 代数、数论与离散数学
+
+> 深入代数学、数论与离散数学的专门化主题。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 65 级 | 概率论基础 | Probability Theory |
-| 第 66 级 | 数理统计 | Mathematical Statistics |
-| 第 67 级 | 回归分析 | Regression Analysis |
-| 第 68 级 | 时间序列分析 | Time Series Analysis |
-| 第 69 级 | 非参数统计 | Nonparametric Statistics |
-| 第 70 级 | 多元统计分析 | Multivariate Statistics |
-| 第 71 级 | 贝叶斯统计 | Bayesian Statistics |
-| 第 72 级 | 随机过程 | Stochastic Processes |
-| 第 73 级 | 随机分析 | Stochastic Analysis |
-| 第 74 级 | 测度论与概率论 | Measure Theory and Probability |
-| 第 75 级 | 统计学习理论 | Statistical Learning Theory |
-| 第 76 级 | 极值概率论 | Extreme Value Theory |
-| 第 77 级 | 大偏差理论 | Large Deviations Theory |
+| 第 72 级 | [李群与李代数](06-高阶专题II-代数数论离散/第72级-李群与李代数.md) | Lie Groups and Lie Algebras |
+| 第 73 级 | [Hopf 代数与量子群](06-高阶专题II-代数数论离散/第73级-Hopf代数与量子群.md) | Hopf Algebras and Quantum Groups |
+| 第 74 级 | [代数 K 理论](06-高阶专题II-代数数论离散/第74级-代数K理论.md) | Algebraic K-Theory |
+| 第 75 级 | [解析数论](06-高阶专题II-代数数论离散/第75级-解析数论.md) | Analytic Number Theory |
+| 第 76 级 | [代数数论](06-高阶专题II-代数数论离散/第76级-代数数论.md) | Algebraic Number Theory |
+| 第 77 级 | [算术几何](06-高阶专题II-代数数论离散/第77级-算术几何.md) | Arithmetic Geometry |
+| 第 78 级 | [丢番图逼近](06-高阶专题II-代数数论离散/第78级-丢番图逼近.md) | Diophantine Approximation |
+| 第 79 级 | [几何数论](06-高阶专题II-代数数论离散/第79级-几何数论.md) | Geometry of Numbers |
+| 第 80 级 | [代数组合](06-高阶专题II-代数数论离散/第80级-代数组合.md) | Algebraic Combinatorics |
+| 第 81 级 | [加性组合](06-高阶专题II-代数数论离散/第81级-加性组合.md) | Additive Combinatorics |
+| 第 82 级 | [代数图论](06-高阶专题II-代数数论离散/第82级-代数图论.md) | Algebraic Graph Theory |
+| 第 83 级 | [随机图](06-高阶专题II-代数数论离散/第83级-随机图.md) | Random Graphs |
+| 第 84 级 | [拟阵论](06-高阶专题II-代数数论离散/第84级-拟阵论.md) | Matroid Theory |
+| 第 85 级 | [序理论](06-高阶专题II-代数数论离散/第85级-序理论.md) | Order Theory |
+| 第 86 级 | [计算几何](06-高阶专题II-代数数论离散/第86级-计算几何.md) | Computational Geometry |
+| 第 87 级 | [离散几何学](06-高阶专题II-代数数论离散/第87级-离散几何学.md) | Discrete Geometry |
+| 第 88 级 | [有限几何学](06-高阶专题II-代数数论离散/第88级-有限几何学.md) | Finite Geometry |
+| 第 89 级 | [分形几何](06-高阶专题II-代数数论离散/第89级-分形几何.md) | Fractal Geometry |
+| 第 90 级 | [几何群论](06-高阶专题II-代数数论离散/第90级-几何群论.md) | Geometric Group Theory |
+| 第 91 级 | [分歧理论](06-高阶专题II-代数数论离散/第91级-分歧理论.md) | Bifurcation Theory |
 
 ---
 
-## 七、离散数学与数论 (Discrete Mathematics and Number Theory) → [进入](07-离散数学与数论/README.md)
+## 第七阶段：应用数学
+
+> 概率统计深化与各应用数学分支的系统学习。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 78 级 | 初等数论 | Elementary Number Theory |
-| 第 79 级 | 解析数论 | Analytic Number Theory |
-| 第 80 级 | 代数数论 | Algebraic Number Theory |
-| 第 81 级 | 算术几何 | Arithmetic Geometry |
-| 第 82 级 | 丢番图逼近 | Diophantine Approximation |
-| 第 83 级 | 组合数学 | Combinatorics |
-| 第 84 级 | 代数组合 | Algebraic Combinatorics |
-| 第 85 级 | 加性组合 | Additive Combinatorics |
-| 第 86 级 | 图论 | Graph Theory |
-| 第 87 级 | 代数图论 | Algebraic Graph Theory |
-| 第 88 级 | 随机图 | Random Graphs |
-| 第 89 级 | 拟阵论 | Matroid Theory |
+| 第 92 级 | [回归分析](07-应用数学/第92级-回归分析.md) | Regression Analysis |
+| 第 93 级 | [时间序列分析](07-应用数学/第93级-时间序列分析.md) | Time Series Analysis |
+| 第 94 级 | [非参数统计](07-应用数学/第94级-非参数统计.md) | Nonparametric Statistics |
+| 第 95 级 | [贝叶斯统计](07-应用数学/第95级-贝叶斯统计.md) | Bayesian Statistics |
+| 第 96 级 | [随机微分方程](07-应用数学/第96级-随机微分方程.md) | Stochastic Differential Equations (SDE) |
+| 第 97 级 | [随机分析](07-应用数学/第97级-随机分析.md) | Stochastic Analysis |
+| 第 98 级 | [测度论与概率论](07-应用数学/第98级-测度论与概率论.md) | Measure Theory and Probability |
+| 第 99 级 | [统计学习理论](07-应用数学/第99级-统计学习理论.md) | Statistical Learning Theory |
+| 第 100 级 | [机器学习](07-应用数学/第100级-机器学习.md) | Machine Learning |
+| 第 101 级 | [极值概率论](07-应用数学/第101级-极值概率论.md) | Extreme Value Theory |
+| 第 102 级 | [大偏差理论](07-应用数学/第102级-大偏差理论.md) | Large Deviations Theory |
+| 第 103 级 | [数值分析](07-应用数学/第103级-数值分析.md) | Numerical Analysis |
+| 第 104 级 | [逼近论](07-应用数学/第104级-逼近论.md) | Approximation Theory |
+| 第 105 级 | [数值线性代数](07-应用数学/第105级-数值线性代数.md) | Numerical Linear Algebra |
+| 第 106 级 | [有限元方法](07-应用数学/第106级-有限元方法.md) | Finite Element Methods |
+| 第 107 级 | [微分方程数值解](07-应用数学/第107级-微分方程数值解.md) | Numerical Methods for Differential Equations |
+| 第 108 级 | [计算机代数](07-应用数学/第108级-计算机代数.md) | Computer Algebra |
+| 第 109 级 | [优化理论](07-应用数学/第109级-优化理论.md) | Optimization Theory |
+| 第 110 级 | [运筹学](07-应用数学/第110级-运筹学.md) | Operations Research |
+| 第 111 级 | [排队论](07-应用数学/第111级-排队论.md) | Queueing Theory |
+| 第 112 级 | [信息论](07-应用数学/第112级-信息论.md) | Information Theory |
+| 第 113 级 | [编码理论](07-应用数学/第113级-编码理论.md) | Coding Theory |
+| 第 114 级 | [密码学](07-应用数学/第114级-密码学.md) | Cryptography |
+| 第 115 级 | [计算数学](07-应用数学/第115级-计算数学.md) | Computational Mathematics |
+| 第 116 级 | [数据科学](07-应用数学/第116级-数据科学.md) | Data Science |
+| 第 117 级 | [数学建模](07-应用数学/第117级-数学建模.md) | Mathematical Modeling |
+| 第 118 级 | [流体力学](07-应用数学/第118级-流体力学.md) | Fluid Mechanics |
+| 第 119 级 | [连续介质力学](07-应用数学/第119级-连续介质力学.md) | Continuum Mechanics |
+| 第 120 级 | [博弈论](07-应用数学/第120级-博弈论.md) | Game Theory |
+| 第 121 级 | [控制论](07-应用数学/第121级-控制论.md) | Control Theory |
 
 ---
 
-## 八、应用数学 (Applied Mathematics) → [进入](08-应用数学/README.md)
+## 第八阶段：数学基础深化
+
+> 深入数学的逻辑基础与哲学根基。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 90 级 | 数值分析 | Numerical Analysis |
-| 第 91 级 | 逼近论 | Approximation Theory |
-| 第 92 级 | 数值线性代数 | Numerical Linear Algebra |
-| 第 93 级 | 有限元方法 | Finite Element Methods |
-| 第 94 级 | 微分方程数值解 | Numerical Methods for Differential Equations |
-| 第 95 级 | 优化理论 | Optimization Theory |
-| 第 96 级 | 运筹学 | Operations Research |
-| 第 97 级 | 排队论 | Queueing Theory |
-| 第 98 级 | 信息论 | Information Theory |
-| 第 99 级 | 编码理论 | Coding Theory |
-| 第 100 级 | 密码学 | Cryptography |
-| 第 101 级 | 计算数学 | Computational Mathematics |
-| 第 102 级 | 数学建模 | Mathematical Modeling |
-| 第 103 级 | 流体力学 | Fluid Mechanics |
-| 第 104 级 | 连续介质力学 | Continuum Mechanics |
-| 第 105 级 | 博弈论 | Game Theory |
-| 第 106 级 | 控制论 | Control Theory |
-| 第 107 级 | 金融数学 | Financial Mathematics |
-| 第 108 级 | 经济数学 | Mathematical Economics |
-| 第 109 级 | 生物数学 | Mathematical Biology |
-| 第 110 级 | 模糊数学 | Fuzzy Mathematics |
-| 第 111 级 | 小波分析 | Wavelet Analysis |
+| 第 122 级 | [公理集合论](08-数学基础深化/第122级-公理集合论.md) | Axiomatic Set Theory |
+| 第 123 级 | [模型论](08-数学基础深化/第123级-模型论.md) | Model Theory |
+| 第 124 级 | [递归论](08-数学基础深化/第124级-递归论.md) | Recursion Theory |
+| 第 125 级 | [证明论](08-数学基础深化/第125级-证明论.md) | Proof Theory |
+| 第 126 级 | [范畴论](08-数学基础深化/第126级-范畴论.md) | Category Theory |
+| 第 127 级 | [类型论](08-数学基础深化/第127级-类型论.md) | Type Theory |
+| 第 128 级 | [构造性数学](08-数学基础深化/第128级-构造性数学.md) | Constructive Mathematics |
+| 第 129 级 | [非标准分析](08-数学基础深化/第129级-非标准分析.md) | Nonstandard Analysis |
+| 第 130 级 | [数学教育](08-数学基础深化/第130级-数学教育.md) | Mathematics Education |
 
 ---
 
-## 九、数学基础与逻辑 (Foundations and Logic) → [进入](09-数学基础与逻辑/README.md)
+## 第九阶段：现代数学前沿
+
+> 现代数学的前沿领域与交叉应用。
 
 | 层级 | 主题 | 英文 |
 |:---:|------|------|
-| 第 112 级 | 数理逻辑 | Mathematical Logic |
-| 第 113 级 | 公理集合论 | Axiomatic Set Theory |
-| 第 114 级 | 模型论 | Model Theory |
-| 第 115 级 | 递归论 | Recursion Theory |
-| 第 116 级 | 证明论 | Proof Theory |
-| 第 117 级 | 范畴论 | Category Theory |
-| 第 118 级 | 类型论 | Type Theory |
-| 第 119 级 | 构造性数学 | Constructive Mathematics |
-| 第 120 级 | 非标准分析 | Nonstandard Analysis |
+| 第 131 级 | [数学心理学](09-现代数学前沿/第131级-数学心理学.md) | Mathematical Psychology |
+| 第 132 级 | [金融数学](09-现代数学前沿/第132级-金融数学.md) | Financial Mathematics |
+| 第 133 级 | [经济数学](09-现代数学前沿/第133级-经济数学.md) | Mathematical Economics |
+| 第 134 级 | [计量经济学](09-现代数学前沿/第134级-计量经济学.md) | Econometrics |
+| 第 135 级 | [生物数学](09-现代数学前沿/第135级-生物数学.md) | Mathematical Biology |
+| 第 136 级 | [生物统计学](09-现代数学前沿/第136级-生物统计学.md) | Biostatistics |
+| 第 137 级 | [模糊数学](09-现代数学前沿/第137级-模糊数学.md) | Fuzzy Mathematics |
+| 第 138 级 | [小波分析](09-现代数学前沿/第138级-小波分析.md) | Wavelet Analysis |
+| 第 139 级 | [非交换几何](09-现代数学前沿/第139级-非交换几何.md) | Noncommutative Geometry |
+| 第 140 级 | [镜像对称](09-现代数学前沿/第140级-镜像对称.md) | Mirror Symmetry |
+| 第 141 级 | [朗兰兹纲领](09-现代数学前沿/第141级-朗兰兹纲领.md) | Langlands Program |
+| 第 142 级 | [几何朗兰兹](09-现代数学前沿/第142级-几何朗兰兹.md) | Geometric Langlands |
+| 第 143 级 | [椭圆曲线与模形式](09-现代数学前沿/第143级-椭圆曲线与模形式.md) | Elliptic Curves and Modular Forms |
+| 第 144 级 | [高维范畴论](09-现代数学前沿/第144级-高维范畴论.md) | Higher Category Theory |
+| 第 145 级 | [导出代数几何](09-现代数学前沿/第145级-导出代数几何.md) | Derived Algebraic Geometry |
+| 第 146 级 | [随机矩阵理论](09-现代数学前沿/第146级-随机矩阵理论.md) | Random Matrix Theory |
+| 第 147 级 | [自由概率论](09-现代数学前沿/第147级-自由概率论.md) | Free Probability |
+| 第 148 级 | [算术几何前沿](09-现代数学前沿/第148级-算术几何前沿.md) | Frontiers of Arithmetic Geometry |
+| 第 149 级 | [拓扑量子场论](09-现代数学前沿/第149级-拓扑量子场论.md) | Topological Quantum Field Theory (TQFT) |
+| 第 150 级 | [数学物理](09-现代数学前沿/第150级-数学物理.md) | Mathematical Physics |
+| 第 151 级 | [娱乐数学](09-现代数学前沿/第151级-娱乐数学.md) | Recreational Mathematics |
 
 ---
 
-## 十、现代数学前沿 (Frontiers of Modern Mathematics) → [进入](10-现代数学前沿/README.md)
-
-| 层级 | 主题 | 英文 |
-|:---:|------|------|
-| 第 121 级 | 非交换几何 | Noncommutative Geometry |
-| 第 122 级 | 镜像对称 | Mirror Symmetry |
-| 第 123 级 | 朗兰兹纲领 | Langlands Program |
-| 第 124 级 | 几何朗兰兹 | Geometric Langlands |
-| 第 125 级 | 椭圆曲线与模形式 | Elliptic Curves and Modular Forms |
-| 第 126 级 | 高维范畴论 | Higher Category Theory |
-| 第 127 级 | 导出代数几何 | Derived Algebraic Geometry |
-| 第 128 级 | 随机矩阵理论 | Random Matrix Theory |
-| 第 129 级 | 自由概率论 | Free Probability |
-| 第 130 级 | 算术几何前沿 | Frontiers of Arithmetic Geometry |
-| 第 131 级 | 拓扑量子场论 | Topological Quantum Field Theory (TQFT) |
-| 第 132 级 | 数学物理 | Mathematical Physics |
-
----
-
-## 总览图
+## 学习路线总览
 
 ```
-初等数学 ────────────────────────────────────────────────── 第 1-8 级
-    │
-    ├── 分析学 ──────────────────────────────────────────── 第 9-27 级
-    ├── 代数学 ──────────────────────────────────────────── 第 28-38 级
-    ├── 几何学与拓扑学 ──────────────────────────────────── 第 39-59 级
-    ├── 微分方程与动力系统 ──────────────────────────────── 第 60-64 级
-    ├── 概率论与数理统计 ────────────────────────────────── 第 65-77 级
-    ├── 离散数学与数论 ──────────────────────────────────── 第 78-89 级
-    ├── 应用数学 ────────────────────────────────────────── 第 90-111 级
-    ├── 数学基础与逻辑 ──────────────────────────────────── 第 112-120 级
-    └── 现代数学前沿 ────────────────────────────────────── 第 121-132 级
+第一阶段  初等数学 ────────────────────────────────── 第 1-8 级
+    ↓
+第二阶段  微积分与线性代数 ────────────────────────── 第 9-16 级
+    ↓
+第三阶段  核心理论（分析·代数·拓扑·ODE·概率·离散·逻辑）─── 第 17-30 级
+    ↓
+第四阶段  进阶理论（分析·代数·几何·拓扑·PDE·动力系统）─── 第 31-52 级
+    ↓
+┌─────────────────────────────────────────────────────┐
+│                第五阶段·第六阶段                      │
+│  ┌─────────────────┐  ┌─────────────────────────┐    │
+│  │ 高阶专题 I       │  │ 高阶专题 II              │    │
+│  │ 分析·几何·统计   │  │ 代数·数论·离散数学       │    │
+│  │ 第 53-71 级      │  │ 第 72-91 级              │    │
+│  └─────────────────┘  └─────────────────────────┘    │
+└─────────────────────────────────────────────────────┘
+    ↓
+第七阶段  应用数学 ────────────────────────────────── 第 92-121 级
+    ↓
+第八阶段  数学基础深化 ────────────────────────────── 第 122-130 级
+    ↓
+第九阶段  现代数学前沿 ────────────────────────────── 第 131-151 级
 ```
 
-> **说明**：本目录按数学内在逻辑与难度递进编排，共 **10 大板块、132 个层级**。每个层级对应一个独立的知识模块，后续将逐步展开详细的教程内容。
+> **说明**：本教程按学习阶段与难度递进编排，共 **9 个学习阶段、151 个层级**。同一阶段内，不同数学分支的平行主题同步学习，体现各分支之间的内在联系。每个层级对应一个独立的知识模块，点击主题名称即可跳转到对应的教程文件。
