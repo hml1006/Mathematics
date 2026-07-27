@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280">
+  <!-- 平行四边形 -->
+  <g transform="translate(50,30)">
+    <polygon points="20,160 140,160 120,40 0,40" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+    <text x="70" y="195" font-size="14" text-anchor="middle" font-weight="bold">平行四边形</text>
+    <text x="70" y="212" font-size="11" text-anchor="middle" fill="#666">两组对边分别平行</text>
+    <text x="70" y="227" font-size="11" text-anchor="middle" fill="#666">对边相等、对角相等</text>
+  </g>
+  
+  <!-- 矩形 -->
+  <g transform="translate(220,30)">
+    <rect x="0" y="40" width="120" height="120" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+    <rect x="0" y="40" width="10" height="10" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
+    <text x="60" y="195" font-size="14" text-anchor="middle" font-weight="bold">矩形</text>
+    <text x="60" y="212" font-size="11" text-anchor="middle" fill="#666">四个角均为 90°</text>
+    <text x="60" y="227" font-size="11" text-anchor="middle" fill="#666">对角线相等</text>
+  </g>
+  
+  <!-- 菱形 -->
+  <g transform="translate(390,30)">
+    <polygon points="60,40 120,100 60,160 0,100" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+    <!-- 等边标记 -->
+    <line x1="35" y1="65" x2="45" y2="55" stroke="#e65100" stroke-width="2"/>
+    <line x1="85" y1="65" x2="95" y2="55" stroke="#e65100" stroke-width="2"/>
+    <line x1="35" y1="135" x2="45" y2="145" stroke="#e65100" stroke-width="2"/>
+    <line x1="85" y1="135" x2="95" y2="145" stroke="#e65100" stroke-width="2"/>
+    <text x="60" y="195" font-size="14" text-anchor="middle" font-weight="bold">菱形</text>
+    <text x="60" y="212" font-size="11" text-anchor="middle" fill="#666">四边相等</text>
+    <text x="60" y="227" font-size="11" text-anchor="middle" fill="#666">对角线互相垂直平分</text>
+  </g>
+  
+  <!-- 正方形 -->
+  <g transform="translate(560,30)">
+    <rect x="0" y="40" width="120" height="120" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <rect x="0" y="40" width="10" height="10" fill="none" stroke="#7b1fa2" stroke-width="1.5"/>
+    <!-- 等边标记 -->
+    <line x1="55" y1="45" x2="65" y2="45" stroke="#7b1fa2" stroke-width="2"/>
+    <line x1="115" y1="95" x2="115" y2="105" stroke="#7b1fa2" stroke-width="2"/>
+    <line x1="55" y1="155" x2="65" y2="155" stroke="#7b1fa2" stroke-width="2"/>
+    <line x1="5" y1="95" x2="5" y2="105" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="60" y="195" font-size="14" text-anchor="middle" font-weight="bold">正方形</text>
+    <text x="60" y="212" font-size="11" text-anchor="middle" fill="#666">四边相等，四角为 90°</text>
+    <text x="60" y="227" font-size="11" text-anchor="middle" fill="#666">既是矩形又是菱形</text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 340" width="750" height="340">
+  <!-- 锐角三角形 -->
+  <g transform="translate(125,20)">
+    <polygon points="0,160 100,160 60,20" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+    <text x="50" y="180" font-size="14" text-anchor="middle" font-weight="bold">锐角三角形</text>
+    <text x="50" y="200" font-size="12" text-anchor="middle" fill="#666">三个内角均为锐角</text>
+  </g>
+
+  <!-- 直角三角形 -->
+  <g transform="translate(325,20)">
+    <polygon points="0,160 100,160 0,40" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+    <rect x="0" y="148" width="12" height="12" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
+    <text x="50" y="180" font-size="14" text-anchor="middle" font-weight="bold">直角三角形</text>
+    <text x="50" y="200" font-size="12" text-anchor="middle" fill="#666">有一个内角为 90°</text>
+  </g>
+
+  <!-- 钝角三角形 -->
+  <g transform="translate(525,20)">
+    <polygon points="0,160 130,160 30,20" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+    <text x="65" y="180" font-size="14" text-anchor="middle" font-weight="bold">钝角三角形</text>
+    <text x="65" y="200" font-size="12" text-anchor="middle" fill="#666">有一个内角为钝角</text>
+  </g>
+</svg>

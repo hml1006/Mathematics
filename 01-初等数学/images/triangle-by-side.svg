@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 340" width="750" height="340">
+  <!-- 不等边三角形 -->
+  <g transform="translate(125,20)">
+    <polygon points="0,160 120,160 40,30" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+    <text x="60" y="180" font-size="14" text-anchor="middle" font-weight="bold">不等边三角形</text>
+    <text x="60" y="200" font-size="12" text-anchor="middle" fill="#666">三边各不相等</text>
+  </g>
+
+  <!-- 等腰三角形 -->
+  <g transform="translate(325,20)">
+    <polygon points="0,160 100,160 50,30" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <!-- 等边标记 -->
+    <line x1="20" y1="140" x2="30" y2="130" stroke="#7b1fa2" stroke-width="2"/>
+    <line x1="70" y1="130" x2="80" y2="140" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="50" y="180" font-size="14" text-anchor="middle" font-weight="bold">等腰三角形</text>
+    <text x="50" y="200" font-size="12" text-anchor="middle" fill="#666">有两边相等（腰）</text>
+  </g>
+
+  <!-- 等边三角形 -->
+  <g transform="translate(525,20)">
+    <polygon points="0,160 100,160 50,73" fill="#e8eaf6" stroke="#283593" stroke-width="2"/>
+    <!-- 等边标记 -->
+    <line x1="20" y1="140" x2="30" y2="130" stroke="#283593" stroke-width="2"/>
+    <line x1="70" y1="130" x2="80" y2="140" stroke="#283593" stroke-width="2"/>
+    <line x1="45" y1="100" x2="55" y2="90" stroke="#283593" stroke-width="2"/>
+    <text x="50" y="180" font-size="14" text-anchor="middle" font-weight="bold">等边三角形</text>
+    <text x="50" y="200" font-size="12" text-anchor="middle" fill="#666">三边相等，各角 60°</text>
+  </g>
+</svg>

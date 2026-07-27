@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <!-- 三角形 ABC -->
+  <polygon points="150,280 450,280 300,80" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="140" y="300" font-size="16" font-weight="bold">A</text>
+  <text x="455" y="300" font-size="16" font-weight="bold">B</text>
+  <text x="295" y="70" font-size="16" font-weight="bold">C</text>
+  
+  <!-- 过点 C 作平行线 DE -->
+  <line x1="100" y1="80" x2="500" y2="80" stroke="#c62828" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="90" y="85" font-size="14" font-weight="bold" fill="#c62828">D</text>
+  <text x="505" y="85" font-size="14" font-weight="bold" fill="#c62828">E</text>
+  
+  <!-- 标记平行 -->
+  <text x="300" y="50" font-size="14" text-anchor="middle" fill="#c62828">DE ∥ AB</text>
+  
+  <!-- 角标记 -->
+  <!-- 角 A -->
+  <path d="M 170,280 A 30,30 0 0,0 165,260" fill="none" stroke="#2e7d32" stroke-width="2"/>
+  <text x="180" y="265" font-size="14" font-weight="bold" fill="#2e7d32">∠A</text>
+  
+  <!-- 角 B -->
+  <path d="M 430,280 A 30,30 0 0,1 435,260" fill="none" stroke="#e65100" stroke-width="2"/>
+  <text x="410" y="265" font-size="14" font-weight="bold" fill="#e65100">∠B</text>
+  
+  <!-- 角 C -->
+  <path d="M 280,100 A 30,30 0 0,1 320,100" fill="none" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="290" y="125" font-size="14" font-weight="bold" fill="#7b1fa2">∠C</text>
+  
+  <!-- 内错角 -->
+  <!-- 角 DCA = 角 A -->
+  <path d="M 280,80 A 30,30 0 0,0 285,100" fill="none" stroke="#2e7d32" stroke-width="2"/>
+  <text x="255" y="95" font-size="12" fill="#2e7d32">∠DCA</text>
+  
+  <!-- 角 ECB = 角 B -->
+  <path d="M 320,80 A 30,30 0 0,1 315,100" fill="none" stroke="#e65100" stroke-width="2"/>
+  <text x="325" y="95" font-size="12" fill="#e65100">∠ECB</text>
+  
+  <!-- 说明文字 -->
+  <text x="300" y="320" font-size="14" text-anchor="middle">∵ DE ∥ AB</text>
+  <text x="300" y="340" font-size="14" text-anchor="middle">∴ ∠DCA = ∠A, ∠ECB = ∠B (内错角相等)</text>
+</svg>

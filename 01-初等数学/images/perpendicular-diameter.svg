@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <!-- 圆 -->
+  <circle cx="300" cy="200" r="160" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  
+  <!-- 圆心 O -->
+  <circle cx="300" cy="200" r="4" fill="#c62828"/>
+  <text x="310" y="195" font-size="14" font-weight="bold" fill="#c62828">O</text>
+  
+  <!-- 直径 CD -->
+  <line x1="300" y1="40" x2="300" y2="360" stroke="#c62828" stroke-width="2.5"/>
+  <circle cx="300" cy="40" r="4" fill="#333"/>
+  <circle cx="300" cy="360" r="4" fill="#333"/>
+  <text x="310" y="35" font-size="14" font-weight="bold">C</text>
+  <text x="310" y="375" font-size="14" font-weight="bold">D</text>
+  
+  <!-- 弦 AB -->
+  <line x1="140" y1="200" x2="460" y2="200" stroke="#2e7d32" stroke-width="2.5"/>
+  <circle cx="140" cy="200" r="4" fill="#333"/>
+  <circle cx="460" cy="200" r="4" fill="#333"/>
+  <text x="125" y="195" font-size="14" font-weight="bold">A</text>
+  <text x="465" y="195" font-size="14" font-weight="bold">B</text>
+  
+  <!-- 交点 E -->
+  <circle cx="300" cy="200" r="4" fill="#e65100"/>
+  <text x="305" y="215" font-size="14" font-weight="bold" fill="#e65100">E</text>
+  
+  <!-- 垂直标记 -->
+  <rect x="295" y="195" width="10" height="10" fill="none" stroke="#e65100" stroke-width="1.5"/>
+  
+  <!-- 标注 AE = EB -->
+  <text x="240" y="190" font-size="13" text-anchor="middle" fill="#2e7d32">AE</text>
+  <text x="360" y="190" font-size="13" text-anchor="middle" fill="#2e7d32">EB</text>
+  <text x="300" y="250" font-size="13" text-anchor="middle" fill="#e65100">AE = EB</text>
+  
+  <!-- 标注弧 -->
+  <path d="M 140,200 A 160,160 0 0,1 300,40" fill="none" stroke="#7b1fa2" stroke-width="3"/>
+  <path d="M 300,40 A 160,160 0 0,1 460,200" fill="none" stroke="#7b1fa2" stroke-width="3"/>
+  <text x="200" y="100" font-size="13" fill="#7b1fa2">弧 AC</text>
+  <text x="400" y="100" font-size="13" fill="#7b1fa2">弧 BC</text>
+  
+  <!-- 说明 -->
+  <text x="300" y="385" font-size="14" text-anchor="middle" font-weight="bold">垂直于弦的直径平分这条弦，并且平分弦所对的两条弧</text>
+</svg>

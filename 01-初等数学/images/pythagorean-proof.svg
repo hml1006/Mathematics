@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <!-- 大正方形 (a+b)² -->
+  <rect x="50" y="50" width="300" height="300" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  
+  <!-- 四个直角三角形 -->
+  <!-- 左上 -->
+  <polygon points="50,50 200,50 50,200" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <!-- 右上 -->
+  <polygon points="200,50 350,50 350,200" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <!-- 右下 -->
+  <polygon points="350,200 350,350 200,350" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <!-- 左下 -->
+  <polygon points="50,200 50,350 200,350" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  
+  <!-- 中间小正方形 c² -->
+  <polygon points="200,50 350,200 200,350 50,200" fill="#fff3e0" stroke="#e65100" stroke-width="2.5"/>
+  
+  <!-- 标注边长 -->
+  <text x="125" y="40" font-size="14" text-anchor="middle" fill="#1565c0">a</text>
+  <text x="275" y="40" font-size="14" text-anchor="middle" fill="#1565c0">b</text>
+  <text x="30" y="125" font-size="14" text-anchor="middle" fill="#1565c0">b</text>
+  <text x="30" y="275" font-size="14" text-anchor="middle" fill="#1565c0">a</text>
+  
+  <!-- 标注斜边 c -->
+  <text x="275" y="115" font-size="14" text-anchor="middle" fill="#e65100">c</text>
+  <text x="275" y="285" font-size="14" text-anchor="middle" fill="#e65100">c</text>
+  <text x="125" y="115" font-size="14" text-anchor="middle" fill="#e65100">c</text>
+  <text x="125" y="285" font-size="14" text-anchor="middle" fill="#e65100">c</text>
+  
+  <!-- 标注大正方形边长 -->
+  <text x="200" y="380" font-size="14" text-anchor="middle" fill="#2e7d32">a + b</text>
+  <text x="30" y="200" font-size="14" text-anchor="middle" fill="#2e7d32">a + b</text>
+  
+  <!-- 公式说明 -->
+  <text x="300" y="420" font-size="15" text-anchor="middle" font-weight="bold">大正方形面积 = (a+b)²</text>
+  <text x="300" y="445" font-size="14" text-anchor="middle">= 4 × (½ab) + c²</text>
+  <text x="300" y="470" font-size="14" text-anchor="middle">= 2ab + c²</text>
+  <text x="300" y="495" font-size="14" text-anchor="middle">又 (a+b)² = a² + 2ab + b²</text>
+</svg>
