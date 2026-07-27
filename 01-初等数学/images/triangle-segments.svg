@@ -22,7 +22,6 @@
     <text x="80" y="0" font-size="14" font-weight="bold" text-anchor="middle">角平分线</text>
     <polygon points="0,140 160,140 80,20" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
     <line x1="80" y1="20" x2="80" y2="140" stroke="#c62828" stroke-width="2"/>
-    <!-- 角标记 -->
     <path d="M 70,30 Q 80,35 90,30" fill="none" stroke="#c62828" stroke-width="1.5"/>
     <text x="80" y="165" font-size="12" text-anchor="middle">平分内角的射线</text>
   </g>
@@ -53,21 +52,21 @@
     <circle cx="217" cy="247" r="5" fill="#1565c0"/>
     <text x="195" y="240" font-size="12" fill="#1565c0" font-weight="bold">重心 G</text>
 
-    <!-- 高线（垂心 H≈(150,247)） -->
+    <!-- 高线（垂心 H≈(150,234)） -->
     <line x1="150" y1="100" x2="150" y2="320" stroke="#2e7d32" stroke-width="2"/>
     <rect x="150" y="310" width="10" height="10" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
-    <circle cx="150" cy="247" r="5" fill="#2e7d32"/>
-    <text x="100" y="255" font-size="12" fill="#2e7d32" font-weight="bold">垂心 H</text>
+    <circle cx="150" cy="234" r="5" fill="#2e7d32"/>
+    <text x="100" y="240" font-size="12" fill="#2e7d32" font-weight="bold">垂心 H</text>
 
-    <!-- 角平分线（内心 I≈(214,253)） -->
-    <line x1="150" y1="100" x2="280" y2="320" stroke="#e65100" stroke-width="2"/>
-    <circle cx="214" cy="253" r="5" fill="#e65100"/>
-    <text x="220" y="270" font-size="12" fill="#e65100" font-weight="bold">内心 I</text>
+    <!-- 角平分线（内心 I≈(191,239)） -->
+    <line x1="150" y1="100" x2="215.5" y2="320" stroke="#e65100" stroke-width="2"/>
+    <circle cx="191" cy="239" r="5" fill="#e65100"/>
+    <text x="200" y="255" font-size="12" fill="#e65100" font-weight="bold">内心 I</text>
 
-    <!-- 中垂线（外心 O≈(250,208)） -->
+    <!-- 中垂线（外心 O≈(250,253)） -->
     <line x1="250" y1="150" x2="250" y2="350" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="5,3"/>
     <rect x="245" y="315" width="10" height="10" fill="none" stroke="#7b1fa2" stroke-width="1.5"/>
-    <circle cx="250" cy="208" r="5" fill="#7b1fa2"/>
-    <text x="260" y="200" font-size="12" fill="#7b1fa2" font-weight="bold">外心 O</text>
+    <circle cx="250" cy="253" r="5" fill="#7b1fa2"/>
+    <text x="260" y="245" font-size="12" fill="#7b1fa2" font-weight="bold">外心 O</text>
   </g>
 </svg>
