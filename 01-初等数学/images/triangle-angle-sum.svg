@@ -1,41 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
-  <!-- 三角形 ABC -->
-  <polygon points="150,280 450,280 300,80" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
-  <text x="140" y="300" font-size="16" font-weight="bold">A</text>
-  <text x="455" y="300" font-size="16" font-weight="bold">B</text>
-  <text x="295" y="70" font-size="16" font-weight="bold">C</text>
-  
-  <!-- 过点 C 作平行线 DE -->
-  <line x1="100" y1="80" x2="500" y2="80" stroke="#c62828" stroke-width="2" stroke-dasharray="8,4"/>
-  <text x="90" y="85" font-size="14" font-weight="bold" fill="#c62828">D</text>
-  <text x="505" y="85" font-size="14" font-weight="bold" fill="#c62828">E</text>
-  
-  <!-- 标记平行 -->
-  <text x="300" y="50" font-size="14" text-anchor="middle" fill="#c62828">DE ∥ AB</text>
-  
-  <!-- 角标记 -->
-  <!-- 角 A -->
-  <path d="M 170,280 A 30,30 0 0,0 165,260" fill="none" stroke="#2e7d32" stroke-width="2"/>
-  <text x="180" y="265" font-size="14" font-weight="bold" fill="#2e7d32">∠A</text>
-  
-  <!-- 角 B -->
-  <path d="M 430,280 A 30,30 0 0,1 435,260" fill="none" stroke="#e65100" stroke-width="2"/>
-  <text x="410" y="265" font-size="14" font-weight="bold" fill="#e65100">∠B</text>
-  
-  <!-- 角 C -->
-  <path d="M 280,100 A 30,30 0 0,1 320,100" fill="none" stroke="#7b1fa2" stroke-width="2"/>
-  <text x="290" y="125" font-size="14" font-weight="bold" fill="#7b1fa2">∠C</text>
-  
-  <!-- 内错角 -->
-  <!-- 角 DCA = 角 A -->
-  <path d="M 280,80 A 30,30 0 0,0 285,100" fill="none" stroke="#2e7d32" stroke-width="2"/>
-  <text x="255" y="95" font-size="12" fill="#2e7d32">∠DCA</text>
-  
-  <!-- 角 ECB = 角 B -->
-  <path d="M 320,80 A 30,30 0 0,1 315,100" fill="none" stroke="#e65100" stroke-width="2"/>
-  <text x="325" y="95" font-size="12" fill="#e65100">∠ECB</text>
-  
-  <!-- 说明文字 -->
-  <text x="300" y="320" font-size="14" text-anchor="middle">∵ DE ∥ AB</text>
-  <text x="300" y="340" font-size="14" text-anchor="middle">∴ ∠DCA = ∠A, ∠ECB = ∠B (内错角相等)</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600mm" height="450mm" viewBox="0 0 600 450" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle A B C -->
+<path d="M300.00,70.00 L 80.00,400.00 L 520.00,400.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment A B -->
+<line x1="300.00" y1="70.00" x2="80.00" y2="400.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment B C -->
+<line x1="80.00" y1="400.00" x2="520.00" y2="400.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment C A -->
+<line x1="520.00" y1="400.00" x2="300.00" y2="70.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment D E -->
+<line x1="80.00" y1="70.00" x2="520.00" y2="70.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment bc_m1a bc_m1b -->
+<line x1="245.00" y1="406.00" x2="255.00" y2="394.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment bc_m2a bc_m2b -->
+<line x1="345.00" y1="406.00" x2="355.00" y2="394.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment de_m1a de_m1b -->
+<line x1="245.00" y1="76.00" x2="255.00" y2="64.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment de_m2a de_m2b -->
+<line x1="345.00" y1="76.00" x2="355.00" y2="64.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Changing color 255 0 0 -->
+
+<!-- Drawing arc B B_C 56.30 -->
+<path d="M120.00,400.00  a40.00,40.00 0 0,0 -17.81,-33.28" fill="none" stroke="#FF0000" stroke-width="1.00"/>
+
+<!-- Drawing arc C C_B -56.30 -->
+<path d="M497.81,366.72  a40.00,40.00 0 0,0 -17.81,33.28" fill="none" stroke="#FF0000" stroke-width="1.00"/>
+
+<!-- Drawing arc A A_D 56.30 -->
+<path d="M260.00,70.00  a40.00,40.00 0 0,0 17.81,33.28" fill="none" stroke="#FF0000" stroke-width="1.00"/>
+
+<!-- Drawing arc A A_E -56.30 -->
+<path d="M322.19,103.28  a40.00,40.00 0 0,0 17.81,-33.28" fill="none" stroke="#FF0000" stroke-width="1.00"/>
+
+<!-- Drawing arc A A_B 67.40 -->
+<path d="M277.81,103.28  a40.00,40.00 0 0,0 44.39,-0.00" fill="none" stroke="#FF0000" stroke-width="1.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point label_D -->
+<text x="55.00" y="70.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">D</text>
+
+<!-- Printing text at point label_E -->
+<text x="535.00" y="70.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">E</text>
+
+<!-- Printing text at point label_A -->
+<text x="310.00" y="55.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">A</text>
+
+<!-- Printing text at point label_B -->
+<text x="60.00" y="420.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">B</text>
+
+<!-- Printing text at point label_C -->
+<text x="540.00" y="420.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">C</text>
+
+<!-- Printing text at point de_label -->
+<text x="300.00" y="50.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">DE∥BC</text>
+
+<!-- Printing text at point dab_label -->
+<text x="175.00" y="120.00" style="font-size:4.57pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠DAB = ∠B</text>
+
+<!-- Printing text at point eac_label -->
+<text x="425.00" y="120.00" style="font-size:4.57pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠EAC = ∠C</text>
+
+<!-- Printing text at point title_pt -->
+<text x="300.00" y="20.00" style="font-size:8.44pt; font-style:italic; fill:#000000" text-anchor="middle" dy="4.217926">三角形内角和定理</text>
+
+<!-- Printing text at point formula_pt -->
+<text x="300.00" y="430.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">∠A + ∠B + ∠C = 180°</text>
 </svg>

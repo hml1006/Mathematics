@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500mm" height="450mm" viewBox="0 0 500 450" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 245 245 245 -->
+
+<!-- Filling triangle A B C -->
+<path d="M250.00,380.00 L 70.00,80.00 L 430.00,80.00 z" fill="#F5F5F5" stroke="none"/>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle A D E -->
+<path d="M250.00,380.00 L 178.00,260.00 L 322.00,260.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment A B -->
+<line x1="249.79" y1="379.66" x2="178.21" y2="260.34" style="stroke:#1565C0; stroke-width:2.00"/>
+<line x1="177.79" y1="259.66" x2="70.21" y2="80.34" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment B C -->
+<line x1="70.40" y1="80.00" x2="429.60" y2="80.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment C A -->
+<line x1="429.79" y1="80.34" x2="322.21" y2="259.66" style="stroke:#1565C0; stroke-width:2.00"/>
+<line x1="321.79" y1="260.34" x2="250.21" y2="379.66" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment A D -->
+<line x1="249.79" y1="379.66" x2="178.21" y2="260.34" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment E A -->
+<line x1="321.79" y1="260.34" x2="250.21" y2="379.66" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Drawing segment D E -->
+<line x1="178.40" y1="260.00" x2="321.60" y2="260.00" style="stroke:#C62828; stroke-width:2.00"/>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Drawing segment de_m1a de_m1b -->
+<line x1="237.00" y1="265.00" x2="232.00" y2="255.00" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment de_m2a de_m2b -->
+<line x1="263.00" y1="265.00" x2="258.00" y2="255.00" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment bc_m1a bc_m1b -->
+<line x1="237.00" y1="85.00" x2="232.00" y2="75.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment bc_m2a bc_m2b -->
+<line x1="263.00" y1="85.00" x2="258.00" y2="75.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Marking point A by circle -->
+<circle cx="250.00" cy="380.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.00"/>
+
+<!-- Marking point B by circle -->
+<circle cx="70.00" cy="80.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.00"/>
+
+<!-- Marking point C by circle -->
+<circle cx="430.00" cy="80.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.00"/>
+
+<!-- Marking point D by circle -->
+<circle cx="178.00" cy="260.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.00"/>
+
+<!-- Marking point E by circle -->
+<circle cx="322.00" cy="260.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point label_A -->
+<text x="242.00" y="360.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">A</text>
+
+<!-- Printing text at point label_B -->
+<text x="48.00" y="95.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">B</text>
+
+<!-- Printing text at point label_C -->
+<text x="430.00" y="95.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">C</text>
+
+<!-- Printing text at point label_D -->
+<text x="158.00" y="262.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">D</text>
+
+<!-- Printing text at point label_E -->
+<text x="322.00" y="242.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">E</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point label_ratio -->
+<text x="172.00" y="228.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">AD:DB=2:3</text>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Printing text at point label_parallel -->
+<text x="238.00" y="170.00" style="font-size:4.92pt; font-style:italic; fill:#C62828" text-anchor="middle" dy="2.460457">DE∥BC</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point label_area -->
+<text x="235.00" y="305.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">S=8</text>
+</svg>

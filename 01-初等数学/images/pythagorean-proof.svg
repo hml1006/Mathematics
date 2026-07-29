@@ -1,39 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
-  <!-- 大正方形 (a+b)² -->
-  <rect x="50" y="50" width="300" height="300" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
-  
-  <!-- 四个直角三角形 -->
-  <!-- 左上 -->
-  <polygon points="50,50 200,50 50,200" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
-  <!-- 右上 -->
-  <polygon points="200,50 350,50 350,200" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
-  <!-- 右下 -->
-  <polygon points="350,200 350,350 200,350" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
-  <!-- 左下 -->
-  <polygon points="50,200 50,350 200,350" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
-  
-  <!-- 中间小正方形 c² -->
-  <polygon points="200,50 350,200 200,350 50,200" fill="#fff3e0" stroke="#e65100" stroke-width="2.5"/>
-  
-  <!-- 标注边长 -->
-  <text x="125" y="40" font-size="14" text-anchor="middle" fill="#1565c0">a</text>
-  <text x="275" y="40" font-size="14" text-anchor="middle" fill="#1565c0">b</text>
-  <text x="30" y="125" font-size="14" text-anchor="middle" fill="#1565c0">b</text>
-  <text x="30" y="275" font-size="14" text-anchor="middle" fill="#1565c0">a</text>
-  
-  <!-- 标注斜边 c -->
-  <text x="275" y="115" font-size="14" text-anchor="middle" fill="#e65100">c</text>
-  <text x="275" y="285" font-size="14" text-anchor="middle" fill="#e65100">c</text>
-  <text x="125" y="115" font-size="14" text-anchor="middle" fill="#e65100">c</text>
-  <text x="125" y="285" font-size="14" text-anchor="middle" fill="#e65100">c</text>
-  
-  <!-- 标注大正方形边长 -->
-  <text x="200" y="380" font-size="14" text-anchor="middle" fill="#2e7d32">a + b</text>
-  <text x="30" y="200" font-size="14" text-anchor="middle" fill="#2e7d32">a + b</text>
-  
-  <!-- 公式说明 -->
-  <text x="300" y="420" font-size="15" text-anchor="middle" font-weight="bold">大正方形面积 = (a+b)²</text>
-  <text x="300" y="445" font-size="14" text-anchor="middle">= 4 × (½ab) + c²</text>
-  <text x="300" y="470" font-size="14" text-anchor="middle">= 2ab + c²</text>
-  <text x="300" y="495" font-size="14" text-anchor="middle">又 (a+b)² = a² + 2ab + b²</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600mm" height="600mm" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle A1 B1 C1 -->
+<path d="M80.00,520.00 L 240.00,520.00 L 80.00,280.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle A2 B2 C2 -->
+<path d="M480.00,520.00 L 240.00,520.00 L 480.00,360.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle A3 B3 C3 -->
+<path d="M480.00,120.00 L 320.00,120.00 L 480.00,360.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle A4 B4 C4 -->
+<path d="M80.00,120.00 L 80.00,280.00 L 320.00,120.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 232 245 233 -->
+
+<!-- Filling triangle M1 M2 M3 -->
+<path d="M240.00,520.00 L 480.00,360.00 L 320.00,120.00 z" fill="#E8F5E9" stroke="none"/>
+
+<!-- Filling triangle M1 M3 M4 -->
+<path d="M240.00,520.00 L 320.00,120.00 L 80.00,280.00 z" fill="#E8F5E9" stroke="none"/>
+
+<!-- Changing color 51 51 51 -->
+
+<!-- Drawing segment P_bottom_left P_bottom_right -->
+<line x1="80.00" y1="520.00" x2="480.00" y2="520.00" style="stroke:#333333; stroke-width:0.50"/>
+
+<!-- Drawing segment P_bottom_right P_top_right -->
+<line x1="480.00" y1="520.00" x2="480.00" y2="120.00" style="stroke:#333333; stroke-width:0.50"/>
+
+<!-- Drawing segment P_top_right P_top_left -->
+<line x1="480.00" y1="120.00" x2="80.00" y2="120.00" style="stroke:#333333; stroke-width:0.50"/>
+
+<!-- Drawing segment P_top_left P_bottom_left -->
+<line x1="80.00" y1="120.00" x2="80.00" y2="520.00" style="stroke:#333333; stroke-width:0.50"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment A1 B1 -->
+<line x1="80.00" y1="520.00" x2="240.00" y2="520.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment B1 C1 -->
+<line x1="240.00" y1="520.00" x2="80.00" y2="280.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment C1 A1 -->
+<line x1="80.00" y1="280.00" x2="80.00" y2="520.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment A2 B2 -->
+<line x1="480.00" y1="520.00" x2="240.00" y2="520.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment B2 C2 -->
+<line x1="240.00" y1="520.00" x2="480.00" y2="360.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment C2 A2 -->
+<line x1="480.00" y1="360.00" x2="480.00" y2="520.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment A3 B3 -->
+<line x1="480.00" y1="120.00" x2="320.00" y2="120.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment B3 C3 -->
+<line x1="320.00" y1="120.00" x2="480.00" y2="360.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment C3 A3 -->
+<line x1="480.00" y1="360.00" x2="480.00" y2="120.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment A4 B4 -->
+<line x1="80.00" y1="120.00" x2="80.00" y2="280.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment B4 C4 -->
+<line x1="80.00" y1="280.00" x2="320.00" y2="120.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment C4 A4 -->
+<line x1="320.00" y1="120.00" x2="80.00" y2="120.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Changing color 46 125 50 -->
+
+<!-- Drawing segment M1 M2 -->
+<line x1="240.00" y1="520.00" x2="480.00" y2="360.00" style="stroke:#2E7D32; stroke-width:0.50"/>
+
+<!-- Drawing segment M2 M3 -->
+<line x1="480.00" y1="360.00" x2="320.00" y2="120.00" style="stroke:#2E7D32; stroke-width:0.50"/>
+
+<!-- Drawing segment M3 M4 -->
+<line x1="320.00" y1="120.00" x2="80.00" y2="280.00" style="stroke:#2E7D32; stroke-width:0.50"/>
+
+<!-- Drawing segment M4 M1 -->
+<line x1="80.00" y1="280.00" x2="240.00" y2="520.00" style="stroke:#2E7D32; stroke-width:0.50"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment RA1_1 RA1_2 -->
+<line x1="100.00" y1="520.00" x2="100.00" y2="500.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment RA1_2 RA1_3 -->
+<line x1="100.00" y1="500.00" x2="80.00" y2="500.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment RA2_1 RA2_2 -->
+<line x1="460.00" y1="520.00" x2="460.00" y2="500.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment RA2_2 RA2_3 -->
+<line x1="460.00" y1="500.00" x2="480.00" y2="500.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment RA3_1 RA3_2 -->
+<line x1="460.00" y1="120.00" x2="460.00" y2="140.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment RA3_2 RA3_3 -->
+<line x1="460.00" y1="140.00" x2="480.00" y2="140.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment RA4_1 RA4_2 -->
+<line x1="100.00" y1="120.00" x2="100.00" y2="140.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment RA4_2 RA4_3 -->
+<line x1="100.00" y1="140.00" x2="80.00" y2="140.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point P_bottom_left -->
+<text x="80.00" y="521.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="4.920914">a</text>
+
+<!-- Printing text at point mid_b -->
+<text x="60.00" y="400.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">b</text>
+
+<!-- Printing text at point M1 -->
+<text x="240.00" y="521.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="4.920914">a+b</text>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Printing text at point mid_BC1 -->
+<text x="160.00" y="400.00" style="font-size:4.92pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.460457">c</text>
+
+<!-- Changing color 46 125 50 -->
+
+<!-- Printing text at point mid_M1M2 -->
+<text x="360.00" y="440.00" style="font-size:4.92pt; font-style:italic; fill:#2E7D32" text-anchor="middle" dy="2.460457">c</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point title -->
+<text x="300.00" y="40.00" style="font-size:7.03pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.514938">勾股定理证明</text>
+
+<!-- Printing text at point formula -->
+<text x="300.00" y="550.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">a^2 + b^2 = c^2</text>
+
+<!-- Printing text at point c_value -->
+<text x="300.00" y="570.00" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">a = 160, b = 240, c = sqrt(a^2 + b^2)</text>
 </svg>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500mm" height="450mm" viewBox="0 0 500 450" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle A B C -->
+<path d="M250.00,380.00 L 70.00,80.00 L 430.00,80.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment A B -->
+<line x1="249.79" y1="379.66" x2="142.21" y2="200.34" style="stroke:#1565C0; stroke-width:2.00"/>
+<line x1="141.79" y1="199.66" x2="70.21" y2="80.34" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment B C -->
+<line x1="70.40" y1="80.00" x2="429.60" y2="80.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment C A -->
+<line x1="429.79" y1="80.34" x2="358.21" y2="199.66" style="stroke:#1565C0; stroke-width:2.00"/>
+<line x1="357.79" y1="200.34" x2="250.21" y2="379.66" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Drawing segment D E -->
+<line x1="142.40" y1="200.00" x2="357.60" y2="200.00" style="stroke:#C62828; stroke-width:2.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment de_m1a de_m1b -->
+<line x1="217.00" y1="203.00" x2="223.00" y2="197.00" style="stroke:#000000; stroke-width:1.50"/>
+
+<!-- Drawing segment de_m2a de_m2b -->
+<line x1="277.00" y1="203.00" x2="283.00" y2="197.00" style="stroke:#000000; stroke-width:1.50"/>
+
+<!-- Drawing segment bc_m1a bc_m1b -->
+<line x1="217.00" y1="83.00" x2="223.00" y2="77.00" style="stroke:#000000; stroke-width:1.50"/>
+
+<!-- Drawing segment bc_m2a bc_m2b -->
+<line x1="277.00" y1="83.00" x2="283.00" y2="77.00" style="stroke:#000000; stroke-width:1.50"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Marking point A by circle -->
+<circle cx="250.00" cy="380.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.50"/>
+
+<!-- Marking point B by circle -->
+<circle cx="70.00" cy="80.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.50"/>
+
+<!-- Marking point C by circle -->
+<circle cx="430.00" cy="80.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.50"/>
+
+<!-- Marking point D by circle -->
+<circle cx="142.00" cy="200.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.50"/>
+
+<!-- Marking point E by circle -->
+<circle cx="358.00" cy="200.00" r="0.40" fill="none" stroke="#000000" stroke-width="1.50"/>
+
+<!-- Printing text at point label_A -->
+<text x="250.00" y="400.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">A</text>
+
+<!-- Printing text at point label_B -->
+<text x="45.00" y="60.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">B</text>
+
+<!-- Printing text at point label_C -->
+<text x="455.00" y="60.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">C</text>
+
+<!-- Printing text at point label_D -->
+<text x="118.00" y="200.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">D</text>
+
+<!-- Printing text at point label_E -->
+<text x="382.00" y="200.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">E</text>
+
+<!-- Printing text at point len_AD -->
+<text x="185.00" y="285.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">3</text>
+
+<!-- Printing text at point len_DB -->
+<text x="100.00" y="130.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">2</text>
+
+<!-- Printing text at point len_DE -->
+<text x="250.00" y="218.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">4</text>
+
+<!-- Printing text at point par_label -->
+<text x="250.00" y="140.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">DE∥BC</text>
+</svg>

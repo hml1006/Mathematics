@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700mm" height="500mm" viewBox="0 0 700 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment A B -->
+<line x1="50.00" y1="120.00" x2="650.00" y2="120.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment C D -->
+<line x1="50.00" y1="320.00" x2="650.00" y2="320.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Drawing segment E F -->
+<line x1="150.00" y1="50.00" x2="550.00" y2="400.00" style="stroke:#C62828; stroke-width:1.50"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment L1_m1a L1_m1b -->
+<line x1="327.00" y1="123.00" x2="333.00" y2="117.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment L1_m2a L1_m2b -->
+<line x1="367.00" y1="123.00" x2="373.00" y2="117.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment L2_m1a L2_m1b -->
+<line x1="327.00" y1="323.00" x2="333.00" y2="317.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment L2_m2a L2_m2b -->
+<line x1="367.00" y1="323.00" x2="373.00" y2="317.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing arc P P_left -41.20 -->
+<path d="M203.67,96.95  a35.00,35.00 0 0,0 -8.67,23.05" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Drawing arc P P_right 138.80 -->
+<path d="M265.00,120.00  a35.00,35.00 0 0,0 -61.33,-23.05" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Drawing arc P P_left 138.80 -->
+<path d="M195.00,120.00  a35.00,35.00 0 0,0 61.33,23.05" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Drawing arc P P_right -41.20 -->
+<path d="M256.33,143.05  a35.00,35.00 0 0,0 8.67,-23.05" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Drawing arc Q Q_left -41.20 -->
+<path d="M432.67,296.95  a35.00,35.00 0 0,0 -8.67,23.05" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Drawing arc Q Q_right 138.80 -->
+<path d="M494.00,320.00  a35.00,35.00 0 0,0 -61.33,-23.05" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Drawing arc Q Q_left 138.80 -->
+<path d="M424.00,320.00  a35.00,35.00 0 0,0 61.33,23.05" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Drawing arc Q Q_right -41.20 -->
+<path d="M485.33,343.05  a35.00,35.00 0 0,0 8.67,-23.05" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point l1 -->
+<text x="178.50" y="100.60" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠1</text>
+
+<!-- Printing text at point l2 -->
+<text x="244.10" y="82.60" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠2</text>
+
+<!-- Printing text at point l3 -->
+<text x="215.90" y="157.40" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠3</text>
+
+<!-- Printing text at point l4 -->
+<text x="272.10" y="135.80" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠4</text>
+
+<!-- Printing text at point l5 -->
+<text x="407.50" y="300.60" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠5</text>
+
+<!-- Printing text at point l6 -->
+<text x="473.10" y="282.60" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠6</text>
+
+<!-- Printing text at point l7 -->
+<text x="444.90" y="357.40" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠7</text>
+
+<!-- Printing text at point l8 -->
+<text x="501.10" y="335.80" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">∠8</text>
+
+<!-- Printing text at point label_L1 -->
+<text x="30.00" y="120.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">L1</text>
+
+<!-- Printing text at point label_L2 -->
+<text x="30.00" y="320.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">L2</text>
+
+<!-- Printing text at point text_corr -->
+<text x="350.00" y="465.00" style="font-size:3.51pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.757469">同位角：∠1 = ∠5, ∠2 = ∠6, ∠3 = ∠7, ∠4 = ∠8</text>
+
+<!-- Printing text at point text_alt -->
+<text x="350.00" y="478.00" style="font-size:3.51pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.757469">内错角：∠3 = ∠5, ∠4 = ∠6</text>
+
+<!-- Printing text at point text_same -->
+<text x="350.00" y="491.00" style="font-size:3.51pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.757469">同旁内角：∠4 + ∠5 = 180°</text>
+
+<!-- Printing text at point text_title -->
+<text x="350.00" y="30.00" style="font-size:6.33pt; font-style:italic; fill:#000000" text-anchor="middle" dy="3.163445">平行线性质</text>
+</svg>

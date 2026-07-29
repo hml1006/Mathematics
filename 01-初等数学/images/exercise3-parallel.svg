@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600mm" height="400mm" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment A B -->
+<line x1="30.00" y1="100.00" x2="570.00" y2="100.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment C D -->
+<line x1="30.00" y1="280.00" x2="570.00" y2="280.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment ab_m1a ab_m1b -->
+<line x1="307.00" y1="103.00" x2="313.00" y2="97.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment ab_m2a ab_m2b -->
+<line x1="347.00" y1="103.00" x2="353.00" y2="97.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment cd_m1a cd_m1b -->
+<line x1="307.00" y1="283.00" x2="313.00" y2="277.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment cd_m2a cd_m2b -->
+<line x1="347.00" y1="283.00" x2="353.00" y2="277.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Drawing segment E F -->
+<line x1="150.00" y1="40.00" x2="500.00" y2="320.00" style="stroke:#C62828; stroke-width:0.50"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing arc P P1_start -38.66 -->
+<path d="M252.33,121.86  a35.00,35.00 0 0,0 7.67,-21.86" fill="none" stroke="#1565C0" stroke-width="0.80"/>
+
+<!-- Drawing arc Q Q2_start -38.66 -->
+<path d="M477.33,301.86  a35.00,35.00 0 0,0 7.67,-21.86" fill="none" stroke="#1565C0" stroke-width="0.80"/>
+
+<!-- Drawing arc Q Q3_start 141.34 -->
+<path d="M485.00,280.00  a35.00,35.00 0 0,0 -62.33,-21.86" fill="none" stroke="#1565C0" stroke-width="0.80"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point t1_label -->
+<text x="252.00" y="112.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">∠1</text>
+
+<!-- Printing text at point t1_val -->
+<text x="270.00" y="125.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">65°</text>
+
+<!-- Printing text at point t2_label -->
+<text x="477.00" y="292.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">∠2</text>
+
+<!-- Printing text at point t3_label -->
+<text x="465.00" y="255.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">∠3</text>
+
+<!-- Printing text at point label_AB -->
+<text x="30.00" y="85.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">AB</text>
+
+<!-- Printing text at point label_CD -->
+<text x="30.00" y="295.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">CD</text>
+</svg>

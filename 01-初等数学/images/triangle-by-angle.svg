@@ -1,23 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 340" width="750" height="340">
-  <!-- 锐角三角形 -->
-  <g transform="translate(125,20)">
-    <polygon points="0,160 100,160 60,20" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
-    <text x="50" y="180" font-size="14" text-anchor="middle" font-weight="bold">锐角三角形</text>
-    <text x="50" y="200" font-size="12" text-anchor="middle" fill="#666">三个内角均为锐角</text>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500mm" height="270mm" viewBox="0 0 500 270" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
 
-  <!-- 直角三角形 -->
-  <g transform="translate(325,20)">
-    <polygon points="0,160 100,160 0,40" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
-    <rect x="0" y="148" width="12" height="12" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
-    <text x="50" y="180" font-size="14" text-anchor="middle" font-weight="bold">直角三角形</text>
-    <text x="50" y="200" font-size="12" text-anchor="middle" fill="#666">有一个内角为 90°</text>
-  </g>
+<!-- Changing color 227 242 253 -->
 
-  <!-- 钝角三角形 -->
-  <g transform="translate(525,20)">
-    <polygon points="0,160 130,160 30,20" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-    <text x="65" y="180" font-size="14" text-anchor="middle" font-weight="bold">钝角三角形</text>
-    <text x="65" y="200" font-size="12" text-anchor="middle" fill="#666">有一个内角为钝角</text>
-  </g>
+<!-- Filling triangle A1 B1 C1 -->
+<path d="M40.00,230.00 L 140.00,230.00 L 90.00,60.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment A1 B1 -->
+<line x1="40.40" y1="230.00" x2="139.60" y2="230.00" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment B1 C1 -->
+<line x1="139.89" y1="229.62" x2="90.11" y2="60.38" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Drawing segment C1 A1 -->
+<line x1="89.89" y1="60.38" x2="40.11" y2="229.62" style="stroke:#1565C0; stroke-width:0.50"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Marking point A1 by circle -->
+<circle cx="40.00" cy="230.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="0.50"/>
+<text x="40.70" y="229.30" style="font-size:3.51pt; font-style:italic; fill:#1565C0" >A1</text>
+
+<!-- Marking point B1 by circle -->
+<circle cx="140.00" cy="230.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="0.50"/>
+<text x="139.30" y="229.30" style="font-size:3.51pt; font-style:italic; fill:#1565C0" text-anchor="end">B1</text>
+
+<!-- Marking point C1 by circle -->
+<circle cx="90.00" cy="60.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="0.50"/>
+<text x="90.00" y="61.00" style="font-size:3.51pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="3.514938">C1</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point T1 -->
+<text x="90.00" y="45.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">锐角三角形</text>
+
+<!-- Changing color 102 102 102 -->
+
+<!-- Printing text at point S1 -->
+<text x="90.00" y="28.00" style="font-size:3.51pt; font-style:italic; fill:#666666" text-anchor="middle" dy="1.757469">三个内角均为锐角</text>
+
+<!-- Changing color 232 245 233 -->
+
+<!-- Filling triangle A2 B2 C2 -->
+<path d="M190.00,230.00 L 290.00,230.00 L 190.00,60.00 z" fill="#E8F5E9" stroke="none"/>
+
+<!-- Changing color 46 125 50 -->
+
+<!-- Drawing segment A2 B2 -->
+<line x1="190.40" y1="230.00" x2="289.60" y2="230.00" style="stroke:#2E7D32; stroke-width:0.50"/>
+
+<!-- Drawing segment B2 C2 -->
+<line x1="289.80" y1="229.66" x2="190.20" y2="60.34" style="stroke:#2E7D32; stroke-width:0.50"/>
+
+<!-- Drawing segment C2 A2 -->
+<line x1="190.00" y1="60.40" x2="190.00" y2="229.60" style="stroke:#2E7D32; stroke-width:0.50"/>
+
+<!-- Changing color 46 125 50 -->
+
+<!-- Marking point A2 by circle -->
+<circle cx="190.00" cy="230.00" r="0.40" fill="none" stroke="#2E7D32" stroke-width="0.50"/>
+<text x="190.70" y="229.30" style="font-size:3.51pt; font-style:italic; fill:#2E7D32" >A2</text>
+
+<!-- Marking point B2 by circle -->
+<circle cx="290.00" cy="230.00" r="0.40" fill="none" stroke="#2E7D32" stroke-width="0.50"/>
+<text x="289.30" y="229.30" style="font-size:3.51pt; font-style:italic; fill:#2E7D32" text-anchor="end">B2</text>
+
+<!-- Marking point C2 by circle -->
+<circle cx="190.00" cy="60.00" r="0.40" fill="none" stroke="#2E7D32" stroke-width="0.50"/>
+<text x="190.00" y="61.00" style="font-size:3.51pt; font-style:italic; fill:#2E7D32" text-anchor="middle" dy="3.514938">C2</text>
+
+<!-- Changing color 46 125 50 -->
+
+<!-- Drawing segment ra1 ra2 -->
+<line x1="190.00" y1="222.00" x2="198.00" y2="222.00" style="stroke:#2E7D32; stroke-width:0.30"/>
+
+<!-- Drawing segment ra2 ra3 -->
+<line x1="198.00" y1="222.00" x2="198.00" y2="230.00" style="stroke:#2E7D32; stroke-width:0.30"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point T2 -->
+<text x="240.00" y="45.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">直角三角形</text>
+
+<!-- Changing color 102 102 102 -->
+
+<!-- Printing text at point S2 -->
+<text x="240.00" y="28.00" style="font-size:3.51pt; font-style:italic; fill:#666666" text-anchor="middle" dy="1.757469">有一个内角为 90°</text>
+
+<!-- Changing color 255 243 224 -->
+
+<!-- Filling triangle A3 B3 C3 -->
+<path d="M340.00,230.00 L 440.00,230.00 L 410.00,200.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Changing color 230 81 0 -->
+
+<!-- Drawing segment A3 B3 -->
+<line x1="340.40" y1="230.00" x2="439.60" y2="230.00" style="stroke:#E65100; stroke-width:0.50"/>
+
+<!-- Drawing segment B3 C3 -->
+<line x1="439.72" y1="229.72" x2="410.28" y2="200.28" style="stroke:#E65100; stroke-width:0.50"/>
+
+<!-- Drawing segment C3 A3 -->
+<line x1="409.63" y1="200.16" x2="340.37" y2="229.84" style="stroke:#E65100; stroke-width:0.50"/>
+
+<!-- Changing color 230 81 0 -->
+
+<!-- Marking point A3 by circle -->
+<circle cx="340.00" cy="230.00" r="0.40" fill="none" stroke="#E65100" stroke-width="0.50"/>
+<text x="340.70" y="229.30" style="font-size:3.51pt; font-style:italic; fill:#E65100" >A3</text>
+
+<!-- Marking point B3 by circle -->
+<circle cx="440.00" cy="230.00" r="0.40" fill="none" stroke="#E65100" stroke-width="0.50"/>
+<text x="439.30" y="229.30" style="font-size:3.51pt; font-style:italic; fill:#E65100" text-anchor="end">B3</text>
+
+<!-- Marking point C3 by circle -->
+<circle cx="410.00" cy="200.00" r="0.40" fill="none" stroke="#E65100" stroke-width="0.50"/>
+<text x="410.00" y="201.00" style="font-size:3.51pt; font-style:italic; fill:#E65100" text-anchor="middle" dy="3.514938">C3</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point T3 -->
+<text x="390.00" y="45.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">钝角三角形</text>
+
+<!-- Changing color 102 102 102 -->
+
+<!-- Printing text at point S3 -->
+<text x="390.00" y="28.00" style="font-size:3.51pt; font-style:italic; fill:#666666" text-anchor="middle" dy="1.757469">有一个内角为钝角</text>
 </svg>
