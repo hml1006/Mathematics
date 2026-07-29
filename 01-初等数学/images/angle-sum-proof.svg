@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400mm" height="300mm" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>和角公式几何证明</title>
+
+<!-- 背景 -->
+<rect width="400" height="300" fill="#fafafa"/>
+
+<!-- 单位圆 -->
+<circle cx="150" cy="150" r="120" fill="none" stroke="#999" stroke-width="0.8" stroke-dasharray="3,2"/>
+
+<!-- 半径 OA, OB, OC -->
+<line x1="150" y1="150" x2="270" y2="150" stroke="#333" stroke-width="1.5"/>
+<line x1="150" y1="150" x2="253.92" y2="90" stroke="#333" stroke-width="1.5"/>
+<line x1="150" y1="150" x2="227.14" y2="58.07" stroke="#333" stroke-width="1.5"/>
+
+<!-- 垂线 CD (C到OA) -->
+<line x1="227.14" y1="58.07" x2="227.14" y2="150" stroke="#c62828" stroke-width="1.2"/>
+
+<!-- 垂线 CE (C到OB) -->
+<line x1="227.14" y1="58.07" x2="247.65" y2="93.62" stroke="#1565c0" stroke-width="1.2"/>
+
+<!-- 垂线 EF (E到OA) -->
+<line x1="247.65" y1="93.62" x2="247.65" y2="150" stroke="#2e7d32" stroke-width="1.2"/>
+
+<!-- 垂线 CG (C到EF) -->
+<line x1="227.14" y1="58.07" x2="247.65" y2="58.07" stroke="#e65100" stroke-width="1.2"/>
+
+<!-- 直角标记 -->
+<!-- D处直角 -->
+<polyline points="227.14,145 232.14,145 232.14,150" fill="none" stroke="#666" stroke-width="0.8"/>
+<!-- F处直角 -->
+<polyline points="247.65,145 252.65,145 252.65,150" fill="none" stroke="#666" stroke-width="0.8"/>
+<!-- G处直角 -->
+<polyline points="247.65,58.07 247.65,63.07 242.65,63.07" fill="none" stroke="#666" stroke-width="0.8"/>
+<!-- E处直角 -->
+<polyline points="244.65,90.62 241.65,92.62 243.65,95.62" fill="none" stroke="#666" stroke-width="0.8"/>
+
+<!-- 角度弧线 -->
+<!-- α角 (30°) -->
+<path d="M 170,150 A 20,20 0 0,0 167.32,140" fill="none" stroke="#1976d2" stroke-width="1"/>
+<!-- β角 (20°) -->
+<path d="M 172,138 A 25,25 0 0,0 168.5,130" fill="none" stroke="#e65100" stroke-width="1"/>
+
+<!-- 点标记 -->
+<circle cx="150" cy="150" r="2.5" fill="#333"/>
+<circle cx="270" cy="150" r="2.5" fill="#333"/>
+<circle cx="253.92" cy="90" r="2.5" fill="#333"/>
+<circle cx="227.14" cy="58.07" r="2.5" fill="#333"/>
+<circle cx="227.14" cy="150" r="2" fill="#c62828"/>
+<circle cx="247.65" cy="93.62" r="2" fill="#1565c0"/>
+<circle cx="247.65" cy="150" r="2" fill="#2e7d32"/>
+<circle cx="247.65" cy="58.07" r="2" fill="#e65100"/>
+
+<!-- 点标签 -->
+<text x="142" y="165" font-family="serif" font-size="12" fill="#333">O</text>
+<text x="275" y="155" font-family="serif" font-size="12" fill="#333">A</text>
+<text x="258" y="88" font-family="serif" font-size="12" fill="#333">B</text>
+<text x="215" y="55" font-family="serif" font-size="12" fill="#333">C</text>
+<text x="220" y="165" font-family="serif" font-size="10" fill="#c62828">D</text>
+<text x="252" y="92" font-family="serif" font-size="10" fill="#1565c0">E</text>
+<text x="252" y="165" font-family="serif" font-size="10" fill="#2e7d32">F</text>
+<text x="250" y="55" font-family="serif" font-size="10" fill="#e65100">G</text>
+
+<!-- 角度标签 -->
+<text x="175" y="142" font-family="serif" font-size="11" font-style="italic" fill="#1976d2">α</text>
+<text x="178" y="132" font-family="serif" font-size="11" font-style="italic" fill="#e65100">β</text>
+
+<!-- 线段标注 -->
+<!-- OD = cos(α+β) -->
+<text x="185" y="168" font-family="serif" font-size="9" fill="#666" text-anchor="middle">cos(α+β)</text>
+<!-- CD = sin(α+β) -->
+<text x="218" y="105" font-family="serif" font-size="9" fill="#666" transform="rotate(-90,218,105)">sin(α+β)</text>
+
+<!-- 公式说明 -->
+<text x="20" y="240" font-family="serif" font-size="11" fill="#333">证明思路：</text>
+<text x="20" y="258" font-family="serif" font-size="10" fill="#555">在单位圆上，OC=1，∠AOC=α+β</text>
+<text x="20" y="274" font-family="serif" font-size="10" fill="#555">OD = OF − FD = cosα·cosβ − sinα·sinβ = cos(α+β)</text>
+<text x="20" y="290" font-family="serif" font-size="10" fill="#555">CD = GF + FC = sinα·cosβ + cosα·sinβ = sin(α+β)</text>
+
+</svg>

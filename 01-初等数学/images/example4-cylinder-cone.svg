@@ -12,10 +12,10 @@
 
 <!-- Changing color 21 101 192 -->
 
-<!-- Drawing segment top_left top_right -->
-<line x1="130.00" y1="320.00" x2="370.00" y2="320.00" style="stroke:#1565C0; stroke-width:2.00"/>
+<!-- 底面椭圆前半部分（朝前的弧线，营造立体感） -->
+<path d="M130.00,320.00 Q130.00,340.00 250.00,340.00 Q370.00,340.00 370.00,320.00" fill="none" stroke="#1565C0" stroke-width="2.00"/>
 
-<!-- Drawing segment top_right base_right -->
+<!-- Drawing segment base_right base_right -->
 <line x1="370.00" y1="320.00" x2="370.00" y2="120.00" style="stroke:#1565C0; stroke-width:2.00"/>
 
 <!-- Drawing segment base_right base_left -->
@@ -25,6 +25,9 @@
 <line x1="130.00" y1="120.00" x2="130.00" y2="320.00" style="stroke:#1565C0; stroke-width:2.00"/>
 
 <!-- Changing color 21 101 192 -->
+
+<!-- 顶面椭圆前半部分（朝下的弧线，营造立体感） -->
+<path d="M130.00,120.00 Q130.00,140.00 250.00,140.00 Q370.00,140.00 370.00,120.00" fill="none" stroke="#1565C0" stroke-width="2.00"/>
 
 <!-- Drawing segment base_left el1 -->
 <line x1="130.00" y1="120.00" x2="154.00" y2="108.00" style="stroke:#1565C0; stroke-width:2.00"/>
@@ -77,8 +80,8 @@
 <!-- Drawing segment apex top_right -->
 <line x1="250.00" y1="480.00" x2="370.00" y2="320.00" style="stroke:#E65100; stroke-width:2.00"/>
 
-<!-- Drawing segment top_left top_right -->
-<line x1="130.00" y1="320.00" x2="370.00" y2="320.00" style="stroke:#E65100; stroke-width:2.00"/>
+<!-- 圆锥底面椭圆前半部分（朝前的弧线，营造立体感） -->
+<path d="M130.00,320.00 Q130.00,340.00 250.00,340.00 Q370.00,340.00 370.00,320.00" fill="none" stroke="#E65100" stroke-width="2.00"/>
 
 <!-- Changing color 102 102 102 -->
 
