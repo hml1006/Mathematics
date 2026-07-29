@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500mm" height="400mm" viewBox="0 0 500 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle a1 a2 a3 -->
+<path d="M100.00,200.00 L 400.00,200.00 L 350.00,350.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle a1 a3 a4 -->
+<path d="M100.00,200.00 L 350.00,350.00 L 50.00,350.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 255 243 224 -->
+
+<!-- Filling triangle b1 b2 b3 -->
+<path d="M100.00,200.00 L 400.00,200.00 L 450.00,50.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Filling triangle b1 b3 b4 -->
+<path d="M100.00,200.00 L 450.00,50.00 L 150.00,50.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment a1 a2 -->
+<line x1="100.00" y1="200.00" x2="400.00" y2="200.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment a2 a3 -->
+<line x1="400.00" y1="200.00" x2="350.00" y2="350.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment a3 a4 -->
+<line x1="350.00" y1="350.00" x2="50.00" y2="350.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment a4 a1 -->
+<line x1="50.00" y1="350.00" x2="100.00" y2="200.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Changing color 230 81 0 -->
+
+<!-- Drawing segment b1 b2 -->
+<line x1="100.00" y1="200.00" x2="400.00" y2="200.00" style="stroke:#E65100; stroke-width:1.00"/>
+
+<!-- Drawing segment b2 b3 -->
+<line x1="400.00" y1="200.00" x2="450.00" y2="50.00" style="stroke:#E65100; stroke-width:1.00"/>
+
+<!-- Drawing segment b3 b4 -->
+<line x1="450.00" y1="50.00" x2="150.00" y2="50.00" style="stroke:#E65100; stroke-width:1.00"/>
+
+<!-- Drawing segment b4 b1 -->
+<line x1="150.00" y1="50.00" x2="100.00" y2="200.00" style="stroke:#E65100; stroke-width:1.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment L1 L2 -->
+<line x1="100.00" y1="200.00" x2="400.00" y2="200.00" style="stroke:#000000; stroke-width:1.50"/>
+
+<!-- Printing text at point lbl -->
+<text x="250.00" y="182.00" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975">棱 l</text>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Printing text at point lalpha -->
+<text x="225.00" y="275.00" style="font-size:2.81pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="1.405975">α</text>
+
+<!-- Changing color 230 81 0 -->
+
+<!-- Printing text at point lbeta -->
+<text x="275.00" y="125.00" style="font-size:2.81pt; font-style:italic; fill:#E65100" text-anchor="middle" dy="1.405975">β</text>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Drawing segment O A -->
+<line x1="250.00" y1="200.00" x2="250.00" y2="270.00" style="stroke:#C62828; stroke-width:1.50"/>
+
+<!-- Drawing segment O B -->
+<line x1="250.00" y1="200.00" x2="300.00" y2="110.00" style="stroke:#C62828; stroke-width:1.50"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point lO -->
+<text x="255.00" y="195.00" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975">O</text>
+
+<!-- Printing text at point lA -->
+<text x="240.00" y="272.00" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975">A</text>
+
+<!-- Printing text at point lB -->
+<text x="308.00" y="112.00" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975">B</text>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Drawing segment arc1 arc2 -->
+<line x1="250.00" y1="225.00" x2="256.50" y2="224.10" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc2 arc3 -->
+<line x1="256.50" y1="224.10" x2="262.50" y2="221.60" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc3 arc4 -->
+<line x1="262.50" y1="221.60" x2="267.70" y2="217.70" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc4 arc5 -->
+<line x1="267.70" y1="217.70" x2="271.70" y2="212.50" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc5 arc6 -->
+<line x1="271.70" y1="212.50" x2="274.10" y2="206.50" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc6 arc7 -->
+<line x1="274.10" y1="206.50" x2="275.00" y2="200.00" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc7 arc8 -->
+<line x1="275.00" y1="200.00" x2="274.10" y2="193.50" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc8 arc9 -->
+<line x1="274.10" y1="193.50" x2="271.70" y2="187.50" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc9 arc10 -->
+<line x1="271.70" y1="187.50" x2="267.70" y2="182.30" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Drawing segment arc10 arc11 -->
+<line x1="267.70" y1="182.30" x2="262.50" y2="178.30" style="stroke:#C62828; stroke-width:1.00"/>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Printing text at point lang -->
+<text x="268.00" y="205.00" style="font-size:2.81pt; font-style:italic; fill:#C62828" text-anchor="middle" dy="1.405975">平面角</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment r1 r2 -->
+<line x1="250.00" y1="210.00" x2="260.00" y2="210.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment r2 r3 -->
+<line x1="260.00" y1="210.00" x2="260.00" y2="200.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment r4 r6 -->
+<line x1="254.85" y1="191.26" x2="264.85" y2="191.26" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment r5 r6 -->
+<line x1="260.00" y1="200.00" x2="264.85" y2="191.26" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point ldih -->
+<text x="250.00" y="370.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">二面角</text>
+</svg>

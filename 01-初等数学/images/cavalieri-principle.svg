@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750mm" height="350mm" viewBox="0 0 750 350" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling circle c -->
+<circle cx="150.00" cy="200.00" r="100.00" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing circle c -->
+<circle cx="150.00" cy="200.00" r="100.00" fill="none" stroke="#000000" stroke-width="1.50"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment O A -->
+<line x1="150.00" y1="200.00" x2="150.00" y2="100.00" style="stroke:#1565C0; stroke-width:1.50"/>
+
+<!-- Changing color 220 20 60 -->
+
+<!-- Drawing segment h1 h2 -->
+<line x1="63.00" y1="150.00" x2="237.00" y2="150.00" style="stroke:#DC143C; stroke-width:1.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment hx1 hx2 -->
+<line x1="60.00" y1="150.00" x2="60.00" y2="300.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point lab_x -->
+<text x="50.00" y="225.00" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">x</text>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Printing text at point lab_r -->
+<text x="165.00" y="160.00" style="font-size:4.92pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.460457">R</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point lab_o -->
+<text x="135.00" y="125.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">O</text>
+
+<!-- Changing color 220 20 60 -->
+
+<!-- Printing text at point lab_rx -->
+<text x="200.00" y="155.00" style="font-size:4.22pt; font-style:italic; fill:#DC143C" text-anchor="middle" dy="2.108963">r(x)</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point lab_s1 -->
+<text x="150.00" y="335.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">S(x) = pi R^2 - pi x^2 = pi (R^2 - x^2)</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point title1 -->
+<text x="150.00" y="15.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">半球体</text>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle a2 b2 c2 -->
+<path d="M420.00,100.00 L 580.00,100.00 L 580.00,300.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle a2 c2 d2 -->
+<path d="M420.00,100.00 L 580.00,300.00 L 420.00,300.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment a2 b2 -->
+<line x1="420.00" y1="100.00" x2="580.00" y2="100.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment b2 c2 -->
+<line x1="580.00" y1="100.00" x2="580.00" y2="300.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment c2 d2 -->
+<line x1="580.00" y1="300.00" x2="420.00" y2="300.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Drawing segment d2 a2 -->
+<line x1="420.00" y1="300.00" x2="420.00" y2="100.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment a2 b2 -->
+<line x1="420.00" y1="100.00" x2="580.00" y2="100.00" style="stroke:#1565C0; stroke-width:1.50"/>
+
+<!-- Drawing segment d2 c2 -->
+<line x1="420.00" y1="300.00" x2="580.00" y2="300.00" style="stroke:#1565C0; stroke-width:1.50"/>
+
+<!-- Changing color 220 20 60 -->
+
+<!-- Drawing segment cone_bl apex -->
+<line x1="420.00" y1="300.00" x2="500.00" y2="100.00" style="stroke:#DC143C; stroke-width:1.50"/>
+
+<!-- Drawing segment cone_br apex -->
+<line x1="580.00" y1="300.00" x2="500.00" y2="100.00" style="stroke:#DC143C; stroke-width:1.50"/>
+
+<!-- Changing color 34 139 34 -->
+
+<!-- Drawing segment h3 h4 -->
+<line x1="420.00" y1="200.00" x2="580.00" y2="200.00" style="stroke:#228B22; stroke-width:1.00"/>
+
+<!-- Changing color 220 20 60 -->
+
+<!-- Drawing segment cx ce -->
+<line x1="500.00" y1="200.00" x2="460.00" y2="200.00" style="stroke:#DC143C; stroke-width:1.00"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment hx3 hx4 -->
+<line x1="410.00" y1="200.00" x2="410.00" y2="300.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Printing text at point lab_x2 -->
+<text x="400.00" y="250.00" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">x</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point lab_r2 -->
+<text x="500.00" y="310.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">R</text>
+
+<!-- Printing text at point lab_rx2 -->
+<text x="480.00" y="195.00" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">x</text>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Printing text at point lab_r3 -->
+<text x="590.00" y="200.00" style="font-size:4.92pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.460457">R</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point lab_s2 -->
+<text x="500.00" y="335.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">S(x) = pi R^2 - pi x^2 = pi (R^2 - x^2)</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point title2 -->
+<text x="500.00" y="15.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">圆柱挖去圆锥</text>
+</svg>

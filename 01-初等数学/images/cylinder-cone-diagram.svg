@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700mm" height="400mm" viewBox="0 0 700 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle cyl_bl cyl_tl cyl_br -->
+<path d="M120.00,300.00 L 120.00,120.00 L 240.00,300.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_br cyl_tl cyl_tr -->
+<path d="M240.00,300.00 L 120.00,120.00 L 240.00,120.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment cyl_bl cyl_tl -->
+<line x1="120.00" y1="300.00" x2="120.00" y2="120.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment cyl_br cyl_tr -->
+<line x1="240.00" y1="300.00" x2="240.00" y2="120.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment cyl_tl te1 -->
+<line x1="120.00" y1="120.00" x2="128.00" y2="106.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment te1 te2 -->
+<line x1="128.00" y1="106.00" x2="145.00" y2="94.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment te2 te3 -->
+<line x1="145.00" y1="94.00" x2="168.00" y2="86.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment te3 te4 -->
+<line x1="168.00" y1="86.00" x2="180.00" y2="84.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment te4 te5 -->
+<line x1="180.00" y1="84.00" x2="192.00" y2="86.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment te5 te6 -->
+<line x1="192.00" y1="86.00" x2="215.00" y2="94.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment te6 te7 -->
+<line x1="215.00" y1="94.00" x2="232.00" y2="106.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment te7 cyl_tr -->
+<line x1="232.00" y1="106.00" x2="240.00" y2="120.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle cyl_tl te1 te4 -->
+<path d="M120.00,120.00 L 128.00,106.00 L 180.00,84.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_tl te4 te7 -->
+<path d="M120.00,120.00 L 180.00,84.00 L 232.00,106.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_tl te7 cyl_tr -->
+<path d="M120.00,120.00 L 232.00,106.00 L 240.00,120.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_tr te7 te4 -->
+<path d="M240.00,120.00 L 232.00,106.00 L 180.00,84.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_tr te4 te1 -->
+<path d="M240.00,120.00 L 180.00,84.00 L 128.00,106.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_tr te1 cyl_tl -->
+<path d="M240.00,120.00 L 128.00,106.00 L 120.00,120.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment cyl_bl be1 -->
+<line x1="120.00" y1="300.00" x2="128.00" y2="314.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment be1 be2 -->
+<line x1="128.00" y1="314.00" x2="145.00" y2="326.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment be2 be3 -->
+<line x1="145.00" y1="326.00" x2="168.00" y2="334.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment be3 be4 -->
+<line x1="168.00" y1="334.00" x2="180.00" y2="336.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment be4 be5 -->
+<line x1="180.00" y1="336.00" x2="192.00" y2="334.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment be5 be6 -->
+<line x1="192.00" y1="334.00" x2="215.00" y2="326.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment be6 be7 -->
+<line x1="215.00" y1="326.00" x2="232.00" y2="314.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Drawing segment be7 cyl_br -->
+<line x1="232.00" y1="314.00" x2="240.00" y2="300.00" style="stroke:#1565C0; stroke-width:2.00"/>
+
+<!-- Changing color 227 242 253 -->
+
+<!-- Filling triangle cyl_bl be1 be4 -->
+<path d="M120.00,300.00 L 128.00,314.00 L 180.00,336.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_bl be4 be7 -->
+<path d="M120.00,300.00 L 180.00,336.00 L 232.00,314.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_bl be7 cyl_br -->
+<path d="M120.00,300.00 L 232.00,314.00 L 240.00,300.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_br be7 be4 -->
+<path d="M240.00,300.00 L 232.00,314.00 L 180.00,336.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_br be4 be1 -->
+<path d="M240.00,300.00 L 180.00,336.00 L 128.00,314.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Filling triangle cyl_br be1 cyl_bl -->
+<path d="M240.00,300.00 L 128.00,314.00 L 120.00,300.00 z" fill="#E3F2FD" stroke="none"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment r1 r2 -->
+<line x1="180.00" y1="336.00" x2="181.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="182.25" y1="336.00" x2="183.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="184.50" y1="336.00" x2="186.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="186.75" y1="336.00" x2="188.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="189.00" y1="336.00" x2="190.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="191.25" y1="336.00" x2="192.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="193.50" y1="336.00" x2="195.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="195.75" y1="336.00" x2="197.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="198.00" y1="336.00" x2="199.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="200.25" y1="336.00" x2="201.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="202.50" y1="336.00" x2="204.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="204.75" y1="336.00" x2="206.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="207.00" y1="336.00" x2="208.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="209.25" y1="336.00" x2="210.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="211.50" y1="336.00" x2="213.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="213.75" y1="336.00" x2="215.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="216.00" y1="336.00" x2="217.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="218.25" y1="336.00" x2="219.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="220.50" y1="336.00" x2="222.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="222.75" y1="336.00" x2="224.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="225.00" y1="336.00" x2="226.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="227.25" y1="336.00" x2="228.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="229.50" y1="336.00" x2="231.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="231.75" y1="336.00" x2="233.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="234.00" y1="336.00" x2="235.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="236.25" y1="336.00" x2="237.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="238.50" y1="336.00" x2="240.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Printing text at point rlab -->
+<text x="210.00" y="345.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">r</text>
+
+<!-- Printing text at point hlab -->
+<text x="105.00" y="210.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">h</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point cyl_f -->
+<text x="180.00" y="360.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">V = pi r^2 h</text>
+
+<!-- Printing text at point cyl_t -->
+<text x="180.00" y="30.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">圆柱</text>
+
+<!-- Changing color 255 243 224 -->
+
+<!-- Filling triangle cone_bl cone_br apex -->
+<path d="M440.00,300.00 L 560.00,300.00 L 500.00,120.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Changing color 230 81 0 -->
+
+<!-- Drawing segment cone_bl apex -->
+<line x1="440.00" y1="300.00" x2="500.00" y2="120.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Drawing segment cone_br apex -->
+<line x1="560.00" y1="300.00" x2="500.00" y2="120.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Changing color 230 81 0 -->
+
+<!-- Drawing segment cone_bl cbe1 -->
+<line x1="440.00" y1="300.00" x2="448.00" y2="314.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Drawing segment cbe1 cbe2 -->
+<line x1="448.00" y1="314.00" x2="465.00" y2="326.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Drawing segment cbe2 cbe3 -->
+<line x1="465.00" y1="326.00" x2="488.00" y2="334.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Drawing segment cbe3 cbe4 -->
+<line x1="488.00" y1="334.00" x2="500.00" y2="336.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Drawing segment cbe4 cbe5 -->
+<line x1="500.00" y1="336.00" x2="512.00" y2="334.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Drawing segment cbe5 cbe6 -->
+<line x1="512.00" y1="334.00" x2="535.00" y2="326.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Drawing segment cbe6 cbe7 -->
+<line x1="535.00" y1="326.00" x2="552.00" y2="314.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Drawing segment cbe7 cone_br -->
+<line x1="552.00" y1="314.00" x2="560.00" y2="300.00" style="stroke:#E65100; stroke-width:2.00"/>
+
+<!-- Changing color 255 243 224 -->
+
+<!-- Filling triangle cone_bl cbe1 cbe4 -->
+<path d="M440.00,300.00 L 448.00,314.00 L 500.00,336.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Filling triangle cone_bl cbe4 cbe7 -->
+<path d="M440.00,300.00 L 500.00,336.00 L 552.00,314.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Filling triangle cone_bl cbe7 cone_br -->
+<path d="M440.00,300.00 L 552.00,314.00 L 560.00,300.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Filling triangle cone_br cbe7 cbe4 -->
+<path d="M560.00,300.00 L 552.00,314.00 L 500.00,336.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Filling triangle cone_br cbe4 cbe1 -->
+<path d="M560.00,300.00 L 500.00,336.00 L 448.00,314.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Filling triangle cone_br cbe1 cone_bl -->
+<path d="M560.00,300.00 L 448.00,314.00 L 440.00,300.00 z" fill="#FFF3E0" stroke="none"/>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Drawing segment cr1 cr2 -->
+<line x1="500.00" y1="336.00" x2="501.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="502.25" y1="336.00" x2="503.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="504.50" y1="336.00" x2="506.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="506.75" y1="336.00" x2="508.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="509.00" y1="336.00" x2="510.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="511.25" y1="336.00" x2="512.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="513.50" y1="336.00" x2="515.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="515.75" y1="336.00" x2="517.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="518.00" y1="336.00" x2="519.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="520.25" y1="336.00" x2="521.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="522.50" y1="336.00" x2="524.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="524.75" y1="336.00" x2="526.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="527.00" y1="336.00" x2="528.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="529.25" y1="336.00" x2="530.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="531.50" y1="336.00" x2="533.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="533.75" y1="336.00" x2="535.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="536.00" y1="336.00" x2="537.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="538.25" y1="336.00" x2="539.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="540.50" y1="336.00" x2="542.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="542.75" y1="336.00" x2="544.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="545.00" y1="336.00" x2="546.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="547.25" y1="336.00" x2="548.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="549.50" y1="336.00" x2="551.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="551.75" y1="336.00" x2="553.25" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="554.00" y1="336.00" x2="555.50" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="556.25" y1="336.00" x2="557.75" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+<line x1="558.50" y1="336.00" x2="560.00" y2="336.00" style="stroke:#000000; stroke-width:0.50"/>
+
+<!-- Printing text at point crlab -->
+<text x="530.00" y="345.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">r</text>
+
+<!-- Printing text at point chlab -->
+<text x="425.00" y="210.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">h</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point cone_f -->
+<text x="500.00" y="360.00" style="font-size:4.92pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.460457">V = 1/3 pi r^2 h</text>
+
+<!-- Printing text at point cone_t -->
+<text x="500.00" y="30.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">圆锥</text>
+</svg>

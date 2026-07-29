@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600mm" height="500mm" viewBox="0 0 600 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Drawing segment A B -->
+<line x1="200.40" y1="350.00" x2="349.60" y2="350.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment B C -->
+<line x1="350.00" y1="349.60" x2="350.00" y2="200.40" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment C D -->
+<line x1="349.60" y1="200.00" x2="200.40" y2="200.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment D A -->
+<line x1="200.00" y1="200.40" x2="200.00" y2="349.60" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment A1 B1 -->
+<line x1="250.40" y1="300.00" x2="399.60" y2="300.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment B1 C1 -->
+<line x1="400.00" y1="299.60" x2="400.00" y2="150.40" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment C1 D1 -->
+<line x1="399.60" y1="150.00" x2="250.40" y2="150.00" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment D1 A1 -->
+<line x1="250.00" y1="150.40" x2="250.00" y2="299.60" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment A A1 -->
+<line x1="200.28" y1="349.72" x2="224.72" y2="325.28" style="stroke:#1565C0; stroke-width:1.00"/>
+<line x1="225.28" y1="324.72" x2="249.72" y2="300.28" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment B B1 -->
+<line x1="350.28" y1="349.72" x2="399.72" y2="300.28" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment C C1 -->
+<line x1="350.28" y1="199.72" x2="399.72" y2="150.28" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Drawing segment D D1 -->
+<line x1="200.28" y1="199.72" x2="249.72" y2="150.28" style="stroke:#1565C0; stroke-width:1.00"/>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Drawing segment B E -->
+<line x1="349.61" y1="349.92" x2="225.39" y2="325.08" style="stroke:#C62828; stroke-width:2.00"/>
+
+<!-- Changing color 46 125 50 -->
+
+<!-- Drawing segment C D -->
+<line x1="349.60" y1="200.00" x2="200.40" y2="200.00" style="stroke:#2E7D32; stroke-width:1.50"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Marking point A by circle -->
+<circle cx="200.00" cy="350.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Marking point B by circle -->
+<circle cx="350.00" cy="350.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Marking point C by circle -->
+<circle cx="350.00" cy="200.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Marking point D by circle -->
+<circle cx="200.00" cy="200.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Marking point A1 by circle -->
+<circle cx="250.00" cy="300.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Marking point B1 by circle -->
+<circle cx="400.00" cy="300.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Marking point C1 by circle -->
+<circle cx="400.00" cy="150.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Marking point D1 by circle -->
+<circle cx="250.00" cy="150.00" r="0.40" fill="none" stroke="#1565C0" stroke-width="1.00"/>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Marking point E by circle -->
+<circle cx="225.00" cy="325.00" r="0.40" fill="none" stroke="#C62828" stroke-width="1.00"/>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Printing text at point A -->
+<text x="200.00" y="350.00" style="font-size:5.62pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.811951">$A$</text>
+
+<!-- Printing text at point B -->
+<text x="350.00" y="350.00" style="font-size:5.62pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.811951">$B$</text>
+
+<!-- Printing text at point C -->
+<text x="350.00" y="200.00" style="font-size:5.62pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.811951">$C$</text>
+
+<!-- Printing text at point D -->
+<text x="200.00" y="200.00" style="font-size:5.62pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.811951">$D$</text>
+
+<!-- Printing text at point A1 -->
+<text x="250.00" y="300.00" style="font-size:5.62pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.811951">$A'$</text>
+
+<!-- Printing text at point B1 -->
+<text x="400.00" y="300.00" style="font-size:5.62pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.811951">$B'$</text>
+
+<!-- Printing text at point C1 -->
+<text x="400.00" y="150.00" style="font-size:5.62pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.811951">$C'$</text>
+
+<!-- Printing text at point D1 -->
+<text x="250.00" y="150.00" style="font-size:5.62pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.811951">$D'$</text>
+
+<!-- Changing color 198 40 40 -->
+
+<!-- Printing text at point E -->
+<text x="225.00" y="325.00" style="font-size:5.62pt; font-style:italic; fill:#C62828" text-anchor="middle" dy="2.811951">$E$</text>
+
+<!-- Changing color 21 101 192 -->
+
+<!-- Printing text at point label_a -->
+<text x="275.00" y="355.00" style="font-size:4.92pt; font-style:italic; fill:#1565C0" text-anchor="middle" dy="2.460457">$a$</text>
+
+<!-- Changing color 0 0 0 -->
+
+<!-- Printing text at point title_pos -->
+<text x="260.00" y="470.00" style="font-size:5.62pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.811951">正方体</text>
+
+<!-- Printing text at point subtitle_pos -->
+<text x="240.00" y="490.00" style="font-size:4.22pt; font-style:italic; fill:#000000" text-anchor="middle" dy="2.108963">E为AA'的中点</text>
+</svg>
