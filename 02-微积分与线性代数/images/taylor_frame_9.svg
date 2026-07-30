@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140mm" height="100mm" viewBox="0 0 140 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>GCLCOutputFigure</title>
+
+<!-- Drawing segment axis_x1 axis_x2 -->
+<line x1="10.00" y1="49.00" x2="132.00" y2="49.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing vector axis_x1 axis_x2 -->
+<line x1="10.00" y1="49.00" x2="132.00" y2="49.00" style="stroke:#000000; stroke-width:1.00"/>
+<line x1="129.03" y1="48.61" x2="132.00" y2="49.00" style="stroke:#000000; stroke-width:1.00"/>
+<line x1="129.03" y1="48.61" x2="131.00" y2="49.00" style="stroke:#000000; stroke-width:1.00"/>
+<line x1="129.03" y1="49.39" x2="132.00" y2="49.00" style="stroke:#000000; stroke-width:1.00"/>
+<line x1="129.03" y1="49.39" x2="131.00" y2="49.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing segment axis_y1 axis_y2 -->
+<line x1="71.00" y1="90.00" x2="71.00" y2="8.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Drawing vector axis_y1 axis_y2 -->
+<line x1="71.00" y1="90.00" x2="71.00" y2="8.00" style="stroke:#000000; stroke-width:1.00"/>
+<line x1="70.61" y1="10.97" x2="71.00" y2="8.00" style="stroke:#000000; stroke-width:1.00"/>
+<line x1="70.61" y1="10.97" x2="71.00" y2="9.00" style="stroke:#000000; stroke-width:1.00"/>
+<line x1="71.39" y1="10.97" x2="71.00" y2="8.00" style="stroke:#000000; stroke-width:1.00"/>
+<line x1="71.39" y1="10.97" x2="71.00" y2="9.00" style="stroke:#000000; stroke-width:1.00"/>
+
+<!-- Printing text at point x_label -->
+<text x="132.00" y="52.84" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> x </text>
+
+<!-- Printing text at point y_label -->
+<text x="73.18" y="8.00" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> y </text>
+
+<!-- Printing text at point tick_-6.283 -->
+<text x="16.25" y="51.05" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> -2π </text>
+
+<!-- Printing text at point tick_-3.142 -->
+<text x="43.62" y="51.05" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> -π </text>
+
+<!-- Printing text at point tick_0.000 -->
+<text x="71.00" y="51.05" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> 0 </text>
+
+<!-- Printing text at point tick_3.142 -->
+<text x="98.38" y="51.05" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> π </text>
+
+<!-- Printing text at point tick_6.283 -->
+<text x="125.75" y="51.05" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> 2π </text>
+
+<!-- Printing text at point tick_y_-1.0 -->
+<text x="68.82" y="74.62" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> -1 </text>
+
+<!-- Printing text at point tick_y_1.0 -->
+<text x="68.82" y="23.38" style="font-size:2.81pt; font-style:italic; fill:#000000" text-anchor="middle" dy="1.405975"> 1 </text>
+
+<!-- Changing color 0 0 255 -->
+
+<!-- Drawing segment sin_0 sin_1 -->
+<line x1="10.00" y1="65.84" x2="10.61" y2="64.44" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_1 sin_2 -->
+<line x1="10.61" y1="64.44" x2="11.22" y2="62.97" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_2 sin_3 -->
+<line x1="11.22" y1="62.97" x2="11.83" y2="61.44" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_3 sin_4 -->
+<line x1="11.83" y1="61.44" x2="12.44" y2="59.84" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_4 sin_5 -->
+<line x1="12.44" y1="59.84" x2="13.05" y2="58.19" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_5 sin_6 -->
+<line x1="13.05" y1="58.19" x2="13.66" y2="56.49" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_6 sin_7 -->
+<line x1="13.66" y1="56.49" x2="14.27" y2="54.76" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_7 sin_8 -->
+<line x1="14.27" y1="54.76" x2="14.88" y2="53.00" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_8 sin_9 -->
+<line x1="14.88" y1="53.00" x2="15.49" y2="51.22" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_9 sin_10 -->
+<line x1="15.49" y1="51.22" x2="16.10" y2="49.43" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_10 sin_11 -->
+<line x1="16.10" y1="49.43" x2="16.71" y2="47.64" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_11 sin_12 -->
+<line x1="16.71" y1="47.64" x2="17.32" y2="45.85" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_12 sin_13 -->
+<line x1="17.32" y1="45.85" x2="17.93" y2="44.08" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_13 sin_14 -->
+<line x1="17.93" y1="44.08" x2="18.54" y2="42.33" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_14 sin_15 -->
+<line x1="18.54" y1="42.33" x2="19.15" y2="40.62" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_15 sin_16 -->
+<line x1="19.15" y1="40.62" x2="19.76" y2="38.95" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_16 sin_17 -->
+<line x1="19.76" y1="38.95" x2="20.37" y2="37.32" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_17 sin_18 -->
+<line x1="20.37" y1="37.32" x2="20.98" y2="35.76" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_18 sin_19 -->
+<line x1="20.98" y1="35.76" x2="21.59" y2="34.25" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_19 sin_20 -->
+<line x1="21.59" y1="34.25" x2="22.20" y2="32.82" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_20 sin_21 -->
+<line x1="22.20" y1="32.82" x2="22.81" y2="31.47" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_21 sin_22 -->
+<line x1="22.81" y1="31.47" x2="23.42" y2="30.21" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_22 sin_23 -->
+<line x1="23.42" y1="30.21" x2="24.03" y2="29.04" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_23 sin_24 -->
+<line x1="24.03" y1="29.04" x2="24.64" y2="27.96" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_24 sin_25 -->
+<line x1="24.64" y1="27.96" x2="25.25" y2="26.99" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_25 sin_26 -->
+<line x1="25.25" y1="26.99" x2="25.86" y2="26.13" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_26 sin_27 -->
+<line x1="25.86" y1="26.13" x2="26.47" y2="25.37" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_27 sin_28 -->
+<line x1="26.47" y1="25.37" x2="27.08" y2="24.74" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_28 sin_29 -->
+<line x1="27.08" y1="24.74" x2="27.69" y2="24.22" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_29 sin_30 -->
+<line x1="27.69" y1="24.22" x2="28.30" y2="23.82" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_30 sin_31 -->
+<line x1="28.30" y1="23.82" x2="28.91" y2="23.55" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_31 sin_32 -->
+<line x1="28.91" y1="23.55" x2="29.52" y2="23.40" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_32 sin_33 -->
+<line x1="29.52" y1="23.40" x2="30.13" y2="23.38" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_33 sin_34 -->
+<line x1="30.13" y1="23.38" x2="30.74" y2="23.48" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_34 sin_35 -->
+<line x1="30.74" y1="23.48" x2="31.35" y2="23.71" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_35 sin_36 -->
+<line x1="31.35" y1="23.71" x2="31.96" y2="24.06" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_36 sin_37 -->
+<line x1="31.96" y1="24.06" x2="32.57" y2="24.54" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_37 sin_38 -->
+<line x1="32.57" y1="24.54" x2="33.18" y2="25.13" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_38 sin_39 -->
+<line x1="33.18" y1="25.13" x2="33.79" y2="25.84" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_39 sin_40 -->
+<line x1="33.79" y1="25.84" x2="34.40" y2="26.67" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_40 sin_41 -->
+<line x1="34.40" y1="26.67" x2="35.01" y2="27.60" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_41 sin_42 -->
+<line x1="35.01" y1="27.60" x2="35.62" y2="28.64" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_42 sin_43 -->
+<line x1="35.62" y1="28.64" x2="36.23" y2="29.78" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_43 sin_44 -->
+<line x1="36.23" y1="29.78" x2="36.84" y2="31.01" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_44 sin_45 -->
+<line x1="36.84" y1="31.01" x2="37.45" y2="32.33" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_45 sin_46 -->
+<line x1="37.45" y1="32.33" x2="38.06" y2="33.73" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_46 sin_47 -->
+<line x1="38.06" y1="33.73" x2="38.67" y2="35.21" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_47 sin_48 -->
+<line x1="38.67" y1="35.21" x2="39.28" y2="36.75" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_48 sin_49 -->
+<line x1="39.28" y1="36.75" x2="39.89" y2="38.35" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_49 sin_50 -->
+<line x1="39.89" y1="38.35" x2="40.50" y2="40.01" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_50 sin_51 -->
+<line x1="40.50" y1="40.01" x2="41.11" y2="41.71" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_51 sin_52 -->
+<line x1="41.11" y1="41.71" x2="41.72" y2="43.45" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_52 sin_53 -->
+<line x1="41.72" y1="43.45" x2="42.33" y2="45.21" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_53 sin_54 -->
+<line x1="42.33" y1="45.21" x2="42.94" y2="46.99" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_54 sin_55 -->
+<line x1="42.94" y1="46.99" x2="43.55" y2="48.78" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_55 sin_56 -->
+<line x1="43.55" y1="48.78" x2="44.16" y2="50.58" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_56 sin_57 -->
+<line x1="44.16" y1="50.58" x2="44.77" y2="52.36" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_57 sin_58 -->
+<line x1="44.77" y1="52.36" x2="45.38" y2="54.13" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_58 sin_59 -->
+<line x1="45.38" y1="54.13" x2="45.99" y2="55.87" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_59 sin_60 -->
+<line x1="45.99" y1="55.87" x2="46.60" y2="57.58" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_60 sin_61 -->
+<line x1="46.60" y1="57.58" x2="47.21" y2="59.25" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_61 sin_62 -->
+<line x1="47.21" y1="59.25" x2="47.82" y2="60.87" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_62 sin_63 -->
+<line x1="47.82" y1="60.87" x2="48.43" y2="62.43" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_63 sin_64 -->
+<line x1="48.43" y1="62.43" x2="49.04" y2="63.92" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_64 sin_65 -->
+<line x1="49.04" y1="63.92" x2="49.65" y2="65.34" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_65 sin_66 -->
+<line x1="49.65" y1="65.34" x2="50.26" y2="66.68" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_66 sin_67 -->
+<line x1="50.26" y1="66.68" x2="50.87" y2="67.94" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_67 sin_68 -->
+<line x1="50.87" y1="67.94" x2="51.48" y2="69.10" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_68 sin_69 -->
+<line x1="51.48" y1="69.10" x2="52.09" y2="70.16" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_69 sin_70 -->
+<line x1="52.09" y1="70.16" x2="52.70" y2="71.12" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_70 sin_71 -->
+<line x1="52.70" y1="71.12" x2="53.31" y2="71.97" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_71 sin_72 -->
+<line x1="53.31" y1="71.97" x2="53.92" y2="72.71" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_72 sin_73 -->
+<line x1="53.92" y1="72.71" x2="54.53" y2="73.33" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_73 sin_74 -->
+<line x1="54.53" y1="73.33" x2="55.14" y2="73.83" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_74 sin_75 -->
+<line x1="55.14" y1="73.83" x2="55.75" y2="74.21" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_75 sin_76 -->
+<line x1="55.75" y1="74.21" x2="56.36" y2="74.47" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_76 sin_77 -->
+<line x1="56.36" y1="74.47" x2="56.97" y2="74.61" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_77 sin_78 -->
+<line x1="56.97" y1="74.61" x2="57.58" y2="74.61" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_78 sin_79 -->
+<line x1="57.58" y1="74.61" x2="58.19" y2="74.49" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_79 sin_80 -->
+<line x1="58.19" y1="74.49" x2="58.80" y2="74.25" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_80 sin_81 -->
+<line x1="58.80" y1="74.25" x2="59.41" y2="73.89" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_81 sin_82 -->
+<line x1="59.41" y1="73.89" x2="60.02" y2="73.40" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_82 sin_83 -->
+<line x1="60.02" y1="73.40" x2="60.63" y2="72.79" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_83 sin_84 -->
+<line x1="60.63" y1="72.79" x2="61.24" y2="72.07" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_84 sin_85 -->
+<line x1="61.24" y1="72.07" x2="61.85" y2="71.23" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_85 sin_86 -->
+<line x1="61.85" y1="71.23" x2="62.46" y2="70.28" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_86 sin_87 -->
+<line x1="62.46" y1="70.28" x2="63.07" y2="69.23" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_87 sin_88 -->
+<line x1="63.07" y1="69.23" x2="63.68" y2="68.08" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_88 sin_89 -->
+<line x1="63.68" y1="68.08" x2="64.29" y2="66.84" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_89 sin_90 -->
+<line x1="64.29" y1="66.84" x2="64.90" y2="65.51" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_90 sin_91 -->
+<line x1="64.90" y1="65.51" x2="65.51" y2="64.10" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_91 sin_92 -->
+<line x1="65.51" y1="64.10" x2="66.12" y2="62.61" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_92 sin_93 -->
+<line x1="66.12" y1="62.61" x2="66.73" y2="61.06" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_93 sin_94 -->
+<line x1="66.73" y1="61.06" x2="67.34" y2="59.45" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_94 sin_95 -->
+<line x1="67.34" y1="59.45" x2="67.95" y2="57.79" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_95 sin_96 -->
+<line x1="67.95" y1="57.79" x2="68.56" y2="56.08" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_96 sin_97 -->
+<line x1="68.56" y1="56.08" x2="69.17" y2="54.34" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_97 sin_98 -->
+<line x1="69.17" y1="54.34" x2="69.78" y2="52.58" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_98 sin_99 -->
+<line x1="69.78" y1="52.58" x2="70.39" y2="50.79" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_99 sin_100 -->
+<line x1="70.39" y1="50.79" x2="71.00" y2="49.00" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_100 sin_101 -->
+<line x1="71.00" y1="49.00" x2="71.61" y2="47.21" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_101 sin_102 -->
+<line x1="71.61" y1="47.21" x2="72.22" y2="45.42" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_102 sin_103 -->
+<line x1="72.22" y1="45.42" x2="72.83" y2="43.66" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_103 sin_104 -->
+<line x1="72.83" y1="43.66" x2="73.44" y2="41.92" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_104 sin_105 -->
+<line x1="73.44" y1="41.92" x2="74.05" y2="40.21" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_105 sin_106 -->
+<line x1="74.05" y1="40.21" x2="74.66" y2="38.55" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_106 sin_107 -->
+<line x1="74.66" y1="38.55" x2="75.27" y2="36.94" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_107 sin_108 -->
+<line x1="75.27" y1="36.94" x2="75.88" y2="35.39" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_108 sin_109 -->
+<line x1="75.88" y1="35.39" x2="76.49" y2="33.90" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_109 sin_110 -->
+<line x1="76.49" y1="33.90" x2="77.10" y2="32.49" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_110 sin_111 -->
+<line x1="77.10" y1="32.49" x2="77.71" y2="31.16" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_111 sin_112 -->
+<line x1="77.71" y1="31.16" x2="78.32" y2="29.92" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_112 sin_113 -->
+<line x1="78.32" y1="29.92" x2="78.93" y2="28.77" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_113 sin_114 -->
+<line x1="78.93" y1="28.77" x2="79.54" y2="27.72" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_114 sin_115 -->
+<line x1="79.54" y1="27.72" x2="80.15" y2="26.77" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_115 sin_116 -->
+<line x1="80.15" y1="26.77" x2="80.76" y2="25.93" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_116 sin_117 -->
+<line x1="80.76" y1="25.93" x2="81.37" y2="25.21" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_117 sin_118 -->
+<line x1="81.37" y1="25.21" x2="81.98" y2="24.60" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_118 sin_119 -->
+<line x1="81.98" y1="24.60" x2="82.59" y2="24.11" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_119 sin_120 -->
+<line x1="82.59" y1="24.11" x2="83.20" y2="23.75" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_120 sin_121 -->
+<line x1="83.20" y1="23.75" x2="83.81" y2="23.51" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_121 sin_122 -->
+<line x1="83.81" y1="23.51" x2="84.42" y2="23.39" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_122 sin_123 -->
+<line x1="84.42" y1="23.39" x2="85.03" y2="23.39" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_123 sin_124 -->
+<line x1="85.03" y1="23.39" x2="85.64" y2="23.53" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_124 sin_125 -->
+<line x1="85.64" y1="23.53" x2="86.25" y2="23.79" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_125 sin_126 -->
+<line x1="86.25" y1="23.79" x2="86.86" y2="24.17" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_126 sin_127 -->
+<line x1="86.86" y1="24.17" x2="87.47" y2="24.67" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_127 sin_128 -->
+<line x1="87.47" y1="24.67" x2="88.08" y2="25.29" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_128 sin_129 -->
+<line x1="88.08" y1="25.29" x2="88.69" y2="26.03" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_129 sin_130 -->
+<line x1="88.69" y1="26.03" x2="89.30" y2="26.88" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_130 sin_131 -->
+<line x1="89.30" y1="26.88" x2="89.91" y2="27.84" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_131 sin_132 -->
+<line x1="89.91" y1="27.84" x2="90.52" y2="28.90" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_132 sin_133 -->
+<line x1="90.52" y1="28.90" x2="91.13" y2="30.06" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_133 sin_134 -->
+<line x1="91.13" y1="30.06" x2="91.74" y2="31.32" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_134 sin_135 -->
+<line x1="91.74" y1="31.32" x2="92.35" y2="32.66" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_135 sin_136 -->
+<line x1="92.35" y1="32.66" x2="92.96" y2="34.08" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_136 sin_137 -->
+<line x1="92.96" y1="34.08" x2="93.57" y2="35.57" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_137 sin_138 -->
+<line x1="93.57" y1="35.57" x2="94.18" y2="37.13" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_138 sin_139 -->
+<line x1="94.18" y1="37.13" x2="94.79" y2="38.75" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_139 sin_140 -->
+<line x1="94.79" y1="38.75" x2="95.40" y2="40.42" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_140 sin_141 -->
+<line x1="95.40" y1="40.42" x2="96.01" y2="42.13" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_141 sin_142 -->
+<line x1="96.01" y1="42.13" x2="96.62" y2="43.87" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_142 sin_143 -->
+<line x1="96.62" y1="43.87" x2="97.23" y2="45.64" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_143 sin_144 -->
+<line x1="97.23" y1="45.64" x2="97.84" y2="47.42" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_144 sin_145 -->
+<line x1="97.84" y1="47.42" x2="98.45" y2="49.22" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_145 sin_146 -->
+<line x1="98.45" y1="49.22" x2="99.06" y2="51.01" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_146 sin_147 -->
+<line x1="99.06" y1="51.01" x2="99.67" y2="52.79" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_147 sin_148 -->
+<line x1="99.67" y1="52.79" x2="100.28" y2="54.55" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_148 sin_149 -->
+<line x1="100.28" y1="54.55" x2="100.89" y2="56.29" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_149 sin_150 -->
+<line x1="100.89" y1="56.29" x2="101.50" y2="57.99" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_150 sin_151 -->
+<line x1="101.50" y1="57.99" x2="102.11" y2="59.65" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_151 sin_152 -->
+<line x1="102.11" y1="59.65" x2="102.72" y2="61.25" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_152 sin_153 -->
+<line x1="102.72" y1="61.25" x2="103.33" y2="62.79" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_153 sin_154 -->
+<line x1="103.33" y1="62.79" x2="103.94" y2="64.27" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_154 sin_155 -->
+<line x1="103.94" y1="64.27" x2="104.55" y2="65.67" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_155 sin_156 -->
+<line x1="104.55" y1="65.67" x2="105.16" y2="66.99" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_156 sin_157 -->
+<line x1="105.16" y1="66.99" x2="105.77" y2="68.22" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_157 sin_158 -->
+<line x1="105.77" y1="68.22" x2="106.38" y2="69.36" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_158 sin_159 -->
+<line x1="106.38" y1="69.36" x2="106.99" y2="70.40" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_159 sin_160 -->
+<line x1="106.99" y1="70.40" x2="107.60" y2="71.33" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_160 sin_161 -->
+<line x1="107.60" y1="71.33" x2="108.21" y2="72.16" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_161 sin_162 -->
+<line x1="108.21" y1="72.16" x2="108.82" y2="72.87" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_162 sin_163 -->
+<line x1="108.82" y1="72.87" x2="109.43" y2="73.46" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_163 sin_164 -->
+<line x1="109.43" y1="73.46" x2="110.04" y2="73.94" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_164 sin_165 -->
+<line x1="110.04" y1="73.94" x2="110.65" y2="74.29" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_165 sin_166 -->
+<line x1="110.65" y1="74.29" x2="111.26" y2="74.52" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_166 sin_167 -->
+<line x1="111.26" y1="74.52" x2="111.87" y2="74.62" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_167 sin_168 -->
+<line x1="111.87" y1="74.62" x2="112.48" y2="74.60" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_168 sin_169 -->
+<line x1="112.48" y1="74.60" x2="113.09" y2="74.45" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_169 sin_170 -->
+<line x1="113.09" y1="74.45" x2="113.70" y2="74.18" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_170 sin_171 -->
+<line x1="113.70" y1="74.18" x2="114.31" y2="73.78" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_171 sin_172 -->
+<line x1="114.31" y1="73.78" x2="114.92" y2="73.26" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_172 sin_173 -->
+<line x1="114.92" y1="73.26" x2="115.53" y2="72.63" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_173 sin_174 -->
+<line x1="115.53" y1="72.63" x2="116.14" y2="71.87" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_174 sin_175 -->
+<line x1="116.14" y1="71.87" x2="116.75" y2="71.01" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_175 sin_176 -->
+<line x1="116.75" y1="71.01" x2="117.36" y2="70.04" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_176 sin_177 -->
+<line x1="117.36" y1="70.04" x2="117.97" y2="68.96" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_177 sin_178 -->
+<line x1="117.97" y1="68.96" x2="118.58" y2="67.79" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_178 sin_179 -->
+<line x1="118.58" y1="67.79" x2="119.19" y2="66.53" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_179 sin_180 -->
+<line x1="119.19" y1="66.53" x2="119.80" y2="65.18" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_180 sin_181 -->
+<line x1="119.80" y1="65.18" x2="120.41" y2="63.75" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_181 sin_182 -->
+<line x1="120.41" y1="63.75" x2="121.02" y2="62.24" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_182 sin_183 -->
+<line x1="121.02" y1="62.24" x2="121.63" y2="60.68" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_183 sin_184 -->
+<line x1="121.63" y1="60.68" x2="122.24" y2="59.05" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_184 sin_185 -->
+<line x1="122.24" y1="59.05" x2="122.85" y2="57.38" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_185 sin_186 -->
+<line x1="122.85" y1="57.38" x2="123.46" y2="55.67" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_186 sin_187 -->
+<line x1="123.46" y1="55.67" x2="124.07" y2="53.92" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_187 sin_188 -->
+<line x1="124.07" y1="53.92" x2="124.68" y2="52.15" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_188 sin_189 -->
+<line x1="124.68" y1="52.15" x2="125.29" y2="50.36" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_189 sin_190 -->
+<line x1="125.29" y1="50.36" x2="125.90" y2="48.57" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_190 sin_191 -->
+<line x1="125.90" y1="48.57" x2="126.51" y2="46.78" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_191 sin_192 -->
+<line x1="126.51" y1="46.78" x2="127.12" y2="45.00" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_192 sin_193 -->
+<line x1="127.12" y1="45.00" x2="127.73" y2="43.24" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_193 sin_194 -->
+<line x1="127.73" y1="43.24" x2="128.34" y2="41.51" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_194 sin_195 -->
+<line x1="128.34" y1="41.51" x2="128.95" y2="39.81" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_195 sin_196 -->
+<line x1="128.95" y1="39.81" x2="129.56" y2="38.16" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_196 sin_197 -->
+<line x1="129.56" y1="38.16" x2="130.17" y2="36.56" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_197 sin_198 -->
+<line x1="130.17" y1="36.56" x2="130.78" y2="35.03" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_198 sin_199 -->
+<line x1="130.78" y1="35.03" x2="131.39" y2="33.56" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Drawing segment sin_199 sin_200 -->
+<line x1="131.39" y1="33.56" x2="132.00" y2="32.16" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Changing color 255 0 0 -->
+
+<!-- Drawing segment tay_0 tay_1 -->
+<line x1="10.00" y1="95.00" x2="10.61" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_1 tay_2 -->
+<line x1="10.61" y1="95.00" x2="11.22" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_2 tay_3 -->
+<line x1="11.22" y1="95.00" x2="11.83" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_3 tay_4 -->
+<line x1="11.83" y1="95.00" x2="12.44" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_4 tay_5 -->
+<line x1="12.44" y1="95.00" x2="13.05" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_5 tay_6 -->
+<line x1="13.05" y1="95.00" x2="13.66" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_6 tay_7 -->
+<line x1="13.66" y1="95.00" x2="14.27" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_7 tay_8 -->
+<line x1="14.27" y1="95.00" x2="14.88" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_8 tay_9 -->
+<line x1="14.88" y1="95.00" x2="15.49" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_9 tay_10 -->
+<line x1="15.49" y1="95.00" x2="16.10" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_10 tay_11 -->
+<line x1="16.10" y1="95.00" x2="16.71" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_11 tay_12 -->
+<line x1="16.71" y1="95.00" x2="17.32" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_12 tay_13 -->
+<line x1="17.32" y1="95.00" x2="17.93" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_13 tay_14 -->
+<line x1="17.93" y1="95.00" x2="18.54" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_14 tay_15 -->
+<line x1="18.54" y1="95.00" x2="19.15" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_15 tay_16 -->
+<line x1="19.15" y1="95.00" x2="19.76" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_16 tay_17 -->
+<line x1="19.76" y1="95.00" x2="20.37" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_17 tay_18 -->
+<line x1="20.37" y1="95.00" x2="20.98" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_18 tay_19 -->
+<line x1="20.98" y1="95.00" x2="21.59" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_19 tay_20 -->
+<line x1="21.59" y1="95.00" x2="22.20" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_20 tay_21 -->
+<line x1="22.20" y1="95.00" x2="22.81" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_21 tay_22 -->
+<line x1="22.81" y1="95.00" x2="23.42" y2="95.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_22 tay_23 -->
+<line x1="23.42" y1="95.00" x2="24.03" y2="88.98" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_23 tay_24 -->
+<line x1="24.03" y1="88.98" x2="24.64" y2="80.10" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_24 tay_25 -->
+<line x1="24.64" y1="80.10" x2="25.25" y2="72.26" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_25 tay_26 -->
+<line x1="25.25" y1="72.26" x2="25.86" y2="65.35" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_26 tay_27 -->
+<line x1="25.86" y1="65.35" x2="26.47" y2="59.29" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_27 tay_28 -->
+<line x1="26.47" y1="59.29" x2="27.08" y2="54.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_28 tay_29 -->
+<line x1="27.08" y1="54.00" x2="27.69" y2="49.41" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_29 tay_30 -->
+<line x1="27.69" y1="49.41" x2="28.30" y2="45.47" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_30 tay_31 -->
+<line x1="28.30" y1="45.47" x2="28.91" y2="42.10" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_31 tay_32 -->
+<line x1="28.91" y1="42.10" x2="29.52" y2="39.26" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_32 tay_33 -->
+<line x1="29.52" y1="39.26" x2="30.13" y2="36.91" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_33 tay_34 -->
+<line x1="30.13" y1="36.91" x2="30.74" y2="35.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_34 tay_35 -->
+<line x1="30.74" y1="35.00" x2="31.35" y2="33.48" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_35 tay_36 -->
+<line x1="31.35" y1="33.48" x2="31.96" y2="32.33" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_36 tay_37 -->
+<line x1="31.96" y1="32.33" x2="32.57" y2="31.52" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_37 tay_38 -->
+<line x1="32.57" y1="31.52" x2="33.18" y2="31.01" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_38 tay_39 -->
+<line x1="33.18" y1="31.01" x2="33.79" y2="30.77" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_39 tay_40 -->
+<line x1="33.79" y1="30.77" x2="34.40" y2="30.79" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_40 tay_41 -->
+<line x1="34.40" y1="30.79" x2="35.01" y2="31.04" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_41 tay_42 -->
+<line x1="35.01" y1="31.04" x2="35.62" y2="31.50" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_42 tay_43 -->
+<line x1="35.62" y1="31.50" x2="36.23" y2="32.15" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_43 tay_44 -->
+<line x1="36.23" y1="32.15" x2="36.84" y2="32.97" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_44 tay_45 -->
+<line x1="36.84" y1="32.97" x2="37.45" y2="33.94" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_45 tay_46 -->
+<line x1="37.45" y1="33.94" x2="38.06" y2="35.05" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_46 tay_47 -->
+<line x1="38.06" y1="35.05" x2="38.67" y2="36.29" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_47 tay_48 -->
+<line x1="38.67" y1="36.29" x2="39.28" y2="37.63" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_48 tay_49 -->
+<line x1="39.28" y1="37.63" x2="39.89" y2="39.07" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_49 tay_50 -->
+<line x1="39.89" y1="39.07" x2="40.50" y2="40.59" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_50 tay_51 -->
+<line x1="40.50" y1="40.59" x2="41.11" y2="42.17" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_51 tay_52 -->
+<line x1="41.11" y1="42.17" x2="41.72" y2="43.82" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_52 tay_53 -->
+<line x1="41.72" y1="43.82" x2="42.33" y2="45.50" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_53 tay_54 -->
+<line x1="42.33" y1="45.50" x2="42.94" y2="47.22" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_54 tay_55 -->
+<line x1="42.94" y1="47.22" x2="43.55" y2="48.97" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_55 tay_56 -->
+<line x1="43.55" y1="48.97" x2="44.16" y2="50.72" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_56 tay_57 -->
+<line x1="44.16" y1="50.72" x2="44.77" y2="52.47" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_57 tay_58 -->
+<line x1="44.77" y1="52.47" x2="45.38" y2="54.22" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_58 tay_59 -->
+<line x1="45.38" y1="54.22" x2="45.99" y2="55.94" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_59 tay_60 -->
+<line x1="45.99" y1="55.94" x2="46.60" y2="57.63" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_60 tay_61 -->
+<line x1="46.60" y1="57.63" x2="47.21" y2="59.29" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_61 tay_62 -->
+<line x1="47.21" y1="59.29" x2="47.82" y2="60.90" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_62 tay_63 -->
+<line x1="47.82" y1="60.90" x2="48.43" y2="62.45" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_63 tay_64 -->
+<line x1="48.43" y1="62.45" x2="49.04" y2="63.94" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_64 tay_65 -->
+<line x1="49.04" y1="63.94" x2="49.65" y2="65.35" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_65 tay_66 -->
+<line x1="49.65" y1="65.35" x2="50.26" y2="66.69" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_66 tay_67 -->
+<line x1="50.26" y1="66.69" x2="50.87" y2="67.94" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_67 tay_68 -->
+<line x1="50.87" y1="67.94" x2="51.48" y2="69.10" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_68 tay_69 -->
+<line x1="51.48" y1="69.10" x2="52.09" y2="70.16" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_69 tay_70 -->
+<line x1="52.09" y1="70.16" x2="52.70" y2="71.12" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_70 tay_71 -->
+<line x1="52.70" y1="71.12" x2="53.31" y2="71.97" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_71 tay_72 -->
+<line x1="53.31" y1="71.97" x2="53.92" y2="72.71" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_72 tay_73 -->
+<line x1="53.92" y1="72.71" x2="54.53" y2="73.33" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_73 tay_74 -->
+<line x1="54.53" y1="73.33" x2="55.14" y2="73.83" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_74 tay_75 -->
+<line x1="55.14" y1="73.83" x2="55.75" y2="74.21" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_75 tay_76 -->
+<line x1="55.75" y1="74.21" x2="56.36" y2="74.47" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_76 tay_77 -->
+<line x1="56.36" y1="74.47" x2="56.97" y2="74.61" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_77 tay_78 -->
+<line x1="56.97" y1="74.61" x2="57.58" y2="74.61" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_78 tay_79 -->
+<line x1="57.58" y1="74.61" x2="58.19" y2="74.49" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_79 tay_80 -->
+<line x1="58.19" y1="74.49" x2="58.80" y2="74.25" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_80 tay_81 -->
+<line x1="58.80" y1="74.25" x2="59.41" y2="73.89" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_81 tay_82 -->
+<line x1="59.41" y1="73.89" x2="60.02" y2="73.40" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_82 tay_83 -->
+<line x1="60.02" y1="73.40" x2="60.63" y2="72.79" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_83 tay_84 -->
+<line x1="60.63" y1="72.79" x2="61.24" y2="72.07" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_84 tay_85 -->
+<line x1="61.24" y1="72.07" x2="61.85" y2="71.23" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_85 tay_86 -->
+<line x1="61.85" y1="71.23" x2="62.46" y2="70.28" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_86 tay_87 -->
+<line x1="62.46" y1="70.28" x2="63.07" y2="69.23" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_87 tay_88 -->
+<line x1="63.07" y1="69.23" x2="63.68" y2="68.08" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_88 tay_89 -->
+<line x1="63.68" y1="68.08" x2="64.29" y2="66.84" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_89 tay_90 -->
+<line x1="64.29" y1="66.84" x2="64.90" y2="65.51" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_90 tay_91 -->
+<line x1="64.90" y1="65.51" x2="65.51" y2="64.10" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_91 tay_92 -->
+<line x1="65.51" y1="64.10" x2="66.12" y2="62.61" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_92 tay_93 -->
+<line x1="66.12" y1="62.61" x2="66.73" y2="61.06" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_93 tay_94 -->
+<line x1="66.73" y1="61.06" x2="67.34" y2="59.45" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_94 tay_95 -->
+<line x1="67.34" y1="59.45" x2="67.95" y2="57.79" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_95 tay_96 -->
+<line x1="67.95" y1="57.79" x2="68.56" y2="56.08" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_96 tay_97 -->
+<line x1="68.56" y1="56.08" x2="69.17" y2="54.34" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_97 tay_98 -->
+<line x1="69.17" y1="54.34" x2="69.78" y2="52.58" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_98 tay_99 -->
+<line x1="69.78" y1="52.58" x2="70.39" y2="50.79" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_99 tay_100 -->
+<line x1="70.39" y1="50.79" x2="71.00" y2="49.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_100 tay_101 -->
+<line x1="71.00" y1="49.00" x2="71.61" y2="47.21" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_101 tay_102 -->
+<line x1="71.61" y1="47.21" x2="72.22" y2="45.42" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_102 tay_103 -->
+<line x1="72.22" y1="45.42" x2="72.83" y2="43.66" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_103 tay_104 -->
+<line x1="72.83" y1="43.66" x2="73.44" y2="41.92" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_104 tay_105 -->
+<line x1="73.44" y1="41.92" x2="74.05" y2="40.21" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_105 tay_106 -->
+<line x1="74.05" y1="40.21" x2="74.66" y2="38.55" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_106 tay_107 -->
+<line x1="74.66" y1="38.55" x2="75.27" y2="36.94" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_107 tay_108 -->
+<line x1="75.27" y1="36.94" x2="75.88" y2="35.39" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_108 tay_109 -->
+<line x1="75.88" y1="35.39" x2="76.49" y2="33.90" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_109 tay_110 -->
+<line x1="76.49" y1="33.90" x2="77.10" y2="32.49" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_110 tay_111 -->
+<line x1="77.10" y1="32.49" x2="77.71" y2="31.16" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_111 tay_112 -->
+<line x1="77.71" y1="31.16" x2="78.32" y2="29.92" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_112 tay_113 -->
+<line x1="78.32" y1="29.92" x2="78.93" y2="28.77" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_113 tay_114 -->
+<line x1="78.93" y1="28.77" x2="79.54" y2="27.72" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_114 tay_115 -->
+<line x1="79.54" y1="27.72" x2="80.15" y2="26.77" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_115 tay_116 -->
+<line x1="80.15" y1="26.77" x2="80.76" y2="25.93" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_116 tay_117 -->
+<line x1="80.76" y1="25.93" x2="81.37" y2="25.21" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_117 tay_118 -->
+<line x1="81.37" y1="25.21" x2="81.98" y2="24.60" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_118 tay_119 -->
+<line x1="81.98" y1="24.60" x2="82.59" y2="24.11" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_119 tay_120 -->
+<line x1="82.59" y1="24.11" x2="83.20" y2="23.75" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_120 tay_121 -->
+<line x1="83.20" y1="23.75" x2="83.81" y2="23.51" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_121 tay_122 -->
+<line x1="83.81" y1="23.51" x2="84.42" y2="23.39" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_122 tay_123 -->
+<line x1="84.42" y1="23.39" x2="85.03" y2="23.39" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_123 tay_124 -->
+<line x1="85.03" y1="23.39" x2="85.64" y2="23.53" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_124 tay_125 -->
+<line x1="85.64" y1="23.53" x2="86.25" y2="23.79" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_125 tay_126 -->
+<line x1="86.25" y1="23.79" x2="86.86" y2="24.17" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_126 tay_127 -->
+<line x1="86.86" y1="24.17" x2="87.47" y2="24.67" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_127 tay_128 -->
+<line x1="87.47" y1="24.67" x2="88.08" y2="25.29" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_128 tay_129 -->
+<line x1="88.08" y1="25.29" x2="88.69" y2="26.03" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_129 tay_130 -->
+<line x1="88.69" y1="26.03" x2="89.30" y2="26.88" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_130 tay_131 -->
+<line x1="89.30" y1="26.88" x2="89.91" y2="27.84" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_131 tay_132 -->
+<line x1="89.91" y1="27.84" x2="90.52" y2="28.90" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_132 tay_133 -->
+<line x1="90.52" y1="28.90" x2="91.13" y2="30.06" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_133 tay_134 -->
+<line x1="91.13" y1="30.06" x2="91.74" y2="31.31" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_134 tay_135 -->
+<line x1="91.74" y1="31.31" x2="92.35" y2="32.65" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_135 tay_136 -->
+<line x1="92.35" y1="32.65" x2="92.96" y2="34.06" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_136 tay_137 -->
+<line x1="92.96" y1="34.06" x2="93.57" y2="35.55" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_137 tay_138 -->
+<line x1="93.57" y1="35.55" x2="94.18" y2="37.10" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_138 tay_139 -->
+<line x1="94.18" y1="37.10" x2="94.79" y2="38.71" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_139 tay_140 -->
+<line x1="94.79" y1="38.71" x2="95.40" y2="40.37" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_140 tay_141 -->
+<line x1="95.40" y1="40.37" x2="96.01" y2="42.06" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_141 tay_142 -->
+<line x1="96.01" y1="42.06" x2="96.62" y2="43.78" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_142 tay_143 -->
+<line x1="96.62" y1="43.78" x2="97.23" y2="45.53" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_143 tay_144 -->
+<line x1="97.23" y1="45.53" x2="97.84" y2="47.28" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_144 tay_145 -->
+<line x1="97.84" y1="47.28" x2="98.45" y2="49.03" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_145 tay_146 -->
+<line x1="98.45" y1="49.03" x2="99.06" y2="50.78" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_146 tay_147 -->
+<line x1="99.06" y1="50.78" x2="99.67" y2="52.50" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_147 tay_148 -->
+<line x1="99.67" y1="52.50" x2="100.28" y2="54.18" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_148 tay_149 -->
+<line x1="100.28" y1="54.18" x2="100.89" y2="55.83" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_149 tay_150 -->
+<line x1="100.89" y1="55.83" x2="101.50" y2="57.41" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_150 tay_151 -->
+<line x1="101.50" y1="57.41" x2="102.11" y2="58.93" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_151 tay_152 -->
+<line x1="102.11" y1="58.93" x2="102.72" y2="60.37" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_152 tay_153 -->
+<line x1="102.72" y1="60.37" x2="103.33" y2="61.71" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_153 tay_154 -->
+<line x1="103.33" y1="61.71" x2="103.94" y2="62.95" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_154 tay_155 -->
+<line x1="103.94" y1="62.95" x2="104.55" y2="64.06" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_155 tay_156 -->
+<line x1="104.55" y1="64.06" x2="105.16" y2="65.03" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_156 tay_157 -->
+<line x1="105.16" y1="65.03" x2="105.77" y2="65.85" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_157 tay_158 -->
+<line x1="105.77" y1="65.85" x2="106.38" y2="66.50" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_158 tay_159 -->
+<line x1="106.38" y1="66.50" x2="106.99" y2="66.96" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_159 tay_160 -->
+<line x1="106.99" y1="66.96" x2="107.60" y2="67.21" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_160 tay_161 -->
+<line x1="107.60" y1="67.21" x2="108.21" y2="67.23" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_161 tay_162 -->
+<line x1="108.21" y1="67.23" x2="108.82" y2="66.99" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_162 tay_163 -->
+<line x1="108.82" y1="66.99" x2="109.43" y2="66.48" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_163 tay_164 -->
+<line x1="109.43" y1="66.48" x2="110.04" y2="65.67" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_164 tay_165 -->
+<line x1="110.04" y1="65.67" x2="110.65" y2="64.52" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_165 tay_166 -->
+<line x1="110.65" y1="64.52" x2="111.26" y2="63.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_166 tay_167 -->
+<line x1="111.26" y1="63.00" x2="111.87" y2="61.09" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_167 tay_168 -->
+<line x1="111.87" y1="61.09" x2="112.48" y2="58.74" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_168 tay_169 -->
+<line x1="112.48" y1="58.74" x2="113.09" y2="55.90" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_169 tay_170 -->
+<line x1="113.09" y1="55.90" x2="113.70" y2="52.53" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_170 tay_171 -->
+<line x1="113.70" y1="52.53" x2="114.31" y2="48.59" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_171 tay_172 -->
+<line x1="114.31" y1="48.59" x2="114.92" y2="44.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_172 tay_173 -->
+<line x1="114.92" y1="44.00" x2="115.53" y2="38.71" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_173 tay_174 -->
+<line x1="115.53" y1="38.71" x2="116.14" y2="32.65" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_174 tay_175 -->
+<line x1="116.14" y1="32.65" x2="116.75" y2="25.74" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_175 tay_176 -->
+<line x1="116.75" y1="25.74" x2="117.36" y2="17.90" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_176 tay_177 -->
+<line x1="117.36" y1="17.90" x2="117.97" y2="9.02" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_177 tay_178 -->
+<line x1="117.97" y1="9.02" x2="118.58" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_178 tay_179 -->
+<line x1="118.58" y1="3.00" x2="119.19" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_179 tay_180 -->
+<line x1="119.19" y1="3.00" x2="119.80" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_180 tay_181 -->
+<line x1="119.80" y1="3.00" x2="120.41" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_181 tay_182 -->
+<line x1="120.41" y1="3.00" x2="121.02" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_182 tay_183 -->
+<line x1="121.02" y1="3.00" x2="121.63" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_183 tay_184 -->
+<line x1="121.63" y1="3.00" x2="122.24" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_184 tay_185 -->
+<line x1="122.24" y1="3.00" x2="122.85" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_185 tay_186 -->
+<line x1="122.85" y1="3.00" x2="123.46" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_186 tay_187 -->
+<line x1="123.46" y1="3.00" x2="124.07" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_187 tay_188 -->
+<line x1="124.07" y1="3.00" x2="124.68" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_188 tay_189 -->
+<line x1="124.68" y1="3.00" x2="125.29" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_189 tay_190 -->
+<line x1="125.29" y1="3.00" x2="125.90" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_190 tay_191 -->
+<line x1="125.90" y1="3.00" x2="126.51" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_191 tay_192 -->
+<line x1="126.51" y1="3.00" x2="127.12" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_192 tay_193 -->
+<line x1="127.12" y1="3.00" x2="127.73" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_193 tay_194 -->
+<line x1="127.73" y1="3.00" x2="128.34" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_194 tay_195 -->
+<line x1="128.34" y1="3.00" x2="128.95" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_195 tay_196 -->
+<line x1="128.95" y1="3.00" x2="129.56" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_196 tay_197 -->
+<line x1="129.56" y1="3.00" x2="130.17" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_197 tay_198 -->
+<line x1="130.17" y1="3.00" x2="130.78" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_198 tay_199 -->
+<line x1="130.78" y1="3.00" x2="131.39" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Drawing segment tay_199 tay_200 -->
+<line x1="131.39" y1="3.00" x2="132.00" y2="3.00" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Printing text at point legend_sin_text -->
+<text x="11.74" y="14.41" style="font-size:2.81pt; font-style:italic; fill:#FF0000" text-anchor="middle" dy="1.405975"> sin(x) </text>
+
+<!-- Changing color 0 0 255 -->
+
+<!-- Drawing segment legend_sin_l1 legend_sin_l2 -->
+<line x1="11.74" y1="16.97" x2="16.97" y2="16.97" style="stroke:#0000FF; stroke-width:0.50"/>
+
+<!-- Printing text at point legend_taylor_text -->
+<text x="11.74" y="20.81" style="font-size:2.81pt; font-style:italic; fill:#0000FF" text-anchor="middle" dy="1.405975"> T_9(x) </text>
+
+<!-- Changing color 255 0 0 -->
+
+<!-- Drawing segment legend_taylor_l1 legend_taylor_l2 -->
+<line x1="11.74" y1="23.38" x2="16.97" y2="23.38" style="stroke:#FF0000; stroke-width:1.00"/>
+
+<!-- Printing text at point title -->
+<text x="71.00" y="86.16" style="font-size:2.81pt; font-style:italic; fill:#FF0000" text-anchor="middle" dy="1.405975"> Taylor Series Approximation of sin(x) </text>
+</svg>
