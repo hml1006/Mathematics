@@ -452,32 +452,31 @@ Mathematics/
 
 ### H. 概率与统计符号
 
-|    符号    | 含义                 | 示例                |
-| :---------: | -------------------- | ------------------- |
-|    P(·)    | 概率                 | P(A)                |
-|   Pr(·)   | 概率                 | Pr(X = x)           |
-|    E(·)    | 期望                 | E[X]                |
-|   Var(·)   | 方差                 | Var(X)              |
-| Cov(·,·) | 协方差               | Cov(X, Y)           |
-| Corr(·,·) | 相关系数             | Corr(X, Y)          |
-|     ∼     | 服从分布             | X ∼ N(μ, σ²)    |
-|     ⊥     | 独立                 | X ⊥ Y              |
-|     σ     | 标准差               | σ(X)               |
-|     μ     | 均值                 | μ = E[X]           |
-|     ρ     | 相关系数             | ρ\_{XY}            |
-|    χ²    | 卡方分布             | χ²(k)             |
-|      t      | t 分布               | t(k)                |
-|      F      | F 分布               | F(k₁, k₂)         |
-| N(μ, σ²) | 正态分布             | X ∼ N(0, 1)        |
-|  Bin(n, p)  | 二项分布             | X ∼ Bin(n, p)      |
-|  Pois(λ)  | 泊松分布             | X ∼ Pois(λ)       |
-|   Exp(λ)   | 指数分布             | X ∼ Exp(λ)        |
-| Unif(a, b) | 均匀分布             | X ∼ Unif(0, 1)     |
-|   \|·\|   | 绝对值、基数、行列式 | \|x\|, \|S\|, \|A\| |
-|   ‖·‖   | 范数                 | ‖x‖₂             |
-|   ⌊·⌋   | 向下取整 (floor)     | ⌊x⌋               |
-|   ⌈·⌉   | 向上取整 (ceil)      | ⌈x⌉               |
-|    {·}    | 集合、小数部分       | {x, y}, {x}         |
+|              符号              | 含义                 | 示例                          |
+| :-----------------------------: | -------------------- | ----------------------------- |
+|       $P(\cdot)$       | 概率                 | $P(A)$                        |
+|      $E[\cdot]$      | 期望                 | $E[X]$                        |
+|     $Var(\cdot)$     | 方差                 | $Var(X)$                      |
+|   $Cov(\cdot,\cdot)$   | 协方差               | $Cov(X, Y)$                   |
+|  $Corr(\cdot,\cdot)$  | 相关系数             | $Corr(X, Y)$                  |
+|          $\sim$          | 服从分布             | $X \sim N(\mu, \sigma^2)$    |
+|          $\perp$          | 独立                 | $X \perp Y$                  |
+|          $\sigma$          | 标准差               | $\sigma(X)$                   |
+|           $\mu$           | 均值                 | $\mu = E[X]$                  |
+|           $\rho$           | 相关系数             | $\rho_{XY}$                   |
+|          $\chi^2$          | 卡方分布             | $\chi^2(k)$                   |
+|            $t$            | t 分布               | $t(k)$                        |
+|            $F$            | F 分布               | $F(k_1, k_2)$                 |
+|   $N(\mu, \sigma^2)$   | 正态分布             | $X \sim N(0, 1)$             |
+|     $Bin(n, p)$     | 二项分布             | $X \sim Bin(n, p)$           |
+|     $Pois(\lambda)$     | 泊松分布             | $X \sim Pois(\lambda)$       |
+|     $Exp(\lambda)$     | 指数分布             | $X \sim Exp(\lambda)$        |
+|     $Unif(a, b)$     | 均匀分布             | $X \sim Unif(0, 1)$          |
+|       $\lvert \cdot \rvert$       | 绝对值、基数、行列式 | $\lvert x \rvert, \lvert S \rvert, \lvert A \rvert$ |
+|       $\lVert \cdot \rVert$       | 范数                 | $\lVert x \rVert_2$           |
+|     $\lfloor \cdot \rfloor$     | 向下取整 (floor)     | $\lfloor x \rfloor$           |
+|     $\lceil \cdot \rceil$     | 向上取整 (ceil)      | $\lceil x \rceil$             |
+|       $\{\cdot\}$       | 集合、小数部分       | $\{x, y\}, \{x\}$            |
 
 ### I. 其他常用符号
 
