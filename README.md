@@ -33,11 +33,11 @@ Mathematics/
 |  层级  | 主题                                                          | 英文                                                     |
 | :-----: | ------------------------------------------------------------- | -------------------------------------------------------- |
 | 第 1 级 | [算术基础](01-初等数学/第01级-算术基础.md)                     | Basic Arithmetic                                         |
-| 第 2 级 | [初等代数](01-初等数学/第02级-初等代数.md)                     | Elementary Algebra                                       |
+| 第 2 级 | [初等代数](01-初等数学/第02级-初等代数.md)（含方程、不等式、初等函数、指数对数、复数） | Elementary Algebra                                       |
 | 第 3 级 | [平面几何](01-初等数学/第03级-平面几何.md)                     | Plane Geometry                                           |
-| 第 4 级 | [立体几何](01-初等数学/第04级-立体几何.md)                     | Solid Geometry                                           |
+| 第 4 级 | [立体几何](01-初等数学/第04级-立体几何.md)（含空间向量）       | Solid Geometry & Spatial Vectors                         |
 | 第 5 级 | [三角函数](01-初等数学/第05级-三角函数.md)                     | Trigonometry                                             |
-| 第 6 级 | [平面解析几何](01-初等数学/第06级-平面解析几何.md)             | Plane Analytic Geometry                                  |
+| 第 6 级 | [平面解析几何](01-初等数学/第06级-平面解析几何.md)（含平面向量） | Plane Analytic Geometry & Plane Vectors                 |
 | 第 7 级 | [数列与数学归纳法](01-初等数学/第07级-数列与数学归纳法.md)     | Sequences and Mathematical Induction                     |
 | 第 8 级 | [排列组合与概率初步](01-初等数学/第08级-排列组合与概率初步.md) | Permutations, Combinations & Introduction to Probability |
 
