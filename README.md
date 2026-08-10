@@ -30,16 +30,16 @@ Mathematics/
 
 > 数学学习的起点，涵盖算术、代数、几何与概率的初步知识。
 
-|  层级  | 主题                                                          | 英文                                                     |
-| :-----: | ------------------------------------------------------------- | -------------------------------------------------------- |
-| 第 1 级 | [算术基础](01-初等数学/第01级-算术基础.md)                     | Basic Arithmetic                                         |
+|  层级  | 主题                                                                                  | 英文                                                     |
+| :-----: | ------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| 第 1 级 | [算术基础](01-初等数学/第01级-算术基础.md)                                             | Basic Arithmetic                                         |
 | 第 2 级 | [初等代数](01-初等数学/第02级-初等代数.md)（含方程、不等式、初等函数、指数对数、复数） | Elementary Algebra                                       |
-| 第 3 级 | [平面几何](01-初等数学/第03级-平面几何.md)                     | Plane Geometry                                           |
-| 第 4 级 | [立体几何](01-初等数学/第04级-立体几何.md)（含空间向量）       | Solid Geometry & Spatial Vectors                         |
-| 第 5 级 | [三角函数](01-初等数学/第05级-三角函数.md)                     | Trigonometry                                             |
-| 第 6 级 | [平面解析几何](01-初等数学/第06级-平面解析几何.md)（含平面向量） | Plane Analytic Geometry & Plane Vectors                 |
-| 第 7 级 | [数列与数学归纳法](01-初等数学/第07级-数列与数学归纳法.md)     | Sequences and Mathematical Induction                     |
-| 第 8 级 | [排列组合与概率初步](01-初等数学/第08级-排列组合与概率初步.md) | Permutations, Combinations & Introduction to Probability |
+| 第 3 级 | [平面几何](01-初等数学/第03级-平面几何.md)                                             | Plane Geometry                                           |
+| 第 4 级 | [立体几何](01-初等数学/第04级-立体几何.md)（含空间向量）                               | Solid Geometry & Spatial Vectors                         |
+| 第 5 级 | [三角函数](01-初等数学/第05级-三角函数.md)                                             | Trigonometry                                             |
+| 第 6 级 | [平面解析几何](01-初等数学/第06级-平面解析几何.md)（含平面向量）                       | Plane Analytic Geometry & Plane Vectors                  |
+| 第 7 级 | [数列与数学归纳法](01-初等数学/第07级-数列与数学归纳法.md)                             | Sequences and Mathematical Induction                     |
+| 第 8 级 | [排列组合与概率初步](01-初等数学/第08级-排列组合与概率初步.md)                         | Permutations, Combinations & Introduction to Probability |
 
 ---
 
@@ -47,16 +47,17 @@ Mathematics/
 
 > 高等数学的基石，同时学习分析学与代数学的核心工具。
 
-|   层级   | 主题                                                      | 英文                          |
-| :------: | --------------------------------------------------------- | ----------------------------- |
-| 第 9 级 | [集合论基础](02-微积分与线性代数/第09级-集合论基础.md)     | Foundations of Set Theory     |
-| 第 10 级 | [实数系与极限](02-微积分与线性代数/第10级-实数系与极限.md)（含实数完备性六大定理、连续函数） | Real Number System and Limits |
+|   层级   | 主题                                                                                                  | 英文                          |
+| :------: | ----------------------------------------------------------------------------------------------------- | ----------------------------- |
+| 第 9 级 | [集合论基础](02-微积分与线性代数/第09级-集合论基础.md)                                                 | Foundations of Set Theory     |
+| 第 10 级 | [实数系与极限](02-微积分与线性代数/第10级-实数系与极限.md)（含实数完备性六大定理、连续函数）           | Real Number System and Limits |
 | 第 11 级 | [单变量微积分](02-微积分与线性代数/第11级-单变量微积分.md)（含含参变量积分、欧拉积分、极坐标面积弧长） | Single-Variable Calculus      |
-| 第 12 级 | [多变量微积分](02-微积分与线性代数/第12级-多变量微积分.md)（含隐函数定理、多元泰勒公式） | Multivariable Calculus        |
-| 第 13 级 | [级数理论](02-微积分与线性代数/第13级-级数理论.md)（含 Abel/Dirichlet 判别法、一致收敛准则） | Series Theory                 |
-| 第 14 级 | [线性代数](02-微积分与线性代数/第14级-线性代数.md)         | Linear Algebra                |
-| 第 15 级 | [多重线性代数](02-微积分与线性代数/第15级-多重线性代数.md) | Multilinear Algebra           |
-| 第 16 级 | [解析几何](02-微积分与线性代数/第16级-解析几何.md)（含极坐标方程） | Analytic Geometry             |
+| 第 12 级 | [多变量微积分](02-微积分与线性代数/第12级-多变量微积分.md)（含隐函数定理、多元泰勒公式）               | Multivariable Calculus        |
+| 第 13 级 | [级数理论](02-微积分与线性代数/第13级-级数理论.md)（含 Abel/Dirichlet 判别法、一致收敛准则）           | Series Theory                 |
+| 第 14 级 | [线性代数](02-微积分与线性代数/第14级-线性代数.md)                                                     | Linear Algebra                |
+| 第 15 级 | [多重线性代数](02-微积分与线性代数/第15级-多重线性代数.md)                                             | Multilinear Algebra           |
+| 第 16 级 | [解析几何](02-微积分与线性代数/第16级-解析几何.md)（含极坐标方程）                                     | Analytic Geometry             |
+|  发展史  | [微积分与数学分析发展史](./微积分与数学分析发展史.md)                                                  | History of Calculus           |
 
 ---
 
@@ -291,7 +292,6 @@ Mathematics/
 
 ## [数学公理体系与定理依赖关系](./数学公理体系与定理依赖关系.md)
 
-
 ## 附录：数学符号速查表
 
 > 本附录收录数学中常用的希腊字母、希伯来字母，以及各类数学符号及其典型含义，供学习过程中快速查阅。
@@ -452,31 +452,31 @@ Mathematics/
 
 ### H. 概率与统计符号
 
-|              符号              | 含义                 | 示例                          |
-| :-----------------------------: | -------------------- | ----------------------------- |
-|       $P(\cdot)$       | 概率                 | $P(A)$                        |
-|      $E[\cdot]$      | 期望                 | $E[X]$                        |
-|     $Var(\cdot)$     | 方差                 | $Var(X)$                      |
-|   $Cov(\cdot,\cdot)$   | 协方差               | $Cov(X, Y)$                   |
-|  $Corr(\cdot,\cdot)$  | 相关系数             | $Corr(X, Y)$                  |
-|          $\sim$          | 服从分布             | $X \sim N(\mu, \sigma^2)$    |
-|          $\perp$          | 独立                 | $X \perp Y$                  |
-|          $\sigma$          | 标准差               | $\sigma(X)$                   |
-|           $\mu$           | 均值                 | $\mu = E[X]$                  |
-|           $\rho$           | 相关系数             | $\rho_{XY}$                   |
-|          $\chi^2$          | 卡方分布             | $\chi^2(k)$                   |
-|            $t$            | t 分布               | $t(k)$                        |
-|            $F$            | F 分布               | $F(k_1, k_2)$                 |
-|   $N(\mu, \sigma^2)$   | 正态分布             | $X \sim N(0, 1)$             |
-|     $Bin(n, p)$     | 二项分布             | $X \sim Bin(n, p)$           |
-|     $Pois(\lambda)$     | 泊松分布             | $X \sim Pois(\lambda)$       |
-|     $Exp(\lambda)$     | 指数分布             | $X \sim Exp(\lambda)$        |
-|     $Unif(a, b)$     | 均匀分布             | $X \sim Unif(0, 1)$          |
-|       $\lvert \cdot \rvert$       | 绝对值、基数、行列式 | $\lvert x \rvert, \lvert S \rvert, \lvert A \rvert$ |
-|       $\lVert \cdot \rVert$       | 范数                 | $\lVert x \rVert_2$           |
-|     $\lfloor \cdot \rfloor$     | 向下取整 (floor)     | $\lfloor x \rfloor$           |
-|     $\lceil \cdot \rceil$     | 向上取整 (ceil)      | $\lceil x \rceil$             |
-|       $\{\cdot\}$       | 集合、小数部分       | $\{x, y\}, \{x\}$            |
+|           符号           | 含义                 | 示例                                                  |
+| :-----------------------: | -------------------- | ----------------------------------------------------- |
+|       $P(\cdot)$       | 概率                 | $P(A)$                                              |
+|       $E[\cdot]$       | 期望                 | $E[X]$                                              |
+|      $Var(\cdot)$      | 方差                 | $Var(X)$                                            |
+|   $Cov(\cdot,\cdot)$   | 协方差               | $Cov(X, Y)$                                         |
+|   $Corr(\cdot,\cdot)$   | 相关系数             | $Corr(X, Y)$                                        |
+|         $\sim$         | 服从分布             | $X \sim N(\mu, \sigma^2)$                           |
+|         $\perp$         | 独立                 | $X \perp Y$                                         |
+|        $\sigma$        | 标准差               | $\sigma(X)$                                         |
+|          $\mu$          | 均值                 | $\mu = E[X]$                                        |
+|         $\rho$         | 相关系数             | $\rho_{XY}$                                         |
+|        $\chi^2$        | 卡方分布             | $\chi^2(k)$                                         |
+|           $t$           | t 分布               | $t(k)$                                              |
+|           $F$           | F 分布               | $F(k_1, k_2)$                                       |
+|   $N(\mu, \sigma^2)$   | 正态分布             | $X \sim N(0, 1)$                                    |
+|       $Bin(n, p)$       | 二项分布             | $X \sim Bin(n, p)$                                  |
+|     $Pois(\lambda)$     | 泊松分布             | $X \sim Pois(\lambda)$                              |
+|     $Exp(\lambda)$     | 指数分布             | $X \sim Exp(\lambda)$                               |
+|      $Unif(a, b)$      | 均匀分布             | $X \sim Unif(0, 1)$                                 |
+|  $\lvert \cdot \rvert$  | 绝对值、基数、行列式 | $\lvert x \rvert, \lvert S \rvert, \lvert A \rvert$ |
+|  $\lVert \cdot \rVert$  | 范数                 | $\lVert x \rVert_2$                                 |
+| $\lfloor \cdot \rfloor$ | 向下取整 (floor)     | $\lfloor x \rfloor$                                 |
+|  $\lceil \cdot \rceil$  | 向上取整 (ceil)      | $\lceil x \rceil$                                   |
+|       $\{\cdot\}$       | 集合、小数部分       | $\{x, y\}, \{x\}$                                   |
 
 ### I. 其他常用符号
 
