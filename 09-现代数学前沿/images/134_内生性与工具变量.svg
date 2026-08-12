@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="374.4pt" viewBox="0 0 612 374.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-12T17:38:41.480383</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 374.4 
+L 612 374.4 
+L 612 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 164.049414 274.191842 
+Q 151.91127 175.86609 237.315097 130.220764 
+" clip-path="url(#p94aa60c838)" style="fill: none; stroke: #d62728; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 236.868049 130.232922 
+L 237.315097 130.220764 
+L 237.056595 130.585698 
+z
+" clip-path="url(#p94aa60c838)" style="fill: #d62728; stroke: #d62728; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 500.832 131.5944 
+L 365.04 272.8152 
+" clip-path="url(#p94aa60c838)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #bbbbbb; stroke-width: 1.5"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 241.056 131.5944 
+L 370.944 131.5944 
+L 370.944 91.2456 
+L 241.056 91.2456 
+z
+" clip-path="url(#p94aa60c838)" style="fill: #e8f6ee; stroke: #555555; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 241.056 316.5264 
+L 370.944 316.5264 
+L 370.944 276.1776 
+L 241.056 276.1776 
+z
+" clip-path="url(#p94aa60c838)" style="fill: #eef3fb; stroke: #555555; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 435.888 131.5944 
+L 565.776 131.5944 
+L 565.776 91.2456 
+L 435.888 91.2456 
+z
+" clip-path="url(#p94aa60c838)" style="fill: #fff3e0; stroke: #555555; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 306 133.598418 
+Q 306 202.206274 306 268.019044 
+" style="fill: none; stroke: #2a7fff; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 308 264.019044 
+L 306 268.019044 
+L 304 264.019044 
+z
+" style="fill: #2a7fff; stroke: #2a7fff; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <!-- $\beta$ 是目标效应 -->
+    <g style="fill: #2a7fff" transform="translate(314.856 202.2048)">
+     <text>
+      <tspan x="0" y="-0.515625" style="font-style: oblique; font-size: 10px; font-family: 'DejaVu Sans'; fill: #2a7fff">β</tspan>
+      <tspan x="6.381836" y="-0.515625" style="font-size: 10px; font-family: 'Noto Sans CJK SC'; fill: #2a7fff"> </tspan>
+      <tspan x="8.621841" y="-0.515625" style="font-size: 10px; font-family: 'Noto Sans CJK SC'; fill: #2a7fff">是</tspan>
+      <tspan x="18.621826" y="-0.515625" style="font-size: 10px; font-family: 'Noto Sans CJK SC'; fill: #2a7fff">目</tspan>
+      <tspan x="28.621811" y="-0.515625" style="font-size: 10px; font-family: 'Noto Sans CJK SC'; fill: #2a7fff">标</tspan>
+      <tspan x="38.621796" y="-0.515625" style="font-size: 10px; font-family: 'Noto Sans CJK SC'; fill: #2a7fff">效</tspan>
+      <tspan x="48.62178" y="-0.515625" style="font-size: 10px; font-family: 'Noto Sans CJK SC'; fill: #2a7fff">应</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 46.224 316.5264 
+L 164.304 316.5264 
+L 164.304 276.1776 
+L 46.224 276.1776 
+z
+" clip-path="url(#p94aa60c838)" style="fill: #fdeaea; stroke: #555555; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <!-- 内生性：$\mathrm{Cov}(x,\varepsilon)\neq 0$ -->
+    <g style="fill: #d62728" transform="translate(128.88 172.8504)">
+     <text>
+      <tspan x="0" y="-0.4375" style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #d62728">内</tspan>
+      <tspan x="9.000061" y="-0.4375" style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #d62728">生</tspan>
+      <tspan x="18.000122" y="-0.4375" style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #d62728">性</tspan>
+      <tspan x="27.000183" y="-0.4375" style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #d62728">：</tspan>
+      <tspan x="36.000244" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">C</tspan>
+      <tspan x="42.284424" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">o</tspan>
+      <tspan x="47.790771" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">v</tspan>
+      <tspan x="53.116943" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">(</tspan>
+      <tspan x="61.954346" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">,</tspan>
+      <tspan x="71.43335" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">)</tspan>
+      <tspan x="76.697998" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">≠</tspan>
+      <tspan x="85.992432" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">0</tspan>
+      <tspan x="56.628174" y="-0.4375" style="font-style: oblique; font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">x</tspan>
+      <tspan x="66.568604" y="-0.4375" style="font-style: oblique; font-size: 9px; font-family: 'DejaVu Sans'; fill: #d62728">ε</tspan>
+     </text>
+    </g>
+    <text style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #d62728" transform="translate(128.88 182.0304)">OLS 偏误</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 557.870427 111.42 
+Q 497.878734 111.42 440.682126 111.42 
+" style="fill: none; stroke: #ff8c42; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 444.682126 113.42 
+L 440.682126 111.42 
+L 444.682126 109.42 
+z
+" style="fill: #ff8c42; stroke: #ff8c42; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #ff8c42" transform="translate(484.38 88.9704)">相关性</text>
+    <!-- $\mathrm{Cov}(z,x)\neq0$ -->
+    <g style="fill: #ff8c42" transform="translate(470.07 97.9704)">
+     <text>
+      <tspan x="0" y="-0.171875" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">C</tspan>
+      <tspan x="6.28418" y="-0.171875" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">o</tspan>
+      <tspan x="11.790527" y="-0.171875" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">v</tspan>
+      <tspan x="17.116699" y="-0.171875" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">(</tspan>
+      <tspan x="25.352051" y="-0.171875" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">,</tspan>
+      <tspan x="35.29248" y="-0.171875" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">)</tspan>
+      <tspan x="40.557129" y="-0.171875" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">≠</tspan>
+      <tspan x="49.851562" y="-0.171875" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">0</tspan>
+      <tspan x="20.62793" y="-0.171875" style="font-style: oblique; font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">z</tspan>
+      <tspan x="29.966309" y="-0.171875" style="font-style: oblique; font-size: 9px; font-family: 'DejaVu Sans'; fill: #ff8c42">x</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- 外生性：$\mathbb{E}[\varepsilon|z]=0$ -->
+    <g style="fill: #555555" transform="translate(444.015 219.0168)">
+     <text>
+      <tspan x="0" y="-0.4375" style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #555555">外</tspan>
+      <tspan x="9.000061" y="-0.4375" style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #555555">生</tspan>
+      <tspan x="18.000122" y="-0.4375" style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #555555">性</tspan>
+      <tspan x="27.000183" y="-0.4375" style="font-size: 9px; font-family: 'Noto Sans CJK SC'; fill: #555555">：</tspan>
+      <tspan x="36.000244" y="-0.4375" style="font-style: italic; font-size: 9px; font-family: 'STIXNonUnicode'; fill: #555555"></tspan>
+      <tspan x="41.751282" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #555555">[</tspan>
+      <tspan x="50.127258" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #555555">|</tspan>
+      <tspan x="57.883606" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #555555">]</tspan>
+      <tspan x="63.148254" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #555555">=</tspan>
+      <tspan x="72.442688" y="-0.4375" style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #555555">0</tspan>
+      <tspan x="45.262512" y="-0.4375" style="font-style: oblique; font-size: 9px; font-family: 'DejaVu Sans'; fill: #555555">ε</tspan>
+      <tspan x="53.159485" y="-0.4375" style="font-style: oblique; font-size: 9px; font-family: 'DejaVu Sans'; fill: #555555">z</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_5">
+    <!-- 工具变量 $z$：通过相关性撬动 $x$，但与外生扰动 $\varepsilon$ 无关 -->
+    <g transform="translate(164.64 21.36)">
+     <text>
+      <tspan x="0" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">工</tspan>
+      <tspan x="12.000092" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">具</tspan>
+      <tspan x="24.000183" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">变</tspan>
+      <tspan x="36.000275" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">量</tspan>
+      <tspan x="48.000366" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'"> </tspan>
+      <tspan x="56.987213" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">：</tspan>
+      <tspan x="68.987305" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">通</tspan>
+      <tspan x="80.987396" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">过</tspan>
+      <tspan x="92.987488" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">相</tspan>
+      <tspan x="104.987579" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">关</tspan>
+      <tspan x="116.987671" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">性</tspan>
+      <tspan x="128.987762" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">撬</tspan>
+      <tspan x="140.987854" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">动</tspan>
+      <tspan x="152.987946" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'"> </tspan>
+      <tspan x="162.777527" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">，</tspan>
+      <tspan x="174.777618" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">但</tspan>
+      <tspan x="186.77771" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">与</tspan>
+      <tspan x="198.777802" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">外</tspan>
+      <tspan x="210.777893" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">生</tspan>
+      <tspan x="222.777985" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">扰</tspan>
+      <tspan x="234.778076" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">动</tspan>
+      <tspan x="246.778168" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'"> </tspan>
+      <tspan x="255.952515" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'"> </tspan>
+      <tspan x="258.640533" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">无</tspan>
+      <tspan x="270.640625" y="-0.8125" style="font-size: 12px; font-family: 'Noto Sans CJK SC'">关</tspan>
+      <tspan x="50.688385" y="-0.8125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">z</tspan>
+      <tspan x="155.675964" y="-0.8125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">x</tspan>
+      <tspan x="249.466187" y="-0.8125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">ε</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_6">
+    <!-- 解释变量 $x$ -->
+    <g transform="translate(279.49 115.6)">
+     <text>
+      <tspan x="0" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">解</tspan>
+      <tspan x="10.999924" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">释</tspan>
+      <tspan x="21.999847" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">变</tspan>
+      <tspan x="32.999771" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">量</tspan>
+      <tspan x="43.999695" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'"> </tspan>
+      <tspan x="46.463684" y="-0.65625" style="font-style: oblique; font-size: 11px; font-family: 'DejaVu Sans'">x</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_7">
+    <!-- 因变量 $y$ -->
+    <g transform="translate(284.99 300.037)">
+     <text>
+      <tspan x="0" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">因</tspan>
+      <tspan x="10.999924" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">变</tspan>
+      <tspan x="21.999847" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">量</tspan>
+      <tspan x="32.999771" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'"> </tspan>
+      <tspan x="35.46376" y="-0.65625" style="font-style: oblique; font-size: 11px; font-family: 'DejaVu Sans'">y</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_8">
+    <!-- 工具变量 $z$ -->
+    <g transform="translate(474.707 115.6)">
+     <text>
+      <tspan x="0" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">工</tspan>
+      <tspan x="10.999924" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">具</tspan>
+      <tspan x="21.999847" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">变</tspan>
+      <tspan x="32.999771" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">量</tspan>
+      <tspan x="43.999695" y="-0.65625" style="font-size: 11px; font-family: 'Noto Sans CJK SC'"> </tspan>
+      <tspan x="46.463684" y="-0.65625" style="font-style: oblique; font-size: 11px; font-family: 'DejaVu Sans'">z</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_9">
+    <!-- 误差项 $\varepsilon$ -->
+    <g transform="translate(84.529 300.532)">
+     <text>
+      <tspan x="0" y="-0.734375" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">误</tspan>
+      <tspan x="10.999924" y="-0.734375" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">差</tspan>
+      <tspan x="21.999847" y="-0.734375" style="font-size: 11px; font-family: 'Noto Sans CJK SC'">项</tspan>
+      <tspan x="32.999771" y="-0.734375" style="font-size: 11px; font-family: 'Noto Sans CJK SC'"> </tspan>
+      <tspan x="35.46376" y="-0.734375" style="font-style: oblique; font-size: 11px; font-family: 'DejaVu Sans'">ε</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p94aa60c838">
+   <rect x="10.8" y="27.36" width="590.4" height="336.24"/>
+  </clipPath>
+ </defs>
+</svg>
