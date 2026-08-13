@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 430" width="620" height="430">
+  <!-- Background -->
+  <rect width="620" height="430" fill="#fef9e7" rx="8"/>
+  
+  <!-- Title -->
+  <text x="310" y="30" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#1a1a2e">分歧理论：素理想在扩张中的分解</text>
+  
+  <!-- Base: Z -->
+  <rect x="220" y="350" width="180" height="50" rx="8" fill="#d5f5e3" stroke="#1e8449" stroke-width="2"/>
+  <text x="310" y="372" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#1a1a2e">ℤ 中的素数 p</text>
+  <text x="310" y="392" text-anchor="middle" font-family="serif" font-size="12" fill="#555">pℤ ⊂ ℤ</text>
+  
+  <!-- Extension: O_K -->
+  <rect x="140" y="190" width="340" height="55" rx="8" fill="#d6eaf8" stroke="#2471a3" stroke-width="2"/>
+  <text x="310" y="212" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#1a1a2e">𝒪_K 中的分解 p𝒪_K = 𝔭₁^{e₁} 𝔭₂^{e₂} ··· 𝔭_g^{e_g}</text>
+  <text x="310" y="235" text-anchor="middle" font-family="serif" font-size="12" fill="#555">基本等式：n = Σ eᵢfᵢ（n = [K:ℚ]）</text>
+  
+  <!-- Arrows from p to primes -->
+  <line x1="260" y1="350" x2="120" y2="250" stroke="#333" stroke-width="1.2" stroke-dasharray="4,2"/>
+  <line x1="310" y1="350" x2="310" y2="250" stroke="#333" stroke-width="1.2" stroke-dasharray="4,2"/>
+  <line x1="360" y1="350" x2="500" y2="250" stroke="#333" stroke-width="1.2" stroke-dasharray="4,2"/>
+  
+  <!-- Prime ideals -->
+  <rect x="50" y="100" width="130" height="70" rx="8" fill="#fadbd8" stroke="#c0392b" stroke-width="2"/>
+  <text x="115" y="125" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">𝔭₁ (e₁=2, f₁=1)</text>
+  <text x="115" y="148" text-anchor="middle" font-family="serif" font-size="11" fill="#555">分歧（ramified）</text>
+  <text x="115" y="163" text-anchor="middle" font-family="serif" font-size="11" fill="#c0392b">e=2, 像"双重根"</text>
+  
+  <rect x="245" y="100" width="130" height="70" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="310" y="125" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">𝔭₂ (e=1, f=2)</text>
+  <text x="310" y="148" text-anchor="middle" font-family="serif" font-size="11" fill="#555">惯性（inert）</text>
+  <text x="310" y="163" text-anchor="middle" font-family="serif" font-size="11" fill="#e67e22">e=1, f=2, 剩余域扩张</text>
+  
+  <rect x="440" y="100" width="130" height="70" rx="8" fill="#d5f5e3" stroke="#1e8449" stroke-width="2"/>
+  <text x="505" y="125" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">𝔭₃ (e=1, f=1)</text>
+  <text x="505" y="148" text-anchor="middle" font-family="serif" font-size="11" fill="#555">分裂（split）</text>
+  <text x="505" y="163" text-anchor="middle" font-family="serif" font-size="11" fill="#1e8449">e=1, f=1, 完全分裂</text>
+  
+  <!-- Arrows from decomposition to primes -->
+  <line x1="115" y1="190" x2="115" y2="170" stroke="#333" stroke-width="1.2"/>
+  <line x1="310" y1="190" x2="310" y2="170" stroke="#333" stroke-width="1.2"/>
+  <line x1="505" y1="190" x2="505" y2="170" stroke="#333" stroke-width="1.2"/>
+  
+  <!-- Galois group action label -->
+  <text x="310" y="80" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#8e44ad">Galois 群 G = Gal(L/K) 可迁作用在 𝔭ᵢ 上</text>
+  <text x="310" y="55" text-anchor="middle" font-family="serif" font-size="12" fill="#555">分解群 D_𝔭：|D_𝔭| = ef    惯性群 I_𝔭：|I_𝔭| = e</text>
+  
+  <!-- Bottom: Example -->
+  <rect x="50" y="270" width="520" height="65" rx="6" fill="white" stroke="#aaa" stroke-width="1"/>
+  <text x="310" y="290" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#333">示例：K = ℚ(√−5) 中 p = 2 的分歧</text>
+  <text x="310" y="310" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">2𝒪_K = (2, 1+√−5)² = 𝔭₂²     (e=2, f=1, g=1, n=2)</text>
+  <text x="310" y="328" text-anchor="middle" font-family="serif" font-size="11" fill="#555">𝔭₂ = (2, 1+√−5) 不是主理想 → 类群 Cl(K) ≅ ℤ/2ℤ</text>
+  
+  <!-- Caption -->
+  <text x="310" y="420" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">分歧如同"素数在扩张中的指纹"：e 衡量"折叠深度"，f 衡量"剩余域的膨胀"，g 衡量"分裂的份数"</text>
+</svg>

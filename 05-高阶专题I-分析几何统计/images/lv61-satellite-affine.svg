@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <pattern id="grid1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#3498db" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e74c3c" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    仿射变换与卫星影像校正：保平行、保比例、变形状
+  </text>
+  
+  <!-- Original image (satellite view) -->
+  <g transform="translate(50, 60)">
+    <text x="130" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#34495e" font-weight="bold">原始影像（倾斜拍摄）</text>
+    
+    <!-- Distorted quadrilateral (affine transformed) -->
+    <polygon points="30,40 230,30 250,230 10,220" fill="url(#grid1)" stroke="#3498db" stroke-width="1.5"/>
+    
+    <!-- Features in original (distorted) -->
+    <rect x="60" y="70" width="60" height="40" fill="#27ae60" opacity="0.4" transform="skewY(-3)"/>
+    <text x="90" y="95" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#fff">建筑</text>
+    
+    <rect x="150" y="120" width="50" height="50" fill="#e74c3c" opacity="0.4" transform="skewY(-2)"/>
+    <text x="175" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#fff">广场</text>
+    
+    <!-- Road (parallel lines) -->
+    <line x1="40" y1="180" x2="240" y2="175" stroke="#7f8c8d" stroke-width="2"/>
+    <line x1="40" y1="195" x2="240" y2="190" stroke="#7f8c8d" stroke-width="2"/>
+    
+    <text x="130" y="255" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">梯形畸变（透视效果）</text>
+  </g>
+  
+  <!-- Arrow with transformation matrix -->
+  <g transform="translate(310, 120)">
+    <text x="80" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#34495e" font-weight="bold">仿射变换 F(x) = Ax + b</text>
+    
+    <!-- Matrix -->
+    <text x="80" y="30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#9b59b6">A = [a b; c d]</text>
+    <text x="80" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#9b59b6">b = [tx; ty]</text>
+    
+    <!-- Arrow -->
+    <path d="M 20,80 L 140,80" stroke="#9b59b6" stroke-width="2.5" marker-end="url(#affineArrow)"/>
+    
+    <!-- Properties preserved -->
+    <text x="80" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#27ae60" font-weight="bold">保持：</text>
+    <text x="80" y="128" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">✓ 平行性</text>
+    <text x="80" y="145" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">✓ 共线性</text>
+    <text x="80" y="162" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">✓ 线段比例</text>
+    
+    <text x="80" y="185" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#e74c3c" font-weight="bold">不保持：</text>
+    <text x="80" y="200" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">✗ 角度</text>
+    <text x="80" y="215" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">✗ 长度</text>
+  </g>
+  
+  <!-- Corrected image -->
+  <g transform="translate(490, 60)">
+    <text x="130" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#34495e" font-weight="bold">校正后影像（正射投影）</text>
+    
+    <!-- Corrected rectangle -->
+    <rect x="30" y="30" width="200" height="200" fill="url(#grid2)" stroke="#e74c3c" stroke-width="1.5"/>
+    
+    <!-- Features in corrected (rectangular) -->
+    <rect x="60" y="60" width="60" height="40" fill="#27ae60" opacity="0.4"/>
+    <text x="90" y="85" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#fff">建筑</text>
+    
+    <rect x="140" y="110" width="50" height="50" fill="#e74c3c" opacity="0.4"/>
+    <text x="165" y="140" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#fff">广场</text>
+    
+    <!-- Road (parallel lines, now horizontal) -->
+    <line x1="40" y1="180" x2="220" y2="180" stroke="#7f8c8d" stroke-width="2"/>
+    <line x1="40" y1="195" x2="220" y2="195" stroke="#7f8c8d" stroke-width="2"/>
+    
+    <text x="130" y="255" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">正确的几何关系</text>
+  </g>
+  
+  <!-- Application summary -->
+  <g transform="translate(50, 350)">
+    <rect x="0" y="0" width="700" height="130" fill="#ecf0f1" rx="8" stroke="#3498db" stroke-width="1.5"/>
+    
+    <text x="350" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">仿射变换的现实应用</text>
+    
+    <text x="30" y="50" font-family="Arial, sans-serif" font-size="11" fill="#34495e" font-weight="bold">卫星影像校正：</text>
+    <text x="30" y="68" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">倾斜拍摄的卫星照片通过仿射变换校正为正射影像，恢复真实地理坐标</text>
+    
+    <text x="30" y="92" font-family="Arial, sans-serif" font-size="11" fill="#34495e" font-weight="bold">其他应用：</text>
+    <text x="30" y="110" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">计算机图形学 (3D→2D 投影) | 图像配准 | 地图制图 | 计算机视觉 (透视校正)</text>
+    
+    <text x="500" y="50" font-family="Arial, sans-serif" font-size="11" fill="#9b59b6" font-weight="bold">核心思想：</text>
+    <text x="500" y="68" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">仿射变换 = 线性变换 + 平移</text>
+    <text x="500" y="86" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">由 3 对对应点唯一确定</text>
+    <text x="500" y="104" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">（仿射基本定理）</text>
+  </g>
+</svg>

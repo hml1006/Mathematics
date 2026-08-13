@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c3e50">贝叶斯定理：疾病检测的反直觉结论</text>
+  <text x="360" y="55" text-anchor="middle" font-size="13" fill="#7f8c8d">患病率 0.1% · 灵敏度 99% · 特异度 98% → 阳性后真正患病仅 ≈ 4.72%</text>
+
+  <!-- Tree diagram -->
+  <!-- Root node -->
+  <circle cx="80" cy="250" r="28" fill="#4A90D9" stroke="#2c3e50" stroke-width="2"/>
+  <text x="80" y="246" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">10000</text>
+  <text x="80" y="260" text-anchor="middle" font-size="10" fill="#fff">人</text>
+
+  <!-- Branch 1: Diseased (top) -->
+  <line x1="108" y1="240" x2="220" y2="140" stroke="#e74c3c" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="155" y="178" font-size="12" fill="#e74c3c" font-weight="bold" transform="rotate(-25, 155, 178)">患病 0.1%</text>
+
+  <!-- Diseased node -->
+  <circle cx="240" cy="130" r="28" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  <text x="240" y="126" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">10</text>
+  <text x="240" y="141" text-anchor="middle" font-size="10" fill="#fff">人患病</text>
+
+  <!-- Branch: Diseased → Positive -->
+  <line x1="268" y1="122" x2="400" y2="85" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="330" y="92" font-size="11" fill="#27ae60" font-weight="bold">阳性 99%</text>
+
+  <rect x="415" y="62" width="110" height="46" rx="10" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+  <text x="470" y="82" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">9.9 人</text>
+  <text x="470" y="99" text-anchor="middle" font-size="11" fill="#e8f5e9">真阳性 ✓</text>
+
+  <!-- Branch: Diseased → Negative -->
+  <line x1="268" y1="142" x2="400" y2="175" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="330" y="170" font-size="11" fill="#95a5a6">阴性 1%</text>
+
+  <rect x="415" y="155" width="110" height="40" rx="10" fill="#bdc3c7" stroke="#95a5a6" stroke-width="1.5"/>
+  <text x="470" y="180" text-anchor="middle" font-size="12" fill="#555" font-weight="bold">0.1 人</text>
+
+  <!-- Branch 2: Healthy (bottom) -->
+  <line x1="108" y1="260" x2="220" y2="360" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="150" y="325" font-size="12" fill="#27ae60" font-weight="bold" transform="rotate(25, 150, 325)">健康 99.9%</text>
+
+  <!-- Healthy node -->
+  <circle cx="240" cy="370" r="28" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+  <text x="240" y="366" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">9990</text>
+  <text x="240" y="381" text-anchor="middle" font-size="10" fill="#fff">人健康</text>
+
+  <!-- Branch: Healthy → Positive -->
+  <line x1="268" y1="358" x2="400" y2="310" stroke="#e67e22" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="330" y="322" font-size="11" fill="#e67e22" font-weight="bold">假阳性 2%</text>
+
+  <rect x="415" y="287" width="110" height="46" rx="10" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+  <text x="470" y="307" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">199.8 人</text>
+  <text x="470" y="324" text-anchor="middle" font-size="11" fill="#fff3e0">假阳性 ✗</text>
+
+  <!-- Branch: Healthy → Negative -->
+  <line x1="268" y1="382" x2="400" y2="420" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="330" y="415" font-size="11" fill="#27ae60">阴性 98%</text>
+
+  <rect x="415" y="400" width="110" height="40" rx="10" fill="#27ae60" stroke="#1e8449" stroke-width="1.5"/>
+  <text x="470" y="425" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">9790.2 人</text>
+
+  <!-- Bayes formula box -->
+  <rect x="545" y="120" width="165" height="200" rx="12" fill="#fdf2f2" stroke="#e74c3c" stroke-width="2"/>
+  <text x="627" y="145" text-anchor="middle" font-size="13" font-weight="bold" fill="#c0392b">贝叶斯公式</text>
+  <line x1="555" y1="155" x2="700" y2="155" stroke="#e74c3c" stroke-width="1"/>
+
+  <text x="627" y="178" text-anchor="middle" font-size="11" fill="#555">P(患病|阳性) =</text>
+  <text x="627" y="200" text-anchor="middle" font-size="12" fill="#27ae60" font-weight="bold">真阳性</text>
+  <text x="627" y="218" text-anchor="middle" font-size="11" fill="#555">─────────────</text>
+  <text x="627" y="238" text-anchor="middle" font-size="12" fill="#e67e22" font-weight="bold">真阳性 + 假阳性</text>
+
+  <line x1="555" y1="252" x2="700" y2="252" stroke="#e74c3c" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <text x="627" y="274" text-anchor="middle" font-size="13" fill="#555">=</text>
+  <text x="627" y="296" text-anchor="middle" font-size="14" fill="#c0392b" font-weight="bold">9.9</text>
+  <text x="627" y="312" text-anchor="middle" font-size="12" fill="#555">─────────────</text>
+  <text x="627" y="312" text-anchor="middle" font-size="12" fill="#555">9.9 + 199.8</text>
+
+  <!-- Result highlight -->
+  <rect x="555" y="330" width="145" height="35" rx="8" fill="#c0392b"/>
+  <text x="627" y="353" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">≈ 4.72%</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="455" width="660" height="38" rx="8" fill="#fff3e0" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="360" y="479" text-anchor="middle" font-size="13" fill="#2c3e50">💡 反直觉：检测阳性≠真的生病！因为健康人群基数大(9990人)，即使假阳性率仅2%，也会"淹没"真阳性(9.9人)。</text>
+</svg>

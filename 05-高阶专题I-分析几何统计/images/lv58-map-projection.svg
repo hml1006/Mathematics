@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="popGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="popGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    最优传输与地图投影：将人口分布 μ 最优地"搬"到分布 ν
+  </text>
+  
+  <!-- Source distribution: China population density -->
+  <g transform="translate(30, 60)">
+    <text x="150" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#34495e" font-weight="bold">源分布 μ（人口密度）</text>
+    
+    <!-- Simplified China map outline -->
+    <path d="M 80,30 L 120,20 L 180,25 L 220,40 L 260,35 L 280,60 L 270,100 L 280,140 L 260,170 L 230,190 L 200,200 L 160,210 L 120,200 L 90,180 L 70,150 L 60,110 L 65,70 Z" 
+          fill="url(#popGrad1)" stroke="#2980b9" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- Population density hotspots -->
+    <circle cx="230" cy="80" r="15" fill="#e74c3c" opacity="0.6"/>
+    <text x="230" y="84" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#fff">东部</text>
+    
+    <circle cx="120" cy="150" r="10" fill="#e74c3c" opacity="0.4"/>
+    <text x="120" y="154" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#fff">四川</text>
+    
+    <circle cx="100" cy="80" r="8" fill="#f39c12" opacity="0.3"/>
+    <text x="100" y="84" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#fff">西部</text>
+    
+    <!-- Density indicator -->
+    <text x="150" y="235" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">东密西疏</text>
+  </g>
+  
+  <!-- Transport map arrows -->
+  <g transform="translate(310, 60)">
+    <text x="80" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#34495e" font-weight="bold">最优传输映射 T</text>
+    
+    <!-- Arrows showing transport -->
+    <path d="M 20,60 C 50,50 100,40 140,50" stroke="#9b59b6" stroke-width="2" fill="none" marker-end="url(#transArrow)"/>
+    <path d="M 20,100 C 60,90 100,85 140,90" stroke="#9b59b6" stroke-width="2.5" fill="none" marker-end="url(#transArrow)"/>
+    <path d="M 20,140 C 50,135 100,130 140,130" stroke="#9b59b6" stroke-width="1.5" fill="none" marker-end="url(#transArrow)"/>
+    <path d="M 20,180 C 60,170 100,165 140,170" stroke="#9b59b6" stroke-width="2" fill="none" marker-end="url(#transArrow)"/>
+    
+    <!-- Cost annotation -->
+    <text x="80" y="210" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#9b59b6">min ∫|x-T(x)|² dμ(x)</text>
+    <text x="80" y="230" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">总搬迁代价最小</text>
+  </g>
+  
+  <!-- Target distribution -->
+  <g transform="translate(470, 60)">
+    <text x="150" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#34495e" font-weight="bold">目标分布 ν（规划分布）</text>
+    
+    <!-- More uniform distribution -->
+    <path d="M 80,30 L 120,20 L 180,25 L 220,40 L 260,35 L 280,60 L 270,100 L 280,140 L 260,170 L 230,190 L 200,200 L 160,210 L 120,200 L 90,180 L 70,150 L 60,110 L 65,70 Z" 
+          fill="url(#popGrad2)" stroke="#c0392b" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- More uniform density -->
+    <circle cx="170" cy="100" r="25" fill="#e74c3c" opacity="0.35"/>
+    <circle cx="120" cy="130" r="20" fill="#e74c3c" opacity="0.3"/>
+    <circle cx="200" cy="140" r="18" fill="#e74c3c" opacity="0.3"/>
+    
+    <text x="150" y="235" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">更均衡的分布</text>
+  </g>
+  
+  <!-- Wasserstein distance and Benamou-Brenier -->
+  <g transform="translate(50, 320)">
+    <rect x="0" y="0" width="700" height="160" fill="#ecf0f1" rx="8" stroke="#e67e22" stroke-width="1.5"/>
+    
+    <text x="350" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">Wasserstein 距离与 Benamou-Brenier 流体力学</text>
+    
+    <!-- Left: Wasserstein metric -->
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="12" fill="#34495e" font-weight="bold">W₂ 距离 = 最小"土方量"</text>
+    <text x="30" y="78" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">W₂²(μ,ν) = min ∫|x-y|² dγ(x,y)</text>
+    <text x="30" y="98" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">γ 是满足边缘约束的耦合</text>
+    
+    <!-- Right: Fluid dynamics -->
+    <text x="380" y="55" font-family="Arial, sans-serif" font-size="12" fill="#34495e" font-weight="bold">Benamou-Brenier 公式</text>
+    <text x="380" y="78" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">W₂²(μ₀,μ₁) = min ∫₀¹∫|vₜ|² dρₜ dt</text>
+    <text x="380" y="98" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">∂ₜρₜ + ∇·(ρₜvₜ) = 0 (连续性方程)</text>
+    
+    <!-- Application -->
+    <rect x="20" y="115" width="660" height="35" fill="#fff" rx="4" stroke="#3498db" stroke-width="1"/>
+    <text x="350" y="137" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2c3e50">
+      应用：图像配准 | 气象数据同化 | 城市人口规划 | 机器学习 (GAN, 领域自适应)
+    </text>
+  </g>
+</svg>

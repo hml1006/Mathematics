@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3498db"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="300" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    第一同构定理：G/ker φ ≅ im φ
+  </text>
+  
+  <!-- 群 G -->
+  <ellipse cx="120" cy="180" rx="80" ry="100" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+  <text x="120" y="185" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">G</text>
+  
+  <!-- 核 ker φ -->
+  <ellipse cx="120" cy="220" rx="45" ry="35" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="120" y="225" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#856404">ker φ</text>
+  
+  <!-- 群 H -->
+  <ellipse cx="480" cy="180" rx="80" ry="100" fill="#e8f8f0" stroke="#27ae60" stroke-width="2"/>
+  <text x="480" y="185" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">H</text>
+  
+  <!-- 像 im φ -->
+  <ellipse cx="480" cy="200" rx="55" ry="45" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+  <text x="480" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#155724">im φ</text>
+  
+  <!-- 同态映射箭头 -->
+  <path d="M 200 180 Q 300 150 400 180" fill="none" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead-blue)"/>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-size="18" font-style="italic" text-anchor="middle" fill="#3498db">φ</text>
+  
+  <!-- 商群 G/ker φ -->
+  <rect x="250" y="280" width="100" height="60" rx="8" fill="#f0e6ff" stroke="#9b59b6" stroke-width="2"/>
+  <text x="300" y="315" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#6c3483">G/ker φ</text>
+  
+  <!-- 从 G 到商群的投影 -->
+  <path d="M 150 260 L 260 290" fill="none" stroke="#9b59b6" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="180" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6c3483">投影</text>
+  
+  <!-- 同构符号 -->
+  <text x="300" y="370" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#9b59b6">≅</text>
+  
+  <!-- 从商群到像的同构 -->
+  <path d="M 350 310 L 440 230" fill="none" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 现实类比说明 -->
+  <rect x="30" y="340" width="540" height="50" rx="5" fill="#fff9e6" stroke="#f39c12" stroke-width="1"/>
+  <text x="300" y="360" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#7d6608">
+    现实类比：同态就像"翻译机"——把群G的元素翻译成群H的语言
+  </text>
+  <text x="300" y="380" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#7d6608">
+    核是"被翻译成零的词汇"，商群G/ker φ就是"去掉冗余后的本质结构"
+  </text>
+</svg>

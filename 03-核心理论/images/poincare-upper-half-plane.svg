@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- 标题 -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Poincaré 上半平面模型
+  </text>
+  
+  <!-- 坐标系 -->
+  <g transform="translate(100, 80)">
+    <!-- 背景 -->
+    <rect x="0" y="0" width="400" height="400" fill="#e8f8f5" stroke="#1abc9c" stroke-width="2"/>
+    
+    <!-- 实轴 (x轴) -->
+    <line x1="0" y1="400" x2="400" y2="400" stroke="#2c3e50" stroke-width="2"/>
+    <text x="410" y="405" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">x</text>
+    
+    <!-- 虚轴 (y轴) -->
+    <line x1="0" y1="0" x2="0" y2="400" stroke="#2c3e50" stroke-width="2"/>
+    <text x="-15" y="10" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">y</text>
+    
+    <!-- 上半平面标注 -->
+    <text x="200" y="200" font-family="Arial, sans-serif" font-size="16" font-style="italic" text-anchor="middle" fill="#16a085" opacity="0.5">
+      上半平面 ℍ
+    </text>
+    <text x="200" y="220" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#16a085" opacity="0.5">
+      (Im(z) > 0)
+    </text>
+    
+    <!-- 测地线1：垂直于实轴的半直线 -->
+    <line x1="100" y1="400" x2="100" y2="50" stroke="#e74c3c" stroke-width="3" stroke-dasharray="5,5"/>
+    <text x="110" y="70" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">测地线1</text>
+    
+    <!-- 测地线2：圆心在实轴上的半圆 -->
+    <path d="M 150,400 A 100,100 0 0,1 350,400" fill="none" stroke="#3498db" stroke-width="3"/>
+    <text x="250" y="280" font-family="Arial, sans-serif" font-size="12" fill="#3498db">测地线2</text>
+    
+    <!-- 测地线3：另一个半圆 -->
+    <path d="M 50,400 A 50,50 0 0,1 150,400" fill="none" stroke="#9b59b6" stroke-width="3"/>
+    <text x="100" y="340" font-family="Arial, sans-serif" font-size="12" fill="#9b59b6">测地线3</text>
+    
+    <!-- 点标注 -->
+    <circle cx="200" cy="300" r="5" fill="#f39c12"/>
+    <text x="210" y="295" font-family="Arial, sans-serif" font-size="12" fill="#f39c12">z₁</text>
+    
+    <circle cx="300" cy="200" r="5" fill="#f39c12"/>
+    <text x="310" y="195" font-family="Arial, sans-serif" font-size="12" fill="#f39c12">z₂</text>
+    
+    <!-- 双曲距离示意 -->
+    <path d="M 200,300 Q 250,250 300,200" fill="none" stroke="#f39c12" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="260" y="240" font-family="Arial, sans-serif" font-size="11" fill="#f39c12">双曲距离</text>
+    
+    <!-- 边界标注 -->
+    <text x="200" y="420" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#7f8c8d">
+      实轴 (边界, "无穷远")
+    </text>
+  </g>
+  
+  <!-- 右侧说明 -->
+  <g transform="translate(530, 100)">
+    <rect x="0" y="0" width="240" height="450" fill="#f8f9fa" stroke="#95a5a6" stroke-width="2" rx="8"/>
+    
+    <text x="120" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      模型定义
+    </text>
+    
+    <text x="15" y="60" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      <tspan font-weight="bold">点集：</tspan>上半平面
+    </text>
+    <text x="15" y="80" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      ℍ = {z ∈ ℂ : Im(z) > 0}
+    </text>
+    
+    <text x="15" y="110" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      <tspan font-weight="bold">度量：</tspan>
+    </text>
+    <text x="15" y="130" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      ds² = |dz|² / (Im(z))²
+    </text>
+    
+    <text x="15" y="160" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      <tspan font-weight="bold">测地线：</tspan>
+    </text>
+    <text x="15" y="180" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      • 垂直于实轴的半直线
+    </text>
+    <text x="15" y="200" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      • 圆心在实轴上的半圆
+    </text>
+    
+    <text x="15" y="235" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      <tspan font-weight="bold">距离公式：</tspan>
+    </text>
+    <text x="15" y="255" font-family="Arial, sans-serif" font-size="10" fill="#34495e">
+      d(z₁,z₂) = arcosh(1 +
+    </text>
+    <text x="15" y="270" font-family="Arial, sans-serif" font-size="10" fill="#34495e">
+      |z₁-z₂|² / 2Im(z₁)Im(z₂))
+    </text>
+    
+    <text x="120" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#16a085">
+      现实类比
+    </text>
+    
+    <text x="15" y="330" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      像"热力场"——越靠近
+    </text>
+    <text x="15" y="345" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      实轴(边界)，空间被
+    </text>
+    <text x="15" y="360" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      "拉伸"得越长。
+    </text>
+    
+    <text x="15" y="385" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      双曲"直线"看起来
+    </text>
+    <text x="15" y="400" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      是弯曲的，但在这个
+    </text>
+    <text x="15" y="415" font-family="Arial, sans-serif" font-size="11" fill="#34495e">
+      度量下它们是最短路径。
+    </text>
+    
+    <text x="120" y="440" font-family="Arial, sans-serif" font-size="10" font-style="italic" text-anchor="middle" fill="#7f8c8d">
+      共形模型：角度保持不变
+    </text>
+  </g>
+  
+  <!-- 底部转换说明 -->
+  <g transform="translate(100, 520)">
+    <rect x="0" y="0" width="600" height="60" fill="#fff5e6" stroke="#f39c12" stroke-width="2" rx="8"/>
+    <text x="300" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      与 Poincaré 圆盘模型的转换
+    </text>
+    <text x="300" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495e">
+      通过 Cayley 变换 w = (z-i)/(z+i) 可将上半平面映为单位圆盘
+    </text>
+  </g>
+</svg>

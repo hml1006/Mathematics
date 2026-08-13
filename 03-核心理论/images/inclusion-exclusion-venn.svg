@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="360pt" viewBox="0 0 504 360">
+ <defs>
+  <style type="text/css">
+   text { font-family: 'Noto Sans CJK SC', 'SimHei', sans-serif; }
+  </style>
+ </defs>
+ <rect width="504" height="360" fill="#ffffff"/>
+ <!-- Title -->
+ <text x="252" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333333">容斥原理：三个集合的并集计数</text>
+ <text x="252" y="48" text-anchor="middle" font-size="11" fill="#666666">|A∪B∪C| = |A|+|B|+|C| - |A∩B|-|A∩C|-|B∩C| + |A∩B∩C|</text>
+
+ <!-- Three overlapping circles -->
+ <!-- Circle A (left) -->
+ <circle cx="180" cy="180" r="80" fill="#4c72b0" fill-opacity="0.3" stroke="#4c72b0" stroke-width="2"/>
+ <text x="140" y="130" font-size="18" font-weight="bold" fill="#4c72b0">A</text>
+ <text x="140" y="150" font-size="11" fill="#4c72b0">|A|=10</text>
+
+ <!-- Circle B (right) -->
+ <circle cx="324" cy="180" r="80" fill="#ed7d31" fill-opacity="0.3" stroke="#ed7d31" stroke-width="2"/>
+ <text x="364" y="130" font-size="18" font-weight="bold" fill="#ed7d31">B</text>
+ <text x="364" y="150" font-size="11" fill="#ed7d31">|B|=12</text>
+
+ <!-- Circle C (bottom) -->
+ <circle cx="252" cy="240" r="80" fill="#70ad47" fill-opacity="0.3" stroke="#70ad47" stroke-width="2"/>
+ <text x="252" y="310" text-anchor="middle" font-size="18" font-weight="bold" fill="#70ad47">C</text>
+ <text x="252" y="328" text-anchor="middle" font-size="11" fill="#70ad47">|C|=8</text>
+
+ <!-- Intersection labels -->
+ <!-- A∩B (top middle) -->
+ <text x="252" y="165" text-anchor="middle" font-size="11" fill="#333333">|A∩B|=3</text>
+
+ <!-- A∩C (bottom left) -->
+ <text x="195" y="225" text-anchor="middle" font-size="11" fill="#333333">|A∩C|=2</text>
+
+ <!-- B∩C (bottom right) -->
+ <text x="309" y="225" text-anchor="middle" font-size="11" fill="#333333">|B∩C|=4</text>
+
+ <!-- A∩B∩C (center) -->
+ <circle cx="252" cy="200" r="25" fill="#9933cc" fill-opacity="0.4" stroke="#9933cc" stroke-width="1.5"/>
+ <text x="252" y="205" text-anchor="middle" font-size="12" font-weight="bold" fill="#9933cc">|A∩B∩C|=1</text>
+
+ <!-- Formula explanation -->
+ <text x="50" y="80" font-size="11" fill="#333333">第一步：加上单个集合</text>
+ <text x="50" y="95" font-size="10" fill="#666666">+ |A| + |B| + |C| = 10 + 12 + 8 = 30</text>
+
+ <text x="50" y="115" font-size="11" fill="#333333">第二步：减去两两交集（避免重复）</text>
+ <text x="50" y="130" font-size="10" fill="#666666">- |A∩B| - |A∩C| - |B∩C| = 3 + 2 + 4 = 9</text>
+
+ <text x="50" y="150" font-size="11" fill="#333333">第三步：加回三重交集（多减了一次）</text>
+ <text x="50" y="165" font-size="10" fill="#666666">+ |A∩B∩C| = 1</text>
+
+ <text x="50" y="190" font-size="12" font-weight="bold" fill="#333333">最终结果：30 - 9 + 1 = 22</text>
+
+ <!-- Legend -->
+ <rect x="380" y="80" width="14" height="14" fill="#4c72b0" fill-opacity="0.3" stroke="#4c72b0"/>
+ <text x="400" y="91" font-size="10" fill="#333333">集合 A</text>
+
+ <rect x="380" y="100" width="14" height="14" fill="#ed7d31" fill-opacity="0.3" stroke="#ed7d31"/>
+ <text x="400" y="111" font-size="10" fill="#333333">集合 B</text>
+
+ <rect x="380" y="120" width="14" height="14" fill="#70ad47" fill-opacity="0.3" stroke="#70ad47"/>
+ <text x="400" y="131" font-size="10" fill="#333333">集合 C</text>
+
+ <rect x="380" y="140" width="14" height="14" fill="#9933cc" fill-opacity="0.4" stroke="#9933cc"/>
+ <text x="400" y="151" font-size="10" fill="#333333">三重交集</text>
+</svg>

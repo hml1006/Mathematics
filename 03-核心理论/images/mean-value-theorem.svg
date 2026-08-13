@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .curve { fill: none; stroke: #e74c3c; stroke-width: 3; }
+      .secant { fill: none; stroke: #3498db; stroke-width: 2; stroke-dasharray: 5,5; }
+      .tangent { fill: none; stroke: #2ecc71; stroke-width: 2; }
+      .point { fill: #2c3e50; stroke: #2c3e50; stroke-width: 2; }
+      .label { font-family: 'Arial', sans-serif; font-size: 18px; fill: #2c3e50; font-weight: bold; }
+      .title { font-family: 'Arial', sans-serif; font-size: 24px; fill: #2c3e50; font-weight: bold; }
+      .formula { font-family: 'Arial', sans-serif; font-size: 20px; fill: #e74c3c; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" class="title">拉格朗日中值定理：存在切线平行于弦</text>
+  
+  <!-- 坐标系 -->
+  <line x1="80" y1="420" x2="720" y2="420" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="80" y1="420" x2="80" y2="80" stroke="#2c3e50" stroke-width="2"/>
+  <polygon points="720,420 710,415 710,425" fill="#2c3e50"/>
+  <polygon points="80,80 75,90 85,90" fill="#2c3e50"/>
+  <text x="730" y="425" class="label">x</text>
+  <text x="70" y="70" class="label">y</text>
+  
+  <!-- 函数曲线 f(x) -->
+  <path d="M 150 350 Q 250 200, 350 250 T 550 150" class="curve"/>
+  <text x="560" y="140" class="label" fill="#e74c3c">f(x)</text>
+  
+  <!-- 端点 a, b -->
+  <circle cx="150" cy="350" r="6" class="point"/>
+  <circle cx="550" cy="150" r="6" class="point"/>
+  <text x="140" y="375" class="label">a</text>
+  <text x="560" y="175" class="label">b</text>
+  
+  <!-- 弦 AB -->
+  <line x1="150" y1="350" x2="550" y2="150" class="secant"/>
+  <text x="350" y="240" class="label" fill="#3498db">弦 AB</text>
+  
+  <!-- 切线（平行于弦） -->
+  <line x1="300" y1="280" x2="450" y2="205" class="tangent"/>
+  <text x="460" y="200" class="label" fill="#2ecc71">切线</text>
+  
+  <!-- 切点 c -->
+  <circle cx="350" cy="250" r="8" fill="#2ecc71" stroke="#27ae60" stroke-width="3"/>
+  <text x="350" y="290" text-anchor="middle" class="label" fill="#2ecc71">c</text>
+  
+  <!-- 斜率标注 -->
+  <g transform="translate(100, 450)">
+    <rect x="0" y="0" width="600" height="40" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="10"/>
+    <text x="300" y="25" text-anchor="middle" class="formula">f'(c) = [f(b) - f(a)] / (b - a)</text>
+  </g>
+  
+  <!-- 右侧说明 -->
+  <g transform="translate(580, 250)">
+    <rect x="0" y="0" width="200" height="120" fill="#d5f4e6" stroke="#27ae60" stroke-width="2" rx="10"/>
+    <text x="100" y="25" text-anchor="middle" class="label" font-size="16">几何意义</text>
+    <text x="20" y="50" class="label" font-size="14">• 弦的斜率：</text>
+    <text x="30" y="70" class="label" font-size="12" fill="#3498db">[f(b)-f(a)]/(b-a)</text>
+    <text x="20" y="90" class="label" font-size="14">• 切线斜率 f'(c)</text>
+    <text x="20" y="110" class="label" font-size="14" fill="#2ecc71">• 两者相等！</text>
+  </g>
+  
+  <!-- 底部类比 -->
+  <g transform="translate(100, 510)">
+    <rect x="0" y="0" width="600" height="50" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="10"/>
+    <text x="300" y="20" text-anchor="middle" class="label" font-size="14">现实类比：开车从 A 到 B，平均速度 60km/h，</text>
+    <text x="300" y="40" text-anchor="middle" class="label" font-size="14">必然存在某一时刻，瞬时速度恰好是 60km/h</text>
+  </g>
+</svg>

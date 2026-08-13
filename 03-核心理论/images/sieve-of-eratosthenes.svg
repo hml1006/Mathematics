@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="360pt" viewBox="0 0 504 360">
+ <defs>
+  <style type="text/css">
+   text { font-family: 'Noto Sans CJK SC', 'SimHei', sans-serif; }
+  </style>
+ </defs>
+ <rect width="504" height="360" fill="#ffffff"/>
+ <!-- Title -->
+ <text x="252" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333333">埃拉托斯特尼筛法：逐步筛去合数</text>
+ <text x="252" y="48" text-anchor="middle" font-size="11" fill="#666666">Sieve of Eratosthenes — 从 2 开始，划去其倍数，再取下一个未划去的数</text>
+
+ <!-- Grid: 10 columns x 6 rows for numbers 1-60 -->
+ <!-- Row labels and cells -->
+ <!-- Numbers 1 to 60, 10 per row -->
+
+ <!-- Row 0: 1-10 -->
+ <!-- 1: neither prime nor composite, gray -->
+ <rect x="30" y="70" width="44" height="36" rx="4" fill="#cccccc" stroke="#999999"/>
+ <text x="52" y="93" text-anchor="middle" font-size="13" fill="#666666">1</text>
+ <!-- 2: prime -->
+ <rect x="74" y="70" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="96" y="93" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">2</text>
+ <!-- 3: prime -->
+ <rect x="118" y="70" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="140" y="93" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">3</text>
+ <!-- 4: composite (crossed by 2) -->
+ <rect x="162" y="70" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="184" y="93" text-anchor="middle" font-size="13" fill="#cc6666">4</text>
+ <line x1="166" y1="74" x2="202" y2="102" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="202" y1="74" x2="166" y2="102" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 5: prime -->
+ <rect x="206" y="70" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="228" y="93" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">5</text>
+ <!-- 6: composite (crossed by 2) -->
+ <rect x="250" y="70" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="272" y="93" text-anchor="middle" font-size="13" fill="#cc6666">6</text>
+ <line x1="254" y1="74" x2="290" y2="102" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="290" y1="74" x2="254" y2="102" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 7: prime -->
+ <rect x="294" y="70" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="316" y="93" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">7</text>
+ <!-- 8: composite -->
+ <rect x="338" y="70" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="360" y="93" text-anchor="middle" font-size="13" fill="#cc6666">8</text>
+ <line x1="342" y1="74" x2="378" y2="102" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="378" y1="74" x2="342" y2="102" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 9: composite (crossed by 3) -->
+ <rect x="382" y="70" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="404" y="93" text-anchor="middle" font-size="13" fill="#e68a00">9</text>
+ <line x1="386" y1="74" x2="422" y2="102" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="422" y1="74" x2="386" y2="102" stroke="#e68a00" stroke-width="1.5"/>
+ <!-- 10: composite -->
+ <rect x="426" y="70" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="448" y="93" text-anchor="middle" font-size="13" fill="#cc6666">10</text>
+ <line x1="430" y1="74" x2="466" y2="102" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="466" y1="74" x2="430" y2="102" stroke="#cc6666" stroke-width="1.5"/>
+
+ <!-- Row 1: 11-20 -->
+ <!-- 11: prime -->
+ <rect x="30" y="106" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="52" y="129" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">11</text>
+ <!-- 12: composite -->
+ <rect x="74" y="106" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="96" y="129" text-anchor="middle" font-size="13" fill="#cc6666">12</text>
+ <line x1="78" y1="110" x2="114" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="114" y1="110" x2="78" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 13: prime -->
+ <rect x="118" y="106" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="140" y="129" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">13</text>
+ <!-- 14: composite -->
+ <rect x="162" y="106" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="184" y="129" text-anchor="middle" font-size="13" fill="#cc6666">14</text>
+ <line x1="166" y1="110" x2="202" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="202" y1="110" x2="166" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 15: composite (crossed by 3) -->
+ <rect x="206" y="106" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="228" y="129" text-anchor="middle" font-size="13" fill="#e68a00">15</text>
+ <line x1="210" y1="110" x2="246" y2="138" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="246" y1="110" x2="210" y2="138" stroke="#e68a00" stroke-width="1.5"/>
+ <!-- 16: composite -->
+ <rect x="250" y="106" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="272" y="129" text-anchor="middle" font-size="13" fill="#cc6666">16</text>
+ <line x1="254" y1="110" x2="290" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="290" y1="110" x2="254" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 17: prime -->
+ <rect x="294" y="106" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="316" y="129" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">17</text>
+ <!-- 18: composite -->
+ <rect x="338" y="106" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="360" y="129" text-anchor="middle" font-size="13" fill="#cc6666">18</text>
+ <line x1="342" y1="110" x2="378" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="378" y1="110" x2="342" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 19: prime -->
+ <rect x="382" y="106" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="404" y="129" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">19</text>
+ <!-- 20: composite -->
+ <rect x="426" y="106" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="448" y="129" text-anchor="middle" font-size="13" fill="#cc6666">20</text>
+ <line x1="430" y1="110" x2="466" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="466" y1="110" x2="430" y2="138" stroke="#cc6666" stroke-width="1.5"/>
+
+ <!-- Row 2: 21-30 -->
+ <!-- 21: composite (crossed by 3) -->
+ <rect x="30" y="142" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="52" y="165" text-anchor="middle" font-size="13" fill="#e68a00">21</text>
+ <line x1="34" y1="146" x2="70" y2="174" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="70" y1="146" x2="34" y2="174" stroke="#e68a00" stroke-width="1.5"/>
+ <!-- 22: composite -->
+ <rect x="74" y="142" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="96" y="165" text-anchor="middle" font-size="13" fill="#cc6666">22</text>
+ <line x1="78" y1="146" x2="114" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="114" y1="146" x2="78" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 23: prime -->
+ <rect x="118" y="142" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="140" y="165" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">23</text>
+ <!-- 24: composite -->
+ <rect x="162" y="142" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="184" y="165" text-anchor="middle" font-size="13" fill="#cc6666">24</text>
+ <line x1="166" y1="146" x2="202" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="202" y1="146" x2="166" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 25: composite (crossed by 5) -->
+ <rect x="206" y="142" width="44" height="36" rx="4" fill="#e8d4f0" stroke="#9933cc"/>
+ <text x="228" y="165" text-anchor="middle" font-size="13" fill="#9933cc">25</text>
+ <line x1="210" y1="146" x2="246" y2="174" stroke="#9933cc" stroke-width="1.5"/>
+ <line x1="246" y1="146" x2="210" y2="174" stroke="#9933cc" stroke-width="1.5"/>
+ <!-- 26: composite -->
+ <rect x="250" y="142" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="272" y="165" text-anchor="middle" font-size="13" fill="#cc6666">26</text>
+ <line x1="254" y1="146" x2="290" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="290" y1="146" x2="254" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 27: composite (crossed by 3) -->
+ <rect x="294" y="142" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="316" y="165" text-anchor="middle" font-size="13" fill="#e68a00">27</text>
+ <line x1="298" y1="146" x2="334" y2="174" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="334" y1="146" x2="298" y2="174" stroke="#e68a00" stroke-width="1.5"/>
+ <!-- 28: composite -->
+ <rect x="338" y="142" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="360" y="165" text-anchor="middle" font-size="13" fill="#cc6666">28</text>
+ <line x1="342" y1="146" x2="378" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="378" y1="146" x2="342" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <!-- 29: prime -->
+ <rect x="382" y="142" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="404" y="165" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">29</text>
+ <!-- 30: composite -->
+ <rect x="426" y="142" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="448" y="165" text-anchor="middle" font-size="13" fill="#cc6666">30</text>
+ <line x1="430" y1="146" x2="466" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="466" y1="146" x2="430" y2="174" stroke="#cc6666" stroke-width="1.5"/>
+
+ <!-- Row 3: 31-40 -->
+ <rect x="30" y="178" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="52" y="201" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">31</text>
+ <rect x="74" y="178" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="96" y="201" text-anchor="middle" font-size="13" fill="#cc6666">32</text>
+ <line x1="78" y1="182" x2="114" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="114" y1="182" x2="78" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="118" y="178" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="140" y="201" text-anchor="middle" font-size="13" fill="#e68a00">33</text>
+ <line x1="122" y1="182" x2="158" y2="210" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="158" y1="182" x2="122" y2="210" stroke="#e68a00" stroke-width="1.5"/>
+ <rect x="162" y="178" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="184" y="201" text-anchor="middle" font-size="13" fill="#cc6666">34</text>
+ <line x1="166" y1="182" x2="202" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="202" y1="182" x2="166" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="206" y="178" width="44" height="36" rx="4" fill="#e8d4f0" stroke="#9933cc"/>
+ <text x="228" y="201" text-anchor="middle" font-size="13" fill="#9933cc">35</text>
+ <line x1="210" y1="182" x2="246" y2="210" stroke="#9933cc" stroke-width="1.5"/>
+ <line x1="246" y1="182" x2="210" y2="210" stroke="#9933cc" stroke-width="1.5"/>
+ <rect x="250" y="178" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="272" y="201" text-anchor="middle" font-size="13" fill="#cc6666">36</text>
+ <line x1="254" y1="182" x2="290" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="290" y1="182" x2="254" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="294" y="178" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="316" y="201" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">37</text>
+ <rect x="338" y="178" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="360" y="201" text-anchor="middle" font-size="13" fill="#cc6666">38</text>
+ <line x1="342" y1="182" x2="378" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="378" y1="182" x2="342" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="382" y="178" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="404" y="201" text-anchor="middle" font-size="13" fill="#e68a00">39</text>
+ <line x1="386" y1="182" x2="422" y2="210" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="422" y1="182" x2="386" y2="210" stroke="#e68a00" stroke-width="1.5"/>
+ <rect x="426" y="178" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="448" y="201" text-anchor="middle" font-size="13" fill="#cc6666">40</text>
+ <line x1="430" y1="182" x2="466" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="466" y1="182" x2="430" y2="210" stroke="#cc6666" stroke-width="1.5"/>
+
+ <!-- Row 4: 41-50 -->
+ <rect x="30" y="214" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="52" y="237" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">41</text>
+ <rect x="74" y="214" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="96" y="237" text-anchor="middle" font-size="13" fill="#cc6666">42</text>
+ <line x1="78" y1="218" x2="114" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="114" y1="218" x2="78" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="118" y="214" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="140" y="237" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">43</text>
+ <rect x="162" y="214" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="184" y="237" text-anchor="middle" font-size="13" fill="#cc6666">44</text>
+ <line x1="166" y1="218" x2="202" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="202" y1="218" x2="166" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="206" y="214" width="44" height="36" rx="4" fill="#e8d4f0" stroke="#9933cc"/>
+ <text x="228" y="237" text-anchor="middle" font-size="13" fill="#9933cc">45</text>
+ <line x1="210" y1="218" x2="246" y2="246" stroke="#9933cc" stroke-width="1.5"/>
+ <line x1="246" y1="218" x2="210" y2="246" stroke="#9933cc" stroke-width="1.5"/>
+ <rect x="250" y="214" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="272" y="237" text-anchor="middle" font-size="13" fill="#cc6666">46</text>
+ <line x1="254" y1="218" x2="290" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="290" y1="218" x2="254" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="294" y="214" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="316" y="237" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">47</text>
+ <rect x="338" y="214" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="360" y="237" text-anchor="middle" font-size="13" fill="#cc6666">48</text>
+ <line x1="342" y1="218" x2="378" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="378" y1="218" x2="342" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="382" y="214" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="404" y="237" text-anchor="middle" font-size="13" fill="#e68a00">49</text>
+ <line x1="386" y1="218" x2="422" y2="246" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="422" y1="218" x2="386" y2="246" stroke="#e68a00" stroke-width="1.5"/>
+ <rect x="426" y="214" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="448" y="237" text-anchor="middle" font-size="13" fill="#cc6666">50</text>
+ <line x1="430" y1="218" x2="466" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="466" y1="218" x2="430" y2="246" stroke="#cc6666" stroke-width="1.5"/>
+
+ <!-- Row 5: 51-60 -->
+ <rect x="30" y="250" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="52" y="273" text-anchor="middle" font-size="13" fill="#e68a00">51</text>
+ <line x1="34" y1="254" x2="70" y2="282" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="70" y1="254" x2="34" y2="282" stroke="#e68a00" stroke-width="1.5"/>
+ <rect x="74" y="250" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="96" y="273" text-anchor="middle" font-size="13" fill="#cc6666">52</text>
+ <line x1="78" y1="254" x2="114" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="114" y1="254" x2="78" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="118" y="250" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="140" y="273" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">53</text>
+ <rect x="162" y="250" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="184" y="273" text-anchor="middle" font-size="13" fill="#cc6666">54</text>
+ <line x1="166" y1="254" x2="202" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="202" y1="254" x2="166" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="206" y="250" width="44" height="36" rx="4" fill="#e8d4f0" stroke="#9933cc"/>
+ <text x="228" y="273" text-anchor="middle" font-size="13" fill="#9933cc">55</text>
+ <line x1="210" y1="254" x2="246" y2="282" stroke="#9933cc" stroke-width="1.5"/>
+ <line x1="246" y1="254" x2="210" y2="282" stroke="#9933cc" stroke-width="1.5"/>
+ <rect x="250" y="250" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="272" y="273" text-anchor="middle" font-size="13" fill="#cc6666">56</text>
+ <line x1="254" y1="254" x2="290" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="290" y1="254" x2="254" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="294" y="250" width="44" height="36" rx="4" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="316" y="273" text-anchor="middle" font-size="13" fill="#e68a00">57</text>
+ <line x1="298" y1="254" x2="334" y2="282" stroke="#e68a00" stroke-width="1.5"/>
+ <line x1="334" y1="254" x2="298" y2="282" stroke="#e68a00" stroke-width="1.5"/>
+ <rect x="338" y="250" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="360" y="273" text-anchor="middle" font-size="13" fill="#cc6666">58</text>
+ <line x1="342" y1="254" x2="378" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="378" y1="254" x2="342" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <rect x="382" y="250" width="44" height="36" rx="4" fill="#4c72b0" stroke="#333333"/>
+ <text x="404" y="273" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">59</text>
+ <rect x="426" y="250" width="44" height="36" rx="4" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="448" y="273" text-anchor="middle" font-size="13" fill="#cc6666">60</text>
+ <line x1="430" y1="254" x2="466" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+ <line x1="466" y1="254" x2="430" y2="282" stroke="#cc6666" stroke-width="1.5"/>
+
+ <!-- Legend -->
+ <rect x="30" y="300" width="16" height="16" rx="3" fill="#4c72b0" stroke="#333333"/>
+ <text x="50" y="313" font-size="11" fill="#333333">素数（保留）</text>
+
+ <rect x="140" y="300" width="16" height="16" rx="3" fill="#ffcccc" stroke="#cc6666"/>
+ <text x="160" y="313" font-size="11" fill="#333333">2 的倍数</text>
+
+ <rect x="240" y="300" width="16" height="16" rx="3" fill="#ffe0b2" stroke="#e68a00"/>
+ <text x="260" y="313" font-size="11" fill="#333333">3 的倍数</text>
+
+ <rect x="350" y="300" width="16" height="16" rx="3" fill="#e8d4f0" stroke="#9933cc"/>
+ <text x="370" y="313" font-size="11" fill="#333333">5 的倍数</text>
+
+ <rect x="30" y="325" width="16" height="16" rx="3" fill="#cccccc" stroke="#999999"/>
+ <text x="50" y="338" font-size="11" fill="#333333">1（既非素数也非合数）</text>
+
+ <!-- Bottom note -->
+ <text x="252" y="355" text-anchor="middle" font-size="10" fill="#888888">筛到 √60 ≈ 7.7 即可：2, 3, 5, 7 的倍数划完后，剩余未划去的即为素数</text>
+</svg>

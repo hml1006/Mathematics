@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+  <!-- Background -->
+  <rect width="600" height="420" fill="#eaf2f8" rx="8"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#1a1a2e">素数定理的证明架构</text>
+  
+  <!-- Flow chart -->
+  <!-- Step 1: Zeta function -->
+  <rect x="30" y="55" width="160" height="55" rx="8" fill="#d5f5e3" stroke="#1e8449" stroke-width="2"/>
+  <text x="110" y="77" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">ζ(s) = Σ n⁻ˢ</text>
+  <text x="110" y="97" text-anchor="middle" font-family="serif" font-size="11" fill="#555">Euler 乘积 ∏(1−p⁻ˢ)⁻¹</text>
+  
+  <!-- Arrow -->
+  <line x1="190" y1="82" x2="220" y2="82" stroke="#333" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <defs>
+    <marker id="arrP" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Step 2: Chebyshev function -->
+  <rect x="225" y="55" width="160" height="55" rx="8" fill="#d6eaf8" stroke="#2471a3" stroke-width="2"/>
+  <text x="305" y="77" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">ψ(x) = Σ Λ(n)</text>
+  <text x="305" y="97" text-anchor="middle" font-family="serif" font-size="11" fill="#555">−ζ′/ζ 的 Mellin 逆变换</text>
+  
+  <!-- Arrow -->
+  <line x1="385" y1="82" x2="415" y2="82" stroke="#333" stroke-width="1.5" marker-end="url(#arrP)"/>
+  
+  <!-- Step 3: Explicit formula -->
+  <rect x="420" y="55" width="160" height="55" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="500" y="77" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">显式公式</text>
+  <text x="500" y="97" text-anchor="middle" font-family="serif" font-size="11" fill="#555">ψ(x) = x − Σ xᵖ/ρ + ···</text>
+  
+  <!-- Arrow down from explicit formula -->
+  <line x1="500" y1="110" x2="500" y2="140" stroke="#333" stroke-width="1.5" marker-end="url(#arrP)"/>
+  
+  <!-- Step 4: Zero-free region -->
+  <rect x="370" y="145" width="210" height="55" rx="8" fill="#fadbd8" stroke="#c0392b" stroke-width="2"/>
+  <text x="475" y="167" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">无零点区域</text>
+  <text x="475" y="187" text-anchor="middle" font-family="serif" font-size="11" fill="#555">σ ≥ 1 − c/log(|t|+2)</text>
+  
+  <!-- Arrow left -->
+  <line x1="370" y1="172" x2="340" y2="172" stroke="#333" stroke-width="1.5" marker-end="url(#arrP)"/>
+  
+  <!-- Step 5: Tauber theorem -->
+  <rect x="160" y="145" width="175" height="55" rx="8" fill="#f5eef8" stroke="#8e44ad" stroke-width="2"/>
+  <text x="248" y="167" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">Tauber 定理</text>
+  <text x="248" y="187" text-anchor="middle" font-family="serif" font-size="11" fill="#555">Ikehara-Wiener → ψ(x) ~ x</text>
+  
+  <!-- Arrow down -->
+  <line x1="248" y1="200" x2="248" y2="230" stroke="#333" stroke-width="1.5" marker-end="url(#arrP)"/>
+  
+  <!-- Step 6: Result -->
+  <rect x="130" y="235" width="240" height="50" rx="8" fill="#d4efdf" stroke="#1e8449" stroke-width="2.5"/>
+  <text x="250" y="258" text-anchor="middle" font-family="serif" font-size="15" font-weight="bold" fill="#1a1a2e">π(x) ~ x / log x</text>
+  <text x="250" y="278" text-anchor="middle" font-family="serif" font-size="12" fill="#555">素数定理 (Hadamard & de la Vallée-Poussin, 1896)</text>
+  
+  <!-- Right side: Critical strip illustration -->
+  <rect x="30" y="300" width="250" height="110" rx="6" fill="white" stroke="#aaa" stroke-width="1"/>
+  <text x="155" y="318" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#333">临界带中的零点</text>
+  
+  <!-- Critical strip -->
+  <rect x="80" y="330" width="120" height="70" fill="#f9f9f9" stroke="#666" stroke-width="1"/>
+  <text x="80" y="325" font-family="serif" font-size="10" fill="#666">σ=0</text>
+  <text x="200" y="325" font-family="serif" font-size="10" fill="#666">σ=1</text>
+  
+  <!-- Critical line -->
+  <line x1="140" y1="330" x2="140" y2="400" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="140" y="410" text-anchor="middle" font-family="serif" font-size="9" fill="#c0392b">σ=1/2</text>
+  
+  <!-- Zeros on critical line -->
+  <circle cx="140" cy="340" r="3" fill="#c0392b"/>
+  <circle cx="140" cy="355" r="3" fill="#c0392b"/>
+  <circle cx="140" cy="370" r="3" fill="#c0392b"/>
+  <circle cx="140" cy="385" r="3" fill="#c0392b"/>
+  <text x="155" y="345" font-family="serif" font-size="9" fill="#c0392b">ρ</text>
+  
+  <!-- Right: Error term -->
+  <rect x="310" y="300" width="270" height="110" rx="6" fill="white" stroke="#aaa" stroke-width="1"/>
+  <text x="445" y="318" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#333">误差项</text>
+  <text x="445" y="340" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">π(x) = Li(x) + O(x·e^{−c√log x})</text>
+  <text x="445" y="362" text-anchor="middle" font-family="serif" font-size="12" fill="#555">若 Riemann 假设成立：</text>
+  <text x="445" y="382" text-anchor="middle" font-family="serif" font-size="13" fill="#c0392b" font-weight="bold">π(x) = Li(x) + O(√x · log x)</text>
+  <text x="445" y="402" text-anchor="middle" font-family="serif" font-size="10" fill="#888">零点实部均为 1/2 → 误差最小</text>
+</svg>

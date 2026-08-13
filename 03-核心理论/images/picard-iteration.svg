@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Picard 迭代：逐步逼近真实解
+  </text>
+  
+  <!-- 左侧：迭代过程可视化 -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="400" height="380" fill="#f8f9fa" stroke="#95a5a6" stroke-width="2" rx="8"/>
+    
+    <!-- 坐标轴 -->
+    <line x1="50" y1="350" x2="380" y2="350" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="50" y1="350" x2="50" y2="30" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <text x="390" y="355" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">x</text>
+    <text x="45" y="25" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">y</text>
+    
+    <!-- 刻度 -->
+    <text x="45" y="365" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#7f8c8d">0</text>
+    <text x="150" y="365" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">1</text>
+    <text x="250" y="365" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">2</text>
+    <text x="350" y="365" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">3</text>
+    
+    <text x="40" y="250" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#7f8c8d">1</text>
+    <text x="40" y="150" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#7f8c8d">2</text>
+    <text x="40" y="50" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#7f8c8d">3</text>
+    
+    <!-- y₀(x) = 1 (水平线) -->
+    <line x1="50" y1="250" x2="370" y2="250" stroke="#95a5a6" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="375" y="245" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6">y₀=1</text>
+    
+    <!-- y₁(x) = 1+x (直线) -->
+    <line x1="50" y1="250" x2="350" y2="50" stroke="#e74c3c" stroke-width="2"/>
+    <text x="355" y="45" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">y₁=1+x</text>
+    
+    <!-- y₂(x) = 1+x+x²/2 (抛物线) -->
+    <path d="M 50,250 Q 150,180 250,100 Q 300,70 350,40" fill="none" stroke="#f39c12" stroke-width="2"/>
+    <text x="355" y="35" font-family="Arial, sans-serif" font-size="11" fill="#f39c12">y₂</text>
+    
+    <!-- y₃(x) = 1+x+x²/2+x³/6 -->
+    <path d="M 50,250 Q 150,160 250,80 Q 300,50 350,25" fill="none" stroke="#3498db" stroke-width="2"/>
+    <text x="355" y="20" font-family="Arial, sans-serif" font-size="11" fill="#3498db">y₃</text>
+    
+    <!-- 真实解 e^x -->
+    <path d="M 50,250 Q 150,150 250,60 Q 300,30 350,10" fill="none" stroke="#27ae60" stroke-width="3"/>
+    <text x="355" y="10" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#27ae60">e^x</text>
+    
+    <!-- 初始点 -->
+    <circle cx="50" cy="250" r="5" fill="#2c3e50"/>
+    <text x="60" y="265" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">(0,1)</text>
+    
+    <!-- 图例 -->
+    <text x="200" y="375" font-family="Arial, sans-serif" font-size="12" font-style="italic" text-anchor="middle" fill="#7f8c8d">
+      迭代越多次，越逼近真实解 e^x
+    </text>
+  </g>
+  
+  <!-- 右侧：迭代公式和说明 -->
+  <g transform="translate(480, 70)">
+    <rect x="0" y="0" width="290" height="380" fill="#fff5e6" stroke="#f39c12" stroke-width="2" rx="8"/>
+    
+    <text x="145" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Picard 迭代公式
+    </text>
+    
+    <!-- 初值问题 -->
+    <text x="20" y="60" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      <tspan font-weight="bold">初值问题：</tspan>
+    </text>
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      y' = f(x, y),  y(x₀) = y₀
+    </text>
+    
+    <!-- 等价积分方程 -->
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      <tspan font-weight="bold">等价积分方程：</tspan>
+    </text>
+    <text x="20" y="130" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      y(x) = y₀ + ∫ₓ₀ˣ f(t, y(t)) dt
+    </text>
+    
+    <!-- 迭代序列 -->
+    <text x="20" y="160" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      <tspan font-weight="bold">迭代序列：</tspan>
+    </text>
+    <text x="20" y="180" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      y₀(x) = y₀
+    </text>
+    <text x="20" y="200" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      yₙ₊₁(x) = y₀ + ∫ₓ₀ˣ f(t, yₙ(t)) dt
+    </text>
+    
+    <!-- 示例 -->
+    <text x="20" y="235" font-family="Arial, sans-serif" font-size="12" fill="#34495e">
+      <tspan font-weight="bold">示例：y' = y, y(0) = 1</tspan>
+    </text>
+    <text x="20" y="255" font-family="Arial, sans-serif" font-size="11" fill="#95a5a6">y₀ = 1</text>
+    <text x="20" y="275" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">y₁ = 1 + x</text>
+    <text x="20" y="295" font-family="Arial, sans-serif" font-size="11" fill="#f39c12">y₂ = 1 + x + x²/2</text>
+    <text x="20" y="315" font-family="Arial, sans-serif" font-size="11" fill="#3498db">y₃ = 1 + x + x²/2 + x³/6</text>
+    <text x="20" y="335" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">⋮</text>
+    <text x="20" y="355" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#27ae60">yₙ → e^x (精确解)</text>
+  </g>
+  
+  <!-- 底部类比说明 -->
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="13" font-style="italic" text-anchor="middle" fill="#7f8c8d">
+    现实类比：像"不断修正的草图"——每一轮迭代都在前一轮基础上细化，最终逼近完美的真实解
+  </text>
+</svg>

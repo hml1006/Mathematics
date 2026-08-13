@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420" width="620" height="420">
+  <!-- Background -->
+  <rect width="620" height="420" fill="#f5eef8" rx="8"/>
+  
+  <!-- Title -->
+  <text x="310" y="30" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#1a1a2e">高度函数：度量有理点的"大小"</text>
+  
+  <!-- Elliptic curve -->
+  <g transform="translate(60, 60)">
+    <text x="100" y="0" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#333">椭圆曲线 E: y² = x³ − x + 1</text>
+    
+    <!-- Curve (simplified shape) -->
+    <path d="M20,120 Q40,40 80,60 Q100,70 120,50 Q160,20 180,80 Q190,120 180,160 Q160,200 120,190 Q100,185 80,190 Q40,200 20,120 Z" fill="none" stroke="#2471a3" stroke-width="2"/>
+    
+    <!-- Rational points -->
+    <circle cx="80" cy="60" r="4" fill="#c0392b"/>
+    <text x="90" y="55" font-family="serif" font-size="10" fill="#c0392b">P=(0,1)</text>
+    
+    <circle cx="120" cy="50" r="4" fill="#c0392b"/>
+    <text x="130" y="45" font-family="serif" font-size="10" fill="#c0392b">2P=(−1,0)</text>
+    
+    <circle cx="180" cy="80" r="4" fill="#c0392b"/>
+    <text x="190" y="75" font-family="serif" font-size="10" fill="#c0392b">3P=(0,−1)</text>
+    
+    <!-- Height annotation -->
+    <line x1="80" y1="60" x2="80" y2="200" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="70" y="215" font-family="serif" font-size="10" fill="#8e44ad">h(P)=log max{|a|,|b|}</text>
+  </g>
+  
+  <!-- Height function definition box -->
+  <rect x="320" y="60" width="280" height="120" rx="8" fill="white" stroke="#8e44ad" stroke-width="2"/>
+  <text x="460" y="85" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#8e44ad">高度函数定义</text>
+  <text x="460" y="108" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">对数高度：h(P) = log max{|a|, |b|}</text>
+  <text x="460" y="128" text-anchor="middle" font-family="serif" font-size="11" fill="#555">其中 x(P) = a/b（既约分数）</text>
+  <text x="460" y="150" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">规范高度：ĥ(P) = lim h(nP)/n²</text>
+  <text x="460" y="170" text-anchor="middle" font-family="serif" font-size="11" fill="#555">ĥ 是二次型：ĥ(mP) = m²ĥ(P)</text>
+  
+  <!-- Mordell-Weil theorem -->
+  <rect x="50" y="290" width="520" height="60" rx="8" fill="#d5f5e3" stroke="#1e8449" stroke-width="2"/>
+  <text x="310" y="315" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#1a1a2e">Mordell-Weil 定理</text>
+  <text x="310" y="338" text-anchor="middle" font-family="serif" font-size="12" fill="#555">E(K) ≅ ℤʳ ⊕ E(K)_tors    （有限生成 Abel 群）</text>
+  
+  <!-- Infinite descent illustration -->
+  <text x="310" y="375" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#333">无限下降法</text>
+  
+  <!-- Descent steps -->
+  <rect x="100" y="385" width="80" height="25" rx="4" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="140" y="402" text-anchor="middle" font-family="serif" font-size="10" fill="#1a1a2e">P ∈ E(K)</text>
+  
+  <text x="190" y="402" font-family="serif" font-size="14" fill="#333">→</text>
+  
+  <rect x="210" y="385" width="100" height="25" rx="4" fill="#fdebd0" stroke="#e67e22" stroke-width="1"/>
+  <text x="260" y="402" text-anchor="middle" font-family="serif" font-size="10" fill="#1a1a2e">P = 2P₁ + Qᵢ</text>
+  
+  <text x="320" y="402" font-family="serif" font-size="14" fill="#333">→</text>
+  
+  <rect x="340" y="385" width="100" height="25" rx="4" fill="#d6eaf8" stroke="#2471a3" stroke-width="1"/>
+  <text x="390" y="402" text-anchor="middle" font-family="serif" font-size="10" fill="#1a1a2e">h(Pₙ) → 有界</text>
+  
+  <text x="450" y="402" font-family="serif" font-size="14" fill="#333">→</text>
+  
+  <rect x="470" y="385" width="100" height="25" rx="4" fill="#d5f5e3" stroke="#1e8449" stroke-width="1.5"/>
+  <text x="520" y="402" text-anchor="middle" font-family="serif" font-size="10" fill="#1a1a2e">有限生成 ✓</text>
+</svg>

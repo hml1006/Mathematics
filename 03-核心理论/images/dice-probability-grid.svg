@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#7B61FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="340" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c3e50">掷两颗骰子：点数之和的概率分布</text>
+  <text x="340" y="58" text-anchor="middle" font-size="13" fill="#7f8c8d">36 种等可能结果 → 钟形分布的雏形</text>
+
+  <!-- 6x6 Grid -->
+  <g transform="translate(60, 80)">
+    <!-- Column headers (Die 2) -->
+    <text x="45" y="-8" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A90D9">骰子B →</text>
+    <g font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">
+      <rect x="10" y="0" width="50" height="30" rx="4" fill="#4A90D9"/>
+      <text x="35" y="21">1</text>
+      <rect x="70" y="0" width="50" height="30" rx="4" fill="#4A90D9"/>
+      <text x="95" y="21">2</text>
+      <rect x="130" y="0" width="50" height="30" rx="4" fill="#4A90D9"/>
+      <text x="155" y="21">3</text>
+      <rect x="190" y="0" width="50" height="30" rx="4" fill="#4A90D9"/>
+      <text x="215" y="21">4</text>
+      <rect x="250" y="0" width="50" height="30" rx="4" fill="#4A90D9"/>
+      <text x="275" y="21">5</text>
+      <rect x="310" y="0" width="50" height="30" rx="4" fill="#4A90D9"/>
+      <text x="335" y="21">6</text>
+    </g>
+
+    <!-- Row header -->
+    <text x="-15" y="170" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A90D9" transform="rotate(-90, -15, 170)">骰子A ↓</text>
+
+    <!-- Grid cells with sums, colored by sum value -->
+    <!-- Row 1 (Die A = 1): sums 2,3,4,5,6,7 -->
+    <g font-size="16" font-weight="bold" text-anchor="middle">
+      <!-- Row 1 -->
+      <rect x="10" y="40" width="50" height="50" rx="6" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1.5"/>
+      <text x="35" y="72" fill="#2e7d32">2</text>
+      <rect x="70" y="40" width="50" height="50" rx="6" fill="#e3f2fd" stroke="#90caf9" stroke-width="1.5"/>
+      <text x="95" y="72" fill="#1565c0">3</text>
+      <rect x="130" y="40" width="50" height="50" rx="6" fill="#fff3e0" stroke="#ffcc80" stroke-width="1.5"/>
+      <text x="155" y="72" fill="#e65100">4</text>
+      <rect x="190" y="40" width="50" height="50" rx="6" fill="#fce4ec" stroke="#f48fb1" stroke-width="1.5"/>
+      <text x="215" y="72" fill="#c2185b">5</text>
+      <rect x="250" y="40" width="50" height="50" rx="6" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5"/>
+      <text x="275" y="72" fill="#7b1fa2">6</text>
+      <rect x="310" y="40" width="50" height="50" rx="6" fill="#fff9c4" stroke="#fff176" stroke-width="1.5"/>
+      <text x="335" y="72" fill="#f57f17">7</text>
+      <!-- Row 2 -->
+      <rect x="10" y="100" width="50" height="50" rx="6" fill="#e3f2fd" stroke="#90caf9" stroke-width="1.5"/>
+      <text x="35" y="132" fill="#1565c0">3</text>
+      <rect x="70" y="100" width="50" height="50" rx="6" fill="#fff3e0" stroke="#ffcc80" stroke-width="1.5"/>
+      <text x="95" y="132" fill="#e65100">4</text>
+      <rect x="130" y="100" width="50" height="50" rx="6" fill="#fce4ec" stroke="#f48fb1" stroke-width="1.5"/>
+      <text x="155" y="132" fill="#c2185b">5</text>
+      <rect x="190" y="100" width="50" height="50" rx="6" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5"/>
+      <text x="215" y="132" fill="#7b1fa2">6</text>
+      <rect x="250" y="100" width="50" height="50" rx="6" fill="#fff9c4" stroke="#fff176" stroke-width="1.5"/>
+      <text x="275" y="132" fill="#f57f17">7</text>
+      <rect x="310" y="100" width="50" height="50" rx="6" fill="#e0f7fa" stroke="#80deea" stroke-width="1.5"/>
+      <text x="335" y="132" fill="#00838f">8</text>
+      <!-- Row 3 -->
+      <rect x="10" y="160" width="50" height="50" rx="6" fill="#fff3e0" stroke="#ffcc80" stroke-width="1.5"/>
+      <text x="35" y="192" fill="#e65100">4</text>
+      <rect x="70" y="160" width="50" height="50" rx="6" fill="#fce4ec" stroke="#f48fb1" stroke-width="1.5"/>
+      <text x="95" y="192" fill="#c2185b">5</text>
+      <rect x="130" y="160" width="50" height="50" rx="6" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5"/>
+      <text x="155" y="192" fill="#7b1fa2">6</text>
+      <rect x="190" y="160" width="50" height="50" rx="6" fill="#fff9c4" stroke="#fff176" stroke-width="1.5"/>
+      <text x="215" y="192" fill="#f57f17">7</text>
+      <rect x="250" y="160" width="50" height="50" rx="6" fill="#e0f7fa" stroke="#80deea" stroke-width="1.5"/>
+      <text x="275" y="192" fill="#00838f">8</text>
+      <rect x="310" y="160" width="50" height="50" rx="6" fill="#fbe9e7" stroke="#ffab91" stroke-width="1.5"/>
+      <text x="335" y="192" fill="#bf360c">9</text>
+      <!-- Row 4 -->
+      <rect x="10" y="220" width="50" height="50" rx="6" fill="#fce4ec" stroke="#f48fb1" stroke-width="1.5"/>
+      <text x="35" y="252" fill="#c2185b">5</text>
+      <rect x="70" y="220" width="50" height="50" rx="6" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5"/>
+      <text x="95" y="252" fill="#7b1fa2">6</text>
+      <rect x="130" y="220" width="50" height="50" rx="6" fill="#fff9c4" stroke="#fff176" stroke-width="1.5"/>
+      <text x="155" y="252" fill="#f57f17">7</text>
+      <rect x="190" y="220" width="50" height="50" rx="6" fill="#e0f7fa" stroke="#80deea" stroke-width="1.5"/>
+      <text x="215" y="252" fill="#00838f">8</text>
+      <rect x="250" y="220" width="50" height="50" rx="6" fill="#fbe9e7" stroke="#ffab91" stroke-width="1.5"/>
+      <text x="275" y="252" fill="#bf360c">9</text>
+      <rect x="310" y="220" width="50" height="50" rx="6" fill="#efebe9" stroke="#bcaaa4" stroke-width="1.5"/>
+      <text x="335" y="252" fill="#4e342e">10</text>
+      <!-- Row 5 -->
+      <rect x="10" y="280" width="50" height="50" rx="6" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5"/>
+      <text x="35" y="312" fill="#7b1fa2">6</text>
+      <rect x="70" y="280" width="50" height="50" rx="6" fill="#fff9c4" stroke="#fff176" stroke-width="1.5"/>
+      <text x="95" y="312" fill="#f57f17">7</text>
+      <rect x="130" y="280" width="50" height="50" rx="6" fill="#e0f7fa" stroke="#80deea" stroke-width="1.5"/>
+      <text x="155" y="312" fill="#00838f">8</text>
+      <rect x="190" y="280" width="50" height="50" rx="6" fill="#fbe9e7" stroke="#ffab91" stroke-width="1.5"/>
+      <text x="215" y="312" fill="#bf360c">9</text>
+      <rect x="250" y="280" width="50" height="50" rx="6" fill="#efebe9" stroke="#bcaaa4" stroke-width="1.5"/>
+      <text x="275" y="312" fill="#4e342e">10</text>
+      <rect x="310" y="280" width="50" height="50" rx="6" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1.5"/>
+      <text x="335" y="312" fill="#283593">11</text>
+      <!-- Row 6 -->
+      <rect x="10" y="340" width="50" height="50" rx="6" fill="#fff9c4" stroke="#fff176" stroke-width="1.5"/>
+      <text x="35" y="372" fill="#f57f17">7</text>
+      <rect x="70" y="340" width="50" height="50" rx="6" fill="#e0f7fa" stroke="#80deea" stroke-width="1.5"/>
+      <text x="95" y="372" fill="#00838f">8</text>
+      <rect x="130" y="340" width="50" height="50" rx="6" fill="#fbe9e7" stroke="#ffab91" stroke-width="1.5"/>
+      <text x="155" y="372" fill="#bf360c">9</text>
+      <rect x="190" y="340" width="50" height="50" rx="6" fill="#efebe9" stroke="#bcaaa4" stroke-width="1.5"/>
+      <text x="215" y="372" fill="#4e342e">10</text>
+      <rect x="250" y="340" width="50" height="50" rx="6" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1.5"/>
+      <text x="275" y="372" fill="#283593">11</text>
+      <rect x="310" y="340" width="50" height="50" rx="6" fill="#fafafa" stroke="#bdbdbd" stroke-width="1.5"/>
+      <text x="335" y="372" fill="#212121">12</text>
+    </g>
+
+    <!-- Row labels -->
+    <g font-size="14" font-weight="bold" fill="#4A90D9" text-anchor="middle">
+      <text x="-5" y="72">1</text>
+      <text x="-5" y="132">2</text>
+      <text x="-5" y="192">3</text>
+      <text x="-5" y="252">4</text>
+      <text x="-5" y="312">5</text>
+      <text x="-5" y="372">6</text>
+    </g>
+  </g>
+
+  <!-- Highlight: sum=7 diagonal -->
+  <g transform="translate(60, 80)" opacity="0.3">
+    <rect x="310" y="40" width="50" height="50" rx="6" fill="#FFD700" stroke="#FFD700" stroke-width="3"/>
+    <rect x="250" y="100" width="50" height="50" rx="6" fill="#FFD700" stroke="#FFD700" stroke-width="3"/>
+    <rect x="190" y="160" width="50" height="50" rx="6" fill="#FFD700" stroke="#FFD700" stroke-width="3"/>
+    <rect x="130" y="220" width="50" height="50" rx="6" fill="#FFD700" stroke="#FFD700" stroke-width="3"/>
+    <rect x="70" y="280" width="50" height="50" rx="6" fill="#FFD700" stroke="#FFD700" stroke-width="3"/>
+    <rect x="10" y="340" width="50" height="50" rx="6" fill="#FFD700" stroke="#FFD700" stroke-width="3"/>
+  </g>
+
+  <!-- Annotation for sum=7 -->
+  <line x1="430" y1="230" x2="460" y2="200" stroke="#FFD700" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="465" y="195" font-size="13" fill="#b8860b" font-weight="bold">和=7 的6种组合</text>
+  <text x="465" y="213" font-size="12" fill="#7f8c8d">P(和=7) = 6/36 = 1/6</text>
+
+  <!-- Legend -->
+  <g transform="translate(420, 250)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#2c3e50">各和值概率：</text>
+    <g font-size="11" fill="#555">
+      <text x="0" y="22">和=2: 1/36 (2.8%)</text>
+      <text x="0" y="40">和=3: 2/36 (5.6%)</text>
+      <text x="0" y="58">和=4: 3/36 (8.3%)</text>
+      <text x="0" y="76">和=5: 4/36 (11.1%)</text>
+      <text x="0" y="94">和=6: 5/36 (13.9%)</text>
+      <text x="0" y="112" font-weight="bold" fill="#f57f17">和=7: 6/36 (16.7%) ★</text>
+      <text x="0" y="130">和=8: 5/36 (13.9%)</text>
+      <text x="0" y="148">和=9: 4/36 (11.1%)</text>
+      <text x="0" y="166">和=10: 3/36 (8.3%)</text>
+      <text x="0" y="184">和=11: 2/36 (5.6%)</text>
+      <text x="0" y="202">和=12: 1/36 (2.8%)</text>
+    </g>
+  </g>
+
+  <!-- Bottom note -->
+  <rect x="30" y="475" width="620" height="35" rx="8" fill="#f0f4ff" stroke="#4A90D9" stroke-width="1"/>
+  <text x="340" y="498" text-anchor="middle" font-size="13" fill="#2c3e50">🎲 现实类比：赌场里"押7"总是最热门——因为两颗骰子之和为7的概率最高！这就是离散概率的对称之美。</text>
+</svg>

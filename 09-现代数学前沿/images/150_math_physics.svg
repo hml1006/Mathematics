@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Arial, sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">数学物理：对称性与量子化</text>
+  
+  <!-- 左侧：对称性与守恒律 -->
+  <g transform="translate(200, 200)">
+    <text x="0" y="-100" font-size="18" font-weight="bold" text-anchor="middle" fill="#e74c3c">Noether定理</text>
+    
+    <!-- 对称性 -->
+    <circle cx="0" cy="-40" r="40" fill="#e74c3c" fill-opacity="0.15" stroke="#e74c3c" stroke-width="2"/>
+    <text x="0" y="-35" font-size="13" text-anchor="middle" fill="#c0392b" font-weight="bold">对称性</text>
+    
+    <!-- 箭头 -->
+    <path d="M 0 10 L 0 40" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowGreen)"/>
+    <text x="20" y="30" font-size="12" fill="#27ae60">⇒</text>
+    
+    <!-- 守恒律 -->
+    <rect x="-50" y="50" width="100" height="40" rx="5" fill="#27ae60" fill-opacity="0.15" stroke="#27ae60" stroke-width="2"/>
+    <text x="0" y="70" font-size="13" text-anchor="middle" fill="#229954" font-weight="bold">守恒律</text>
+    
+    <text x="0" y="110" font-size="11" text-anchor="middle" fill="#7f8c8d">∂_μj^μ = 0</text>
+  </g>
+  
+  <!-- 中间：规范场论 -->
+  <g transform="translate(400, 200)">
+    <text x="0" y="-100" font-size="18" font-weight="bold" text-anchor="middle" fill="#3498db">规范场论</text>
+    
+    <!-- 纤维丛 -->
+    <rect x="-60" y="-70" width="120" height="100" rx="10" fill="#3498db" fill-opacity="0.15" stroke="#3498db" stroke-width="2"/>
+    
+    <!-- 纤维 -->
+    <line x1="-40" y1="-50" x2="-40" y2="10" stroke="#3498db" stroke-width="1.5"/>
+    <line x1="-20" y1="-50" x2="-20" y2="10" stroke="#3498db" stroke-width="1.5"/>
+    <line x1="0" y1="-50" x2="0" y2="10" stroke="#3498db" stroke-width="1.5"/>
+    <line x1="20" y1="-50" x2="20" y2="10" stroke="#3498db" stroke-width="1.5"/>
+    <line x1="40" y1="-50" x2="40" y2="10" stroke="#3498db" stroke-width="1.5"/>
+    
+    <!-- 底空间 -->
+    <line x1="-60" y1="10" x2="60" y2="10" stroke="#3498db" stroke-width="2"/>
+    
+    <text x="0" y="-30" font-size="12" text-anchor="middle" fill="#2980b9">联络 A</text>
+    <text x="0" y="-10" font-size="12" text-anchor="middle" fill="#2980b9">曲率 F</text>
+    
+    <text x="0" y="50" font-size="11" text-anchor="middle" fill="#7f8c8d">Yang-Mills方程</text>
+  </g>
+  
+  <!-- 右侧：量子化 -->
+  <g transform="translate(600, 200)">
+    <text x="0" y="-100" font-size="18" font-weight="bold" text-anchor="middle" fill="#9b59b6">量子化</text>
+    
+    <!-- 经典到量子 -->
+    <rect x="-60" y="-70" width="120" height="40" rx="5" fill="#9b59b6" fill-opacity="0.15" stroke="#9b59b6" stroke-width="2"/>
+    <text x="0" y="-45" font-size="12" text-anchor="middle" fill="#8e44ad">经典力学</text>
+    
+    <path d="M 0 -20 L 0 0" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrowPurple)"/>
+    
+    <rect x="-60" y="10" width="120" height="40" rx="5" fill="#9b59b6" fill-opacity="0.15" stroke="#9b59b6" stroke-width="2"/>
+    <text x="0" y="35" font-size="12" text-anchor="middle" fill="#8e44ad">量子力学</text>
+    
+    <text x="0" y="70" font-size="11" text-anchor="middle" fill="#7f8c8d">[x,p] = iℏ</text>
+  </g>
+  
+  <!-- 底部：前沿方向 -->
+  <g transform="translate(400, 420)">
+    <rect x="-350" y="-40" width="700" height="120" rx="10" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+    
+    <text x="0" y="-15" font-size="16" font-weight="bold" text-anchor="middle" fill="#856404">数学物理前沿</text>
+    
+    <text x="-250" y="10" font-size="13" text-anchor="middle" fill="#856404">• 可积系统</text>
+    <text x="-100" y="10" font-size="13" text-anchor="middle" fill="#856404">• 孤子理论</text>
+    <text x="50" y="10" font-size="13" text-anchor="middle" fill="#856404">• AdS/CFT</text>
+    <text x="200" y="10" font-size="13" text-anchor="middle" fill="#856404">• 量子引力</text>
+    
+    <text x="-200" y="40" font-size="13" text-anchor="middle" fill="#856404">• 圈量子引力</text>
+    <text x="0" y="40" font-size="13" text-anchor="middle" fill="#856404">• 拓扑序</text>
+    <text x="200" y="40" font-size="13" text-anchor="middle" fill="#856404">• 任意子</text>
+    
+    <text x="0" y="65" font-size="12" text-anchor="middle" fill="#856404">反散射变换 • 自旋网络 • GKPW公式</text>
+  </g>
+  
+  <!-- 顶部：核心联系 -->
+  <g transform="translate(400, 100)">
+    <rect x="-300" y="-25" width="600" height="50" rx="8" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+    <text x="0" y="0" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">数学物理的核心联系</text>
+    <text x="0" y="20" font-size="12" text-anchor="middle" fill="#34495e">对称性 → 守恒律 → 量子化 → 场论 → 引力</text>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9b59b6"/>
+    </marker>
+  </defs>
+</svg>

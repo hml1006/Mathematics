@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Arial, sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">高维范畴论：从1-范畴到∞-范畴</text>
+  
+  <!-- 左侧：1-范畴 -->
+  <g transform="translate(150, 180)">
+    <text x="0" y="-50" font-size="18" font-weight="bold" text-anchor="middle" fill="#e74c3c">1-范畴</text>
+    
+    <!-- 对象 -->
+    <circle cx="-40" cy="0" r="20" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2"/>
+    <text x="-40" y="5" font-size="14" text-anchor="middle" fill="#c0392b">A</text>
+    
+    <circle cx="40" cy="0" r="20" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2"/>
+    <text x="40" y="5" font-size="14" text-anchor="middle" fill="#c0392b">B</text>
+    
+    <!-- 态射 -->
+    <path d="M -20 0 L 20 0" stroke="#e74c3c" stroke-width="2.5" marker-end="url(#arrow1)"/>
+    <text x="0" y="-15" font-size="12" text-anchor="middle" fill="#e74c3c">f</text>
+    
+    <text x="0" y="50" font-size="12" text-anchor="middle" fill="#7f8c8d">对象 + 态射</text>
+  </g>
+  
+  <!-- 中间：2-范畴 -->
+  <g transform="translate(400, 180)">
+    <text x="0" y="-50" font-size="18" font-weight="bold" text-anchor="middle" fill="#3498db">2-范畴</text>
+    
+    <!-- 对象 -->
+    <circle cx="-40" cy="0" r="20" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2"/>
+    <text x="-40" y="5" font-size="14" text-anchor="middle" fill="#2980b9">A</text>
+    
+    <circle cx="40" cy="0" r="20" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2"/>
+    <text x="40" y="5" font-size="14" text-anchor="middle" fill="#2980b9">B</text>
+    
+    <!-- 1-态射 -->
+    <path d="M -20 -10 L 20 -10" stroke="#3498db" stroke-width="2.5" marker-end="url(#arrow2)"/>
+    <text x="0" y="-25" font-size="12" text-anchor="middle" fill="#3498db">f</text>
+    
+    <path d="M -20 10 L 20 10" stroke="#3498db" stroke-width="2.5" marker-end="url(#arrow2)"/>
+    <text x="0" y="25" font-size="12" text-anchor="middle" fill="#3498db">g</text>
+    
+    <!-- 2-态射 -->
+    <path d="M 0 -5 Q 15 0 0 5" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrow3)"/>
+    <text x="25" y="5" font-size="12" fill="#27ae60">α</text>
+    
+    <text x="0" y="50" font-size="12" text-anchor="middle" fill="#7f8c8d">对象 + 态射 + 2-态射</text>
+  </g>
+  
+  <!-- 右侧：∞-范畴 -->
+  <g transform="translate(650, 180)">
+    <text x="0" y="-50" font-size="18" font-weight="bold" text-anchor="middle" fill="#9b59b6">∞-范畴</text>
+    
+    <!-- 对象 -->
+    <circle cx="-40" cy="0" r="20" fill="#9b59b6" fill-opacity="0.2" stroke="#9b59b6" stroke-width="2"/>
+    <text x="-40" y="5" font-size="14" text-anchor="middle" fill="#8e44ad">A</text>
+    
+    <circle cx="40" cy="0" r="20" fill="#9b59b6" fill-opacity="0.2" stroke="#9b59b6" stroke-width="2"/>
+    <text x="40" y="5" font-size="14" text-anchor="middle" fill="#8e44ad">B</text>
+    
+    <!-- 多层态射 -->
+    <path d="M -20 -15 L 20 -15" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow4)"/>
+    <path d="M -20 -5 L 20 -5" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow4)"/>
+    <path d="M -20 5 L 20 5" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow4)"/>
+    <path d="M -20 15 L 20 15" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow4)"/>
+    
+    <!-- 同伦 -->
+    <path d="M 5 -10 Q 20 -5 5 0" stroke="#e74c3c" stroke-width="1.5" fill="none"/>
+    <path d="M 5 0 Q 20 5 5 10" stroke="#e74c3c" stroke-width="1.5" fill="none"/>
+    
+    <text x="0" y="50" font-size="12" text-anchor="middle" fill="#7f8c8d">对象 + 无限层态射</text>
+  </g>
+  
+  <!-- 底部：核心概念 -->
+  <g transform="translate(400, 380)">
+    <rect x="-350" y="-30" width="700" height="100" rx="10" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+    
+    <text x="0" y="-5" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">∞-范畴的核心特征</text>
+    
+    <text x="-250" y="20" font-size="13" text-anchor="middle" fill="#34495e">• 拟范畴（Quasi-category）</text>
+    <text x="0" y="20" font-size="13" text-anchor="middle" fill="#34495e">• 同伦交换性</text>
+    <text x="250" y="20" font-size="13" text-anchor="middle" fill="#34495e">• 稳定∞-范畴</text>
+    
+    <text x="-200" y="45" font-size="13" text-anchor="middle" fill="#34495e">• Joyal模型结构</text>
+    <text x="200" y="45" font-size="13" text-anchor="middle" fill="#34495e">• 对称单性结构</text>
+  </g>
+  
+  <!-- 顶部：演进箭头 -->
+  <g transform="translate(400, 100)">
+    <path d="M -250 0 L -100 0" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowGray)"/>
+    <path d="M 100 0 L 250 0" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowGray)"/>
+    <text x="-175" y="-10" font-size="12" text-anchor="middle" fill="#7f8c8d">严格化</text>
+    <text x="175" y="-10" font-size="12" text-anchor="middle" fill="#7f8c8d">弱化为同伦</text>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3498db"/>
+    </marker>
+    <marker id="arrow3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+    <marker id="arrow4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9b59b6"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#95a5a6"/>
+    </marker>
+  </defs>
+</svg>

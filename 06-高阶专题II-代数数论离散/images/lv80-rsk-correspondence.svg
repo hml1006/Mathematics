@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 430" width="620" height="430">
+  <!-- Background -->
+  <rect width="620" height="430" fill="#eaf2f8" rx="8"/>
+  
+  <!-- Title -->
+  <text x="310" y="30" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#1a1a2e">Robinson-Schensted 对应</text>
+  
+  <!-- Permutation -->
+  <rect x="40" y="50" width="140" height="50" rx="8" fill="#d5f5e3" stroke="#1e8449" stroke-width="2"/>
+  <text x="110" y="72" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#1a1a2e">置换 π ∈ S₄</text>
+  <text x="110" y="92" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">π = 3 1 4 2</text>
+  
+  <!-- Arrow -->
+  <text x="200" y="80" font-family="serif" font-size="20" fill="#333">→</text>
+  <text x="200" y="95" font-family="serif" font-size="10" fill="#555">RSK</text>
+  
+  <!-- P tableau -->
+  <g transform="translate(240, 45)">
+    <text x="45" y="0" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#c0392b">插入表 P</text>
+    <!-- Row 1: 1, 2, 4 -->
+    <rect x="0" y="10" width="30" height="30" fill="#fadbd8" stroke="#c0392b" stroke-width="1.5"/>
+    <text x="15" y="32" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">1</text>
+    <rect x="30" y="10" width="30" height="30" fill="#fadbd8" stroke="#c0392b" stroke-width="1.5"/>
+    <text x="45" y="32" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">2</text>
+    <rect x="60" y="10" width="30" height="30" fill="#fadbd8" stroke="#c0392b" stroke-width="1.5"/>
+    <text x="75" y="32" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">4</text>
+    <!-- Row 2: 3 -->
+    <rect x="0" y="40" width="30" height="30" fill="#fadbd8" stroke="#c0392b" stroke-width="1.5"/>
+    <text x="15" y="62" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">3</text>
+  </g>
+  
+  <!-- Comma -->
+  <text x="350" y="80" font-family="serif" font-size="20" fill="#333">,</text>
+  
+  <!-- Q tableau -->
+  <g transform="translate(370, 45)">
+    <text x="45" y="0" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#2471a3">记录表 Q</text>
+    <!-- Row 1: 1, 2, 4 -->
+    <rect x="0" y="10" width="30" height="30" fill="#d6eaf8" stroke="#2471a3" stroke-width="1.5"/>
+    <text x="15" y="32" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">1</text>
+    <rect x="30" y="10" width="30" height="30" fill="#d6eaf8" stroke="#2471a3" stroke-width="1.5"/>
+    <text x="45" y="32" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">2</text>
+    <rect x="60" y="10" width="30" height="30" fill="#d6eaf8" stroke="#2471a3" stroke-width="1.5"/>
+    <text x="75" y="32" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">4</text>
+    <!-- Row 2: 3 -->
+    <rect x="0" y="40" width="30" height="30" fill="#d6eaf8" stroke="#2471a3" stroke-width="1.5"/>
+    <text x="15" y="62" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">3</text>
+  </g>
+  
+  <!-- Shape lambda -->
+  <rect x="480" y="50" width="120" height="50" rx="8" fill="#f5eef8" stroke="#8e44ad" stroke-width="2"/>
+  <text x="540" y="72" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#8e44ad">形状 λ</text>
+  <text x="540" y="92" text-anchor="middle" font-family="serif" font-size="13" fill="#1a1a2e">λ = (3, 1) ⊢ 4</text>
+  
+  <!-- RSK steps -->
+  <text x="310" y="145" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#333">RSK 插入步骤</text>
+  
+  <!-- Step 1 -->
+  <rect x="40" y="160" width="130" height="70" rx="6" fill="white" stroke="#aaa" stroke-width="1"/>
+  <text x="105" y="178" text-anchor="middle" font-family="serif" font-size="11" fill="#333">插入 3:</text>
+  <rect x="60" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="72" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">3</text>
+  <text x="105" y="222" font-family="serif" font-size="9" fill="#555">P₁ = [3]</text>
+  
+  <!-- Step 2 -->
+  <rect x="185" y="160" width="130" height="70" rx="6" fill="white" stroke="#aaa" stroke-width="1"/>
+  <text x="250" y="178" text-anchor="middle" font-family="serif" font-size="11" fill="#333">插入 1:</text>
+  <rect x="200" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="212" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">1</text>
+  <rect x="225" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="237" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">3</text>
+  <text x="250" y="222" font-family="serif" font-size="9" fill="#555">1 把 3 挤到下一行</text>
+  
+  <!-- Step 3 -->
+  <rect x="330" y="160" width="130" height="70" rx="6" fill="white" stroke="#aaa" stroke-width="1"/>
+  <text x="395" y="178" text-anchor="middle" font-family="serif" font-size="11" fill="#333">插入 4:</text>
+  <rect x="345" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="357" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">1</text>
+  <rect x="370" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="382" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">3</text>
+  <rect x="395" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="407" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">4</text>
+  <text x="395" y="222" font-family="serif" font-size="9" fill="#555">4 加在第一行末尾</text>
+  
+  <!-- Step 4 -->
+  <rect x="475" y="160" width="130" height="70" rx="6" fill="white" stroke="#aaa" stroke-width="1"/>
+  <text x="540" y="178" text-anchor="middle" font-family="serif" font-size="11" fill="#333">插入 2:</text>
+  <rect x="490" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="502" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">1</text>
+  <rect x="515" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="527" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">2</text>
+  <rect x="540" y="185" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="552" y="203" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">4</text>
+  <rect x="490" y="210" width="25" height="25" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="502" y="228" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">3</text>
+  
+  <!-- Hook length formula -->
+  <rect x="40" y="250" width="540" height="70" rx="8" fill="#fef9e7" stroke="#e67e22" stroke-width="2"/>
+  <text x="310" y="275" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#e67e22">钩长公式</text>
+  <text x="310" y="298" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">f^λ = n! / ∏ hook(i,j)    例：f^{(3,1)} = 4!/(4·2·1·1) = 3</text>
+  <text x="310" y="315" text-anchor="middle" font-family="serif" font-size="11" fill="#555">钩长 hook(i,j) = 右方格数 + 下方格数 + 1</text>
+  
+  <!-- Corollary -->
+  <rect x="40" y="335" width="540" height="50" rx="8" fill="#d5f5e3" stroke="#1e8449" stroke-width="2"/>
+  <text x="310" y="358" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#1a1a2e">重要推论</text>
+  <text x="310" y="378" text-anchor="middle" font-family="serif" font-size="12" fill="#555">n! = Σ_{λ⊢n} (f^λ)²    （置换与标准杨表对的双射）</text>
+  
+  <!-- Caption -->
+  <text x="310" y="415" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">RS 对应将置换的"动态插入过程"编码为两个同形状的杨表，揭示对称群表示的组合本质</text>
+</svg>

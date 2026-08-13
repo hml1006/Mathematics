@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="360pt" viewBox="0 0 504 360">
+ <defs>
+  <style type="text/css">
+   text { font-family: 'Noto Sans CJK SC', 'SimHei', sans-serif; }
+  </style>
+ </defs>
+ <rect width="504" height="360" fill="#ffffff"/>
+
+ <!-- Title -->
+ <text x="252" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333333">量词作用域：全称量词 vs 存在量词</text>
+ <text x="252" y="48" text-anchor="middle" font-size="11" fill="#666666">∀x P(x) 对所有 x 成立；∃x P(x) 存在某个 x 成立</text>
+
+ <!-- Universal Quantifier (∀) -->
+ <g transform="translate(126, 80)">
+  <text x="0" y="0" text-anchor="middle" font-size="14" font-weight="bold" fill="#4c72b0">全称量词 ∀</text>
+  <text x="0" y="16" text-anchor="middle" font-size="11" fill="#666666">"对所有..."</text>
+
+  <!-- Domain circle -->
+  <circle cx="0" cy="80" r="50" fill="#4c72b0" fill-opacity="0.1" stroke="#4c72b0" stroke-width="2"/>
+  <text x="0" y="65" text-anchor="middle" font-size="10" fill="#4c72b0">论域 D</text>
+
+  <!-- Elements all satisfying P -->
+  <circle cx="-20" cy="70" r="8" fill="#70ad47" stroke="#333333" stroke-width="1.5"/>
+  <text x="-20" y="74" text-anchor="middle" font-size="9" fill="#ffffff">✓</text>
+  <circle cx="20" cy="70" r="8" fill="#70ad47" stroke="#333333" stroke-width="1.5"/>
+  <text x="20" y="74" text-anchor="middle" font-size="9" fill="#ffffff">✓</text>
+  <circle cx="-20" cy="90" r="8" fill="#70ad47" stroke="#333333" stroke-width="1.5"/>
+  <text x="-20" y="94" text-anchor="middle" font-size="9" fill="#ffffff">✓</text>
+  <circle cx="20" cy="90" r="8" fill="#70ad47" stroke="#333333" stroke-width="1.5"/>
+  <text x="20" y="94" text-anchor="middle" font-size="9" fill="#ffffff">✓</text>
+
+  <text x="0" y="150" text-anchor="middle" font-size="11" fill="#333333">∀x P(x)：每个元素都满足 P</text>
+  <text x="0" y="166" text-anchor="middle" font-size="10" fill="#666666">例：∀x∈ℝ, x² ≥ 0</text>
+ </g>
+
+ <!-- Existential Quantifier (∃) -->
+ <g transform="translate(378, 80)">
+  <text x="0" y="0" text-anchor="middle" font-size="14" font-weight="bold" fill="#ed7d31">存在量词 ∃</text>
+  <text x="0" y="16" text-anchor="middle" font-size="11" fill="#666666">"存在某个..."</text>
+
+  <!-- Domain circle -->
+  <circle cx="0" cy="80" r="50" fill="#ed7d31" fill-opacity="0.1" stroke="#ed7d31" stroke-width="2"/>
+  <text x="0" y="65" text-anchor="middle" font-size="10" fill="#ed7d31">论域 D</text>
+
+  <!-- Elements: some satisfy, some don't -->
+  <circle cx="-20" cy="70" r="8" fill="#cc6666" stroke="#333333" stroke-width="1.5"/>
+  <text x="-20" y="74" text-anchor="middle" font-size="9" fill="#ffffff">✗</text>
+  <circle cx="20" cy="70" r="8" fill="#70ad47" stroke="#333333" stroke-width="1.5"/>
+  <text x="20" y="74" text-anchor="middle" font-size="9" fill="#ffffff">✓</text>
+  <circle cx="-20" cy="90" r="8" fill="#cc6666" stroke="#333333" stroke-width="1.5"/>
+  <text x="-20" y="94" text-anchor="middle" font-size="9" fill="#ffffff">✗</text>
+  <circle cx="20" cy="90" r="8" fill="#cc6666" stroke="#333333" stroke-width="1.5"/>
+  <text x="20" y="94" text-anchor="middle" font-size="9" fill="#ffffff">✗</text>
+
+  <text x="0" y="150" text-anchor="middle" font-size="11" fill="#333333">∃x P(x)：至少一个元素满足 P</text>
+  <text x="0" y="166" text-anchor="middle" font-size="10" fill="#666666">例：∃x∈ℝ, x² = 2</text>
+ </g>
+
+ <!-- Quantifier Alternation -->
+ <text x="252" y="280" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">量词顺序不可交换</text>
+
+ <g transform="translate(100, 300)">
+  <rect x="0" y="0" width="304" height="50" fill="#f0f0f0" stroke="#333333" stroke-width="1.5" rx="5"/>
+  <text x="152" y="18" text-anchor="middle" font-size="11" fill="#333333">∀x∃y M(y,x)："每个人都有母亲"</text>
+  <text x="152" y="36" text-anchor="middle" font-size="10" fill="#666666">（母亲的选取依赖于 x，不同的人有不同的母亲）</text>
+ </g>
+
+ <g transform="translate(100, 355)">
+  <rect x="0" y="0" width="304" height="50" fill="#f0f0f0" stroke="#333333" stroke-width="1.5" rx="5"/>
+  <text x="152" y="18" text-anchor="middle" font-size="11" fill="#333333">∃y∀x M(y,x)："存在一个人是所有人的母亲"</text>
+  <text x="152" y="36" text-anchor="middle" font-size="10" fill="#666666">（同一个 y 对所有 x 成立，语义完全不同）</text>
+ </g>
+</svg>

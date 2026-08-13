@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 400" width="620" height="400">
+  <!-- Background -->
+  <rect width="620" height="400" fill="#fef9e7" rx="8"/>
+  
+  <!-- Title -->
+  <text x="310" y="30" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#1a1a2e">Yang-Baxter 方程：辫子群的表示</text>
+  
+  <!-- Left: Braid picture for R₁₂R₁₃R₂₃ -->
+  <text x="155" y="60" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#333">R₁₂ R₁₃ R₂₃</text>
+  
+  <!-- Three strands, left side -->
+  <!-- Strand 1 (top) -->
+  <!-- Strand 2 (middle) -->
+  <!-- Strand 3 (bottom) -->
+  
+  <!-- First crossing R₁₂: strands 1,2 cross -->
+  <path d="M80,90 C100,90 110,120 130,120" stroke="#c0392b" stroke-width="2.5" fill="none"/>
+  <path d="M80,120 C100,120 110,90 130,90" stroke="#2471a3" stroke-width="2.5" fill="none"/>
+  <line x1="80" y1="150" x2="130" y2="150" stroke="#1e8449" stroke-width="2.5"/>
+  <text x="115" y="80" font-family="serif" font-size="11" fill="#8e44ad">R₁₂</text>
+  
+  <!-- Second crossing R₁₃: strands 1,3 cross -->
+  <path d="M150,90 C170,90 180,150 200,150" stroke="#c0392b" stroke-width="2.5" fill="none"/>
+  <line x1="150" y1="120" x2="200" y2="120" stroke="#2471a3" stroke-width="2.5"/>
+  <path d="M150,150 C170,150 180,90 200,90" stroke="#1e8449" stroke-width="2.5" fill="none"/>
+  <text x="185" y="80" font-family="serif" font-size="11" fill="#8e44ad">R₁₃</text>
+  
+  <!-- Third crossing R₂₃: strands 2,3 cross -->
+  <line x1="220" y1="90" x2="270" y2="90" stroke="#c0392b" stroke-width="2.5"/>
+  <path d="M220,120 C240,120 250,150 270,150" stroke="#2471a3" stroke-width="2.5" fill="none"/>
+  <path d="M220,150 C240,150 250,120 270,120" stroke="#1e8449" stroke-width="2.5" fill="none"/>
+  <text x="255" y="80" font-family="serif" font-size="11" fill="#8e44ad">R₂₃</text>
+  
+  <!-- Equals sign -->
+  <text x="310" y="125" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#333">=</text>
+  
+  <!-- Right: Braid picture for R₂₃R₁₃R₁₂ -->
+  <text x="460" y="60" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#333">R₂₃ R₁₃ R₁₂</text>
+  
+  <!-- First crossing R₂₃ -->
+  <line x1="350" y1="90" x2="400" y2="90" stroke="#c0392b" stroke-width="2.5"/>
+  <path d="M350,120 C370,120 380,150 400,150" stroke="#2471a3" stroke-width="2.5" fill="none"/>
+  <path d="M350,150 C370,150 380,120 400,120" stroke="#1e8449" stroke-width="2.5" fill="none"/>
+  <text x="385" y="80" font-family="serif" font-size="11" fill="#8e44ad">R₂₃</text>
+  
+  <!-- Second crossing R₁₃ -->
+  <path d="M420,90 C440,90 450,150 470,150" stroke="#c0392b" stroke-width="2.5" fill="none"/>
+  <line x1="420" y1="120" x2="470" y2="120" stroke="#2471a3" stroke-width="2.5"/>
+  <path d="M420,150 C440,150 450,90 470,90" stroke="#1e8449" stroke-width="2.5" fill="none"/>
+  <text x="455" y="80" font-family="serif" font-size="11" fill="#8e44ad">R₁₃</text>
+  
+  <!-- Third crossing R₁₂ -->
+  <path d="M490,90 C510,90 520,120 540,120" stroke="#c0392b" stroke-width="2.5" fill="none"/>
+  <path d="M490,120 C510,120 520,90 540,90" stroke="#2471a3" stroke-width="2.5" fill="none"/>
+  <line x1="490" y1="150" x2="540" y2="150" stroke="#1e8449" stroke-width="2.5"/>
+  <text x="525" y="80" font-family="serif" font-size="11" fill="#8e44ad">R₁₂</text>
+  
+  <!-- Bottom: Algebraic form -->
+  <rect x="60" y="190" width="500" height="60" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="310" y="215" text-anchor="middle" font-family="serif" font-size="15" fill="#1a1a2e">代数形式：R₁₂ R₁₃ R₂₃ = R₂₃ R₁₃ R₁₂</text>
+  <text x="310" y="238" text-anchor="middle" font-family="serif" font-size="13" fill="#555">在 End(V ⊗ V ⊗ V) 中，R ∈ End(V ⊗ V) 是 R-矩阵</text>
+  
+  <!-- Bottom: Knot theory connection -->
+  <text x="310" y="285" text-anchor="middle" font-family="serif" font-size="15" font-weight="bold" fill="#333">应用：从 R-矩阵到纽结不变量</text>
+  
+  <!-- Trefoil knot simplified -->
+  <g transform="translate(130, 310)">
+    <ellipse cx="0" cy="30" rx="50" ry="25" fill="none" stroke="#c0392b" stroke-width="2"/>
+    <path d="M-30,10 Q0,-20 30,10 Q50,30 20,50 Q0,60 -30,50 Q-50,40 -30,10" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+    <text x="0" y="85" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">纽结 K</text>
+  </g>
+  
+  <!-- Arrow -->
+  <text x="230" y="345" font-family="serif" font-size="22" fill="#8e44ad">→</text>
+  
+  <!-- Jones polynomial -->
+  <g transform="translate(350, 310)">
+    <rect x="-80" y="0" width="200" height="55" rx="5" fill="#f5eef8" stroke="#8e44ad" stroke-width="1"/>
+    <text x="20" y="22" text-anchor="middle" font-family="serif" font-size="13" fill="#1a1a2e">V_K(t) = qtr(R-matrix)</text>
+    <text x="20" y="42" text-anchor="middle" font-family="serif" font-size="12" fill="#555">Jones 多项式 via U_q(𝔰𝔩₂)</text>
+  </g>
+  
+  <!-- Caption -->
+  <text x="310" y="392" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Yang-Baxter 方程保证辫子群表示的良定性，从而定义纽结的拓扑不变量</text>
+</svg>

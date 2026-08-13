@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <style>
+      .apple { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .orange { fill: #f39c12; stroke: #d68910; stroke-width: 2; }
+      .grape { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; }
+      .label { font-family: 'Arial', sans-serif; font-size: 20px; fill: #2c3e50; font-weight: bold; }
+      .title { font-family: 'Arial', sans-serif; font-size: 28px; fill: #2c3e50; font-weight: bold; }
+      .formula { font-family: 'Arial', sans-serif; font-size: 22px; fill: #e74c3c; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="450" y="35" text-anchor="middle" class="title">加法结合律：(a + b) + c = a + (b + c)</text>
+  
+  <!-- 左侧：(a + b) + c -->
+  <g transform="translate(50, 80)">
+    <text x="150" y="0" text-anchor="middle" class="formula">(a + b) + c</text>
+    
+    <!-- 第一组：a + b -->
+    <rect x="0" y="30" width="300" height="120" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="10"/>
+    <text x="150" y="55" text-anchor="middle" class="label">先算 a + b</text>
+    
+    <!-- a个苹果 -->
+    <circle cx="40" cy="90" r="20" class="apple"/>
+    <circle cx="80" cy="90" r="20" class="apple"/>
+    <circle cx="120" cy="90" r="20" class="apple"/>
+    <text x="80" y="135" text-anchor="middle" class="label" fill="#e74c3c">a = 3</text>
+    
+    <!-- b个橘子 -->
+    <circle cx="180" cy="90" r="20" class="orange"/>
+    <circle cx="220" cy="90" r="20" class="orange"/>
+    <circle cx="260" cy="90" r="20" class="orange"/>
+    <circle cx="300" cy="90" r="20" class="orange"/>
+    <text x="240" y="135" text-anchor="middle" class="label" fill="#f39c12">b = 4</text>
+    
+    <!-- 加号 -->
+    <text x="150" y="95" text-anchor="middle" font-size="30" fill="#2c3e50" font-weight="bold">+</text>
+    
+    <!-- 第二组：+ c -->
+    <rect x="0" y="180" width="300" height="100" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="10"/>
+    <text x="150" y="205" text-anchor="middle" class="label">再加 c</text>
+    
+    <!-- c个葡萄 -->
+    <circle cx="100" cy="240" r="20" class="grape"/>
+    <circle cx="140" cy="240" r="20" class="grape"/>
+    <text x="120" y="275" text-anchor="middle" class="label" fill="#9b59b6">c = 2</text>
+    
+    <!-- 结果 -->
+    <text x="150" y="320" text-anchor="middle" class="formula" font-size="24">= (3 + 4) + 2 = 7 + 2 = 9</text>
+  </g>
+  
+  <!-- 等号 -->
+  <text x="430" y="250" text-anchor="middle" font-size="60" fill="#27ae60" font-weight="bold">=</text>
+  
+  <!-- 右侧：a + (b + c) -->
+  <g transform="translate(500, 80)">
+    <text x="150" y="0" text-anchor="middle" class="formula">a + (b + c)</text>
+    
+    <!-- 第一组：a -->
+    <rect x="0" y="30" width="120" height="120" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="10"/>
+    <text x="60" y="55" text-anchor="middle" class="label">a</text>
+    
+    <!-- a个苹果 -->
+    <circle cx="40" cy="90" r="20" class="apple"/>
+    <circle cx="80" cy="90" r="20" class="apple"/>
+    <circle cx="120" cy="90" r="20" class="apple"/>
+    <text x="60" y="135" text-anchor="middle" class="label" fill="#e74c3c">3</text>
+    
+    <!-- 第二组：b + c -->
+    <rect x="150" y="30" width="180" height="120" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="10"/>
+    <text x="240" y="55" text-anchor="middle" class="label">先算 b + c</text>
+    
+    <!-- b个橘子 -->
+    <circle cx="180" cy="90" r="20" class="orange"/>
+    <circle cx="220" cy="90" r="20" class="orange"/>
+    <circle cx="260" cy="90" r="20" class="orange"/>
+    <circle cx="300" cy="90" r="20" class="orange"/>
+    
+    <!-- c个葡萄 -->
+    <circle cx="340" cy="90" r="20" class="grape"/>
+    <circle cx="380" cy="90" r="20" class="grape"/>
+    <text x="240" y="135" text-anchor="middle" class="label" fill="#9b59b6">4 + 2 = 6</text>
+    
+    <!-- 加号 -->
+    <text x="135" y="95" text-anchor="middle" font-size="30" fill="#2c3e50" font-weight="bold">+</text>
+    
+    <!-- 结果 -->
+    <text x="150" y="200" text-anchor="middle" class="formula" font-size="24">= 3 + (4 + 2) = 3 + 6 = 9</text>
+  </g>
+  
+  <!-- 底部说明 -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="700" height="60" fill="#d5f4e6" stroke="#27ae60" stroke-width="2" rx="10"/>
+    <text x="350" y="25" text-anchor="middle" class="label" font-size="18">现实类比：三堆水果，无论先合并前两堆还是后两堆，</text>
+    <text x="350" y="50" text-anchor="middle" class="label" font-size="18">最终总水果数都是 9 个！</text>
+  </g>
+</svg>

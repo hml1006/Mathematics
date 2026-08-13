@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Arial, sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">几何Langlands对应</text>
+  
+  <!-- 左侧：代数曲线X -->
+  <g transform="translate(150, 200)">
+    <ellipse cx="0" cy="0" rx="80" ry="40" fill="none" stroke="#3498db" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="80" ry="40" fill="#3498db" fill-opacity="0.1"/>
+    <text x="0" y="70" font-size="18" text-anchor="middle" fill="#2c3e50" font-weight="bold">代数曲线 X</text>
+    
+    <!-- 曲线上的点 -->
+    <circle cx="-40" cy="-20" r="4" fill="#e74c3c"/>
+    <circle cx="20" cy="15" r="4" fill="#e74c3c"/>
+    <circle cx="50" cy="-10" r="4" fill="#e74c3c"/>
+    <text x="-40" y="-30" font-size="12" fill="#e74c3c">x₁</text>
+    <text x="20" y="30" font-size="12" fill="#e74c3c">x₂</text>
+    <text x="50" y="-20" font-size="12" fill="#e74c3c">x₃</text>
+  </g>
+  
+  <!-- 中间：对应关系 -->
+  <g transform="translate(400, 200)">
+    <!-- 左箭头 -->
+    <path d="M -80 0 L -30 0" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="-55" y="-15" font-size="14" text-anchor="middle" fill="#27ae60">Hecke</text>
+    <text x="-55" y="5" font-size="14" text-anchor="middle" fill="#27ae60">算子</text>
+    
+    <!-- 右箭头 -->
+    <path d="M 30 0 L 80 0" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="55" y="-15" font-size="14" text-anchor="middle" fill="#27ae60">局部</text>
+    <text x="55" y="5" font-size="14" text-anchor="middle" fill="#27ae60">系统</text>
+    
+    <!-- 中心圆 -->
+    <circle cx="0" cy="0" r="25" fill="#9b59b6" fill-opacity="0.2" stroke="#9b59b6" stroke-width="2"/>
+    <text x="0" y="5" font-size="16" text-anchor="middle" fill="#9b59b6" font-weight="bold">≅</text>
+  </g>
+  
+  <!-- 右侧上：Bun_G（G-丛模空间） -->
+  <g transform="translate(650, 120)">
+    <rect x="-70" y="-40" width="140" height="80" rx="10" fill="#e74c3c" fill-opacity="0.15" stroke="#e74c3c" stroke-width="2"/>
+    <text x="0" y="-15" font-size="16" text-anchor="middle" fill="#c0392b" font-weight="bold">Bun_G</text>
+    <text x="0" y="5" font-size="12" text-anchor="middle" fill="#c0392b">G-主丛模空间</text>
+    <text x="0" y="25" font-size="12" text-anchor="middle" fill="#c0392b">D-模范畴</text>
+    
+    <!-- 小图形表示丛 -->
+    <circle cx="-30" cy="-25" r="8" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+    <circle cx="30" cy="-25" r="8" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+    <line x1="-30" y1="-25" x2="30" y2="-25" stroke="#e74c3c" stroke-width="1.5"/>
+  </g>
+  
+  <!-- 右侧下：LocSys（局部系统模空间） -->
+  <g transform="translate(650, 280)">
+    <rect x="-70" y="-40" width="140" height="80" rx="10" fill="#3498db" fill-opacity="0.15" stroke="#3498db" stroke-width="2"/>
+    <text x="0" y="-15" font-size="16" text-anchor="middle" fill="#2980b9" font-weight="bold">LocSys_LG</text>
+    <text x="0" y="5" font-size="12" text-anchor="middle" fill="#2980b9">局部系统模空间</text>
+    <text x="0" y="25" font-size="12" text-anchor="middle" fill="#2980b9">凝聚层范畴</text>
+    
+    <!-- 小图形表示局部系统 -->
+    <path d="M -40 -25 Q -20 -35 0 -25 T 40 -25" fill="none" stroke="#3498db" stroke-width="1.5"/>
+    <circle cx="-40" cy="-25" r="3" fill="#3498db"/>
+    <circle cx="0" cy="-25" r="3" fill="#3498db"/>
+    <circle cx="40" cy="-25" r="3" fill="#3498db"/>
+  </g>
+  
+  <!-- 底部：核心公式 -->
+  <g transform="translate(400, 420)">
+    <rect x="-280" y="-30" width="560" height="60" rx="10" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+    <text x="0" y="-5" font-size="16" text-anchor="middle" fill="#856404" font-weight="bold">核心对应</text>
+    <text x="0" y="20" font-size="14" text-anchor="middle" fill="#856404">D-mod(Bun_G)_Hecke ≅ QCoh(LocSys_LG)</text>
+  </g>
+  
+  <!-- 左下角：Hecke算子示意 -->
+  <g transform="translate(150, 450)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#2c3e50">Hecke算子</text>
+    <rect x="-60" y="10" width="120" height="60" rx="5" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1.5"/>
+    <text x="0" y="30" font-size="12" text-anchor="middle" fill="#34495e">在点x处修改</text>
+    <text x="0" y="50" font-size="12" text-anchor="middle" fill="#34495e">G-丛结构</text>
+    <path d="M -30 70 L 30 70" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- 右下角：几何Satake -->
+  <g transform="translate(650, 450)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#2c3e50">几何Satake</text>
+    <rect x="-60" y="10" width="120" height="60" rx="5" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1.5"/>
+    <text x="0" y="30" font-size="12" text-anchor="middle" fill="#34495e">Rep(LG) ≅</text>
+    <text x="0" y="50" font-size="12" text-anchor="middle" fill="#34495e">Perv(Gr_G)</text>
+    <path d="M -30 70 L 30 70" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+  
+  <!-- 连接箭头 -->
+  <path d="M 230 200 Q 300 150 370 150" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 230 200 Q 300 250 370 250" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+</svg>

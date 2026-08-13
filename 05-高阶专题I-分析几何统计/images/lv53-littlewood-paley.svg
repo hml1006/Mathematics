@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="freqGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Littlewood-Paley 频率分解：音频均衡器可视化
+  </text>
+  
+  <!-- Original signal -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#34495e">原始信号 f(x)</text>
+    <path d="M 0,40 Q 20,20 40,40 T 80,40 T 120,40 T 160,40 T 200,40 T 240,40 T 280,40 T 320,40 T 360,40 T 400,40 T 440,40 T 480,40 T 520,40 T 560,40 T 600,40 T 640,40 T 680,40" 
+          stroke="#2c3e50" stroke-width="2" fill="none"/>
+    <text x="700" y="45" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">x</text>
+  </g>
+  
+  <!-- Frequency bands (equalizer style) -->
+  <g transform="translate(50, 160)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#34495e">频率分解 Δⱼf</text>
+    
+    <!-- Band 1: Low frequency -->
+    <rect x="0" y="30" width="80" height="60" fill="url(#freqGrad)" opacity="0.8" rx="4"/>
+    <text x="40" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">Δ₋₂f</text>
+    <text x="40" y="125" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">低频</text>
+    
+    <!-- Band 2 -->
+    <rect x="100" y="50" width="80" height="40" fill="url(#freqGrad)" opacity="0.7" rx="4"/>
+    <text x="140" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">Δ₋₁f</text>
+    
+    <!-- Band 3 -->
+    <rect x="200" y="35" width="80" height="55" fill="url(#freqGrad)" opacity="0.75" rx="4"/>
+    <text x="240" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">Δ₀f</text>
+    
+    <!-- Band 4 -->
+    <rect x="300" y="60" width="80" height="30" fill="url(#freqGrad)" opacity="0.65" rx="4"/>
+    <text x="340" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">Δ₁f</text>
+    
+    <!-- Band 5 -->
+    <rect x="400" y="70" width="80" height="20" fill="url(#freqGrad)" opacity="0.6" rx="4"/>
+    <text x="440" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">Δ₂f</text>
+    
+    <!-- Band 6: High frequency -->
+    <rect x="500" y="75" width="80" height="15" fill="url(#freqGrad)" opacity="0.55" rx="4"/>
+    <text x="540" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">Δ₃f</text>
+    <text x="540" y="125" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">高频</text>
+    
+    <!-- Frequency axis -->
+    <line x1="0" y1="95" x2="600" y2="95" stroke="#95a5a6" stroke-width="1"/>
+    <text x="620" y="100" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">频率 ξ</text>
+  </g>
+  
+  <!-- Square function visualization -->
+  <g transform="translate(50, 340)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#34495e">平方函数 Sf(x) = (Σ|Δⱼf(x)|²)^(1/2)</text>
+    
+    <!-- Square function curve -->
+    <path d="M 0,60 Q 50,45 100,50 T 200,48 T 300,52 T 400,50 T 500,48 T 600,50 T 700,52" 
+          stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+    
+    <!-- Annotations -->
+    <circle cx="100" cy="50" r="4" fill="#e74c3c"/>
+    <text x="110" y="40" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c">局部能量集中</text>
+    
+    <!-- Axis -->
+    <line x1="0" y1="70" x2="700" y2="70" stroke="#95a5a6" stroke-width="1"/>
+    <text x="720" y="75" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">x</text>
+  </g>
+  
+  <!-- Key property box -->
+  <rect x="50" y="440" width="700" height="45" fill="#ecf0f1" rx="6" stroke="#3498db" stroke-width="1.5"/>
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2c3e50" font-weight="bold">
+    核心性质：‖Sf‖ₚ ∼ ‖f‖ₚ (1 &lt; p &lt; ∞)
+  </text>
+  <text x="400" y="478" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+    平方函数的 Lᵖ 范数等价于原函数的 Lᵖ 范数 —— 频率分解保持信号强度
+  </text>
+</svg>

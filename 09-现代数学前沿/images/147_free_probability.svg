@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Arial, sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">自由概率论：非交换随机性</text>
+  
+  <!-- 左侧：经典独立 vs 自由独立 -->
+  <g transform="translate(200, 250)">
+    <text x="0" y="-130" font-size="18" font-weight="bold" text-anchor="middle" fill="#e74c3c">经典独立性</text>
+    
+    <!-- 两个独立变量 -->
+    <circle cx="-50" cy="-50" r="30" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2"/>
+    <text x="-50" y="-45" font-size="14" text-anchor="middle" fill="#c0392b">X</text>
+    
+    <circle cx="50" cy="-50" r="30" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2"/>
+    <text x="50" y="-45" font-size="14" text-anchor="middle" fill="#c0392b">Y</text>
+    
+    <!-- 张量积 -->
+    <text x="0" y="0" font-size="16" text-anchor="middle" fill="#c0392b" font-weight="bold">⊗</text>
+    
+    <!-- 混合矩分解 -->
+    <rect x="-80" y="20" width="160" height="40" rx="5" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1.5"/>
+    <text x="0" y="40" font-size="12" text-anchor="middle" fill="#34495e">E[XⁿYᵐ] = E[Xⁿ]E[Yᵐ]</text>
+    
+    <text x="0" y="80" font-size="12" text-anchor="middle" fill="#7f8c8d">交换代数</text>
+  </g>
+  
+  <!-- 中间箭头 -->
+  <g transform="translate(400, 250)">
+    <path d="M -50 0 L 50 0" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowGreen)"/>
+    <text x="0" y="-20" font-size="14" text-anchor="middle" fill="#27ae60" font-weight="bold">非交换化</text>
+    <text x="0" y="20" font-size="12" text-anchor="middle" fill="#27ae60">自由独立性</text>
+  </g>
+  
+  <!-- 右侧：自由独立 -->
+  <g transform="translate(600, 250)">
+    <text x="0" y="-130" font-size="18" font-weight="bold" text-anchor="middle" fill="#3498db">自由独立性</text>
+    
+    <!-- 两个自由变量 -->
+    <circle cx="-50" cy="-50" r="30" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2"/>
+    <text x="-50" y="-45" font-size="14" text-anchor="middle" fill="#2980b9">a</text>
+    
+    <circle cx="50" cy="-50" r="30" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2"/>
+    <text x="50" y="-45" font-size="14" text-anchor="middle" fill="#2980b9">b</text>
+    
+    <!-- 自由积 -->
+    <text x="0" y="0" font-size="16" text-anchor="middle" fill="#2980b9" font-weight="bold">⊞</text>
+    
+    <!-- 自由累积量 -->
+    <rect x="-80" y="20" width="160" height="40" rx="5" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1.5"/>
+    <text x="0" y="40" font-size="12" text-anchor="middle" fill="#34495e">κₙ(a+b) = κₙ(a)+κₙ(b)</text>
+    
+    <text x="0" y="80" font-size="12" text-anchor="middle" fill="#7f8c8d">非交换代数</text>
+  </g>
+  
+  <!-- 底部：核心工具 -->
+  <g transform="translate(400, 450)">
+    <rect x="-350" y="-40" width="700" height="100" rx="10" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+    
+    <text x="0" y="-15" font-size="16" font-weight="bold" text-anchor="middle" fill="#856404">自由概率论的核心工具</text>
+    
+    <text x="-250" y="10" font-size="13" text-anchor="middle" fill="#856404">• R-变换</text>
+    <text x="-100" y="10" font-size="13" text-anchor="middle" fill="#856404">• S-变换</text>
+    <text x="50" y="10" font-size="13" text-anchor="middle" fill="#856404">• 自由累积量</text>
+    <text x="200" y="10" font-size="13" text-anchor="middle" fill="#856404">• 非交叉划分</text>
+    
+    <text x="0" y="35" font-size="13" text-anchor="middle" fill="#856404">R_{a+b}(z) = R_a(z) + R_b(z)</text>
+  </g>
+  
+  <!-- 顶部：中心极限定理 -->
+  <g transform="translate(400, 100)">
+    <rect x="-300" y="-25" width="600" height="50" rx="8" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+    <text x="0" y="0" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">自由中心极限定理</text>
+    <text x="0" y="20" font-size="12" text-anchor="middle" fill="#34495e">自由独立变量和 → 半圆分布（非高斯分布）</text>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c3e50">假设检验：拒绝域与 p 值</text>
+  <text x="350" y="52" text-anchor="middle" font-size="13" fill="#7f8c8d">像法庭审判——"无罪推定"(H₀) 需要"确凿证据"才能推翻</text>
+
+  <!-- Top panel:双侧检验 -->
+  <g transform="translate(40, 75)">
+    <text x="310" y="0" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">双侧检验：H₀: μ = μ₀ vs H₁: μ ≠ μ₀</text>
+
+    <!-- Axes -->
+    <line x1="20" y1="120" x2="600" y2="120" stroke="#333" stroke-width="1.5"/>
+
+    <!-- Normal curve -->
+    <path d="M 30,118 Q 80,115 130,108 Q 180,95 220,70 Q 250,42 280,25 Q 300,18 310,16 Q 320,18 340,25 Q 370,42 400,70 Q 440,95 480,108 Q 530,115 580,118" fill="none" stroke="#4A90D9" stroke-width="2.5"/>
+
+    <!-- Acceptance region fill -->
+    <path d="M 130,108 Q 180,95 220,70 Q 250,42 280,25 Q 300,18 310,16 Q 320,18 340,25 Q 370,42 400,70 Q 440,95 480,108 L 480,120 L 130,120 Z" fill="#4A90D9" fill-opacity="0.1" stroke="none"/>
+
+    <!-- Left rejection region -->
+    <path d="M 30,118 Q 80,115 130,108 L 130,120 L 30,120 Z" fill="#e74c3c" fill-opacity="0.35" stroke="none"/>
+    <path d="M 30,118 Q 80,115 130,108" fill="none" stroke="#e74c3c" stroke-width="2"/>
+
+    <!-- Right rejection region -->
+    <path d="M 480,108 Q 530,115 580,118 L 580,120 L 480,120 Z" fill="#e74c3c" fill-opacity="0.35" stroke="none"/>
+    <path d="M 480,108 Q 530,115 580,118" fill="none" stroke="#e74c3c" stroke-width="2"/>
+
+    <!-- Critical value lines -->
+    <line x1="130" y1="30" x2="130" y2="120" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <line x1="480" y1="30" x2="480" y2="120" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <text x="130" y="138" text-anchor="middle" font-size="11" fill="#e74c3c" font-weight="bold">-z_{α/2}</text>
+    <text x="480" y="138" text-anchor="middle" font-size="11" fill="#e74c3c" font-weight="bold">+z_{α/2}</text>
+
+    <!-- Center label -->
+    <text x="310" y="138" text-anchor="middle" font-size="11" fill="#4A90D9" font-weight="bold">μ₀</text>
+
+    <!-- Region labels -->
+    <text x="80" y="100" text-anchor="middle" font-size="11" fill="#e74c3c" font-weight="bold">拒绝 H₀</text>
+    <text x="80" y="113" text-anchor="middle" font-size="10" fill="#e74c3c">α/2</text>
+    <text x="540" y="100" text-anchor="middle" font-size="11" fill="#e74c3c" font-weight="bold">拒绝 H₀</text>
+    <text x="540" y="113" text-anchor="middle" font-size="10" fill="#e74c3c">α/2</text>
+    <text x="310" y="80" text-anchor="middle" font-size="12" fill="#4A90D9" font-weight="bold">接受域 (1-α)</text>
+  </g>
+
+  <!-- Bottom panel: p-value illustration -->
+  <g transform="translate(40, 260)">
+    <text x="310" y="0" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">p 值的含义：观测到当前或更极端结果的概率</text>
+
+    <!-- Axes -->
+    <line x1="20" y1="120" x2="600" y2="120" stroke="#333" stroke-width="1.5"/>
+
+    <!-- Normal curve -->
+    <path d="M 30,118 Q 80,115 130,108 Q 180,95 220,70 Q 250,42 280,25 Q 300,18 310,16 Q 320,18 340,25 Q 370,42 400,70 Q 440,95 480,108 Q 530,115 580,118" fill="none" stroke="#4A90D9" stroke-width="2.5"/>
+
+    <!-- Observed test statistic -->
+    <line x1="430" y1="30" x2="430" y2="120" stroke="#e67e22" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="430" y="138" text-anchor="middle" font-size="11" fill="#e67e22" font-weight="bold">z_obs (观测值)</text>
+
+    <!-- p-value area (right tail) -->
+    <path d="M 430,75 Q 440,95 480,108 Q 530,115 580,118 L 580,120 L 430,120 Z" fill="#e67e22" fill-opacity="0.4" stroke="none"/>
+    <path d="M 430,75 Q 440,95 480,108 Q 530,115 580,118" fill="none" stroke="#e67e22" stroke-width="2"/>
+
+    <text x="510" y="95" text-anchor="middle" font-size="13" fill="#e67e22" font-weight="bold">p 值</text>
+
+    <!-- Annotation -->
+    <rect x="40" y="50" width="230" height="60" rx="8" fill="#fff3e0" stroke="#e67e22" stroke-width="1.5"/>
+    <text x="155" y="70" text-anchor="middle" font-size="12" fill="#2c3e50" font-weight="bold">判断规则：</text>
+    <text x="155" y="88" text-anchor="middle" font-size="11" fill="#27ae60">p &lt; α → 拒绝 H₀ ✅</text>
+    <text x="155" y="104" text-anchor="middle" font-size="11" fill="#e74c3c">p ≥ α → 不拒绝 H₀ ❌</text>
+  </g>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="418" width="640" height="35" rx="8" fill="#f0f4ff" stroke="#4A90D9" stroke-width="1"/>
+  <text x="350" y="440" text-anchor="middle" font-size="13" fill="#2c3e50">⚖️ 现实类比：假设检验就像法庭——H₀="被告无罪"，只有证据足够强(p值很小)才能判有罪(拒绝H₀)。</text>
+</svg>

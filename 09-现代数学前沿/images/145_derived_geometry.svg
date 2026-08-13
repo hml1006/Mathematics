@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Arial, sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">导出代数几何：从经典到导出</text>
+  
+  <!-- 左侧：经典概形 -->
+  <g transform="translate(200, 250)">
+    <text x="0" y="-120" font-size="18" font-weight="bold" text-anchor="middle" fill="#e74c3c">经典概形</text>
+    
+    <!-- 单层结构 -->
+    <rect x="-80" y="-60" width="160" height="120" rx="10" fill="#e74c3c" fill-opacity="0.15" stroke="#e74c3c" stroke-width="2"/>
+    <text x="0" y="-30" font-size="14" text-anchor="middle" fill="#c0392b" font-weight="bold">π₀</text>
+    <text x="0" y="-10" font-size="12" text-anchor="middle" fill="#c0392b">交换环层</text>
+    <text x="0" y="10" font-size="12" text-anchor="middle" fill="#c0392b">O_X</text>
+    
+    <text x="0" y="80" font-size="12" text-anchor="middle" fill="#7f8c8d">只有一层信息</text>
+  </g>
+  
+  <!-- 中间箭头 -->
+  <g transform="translate(400, 250)">
+    <path d="M -50 0 L 50 0" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowGreen)"/>
+    <text x="0" y="-20" font-size="14" text-anchor="middle" fill="#27ae60" font-weight="bold">导出化</text>
+    <text x="0" y="20" font-size="12" text-anchor="middle" fill="#27ae60">引入高阶同调</text>
+  </g>
+  
+  <!-- 右侧：导出概形 -->
+  <g transform="translate(600, 250)">
+    <text x="0" y="-120" font-size="18" font-weight="bold" text-anchor="middle" fill="#3498db">导出概形</text>
+    
+    <!-- 多层结构 -->
+    <rect x="-80" y="-80" width="160" height="40" rx="5" fill="#3498db" fill-opacity="0.3" stroke="#3498db" stroke-width="2"/>
+    <text x="0" y="-55" font-size="13" text-anchor="middle" fill="#2980b9" font-weight="bold">π₂</text>
+    
+    <rect x="-80" y="-35" width="160" height="40" rx="5" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2"/>
+    <text x="0" y="-10" font-size="13" text-anchor="middle" fill="#2980b9" font-weight="bold">π₁</text>
+    
+    <rect x="-80" y="10" width="160" height="40" rx="5" fill="#3498db" fill-opacity="0.15" stroke="#3498db" stroke-width="2"/>
+    <text x="0" y="35" font-size="13" text-anchor="middle" fill="#2980b9" font-weight="bold">π₀</text>
+    
+    <text x="0" y="80" font-size="12" text-anchor="middle" fill="#7f8c8d">多层同调信息</text>
+  </g>
+  
+  <!-- 底部：核心工具 -->
+  <g transform="translate(400, 450)">
+    <rect x="-350" y="-40" width="700" height="100" rx="10" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+    
+    <text x="0" y="-15" font-size="16" font-weight="bold" text-anchor="middle" fill="#856404">导出代数几何的核心工具</text>
+    
+    <text x="-250" y="10" font-size="13" text-anchor="middle" fill="#856404">• E_∞-环</text>
+    <text x="-100" y="10" font-size="13" text-anchor="middle" fill="#856404">• 链复形</text>
+    <text x="50" y="10" font-size="13" text-anchor="middle" fill="#856404">• 导出交点</text>
+    <text x="200" y="10" font-size="13" text-anchor="middle" fill="#856404">• Cotangent复形</text>
+    
+    <text x="0" y="35" font-size="13" text-anchor="middle" fill="#856404">编码高阶形变与障碍信息</text>
+  </g>
+  
+  <!-- 顶部：应用场景 -->
+  <g transform="translate(400, 100)">
+    <rect x="-300" y="-25" width="600" height="50" rx="8" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+    <text x="0" y="0" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">应用领域</text>
+    <text x="0" y="20" font-size="12" text-anchor="middle" fill="#34495e">导出模空间 • 导出形变理论 • 导出交点理论</text>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+</svg>

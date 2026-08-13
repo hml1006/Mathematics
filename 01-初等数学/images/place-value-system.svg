@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      .block-1000 { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .block-100 { fill: #f39c12; stroke: #d68910; stroke-width: 2; }
+      .block-10 { fill: #3498db; stroke: #2874a6; stroke-width: 2; }
+      .block-1 { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; }
+      .label { font-family: 'Arial', sans-serif; font-size: 18px; fill: #2c3e50; font-weight: bold; }
+      .value { font-family: 'Arial', sans-serif; font-size: 24px; fill: #e74c3c; font-weight: bold; }
+      .title { font-family: 'Arial', sans-serif; font-size: 28px; fill: #2c3e50; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="35" text-anchor="middle" class="title">位值系统：3,702 的积木表示</text>
+  
+  <!-- 千位：3个大立方体 -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="80" height="80" class="block-1000"/>
+    <text x="40" y="50" text-anchor="middle" class="label" fill="white">1000</text>
+    
+    <rect x="90" y="0" width="80" height="80" class="block-1000"/>
+    <text x="130" y="50" text-anchor="middle" class="label" fill="white">1000</text>
+    
+    <rect x="180" y="0" width="80" height="80" class="block-1000"/>
+    <text x="220" y="50" text-anchor="middle" class="label" fill="white">1000</text>
+    
+    <text x="130" y="120" text-anchor="middle" class="value">3 × 1000 = 3000</text>
+  </g>
+  
+  <!-- 百位：7个中等方块 -->
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="50" height="50" class="block-100"/>
+    <rect x="55" y="0" width="50" height="50" class="block-100"/>
+    <rect x="110" y="0" width="50" height="50" class="block-100"/>
+    <rect x="165" y="0" width="50" height="50" class="block-100"/>
+    <rect x="220" y="0" width="50" height="50" class="block-100"/>
+    <rect x="275" y="0" width="50" height="50" class="block-100"/>
+    <rect x="330" y="0" width="50" height="50" class="block-100"/>
+    
+    <text x="190" y="85" text-anchor="middle" class="value" fill="#f39c12">7 × 100 = 700</text>
+  </g>
+  
+  <!-- 十位：0个小长条 -->
+  <g transform="translate(80, 270)">
+    <text x="190" y="35" text-anchor="middle" class="value" fill="#3498db">0 × 10 = 0</text>
+    <text x="190" y="65" text-anchor="middle" class="label" fill="#7f8c8d">（没有十位积木）</text>
+  </g>
+  
+  <!-- 个位：2个小方块 -->
+  <g transform="translate(80, 330)">
+    <rect x="160" y="0" width="30" height="30" class="block-1"/>
+    <rect x="195" y="0" width="30" height="30" class="block-1"/>
+    
+    <text x="190" y="65" text-anchor="middle" class="value" fill="#2ecc71">2 × 1 = 2</text>
+  </g>
+  
+  <!-- 右侧总结 -->
+  <g transform="translate(550, 100)">
+    <rect x="0" y="0" width="220" height="200" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="10"/>
+    <text x="110" y="35" text-anchor="middle" class="title" font-size="22">总计</text>
+    
+    <text x="20" y="75" class="label" fill="#e74c3c">千位：3000</text>
+    <text x="20" y="110" class="label" fill="#f39c12">百位： 700</text>
+    <text x="20" y="145" class="label" fill="#3498db">十位：   0</text>
+    <text x="20" y="180" class="label" fill="#2ecc71">个位：   2</text>
+    
+    <line x1="20" y1="195" x2="200" y2="195" stroke="#2c3e50" stroke-width="2"/>
+    <text x="110" y="230" text-anchor="middle" class="value" font-size="32">3702</text>
+  </g>
+</svg>

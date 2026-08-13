@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="600" height="450" fill="#fdfdfd"/>
+  
+  <!-- 标题 -->
+  <text x="300" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    环与域的层次结构
+  </text>
+  
+  <!-- 最外层：环 -->
+  <ellipse cx="300" cy="240" rx="250" ry="180" fill="#ffe6e6" stroke="#e74c3c" stroke-width="3" opacity="0.3"/>
+  <text x="300" y="400" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#c0392b">环 Ring</text>
+  <text x="300" y="420" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#7f8c8d">(加法群 + 乘法半群 + 分配律)</text>
+  
+  <!-- 交换环 -->
+  <ellipse cx="300" cy="220" rx="200" ry="140" fill="#fff4e6" stroke="#f39c12" stroke-width="2.5" opacity="0.4"/>
+  <text x="300" y="345" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d68910">交换环</text>
+  <text x="300" y="362" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">(乘法交换)</text>
+  
+  <!-- 含幺环 -->
+  <ellipse cx="300" cy="200" rx="160" ry="110" fill="#e8f8f5" stroke="#1abc9c" stroke-width="2.5" opacity="0.5"/>
+  <text x="300" y="298" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#148f77">含幺环</text>
+  <text x="300" y="315" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">(有乘法单位元1)</text>
+  
+  <!-- 整环 -->
+  <ellipse cx="300" cy="180" rx="120" ry="80" fill="#ebf5fb" stroke="#3498db" stroke-width="2.5" opacity="0.6"/>
+  <text x="300" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2874a6">整环</text>
+  <text x="300" y="267" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">(无零因子)</text>
+  
+  <!-- 域 -->
+  <ellipse cx="300" cy="150" rx="80" ry="50" fill="#eafaf1" stroke="#27ae60" stroke-width="3" opacity="0.8"/>
+  <text x="300" y="155" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e8449">域 Field</text>
+  <text x="300" y="175" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">(非零元有乘法逆)</text>
+  
+  <!-- 例子标注 -->
+  <text x="80" y="100" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">例：M₂(ℝ)</text>
+  <text x="80" y="115" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">(2×2矩阵环)</text>
+  
+  <text x="480" y="100" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">例：ℤ[x]</text>
+  <text x="480" y="115" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">(多项式环)</text>
+  
+  <text x="80" y="200" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">例：ℤ</text>
+  <text x="80" y="215" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">(整数环)</text>
+  
+  <text x="480" y="200" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">例：ℤ</text>
+  <text x="480" y="215" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">(整环但非域)</text>
+  
+  <text x="300" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#27ae60">例：ℚ, ℝ, ℂ, ℤₚ</text>
+  
+  <!-- 现实类比说明 -->
+  <rect x="50" y="430" width="500" height="15" rx="3" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="300" y="442" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#856404">
+    类比：环是"只有加法和乘法的算术系统"，域是"可以做四则运算的完整数系"
+  </text>
+</svg>

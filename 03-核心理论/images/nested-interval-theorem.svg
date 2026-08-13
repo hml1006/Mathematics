@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      .interval { fill-opacity: 0.3; stroke-width: 2; }
+      .interval-1 { fill: #e74c3c; stroke: #c0392b; }
+      .interval-2 { fill: #f39c12; stroke: #d68910; }
+      .interval-3 { fill: #3498db; stroke: #2874a6; }
+      .interval-4 { fill: #2ecc71; stroke: #27ae60; }
+      .interval-5 { fill: #9b59b6; stroke: #8e44ad; }
+      .point { fill: #2c3e50; stroke: #2c3e50; stroke-width: 2; }
+      .label { font-family: 'Arial', sans-serif; font-size: 16px; fill: #2c3e50; font-weight: bold; }
+      .title { font-family: 'Arial', sans-serif; font-size: 24px; fill: #2c3e50; font-weight: bold; }
+      .formula { font-family: 'Arial', sans-serif; font-size: 18px; fill: #e74c3c; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" class="title">区间套定理：嵌套闭区间收敛于唯一点</text>
+  
+  <!-- 数轴 -->
+  <line x1="50" y1="200" x2="750" y2="200" stroke="#2c3e50" stroke-width="2"/>
+  <polygon points="750,200 740,195 740,205" fill="#2c3e50"/>
+  
+  <!-- 区间 1: [0, 10] -->
+  <rect x="100" y="80" width="600" height="40" class="interval interval-1"/>
+  <text x="100" y="70" class="label">a₁=0</text>
+  <text x="680" y="70" class="label">b₁=10</text>
+  <circle cx="100" cy="200" r="5" class="point"/>
+  <circle cx="700" cy="200" r="5" class="point"/>
+  
+  <!-- 区间 2: [2, 8] -->
+  <rect x="220" y="130" width="360" height="30" class="interval interval-2"/>
+  <text x="220" y="120" class="label">a₂=2</text>
+  <text x="560" y="120" class="label">b₂=8</text>
+  <circle cx="220" cy="200" r="5" class="point"/>
+  <circle cx="580" cy="200" r="5" class="point"/>
+  
+  <!-- 区间 3: [3, 6] -->
+  <rect x="280" y="170" width="180" height="20" class="interval interval-3"/>
+  <text x="280" y="160" class="label">a₃=3</text>
+  <text x="440" y="160" class="label">b₃=6</text>
+  <circle cx="280" cy="200" r="5" class="point"/>
+  <circle cx="460" cy="200" r="5" class="point"/>
+  
+  <!-- 区间 4: [4, 5] -->
+  <rect x="340" y="195" width="60" height="10" class="interval interval-4"/>
+  <text x="340" y="220" class="label">a₄=4</text>
+  <text x="390" y="220" class="label">b₄=5</text>
+  <circle cx="340" cy="200" r="4" class="point"/>
+  <circle cx="400" cy="200" r="4" class="point"/>
+  
+  <!-- 区间 5: [4.5, 4.7] -->
+  <rect x="370" y="198" width="12" height="4" class="interval interval-5"/>
+  <circle cx="370" cy="200" r="3" class="point"/>
+  <circle cx="382" cy="200" r="3" class="point"/>
+  
+  <!-- 极限点 -->
+  <circle cx="376" cy="200" r="8" fill="#e74c3c" stroke="#c0392b" stroke-width="3"/>
+  <text x="376" y="250" text-anchor="middle" class="formula" font-size="20">ξ = 4.6</text>
+  <text x="376" y="275" text-anchor="middle" class="label">极限点</text>
+  
+  <!-- 右侧说明 -->
+  <g transform="translate(550, 280)">
+    <rect x="0" y="0" width="220" height="100" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="10"/>
+    <text x="110" y="25" text-anchor="middle" class="label" font-size="16">区间套定理</text>
+    <text x="20" y="50" class="label" font-size="14">• 区间逐层嵌套</text>
+    <text x="20" y="70" class="label" font-size="14">• 长度趋于 0</text>
+    <text x="20" y="90" class="label" font-size="14">• 收敛于唯一点</text>
+  </g>
+  
+  <!-- 底部类比 -->
+  <g transform="translate(100, 330)">
+    <rect x="0" y="0" width="600" height="50" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="10"/>
+    <text x="300" y="20" text-anchor="middle" class="label" font-size="14">现实类比：像用放大镜找宝藏——每次缩小范围，</text>
+    <text x="300" y="40" text-anchor="middle" class="label" font-size="14">最终精确定位到唯一的目标点</text>
+  </g>
+</svg>

@@ -147,6 +147,10 @@ $$
 
 其中 $R_{12} = R \otimes \operatorname{id}_V$，$R_{23} = \operatorname{id}_V \otimes R$，$R_{13} = (\tau \otimes \operatorname{id})(\operatorname{id}_V \otimes R)$。
 
+![Yang-Baxter 方程：三根辫线从左到右经历 R₁₂R₁₃R₂₃ 与 R₂₃R₁₃R₁₂ 两种交错顺序，结果等价——正如三条丝线无论先编哪两根，最终辫形相同](images/lv73-yang-baxter.svg)
+
+> **直观理解（现实类比）**：Yang-Baxter 方程就像"三条丝线编辫子"的恒等式。假设你有三根丝线，每次只能交换相邻两根。方程说：先交换第1-2根、再第1-3根、再第2-3根，与先交换第2-3根、再第1-3根、再第1-2根，最终得到的辫子完全一样。这个"辫子不变性"是量子群的核心——它保证了量子力学中多粒子散射的一致性，也正是因为有了它，我们才能用量子群构造纽结不变量。
+
 ### 2.9 辫子张量范畴
 
 **定义 2.12**（辫子张量范畴）**辫子张量范畴** $(\mathcal{C}, \otimes, \mathbf{1}, \alpha, \lambda, \rho, c)$ 是一个张量范畴，配备 **辫子同构** $c_{X,Y}: X \otimes Y \to Y \otimes X$，满足六边形公理（即对任意 $X, Y, Z \in \mathcal{C}$，以下图表交换）：

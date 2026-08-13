@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="barrierGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    WKB 近似与量子隧穿：波函数穿越经典禁区
+  </text>
+  
+  <!-- Potential barrier and wave function -->
+  <g transform="translate(50, 60)">
+    <!-- Axes -->
+    <line x1="0" y1="300" x2="700" y2="300" stroke="#95a5a6" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="300" stroke="#95a5a6" stroke-width="1"/>
+    <text x="710" y="305" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">x</text>
+    <text x="-15" y="-5" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">ψ(x)</text>
+    
+    <!-- Potential barrier -->
+    <rect x="250" y="50" width="200" height="250" fill="url(#barrierGrad)" opacity="0.3"/>
+    <path d="M 250,50 L 450,50" stroke="#2c3e50" stroke-width="2.5"/>
+    <text x="350" y="40" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2c3e50" font-weight="bold">势垒 V(x) > E</text>
+    <text x="350" y="180" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#fff" opacity="0.8">经典禁区</text>
+    <text x="350" y="195" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#fff" opacity="0.7">Q(x) &lt; 0</text>
+    
+    <!-- Region labels -->
+    <text x="125" y="320" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#27ae60">经典许可区 (I)</text>
+    <text x="350" y="320" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#e74c3c">禁区 (II)</text>
+    <text x="575" y="320" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#27ae60">经典许可区 (III)</text>
+    
+    <!-- Energy level -->
+    <line x1="0" y1="150" x2="700" y2="150" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="690" y="145" font-family="Arial, sans-serif" font-size="11" fill="#f39c12">E (粒子能量)</text>
+    
+    <!-- Wave function: oscillating in region I -->
+    <path d="M 10,200 Q 20,170 30,150 Q 40,130 50,150 Q 60,170 70,200 Q 80,230 90,250 Q 100,270 110,250 Q 120,230 130,200 Q 140,170 150,150 Q 160,130 170,150 Q 180,170 190,200 Q 200,230 210,250 Q 220,270 230,250 Q 240,230 250,200" 
+          stroke="#3498db" stroke-width="2" fill="none"/>
+    
+    <!-- Wave function: exponential decay in barrier -->
+    <path d="M 250,200 Q 270,210 290,220 Q 310,230 330,237 Q 350,242 370,246 Q 390,249 410,251 Q 430,252 450,253" 
+          stroke="#e74c3c" stroke-width="2" fill="none"/>
+    
+    <!-- Wave function: smaller oscillation in region III (tunneled!) -->
+    <path d="M 450,253 Q 460,245 470,240 Q 480,235 490,240 Q 500,245 510,253 Q 520,260 530,265 Q 540,270 550,265 Q 560,260 570,253 Q 580,247 590,243 Q 600,240 610,243 Q 620,247 630,253 Q 640,258 650,262 Q 660,265 670,262 Q 680,258 690,253" 
+          stroke="#27ae60" stroke-width="2" fill="none"/>
+    
+    <!-- Annotations -->
+    <text x="125" y="130" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3498db">入射波 + 反射波</text>
+    <text x="350" y="270" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#e74c3c">指数衰减 ~ e^(-∫√|Q|/ε dx)</text>
+    <text x="575" y="230" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#27ae60">透射波（隧穿!）</text>
+    
+    <!-- Turning points -->
+    <circle cx="250" cy="150" r="5" fill="#f39c12"/>
+    <text x="250" y="140" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f39c12">x₁</text>
+    
+    <circle cx="450" cy="150" r="5" fill="#f39c12"/>
+    <text x="450" y="140" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f39c12">x₂</text>
+  </g>
+  
+  <!-- WKB formulas -->
+  <g transform="translate(50, 400)">
+    <rect x="0" y="0" width="700" height="80" fill="#ecf0f1" rx="8" stroke="#9b59b6" stroke-width="1.5"/>
+    
+    <text x="350" y="22" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2c3e50" font-weight="bold">WKB 近似解</text>
+    
+    <text x="30" y="45" font-family="Arial, sans-serif" font-size="11" fill="#3498db">许可区 (Q>0)：y ~ Q⁻¹ᐟ⁴ exp(±(i/ε)∫√Q dx) — 振荡</text>
+    <text x="30" y="65" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">禁  区 (Q&lt;0)：y ~ |Q|⁻¹ᐟ⁴ exp(±(1/ε)∫√|Q| dx) — 指数衰减/增长</text>
+    
+    <text x="500" y="45" font-family="Arial, sans-serif" font-size="11" fill="#9b59b6">隧穿概率 ~ e^(-2∫ₓ₁ˣ² √|Q|/ε dx)</text>
+    <text x="500" y="65" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">应用：α衰变、扫描隧道显微镜、半导体隧道二极管</text>
+  </g>
+</svg>

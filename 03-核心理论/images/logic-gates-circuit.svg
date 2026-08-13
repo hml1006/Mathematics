@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="360pt" viewBox="0 0 504 360">
+ <defs>
+  <style type="text/css">
+   text { font-family: 'Noto Sans CJK SC', 'SimHei', sans-serif; }
+  </style>
+ </defs>
+ <rect width="504" height="360" fill="#ffffff"/>
+
+ <!-- Title -->
+ <text x="252" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333333">逻辑门电路：联结词的物理实现</text>
+ <text x="252" y="48" text-anchor="middle" font-size="11" fill="#666666">逻辑运算 ⟺ 电路开关组合</text>
+
+ <!-- NOT Gate -->
+ <g transform="translate(80, 80)">
+  <text x="0" y="0" text-anchor="middle" font-size="12" font-weight="bold" fill="#4c72b0">非门 (NOT)</text>
+  <text x="0" y="14" text-anchor="middle" font-size="10" fill="#666666">¬p</text>
+
+  <!-- Input line -->
+  <line x1="-30" y1="40" x2="-10" y2="40" stroke="#333333" stroke-width="2"/>
+  <text x="-35" y="44" text-anchor="end" font-size="11" fill="#333333">p</text>
+
+  <!-- Triangle -->
+  <polygon points="-10,30 -10,50 10,40" fill="#4c72b0" stroke="#333333" stroke-width="1.5"/>
+
+  <!-- Bubble -->
+  <circle cx="15" cy="40" r="5" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+
+  <!-- Output line -->
+  <line x1="20" y1="40" x2="40" y2="40" stroke="#333333" stroke-width="2"/>
+  <text x="45" y="44" font-size="11" fill="#333333">¬p</text>
+ </g>
+
+ <!-- AND Gate -->
+ <g transform="translate(252, 80)">
+  <text x="0" y="0" text-anchor="middle" font-size="12" font-weight="bold" fill="#ed7d31">与门 (AND)</text>
+  <text x="0" y="14" text-anchor="middle" font-size="10" fill="#666666">p ∧ q</text>
+
+  <!-- Input lines -->
+  <line x1="-30" y1="35" x2="-10" y2="35" stroke="#333333" stroke-width="2"/>
+  <text x="-35" y="39" text-anchor="end" font-size="11" fill="#333333">p</text>
+  <line x1="-30" y1="45" x2="-10" y2="45" stroke="#333333" stroke-width="2"/>
+  <text x="-35" y="49" text-anchor="end" font-size="11" fill="#333333">q</text>
+
+  <!-- D-shape -->
+  <path d="M -10,30 L -10,50 Q 5,50 10,40 Q 5,30 -10,30 Z" fill="#ed7d31" stroke="#333333" stroke-width="1.5"/>
+
+  <!-- Output line -->
+  <line x1="10" y1="40" x2="40" y2="40" stroke="#333333" stroke-width="2"/>
+  <text x="45" y="44" font-size="11" fill="#333333">p∧q</text>
+ </g>
+
+ <!-- OR Gate -->
+ <g transform="translate(424, 80)">
+  <text x="0" y="0" text-anchor="middle" font-size="12" font-weight="bold" fill="#70ad47">或门 (OR)</text>
+  <text x="0" y="14" text-anchor="middle" font-size="10" fill="#666666">p ∨ q</text>
+
+  <!-- Input lines -->
+  <line x1="-30" y1="35" x2="-10" y2="35" stroke="#333333" stroke-width="2"/>
+  <text x="-35" y="39" text-anchor="end" font-size="11" fill="#333333">p</text>
+  <line x1="-30" y1="45" x2="-10" y2="45" stroke="#333333" stroke-width="2"/>
+  <text x="-35" y="49" text-anchor="end" font-size="11" fill="#333333">q</text>
+
+  <!-- Curved shape -->
+  <path d="M -10,30 Q -5,40 -10,50 Q 5,50 10,40 Q 5,30 -10,30 Z" fill="#70ad47" stroke="#333333" stroke-width="1.5"/>
+
+  <!-- Output line -->
+  <line x1="10" y1="40" x2="40" y2="40" stroke="#333333" stroke-width="2"/>
+  <text x="45" y="44" font-size="11" fill="#333333">p∨q</text>
+ </g>
+
+ <!-- Truth Table -->
+ <text x="252" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">真值表示例</text>
+
+ <g transform="translate(100, 180)">
+  <!-- Table grid -->
+  <rect x="0" y="0" width="300" height="140" fill="none" stroke="#333333" stroke-width="1.5"/>
+
+  <!-- Header row -->
+  <rect x="0" y="0" width="300" height="28" fill="#4c72b0"/>
+  <text x="37.5" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">p</text>
+  <text x="112.5" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">q</text>
+  <text x="187.5" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">p∧q</text>
+  <text x="262.5" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">p∨q</text>
+
+  <!-- Dividers -->
+  <line x1="75" y1="0" x2="75" y2="140" stroke="#333333" stroke-width="1"/>
+  <line x1="150" y1="0" x2="150" y2="140" stroke="#333333" stroke-width="1"/>
+  <line x1="225" y1="0" x2="225" y2="140" stroke="#333333" stroke-width="1"/>
+  <line x1="0" y1="28" x2="300" y2="28" stroke="#333333" stroke-width="1"/>
+  <line x1="0" y1="56" x2="300" y2="56" stroke="#cccccc" stroke-width="0.5"/>
+  <line x1="0" y1="84" x2="300" y2="84" stroke="#cccccc" stroke-width="0.5"/>
+  <line x1="0" y1="112" x2="300" y2="112" stroke="#cccccc" stroke-width="0.5"/>
+
+  <!-- Row 1: T T T T -->
+  <text x="37.5" y="46" text-anchor="middle" font-size="11" fill="#333333">T</text>
+  <text x="112.5" y="46" text-anchor="middle" font-size="11" fill="#333333">T</text>
+  <text x="187.5" y="46" text-anchor="middle" font-size="11" fill="#70ad47">T</text>
+  <text x="262.5" y="46" text-anchor="middle" font-size="11" fill="#70ad47">T</text>
+
+  <!-- Row 2: T F F T -->
+  <text x="37.5" y="74" text-anchor="middle" font-size="11" fill="#333333">T</text>
+  <text x="112.5" y="74" text-anchor="middle" font-size="11" fill="#333333">F</text>
+  <text x="187.5" y="74" text-anchor="middle" font-size="11" fill="#cc6666">F</text>
+  <text x="262.5" y="74" text-anchor="middle" font-size="11" fill="#70ad47">T</text>
+
+  <!-- Row 3: F T F T -->
+  <text x="37.5" y="102" text-anchor="middle" font-size="11" fill="#333333">F</text>
+  <text x="112.5" y="102" text-anchor="middle" font-size="11" fill="#333333">T</text>
+  <text x="187.5" y="102" text-anchor="middle" font-size="11" fill="#cc6666">F</text>
+  <text x="262.5" y="102" text-anchor="middle" font-size="11" fill="#70ad47">T</text>
+
+  <!-- Row 4: F F F F -->
+  <text x="37.5" y="130" text-anchor="middle" font-size="11" fill="#333333">F</text>
+  <text x="112.5" y="130" text-anchor="middle" font-size="11" fill="#333333">F</text>
+  <text x="187.5" y="130" text-anchor="middle" font-size="11" fill="#cc6666">F</text>
+  <text x="262.5" y="130" text-anchor="middle" font-size="11" fill="#cc6666">F</text>
+ </g>
+
+ <!-- Real-world analogy -->
+ <text x="50" y="345" font-size="10" fill="#666666">现实类比：AND 门像串联电路（两个开关都闭合才通电），OR 门像并联电路（任一开关闭合即通电）</text>
+</svg>

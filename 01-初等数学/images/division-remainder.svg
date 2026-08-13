@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .candy { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .bag { fill: #f39c12; stroke: #d68910; stroke-width: 2; }
+      .label { font-family: 'Arial', sans-serif; font-size: 20px; fill: #2c3e50; font-weight: bold; }
+      .title { font-family: 'Arial', sans-serif; font-size: 28px; fill: #2c3e50; font-weight: bold; }
+      .formula { font-family: 'Arial', sans-serif; font-size: 24px; fill: #e74c3c; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="35" text-anchor="middle" class="title">带余除法：17 ÷ 5 = 3 余 2</text>
+  
+  <!-- 场景描述 -->
+  <text x="400" y="70" text-anchor="middle" class="label" font-size="18">把 17 颗糖果平均分给 5 个小朋友</text>
+  
+  <!-- 17颗糖果 -->
+  <g transform="translate(50, 100)">
+    <text x="100" y="0" text-anchor="middle" class="label">17 颗糖果</text>
+    
+    <!-- 第一排 -->
+    <circle cx="20" cy="30" r="12" class="candy"/>
+    <circle cx="50" cy="30" r="12" class="candy"/>
+    <circle cx="80" cy="30" r="12" class="candy"/>
+    <circle cx="110" cy="30" r="12" class="candy"/>
+    <circle cx="140" cy="30" r="12" class="candy"/>
+    
+    <!-- 第二排 -->
+    <circle cx="20" cy="60" r="12" class="candy"/>
+    <circle cx="50" cy="60" r="12" class="candy"/>
+    <circle cx="80" cy="60" r="12" class="candy"/>
+    <circle cx="110" cy="60" r="12" class="candy"/>
+    <circle cx="140" cy="60" r="12" class="candy"/>
+    
+    <!-- 第三排 -->
+    <circle cx="20" cy="90" r="12" class="candy"/>
+    <circle cx="50" cy="90" r="12" class="candy"/>
+    <circle cx="80" cy="90" r="12" class="candy"/>
+    <circle cx="110" cy="90" r="12" class="candy"/>
+    <circle cx="140" cy="90" r="12" class="candy"/>
+    
+    <!-- 第四排（余数） -->
+    <circle cx="20" cy="120" r="12" class="candy"/>
+    <circle cx="50" cy="120" r="12" class="candy"/>
+    <text x="80" y="125" class="label" fill="#7f8c8d">剩余 2 颗</text>
+  </g>
+  
+  <!-- 分配过程 -->
+  <g transform="translate(300, 100)">
+    <text x="150" y="0" text-anchor="middle" class="label">分配过程</text>
+    
+    <!-- 小朋友1 -->
+    <rect x="0" y="30" width="60" height="60" class="bag" rx="5"/>
+    <text x="30" y="55" text-anchor="middle" class="label" fill="white" font-size="16">小明</text>
+    <text x="30" y="75" text-anchor="middle" class="label" fill="white" font-size="14">3颗</text>
+    
+    <!-- 小朋友2 -->
+    <rect x="70" y="30" width="60" height="60" class="bag" rx="5"/>
+    <text x="100" y="55" text-anchor="middle" class="label" fill="white" font-size="16">小红</text>
+    <text x="100" y="75" text-anchor="middle" class="label" fill="white" font-size="14">3颗</text>
+    
+    <!-- 小朋友3 -->
+    <rect x="140" y="30" width="60" height="60" class="bag" rx="5"/>
+    <text x="170" y="55" text-anchor="middle" class="label" fill="white" font-size="16">小刚</text>
+    <text x="170" y="75" text-anchor="middle" class="label" fill="white" font-size="14">3颗</text>
+    
+    <!-- 小朋友4 -->
+    <rect x="210" y="30" width="60" height="60" class="bag" rx="5"/>
+    <text x="240" y="55" text-anchor="middle" class="label" fill="white" font-size="16">小丽</text>
+    <text x="240" y="75" text-anchor="middle" class="label" fill="white" font-size="14">3颗</text>
+    
+    <!-- 小朋友5 -->
+    <rect x="280" y="30" width="60" height="60" class="bag" rx="5"/>
+    <text x="310" y="55" text-anchor="middle" class="label" fill="white" font-size="16">小华</text>
+    <text x="310" y="75" text-anchor="middle" class="label" fill="white" font-size="14">3颗</text>
+  </g>
+  
+  <!-- 公式说明 -->
+  <g transform="translate(100, 300)">
+    <rect x="0" y="0" width="600" height="150" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="10"/>
+    
+    <text x="300" y="30" text-anchor="middle" class="formula">17 ÷ 5 = 3 余 2</text>
+    
+    <text x="50" y="70" class="label" font-size="18">被除数：17（总糖果数）</text>
+    <text x="50" y="100" class="label" font-size="18">除数：5（小朋友人数）</text>
+    <text x="50" y="130" class="label" font-size="18">商：3（每人分得 3 颗）</text>
+    
+    <text x="350" y="70" class="label" font-size="18">余数：2（剩余 2 颗）</text>
+    <text x="350" y="100" class="label" font-size="18" fill="#e74c3c">验证：5 × 3 + 2 = 17 ✓</text>
+  </g>
+  
+  <!-- 底部说明 -->
+  <g transform="translate(100, 470)">
+    <rect x="0" y="0" width="600" height="20" fill="#fff3cd" stroke="#ffc107" stroke-width="1" rx="5"/>
+    <text x="300" y="15" text-anchor="middle" class="label" font-size="14">带余除法：a = b × q + r，其中 0 ≤ r &lt; b</text>
+  </g>
+</svg>

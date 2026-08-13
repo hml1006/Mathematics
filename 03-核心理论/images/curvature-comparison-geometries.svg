@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- 标题 -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    曲率对比：三种几何的本质区别
+  </text>
+  
+  <!-- 左侧：欧几里得几何 (K=0) -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="220" height="280" fill="#e8f8f5" stroke="#1abc9c" stroke-width="3" rx="10"/>
+    
+    <text x="110" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#16a085">
+      欧几里得几何
+    </text>
+    <text x="110" y="50" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#16a085">
+      K = 0 (平面)
+    </text>
+    
+    <!-- 平面示意 -->
+    <rect x="30" y="70" width="160" height="100" fill="#d5f4e6" stroke="#27ae60" stroke-width="2"/>
+    
+    <!-- 三角形 -->
+    <polygon points="50,150 110,90 170,150" fill="none" stroke="#2c3e50" stroke-width="2"/>
+    <text x="110" y="130" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#2c3e50">
+      α+β+γ = 180°
+    </text>
+    
+    <!-- 平行线 -->
+    <line x1="40" y1="180" x2="180" y2="180" stroke="#e74c3c" stroke-width="2"/>
+    <line x1="40" y1="195" x2="180" y2="195" stroke="#e74c3c" stroke-width="2"/>
+    <text x="110" y="215" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#e74c3c">
+      恰好一条平行线
+    </text>
+    
+    <!-- 现实类比 -->
+    <text x="110" y="245" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#34495e">
+      现实类比
+    </text>
+    <text x="110" y="265" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      平坦的桌面、纸张
+    </text>
+  </g>
+  
+  <!-- 中间：双曲几何 (K<0) -->
+  <g transform="translate(290, 80)">
+    <rect x="0" y="0" width="220" height="280" fill="#fadbd8" stroke="#e74c3c" stroke-width="3" rx="10"/>
+    
+    <text x="110" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#c0392b">
+      双曲几何
+    </text>
+    <text x="110" y="50" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#c0392b">
+      K &lt; 0 (马鞍面)
+    </text>
+    
+    <!-- 马鞍面示意 -->
+    <path d="M 30,120 Q 110,80 190,120 Q 110,160 30,120" fill="#f5b7b1" stroke="#e74c3c" stroke-width="2"/>
+    <path d="M 30,120 Q 110,160 190,120" fill="none" stroke="#e74c3c" stroke-width="2"/>
+    
+    <!-- 双曲三角形 -->
+    <path d="M 60,140 Q 110,100 160,140 Q 110,130 60,140" fill="none" stroke="#2c3e50" stroke-width="2"/>
+    <text x="110" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#2c3e50">
+      α+β+γ &lt; 180°
+    </text>
+    
+    <!-- 多条平行线 -->
+    <path d="M 40,180 Q 110,170 180,180" fill="none" stroke="#e74c3c" stroke-width="2"/>
+    <path d="M 40,195 Q 110,190 180,195" fill="none" stroke="#e74c3c" stroke-width="2"/>
+    <path d="M 40,210 Q 110,215 180,210" fill="none" stroke="#e74c3c" stroke-width="2"/>
+    <text x="110" y="230" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#e74c3c">
+      至少两条平行线
+    </text>
+    
+    <!-- 现实类比 -->
+    <text x="110" y="255" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#34495e">
+      现实类比
+    </text>
+    <text x="110" y="275" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      马鞍面、珊瑚形状
+    </text>
+  </g>
+  
+  <!-- 右侧：椭圆几何 (K>0) -->
+  <g transform="translate(530, 80)">
+    <rect x="0" y="0" width="220" height="280" fill="#fef5e7" stroke="#f39c12" stroke-width="3" rx="10"/>
+    
+    <text x="110" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e67e22">
+      椭圆几何
+    </text>
+    <text x="110" y="50" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#e67e22">
+      K &gt; 0 (球面)
+    </text>
+    
+    <!-- 球面示意 -->
+    <circle cx="110" cy="120" r="50" fill="#fdebd0" stroke="#f39c12" stroke-width="2"/>
+    <ellipse cx="110" cy="120" rx="50" ry="15" fill="none" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <ellipse cx="110" cy="120" rx="15" ry="50" fill="none" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="3,3"/>
+    
+    <!-- 球面三角形 -->
+    <path d="M 90,100 Q 110,80 130,100 Q 130,130 110,140 Q 90,130 90,100" fill="none" stroke="#2c3e50" stroke-width="2"/>
+    <text x="110" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#2c3e50">
+      α+β+γ &gt; 180°
+    </text>
+    
+    <!-- 无平行线 -->
+    <path d="M 40,180 Q 110,160 180,180" fill="none" stroke="#e74c3c" stroke-width="2"/>
+    <path d="M 40,195 Q 110,175 180,195" fill="none" stroke="#e74c3c" stroke-width="2"/>
+    <circle cx="110" cy="187" r="3" fill="#e74c3c"/>
+    <text x="110" y="215" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#e74c3c">
+      没有平行线(必相交)
+    </text>
+    
+    <!-- 现实类比 -->
+    <text x="110" y="245" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#34495e">
+      现实类比
+    </text>
+    <text x="110" y="265" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      地球表面、西瓜皮
+    </text>
+  </g>
+  
+  <!-- 底部对比表格 -->
+  <g transform="translate(100, 390)">
+    <rect x="0" y="0" width="600" height="180" fill="#f8f9fa" stroke="#95a5a6" stroke-width="2" rx="10"/>
+    
+    <text x="300" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      曲率决定几何本质
+    </text>
+    
+    <!-- 表格 -->
+    <line x1="20" y1="50" x2="580" y2="50" stroke="#95a5a6" stroke-width="1"/>
+    <text x="150" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">性质</text>
+    <text x="300" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#16a085">K=0</text>
+    <text x="420" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#c0392b">K&lt;0</text>
+    <text x="530" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#e67e22">K&gt;0</text>
+    
+    <line x1="20" y1="70" x2="580" y2="70" stroke="#d5d8dc" stroke-width="1"/>
+    <text x="150" y="65" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">三角形内角和</text>
+    <text x="300" y="65" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">= 180°</text>
+    <text x="420" y="65" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">&lt; 180°</text>
+    <text x="530" y="65" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">&gt; 180°</text>
+    
+    <line x1="20" y1="90" x2="580" y2="90" stroke="#d5d8dc" stroke-width="1"/>
+    <text x="150" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">平行线数量</text>
+    <text x="300" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">恰好1条</text>
+    <text x="420" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">≥2条</text>
+    <text x="530" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">0条</text>
+    
+    <line x1="20" y1="110" x2="580" y2="110" stroke="#d5d8dc" stroke-width="1"/>
+    <text x="150" y="105" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">面积公式</text>
+    <text x="300" y="105" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">½ab·sinC</text>
+    <text x="420" y="105" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">R²(π-∑α)</text>
+    <text x="530" y="105" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">R²(∑α-π)</text>
+    
+    <line x1="20" y1="130" x2="580" y2="130" stroke="#d5d8dc" stroke-width="1"/>
+    <text x="150" y="125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">勾股定理</text>
+    <text x="300" y="125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">a²+b²=c²</text>
+    <text x="420" y="125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">coshc=coshacoshb</text>
+    <text x="530" y="125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">cosc=cosacosb</text>
+    
+    <line x1="20" y1="150" x2="580" y2="150" stroke="#d5d8dc" stroke-width="1"/>
+    <text x="150" y="145" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">创立者</text>
+    <text x="300" y="145" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">欧几里得</text>
+    <text x="420" y="145" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">罗巴切夫斯基、鲍耶</text>
+    <text x="530" y="145" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#34495e">黎曼</text>
+    
+    <text x="300" y="170" font-family="Arial, sans-serif" font-size="11" font-style="italic" text-anchor="middle" fill="#7f8c8d">
+      曲率是区分三种几何的根本不变量
+    </text>
+  </g>
+</svg>

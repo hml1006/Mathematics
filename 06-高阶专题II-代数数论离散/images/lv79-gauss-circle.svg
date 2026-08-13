@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 430" width="620" height="430">
+  <!-- Background -->
+  <rect width="620" height="430" fill="#fef9e7" rx="8"/>
+  
+  <!-- Title -->
+  <text x="310" y="30" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#1a1a2e">高斯圆问题：格点计数</text>
+  
+  <!-- Grid and circle -->
+  <g transform="translate(180, 215)">
+    <!-- Grid lines -->
+    <line x1="-140" y1="0" x2="140" y2="0" stroke="#ddd" stroke-width="0.5"/>
+    <line x1="0" y1="-140" x2="0" y2="140" stroke="#ddd" stroke-width="0.5"/>
+    
+    <!-- Grid -->
+    <line x1="-140" y1="-120" x2="140" y2="-120" stroke="#eee" stroke-width="0.3"/>
+    <line x1="-140" y1="-80" x2="140" y2="-80" stroke="#eee" stroke-width="0.3"/>
+    <line x1="-140" y1="-40" x2="140" y2="-40" stroke="#eee" stroke-width="0.3"/>
+    <line x1="-140" y1="40" x2="140" y2="40" stroke="#eee" stroke-width="0.3"/>
+    <line x1="-140" y1="80" x2="140" y2="80" stroke="#eee" stroke-width="0.3"/>
+    <line x1="-140" y1="120" x2="140" y2="120" stroke="#eee" stroke-width="0.3"/>
+    
+    <line x1="-120" y1="-140" x2="-120" y2="140" stroke="#eee" stroke-width="0.3"/>
+    <line x1="-80" y1="-140" x2="-80" y2="140" stroke="#eee" stroke-width="0.3"/>
+    <line x1="-40" y1="-140" x2="-40" y2="140" stroke="#eee" stroke-width="0.3"/>
+    <line x1="40" y1="-140" x2="40" y2="140" stroke="#eee" stroke-width="0.3"/>
+    <line x1="80" y1="-140" x2="80" y2="140" stroke="#eee" stroke-width="0.3"/>
+    <line x1="120" y1="-140" x2="120" y2="140" stroke="#eee" stroke-width="0.3"/>
+    
+    <!-- Circle R=3 (radius = 120 pixels, 40 per unit) -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#c0392b" stroke-width="2"/>
+    
+    <!-- Lattice points inside circle (R=3: x²+y²≤9) -->
+    <!-- Row y=0: x=-3,-2,-1,0,1,2,3 -->
+    <circle cx="-120" cy="0" r="3" fill="#2471a3"/>
+    <circle cx="-80" cy="0" r="3" fill="#2471a3"/>
+    <circle cx="-40" cy="0" r="3" fill="#2471a3"/>
+    <circle cx="0" cy="0" r="3" fill="#2471a3"/>
+    <circle cx="40" cy="0" r="3" fill="#2471a3"/>
+    <circle cx="80" cy="0" r="3" fill="#2471a3"/>
+    <circle cx="120" cy="0" r="3" fill="#2471a3"/>
+    
+    <!-- Row y=±1 -->
+    <circle cx="-80" cy="-40" r="3" fill="#2471a3"/>
+    <circle cx="-40" cy="-40" r="3" fill="#2471a3"/>
+    <circle cx="0" cy="-40" r="3" fill="#2471a3"/>
+    <circle cx="40" cy="-40" r="3" fill="#2471a3"/>
+    <circle cx="80" cy="-40" r="3" fill="#2471a3"/>
+    
+    <circle cx="-80" cy="40" r="3" fill="#2471a3"/>
+    <circle cx="-40" cy="40" r="3" fill="#2471a3"/>
+    <circle cx="0" cy="40" r="3" fill="#2471a3"/>
+    <circle cx="40" cy="40" r="3" fill="#2471a3"/>
+    <circle cx="80" cy="40" r="3" fill="#2471a3"/>
+    
+    <!-- Row y=±2 -->
+    <circle cx="-80" cy="-80" r="3" fill="#2471a3"/>
+    <circle cx="-40" cy="-80" r="3" fill="#2471a3"/>
+    <circle cx="0" cy="-80" r="3" fill="#2471a3"/>
+    <circle cx="40" cy="-80" r="3" fill="#2471a3"/>
+    <circle cx="80" cy="-80" r="3" fill="#2471a3"/>
+    
+    <circle cx="-80" cy="80" r="3" fill="#2471a3"/>
+    <circle cx="-40" cy="80" r="3" fill="#2471a3"/>
+    <circle cx="0" cy="80" r="3" fill="#2471a3"/>
+    <circle cx="40" cy="80" r="3" fill="#2471a3"/>
+    <circle cx="80" cy="80" r="3" fill="#2471a3"/>
+    
+    <!-- Row y=±3 (boundary) -->
+    <circle cx="0" cy="-120" r="3" fill="#c0392b"/>
+    <circle cx="0" cy="120" r="3" fill="#c0392b"/>
+    <circle cx="-120" cy="0" r="3" fill="#c0392b"/>
+    <circle cx="120" cy="0" r="3" fill="#c0392b"/>
+    
+    <!-- Labels -->
+    <text x="5" y="-130" font-family="serif" font-size="10" fill="#c0392b">R=3</text>
+    <text x="145" y="5" font-family="serif" font-size="10" fill="#666">x</text>
+    <text x="5" y="-140" font-family="serif" font-size="10" fill="#666">y</text>
+  </g>
+  
+  <!-- Formula box -->
+  <rect x="380" y="60" width="220" height="100" rx="8" fill="white" stroke="#c0392b" stroke-width="2"/>
+  <text x="490" y="85" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#c0392b">高斯圆问题</text>
+  <text x="490" y="108" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">N(R) = πR² + E(R)</text>
+  <text x="490" y="130" text-anchor="middle" font-family="serif" font-size="11" fill="#555">高斯证明：|E(R)| = O(R)</text>
+  <text x="490" y="148" text-anchor="middle" font-family="serif" font-size="10" fill="#888">最优猜想：E(R) = O(R^{1/2+ε})</text>
+  
+  <!-- Count result -->
+  <rect x="380" y="175" width="220" height="50" rx="8" fill="#d5f5e3" stroke="#1e8449" stroke-width="1.5"/>
+  <text x="490" y="198" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">R=3: N(3) = 29 个点</text>
+  <text x="490" y="215" text-anchor="middle" font-family="serif" font-size="11" fill="#555">π·3² = 28.27, 误差 ≈ 0.73</text>
+  
+  <!-- Minkowski theorem connection -->
+  <rect x="40" y="350" width="540" height="70" rx="8" fill="#f5eef8" stroke="#8e44ad" stroke-width="2"/>
+  <text x="310" y="375" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#8e44ad">Minkowski 凸体定理的应用</text>
+  <text x="310" y="398" text-anchor="middle" font-family="serif" font-size="12" fill="#1a1a2e">对称凸体 K 体积 &gt; 2ⁿ·det(Λ) → K 含非零格点</text>
+  <text x="310" y="415" text-anchor="middle" font-family="serif" font-size="11" fill="#555">应用：Dirichlet 单位定理、类数有限、二次型约化</text>
+</svg>

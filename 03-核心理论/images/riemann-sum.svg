@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .curve { fill: none; stroke: #e74c3c; stroke-width: 3; }
+      .rectangle { fill-opacity: 0.5; stroke-width: 2; }
+      .rect-left { fill: #3498db; stroke: #2874a6; }
+      .rect-right { fill: #f39c12; stroke: #d68910; }
+      .rect-mid { fill: #2ecc71; stroke: #27ae60; }
+      .point { fill: #2c3e50; stroke: #2c3e50; stroke-width: 2; }
+      .label { font-family: 'Arial', sans-serif; font-size: 16px; fill: #2c3e50; font-weight: bold; }
+      .title { font-family: 'Arial', sans-serif; font-size: 24px; fill: #2c3e50; font-weight: bold; }
+      .formula { font-family: 'Arial', sans-serif; font-size: 18px; fill: #e74c3c; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" class="title">黎曼和：用矩形逼近曲线下面积</text>
+  
+  <!-- 坐标系 -->
+  <line x1="80" y1="420" x2="720" y2="420" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="80" y1="420" x2="80" y2="80" stroke="#2c3e50" stroke-width="2"/>
+  <polygon points="720,420 710,415 710,425" fill="#2c3e50"/>
+  <polygon points="80,80 75,90 85,90" fill="#2c3e50"/>
+  <text x="730" y="425" class="label">x</text>
+  <text x="70" y="70" class="label">y</text>
+  
+  <!-- 函数曲线 f(x) = x² -->
+  <path d="M 150 380 Q 250 320, 350 240 T 550 120" class="curve"/>
+  <text x="560" y="110" class="label" fill="#e74c3c">f(x)</text>
+  
+  <!-- 左端点矩形（蓝色） -->
+  <rect x="150" y="320" width="80" height="100" class="rectangle rect-left"/>
+  <rect x="230" y="280" width="80" height="140" class="rectangle rect-left"/>
+  <rect x="310" y="220" width="80" height="200" class="rectangle rect-left"/>
+  <rect x="390" y="160" width="80" height="260" class="rectangle rect-left"/>
+  <rect x="470" y="120" width="80" height="300" class="rectangle rect-left"/>
+  
+  <!-- 标注 -->
+  <text x="190" y="410" text-anchor="middle" class="label" font-size="14">x₀</text>
+  <text x="270" y="410" text-anchor="middle" class="label" font-size="14">x₁</text>
+  <text x="350" y="410" text-anchor="middle" class="label" font-size="14">x₂</text>
+  <text x="430" y="410" text-anchor="middle" class="label" font-size="14">x₃</text>
+  <text x="510" y="410" text-anchor="middle" class="label" font-size="14">x₄</text>
+  <text x="590" y="410" text-anchor="middle" class="label" font-size="14">x₅=b</text>
+  
+  <text x="150" y="440" class="label">a</text>
+  
+  <!-- 宽度标注 -->
+  <line x1="150" y1="430" x2="230" y2="430" stroke="#2c3e50" stroke-width="1" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="190" y="450" text-anchor="middle" class="label" font-size="12">Δx</text>
+  
+  <!-- 高度标注 -->
+  <line x1="140" y1="320" x2="140" y2="420" stroke="#3498db" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="130" y="370" text-anchor="middle" class="label" font-size="12" fill="#3498db">f(x₀)</text>
+  
+  <!-- 公式 -->
+  <g transform="translate(100, 460)">
+    <rect x="0" y="0" width="600" height="30" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="5"/>
+    <text x="300" y="20" text-anchor="middle" class="formula">黎曼和：S = Σ f(xᵢ)Δx → ∫f(x)dx</text>
+  </g>
+  
+  <!-- 右侧说明 -->
+  <g transform="translate(600, 150)">
+    <rect x="0" y="0" width="180" height="180" fill="#d5f4e6" stroke="#27ae60" stroke-width="2" rx="10"/>
+    <text x="90" y="25" text-anchor="middle" class="label" font-size="16">三种取点方式</text>
+    <text x="20" y="50" class="label" font-size="14" fill="#3498db">• 左端点</text>
+    <text x="30" y="70" class="label" font-size="12">f(xᵢ) = f(xᵢ)</text>
+    
+    <text x="20" y="95" class="label" font-size="14" fill="#f39c12">• 右端点</text>
+    <text x="30" y="115" class="label" font-size="12">f(xᵢ) = f(xᵢ₊₁)</text>
+    
+    <text x="20" y="140" class="label" font-size="14" fill="#2ecc71">• 中点</text>
+    <text x="30" y="160" class="label" font-size="12">f(xᵢ) = f((xᵢ+xᵢ₊₁)/2)</text>
+  </g>
+  
+  <!-- 底部类比 -->
+  <g transform="translate(100, 510)">
+    <rect x="0" y="0" width="600" height="50" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="10"/>
+    <text x="300" y="20" text-anchor="middle" class="label" font-size="14">现实类比：用矩形积木拼凑曲线下的面积，</text>
+    <text x="300" y="40" text-anchor="middle" class="label" font-size="14">矩形越窄，拼凑越精确（Δx → 0）</text>
+  </g>
+</svg>

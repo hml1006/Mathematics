@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+  <!-- Background -->
+  <rect width="600" height="420" fill="#f4ecf7" rx="8"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#1a1a2e">K₂ 群与 Matsumoto 定理</text>
+  
+  <!-- Central exact sequence -->
+  <text x="300" y="60" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#333">Steinberg 群 → E(R) → K₂</text>
+  
+  <!-- St(R) -->
+  <rect x="50" y="80" width="120" height="45" rx="8" fill="#d5f5e3" stroke="#1e8449" stroke-width="2"/>
+  <text x="110" y="100" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">St(R)</text>
+  <text x="110" y="117" text-anchor="middle" font-family="serif" font-size="11" fill="#555">Steinberg 群</text>
+  
+  <!-- Arrow -->
+  <line x1="170" y1="102" x2="220" y2="102" stroke="#333" stroke-width="1.5" marker-end="url(#arrK2)"/>
+  <defs>
+    <marker id="arrK2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- E(R) -->
+  <rect x="225" y="80" width="120" height="45" rx="8" fill="#d6eaf8" stroke="#2471a3" stroke-width="2"/>
+  <text x="285" y="100" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">E(R)</text>
+  <text x="285" y="117" text-anchor="middle" font-family="serif" font-size="11" fill="#555">初等矩阵群</text>
+  
+  <!-- Arrow -->
+  <line x1="345" y1="102" x2="395" y2="102" stroke="#333" stroke-width="1.5" marker-end="url(#arrK2)"/>
+  
+  <!-- GL/E -->
+  <rect x="400" y="80" width="150" height="45" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="475" y="100" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">K₁ = GL/E</text>
+  <text x="475" y="117" text-anchor="middle" font-family="serif" font-size="11" fill="#555">Whitehead 群</text>
+  
+  <!-- K₂ kernel -->
+  <rect x="140" y="150" width="140" height="45" rx="8" fill="#fadbd8" stroke="#c0392b" stroke-width="2"/>
+  <text x="210" y="170" text-anchor="middle" font-family="serif" font-size="14" fill="#1a1a2e">K₂(R) = ker φ</text>
+  <text x="210" y="187" text-anchor="middle" font-family="serif" font-size="11" fill="#555">中心扩张的核</text>
+  
+  <!-- Arrow from K₂ to St -->
+  <path d="M175,150 L135,125" stroke="#c0392b" stroke-width="1.5" fill="none" marker-end="url(#arrK2)"/>
+  
+  <!-- Matsumoto theorem box -->
+  <rect x="50" y="220" width="500" height="100" rx="8" fill="white" stroke="#8e44ad" stroke-width="2"/>
+  <text x="300" y="245" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#8e44ad">Matsumoto 定理（域 F）</text>
+  <text x="300" y="270" text-anchor="middle" font-family="serif" font-size="13" fill="#1a1a2e">K₂(F) 由符号 {a, b}（a, b ∈ F×）生成</text>
+  <text x="300" y="290" text-anchor="middle" font-family="serif" font-size="12" fill="#555">双线性：{a₁a₂, b} = {a₁, b}·{a₂, b}</text>
+  <text x="300" y="308" text-anchor="middle" font-family="serif" font-size="12" fill="#555">Steinberg 关系：{a, 1−a} = 1（a ≠ 0, 1）</text>
+  
+  <!-- Examples -->
+  <text x="300" y="350" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold" fill="#333">示例</text>
+  <text x="150" y="375" text-anchor="middle" font-family="serif" font-size="12" fill="#555">K₂(𝔽_q) = 1</text>
+  <text x="300" y="375" text-anchor="middle" font-family="serif" font-size="12" fill="#555">K₂(ℚ) ≅ {±1} ⊕ ⊕_p ℤ/2ℤ</text>
+  <text x="480" y="375" text-anchor="middle" font-family="serif" font-size="12" fill="#555">（二次互反律）</text>
+  
+  <!-- Caption -->
+  <text x="300" y="410" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">K₂ 度量了"交换子关系的隐藏扭曲"，Matsumoto 定理将其化为符号运算</text>
+</svg>
