@@ -1,0 +1,28 @@
+[book]
+title = "数学天梯攀爬教程"
+authors = ["Mathematics Project"]
+language = "zh"
+description = "从初等到高等，循序渐进构建完整数学知识体系。共 9 大学习阶段、151 个层级。"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+site-url = "/"
+smart-punctuation = false
+default-theme = "light"
+preferred-dark-theme = "navy"
+additional-css = ["src/katex/katex.min.css"]
+additional-js = [
+    "src/katex/katex.min.js",
+    "src/katex/auto-render.min.js",
+    "src/katex-render.js",
+]
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.search]
+enable = false
