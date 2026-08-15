@@ -8,17 +8,19 @@ description = "从初等到高等，循序渐进构建完整数学知识体系�
 build-dir = "book"
 create-missing = false
 
+[preprocessor.katex]
+after = ["links"]
+# 使用项目自托管的 KaTeX 样式与字体，避免依赖 CDN
+no-css = true
+# 与原有浏览器端渲染一致，错误时不抛异常
+throw-on-error = false
+
 [output.html]
 site-url = "/"
 smart-punctuation = false
 default-theme = "light"
 preferred-dark-theme = "navy"
 additional-css = ["src/katex/katex.min.css"]
-additional-js = [
-    "src/katex/katex.min.js",
-    "src/katex/auto-render.min.js",
-    "src/katex-render.js",
-]
 
 [output.html.fold]
 enable = true
