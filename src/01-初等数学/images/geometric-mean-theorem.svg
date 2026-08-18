@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340">
+  <!-- Background -->
+  <rect width="400" height="340" fill="#fafafa"/>
+
+  <!-- Formula box at top -->
+  <rect x="20" y="10" width="360" height="60" fill="white" stroke="#bdc3c7" stroke-width="1" rx="5"/>
+  <text x="200" y="32" font-family="serif" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">射影定理 (Geometric Mean Theorem)</text>
+  <text x="200" y="52" font-family="serif" font-size="13" fill="#2c3e50" text-anchor="middle">CD² = AD · DB</text>
+  <text x="200" y="66" font-family="serif" font-size="13" fill="#2c3e50" text-anchor="middle">AC² = AD · AB,  BC² = BD · AB</text>
+
+  <!-- Triangle ABC -->
+  <polygon points="50,290 350,290 200,100" fill="none" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- Altitude CD -->
+  <line x1="200" y1="100" x2="200" y2="290" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Right angle mark at C -->
+  <path d="M 185,115 L 185,130 L 200,130" fill="none" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- Right angle mark at D -->
+  <path d="M 200,275 L 215,275 L 215,290" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+
+  <!-- Labels -->
+  <text x="30" y="305" font-family="serif" font-size="20" font-weight="bold" fill="#2c3e50">A</text>
+  <text x="355" y="305" font-family="serif" font-size="20" font-weight="bold" fill="#2c3e50">B</text>
+  <text x="190" y="92" font-family="serif" font-size="20" font-weight="bold" fill="#2c3e50">C</text>
+  <text x="205" y="310" font-family="serif" font-size="20" font-weight="bold" fill="#e74c3c">D</text>
+
+  <!-- Segment labels -->
+  <text x="108" y="285" font-family="serif" font-size="16" fill="#3498db" font-style="italic">AD</text>
+  <text x="268" y="285" font-family="serif" font-size="16" fill="#3498db" font-style="italic">DB</text>
+  <text x="205" y="200" font-family="serif" font-size="16" fill="#e74c3c" font-style="italic">CD</text>
+</svg>
