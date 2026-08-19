@@ -620,63 +620,176 @@ $\check{R}$ 满足辫子关系：$\check{R}_{12} \check{R}_{23} \check{R}_{12} =
 
 ## 5. 习题
 
-### 习题 5.1
+### 基础题
 
-验证 $U_q(\mathfrak{sl}_2)$ 的对极映射 $S$ 满足 Hopf 代数的对极条件。
+**习题 1**（余代数）设 $C$ 是域 $\mathbb{k}$ 上的余代数，余乘法 $\Delta$、余单位 $\varepsilon$。用 Sweedler 记号写出余结合律与余单位律，并对群代数 $\mathbb{k}[G]$（$\Delta(g)=g\otimes g$，$\varepsilon(g)=1$，$g\in G$）逐条验证之。
 
-**提示**：分别对生成元 $K, E, F$ 验证 $m \circ (S \otimes \operatorname{id}) \circ \Delta = \eta \circ \varepsilon$。
+**习题 2**（对极）设 $G$ 是有限群，$\mathbb{k}[G]$ 是其群代数。验证 $S(g)=g^{-1}$ 满足对极条件 $\sum_{(g)}S(g_{(1)})g_{(2)}=\varepsilon(g)\cdot1$，并说明这样定义的 $S$ 是反代数同态。
 
-### 习题 5.2
+**习题 3**（双代数）对泛包络代数 $U(\mathfrak{g})$，验证 $\Delta(X)=X\otimes1+1\otimes X$、$\varepsilon(X)=0$（$X\in\mathfrak{g}$）定义了一个双代数结构。
 
-证明 $U_q(\mathfrak{sl}_2)$ 中以下关系成立：
+**习题 4**（余单位）设 $C$ 是余代数。证明余单位律 $(\mathrm{id}\otimes\varepsilon)\circ\Delta=\mathrm{id}$ 与 $(\varepsilon\otimes\mathrm{id})\circ\Delta=\mathrm{id}$ 等价于求和恒等式：
 
 $$
-[E, F^n] = [n] \frac{q^{-(n-1)} K - q^{n-1} K^{-1}}{q - q^{-1}} F^{n-1},
+\sum_{(c)} c_{(1)}\varepsilon(c_{(2)})=c=\sum_{(c)}\varepsilon(c_{(1)})c_{(2)} .
 $$
 
-其中 $[n] = \frac{q^n - q^{-n}}{q - q^{-1}}$。
+**习题 5**（Hopf 代数公理）写出 Hopf 代数 $(H,m,\eta,\Delta,\varepsilon,S)$ 的完整公理，并说明"代数 + 余代数 + 双代数 + 对极"四者之间的关系。
 
-**提示**：利用归纳法，使用 $[E, F] = \frac{K - K^{-1}}{q - q^{-1}}$ 和 $KF = q^{-2}FK$。
+**习题 6**（对偶）设 $\langle\cdot,\cdot\rangle:K\otimes H\to\mathbb{k}$ 是 Hopf 代数间的对偶配对。写出它满足的四条性质，并说明它们如何与 $\Delta$、$\varepsilon$、$S$ 相容。
 
-### 习题 5.3
+**习题 7**（模与余模）设 $G$ 是有限群。在向量空间 $M$ 上定义右 $\mathbb{k}[G]$-余模结构，写出余作用 $\rho$ 及伴随的余结合律、余单位律，并逐条验证之。
 
-验证 $U_q(\mathfrak{sl}_2)$ 的二维表示 $V_1$ 中 $R$-矩阵的显式形式。
+**习题 8**（张量积）设 $V,W$ 是 Hopf 代数 $H$ 的右模。利用余积 $\Delta$ 在 $V\otimes W$ 上定义 $H$-模结构，写出作用公式并说明为何 $H$-模公理自动成立。
 
-**提示**：在基 $\{v_0, v_1\}$ 上写出 $E, F, K$ 的矩阵表示，然后代入 $R = q^{\frac{1}{2} H \otimes H} \sum_{n=0}^{\infty} \frac{(1 - q^{-2})^n}{[n]!} q^{\frac{n(n-1)}{2}} (E^n \otimes F^n)$，并计算级数。
+**习题 9**（量子化）$q$-整数定义为 $[n]_q=(q^n-q^{-n})/(q-q^{-1})$。计算 $[1]_q,[2]_q,[3]_q$，并证明 $\lim_{q\to1}[n]_q=n$。
 
-### 习题 5.4
+**习题 10**（量子群定义）写出量子群 $U_q(\mathfrak{sl}_2)$ 的生成元与定义关系，并指出当 $q\to1$（$K=q^H$）时它们如何退化为经典 $U(\mathfrak{sl}_2)$ 的关系。
 
-证明 $U_q(\mathfrak{sl}_2)$ 中 $R$-矩阵的逆为 $R^{-1} = \sum_{n=0}^{\infty} \frac{(q^{-2} - 1)^n}{[n]!} q^{-\frac{n(n-1)}{2}} (F^n \otimes E^n) q^{-\frac{1}{2} H \otimes H}$。
+### 进阶题
 
-**提示**：直接在 $V_1 \otimes V_1$ 上验证 $R R^{-1} = R^{-1} R = 1$。
+**习题 11**（双代数）证明：在双代数中 $\Delta$ 是代数同态当且仅当 $m$ 是余代数同态。
 
-### 习题 5.5
+**习题 12**（对极）设 $H$ 是 Hopf 代数。利用卷积代数 $(\operatorname{Hom}(H,H),*,\eta\circ\varepsilon)$ 中对极的唯一性，证明 $S(ab)=S(b)S(a)$ 且 $S(1)=1$，即 $S$ 是反代数同态。
 
-证明 $U_q(\mathfrak{sl}_2)$ 的表示 $V_n$ 的量子维数为 $\operatorname{qdim}(V_n) = \frac{q^{n+1} - q^{-(n+1)}}{q - q^{-1}} = [n+1]$。
+**习题 13**（卷积代数）设 $C$ 是余代数、$A$ 是代数。证明 $\eta\circ\varepsilon$ 是卷积代数 $\operatorname{Hom}(C,A)$ 的单位元，即对任意 $f$ 有 $f*(\eta\circ\varepsilon)=(\eta\circ\varepsilon)*f=f$。
 
-**提示**：量子维数定义为 $\operatorname{tr}_{V_n}(K)$，利用 $K$ 在 $V_n$ 上的特征值求和。
+**习题 14**（$U(\mathfrak{sl}_2)$）在泛包络代数 $U(\mathfrak{sl}_2)$ 中令 $[E,F]=H$。证明 $S(E)=-E$，$S(F)=-F$，$S(H)=-H$ 满足对极条件，从而 $U(\mathfrak{sl}_2)$ 是 Hopf 代数。
 
-### 习题 5.6
+**习题 15**（对偶配对）设 $\langle\cdot,\cdot\rangle:K\otimes H\to\mathbb{k}$ 是对偶配对。证明对极与配对相容，即 $\langle S_K(x),h\rangle=\langle x,S_H(h)\rangle$ 对一切 $x\in K$、$h\in H$。
 
-利用 $U_q(\mathfrak{sl}_2)$ 的表示论构造三叶结（trefoil knot）的 Jones 多项式。
+**习题 16**（余模）设 $M$ 是 $H$ 的右余模。通过对偶，在 $M^*=\operatorname{Hom}(M,\mathbb{k})$ 上定义 $H^*$-模结构，写出作用公式，并从余模公理推导模公理。
 
-**提示**：三叶结可以表示为 $(3, 2)$-torus 纽结，其辫子表示为 $\sigma_1^3 \in B_2$。利用二维表示 $V_1$ 计算 $\operatorname{qtr}(\sigma_1^3)$。
+**习题 17**（$U_q(\mathfrak{sl}_2)$）对 $U_q(\mathfrak{sl}_2)$ 验证余积 $\Delta(K)=K\otimes K$，$\Delta(E)=E\otimes K+1\otimes E$，$\Delta(F)=F\otimes1+K^{-1}\otimes F$ 满足余结合律。
 
-### 习题 5.7
+**习题 18**（$R$-矩阵）设 $(H,R)$ 是拟三角 Hopf 代数。解释 $\Delta^{\mathrm{op}}(x)=R\Delta(x)R^{-1}$（$x\in H$）为什么定义 $H\otimes H$ 上的代数自同构，并说明 $R$ 对由 $\Delta^{\mathrm{op}}$ 诱导的卷积结构的意义。
 
-证明辫子张量范畴的六边形公理等价于 Yang-Baxter 方程。
+**习题 19**（Yang-Baxter）在 $U_q(\mathfrak{sl}_2)$ 的二维表示 $V_1$ 上写出 $R$-矩阵对基 $\{v_0\otimes v_0,v_0\otimes v_1,v_1\otimes v_0,v_1\otimes v_1\}$ 的作用，并在 $v_0\otimes v_0\otimes v_0$ 分量上核对 Yang-Baxter 方程。
 
-**提示**：将六边形公理应用到 $X \otimes Y \otimes Z$ 上，写出 $c_{X,Y \otimes Z}$ 和 $c_{X \otimes Y, Z}$ 的分解。
+### 挑战题
 
-### 习题 5.8
+**习题 20**（Hopf 代数公理）设 $H$ 是双代数，对极 $S$ 在卷积下可逆。证明 $S$ 同时是反代数同态与反余代数同态，即 $S(ab)=S(b)S(a)$ 且 $\Delta(S(h))=\tau(S\otimes S)\Delta(h)$ 对一切 $a,b,h\in H$ 成立。
 
-设 $H$ 是有限维 Hopf 代数，$D(H)$ 是其 Drinfeld 量子双。证明 $D(H)$ 是拟三角的，并给出其 $R$-矩阵。
+**习题 21**（对余积/伴随）设 $(M,\rho)$ 是 Hopf 代数 $H$ 的右余模。利用余作用定义 $H$-模作用，写出"模结构"与"余模结构"相容（mixed 结构）的条件，并证明 $M$ 从而成为 $H$-模。
 
-**提示**：$D(H) = H \otimes H^{*\text{op}}$ 作为向量空间，$R$-矩阵为 $R = \sum_i (1 \otimes e_i) \otimes (e^i \otimes 1)$，其中 $\{e_i\}$ 是 $H$ 的基，$\{e^i\}$ 是对偶基。
+**习题 22**（双代数）对 Hopf 代数 $H$ 构造对偶余代数 $H^{\mathrm{cop}}=(H,\Delta^{\mathrm{op}},\varepsilon)$，并证明 $S^{-1}$ 是 $H^{\mathrm{cop}}$ 的对极，即 $H^{\mathrm{cop}}$ 仍是 Hopf 代数。
+
+**习题 23**（Drinfeld 双击）设 $H$ 是有限维 Hopf 代数，$D(H)=H\otimes H^{*\mathrm{op}}$ 是其 Drinfeld 量子双。写出 $D(H)$ 的 $R$-矩阵 $R=\sum_i(1\otimes e_i)\otimes(e^i\otimes1)$，并论证 $D(H)$ 是拟三角 Hopf 代数。
+
+**习题 24**（量子群 $U_q$）设 $V_n$ 是 $U_q(\mathfrak{sl}_2)$ 的 $(n+1)$ 维不可约表示。利用 $K$ 的特征值求和证明量子维数：
+
+$$
+\operatorname{qdim}(V_n)=\frac{q^{n+1}-q^{-(n+1)}}{q-q^{-1}}=[n+1]_q .
+$$
+
+**习题 25**（Yang-Baxter/Drinfeld 双击）证明拟三角 Hopf 代数中的 $R$-矩阵满足 Yang-Baxter 方程 $R_{12}R_{13}R_{23}=R_{23}R_{13}R_{12}$。提示：结合拟三角条件与余结合律。
+
+**习题 26**（$U(\mathfrak{sl}_2)$ 与 $U_q(\mathfrak{sl}_2)$ 量子化）令 $K=q^H$。证明对易关系 $[E,F]=(K-K^{-1})/(q-q^{-1})$ 在 $q\to1$ 时退化为 $[E,F]=H$，且 $S(E)=-EK^{-1}\to-E$。
+
+### 探究题
+
+**习题 27**（与纽结/表示论联系）探索用量子群 $U_q(\mathfrak{sl}_2)$ 的表示论构造三叶结的 Jones 多项式：说明辫子表示、$R$-矩阵、$\check{R}=\tau\circ R$ 与量子迹 $\operatorname{qtr}$ 的作用，并讨论其与 skein 关系及 $t=q^4$ 的联系。
+
+**习题 28**（量子包络代数）讨论把 $U_q(\mathfrak{sl}_2)$ 推广到一般半单李代数 $\mathfrak{g}$ 的量子包络代数 $U_q(\mathfrak{g})$：需要哪些生成元与高阶 Serre 关系，其不可约表示的分类结构与量子维数如何一般化。
+
+**习题 29**（辫子结构）研究 $U_q(\mathfrak{sl}_2)$-模构成的辫子张量范畴：$R$-矩阵如何给出辫子同构 $c_{V,W}$，六边形公理如何由 Yang-Baxter 方程与拟三角条件推出。
+
+**习题 30**（开放推广）讨论 Hopf 代数与量子群在模张量范畴、三维流形不变量（Reshetikhin-Turaev）、非交换几何与共形场论等方向上的推广，以及若干未解决的开放问题。
 
 ---
 
-## 6. 总结
+## 6. 习题答案与解析
+
+### 基础题答案
+
+1. （余代数）余结合律为 $(\Delta\otimes\mathrm{id})\circ\Delta=(\mathrm{id}\otimes\Delta)\circ\Delta$，即 $\sum_{(c)}c_{(1)(1)}\otimes c_{(1)(2)}\otimes c_{(2)}=\sum_{(c)}c_{(1)}\otimes c_{(2)(1)}\otimes c_{(2)(2)}$；余单位律为 $(\mathrm{id}\otimes\varepsilon)\circ\Delta=\mathrm{id}$，即 $\sum_{(c)}c_{(1)}\varepsilon(c_{(2)})=c$（对称地 $\sum_{(c)}\varepsilon(c_{(1)})c_{(2)}=c$）。对 $\mathbb{k}[G]$：$\Delta(g)=g\otimes g$，故 $(\Delta\otimes\mathrm{id})\Delta(g)=g\otimes g\otimes g=(\mathrm{id}\otimes\Delta)\Delta(g)$，且 $(\mathrm{id}\otimes\varepsilon)\Delta(g)=g\varepsilon(g)=g$，两条律均成立。
+
+2. （对极）$\sum_{(g)}S(g_{(1)})g_{(2)}=S(g)g=g^{-1}g=1=\varepsilon(g)\cdot1$；同理 $\sum_{(g)}g_{(1)}S(g_{(2)})=gg^{-1}=1$。又 $S(gh)=(gh)^{-1}=h^{-1}g^{-1}=S(h)S(g)$，故 $S$ 是反代数同态。
+
+3. （双代数）对 $X,Y\in\mathfrak{g}$，$\Delta(X)=X\otimes1+1\otimes X$。因 $\Delta([X,Y])=[X\otimes1+1\otimes X,\;Y\otimes1+1\otimes Y]=[X,Y]\otimes1+1\otimes[X,Y]=\Delta([X,Y])$ 成立，$\Delta$ 是代数同态；又有 $\varepsilon([X,Y])=0=0\cdot1-1\cdot0$ 等使 $\varepsilon$ 是代数同态，故 $\Delta,\varepsilon$ 给出双代数结构（事实上是 Hopf 代数）。
+
+4. （余单位）两式是同一余单位律的分量写法：对 $c$ 作用 $(\mathrm{id}\otimes\varepsilon)\circ\Delta=\mathrm{id}$ 得 $\sum_{(c)}c_{(1)}\varepsilon(c_{(2)})=c$；作用 $(\varepsilon\otimes\mathrm{id})\circ\Delta=\mathrm{id}$ 得 $\sum_{(c)}\varepsilon(c_{(1)})c_{(2)}=c$。故两数列写等价于余单位律。
+
+5. （Hopf 代数公理）公理分五组：(a) 代数公理（结合律、单位律）；(b) 余代数公理（余结合律、余单位律）；(c) 双代数相容（$\Delta,\varepsilon$ 是代数同态）；(d) 对极条件 $m\circ(S\otimes\mathrm{id})\circ\Delta=\eta\circ\varepsilon=m\circ(\mathrm{id}\otimes S)\circ\Delta$。(a)+(b)+(c) 构成双代数，再加上 (d) 即 Hopf 代数。换言之：Hopf 代数 $=$ 双代数 $+$ 对极 $S$。
+
+6. （对偶）四条性质为 $\langle xy,h\rangle=\langle x\otimes y,\Delta_H(h)\rangle$；$\langle x,gh\rangle=\langle\Delta_K(x),g\otimes h\rangle$；$\langle1_K,h\rangle=\varepsilon_H(h)$；$\langle x,1_H\rangle=\varepsilon_K(x)$。它们把配对左端的乘法与右端的余积连接，把单位与余单位连接；与对极的相容性为第五条 $\langle S_K(x),h\rangle=\langle x,S_H(h)\rangle$。
+
+7. （模与余模）右 $\mathbb{k}[G]$-余作用取 $\rho(m)=\sum_{(m)}m_{(0)}\otimes m_{(1)}$。最简情形 $\rho(m)=m\otimes g$（$g\in G$）：$(\mathrm{id}\otimes\varepsilon)\rho(m)=m\varepsilon(g)=m$，余单位律成立；余结合律 $(\rho\otimes\mathrm{id})\rho(m)=m\otimes g\otimes g=(\mathrm{id}\otimes\Delta)\rho(m)$。一般情形的两条律由 $\mathbb{k}[G]$ 本身的余代数公理保证。
+
+8. （张量积）定义右 $H$-作用 $h\cdot(v\otimes w)=\sum_{(h)}(h_{(1)}\cdot v)\otimes(h_{(2)}\cdot w)$。因 $\Delta$ 是代数同态（双代数条件），故 $h'\cdot(h\cdot(v\otimes w))=(h'h)\cdot(v\otimes w)$ 自动成立；单位律由 $\eta$ 保证。故 $V\otimes W$ 是 $H$-模，张量积是模范畴上的赋值。
+
+9. （量子化）$[1]_q=1$；$[2]_q=\frac{q^2-q^{-2}}{q-q^{-1}}=q+q^{-1}$；$[3]_q=\frac{q^3-q^{-3}}{q-q^{-1}}=q^2+1+q^{-2}$。由 L'Hôpital 法则（或直接约去 $q-q^{-1}=q^{-1}(q^2-1)$ 再取极限）：
+
+$$
+\lim_{q\to1}\frac{q^n-q^{-n}}{q-q^{-1}}=\frac{n+n}{1}=n .
+$$
+
+10. （量子群定义）生成元 $E,F,K,K^{-1}$，关系 $KK^{-1}=K^{-1}K=1$，$KEK^{-1}=q^2E$，$KFK^{-1}=q^{-2}F$，$[E,F]=(K-K^{-1})/(q-q^{-1})$。令 $K=q^H$：$KEK^{-1}=q^2E$ 在 $q\to1$ 时取一阶系数立得 $[H,E]=2E$；$KFK^{-1}=q^{-2}F$ 得 $[H,F]=-2F$；$[E,F]=(q^H-q^{-H})/(q-q^{-1})\to H$。正是经典 $U(\mathfrak{sl}_2)$ 的关系 $[H,E]=2E$，$[H,F]=-2F$，$[E,F]=H$。
+
+### 进阶题答案
+
+1. （双代数）$\Delta$ 是代数同态等价于 $\Delta(ab)=\Delta(a)\Delta(b)$ 对一切 $a,b$。另一方面，$m$ 是余代数同态等价于 $\Delta\circ m=(m\otimes m)\circ(\mathrm{id}\otimes\tau\otimes\mathrm{id})\circ(\Delta\otimes\Delta)$，即 $m$ 与 $\Delta$ 在引入交换因子 $\tau$ 下可交换。两者在 Sweedler 记号下是同一等式的两种写法，故当且仅当成立。
+
+2. （对极）在卷积代数中 $S*\mathrm{id}=\mathrm{id}*S=\eta\varepsilon$，且卷积单位唯一。定义 $u=m\circ(S\otimes S)\circ\tau$（即 $u(a\otimes b)=S(b)S(a)$），直接核验 $u$ 关于 $m$ 满足对极所满足的同一组卷积方程，由唯一性得 $u=S\circ m$，即 $S(ab)=S(b)S(a)$。又 $S(1)=S(1)1=(S*1)(1)=(\eta\varepsilon)(1)=\varepsilon(1)=1$。故 $S$ 反代数同态。
+
+3. （卷积代数）对任意 $f\in\operatorname{Hom}(C,A)$：
+$$
+(f*(\eta\circ\varepsilon))(c)=m(f\otimes\eta\varepsilon)\Delta(c)=\sum_{(c)}f(c_{(1)})((\eta\varepsilon)(c_{(2)}))=\sum_{(c)}f(c_{(1)})\varepsilon(c_{(2)})\cdot1=f\Big(\sum_{(c)}c_{(1)}\varepsilon(c_{(2)})\Big)=f(c),
+$$
+其中末步用余单位律；对称地 $(\eta\circ\varepsilon)*f=f$。故 $\eta\circ\varepsilon$ 是卷积单位元。
+
+4. （$U(\mathfrak{sl}_2)$）对 $X\in\{E,F,H\}$，$\Delta(X)=X\otimes1+1\otimes X$，$\varepsilon(X)=0$。于是 $m(S\otimes\mathrm{id})\Delta(X)=S(X)\cdot1+X\cdot1=S(X)+X$。令其等于 $\eta\varepsilon(X)=0$，故 $S(X)=-X$。三条对极条件对生成元成立，由 $S$ 反代数同态延拓到全代数，$U(\mathfrak{sl}_2)$ 是 Hopf 代数。
+
+5. （对偶配对）要证 $\langle S_K(x),h\rangle=\langle x,S_H(h)\rangle$。利用配对定义把对极条件放到配对中：$\langle x,m(S_H\otimes\mathrm{id})\Delta_H(h)\rangle=\langle x,\varepsilon_H(h)1_H\rangle=\varepsilon_H(h)\langle x,1_H\rangle$。再由 $\langle\cdot,\Delta\rangle$ 规则与 $S_K$ 的反代数性质展开，可得上述等式。它正是对极在配对意义下的自对偶性。
+
+6. （余模）设右余作用 $\rho(m)=\sum m_{(0)}\otimes m_{(1)}$。在 $M^*$ 上定义右 $H^*$-作用 $(h^*\cdot m^*)(m)=\sum m^*(m_{(0)})h^*(m_{(1)})$。则 $(h'^*h^*)\cdot m^*=h'^*\cdot(h^*\cdot m^*)$ 恰由余模的余结合律 $(\rho\otimes\mathrm{id})\rho=(\mathrm{id}\otimes\Delta)\rho$ 在求值意义下给出，余单位律给出 $H^*$ 的单位作用。故 $M^*$ 是右 $H^*$-模。
+
+7. （$U_q(\mathfrak{sl}_2)$）对 $E$：$(\Delta\otimes\mathrm{id})\Delta(E)=\Delta(E)\otimes K+1\otimes\Delta(E)=(E\otimes K+1\otimes E)\otimes K+1\otimes(E\otimes K+1\otimes E)=E\otimes K\otimes K+1\otimes E\otimes K+1\otimes1\otimes E$；而 $(\mathrm{id}\otimes\Delta)\Delta(E)=E\otimes\Delta(K)+1\otimes\Delta(E)=E\otimes K\otimes K+1\otimes E\otimes K+1\otimes1\otimes E$，两式相等。对 $K$、$F$ 同理逐项核验，余结合律成立。
+
+8. （$R$-矩阵）$x\mapsto R\Delta(x)R^{-1}$ 是共轭作用（乘以固定可逆元），保持乘法与单位，故是 $H\otimes H$ 的代数自同构；条件 $\Delta^{\mathrm{op}}(x)=R\Delta(x)R^{-1}$ 表明该自同构把"翻转余积"$\Delta^{\mathrm{op}}$ 与 $\Delta$ 联系起来。在 $H^*$ 的卷积上，它把 $H$ 看成自带 $R$-矩阵的拟三角结构，$R$ 恰是 $\Delta^{\mathrm{op}}$ 与 $\Delta$ 的"共轭桥"。
+
+9. （Yang-Baxter）由 3.4 节结果，$R$ 的作用为 $R(v_0\otimes v_0)=q^{1/2}v_0\otimes v_0$，$R(v_0\otimes v_1)=q^{-1/2}v_1\otimes v_0+(q^{-1/2}-q^{3/2})v_0\otimes v_1$，$R(v_1\otimes v_0)=q^{-1/2}v_0\otimes v_1$，$R(v_1\otimes v_1)=q^{1/2}v_1\otimes v_1$。在 $v_0\otimes v_0\otimes v_0$ 上，$R_{12}R_{13}R_{23}$ 与 $R_{23}R_{13}R_{12}$ 都给出标量 $q^{3/2}v_0\otimes v_0\otimes v_0$（因 $R$ 将 $v_0\otimes v_0$ 映为自身的纯标量），两边一致。
+
+### 挑战题答案
+
+1. （Hopf 代数公理）由对极唯一性：$S$ 是 $\mathrm{id}$ 在卷积代数中的双侧逆。定义 $u=m\circ(S\otimes S)\circ\tau$（$u(a\otimes b)=S(b)S(a)$）与 $v=(S\otimes S)\circ\tau\circ\Delta$（$v(h)=\sum\tau(S(h_{(1)})\otimes S(h_{(2)}))$）。直接核验 $u$ 满足 $S\circ m$ 所满足的卷积方程，$v$ 满足 $\Delta\circ S$ 所满足的卷积方程，由唯一性得 $S\circ m=u$（即 $S(ab)=S(b)S(a)$）与 $\Delta\circ S=v$（即 $\Delta(S(h))=\sum S(h_{(2)})\otimes S(h_{(1)})=\tau(S\otimes S)\Delta(h)$）。证毕。
+
+2. （对余积/伴随）用余作用 $\rho(m)=\sum_{(m)}m_{(0)}\otimes m_{(1)}$ 定义 $H$-模作用（伴随 $H$-模结构）
+$$
+h\cdot m=\sum_{(h),(m)}S(h_{(1)})\big(m_{(0)}\big)\,h_{(2)}\,m_{(1)}\quad\text{或}\quad h\cdot m=\sum_{(h)}\check{S}(h_{(1)})\,m_{(0)}\,\check{S}\big(S(h_{(2)})\big),
+$$
+其中 $\check{S}$ 依左/右余模的约定选取。兼容条件为模公理 $(hh')\cdot m=h\cdot(h'\cdot m)$ 在求值后化为余模的余结合律 $(\rho\otimes\mathrm{id})\rho=(\mathrm{id}\otimes\Delta)\rho$ 与余单位律（并通过 $S$ 的对极条件消去中间卷绕项）。验证：将 $h\cdot(h'\cdot m)$ 两次展开，把 $\Delta(hh')=\Delta(h)\Delta(h')$ 分配到各项，用对极条件 $m(S\otimes\mathrm{id})\Delta=\eta\varepsilon$ 抵消，恰好回到 $(hh')\cdot m$。故 $(M,\cdot)$ 是 $H$-模。
+
+3. （双代数）$H^{\mathrm{cop}}$ 的余积 $\Delta^{\mathrm{op}}=\tau\circ\Delta$，余单位 $\varepsilon$；$m$ 仍是乘法。对 $S^{-1}$：$m(S^{-1}\otimes\mathrm{id})\Delta^{\mathrm{op}}(h)=m(S^{-1}\otimes\mathrm{id})\tau\Delta(h)=m(\mathrm{id}\otimes S^{-1})\tau\Delta(h)$。因 $S$ 是反余代数同态，$S^{-1}$ 亦然，且 $S^{-1}$ 对 $H^{\mathrm{cop}}$ 满足对极条件（$\Delta(H)$ 的翻转被 $\tau$ 吸收回原序）。故 $H^{\mathrm{cop}}$ 以 $S^{-1}$ 为对极成为 Hopf 代数。
+
+4. （Drinfeld 双击）$D(H)=H\otimes H^{*\mathrm{op}}$，取 $H$ 的基 $\{e_i\}$ 与对偶基 $\{e^i\}\subset H^*$。$R$-矩阵取 $R=\sum_i(1\otimes e_i)\otimes(e^i\otimes1)\in D(H)\otimes D(H)$（按 $D(H)=H\otimes H^*$ 的张量分层书写）。它满足拟三角条件 $(\Delta_D\otimes\mathrm{id})R=R_{13}R_{23}$，$(\mathrm{id}\otimes\Delta_D)R=R_{13}R_{12}$，其中 $\Delta_D$ 是 $D(H)$ 的余积（由 $H$ 的余积与 $H^{*\mathrm{op}}$ 的对偶余积交错给出）；该结构由 Drinfeld 双击的构造保证，故 $D(H)$ 是拟三角 Hopf 代数。
+
+5. （量子群 $U_q$）$V_n$ 的基 $\{v_0,\ldots,v_n\}$ 满足 $K\cdot v_k=q^{n-2k}v_k$，故 $K$ 的特征值为 $q^{n-2k}$（$k=0,\ldots,n$）。代入量子维数并对几何级数求和：
+$$
+\operatorname{qdim}(V_n)=\operatorname{tr}_{V_n}(K)=\sum_{k=0}^{n}q^{n-2k}=q^{n}\frac{1-q^{-2(n+1)}}{1-q^{-2}}=\frac{q^{n+1}-q^{-(n+1)}}{q-q^{-1}}=[n+1]_q .
+$$
+
+6. （Yang-Baxter/Drinfeld 双击）设 $R=\sum_ia_i\otimes b_i$。拟三角条件给出 $(\Delta\otimes\mathrm{id})R=R_{13}R_{23}$ 即 $\sum_i\Delta(a_i)\otimes b_i=\sum_{i,j}a_i\otimes a_j\otimes b_ib_j$，与 $(\mathrm{id}\otimes\Delta)R=R_{13}R_{12}$ 即 $\sum_ia_i\otimes\Delta(b_i)=\sum_{i,j}a_ia_j\otimes b_j\otimes b_i$。代入 $R_{12}R_{13}R_{23}=\sum_{i,j,k}a_ia_j\otimes b_ia_k\otimes b_jb_k$，用上述两式与余结合律逐项重排，得到 $R_{23}R_{13}R_{12}$。故 $R$ 满足 Yang-Baxter 方程（对 Drinfeld 双击或一般拟三角 Hopf 代数成立）。
+
+7. （$U(\mathfrak{sl}_2)$ 与 $U_q(\mathfrak{sl}_2)$ 量子化）$[E,F]=\frac{K-K^{-1}}{q-q^{-1}}=\frac{q^H-q^{-H}}{q-q^{-1}}$。因为
+$$
+\lim_{q\to1}\frac{q^H-q^{-H}}{q-q^{-1}}=H,
+$$
+故 $[E,F]\to H$。又 $S(E)=-EK^{-1}=-Eq^{-H}$，当 $q\to1$ 时 $q^{-H}\to1$，故 $S(E)\to-E$。两式正是经典 $U(\mathfrak{sl}_2)$ 的括号与对极，量子变形在 $q\to1$ 退化回经典对象。
+
+### 探究题答案
+
+1. （与纽结/表示论联系）三叶结是 $(3,2)$-环面纽结，闭辫表示为 $\sigma_1^3\in B_2$。取二维表示 $V_1$：$R$-矩阵在 $V_1\otimes V_1$ 的作用给出辫子生成元 $\sigma_1\mapsto\check{R}=\tau\circ R$。用量子迹 $\operatorname{qtr}(f)=\operatorname{tr}(f\circ K^{\otimes n})$ 求 $\operatorname{qtr}(\sigma_1^3)$，配合 $d=\operatorname{qtr}(\mathrm{id})=q+q^{-1}$ 归一化，得到 $V_L(t)=\frac{(-t^{-3/4})^{w}}{d^{n-1}}\operatorname{qtr}(\beta)$。结果在 Markov 移动下不变且满足 skein 关系，故为 Jones 多项式，变量 $t=q^4$。这展示了量子群表示论与纽结不变量之间的对应。
+
+2. （量子包络代数）对一般半单李代数 $\mathfrak{g}$（Cartan 矩阵 $A=(a_{ij})$），$U_q(\mathfrak{g})$ 由简单根生成元 $E_i,F_i,K_i^{\pm1}$（$i$ 为 Dynkin 指标）生成，关系除 $q$-Cartan 交换关系外，还需对偶根形式的高阶 Serre 关系（用 $q$-二项式系数展开）。其不可约有限维表示仍由最高权分类（最高权为 $q^{\lambda}$），维数用生成元的量子对称化幂 $[E_i^{(k)}]$ 计算，量子维数推广为 $\prod_{\alpha>0}[\langle\lambda+\rho,\alpha\rangle]$ 对 $q$-整数之商。结构由 Drinfeld 实现与 RTT 代数给出更丰富描述。
+
+3. （辫子结构）对 $U_q(\mathfrak{sl}_2)$-模 $V,W$，令辫子 $c_{V,W}=\tau_{V,W}\circ R_{V,W}$，其中 $R_{V,W}=(\rho_V\otimes\rho_W)(R)$ 是 $R$-矩阵在 $V\otimes W$ 上的作用，$\tau$ 交换两因子。因为 $R$ 满足 Yang-Baxter 方程且在 $U_q(\mathfrak{sl}_2)$ 中拟三角，表示范畴得其自然同构与相容性；六边形公理由拟三角条件 $(\Delta\otimes\mathrm{id})R=R_{13}R_{23}$、$(\mathrm{id}\otimes\Delta)R=R_{13}R_{12}$ 与余结合律推出。故 $U_q(\mathfrak{sl}_2)$-模构成辫子张量范畴，这正是量子不变量所需的范畴结构。
+
+4. （开放推广）量子群理论沿若干方向深化：模张量范畴（半单、融合规则与 Verlinde 公式）支撑三维流形不变量 Reshetikhin-Turaev 与 Witten 的 Chern-Simons 不变量；量子群与共形场论（顶点算子代数、WZW 模型）通过 Kazhdan-Lusztig 对偶相连；非交换几何中以量子群为对称的量子空间研究方兴未艾。开放问题包括非半单（根为单位）情形的模范畴与 2-维半简单分类、$U_q(\mathfrak{g})$ 对一般 $q$ 与特殊节点的判定、以及量子不变量在更高维拓扑中的应用等。
+
+---
+
+## 7. 总结
 
 本课程系统介绍了 Hopf 代数与量子群的核心理论。
 
