@@ -1,5 +1,9 @@
 # Zeta函数函数方程
 
+> **一句话大白话**：$\zeta$ 函数不只定义在 $\mathrm{Re}\,s>1$ 的级数里，通过一个对称式（交换 $s\leftrightarrow 1-s$）就能解析延拓到整个复平面，且在 $s=1/2$ 左右手完全对称。
+>
+> **小例子**：$\xi(s)=\dfrac12s(s-1)\pi^{-s/2}\Gamma\!\left(\dfrac{s}{2}\right)\zeta(s)$ 满足 $\xi(s)=\xi(1-s)$，正是这个 $\xi$ 的零点等价于 $\zeta$ 在临界带的零点。
+
 ## 介绍
 
 Riemann Zeta 函数的函数方程是 $\zeta(s)$ 在复平面上的基本对称性，由 Riemann 在其 1859 年的论文中证明。函数方程将 $\zeta(s)$ 与 $\zeta(1-s)$ 联系起来，从而将右半平面 $\operatorname{Re}(s) > 1$ 上的信息反射到左半平面 $\operatorname{Re}(s) < 0$。结合解析延拓，函数方程是研究 Zeta 函数零点分布和素数定理的关键工具。

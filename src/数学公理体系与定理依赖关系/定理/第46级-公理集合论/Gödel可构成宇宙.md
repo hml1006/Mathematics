@@ -1,5 +1,9 @@
 # Gödel可构成宇宙
 
+> **一句话大白话**：Gödel 从序数出发"逐层"造出来最小的一串宇宙 $L=\bigcup_\alpha L_\alpha$，只有那些"能用定义造出来"的集合——在这个宝藏箱里 $V=L$（可构成性公理）且 $\mathrm{CH}$、$\mathrm{AC}$、$\mathrm{GCH}$ 全部天然成立。
+>
+> **小例子**：$L$ 里 $2^{\aleph_0}=\aleph_0^{\aleph_0}$ 被 $=\aleph_1$ 框住，$\mathrm{CH}$ 恒真；$V=L$ 是 $\mathrm{CH}$ 一致性的第一条证据，也是"内模型纲领"的原型。
+
 ## 介绍
 
 Gödel可构成宇宙（Gödel's Constructible Universe），记作 $\mathbf{L}$，是Kurt Gödel于1938年提出的一个内模型。Gödel构造了 $\mathbf{L}$ 以证明ZFC公理系统的相对一致性，并证明了连续统假设（CH）在 $\mathbf{L}$ 中成立。$\mathbf{L}$ 是ZFC的最小内模型，其核心思想是：只使用已被定义出来的集合来构造新集合，即"从低到高"逐层定义集合。$\mathbf{L}$ 的构造是集合论历史上最深刻的思想之一，它开创了内模型理论，并深刻地影响了后来力迫法和集合论公理体系的发展。

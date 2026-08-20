@@ -1,5 +1,9 @@
 # Atiyah-Singer指标定理
 
+> **一句话大白话**：一个椭圆算子的"指标"（解空间的维数减去伴随核维数）看似纯分析，却可以用流形的拓扑量（Char数 × Todd类积分）来算——两个隔行如隔山的世界被一座桥接通。
+>
+> **小例子**：对 $\partial/\partial\bar z$（Dolbeault 算子）指标定理化为 Riemann–Roch：$\dim H^0-\dim H^1=\int_M \mathrm{ch}(\mathcal E)\,\mathrm{td}(TM)$；Gauss–Bonnet、极限情形等经典结论都是它的特例。
+
 ## 介绍
 
 Atiyah-Singer指标定理（Atiyah–Singer Index Theorem）是20世纪数学中最深刻的定理之一，由 Michael Atiyah 和 Isadore Singer 在1963年证明。该定理断言：紧流形上椭圆算子的解析指标（核的维数减去余核的维数）等于拓扑指标（由流形和算子符号类决定的示性数）。具体地，对紧流形 $M$ 上的椭圆伪微分算子 $D$，有

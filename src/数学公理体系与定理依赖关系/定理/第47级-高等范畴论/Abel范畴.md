@@ -1,5 +1,9 @@
 # Abel范畴
 
+> **一句话大白话**：一个能"做加法、有核、能取商、行列互换也凑合"的范畴——宛如模块世界的抽象版；Abel 范畴上可以自然定义同调、正合列与导出函子。
+>
+> **小例子**：$\mathbf{Mod}_R$（$R$-模范畴）、$\mathbf{Ab}$、层范畴都是 Abel 范畴；正合列 $0\to A\to B\to C\to 0$ 完全在范畴语言里进行而不必管元素。
+
 ## 介绍
 
 Abel范畴（Abelian Category）是范畴论中一种重要的范畴类型，它结合了加性范畴和某些良好性质，使得可以在其中进行同调代数运算。Abel范畴的概念由 Alexandre Grothendieck 在其1957年的里程碑论文《Sur quelques points d'algèbre homologique》中系统阐述。Abel范畴是核与余核都存在且满足某些相容性条件的加性范畴，其核心性质是：每个态射都有核和余核，且每个单态射都是余核，每个满态射都是核。典型例子包括：Abel群范畴 $\mathbf{Ab}$、环上的模范畴 $\mathbf{R\text{-}Mod}$、以及某些函子范畴。

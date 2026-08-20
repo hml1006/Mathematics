@@ -1,5 +1,9 @@
 # Yoneda引理
 
+> **一句话大白话**：一个预层的"全部信息"就写在它的每个取值 $\mathrm{Hom}(h_A,F)$ 里，而自然变换 $\mathrm{Hom}(-,A)\Rightarrow F$ 与对象 $F(A)$ 的元素一一对应——"看 A"和"摸 A 本身"是同一件事。
+>
+> **小例子**：$\mathrm{Nat}(h_A,F)\cong F(A)$；取 $F=h_B$ 更是给出 $\mathrm{Hom}(B,A)\cong\mathrm{Hom}(A,B)$ 的自然同构以及"对象由它被打量方式唯一决定"的忠实性。
+
 ## 介绍
 
 Yoneda引理（Yoneda Lemma）是范畴论中最基本的定理之一，由日本数学家米田信夫（Nobuo Yoneda）提出。该引理断言：对任意局部小范畴 $\mathcal{C}$ 中的对象 $A$ 和任意函子 $F: \mathcal{C} \to \mathbf{Set}$，从 $A$ 出发的 Hom 函子 $\mathrm{Hom}_{\mathcal{C}}(A, -)$ 到 $F$ 的自然变换全体与集合 $F(A)$ 之间存在一一对应。Yoneda引理揭示了范畴中的对象完全由其与其它对象的关系决定，这一深刻的洞察贯穿了整个现代数学。

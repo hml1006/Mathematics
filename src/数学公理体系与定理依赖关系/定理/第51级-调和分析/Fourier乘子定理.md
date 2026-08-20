@@ -1,5 +1,9 @@
 # Fourier 乘子定理（Mikhlin 乘子定理）
 
+> **一句话大白话**：在频域给函数"乘上一个频率函数"（乘子）再变回来，这种做法在时间空间的很多范数下是"温和有界"的——只要这个频率函数满足一定光滑与衰减条件，就不用担心把信号放大到失控。
+>
+> **小例子**：$Tf$ 满足 $\widehat{Tf}(\xi)=m(\xi)\hat f(\xi)$，Mikhlin 定理说若 $|\xi^{|\alpha|}\partial^\alpha m(\xi)|\le C$ 对 $|\alpha|\le\lfloor n/2\rfloor+1$ 成立，则 $T$ 在 $L^p$（$1<p<\infty$）上有界——"光滑且衰减的乘子不会破坏 $L^p$ 范数"。
+
 ## 一、定理介绍
 
 Fourier 乘子理论研究的是：给定一个有界函数 $m(\xi)$，定义算子 $T_m f = \mathcal{F}^{-1}[m \cdot \hat{f}]$，问 $T_m$ 在 $L^p$ 空间上是否有界？这样的 $m$ 称为 $L^p$ 乘子。

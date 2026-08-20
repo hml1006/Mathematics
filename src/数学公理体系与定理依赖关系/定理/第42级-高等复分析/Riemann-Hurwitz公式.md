@@ -1,6 +1,8 @@
 # Riemann–Hurwitz 公式
 
-## 介绍
+> **一句话大白话**：两条黎曼曲面之间的"覆盖映射"（几幅地图叠在一起），其"总页数"（度数）、"折叠坑"（分支点的重数）与曲面本身有多少洞（Euler 示性数）之间，有一条铁律般的账本公式——折叠得越多，拓补特征就要相应调整。
+>
+> **小例子**：对度数 $d$ 的分支覆盖，$2-2\tilde g=d(2-2g)-\sum_p(e_p-1)$；比如由 $\mathbb{P}^1$ 二度覆盖 $\mathbb{P}^1$ 在单点有 2 个 branch 点，则 $\tilde g=0$，满足公式平衡。
 
 Riemann–Hurwitz 公式（Riemann–Hurwitz formula）是 Riemann 面理论中的基本公式，由 Bernhard Riemann 和 Adolf Hurwitz 建立。该公式描述了 Riemann 面之间的全纯映射的度数、分支点数和 Riemann 面的 Euler 示性数之间的关系。它是代数拓扑与复分析交汇的经典结果，广泛应用于 Riemann 面的分类、代数曲线理论和 Galois 覆盖的研究中。
 

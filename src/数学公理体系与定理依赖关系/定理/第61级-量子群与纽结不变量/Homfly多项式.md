@@ -1,5 +1,9 @@
 # HOMFLY多项式
 
+> **一句话大白话**：给一条打了结的绳子的绕法编一个含有两个字母的多项式"签名"，打结方式不同签名就不同，能用来分辨不同的结。
+>
+> **小例子**：圆环（平凡结）取 $1$；三叶结的 HOMFLY 多项式为 $-l^2-l^{-2}+l^2m^2$（以 $l,m$ 为参数），令 $l=-t^{1/2},\,m=-t^{-1/4}$ 就退化为 Jones 多项式。
+
 ## 一、定理介绍
 HOMFLY 多项式是 Jones 多项式的双参数推广，由 Hoste、Ocneanu、Millett、Freyd、Lickorish 与 Yetter 在 1985 年左右独立发现。通过参数 specialization 后可得到 Jones、Alexander–Conway 等多项式。
 

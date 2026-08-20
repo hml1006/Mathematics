@@ -1,5 +1,9 @@
 # $\bar{\partial}$-Neumann 问题
 
+> **一句话大白话**：多复变里"每点单复都光滑→整体"要解一个算子方程 $\bar\partial u=f$，但直接在边界难；Neumann做法是把它化作"带边界条件的椭圆型方程"再解——这就把'逐点可解的解析性'化成了一个可严格求解的边值问题的核心手段。
+>
+> **小例子**：在强伪凸域上，$\bar\partial$ 方程解的 $L^2$ 正则性由 $\bar\partial$-Neumann 算子 $(\bar\partial\bar\partial^*+\bar\partial^*\bar\partial)^{-1}$ 的紧性保证——Hörmander 型的解给出"局部解总能粘成全局解"，配合估计与层上同调。
+
 ## 一、定理介绍
 
 $\bar{\partial}$-Neumann 问题是多复变函数论中最基本的边值问题之一，由 Donald Spencer 和 Kohn–Rossi 等人在 20 世纪 60 年代发展成形。它研究的是在伪凸域 $\Omega \subset \mathbb{C}^n$ 上，如何用 $L^2$ 方法求解 $\bar{\partial}$ 方程

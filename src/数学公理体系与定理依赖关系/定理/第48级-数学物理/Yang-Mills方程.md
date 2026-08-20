@@ -1,5 +1,9 @@
 # Yang-Mills方程
 
+> **一句话大白话**：把 Maxwell 的电磁方程推广到"非交换的规范场"：场强 $F=dA+A\wedge A$ 满足 $d_AF=\star JF$（运动方程）和 Bianchi 恒等式 $d_AF=0$；$A$ 与 $F$ 在规范变换下像"联络与曲率"。
+>
+> **小例子**：单位元上取联络 $A$ 时，Yang–Mills 方程即 $\nabla^{A}\!\star F_A=J$；自对偶解（$F=-*F$，四维）给出瞬子，一端联系着模空间的几何。
+
 ## 介绍
 
 Yang-Mills方程（Yang-Mills Equations）是杨振宁和 Robert Mills 在1954年提出的非Abel规范场论的基本方程，是 Maxwell 方程的非Abel推广。Yang-Mills理论描述了一类由非交换李群（如 $SU(n)$）刻画的规范场（即"杨-米尔斯场"），其方程是规范势的 Euler-Lagrange 方程。Yang-Mills方程在现代物理学中扮演着核心角色——它是标准模型（$SU(3) \times SU(2) \times U(1)$ 规范群）的数学基础，描述了强相互作用和弱相互作用。在数学上，Yang-Mills方程是纤维丛上联络的变分方程，其解（Yang-Mills联络）是规范理论几何研究的核心对象。

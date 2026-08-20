@@ -1,5 +1,9 @@
 # Chern 特征标
 
+> **一句话大白话**：给每个向量丛"贴一张特征价签"（有理上同调类），且把 K 类的加法与乘法翻译成上同调的加乘——是连接两种"洞的账本"之间的忠实翻译官。
+>
+> **小例子**：对线丛 $L$，$\mathrm{ch}(L)=e^{c_1(L)}=1+c_1+\tfrac12c_1^2+\cdots$；此映射满足 $\mathrm{ch}(E\oplus F)=\mathrm{ch}\,E+\mathrm{ch}\,F$、$\mathrm{ch}(E\otimes F)=\mathrm{ch}\,E\cdot\mathrm{ch}\,F$。
+
 ## 一、定理介绍
 
 Chern 特征标是 K 理论与上同调之间的桥梁，由 Shiing-Shen Chern 和陈省身的工作发展而来。它是一个环同态 $\text{ch}: K(X) \to H^*(X; \mathbb{Q})$，将向量丛的 K 类映射到有理上同调类。

@@ -1,5 +1,9 @@
 # Vaughan恒等式与Vinogradov三素数定理
 
+> **一句话大白话**：Vinogradov 证明"充分大的奇数都能写成三个素数之和"：先用 Vaughan 恒等式把指数和里难控的"长型/短型"项剥开，再对失控部分用 Vinogradov 均值定理压住误差。
+>
+> **小例子**：一个奇数 $N$ 的三素数表示数 $\approx \dfrac{N^2}{2(\ln N)^3}\times$(个别的奇异级数)，Vinogradov 把 $N \ge 3^{3^{15}}$ 转化成了可显式验证的界。
+
 ## 介绍
 
 Vinogradov 三素数定理（1937）是解析数论中的里程碑式成果，由 Ivan Vinogradov 证明。该定理断言：每个充分大的奇数可以表示为三个素数之和。这是 Goldbach 猜想（每个大于 2 的偶数可表示为两个素数之和）的弱形式的重要进展。Vinogradov 的证明中引入了对指数和 $\sum_{p \leq x} e^{2\pi i p\alpha}$ 的精细估计，其中 Vaughan 恒等式（由 R. C. Vaughan 于 1977 年系统化）是处理此类素数指数和的核心工具。

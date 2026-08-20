@@ -1,5 +1,9 @@
 # Gelfand-Naimark-Segal (GNS) 构造
 
+> **一句话大白话**：给定一个"取平均/期望"的法则（状态），就能凭空造出一个希尔伯特空间，把每个代数元素变成实实在在的算子——状态先生成空间，抽象代数由此落地。
+>
+> **小例子**：对矩阵代数 $M_n(\mathbb{C})$ 取"规范化迹"态 $\omega(T)=\tfrac1n\operatorname{tr}T$，GNS 表示自然落在 $\mathbb{C}^n$ 上，且 $\omega$ 由单位向量 $\frac1{\sqrt n}(1,\ldots,1)$ 实现。
+
 ## 一、定理介绍
 
 Gelfand-Naimark-Segal (GNS) 构造是 C*-代数表示理论中最基本和最重要的工具之一。它表明：给定 C*-代数上的任意状态（正线性泛函），都可以构造出一个 Hilbert 空间表示，使得该状态由 Hilbert 空间中的某个向量实现。

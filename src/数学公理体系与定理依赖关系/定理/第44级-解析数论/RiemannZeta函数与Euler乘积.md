@@ -1,5 +1,9 @@
 # RiemannZeta函数与Euler乘积
 
+> **一句话大白话**：整个求和跑遍所有自然数，却可以等价地写成"扫过所有素数"的无穷乘积——这一步把素数的隐秘分布翻译成了解析函数的性质，成了连接数论与分析的大桥。
+>
+> **小例子**：对 $\mathrm{Re}\,s>1$，$\zeta(s)=\displaystyle\sum_{n=1}^{\infty}\frac1{n^s}=\prod_{p}\frac1{1-p^{-s}}$，这个 Euler 乘积正是由算术基本定理（每数唯一分解为素数幂）保证的。
+
 ## 介绍
 
 Riemann Zeta 函数是解析数论中最核心的函数，由 Leonhard Euler 在 18 世纪首次研究，后由 Bernhard Riemann 在 1859 年的著名论文中进行了系统分析。Zeta 函数定义为 $\zeta(s) = \sum_{n=1}^\infty n^{-s}$，对 $\operatorname{Re}(s) > 1$ 绝对收敛。Euler 乘积公式 $\zeta(s) = \prod_{p} (1 - p^{-s})^{-1}$ 将 Zeta 函数与素数分布联系起来，是解析数论的基石之一。

@@ -1,5 +1,9 @@
 # Witten的Morse理论
 
+> **一句话大白话**：Witten 给 Morse 函数加上一个"能标度"$f/t$ 并把拉普拉斯算子扭转成 $d+d^*$ 的"弯曲版本"，让同调只在临界点附近"活"着——于是原本靠临界点分类的 Morse 理论变成了超对称量子力学里的"真空态"问题。
+>
+> **小例子**：Witten 变形 $d_t=e^{-tf}de^{tf}$ 使拉普莱斯算子的核（同调）集中在临界点，指标的大小由临界点的 Morse 指标 $i(p)$ 唯一决定，从而给出 Morse 不等式的解析证明。
+
 ## 介绍
 
 Witten的Morse理论（Witten's Morse Theory）是 Edward Witten 在1982年提出的将 Morse 理论与量子力学超对称性相结合的革命性方法。传统的 Morse 理论通过光滑函数 $f: M \to \mathbb{R}$ 的临界点来研究流形 $M$ 的拓扑，而 Witten 通过引入"扭曲的" de Rham 复形 $e^{-f/\hbar} d e^{f/\hbar}$ 以及参数 $\hbar \to 0$ 的极限，将 Morse 不等式解释为量子力学中基态简并度的指标。Witten 的方法不仅给出了 Morse 不等式的"物理"证明，还建立了 Morse 理论与瞬子、隧道效应和超对称量子力学之间的深刻联系，并导致了 Floer 同调论的诞生。

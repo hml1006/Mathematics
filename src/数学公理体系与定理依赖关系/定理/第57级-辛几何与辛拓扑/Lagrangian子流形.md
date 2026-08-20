@@ -1,5 +1,9 @@
 # Lagrangian 子流形
 
+> **一句话大白话**：在"守恒容积"几何（辛空间）里，有一类"正好一半大小、且各切平面全都'彼此拉不开面积'"的子流形（Lagrangian）——它们像"半个空间并排零面积互叠"的平面，是辛几何最核心的对象，几乎到处出现（如经典力学中的位形空间泡）。
+>
+> **小例子**：$\mathbb{R}^{2n}=\mathbb{R}^n_x\times\mathbb{R}^n_p$ 中的 $\mathbb{R}^n_x$（"位置轴"）是 Lagrangian 子流形；对任意 $f$，图 $\mathrm{gr}(df)$ 也是——图解形的像（微商图的像）自动是 Lagrangian，给出多种例子并连接于可积系统与量子对应。
+
 ## 一、定理介绍
 
 Lagrangian 子流形理论是辛几何的核心分支，由 Jean-Louis Koszul 和 André Lichnerowicz 在 20 世纪 50 年代引入，并由 Vladimir Arnold 在 60-80 年代发展为辛拓扑与经典力学的中心研究对象。

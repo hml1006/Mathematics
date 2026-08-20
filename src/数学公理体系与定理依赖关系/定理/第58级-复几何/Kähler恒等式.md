@@ -1,5 +1,9 @@
 # Kähler 恒等式
 
+> **一句话大白话**：Kähler 流形上有一组铁律般的算子关系（如 $L$ 与外微分 $d$、$\partial$、$\bar\partial$ 不断交换），它们把'乘辛形式'、'取拉普拉斯'等折腾得彻底对齐——这组恒等式（李代数 sl₂ 型）正是 Hodge 分解与刚性的幕后引擎，是 Kähler 世界最亮的"代数振幅表"。
+>
+> **小例子**：$[L,\bar\partial]=0,\ [L,d]=0,\ [L,\Delta_{\bar\partial}]=0$ 等 Kähler 恒等（以及 $d,\ d^*$ 与 $L$ 的 sl₂ 表示），令推出 $\ \Delta=2\Delta_{\bar\partial}=2\Delta_\partial$——复与实拉普拉斯对齐，Hodge 分解因之成立，硬地把 Kähler 与普通几乎等同起来。
+
 ## 一、定理介绍
 
 Kähler 恒等式是 Kähler 几何的核心恒等式之一，由 Kähler、Hodge 等人发展，并经 Kodaira-Spencer 严格化。该恒等式断言：在 Kähler 流形 $(X, \omega)$ 上，三种 Laplacian 算子——实 de Rham Laplacian $\Delta_d$、$(1,0)$-Laplacian $\Delta'$、$(0,1)$-Laplacian $\Delta''$——彼此重合（至多相差常数因子）：

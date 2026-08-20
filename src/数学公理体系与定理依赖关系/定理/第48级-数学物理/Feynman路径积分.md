@@ -1,5 +1,9 @@
 # Feynman路径积分
 
+> **一句话大白话**：量子跃迁的振幅 = "所有可能路径的相位 $e^{iS/\hbar}$ 求和"——经典路径是相消中幸存的那条，其余互相抵消；$U(t)\propto\int\mathcal D[x]\,e^{iS[x]/\hbar}$ 把量子力学谱成"对轨迹的积分"。
+>
+> **小例子**：自由粒子的传播子 $\langle x_f|e^{-iHt}|x_i\rangle=\int_{x_i}^{x_f}\mathcal D[x]e^{iS[x]}$，高斯型积出 $\sqrt{\frac{m}{2\pi i\hbar t}}\,e^{im(x_f-x_i)^2/2\hbar t}$，与经典结果一致。
+
 ## 介绍
 
 Feynman路径积分（Feynman Path Integral）是 Richard Feynman 在1948年提出的量子力学表述，它通过所有可能路径的振幅叠加来刻画量子系统的演化。路径积分的基本思想是：粒子从点 $x_a$ 到点 $x_b$ 的传播子（transition amplitude）等于所有可能路径的贡献之和，每条路径的贡献由作用量的指数 $e^{iS/\hbar}$ 给出。数学上，路径积分是定义在无限维函数空间上的积分，其严格化是泛函分析和概率论中的重要课题。路径积分在量子场论、统计力学和凝聚态物理中有着广泛的应用。

@@ -1,5 +1,9 @@
 # Frenet-Serret公式
 
+> **一句话大白话**：描述一条空间曲线怎样用"切向、法向、次法向"三个贴身标架旋转前进——曲线的弯（曲率）和拧（挠率）就是这个标架随弧长转动的速度。
+>
+> **小例子**：对单位速度曲线 $\gamma(s)$，记 $T=\gamma'$、$N=T'/|T'|$、$B=T\times N$，则 Frenet-Serret给出 $\frac{d}{ds}\begin{bmatrix}T\\N\\B\end{bmatrix}=\begin{bmatrix}0&\kappa&0\\ -\kappa&0&\tau\\0&-\tau&0\end{bmatrix}\begin{bmatrix}T\\N\\B\end{bmatrix}$，平面曲线 $\tau=0$、螺旋线两者皆非零。
+
 ## 介绍
 
 Frenet-Serret公式是微分几何中刻画空间曲线几何性质的基本公式，由法国数学家 Frenet 和 Serret 在 19 世纪中叶独立提出。它描述了空间曲线上切向量、主法向量和副法向量（合称为 Frenet 标架）沿弧长参数的变化率，通过曲率和挠率两个几何量完整地刻画了曲线的局部形状。这个公式是曲线理论的基石，也是理解曲线局部几何性质的核心工具。

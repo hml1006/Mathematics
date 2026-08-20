@@ -1,5 +1,9 @@
 # Tracy-Widom 分布
 
+> **一句话大白话**：巨型随机矩阵"最大的那个特征值"波动到哪儿是有规律的——经过恰当缩放后，它服从一个固定不变的 Tracy-Widom 分布，而不受具体排列方式扰乱。
+>
+> **小例子**：对 $n\times n$ 高斯酉系（GUE），令 $\lambda_{\max}$ 为最大特征值，则 $n^{1/6}(\lambda_{\max}-2\sqrt n)$ 随 $n\to\infty$ 依分布收敛到 Tracy-Widom 分布 $F_2$。
+
 ## 一、定理介绍
 
 Tracy-Widom 分布是随机矩阵理论中描述最大特征值在适当中心化与缩放后极限分布的一类重要概率分布。与 Wigner 半圆律和 Marchenko-Pastur 定律刻画特征值的宏观 bulk 分布不同，Tracy-Widom 定律关注的是谱边缘的微观涨落。Tracy 与 Widom 在 1990 年代证明了 GUE（Gaussian Unitary Ensemble）的最大特征值在 $N^{-2/3}$ 尺度下收敛到一个由 Painlevé II 方程显式刻画的分布。这一定律后来在大量随机矩阵模型和组合问题中被发现具有惊人的普适性。

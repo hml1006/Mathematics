@@ -1,5 +1,9 @@
 # Hodge 定理（复形式）
 
+> **一句话大白话**：紧 Kähler 流形上，每类"同调代表的复数形式"里总有且恰有一位"处处和谐者"（调和形式）当代表——同调号可统一由调和的代表呈出，使复环圈分类与拉普拉斯算子零空间画上等号，是复 Hodge 理论的发动机。
+>
+> **小例子**：对紧黎曼复流形与复拉普拉斯 $\Box=\bar\partial\bar\partial^*+\bar\partial^*\bar\partial$，每个 de Rham/$\bar\partial$-类含唯一调和代表，故 $H^k(X)\simeq\mathcal H^k$；数值即调和周形的维度，像在圆环上比"同调圈"数与之和相等。
+
 ## 一、定理介绍
 
 Hodge 定理的复形式是 Kähler 几何的基础结果，由 W. V. D. Hodge 在 1930-1940 年代发展，并在 Gårding、Kodaira、Spencer 等人严格化后成型。该定理断言：在紧 Kähler 流形上，每一个 de Rham 上同调类都有唯一的调和代表元，且调和形式空间的维数有限。

@@ -1,5 +1,9 @@
 # Hamiltonian力学与辛几何
 
+> **一句话大白话**：把经典力学的相空间看成"别商空间"（辛流形），哈密顿量 $H$ 给出速度场 $X_H$，而这里的几何不变量就是辛形式 $\omega$——它保证了体积不变、泊松括号是李括号等机械理论的核心事实。
+>
+> **小例子**：$\mathbb{R}^{2n}$ 上的标准辛形式 $\omega=\sum dp_i\wedge dq_i$ 给出哈密顿方程 $\dot q=\partial H/\partial p,\ \dot p=-\partial H/\partial q$；Liouville 定理（相体积不变）本质是 $\mathcal L_{X_H}\omega=0$。
+
 ## 介绍
 
 Hamiltonian力学与辛几何（Hamiltonian Mechanics and Symplectic Geometry）是经典力学在辛流形上的几何化表述。Hamiltonian力学由 William Rowan Hamilton 在1833年提出，将 Lagrange 力学中的二阶方程转化为相空间上的一阶方程。辛几何则是这种表述的自然几何框架——相空间是一个辛流形，Hamiltonian 向量场给出了动力学方程，Poisson 括号给出了可观测量的代数结构。这一理论架起了经典力学与几何之间的桥梁，是理解 Noether 定理、可积系统以及几何量子化的基础。

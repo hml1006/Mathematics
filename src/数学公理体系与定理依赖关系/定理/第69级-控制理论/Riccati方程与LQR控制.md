@@ -1,5 +1,9 @@
 # Riccati 方程与线性二次调节器（LQR）
 
+> **一句话大白话**：LQR 在"省力"和"别偏离目标"之间取最佳平衡，关键落在一个Riccati方程上：解出 $P$ 后，最优反馈增益就是 $K=-R^{-1}B^TP$，系统既稳定又最优。
+>
+> **小例子**：对线性系统 $\dot x=Ax+Bu$ 最小化 $\int_0^\infty(x^TQx+u^TRu)\,dt$，令 $A^TP+PA-PBR^{-1}B^TP+Q=0$ 求正定解 $P$，即得稳定且最优的反馈 $u=Kx$。
+
 ## 一、定理介绍
 
 线性二次调节器（Linear Quadratic Regulator, LQR）是最优控制中最经典、应用最广泛的问题之一。它研究如何为线性系统选择一个状态反馈控制律，使得一个关于状态与控制的二次性能指标达到最小。该问题的最优解可由代数 Riccati 方程（Algebraic Riccati Equation, ARE）或微分 Riccati 方程的解给出，形成线性状态反馈 $u^*=-Kx$。

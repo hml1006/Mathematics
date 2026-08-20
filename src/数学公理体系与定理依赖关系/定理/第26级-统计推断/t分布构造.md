@@ -1,5 +1,9 @@
 # t分布构造
 
+> **一句话大白话**：标准正态除以"卡方除以自由度再开方"得到的商服从 t 分布：$T=\frac{Z}{\sqrt{V/\nu}}\sim t_\nu$。方差未知时用它推平均，比正态分布"尾巴更肥"。
+>
+> **小例子**：$X_1,\dots,X_n\sim N(\mu,\sigma^2)$，$\sigma$ 未知，则 $T=\frac{\bar X-\mu}{S/\sqrt n}\sim t_{n-1}$，直接用它构造 $\mu$ 的置信区间 $\bar X\pm t_{n-1,\alpha/2}\frac{S}{\sqrt n}$。
+
 ## 介绍
 
 t 分布（Student's t-distribution）是统计推断中最重要的分布之一，由 William Sealy Gosset 于 1908 年以笔名"Student"发表。t 分布的构造基于标准正态分布与卡方分布的比值：若 $Z \sim N(0, 1)$ 与 $V \sim \chi^2_\nu$ 独立，则 $T = Z/\sqrt{V/\nu}$ 服从自由度为 $\nu$ 的 t 分布，记为 $T \sim t_\nu$。t 分布是正态总体下均值推断的核心工具，在样本量较小且总体方差未知时，用于构造均值的置信区间和进行假设检验。t 分布的概率密度函数为 $f(t) = \frac{\Gamma((\nu+1)/2)}{\sqrt{\nu\pi}\,\Gamma(\nu/2)}\left(1 + \frac{t^2}{\nu}\right)^{-(\nu+1)/2}$。

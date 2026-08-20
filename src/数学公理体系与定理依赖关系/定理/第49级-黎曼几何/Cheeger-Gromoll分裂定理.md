@@ -1,5 +1,9 @@
 # Cheeger-Gromoll 分裂定理
 
+> **一句话大白话**：一个"处处不往内弯"（Ricci ≥ 0）且包含一条能无限延长的测地线（直线）的完整流形，可以被"拆成"欧氏直线股 $\mathbb{R}\times$（更低维的另一块）——一条拉直的正曲率流形，"直接从直线处裂开"成乘积。
+>
+> **小例子**：圆柱 $\mathbb{R}\times S^1$ 的曲率为0（Ricci非负）且有一条沿轴向无限延伸的直线，Cheeger-Gromoll 正是把整体$M$写成分裂积 $\mathbb{R}\times M'$；有理据有直线就能"切一刀"成乘积结构。
+
 ## 一、定理介绍
 
 Cheeger-Gromoll 分裂定理是 Riemann 几何中的基本定理，由 Jeff Cheeger 和 Detlef Gromoll 于 1971 年证明。该定理断言：若完备 Riemann 流形具有非负 Ricci 曲率且包含一条直线（即测地线在两个方向上都是最短的），则该流形等距同构于 Riemann 积 $\mathbb{R} \times N$。

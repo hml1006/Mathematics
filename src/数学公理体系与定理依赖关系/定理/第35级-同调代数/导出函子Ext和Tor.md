@@ -1,5 +1,9 @@
 # 导出函子Ext和Tor
 
+> **一句话大白话**：有些测量工具（Hom、张量积）用了不"保精确"，会漏掉精度的尾巴；导出函子就是把这条尾巴系统地"算到底"，得到一组修正项 Ext 与 Tor，正如把一条误差链一口气垒到尽头。
+>
+> **小例子**：对短正合列 $0\to A\to B\to C\to0$，Hom 不再正合，漏出的部分正是 $\mathrm{Ext}^1$ 一环接一环串成的长正合列；张量积的对应尾巴由 $\mathrm{Tor}_n$ 接住。
+
 ## 介绍
 
 $\operatorname{Ext}$ 和 $\operatorname{Tor}$ 是同调代数中最重要的导出函子，它们分别由 Hom 函子和张量积函子导出。$\operatorname{Ext}^n_R(A, B)$ 衡量了 Hom 函子 $\operatorname{Hom}_R(A, -)$ 或 $\operatorname{Hom}_R(-, B)$ 的右导出，而 $\operatorname{Tor}_n^R(A, B)$ 衡量了张量积函子 $(-) \otimes_R B$ 或 $A \otimes_R (-)$ 的左导出。这两个函子在模论、代数拓扑、代数几何和表示论中具有核心地位，提供了丰富的同调不变量。

@@ -1,5 +1,9 @@
 # F分布构造
 
+> **一句话大白话**：把两个独立卡方变量各自除以自由度再相除，得到的商服从 F 分布 $F=\frac{V_1/\nu_1}{V_2/\nu_2}\sim F(\nu_1,\nu_2)$，适合比较两组的"伸缩程度"（方差）。
+>
+> **小例子**：比较两个正态总体方差 $H_0:\sigma_1^2=\sigma_2^2$，用 $F=\frac{S_1^2}{S_2^2}\sim F(n_1-1,n_2-1)$ 作为检验统计量，$F$ 偏大或偏小就拒绝原假设。
+
 ## 介绍
 
 F 分布（Fisher-Snedecor F-distribution）是数理统计中用于方差比较的重要分布，由 Ronald Fisher 和 George Snedecor 提出。F 分布的构造基于两个独立卡方变量的比值：若 $V_1 \sim \chi^2_{\nu_1}$ 与 $V_2 \sim \chi^2_{\nu_2}$ 独立，则 $F = \frac{V_1/\nu_1}{V_2/\nu_2}$ 服从自由度为 $(\nu_1, \nu_2)$ 的 F 分布，记为 $F \sim F(\nu_1, \nu_2)$。F 分布是方差分析（ANOVA）、回归分析中整体显著性检验和两正态总体方差比推断的基础。其概率密度函数为 $f(x) = \frac{\Gamma((\nu_1+\nu_2)/2)}{\Gamma(\nu_1/2)\Gamma(\nu_2/2)} \left(\frac{\nu_1}{\nu_2}\right)^{\nu_1/2} x^{\nu_1/2-1} \left(1 + \frac{\nu_1}{\nu_2}x\right)^{-(\nu_1+\nu_2)/2}$。

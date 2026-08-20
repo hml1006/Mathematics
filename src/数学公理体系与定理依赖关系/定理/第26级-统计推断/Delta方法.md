@@ -1,5 +1,9 @@
 # Delta方法
 
+> **一句话大白话**：估计量本身约成正态时，给它套一个光滑函数 $g$ 仍是约正态的，只是方差要乘上导数的平方 $[g'(\theta)]^2$——就像小振幅线性化：$\sqrt n(g(\hat\theta)-g(\theta))\to N(0,[g'(\theta)]^2\sigma^2)$。
+>
+> **小例子**：$X_i\sim Poi(\lambda)$，MLE $\hat\lambda=\bar X$ 有渐近方差 $\lambda/n$。用 $g=\log$，则 $\sqrt n(\log\hat\lambda-\log\lambda)\to N(0,\frac1\lambda)$，方差稳定为 $1/\lambda$。
+
 ## 介绍
 
 Delta 方法（Delta Method）是数理统计中用于推导统计量渐近分布的重要工具。该方法的核心理念是：若一个统计量 $\hat{\theta}$ 渐近正态，则其光滑函数变换 $g(\hat{\theta})$ 也渐近正态，且渐近方差可通过 Delta 方法计算。具体而言，若 $\sqrt{n}(\hat{\theta} - \theta) \xrightarrow{d} N(0, \sigma^2)$，且 $g$ 在 $\theta$ 处可导且 $g'(\theta) \neq 0$，则 $\sqrt{n}(g(\hat{\theta}) - g(\theta)) \xrightarrow{d} N(0, [g'(\theta)]^2\sigma^2)$。Delta 方法在方差稳定化变换、参数估计的渐近分布推导和置信区间构造中广泛应用，是渐近统计理论中最基本的工具之一。

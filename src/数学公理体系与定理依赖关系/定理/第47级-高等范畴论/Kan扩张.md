@@ -1,5 +1,9 @@
 # Kan扩张
 
+> **一句话大白话**：把"只在某个子范畴/小图上定义的函子"最优地"延伸"到更大的范畴，且带一个万有性质——它是范畴里最一般的"归纳/极限"操作，几乎所有构造（$\lim$、$\operatorname{colim}$、米田、伴随）都可以编码成 Kan 扩张。
+>
+> **小例子**：左 Kan 扩张 $\operatorname{Lan}_K F$ 给出从 $C$ 延伸 $F$ 的最左候选；而"沿箭头求余极限"正是沿米田嵌入的那类 Kan 扩张，涵盖大量经典构造。
+
 ## 介绍
 
 Kan扩张（Kan Extension）是范畴论中一个极为重要的概念，由 Daniel M. Kan 提出。它提供了一种统一的方式来"延伸"一个函子沿着另一个函子，是范畴论中许多构造（如伴随函子、极限、Yoneda嵌入等）的通用框架。粗略地说，给定函子 $F: \mathcal{A} \to \mathcal{E}$ 和 $K: \mathcal{A} \to \mathcal{B}$，$F$ 沿 $K$ 的左Kan扩张是一个函子 $\mathrm{Lan}_K F: \mathcal{B} \to \mathcal{E}$ 以及一个自然变换 $\eta: F \Rightarrow \mathrm{Lan}_K F \circ K$，使得该构造满足泛性质。Kan扩张的普遍性使其被称为"范畴论中所有概念之母"。

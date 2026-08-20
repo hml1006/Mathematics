@@ -1,5 +1,9 @@
 # Serre 对偶定理
 
+> **一句话大白话**：闭复流形上，下标 $q$ 的上同调与倒转下标 $n-q$ 的往下同调互为"镜像副本"——所谓对偶，即 $\mathrm{H}^ q(\mathcal{F})$ 的度量数恰来自 $\mathrm{H}^{n-q}(K\otimes\mathcal F^*)$ 的展开，高阶与"垫底"互换流通，是复几何里"南与北镜像对称"的定理。
+>
+> **小例子**：对紧维复流形 $X$ 与凝聚层 $\mathcal F$，有 $H^q(X,\mathcal F)^*\simeq H^{n-q}(X,K_X\otimes\mathcal F^*)$；亏格 $g$ 曲线上 $h^0(D)-h^0(K-D)=\deg D+1-g$（Riemann–Roch 的别门），正因 Serre 对偶把 $H^1(D)$ 与 $H^0(K-D)$ 镜像对齐——'上前、下后镜像'式配对。
+
 ## 一、定理介绍
 
 Serre 对偶定理是复几何与层上同调理论的基础结果，由 Jean-Pierre Serre 于 1955 年在代数几何背景下证明，并随后由 Kodaira-Spencer 推广至紧复流形情形。该定理断言：在 $n$ 维紧复流形 $X$ 上，对任意全纯向量丛 $E$，存在自然同构：
