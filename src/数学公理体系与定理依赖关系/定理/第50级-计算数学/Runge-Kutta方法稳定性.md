@@ -10,6 +10,8 @@ Runge-Kutta方法（Runge–Kutta Methods）是求解常微分方程初值问题
 
 ## 分析
 
+**前置依赖**：常微分方程初值问题、Runge-Kutta 方法与 Butcher 表、线性测试方程 $y'=\lambda y$、$e^z$ 的 Padé 逼近、$A$-稳定性与 $L$-稳定性概念。
+
 **定义**：将 Runge-Kutta 方法应用于测试方程 $y' = \lambda y$，$y(0) = 1$，得到 $y_{n+1} = R(h\lambda) y_n$，其中 $R(z)$ 是方法的**稳定性函数**。方法的**绝对稳定性区域**为 $\{z \in \mathbb{C} : |R(z)| \le 1\}$。
 
 **常见 Runge-Kutta 方法的稳定性函数**：

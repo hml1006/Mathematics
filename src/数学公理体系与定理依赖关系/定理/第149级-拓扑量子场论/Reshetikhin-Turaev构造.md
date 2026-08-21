@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：量子群$U_q(\mathfrak{g})$、R-矩阵与辫结、模块化张量范畴、编织tangle赋值、Dehn手术
+
 Reshetikhin–Turaev 构造（RT，Reshetikhin–Turaev 1991）以量子群（$U_q(\mathfrak g)$、$q=\exp(2\pi i/(k+h^\vee))$）的有限维表示构造出一个模块化张量范畴，再用"手术 + R-矩阵"给出三维定向流形与纽结的量子不变量，并进而得到一个三维 TQFT。它与 Witten 的 Chern–Simons 理论相符，是 Jones 型不变量的严谨代数实现。
 
 ## 二、原理思路

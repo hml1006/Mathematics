@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：首次积分（守恒量）、Jacobian线性化与平衡点分析、分离变量法、Liouville定理（Hamiltonian系统）
+
 Lotka-Volterra 捕食者-猎物系统
 $$
 \frac{dx}{dt}=ax-bxy,\qquad \frac{dy}{dt}=cxy-dy,\qquad a,b,c,d>0

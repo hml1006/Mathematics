@@ -10,6 +10,8 @@ Rauch比较定理（Rauch Comparison Theorem）是黎曼几何中最重要的比
 
 ## 分析
 
+**前置依赖**：Jacobi 场与 Jacobi 方程、截面曲率、测地线与弧长参数化、共轭点、Riccati 方程比较。
+
 **定理的精确表述**（Rauch 比较定理）：设 $M$ 和 $\tilde{M}$ 是 Riemann 流形，$\gamma: [0, L] \to M$ 和 $\tilde{\gamma}: [0, L] \to \tilde{M}$ 是弧长参数化的测地线，$J$ 和 $\tilde{J}$ 是沿 $\gamma$ 和 $\tilde{\gamma}$ 的 Jacobi 场，满足：
 1. $J(0) = \tilde{J}(0) = 0$，
 2. $|\nabla_{\dot{\gamma}} J(0)| = |\nabla_{\dot{\tilde{\gamma}}} \tilde{J}(0)|$，

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：有限域与本原单位根、线性码的最小距离、Vandermonde 矩阵、线性方程组的可逆性、码的一致校验条件。
+
 **BCH 码的纠错能力**：设 $\mathbb F_q$ 特征 $p$、$\gcd(n,q)=1$，$\alpha$ 为 $\mathbb F_{q^m}$ 中 $n$ 次本原单位根。设计距离 $\delta=2t+1$ 的 BCH 码 $\mathcal C$ 以 $\alpha^b,\alpha^{b+1},\dots,\alpha^{b+\delta-2}$ 为根（即 $c(\alpha^{b+i})=0$）。则该码的最小距离 $\ge\delta=2t+1$，故可纠正至多 $t$ 个错误。
 
 ## 二、原理思路

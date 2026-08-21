@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：辛流形、Hamilton 方程与作用泛函、Morse 理论、Floer 同调、Poincaré-Birkhoff 定理。
+
 Arnold 猜想由 Vladimir Arnold 于 20 世纪 60 年代提出，是辛拓扑与 Hamilton 动力学的标志性猜想，被誉为现代辛拓扑的起点。它将 Morse 理论中临界点数与同调维数的关系类比推广到 Hamilton 同胚的不动点问题。
 
 经典形式断言：紧辛流形 $(M, \omega)$ 上非退化 Hamilton 同胚 $\varphi$ 的不动点数不低于 $M$ 上的 Betti 数之和。这一猜想的深刻性在于：它将动力学问题（Hamilton 流的不动点）与纯拓扑量（流形的同调）联系起来，表明辛结构与 Hamilton 动力学之间存在刚性约束。

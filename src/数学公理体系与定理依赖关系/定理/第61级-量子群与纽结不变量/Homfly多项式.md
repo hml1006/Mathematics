@@ -5,6 +5,9 @@
 > **小例子**：圆环（平凡结）取 $1$；三叶结的 HOMFLY 多项式为 $-l^2-l^{-2}+l^2m^2$（以 $l,m$ 为参数），令 $l=-t^{1/2},\,m=-t^{-1/4}$ 就退化为 Jones 多项式。
 
 ## 一、定理介绍
+
+> **前置依赖**：链环的拆接关系与 Reidemeister 移动、辫群与 Alexander 定理、Hecke 代数表示、Markov 定理与 Ocneanu 迹。
+
 HOMFLY 多项式是 Jones 多项式的双参数推广，由 Hoste、Ocneanu、Millett、Freyd、Lickorish 与 Yetter 在 1985 年左右独立发现。通过参数 specialization 后可得到 Jones、Alexander–Conway 等多项式。
 
 ## 二、原理思路

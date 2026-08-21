@@ -10,6 +10,8 @@ Levi-Civita联络是 Riemann 几何中最重要的结构之一，由 Tullio Levi
 
 ## 分析
 
+**前置依赖**：Riemann 度量、仿射联络与协变导数、度量相容性、向量场的李括号与无挠性
+
 **定义**：设 $(M, g)$ 是 Riemann 流形。$M$ 上的 Levi-Civita 联络 $\nabla$ 是唯一的仿射联络，满足：
 
 1. **度量相容性**（$\nabla g = 0$）：$X(g(Y, Z)) = g(\nabla_X Y, Z) + g(Y, \nabla_X Z)$，对所有向量场 $X, Y, Z$ 成立；

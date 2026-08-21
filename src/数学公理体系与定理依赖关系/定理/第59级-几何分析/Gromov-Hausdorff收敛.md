@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Hausdorff 距离、等距嵌入与 $\varepsilon$-网、对角线法则、Bishop-Gromov 体积比较、Cheeger-Gromoll 分裂定理。
+
 Gromov-Hausdorff 收敛是 Mikhail Gromov 于1981年引入的度量空间序列收敛的概念，它推广了 Hausdorff 距离的概念，使任意紧致度量空间（无论是否有 Riemann 结构）都能被嵌入到统一的框架中讨论收敛性。这一理论将度量空间视为几何对象本身，通过"近似等距嵌入"比较两个度量空间的相似程度，是现代几何、动力系统和拓扑学的核心工具。
 
 Gromov-Hausdorff 收敛理论的兴起与 Cheeger、Gromov、Colding 等人对"流形极限"的研究密不可分。当一族 Riemann 流形满足曲率有界等条件时，其 Gromov-Hausdorff 极限仍然具有良好的几何结构。最具代表性的是 Gromov 紧性定理（曲率下有界 + 直径有界蕴含紧致类）和 Cheeger-Colding 理论（Ricci 曲率下有界情形的极限结构理论）。Fukaya 序列等结果则揭示了坍塌现象下度量结构的复杂性。

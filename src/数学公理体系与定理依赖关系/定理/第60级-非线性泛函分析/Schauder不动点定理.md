@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Brouwer 不动点定理、紧集与有限 $\varepsilon$-网、凸集与 Mazur 定理、Banach 空间中紧算子理论。
+
 Schauder 不动点定理（Schauder Fixed Point Theorem）由 Juliusz Schauder 于 1930 年提出，是非线性泛函分析中最基本的不动点定理之一。它将 Brouwer 不动点定理从有限维推广到无穷维 Banach 空间，断言：**Banach 空间中紧凸集到自身的连续映射必有不动点**。
 
 该定理是研究非线性偏微分方程、积分方程、动力系统等存在性问题最常用的工具之一，相较于 Banach 不动点定理，它不要求映射是压缩的，仅要求连续性与紧性，因此适用范围远为广泛。

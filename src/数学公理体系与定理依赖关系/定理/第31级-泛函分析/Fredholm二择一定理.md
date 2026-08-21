@@ -10,6 +10,8 @@ Fredholm二择一定理（Fredholm Alternative）是积分方程理论和泛函�
 
 ## 分析
 
+**前置依赖**：紧算子的定义与性质、Riesz 引理、共轭算子、Hahn-Banach 定理
+
 **定理的精确表述**：设 $X$ 是 Banach 空间，$T: X \to X$ 是紧线性算子。则：
 
 1. $\dim \ker(I - T) < \infty$；

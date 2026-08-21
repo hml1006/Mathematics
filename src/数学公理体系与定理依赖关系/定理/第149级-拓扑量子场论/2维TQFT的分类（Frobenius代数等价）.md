@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：cobordism范畴、对称幺半函子、Frobenius代数、二维曲面Morse分解、拓扑粘贴不变性
+
 二维定向 TQFT 的分类定理（Atiyah；Dijkgraaf；Lazarov 等完备化）断言：存在范畴等价
 $$
 \operatorname{2TQFT}^{\mathrm{or}}\;\cong\;\operatorname{CommFrobAlg},

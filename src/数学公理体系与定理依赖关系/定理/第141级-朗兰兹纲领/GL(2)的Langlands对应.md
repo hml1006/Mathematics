@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：模形式的Hecke特征值理论、自守表示与其局部分解、ℓ-adic上同调、Eichler-Shimura理论、Shimura簇
+
 $GL(2)$ 的Langlands对应（即 Deligne–Milne 定理）断言：对任意数域 $F$，其 $GL_2(\mathbb{A}_F)$ 上的尖点自守表示与 $G_F$ 上的（适当限制了局部行为的）二维 $\ell$-adic Galois表示之间存在双射，且 L-函数匹配 $L(s,\pi)=L(s,\rho_\pi)$。特别地，经典模形式范畴对应的有限维 Galois表示由此被完全构造出来。
 
 ## 二、原理思路

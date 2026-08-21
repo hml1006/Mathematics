@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Weil表示与L-群参数、超cuspidal表示与抛物诱导、局部Galois上同调、ε-因子理论、类体论（n=1情形）
+
 局部Langlands对应（Harris–Taylor / Henniart）把局部域 $F$（$\mathbb{R}$、$\mathbb{C}$ 或 $\mathbb{Q}_p$ 的有限扩张）上 $GL_n(F)$ 的不可约（光滑、生成）表示与所谓 $(n$ 维) Langlands 参数——即 $W_F\times SL_2(\mathbb{C})$ 的（半单、在 $SL_2$ 上代数）表示——建立起唯一双射。它是全局对应在单点"纤维化"后的局部版本。
 
 ## 二、原理思路

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：标准 Brown 运动、Cameron-Martin 空间、Pinelis 极大不等式、Cameron-Martin 定理（测度平移）、倾斜测度。
+
 设 $\{W_t\}$ 为标准 Brown 运动，$W^\varepsilon(t)=\varepsilon W(t)$。则当 $\varepsilon\to0$ 时 $\{W^\varepsilon\}$ 在 $C[0,1]$ 上满足速率为 $1/\varepsilon^2$ 的大偏差原理，速率函数为
 $$
 I(f)=\begin{cases}\frac12\int_0^1|\dot f(t)|^2\,dt, & f\in H_0^1[0,1],\ f(0)=0,\\ \infty, & \text{其他},\end{cases}

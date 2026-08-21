@@ -10,6 +10,8 @@ Gauss绝妙定理（Theorema Egregium）是微分几何史上最深刻的定理�
 
 ## 分析
 
+**前置依赖**：第一基本形式、第二基本形式与 Weingarten 变换、Christoffel 符号、Gauss 公式与可积条件
+
 **定理的精确表述**：设 $S \subset \mathbb{R}^3$ 是光滑曲面，其第一基本形式为 $I = E du^2 + 2F du dv + G dv^2$，第二基本形式为 $II = L du^2 + 2M du dv + N dv^2$。则 Gauss 曲率
 
 $$

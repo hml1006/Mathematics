@@ -10,6 +10,8 @@ $$
 
 ## 一、定理介绍
 
+> **前置依赖**：perfectoid空间、Fontaine周期环$B_\mathrm{cris}$与$B_\mathrm{dR}$、Frobenius与$\varphi$-模块、射影$\mathrm{Proj}$构造、向量丛与分级模
+
 Fargues–Fontaine曲线（Fargues–Fontaine 2018；2015）是 p-adic 几何中一条**过完备、分离、正则的一维曲线**，其坐标环由周期环 $B_\mathrm{cris}$ 的 $\varphi=p^n$ 部分构成：
 $$
 X=\mathrm{Proj}\Big(\bigoplus_{n\ge0} B_{\mathrm{cris}}^{\varphi=p^n}\Big).

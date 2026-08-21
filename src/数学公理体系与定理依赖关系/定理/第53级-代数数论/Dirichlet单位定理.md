@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：数域的实嵌入与复嵌入、单位与范数、Kronecker 定理（代数整数共轭模长为 1 即为单位根）、有限生成 Abel 群结构定理、Minkowski 凸体定理与格论
+
 Dirichlet 单位定理（Dirichlet Unit Theorem）是代数数论中关于数域整数环单位群结构的经典结果，由 Dirichlet 于 1846 年证明。该定理完全确定了数域 $K$ 的整数环 $\mathcal{O}_K$ 中可逆元（单位）群 $\mathcal{O}_K^\times$ 的抽象结构。
 
 在 $\mathbb{Z}$ 中，单位群只有 $\{\pm 1\}$，是平凡的。但在一般的数域中，单位群可以非常丰富。例如在 $\mathbb{Z}[\sqrt{2}]$ 中，$1+\sqrt{2}$ 是单位（因为 $(1+\sqrt{2})(1-\sqrt{2}) = -1$），而且 $(1+\sqrt{2})^n$ 对任意 $n \in \mathbb{Z}$ 都是单位，因此单位群是无限的。
@@ -133,3 +135,7 @@ Dirichlet 单位定理可以看作代数 K 群 $K_1(\mathcal{O}_K)$ 的计算。
 ### 6. Leopoldt 猜想
 
 Leopoldt 猜想断言：$\mathcal{O}_K^\times$ 在 $p$-进对数嵌入下的像的 $\mathbb{Z}_p$-秩等于 $r_1 + r_2 - 1$（即不"坍缩"）。这对 Abel 扩张已被证明（Brumer），一般情形仍是开放问题。
+
+## 相关条目
+
+- [Dirichlet 单位定理（第76级-代数数论）](../第76级-代数数论/Dirichlet单位定理.md)：与本条目为同一定理，另收录于第76级-代数数论，可交叉参考。

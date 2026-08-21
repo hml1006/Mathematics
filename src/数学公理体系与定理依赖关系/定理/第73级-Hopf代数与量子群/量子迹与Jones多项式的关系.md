@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Kauffman 括号与 skein 关系、R-矩阵与辫子群表示、Markov 定理、Alexander 定理、$U_q(\mathfrak{sl}_2)$ 的表示分类。
+
 该定理（Turaev-Reshetikhin 定理的特例，源出 Jones 1985）把纽结的 Jones 多项式用量子群表示论的量子迹实现：通过 $U_q(\mathfrak{sl}_2)$ 的二维表示与 $R$-矩阵，把纽结配成辫子，再由 $K$ 加权的量子迹取迹，得到一个纽结不变量。它搭建了量子群与低维拓扑之间的桥梁。
 
 ## 二、原理思路

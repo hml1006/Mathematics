@@ -10,6 +10,8 @@ Grothendieck拓扑（Grothendieck Topology）和景（Site）是代数几何中�
 
 ## 分析
 
+**前置依赖**：范畴与函子、纤维积、层与预层、筛子、层化函子与伴随。
+
 **定义**：范畴 $\mathcal{C}$ 上的一个 **Grothendieck拓扑** 是指对每个对象 $U \in \mathcal{C}$，指定一族覆盖族 $\{U_i \to U\}_{i \in I}$，满足：
 1. **同构覆盖**：$\{U \xrightarrow{\mathrm{id}} U\}$ 是覆盖。
 2. **拉回稳定性**：若 $\{U_i \to U\}$ 是覆盖，则对任意 $V \to U$，$\{U_i \times_U V \to V\}$ 是覆盖。

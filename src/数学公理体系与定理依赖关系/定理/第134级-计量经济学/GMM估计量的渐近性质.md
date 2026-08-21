@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：大数定律、中心极限定理、Slutsky定理、泰勒展开、矩阵求逆与正定性
+
 GMM（广义矩方法）估计的渐近性质是计量经济学推断的核心定理。对矩条件 $\mathbb{E}[g(w_i,\theta_0)]=0$，GMM 估计
 $$
 \hat\theta_{\text{GMM}}=\arg\min_\theta \bar g(\theta)'\hat W\bar g(\theta),\qquad \bar g(\theta)=\tfrac1n\sum_ig(w_i,\theta),

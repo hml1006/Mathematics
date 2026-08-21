@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：尺度方程与多分辨率分析、消失矩条件、Fejér-Riesz谱分解、Bezout恒等式
+
 Daubechies 小波族断言：对任意正整数 $N$，存在紧支集正交小波 $\psi_N$，具 $N$ 阶消失矩、支集长 $2N-1$。其尺度滤波器系数由求解以下条件构得：
 $$
 \sum_kh_kh_{k+2m}=\delta_{m0},\qquad \sum_k(-1)^kk^m h_k=0\ (m=0,\dots,N-1),\qquad \sum_kh_k=\sqrt2.

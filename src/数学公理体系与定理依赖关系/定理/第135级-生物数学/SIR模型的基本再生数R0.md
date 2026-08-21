@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：下一代矩阵方法、线性化与Jacobian、矩阵谱半径、常微分方程初值理论
+
 基本再生数 $R_0$ 是传染病动力学的阈值参数。对 SIR 模型
 $$
 \frac{dS}{dt}=-\beta SI,\qquad \frac{dI}{dt}=\beta SI-\gamma I,\qquad \frac{dR}{dt}=\gamma I,

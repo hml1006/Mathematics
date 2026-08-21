@@ -16,6 +16,8 @@ $$
 
 ## 分析
 
+**前置依赖**：Hardy-Littlewood 极大不等式、$C_c(\mathbb{R}^n)$ 在 $L^1$ 中的稠密性、局部可积函数、几乎处处收敛
+
 **定理的精确表述**：设 $f \in L^1_{\text{loc}}(\mathbb{R}^n)$。则对 Lebesgue 几乎所有的 $x \in \mathbb{R}^n$，
 
 $$

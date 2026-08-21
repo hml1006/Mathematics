@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Hilbert 空间中的闭算子与伴随、伪凸域与 Levi 形式、多重次调和函数、Morrey-Kohn-Hörmander 恒等式、Sobolev 空间与次椭圆估计。
+
 $\bar{\partial}$-Neumann 问题是多复变函数论中最基本的边值问题之一，由 Donald Spencer 和 Kohn–Rossi 等人在 20 世纪 60 年代发展成形。它研究的是在伪凸域 $\Omega \subset \mathbb{C}^n$ 上，如何用 $L^2$ 方法求解 $\bar{\partial}$ 方程
 $$\bar{\partial} u = f$$
 并给出 $u$ 的 $L^2$ 估计。

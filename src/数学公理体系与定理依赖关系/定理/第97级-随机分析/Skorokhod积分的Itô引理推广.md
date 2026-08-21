@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Malliavin 导数 $D$ 与其伴生算子 $\delta$、对偶恒等式、分部积分公式、Itô 引理、非适应积分
+
 Skorokhod 积分 $\delta(u)=\int_0^Tu_t\,\delta W_t$ 是 Malliavin 导数 $D$ 的伴生算子。对 $u\in\operatorname{dom}(\delta)$、$F\in\mathbb{D}^{1,2}$ 且 $Fu\in\operatorname{dom}(\delta)$，有分部积分公式
 
 $$

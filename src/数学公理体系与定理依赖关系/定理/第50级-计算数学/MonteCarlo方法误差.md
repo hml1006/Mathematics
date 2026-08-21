@@ -10,6 +10,8 @@ Monte Carlo 方法（Monte Carlo Method）是一类通过随机采样来估计�
 
 ## 分析
 
+**前置依赖**：独立随机采样、大数定律、中心极限定理、方差与置信区间。
+
 **定理的精确表述**：设 $f: [0,1]^d \to \mathbb{R}$ 是平方可积函数，$I = \int_{[0,1]^d} f(x) dx$。Monte Carlo 估计量为
 
 $$

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：$\infty$-范畴与model结构、$\mathbb{E}_\infty$-环与其$\mathrm{Spec}$、派生stack与概形、cotangent complex、谱中的拟凝聚层
+
 Toën–Vezzosi 的导出代数几何基本定理（见《Homotopical Algebraic Geometry》）提供了以 $k$-模块与谱环构造导出 stack 与概形的系统方案：定义了 $\mathbb{E}_\infty$-概形、Ketchen（派生）stack、cotangent complex 及其对偶切复形，并证明了它们在其仿射/局部化下满足经典几何的全部性质适应——这就是"导出代数几何存在性/相容"的基本定理群。
 
 ## 二、原理思路

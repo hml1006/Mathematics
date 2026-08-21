@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Galois 扩张与 Frobenius 自同构、理想类群与射线类群、二次互反律与幂剩余互反律、Hecke L-函数及其解析性质、Chebotarev 密度定理
+
 Artin 互反律（Artin Reciprocity Law）是类域论（Class Field Theory）的核心定理，由 Emil Artin 于 1927 年证明。它被广泛认为是 19 世纪数论最伟大的成就之一，也是代数数论中最深刻的结果之一。
 
 类域论的目标是描述数域 $K$ 的所有 **Abel 扩张**（即 Galois 群为 Abel 群的 Galois 扩张）的结构。Artin 互反律给出了一个惊人的答案：$K$ 的每个 Abel 扩张都对应于 $K$ 的某个**广义理想类群**（射线类群）的商，且 Galois 群与射线类群之间的同构由**Artin 映射**给出。

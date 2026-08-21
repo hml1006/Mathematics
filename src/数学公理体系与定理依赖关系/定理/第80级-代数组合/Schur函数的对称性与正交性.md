@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Schur 函数与半标准 Young 表、Jacobi-Trudi 行列式与 Vandermonde 行列式、Hall 内积、Cauchy 恒等式与幂和对称函数。
+
 Schur 函数（半标准 Young 表的权重）是 $GL(n)$ 不可约表示的特征标，是对称函数环 $\Lambda$ 的一组基。本定理说明：(1) $s_\lambda$ 是对称的（对变量置换不变）；(2) 在 Hall 内积下 $\{s_\lambda\}$ 正交归一（$\langle s_\lambda,s_\mu\rangle=\delta_{\lambda\mu}$）。
 
 ## 二、原理思路

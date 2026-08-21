@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：常微分方程解的存在唯一性、正定函数与水平集、紧集与连续函数最值、LaSalle不变原理（ω-极限集）、反证法。
+
 Lyapunov 稳定性定理给出自治系统 $\dot{\boldsymbol x}=\boldsymbol f(\boldsymbol x)$（$\boldsymbol f(\boldsymbol 0)=\boldsymbol 0$）稳定性的充分条件：若存在正定函数 $V$ 使 $\dot V\le0$，则原点 Lyapunov 稳定；若 $\dot V<0$ 则渐近稳定；并结合 LaSalle 不变原理处理 $\dot V$ 仅半负定的情形。
 
 ## 二、原理思路
@@ -29,3 +31,6 @@ Lyapunov 稳定性定理给出自治系统 $\dot{\boldsymbol x}=\boldsymbol f(\b
 ## 五、应用与意义
 
 Lyapunov 方法是非线性系统与最优控制稳定性的核心工具，广泛用于航天、机器人、电力与自适应控制。它无需显式解轨迹即可判定稳定，也是 LQR 闭环稳定性证明与神经网络控制设计的理论基础。
+## 相关条目
+
+- [Lyapunov 稳定性定理（第69级-控制理论）](../第69级-控制理论/Lyapunov稳定性定理.md)：与本条目为同一定理，另收录于第69级-控制理论，可交叉参考。

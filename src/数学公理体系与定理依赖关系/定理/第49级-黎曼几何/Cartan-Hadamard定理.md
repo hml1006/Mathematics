@@ -10,6 +10,8 @@ Cartan-Hadamard定理（Cartan–Hadamard Theorem）是黎曼几何中关于非�
 
 ## 分析
 
+**前置依赖**：截面曲率、指数映射、Jacobi 方程与共轭点、完备性与 Hopf-Rinow 定理、覆盖空间理论。
+
 **定理的精确表述**：设 $(M^n, g)$ 是完备 Riemann 流形，截面曲率 $K \le 0$ 处处成立。则对任意 $p \in M$，指数映射 $\exp_p: T_pM \to M$ 是覆盖映射。特别地，万有覆盖 $\tilde{M}$ 微分同胚于 $\mathbb{R}^n$。
 
 **依赖的概念**：截面曲率、指数映射、共轭点、覆盖空间、完备性。

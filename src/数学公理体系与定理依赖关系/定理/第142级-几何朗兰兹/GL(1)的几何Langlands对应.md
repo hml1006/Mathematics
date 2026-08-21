@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Abel簇与其对偶、Picard簇、Poincaré线丛、Fourier-Mukai变换、D-模与拟凝聚层
+
 $GL(1)$ 情形的几何Langlands对应是把经典傅里叶对偶（Abel簇与其对偶环面）翻译成"层与表示"的语句：$\mathrm{Pic}(X)$ 上的 D-模的派生范畴与秩一局部系统模空间 $\mathrm{LocSys}_{\mathbb{C}^\times}$ 上拟凝聚层的派生范畴等价。这一等价经 Poincaré 线丛的 Fourier–Mukai 变换实现。
 
 ## 二、原理思路

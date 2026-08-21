@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：大偏差原理（LDP）的定义与好速率函数、指数紧性、水平集紧致、连续函数的模、小区间覆盖与取上确界。
+
 设 $\{Z_n\}$ 取值于 $\mathbb R^d$，满足速率为 $n$、速率函数 $I$（好速率函数）的大偏差原理。则对任意有界连续函数 $\phi:\mathbb R^d\to\mathbb R$，
 $$
 \lim_{n\to\infty}\frac1n\log\mathbb E\big[e^{n\phi(Z_n)}\big]=\sup_{x\in\mathbb R^d}\{\phi(x)-I(x)\}.

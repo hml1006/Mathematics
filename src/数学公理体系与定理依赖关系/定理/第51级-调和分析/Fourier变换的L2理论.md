@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：$L^1$ 上的 Fourier 变换与逆变换、Schwartz 空间及其稠密性、卷积运算与控制收敛定理、Hilbert 空间等距算子的稠密延拓、极化恒等式
+
 Fourier 变换最初在 $L^1(\mathbb{R}^n)$ 上通过积分
 $$\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2\pi i x \cdot \xi}\, dx$$
 定义，但 $L^1$ 上的 Fourier 变换理论存在局限：$L^1$ 不是自反空间，Fourier 变换的像空间描述不简洁。Plancherel 定理的核心贡献在于将 Fourier 变换延拓到 $L^2(\mathbb{R}^n)$ 上，并证明它是 $L^2$ 到自身的等距同构（差一个常数因子）。这一结果奠定了 $L^2$ 上调和分析的基础，使得 Fourier 变换成为 Hilbert 空间上的酉算子，从而可以运用正交分解、谱理论等强大工具。

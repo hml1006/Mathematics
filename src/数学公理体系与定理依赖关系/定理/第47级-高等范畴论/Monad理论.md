@@ -10,6 +10,8 @@ Monad（单子）是范畴论中一个核心概念，它描述了一个范畴上
 
 ## 分析
 
+**前置依赖**：自函子与自然变换、伴随函子、三角恒等式、Kleisli 范畴与 Eilenberg-Moore 范畴。
+
 **定理的精确表述**：范畴 $\mathcal{C}$ 上的一个 **Monad** 由三元组 $(T, \eta, \mu)$ 构成，其中：
 - $T: \mathcal{C} \to \mathcal{C}$ 是函子，
 - $\eta: \mathrm{Id}_{\mathcal{C}} \Rightarrow T$ 是自然变换（单位），

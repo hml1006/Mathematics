@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：局部类体论与互反映射、Artin互反律、adele-idele理论、Galois群的Abel化
+
 类体论（class field theory）是朗兰兹纲领在 $GL(1)$ 情形的经典形态。它断言，对任意数域（或全局域）$F$，其最大Abel扩张 $F^{\mathrm{ab}}$ 的Galois群与商 $\mathbb{A}_F^\times/F^\times$ 之间存在典范同构。这一同构把所有局部位上的互反映射拼合起来，形成了不可约 Abel 扩张的完整分类。
 
 ## 二、原理思路

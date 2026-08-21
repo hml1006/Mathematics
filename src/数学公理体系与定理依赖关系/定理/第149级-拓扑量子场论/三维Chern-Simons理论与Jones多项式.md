@@ -10,6 +10,8 @@ $$
 
 ## 一、定理介绍
 
+> **前置依赖**：Chern-Simons作用量、路径积分、Wilson圈期望、skein关系、量子群R-矩阵表示论
+
 三微 Chern–Simons 理论与 Jones 多项式（Witten 1989）：$d=3$、规范群 $G$、level $k\in\mathbb Z$ 的 Chern–Simons 理论给出一个三维 TQFT，其对纽结 $L$ 的 Wilson 圈期望值正比于 $L$ 的 Jones 多项式（$G=SU(2)$ 基本表示时）。由此 Jones 多项式获数学意义下的微-几何表述，并作为 $q=e^{2\pi i/(k+2)}$ 处的亏照（值）。
 
 ## 二、原理思路

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：对数矩生成函数、Fenchel-Legendre 变换、本质光滑性、倾斜测度（测度变换）、中心极限定理。
+
 设 $\{Z_n\}$ 为随机变量序列，定义
 $$
 \Lambda_n(\theta)=\frac1n\log\mathbb E[e^{n\theta Z_n}],\qquad\theta\in\mathbb R.

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Hodge分解与Serre对偶、变化Hodge结构（VHS）、Kodaira-Spencer理论、同调镜像对称
+
 Hodge 菱形翻转定理断言：若 $M,W$ 为镜像对称的 $n$ 维 Calabi-Yau 流形，则
 $$
 h^{p,q}(M)=h^{n-p,q}(W).

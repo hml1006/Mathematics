@@ -10,6 +10,8 @@ Riemann曲率张量是 Riemann 几何中最重要的局部不变量，由 Bernha
 
 ## 分析
 
+**前置依赖**：Levi-Civita 联络与 Christoffel 符号、向量场的李括号与 Jacobi 恒等式、平行移动、度量相容性与无挠性
+
 **定义**：设 $(M, g)$ 是 Riemann 流形，$\nabla$ 是 Levi-Civita 联络。Riemann 曲率张量 $R$ 是 $(1,3)$-型张量场，定义为
 
 $$

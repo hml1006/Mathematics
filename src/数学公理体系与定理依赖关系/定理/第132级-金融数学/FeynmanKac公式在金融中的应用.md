@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Ito引理、鞅论、风险中性测度、抛物型偏微分方程理论、随机微分方程
+
 Feynman-Kac 公式建立了随机微分方程（SDE）与抛物型偏微分方程（PDE）之间的桥梁：形如
 $$
 V(x,t)=\mathbb{E}\!\left[e^{-\int_t^T r(X_s,s)\,ds}f(X_T,T)\;\Big|\;X_t=x\right]

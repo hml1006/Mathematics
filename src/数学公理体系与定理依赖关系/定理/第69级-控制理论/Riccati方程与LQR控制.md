@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Hamilton–Jacobi–Bellman 方程、二次型值函数猜测、能控性与能观性（能镇定性/能检测性）、Lyapunov 稳定性方法与 LaSalle 不变集原理、矩阵方程正定解的存在唯一性。
+
 线性二次调节器（Linear Quadratic Regulator, LQR）是最优控制中最经典、应用最广泛的问题之一。它研究如何为线性系统选择一个状态反馈控制律，使得一个关于状态与控制的二次性能指标达到最小。该问题的最优解可由代数 Riccati 方程（Algebraic Riccati Equation, ARE）或微分 Riccati 方程的解给出，形成线性状态反馈 $u^*=-Kx$。
 
 ## 二、原理思路

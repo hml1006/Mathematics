@@ -10,6 +10,8 @@ Stone定理（Stone's Theorem）是泛函分析和量子力学中关于强连续
 
 ## 分析
 
+**前置依赖**：Hilbert 空间与酉算子、强连续单参数酉群、无界自伴算子与 Cayley 变换、谱定理。
+
 **定理的精确表述**：设 $\{U(t)\}_{t \in \mathbb{R}}$ 是 Hilbert 空间 $\mathcal{H}$ 上的强连续单参数酉群，即：
 1. 每个 $U(t): \mathcal{H} \to \mathcal{H}$ 是酉算子。
 2. $U(0) = I$，$U(s + t) = U(s)U(t)$ 对所有 $s, t \in \mathbb{R}$。

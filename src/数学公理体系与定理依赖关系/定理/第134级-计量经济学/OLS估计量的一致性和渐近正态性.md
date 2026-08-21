@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：大数定律、鞅差中心极限定理、Lindeberg条件、Slutsky定理、Hölder不等式
+
 OLS 估计量的一致性与渐近正态性是经典线性回归的统计基石。在误差为鞅差序列、回归元二阶矩收敛于正定矩阵等正则条件下，OLS 估计 $\hat\beta_{\text{OLS}}$ 一致收敛于真值 $\beta_0$，且满足
 $$
 \sqrt{n}(\hat\beta_{\text{OLS}}-\beta_0)\xrightarrow{d} N(0,\sigma^2Q^{-1}),\qquad Q=\text{plim}\,\frac1n\sum_i x_ix_i'.

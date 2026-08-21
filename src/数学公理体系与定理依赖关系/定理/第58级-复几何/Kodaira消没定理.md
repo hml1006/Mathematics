@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：紧 Kähler 流形、正全纯线丛与其曲率、Bochner-Kodaira-Nakano 恒等式、Lefschetz 算子 $\Lambda$、Hodge 定理（复形式）。
+
 Kodaira 消没定理是复几何中关于全纯向量丛上同调消失的基本结果，由小平邦彦（Kunihiko Kodaira）于 1953 年证明。该定理断言：在紧 Kähler 流形上，正全纯线丛的高阶上同调群消失。这一结果是 Kodaira 嵌入定理证明的核心工具，也是代数几何中 Serre 消没定理的解析对应物。
 
 定理的更一般形式（Akizuki-Nakano-Vanishing 推广）指出：对正线丛 $L$，有

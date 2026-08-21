@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：McKean-Singer公式、热核渐近展开、循环上同调（JLO余链）、Wodzicki留数、谱三元组
+
 Connes 指标定理（局部指标公式）把 Atiyah-Singer 指标定理推广到非交换几何。对 $d$ 维偶数分次谱三元组 $(\mathcal A,\mathcal H,D)$ 与分次 $\gamma$，对任意 $a\in\mathcal A$ 有
 $$
 \mathrm{Index}(D_a^+)=\mathrm{Tr}_s(\gamma\,ae^{-tD^2})=\int\hat A(\nabla)\wedge\mathrm{ch}(a),

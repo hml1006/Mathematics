@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：随机微分方程与 Itô 积分、Lipschitz 与线性增长条件、Picard 迭代、Itô 等距、Gronwall 引理、Chebyshev 不等式与 Borel-Cantelli 引理
+
 考虑 SDE $dX_t = \mu(t,X_t)dt + \sigma(t,X_t)dW_t$，$X_0=\xi$。在 Lipschitz 条件、线性增长条件与 $\mathbb{E}\|\xi\|^2<\infty$ 下，存在唯一的强解 $X_t$，且 $\mathbb{E}[\sup_{0\le t\le T}\|X_t\|^2]<\infty$。
 
 ## 二、原理思路

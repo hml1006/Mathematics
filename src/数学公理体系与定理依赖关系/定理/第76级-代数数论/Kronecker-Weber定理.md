@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Galois 扩张与阿贝尔扩张、分圆域及其 Galois 群、类域论与 Artin 映射、局部互反律。
+
 Kronecker-Weber 定理论断：$\mathbb{Q}$ 的每个有限阿贝尔扩张都包含在某个分圆扩张 $\mathbb{Q}(\zeta_m)$ 中。换言之，所有阿贝尔扩张均由单位根生成。此定理是类域论在 $\mathbb{Q}$ 上的特例与优美封顶，也是 Hilbert 胆士"Kronecker 青春之梦"（论想要更多活动元构造更多扩张）的最简单情形。
 
 ## 二、原理思路
@@ -35,3 +37,6 @@ $$K\subseteq\mathbb{Q}(\zeta_m),$$
 ## 五、应用与意义
 
 Kronecker-Weber 定理是"算术的阿贝尔类域"的漂亮封顶：它断言 $\mathbb{Q}$ 上所有阿贝尔扩张均可由单位根显式生成——即 $\operatorname{Gal}(\mathbb{Q}^{\mathrm{ab}}/\mathbb{Q})\cong\widehat{\mathbb{Z}}^\times$（整体类域论）。它是 Langlands 纲领与全局互反律的原始模型，也激发 Hilbert 第 12 问题（对一般域寻求类似"类域"的显式构造，虚二次域用椭圆函数复数乘）。在算法上配合分圆域提供了构造所有阿贝尔扩张的实用方法。
+## 相关条目
+
+- [Kronecker-Weber 定理（第36级-伽罗瓦理论）](../第36级-伽罗瓦理论/Kronecker-Weber定理.md)：与本条目为同一定理，另收录于第36级-伽罗瓦理论，可交叉参考。

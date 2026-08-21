@@ -10,6 +10,8 @@ Fubini-Tonelli定理是测度论和积分理论中最重要的定理之一，它
 
 ## 分析
 
+**前置依赖**：乘积测度的构造、单调类定理（$\pi$-$\lambda$ 定理）、简单函数逼近、单调收敛定理、$\sigma$-有限测度空间
+
 **定理的精确表述**：设 $(X, \mathcal{M}, \mu)$ 和 $(Y, \mathcal{N}, \nu)$ 是 $\sigma$-有限测度空间，$(X \times Y, \mathcal{M} \otimes \mathcal{N}, \mu \times \nu)$ 是乘积测度空间。
 
 **Tonelli 定理（非负函数）**：若 $f: X \times Y \to [0, \infty]$ 是 $\mathcal{M} \otimes \mathcal{N}$-可测函数，则：

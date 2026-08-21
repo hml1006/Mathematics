@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：曲线的亏格与 Jacobi 簇、Mordell-Weil 定理、Faltings 高度、Tate 猜想与等源分类、$\ell$-进 Tate 模。
+
 Faltings 定理（1983）由 Faltings 证明原 Mordell 猜想：设 $C$ 是数域 $K$ 上亏格 $g\ge2$ 的不可约光滑代数曲线，则 $C(K)$ 是有限集。这是算术几何跨时代的成就，Faltings 因之获 1986 Fields 奖。它一举解决了 Fermat、Mordell 等的核心计数猜想。
 
 ## 二、原理思路

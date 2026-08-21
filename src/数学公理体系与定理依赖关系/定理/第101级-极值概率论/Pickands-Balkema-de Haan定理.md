@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：条件分布（条件概率）、分布函数与尾部分布、最大吸引域（MDA）、一致收敛、极限的比值运算。
+
 设 $X_1,\dots,X_n$ i.i.d.，分布 $F$，且 $F$ 属于极值分布 $G_\xi$ 的最大吸引域（$\frac{M_n-b_n}{a_n}\xrightarrow{d}G_\xi$）。则对充分大的阈值 $u$，超过量 $Y=X-u$ 的条件分布满足
 $$
 \lim_{u\to\omega(F)}\;\sup_{0\le y\le\omega(F)-u}\left|F_u(y)-G_{\xi,\sigma(u)}(y)\right|=0,

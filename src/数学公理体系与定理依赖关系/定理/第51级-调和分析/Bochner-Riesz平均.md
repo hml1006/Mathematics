@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Fourier 变换与 Fourier 积分、Plancherel 定理、Young 卷积不等式、Riesz-Thorin 插值定理、Bessel 函数的渐近分析
+
 Bochner-Riesz 平均是 Fourier 级数和 Fourier 积分的一种正则化求和方法，由 S. Bochner 和 M. Riesz 在 20 世纪 20-30 年代引入。在 $\mathbb{R}^n$ 上，$\delta$ 阶 Bochner-Riesz 平均定义为
 $$T_R^\delta f(x) = \int_{|\xi| \le R} \left(1 - \frac{|\xi|^2}{R^2}\right)^\delta \hat{f}(\xi) e^{2\pi i x \cdot \xi}\, d\xi,$$
 其 Fourier 乘子为 $m_R^\delta(\xi) = (1 - |\xi|^2/R^2)_+^\delta$。

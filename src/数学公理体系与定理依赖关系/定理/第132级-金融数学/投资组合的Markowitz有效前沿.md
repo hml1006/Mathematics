@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：凸二次规划、Lagrange乘数法、协方差矩阵的正定性、两基金分离定理
+
 Markowitz 有效前沿（Efficient Frontier）是均值-方差框架（MPT）的核心成果。对 $n$ 种风险资产，有效前沿由所有"给定风险（方差）下收益最大，或给定收益下风险最小"的最优组合构成。其参数形式为
 $$
 \sigma_p=\sqrt{\frac{(E[R_p]-r_f)^2}{a}},\qquad a=\boldsymbol\mu'\,\Sigma^{-1}\boldsymbol\mu,

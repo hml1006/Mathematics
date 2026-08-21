@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Ricci 曲率非负、测地线与直线、Busemann 函数、Laplacian 比较定理、强极大值原理、Bochner 公式。
+
 Cheeger-Gromoll 分裂定理是 Riemann 几何中的基本定理，由 Jeff Cheeger 和 Detlef Gromoll 于 1971 年证明。该定理断言：若完备 Riemann 流形具有非负 Ricci 曲率且包含一条直线（即测地线在两个方向上都是最短的），则该流形等距同构于 Riemann 积 $\mathbb{R} \times N$。
 
 分裂定理是比较几何的核心结果，与 Bonnet-Myers 定理、Cartan-Hadamard 定理一起构成了曲率与拓扑关系的完整图景。它在几何分析、广义相对论和群论中有重要应用。

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：椭圆曲线与模形式（Taniyama-Shimura-Weil 猜想）、椭圆曲线的 Galois 表示与 Tate 模、Frey 曲线与 Ribet 水平降低定理、模形式 Galois 表示的形变理论（$R = \mathbb{T}$）、Euler 系统与 Selmer 群
+
 Fermat 大定理（Fermat's Last Theorem, FLT）是数学史上最著名的定理之一。它断言：对整数 $n \geq 3$，方程
 $$x^n + y^n = z^n$$
 没有正整数解 $(x, y, z)$。

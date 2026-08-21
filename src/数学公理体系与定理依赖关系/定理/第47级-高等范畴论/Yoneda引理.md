@@ -10,6 +10,8 @@ Yoneda引理（Yoneda Lemma）是范畴论中最基本的定理之一，由日�
 
 ## 分析
 
+**前置依赖**：局部小范畴、Hom 函子、自然变换、函子范畴。
+
 **定理的精确表述**：设 $\mathcal{C}$ 是局部小范畴，$A$ 是 $\mathcal{C}$ 的对象，$F: \mathcal{C} \to \mathbf{Set}$ 是任意函子。则存在双射
 
 $$
@@ -109,3 +111,6 @@ $$
 故 $\Psi(x) = \eta$，即 $\Psi \circ \Phi = \mathrm{id}$。$\square$
 
 **推论**（Yoneda嵌入）：$\mathrm{Hom}_{\mathcal{C}}(A, -) \cong \mathrm{Hom}_{\mathcal{C}}(B, -)$ 当且仅当 $A \cong B$。即，Hom 函子完全决定了对象。
+## 相关条目
+
+- [Yoneda 引理（第126级-范畴论）](../第126级-范畴论/Yoneda引理.md)：与本条目为同一定理，另收录于第126级-范畴论，可交叉参考。

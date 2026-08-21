@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Sobolev 嵌入定理、散度型椭圆方程弱解与能量估计、一致椭圆性条件、截断函数与 Young 不等式。
+
 Moser-Nash 迭代（Moser-Nash Iteration）是由 Jürgen Moser（1960-61，用于证明 KAM 定理与紧 Riemann 流形上 Hörmander 的次椭圆估计）与 John Nash（1958，用于证明椭圆方程解的 $C^{1,\alpha}$ 正则性）独立发展的一种正则性提升方法。该方法通过交替使用 Sobolev 嵌入与能量估计，将解的"低阶可积性"逐次提升为"高阶可积性"或"逐点正则性"。
 
 Moser 迭代成为现代偏微分方程理论中证明弱解有界性、Hölder 连续性、Harnack 不等式与正则性提升的核心技术，被 De Giorgi、Stampacchia 等进一步发展，构成所谓 De Giorgi-Nash-Moser 理论。其思想也深刻影响了几何分析、调和分析、随机分析等领域。

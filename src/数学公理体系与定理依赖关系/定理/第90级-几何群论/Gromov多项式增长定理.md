@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：有限生成群与增长函数、Cayley 图与词度量、幂零群与下中心列、Gromov–Hausdorff 收敛、Lie 群与 Montgomery–Zippin、Gleason–Yamabe 定理、virtually 幂零群
+
 Gromov 多项式增长定理刻画了增长性质的代数来源：多项式增长有限生成群 $\Longleftrightarrow$ virtually 幂零群。它一举解决了关于增长型的核心分类问题，是几何群论与李理论交汇的经典成果。
 
 ## 二、原理思路

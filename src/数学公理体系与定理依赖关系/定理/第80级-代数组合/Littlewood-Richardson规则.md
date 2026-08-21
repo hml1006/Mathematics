@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Schur 函数与半标准 Young 表、Skew Schur 函数、Yamanouchi 词（逆格序词）、Young 图的形状与填数规则。
+
 Littlewood-Richardson 规则用一个显式的组合计数给出 Schur 函数乘积的展开系数 $c_{\lambda\mu}^\nu$（Littlewood-Richardson 系数）。这些系数出现在对称函数、$GL_n$ 与 $S_n$ 表示张量积、以及代数簇（Schubert 微）之中，是组合与表示论交汇的中心量。
 
 ## 二、原理思路

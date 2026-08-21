@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Hilbert 基定理、Gröbner 基的概念、S-多项式、约化余式、Buchberger 准则、单项式理想的严格链。
+
 **Buchberger 算法**是在多项式环 $\mathbb{K}[x_1,\dots,x_n]$ 上，给定一个理想 $I=\langle f_1,\dots,f_m\rangle$ 和任一单项式序，**在有限步内终止并输出 $I$ 的一个 Gröbner 基**。它把"是否存在 Gröbner 基"这个存在性问题变成一个可执行的构造性算法，是计算代数中 Gr:bner 理论落地的基石。
 
 ## 二、原理思路

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Fargues-Fontaine曲线、$\varphi$-模块、$G$-向量丛与$\operatorname{Bun}_G$、拟凝聚层范畴、Hecke算子与$\mathbf{L}$-参数
+
 p-adic Langlands 的 Fargues–Scholze 对应（Fargues–Scholze 2021）把 $p$-adic（特征 $p\ne \ell$）局部 Langlands 对应几何化到 Fargues–Fontaine 曲线：拟结出 $(G(K)$ 的光滑表示) 的 $(\infty,\ell)$-范畴到（$Fargues\–Fontaine$ 曲线上 $G$-向量丛的层）的拟凝聚层范畴的等价，并使其 Hecke 作用与 $\ell$-adic 表示一致——成为 p-adic Langlands 的现代几何实现。
 
 ## 二、原理思路

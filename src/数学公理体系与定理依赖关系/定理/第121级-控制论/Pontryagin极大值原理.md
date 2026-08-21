@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：变分法（一阶变分与分部积分）、Hamiltonian框架、最优控制理论、常微分方程（状态与协态方程）、极值与横截条件。
+
 Pontryagin 极大值原理给出最优控制的必要条件。它用 Hamiltonian
 $$
 \mathcal H(\boldsymbol x,\boldsymbol u,\boldsymbol\lambda,t)=L(\boldsymbol x,\boldsymbol u)+\boldsymbol\lambda^{\top}\boldsymbol f(\boldsymbol x,\boldsymbol u)
@@ -39,3 +41,6 @@ $$
 ## 五、应用与意义
 
 Pontryagin 原理是火箭、导弹、自动驾驶与能源系统最优控制的基石，能处理 LQR 处理不了的一类带约束或奇异控制问题。它给出精确的必要条件，是 Bang-Bang 控制、奇异弧与最优轨迹分析的标准工具。
+## 相关条目
+
+- [Pontryagin 极大值原理（第69级-控制理论）](../第69级-控制理论/Pontryagin极大值原理.md)：与本条目为同一定理，另收录于第69级-控制理论，可交叉参考。

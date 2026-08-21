@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：$p$-进数域 $\mathbb{Q}_p$ 与 Hensel 引理、Hilbert 符号与 Hilbert 互反律、二次型的对角化与判别式、四元数代数与 Brauer 群、Chevalley-Warning 定理
+
 Hasse-Minkowski 定理是代数数论中**局部整体原理**（Local-Global Principle）或称 **Hasse 原理**的最重要实例。该定理由 Hasse 于 1920 年代对二次型证明，Minkowski  earlier 的工作为其奠定了基础。
 
 定理的核心思想极为优美：一个有理系数二次型是否有非平凡有理零点，可以完全由它在所有**局部域**（实数域 $\mathbb{R}$ 和所有 $p$-进数域 $\mathbb{Q}_p$）上是否有非平凡零点来判定。换言之，整体问题可以分解为局部问题的集合。

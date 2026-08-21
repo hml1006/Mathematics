@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：线性码与校验矩阵、最小距离与线性无关列、组合计数、概率法/增量构造。
+
 **Gilbert–Varshamov（GV）界**：对 $\mathbb F_q$ 上给定 $n,d$，存在 $[n,k,d]$ 线性码满足
 $$
 q^k\ge\frac{q^n}{\displaystyle\sum_{j=0}^{d-1}\binom nj(q-1)^j}\quad\Longleftrightarrow\quad k\ge n-\Big\lceil\log_q V_q(n,d)\Big\rceil,

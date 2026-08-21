@@ -10,7 +10,9 @@ $$
 
 ## 一、定理介绍
 
-p-adic Hodge 理论的比较定理（Faltings 1988；Tsuji、Nizio l 等后继）断言：对 $p$-adic 域 $K=\mathbb Q_p$ 与其光滑（半 stable）射影簇 $X$，存在（$G_K$-等变、过滤→同构）比较同构
+> **前置依赖**：Fontaine周期环($B_\mathrm{cris}$/$B_\mathrm{st}$/$B_\mathrm{dR}$)、p-adic Galois表示、晶体与对数-cris上同调、Hodge-Tate权与过滤、p-adic解析几何
+
+p-adic Hodge 理论的比较定理（Faltings 1988；Tsuji、Nizi l 等后继）断言：对 $p$-adic 域 $K=\mathbb Q_p$ 与其光滑（半 stable）射影簇 $X$，存在（$G_K$-等变、过滤→同构）比较同构
 $$
 H^i_{\acute et}(X_{\bar K},\mathbb Q_p)\otimes B_{\mathrm{dR}}\cong H^i_{\mathrm{dR}}(X/K)\otimes_K B_{\mathrm{dR}},
 $$

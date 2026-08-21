@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Kähler 流形与 Ricci 形式、第一 Chern 类、复 Monge-Ampère 方程、连续性方法、先验估计（$C^0$、$C^2$ 估计与 Schauder 理论）。
+
 Calabi-Yau 定理是 Kähler 几何中里程碑式的结果，由丘成桐（Shing-Tung Yau）于 1978 年证明，确立了 Calabi 于 1954 年提出的著名猜想。定理断言：在任意紧 Kähler 流形 $(X, \omega)$ 上，给定代表 $c_1(X)$ 的任意闭 $(1,1)$-形式 $\alpha$，存在唯一的 Kähler 度量 $\tilde\omega$，使其 Kähler 形式与 $\omega$ 同调且 Ricci 形式恰为 $\alpha$。
 
 特别地，若 $X$ 具有平凡典则线丛（即第一 Chern 类 $c_1(X) = 0$），则存在 Ricci 平坦的 Kähler 度量——这是 Calabi-Yau 流形（在弦理论中至关重要）的几何基础。

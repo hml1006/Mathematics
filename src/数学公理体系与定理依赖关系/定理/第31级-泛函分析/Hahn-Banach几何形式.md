@@ -10,6 +10,8 @@ Hahn-Banach几何形式（也称为凸集分离定理）是泛函分析中最重
 
 ## 分析
 
+**前置依赖**：Hahn-Banach 延拓定理、Minkowski 泛函（次线性泛函）、凸集与开集、线性泛函的连续性判别
+
 **定理的精确表述**：设 $X$ 是赋范线性空间，$A, B \subset X$ 是非空凸集，$A \cap B = \varnothing$，$A$ 是开集。则存在非零连续线性泛函 $f \in X^*$ 和实数 $\alpha \in \mathbb{R}$ 使得
 
 $$

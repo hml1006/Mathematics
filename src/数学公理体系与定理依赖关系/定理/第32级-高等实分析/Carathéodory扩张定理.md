@@ -10,6 +10,8 @@ Carathéodory扩张定理是测度论中最基本的构造性定理之一，由 
 
 ## 分析
 
+**前置依赖**：外测度与 Carathéodory 可测条件、$\sigma$-代数与代数上的预测度、$\sigma$-有限性、$\pi$-$\lambda$ 定理（单调类定理）
+
 **定理的精确表述**：设 $\mathcal{A}$ 是 $X$ 上的一个代数，$\mu_0: \mathcal{A} \to [0, \infty]$ 是 $\sigma$-可加预测度（即满足 $\mu_0(\varnothing) = 0$ 且对 $\mathcal{A}$ 中不交可列并属于 $\mathcal{A}$ 的集合列满足 $\sigma$-可加性）。令 $\mathcal{M} = \sigma(\mathcal{A})$ 是由 $\mathcal{A}$ 生成的 $\sigma$-代数。则：
 
 1. 存在 $\mathcal{M}$ 上的测度 $\mu$ 使得 $\mu|_{\mathcal{A}} = \mu_0$；

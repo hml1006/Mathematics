@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：指数损失函数、经验风险最小化、权重归一化（转化为概率分布）、凸函数极值（一阶条件求最优 $\alpha$）、对数函数不等式 $\log(1-u)\le -u$。
+
 设 $\{h_t\}$ 为 AdaBoost 第 $t$ 轮选择的弱学习器，加权训练误差 $\varepsilon_t$，$\alpha_t=\frac12\log\frac{1-\varepsilon_t}{\varepsilon_t}$。最终分类器 $H(x)=\text{sign}\big(\sum_{t=1}^T\alpha_th_t(x)\big)$ 的训练误差满足
 $$
 \hat R_n(H)\le\exp\left(-2\sum_{t=1}^T\gamma_t^2\right),

@@ -10,6 +10,8 @@ Gram-Schmidt 正交化方法由丹麦数学家约尔根·佩德森·格拉姆（
 
 ## 分析
 
+**前置依赖**：内积空间、线性无关、正交投影、数学归纳法
+
 **定理内容**：设 $\{\mathbf{v}_1,\mathbf{v}_2,\ldots,\mathbf{v}_n\}$ 是内积空间 $V$ 中的一组线性无关向量，则存在一组标准正交向量 $\{\mathbf{u}_1,\mathbf{u}_2,\ldots,\mathbf{u}_n\}$，使得对每个 $k$，$\operatorname{span}\{\mathbf{v}_1,\ldots,\mathbf{v}_k\}=\operatorname{span}\{\mathbf{u}_1,\ldots,\mathbf{u}_k\}$。
 
 **构造方法**：

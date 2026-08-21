@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Riemann $\zeta$ 函数与 Euler 乘积、理想的唯一分解与理想范数、Minkowski 嵌入与格、theta 函数与 Poisson 求和公式、$\Gamma$ 函数与 Mellin 变换
+
 Dedekind $\zeta$ 函数是 Riemann $\zeta$ 函数在数域上的自然推广，由 Dedekind 在 1870 年代引入。对数域 $K$，Dedekind $\zeta$ 函数 $\zeta_K(s)$ 编码了 $K$ 的整数环 $\mathcal{O}_K$ 中理想分布的全部信息，是研究数域算术性质的最强大的解析工具。
 
 当 $K = \mathbb{Q}$ 时，$\zeta_K(s)$ 退化为经典的 Riemann $\zeta$ 函数 $\zeta(s) = \sum_{n=1}^\infty n^{-s}$。对一般的数域 $K$，$\zeta_K(s)$ 将 $\mathbb{Q}$ 上素数的分布信息替换为 $K$ 上素理想的分布信息。

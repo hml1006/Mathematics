@@ -10,6 +10,8 @@ Bonnet-Myers定理（Bonnet–Myers Theorem）是黎曼几何中最经典的全�
 
 ## 分析
 
+**前置依赖**：Ricci 曲率、测地线与完备性、能量泛函的第二变分公式、Jacobi 场与平行向量场、Hopf-Rinow 定理与覆盖空间理论。
+
 **定理的精确表述**：设 $(M^n, g)$ 是完备 Riemann 流形，$\mathrm{Ric} \ge (n-1)\kappa$ 对某个常数 $\kappa > 0$。则：
 1. $M$ 是紧致流形。
 2. $\mathrm{diam}(M) \le \pi/\sqrt{\kappa}$。

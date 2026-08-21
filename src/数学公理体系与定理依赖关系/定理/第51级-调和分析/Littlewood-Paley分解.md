@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Fourier 变换与逆变换、Plancherel 定理、单位分解（光滑截断函数）、Calderón-Zygmund 向量值奇异积分理论、Young 卷积不等式
+
 Littlewood-Paley 分解理论是现代调和分析中最重要的工具之一，它提供了一种将函数按频率尺度进行分解的方法。其核心思想是：任何一个 $L^2$ 函数可以分解为一系列频率局部化的分量之和，每个分量只包含某个倍频程（dyadic band）内的频率信息，而这些分量的 $L^p$ 范数与原函数的 $L^p$ 范数之间存在等价关系。
 
 Littlewood-Paley 理论最初由 Littlewood 和 Paley 在 1930 年代提出，后经 Marcinkiewicz、Zygmund、Stein 等人发展完善。它不仅是调和分析的基础工具，还在偏微分方程（特别是非线性 PDE 的先验估计）、函数空间理论（Besov 空间、Triebel-Lizorkin 空间的定义）和信号处理（小波分析的前身）中发挥着核心作用。

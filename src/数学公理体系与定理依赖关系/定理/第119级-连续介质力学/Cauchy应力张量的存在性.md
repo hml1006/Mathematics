@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：牛顿第二定律（动量平衡）、力与面元的几何投影关系、张量代数、角动量守恒（力矩平衡）、无穷小体元极限论证。
+
 Cauchy 定理（Cauchy 应力张量的存在性）断言：当体力密度 $\boldsymbol b$ 与面力密度 $\boldsymbol t(\boldsymbol n)$ 满足动量平衡时，存在对称二阶张量 $\boldsymbol\sigma$ 使得 $\boldsymbol t(\boldsymbol n)=\boldsymbol\sigma\cdot\boldsymbol n$。它保证了连续介质内部应力的统一描述与对称性。
 
 ## 二、原理思路

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：格空间 $\operatorname{SL}_n(\mathbb{R})/\operatorname{SL}_n(\mathbb{Z})$ 与不变测度、Siegel 平均公式、中心对称凸体、Riemann Zeta 函数。
+
 Minkowski-Hlawka 定理给出格的行列式与凸体"避开非零点"的存在性：若 $K$ 中心对称凸体且 $\operatorname{vol}(K)<2\zeta(n)$，则存在行列式 1 的格 $\Lambda$ 使 $\Lambda\cap\operatorname{int}(K)=\{0\}$。等价地 $K$ 的临界行列式 $\Delta(K)\le\frac{\operatorname{vol}(K)}{2\zeta(n)}$。这是 Minkowski 在 1905 提出、Hlawka 于 1944 给出的存在性下界。
 
 ## 二、原理思路

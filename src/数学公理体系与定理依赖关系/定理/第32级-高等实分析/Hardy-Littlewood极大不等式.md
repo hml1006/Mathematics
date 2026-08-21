@@ -10,6 +10,8 @@ Hardy-Littlewood极大不等式是调和分析和实分析中的基本不等式�
 
 ## 分析
 
+**前置依赖**：Vitali 覆盖引理、Lebesgue 测度、分布函数与弱型不等式、Marcinkiewicz 插值定理
+
 **定义**：对局部可积函数 $f \in L^1_{\text{loc}}(\mathbb{R}^n)$，其 Hardy-Littlewood 极大函数定义为
 
 $$

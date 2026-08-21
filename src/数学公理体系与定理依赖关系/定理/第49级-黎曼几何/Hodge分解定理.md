@@ -16,6 +16,8 @@ $$
 
 ## 分析
 
+**前置依赖**：微分形式与外微分、Hodge 星算子与余微分、Hodge Laplacian 的椭圆性、椭圆算子的 Fredholm 理论与正则性、de Rham 上同调。
+
 **定理的精确表述**：设 $(M, g)$ 是紧致定向 Riemann 流形（无边），$\Omega^k(M)$ 是 $k$-形式空间，具有 $L^2$ 内积 $\langle \omega, \eta \rangle = \int_M \omega \wedge *\eta$。Hodge Laplacian 定义为 $\Delta = d d^* + d^* d$。则
 
 $$
@@ -77,3 +79,6 @@ H^k_{\mathrm{dR}}(M) \cong \mathcal{H}^k(M).
 $$
 
 **证明**：设 $[\omega] \in H^k_{\mathrm{dR}}(M)$，由 Hodge 分解，$\omega = \alpha + d\beta + d^*\gamma$。由于 $d\omega = 0$ 且 $d\alpha = 0$，得 $d d^*\gamma = 0$，故 $\langle d^*\gamma, d^*\gamma \rangle = \langle d d^*\gamma, \gamma \rangle = 0$，即 $d^*\gamma = 0$。因此 $\omega = \alpha + d\beta$，$[\omega] = [\alpha]$。由分解的唯一性，$\alpha$ 是唯一的调和代表元。$\square$
+## 相关条目
+
+- [Hodge 分解定理（第58级-复几何）](../第58级-复几何/Hodge分解定理.md)：相关条目——本条目为 Riemann 流形上微分形式的 Hodge 分解；第58级条目为紧 Kähler 流形上按 (p,q)-型的细化分解。

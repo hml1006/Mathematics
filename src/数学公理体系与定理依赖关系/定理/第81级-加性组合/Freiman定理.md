@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Ruzsa 建模引理、Bogolyubov 引理、Freiman 同态、广义等差数列（GAP）、Green-Ruzsa 维数控制。
+
 Freiman 定理（Freiman 1973）刻画小和集结构：设 $A\subseteq\mathbb{Z}$，$|A+A|\le C|A|$，则 $A$ 含于一个维数 $\le d(C)$、规模 $\le f(C)|A|$ 的广义等差数列（GAP）内。它回答"什么是和集小"的结构问题，是 additive combinatorics / structure-of-sum-sets 的奠基石。
 
 ## 二、原理思路

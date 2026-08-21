@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：层上同调与 Dolbeault 定理、典则线丛 $K_X$、Hodge 星算子、迹映射与 Stokes 定理、Hodge 定理（复形式）。
+
 Serre 对偶定理是复几何与层上同调理论的基础结果，由 Jean-Pierre Serre 于 1955 年在代数几何背景下证明，并随后由 Kodaira-Spencer 推广至紧复流形情形。该定理断言：在 $n$ 维紧复流形 $X$ 上，对任意全纯向量丛 $E$，存在自然同构：
 
 $$H^q(X, E) \cong H^{n-q}(X, E^* \otimes K_X)^*$$

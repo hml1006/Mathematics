@@ -10,6 +10,8 @@ $$
 
 ## 一、定理介绍
 
+> **前置依赖**：$\ell$-adic étale上同调、Lefschetz-Grothendieck迹公式、Poincaré对偶、Hodge指数定理、Deligne混合权论
+
 Weil猜想（Weil 1949）是关于有限域 $\mathbb{F}_q$ 上光滑射影代数簇 $X$ 的 $\mathbb{F}_{q^n}$-有理点计数与 Zeta 函数的一组深刻断言：**有理性**、**函数方程**、**Riemann 假设**（零点/极点位置）与 **Betti 数**（极点阶与复化流形上同调维数）。Grothendieck 用 étale/ℓ-adic 上同调证明前三项，Deligne（1971–1974, Weil II）用芳香纤维、Lefschetz 铅笔等完整证明了 Riemann 假设部分并推广到非固有情形。
 
 ## 二、原理思路

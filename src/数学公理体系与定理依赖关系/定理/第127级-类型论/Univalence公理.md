@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：恒等类型与J规则、等价（同伦等价）定义、HoTT路径概念、类型宇宙（$\mathcal{U}$）、一致性的单纯集模型。
+
 Univalence 公理（Voevodsky，2009）是类型论（尤其同伦类型论 HoTT）中一项深刻而现代的公理：
 $$
 (A\simeq B)\simeq(A=_\mathcal{U}B),

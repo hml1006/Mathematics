@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：投射模与 Grothendieck 群构造、一般线性群与初等矩阵、Dedekind 整环与理想类群、Quillen +构造、Swan 定理
+
 代数 K 理论是 K 理论在代数领域的推广，研究环、代数和其他代数结构的不变量。与拓扑 K 理论研究向量丛不同，代数 K 理论研究投射模、自同构群和其他代数对象。
 
 代数 K 理论由 Alexander Grothendieck 在证明 Grothendieck-Riemann-Roch 定理时引入 $K_0$，随后 Hyman Bass 和 John Milnor 定义了 $K_1$。更高阶的 K 群 $K_n$ 由 Daniel Quillen 于 1972 年给出严格定义，这一突破性工作获得了 1978 年 Fields 奖。

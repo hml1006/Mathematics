@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：牛顿第二定律（动量守恒）、Reynolds输运定理、散度定理、Cauchy应力张量、体积分局域化引理。
+
 Cauchy 第一运动定律把动量守恒化为局部微分方程
 $$
 \nabla\cdot\boldsymbol\sigma+\rho\boldsymbol b=\rho\dot{\boldsymbol v},

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：$(\infty,d)$-范畴、框架化cobordism范畴、迭代loop空间与可定向对象、$\mathbb{E}_d$-代数、高范畴传延
+
 扩展 TQFT 与 Lurie 的 Bordism 假设（Lurie 2009）给出"扩展TQFT 的值由点在适当高范畴中的像决定"的精确形式：设 $\mathcal C$ 为 $(\infty,d)$-范畴，则对称幺半 $(\infty,d)$-范畴 $\operatorname{Bord}_d^{\mathrm{fr}}$ 的完全扩展 TQFT 的范畴等价于由 $\mathcal C$ 的 $d$-次框架化反复 loop 空间（即"可定向 $d$-对象"）对象组成的位置。本质：Bordmich 范畴是框架化紧流形的自由 $(\infty,d)$-范畴。
 
 ## 二、原理思路

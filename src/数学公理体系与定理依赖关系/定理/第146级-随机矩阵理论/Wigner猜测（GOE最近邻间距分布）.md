@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：GOE随机矩阵、Pfaffian点过程、sine核与gap概率、最近邻间距统计、能级排斥
+
 Wigner猜测（Wigner surmise）断言：GOE 的最近邻特征值间距在适当归一（平均间距=1）后的分布 $p(s)$ 由公式给出
 $$
 p(s)=\frac{\pi s}{2}e^{-\pi s^2/4},

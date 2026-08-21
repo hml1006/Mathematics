@@ -10,6 +10,8 @@ Van Kampen定理（也称为 Seifert-van Kampen 定理）是代数拓扑中计�
 
 ## 分析
 
+**前置依赖**：基本群与环路同伦、群的自由积与融合自由积及其泛性质、Lebesgue 数引理、群同态基本定理、道路连通性
+
 **定理的精确表述**：设 $X$ 是拓扑空间，$U, V \subset X$ 是开集，满足 $X = U \cup V$，$U \cap V$ 非空且道路连通。取基点 $x_0 \in U \cap V$。则包含映射 $i: U \cap V \hookrightarrow U$，$j: U \cap V \hookrightarrow V$，$k: U \hookrightarrow X$，$l: V \hookrightarrow X$ 诱导的基本群同态满足：
 
 $$

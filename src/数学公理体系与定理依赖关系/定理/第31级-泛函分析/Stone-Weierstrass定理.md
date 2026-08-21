@@ -10,6 +10,8 @@ Stone-Weierstrass定理是逼近论中最重要的定理之一，由 Marshall St
 
 ## 分析
 
+**前置依赖**：Weierstrass 逼近定理、紧致 Hausdorff 空间的有限开覆盖性质、一致收敛与一致范数、连续函数空间 $C(X)$ 的 Banach 代数结构
+
 **定理的精确表述（实版本）**：设 $X$ 是紧致 Hausdorff 空间，$C(X, \mathbb{R})$ 是所有实值连续函数在一致范数下构成的 Banach 代数。设 $A \subset C(X, \mathbb{R})$ 是子代数，满足：
 
 1. **分离点**：对任意不同的 $x, y \in X$，存在 $f \in A$ 使得 $f(x) \neq f(y)$；

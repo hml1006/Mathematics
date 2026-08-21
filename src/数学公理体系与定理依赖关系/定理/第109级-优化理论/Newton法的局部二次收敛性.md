@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：多变量 Taylor 展开与积分型余项、Hessian 矩阵与 Lipschitz 连续性、正定矩阵与范数、不动点与收敛阶分析。
+
 **Newton 法局部二次收敛**：设 $f:\mathbb R^n\to\mathbb R$ 二次连续可微，$\nabla^2 f$ 在 $x^*$ 邻域 Lipschitz 连续且 $\nabla^2f(x^*)\succ0$。则 Newton 迭代 $x_{k+1}=x_k-[\nabla^2 f(x_k)]^{-1}\nabla f(x_k)$ 在充分靠近 $x^*$ 处**局部二次收敛**：存在 $\delta,C>0$ 使 $\|x_0-x^*\|<\delta$ 时 $\|x_{k+1}-x^*\|\le C\|x_k-x^*\|^2$。
 
 ## 二、原理思路

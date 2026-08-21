@@ -10,6 +10,8 @@ Hamiltonian力学与辛几何（Hamiltonian Mechanics and Symplectic Geometry）
 
 ## 分析
 
+**前置依赖**：辛流形与非退化闭 2-形式、微分形式与 Lie 导数、Hamiltonian 向量场、Darboux 定理（Moser 方法）、Poisson 括号与 Jacobi 恒等式。
+
 **定理的精确表述**（Hamiltonian 方程）：设 $(M, \omega)$ 是辛流形，$H: M \to \mathbb{R}$ 是光滑函数（Hamiltonian）。则存在唯一的向量场 $X_H \in \mathfrak{X}(M)$ 满足
 
 $$

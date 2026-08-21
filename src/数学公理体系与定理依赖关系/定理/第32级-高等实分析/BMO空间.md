@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：局部可积函数与方体平均、Calderón-Zygmund 分解、Hardy 空间 $H^1$ 及其原子分解、Chebyshev 不等式
+
 BMO（Bounded Mean Oscillation，有界平均振荡）空间由 John 和 Nirenberg 于 1961 年引入，是调和分析中的重要函数空间。BMO 空间包含 $L^\infty$，同时是许多奇异积分算子的自然目标空间。
 
 BMO 空间在调和分析、偏微分方程和复分析中扮演核心角色。它是 Hardy 空间 $H^1$ 的对偶空间（Fefferman 定理），在 Calderón-Zygmund 算子理论、椭圆 PDE 正则性理论和几何测度论中有广泛应用。

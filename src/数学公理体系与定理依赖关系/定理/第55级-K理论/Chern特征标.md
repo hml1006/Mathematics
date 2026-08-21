@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Chern 类与分裂原理、对称函数基本定理、Atiyah-Hirzebruch 谱序列、Chern-Weil 理论与 de Rham 上同调、拓扑 K 理论
+
 Chern 特征标是 K 理论与上同调之间的桥梁，由 Shiing-Shen Chern 和陈省身的工作发展而来。它是一个环同态 $\text{ch}: K(X) \to H^*(X; \mathbb{Q})$，将向量丛的 K 类映射到有理上同调类。
 
 Chern 特征标在指标定理中扮演核心角色，因为它将 K 理论中的代数信息转化为上同调中的可计算量。通过 Chern-Weil 理论，Chern 特征标可以用曲率形式显式表达。

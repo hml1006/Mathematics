@@ -10,6 +10,8 @@ Krylov子空间方法（Krylov Subspace Methods）是求解大型稀疏线性方
 
 ## 分析
 
+**前置依赖**：Krylov 子空间的定义、Gram-Schmidt 正交化与 Arnoldi 过程、Lanczos 三对角化、最小二乘与 QR 分解、条件数与预处理。
+
 **定义**：对矩阵 $A \in \mathbb{R}^{n \times n}$ 和向量 $v \in \mathbb{R}^n$，$k$ 维 Krylov 子空间定义为
 
 $$

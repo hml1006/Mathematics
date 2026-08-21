@@ -83,3 +83,6 @@ $$\sum_{p \equiv a \pmod{q}} \frac{1}{p^s} \sim \frac{1}{\varphi(q)} \log \frac{
 这表明 $\sum_{p \equiv a \pmod{q}} \frac{1}{p}$ 发散，从而存在无穷多个满足条件的素数。$\square$
 
 **推论**：素数在模 $q$ 的互素剩余类中渐近均匀分布：$\pi(x; q, a) \sim \frac{x}{\varphi(q) \log x}$。$\square$
+## 相关条目
+
+- [Dirichlet 算术级数定理（第75级-解析数论）](../第75级-解析数论/Dirichlet算术级数定理.md)：与本条目为同一定理，另收录于第75级-解析数论，可交叉参考。

@@ -10,6 +10,8 @@
 
 ## 分析
 
+**前置依赖**：欧几里得函数、带余除法、主理想、自然数的良序性。
+
 **定义**：整环 $R$ 称为欧几里得整环，如果存在函数 $\varphi: R \setminus \{0\} \to \mathbb{N}$（称为欧几里得函数），满足：
 1. 对任意 $a, b \in R$，$b \neq 0$，存在 $q, r \in R$ 使得 $a = bq + r$，且 $r = 0$ 或 $\varphi(r) < \varphi(b)$；
 2. 对任意非零 $a, b \in R$，$\varphi(a) \le \varphi(ab)$。

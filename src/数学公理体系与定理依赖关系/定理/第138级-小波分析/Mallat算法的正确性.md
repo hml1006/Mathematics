@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：双尺度关系、多分辨率分析、正交投影与直和分解、卷积与下采样
+
 Mallat 算法（快速小波变换）的正确性给出分解与重构的精确公式。设 MRA、尺度函数 $\phi$、小波 $\psi$、滤波 $h_k,g_k$，近似系数 $a_j[k]=\langle f,\phi_{j,k}\rangle$、细节系数 $d_j[k]=\langle f,\psi_{j,k}\rangle$。则分解
 $$
 a_{j+1}[k]=\sum_nh[2k-n]a_j[n],\qquad d_{j+1}[k]=\sum_ng[2k-n]a_j[n],

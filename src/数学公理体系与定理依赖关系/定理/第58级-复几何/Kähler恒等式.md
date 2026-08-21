@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Kähler 度量与 $d\omega=0$、$\partial$ 与 $\bar\partial$ 算子及其 $L^2$ 伴随、Lefschetz 算子 $L$ 与 $\Lambda$、$\mathfrak{sl}_2$ 表示关系、Kähler 正规坐标。
+
 Kähler 恒等式是 Kähler 几何的核心恒等式之一，由 Kähler、Hodge 等人发展，并经 Kodaira-Spencer 严格化。该恒等式断言：在 Kähler 流形 $(X, \omega)$ 上，三种 Laplacian 算子——实 de Rham Laplacian $\Delta_d$、$(1,0)$-Laplacian $\Delta'$、$(0,1)$-Laplacian $\Delta''$——彼此重合（至多相差常数因子）：
 
 $$\Delta' = \Delta'' = \frac{1}{2}\Delta_d$$

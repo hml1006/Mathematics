@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Gromov-Witten理论、Picard-Fuchs方程、周期积分、Yukawa耦合、Calabi-Yau流形上的模空间
+
 Gromov-Witten 不变量与周期的关系是镜像对称的可计算核心：$M$ 的（A-模型）Gromov-Witten 不变量可从镜像 $W$ 的（B-模型）周期积分中读出。令 $\Pi(t)$ 为周期、$q=e^{2\pi i t}$，则构造性公式
 $$
 \sum_{\beta\in H_2(M)}\mathrm{GW}_{0,\beta}^M\,q^\beta=\frac{d^3}{dt^3}\Pi(t)

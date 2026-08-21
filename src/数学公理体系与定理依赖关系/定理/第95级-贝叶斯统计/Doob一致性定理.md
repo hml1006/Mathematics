@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：贝叶斯定理与后验分布、似然比、鞅与鞅收敛定理、大数定律、Kullback-Leibler 散度、可识别性
+
 设观测 $\boldsymbol{x}_n=(x_1,\dots,x_n)$ 独立同分布于 $P_{\theta_0}$，先验为 $\pi$。则对几乎所有 $\theta_0$（在先验支集上，除去可识别性问题对应的零测集），后验 $\pi(\theta\mid\boldsymbol{x}_n)$ 在 $\theta_0$ 处一致：
 
 $$

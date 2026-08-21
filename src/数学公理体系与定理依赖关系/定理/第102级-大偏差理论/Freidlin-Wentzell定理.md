@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Girsanov 变换、Schilder 定理、Itô 随机积分、标准 Brown 运动、Varadhan 引理。
+
 考虑随机微分方程
 $$
 dX_t^\varepsilon=b(X_t^\varepsilon)\,dt+\varepsilon\,dW_t,\qquad X_0^\varepsilon=x_0,

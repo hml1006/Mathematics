@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Young 图与标准 Young 表、RSK 插入算法、钩长公式。
+
 Robinson-Schensted 对应（RS 对应，RSK 算法）建立 $S_n$ 与 $\bigcup_{\lambda\vdash n}\text{SYT}(\lambda)\times\text{SYT}(\lambda)$ 之间的一一对应，把每个置换 $\pi$ 映射到一对同形状的标准 Young 表。它揭示 $n!=\sum_{\lambda\vdash n}(f^\lambda)^2$，是组合与表示论最深刻的统一对应之一。
 
 ## 二、原理思路

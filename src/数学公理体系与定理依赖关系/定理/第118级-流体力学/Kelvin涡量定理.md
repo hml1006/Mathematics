@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：欧拉方程、物质导数与对流通量、斯托克斯定理、正压性条件、保守力场（势函数）、向量微积分（环路积分）。
+
 Kelvin 涡量定理（Kelvin's circulation theorem）断言：无粘、正压且体积力有势的流体中，沿封闭物质线的环量 $\Gamma=\oint_C\boldsymbol u\cdot d\boldsymbol l$ 满足 $D\Gamma/Dt=0$。它是涡管、涡线守恒性与许多涡动力学结论的出发点。
 
 ## 二、原理思路

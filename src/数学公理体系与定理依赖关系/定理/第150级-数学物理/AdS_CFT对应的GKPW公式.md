@@ -10,6 +10,8 @@ $$
 
 ## 一、定理介绍
 
+> **前置依赖**：AdS时空几何、共形场论(CFT)、全息原理与AdS/CFT对偶、路径积分配分函数、Witten图与生成泛函
+
 AdS/CFT 对应的 GKPW 公式（Gubser–Klebanov–Polyakov 1998；Witten 1998）给出反de Sitter 空间中量子引力与边界共形场论对偶的精确数学表述：$d+1$ 维 AdS 中场的边界值 $\phi_0$ 作为 $d$ 维 CFT 算子 $\mathcal O$ 的源，且 CFT 生成泛函等于 AdS 配分函数。它是"全息原理"的算符形式。
 
 ## 二、原理思路

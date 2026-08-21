@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：导出概形、cotangent complex、万有族与push-forward、导出形变理论、光滑态射条件
+
 导出Hilbert概形的光滑性讨论了把经典 Hilbert 概形派生化之后所得的导出对象在合适意义下的 smoothness。经典 Hilbert 概形常有 nilpotent/多余切结构；其派生版本（以导出张积/导出 universal family 构造）在导形态射资格下（切锥、cotangent complex 零阶）呈现光滑性，即全部多余切即压制。
 
 ## 二、原理思路

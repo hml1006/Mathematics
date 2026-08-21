@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：潜在结果框架（Rubin因果模型）、平行趋势假设、SUTVA假设、大数定律
+
 双重差分（Difference-in-Differences, DID）的识别条件是因果推断的核心。设分组 $D_i\in\{0,1\}$ 与时间 $\text{post}\in\{0,1\}$，潜在结果 $Y_i(D,\text{post})$。在**平行趋势**（及无预期、共同冲击）假设下，观测结果的双重差分
 $$
 \hat\tau_{\text{DID}}=\big(\bar y_{\text{T},\text{post}}-\bar y_{\text{T},\text{pre}}\big)-\big(\bar y_{\text{C},\text{post}}-\bar y_{\text{C},\text{pre}}\big)

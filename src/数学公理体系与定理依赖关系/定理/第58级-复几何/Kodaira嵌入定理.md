@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：正全纯线丛与曲率形式、$\bar\partial$ 方程的 $L^2$ 估计、Kodaira 消没定理、Riemann-Roch-Hirzebruch 定理、Fubini-Study 度量。
+
 Kodaira 嵌入定理是复几何与代数几何中最为深刻的结果之一，由日本数学家小平邦彦（Kunihiko Kodaira）于 1954 年证明。该定理给出了紧复流形可作为光滑射影代数簇嵌入射影空间的充分必要条件，从而在紧复流形的"复几何"刻画与"代数几何"刻画之间架起了桥梁。
 
 定理断言：紧复流形 $X$ 是射影代数的（即可以全纯嵌入到某复射影空间 $\mathbb{CP}^N$ 中），当且仅当 $X$ 上存在正的全纯线丛（positive holomorphic line bundle）。这一结果使复几何中"正性"的微分几何概念（曲率为正）与代数几何中"丰富线丛"（ample line bundle）的概念完全等价，是 Hodge 理论、Kähler 几何与层上同调理论结合的典范成果。

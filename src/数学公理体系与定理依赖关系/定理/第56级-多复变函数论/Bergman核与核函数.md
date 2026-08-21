@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Hilbert 空间、Riesz 表示定理、Cauchy 估计、双全纯映射、Kähler 度量。
+
 Bergman 核函数是复分析中的核心工具之一，由 Stefan Bergman 在 1922 年引入。它通过 $L^2$ 全纯函数空间的再生核构造，给出了区域 $\Omega \subset \mathbb{C}^n$ 上一个规范、自然、且携带丰富几何信息的全纯函数 $K(z, w)$。
 
 Bergman 核 $K_\Omega(z, w)$ 是 $\Omega \times \Omega$ 上的全纯函数（关于 $z$，反全纯关于 $w$），具有"再生性质"：对任意 $L^2$ 全纯函数 $f$，

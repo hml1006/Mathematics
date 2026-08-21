@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：拉格朗日乘子法、对称矩阵的特征分解（谱定理）、Rayleigh商、二次型与内积、多元微积分（梯度与极值）。
+
 主成分分析（PCA）寻找使投影后方差最大的正交方向。该定理用 Lagrange 乘子法证明：单位方向 $\boldsymbol w$ 上投影方差 $\boldsymbol w^\top\boldsymbol S\boldsymbol w$ 的最大值正是协方差矩阵 $\boldsymbol S$ 的最大特征值，极值方向即对应特征向量。
 
 ## 二、原理思路

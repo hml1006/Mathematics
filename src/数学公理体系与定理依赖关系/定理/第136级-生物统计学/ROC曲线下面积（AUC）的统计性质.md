@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Mann-Whitney U统计量、U统计渐近理论（Hoeffding分解）、大数定律、概率积分表示
+
 AUC（Area Under the ROC Curve）是二分类判别力的核心指标。对连续评分 $S$ 与真实标签 $D\in\{0,1\}$，AUC 统计性质的基础是
 $$
 \text{AUC}=P(S_1>S_0),

@@ -10,6 +10,8 @@ Weierstrass M 判别法（Weierstrass M-Test）由德国数学家卡尔·魏尔�
 
 ## 分析
 
+**前置依赖**：一致收敛的 Cauchy 准则、常数项级数的收敛、比较判别法、三角不等式
+
 **定理内容**：设函数项级数 $\sum_{n=1}^{\infty} u_n(x)$ 在集合 $E$ 上有定义，且存在常数序列 $\{M_n\}$，满足：
 1. $|u_n(x)|\le M_n$ 对任意 $x\in E$ 和 $n\in\mathbb{N}$ 成立；
 2. $\sum_{n=1}^{\infty} M_n$ 收敛；

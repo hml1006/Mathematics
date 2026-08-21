@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：AR 过程的定义、自协方差函数、期望与正交性（因果性）、矩阵方程与正定性、线性方程组
+
 对 AR($p$) 过程 $X_t = \phi_1X_{t-1} + \cdots + \phi_pX_{t-p} + \varepsilon_t$，其自协方差 $\gamma(h)$ 满足 Yule-Walker 方程。特别当 $h=1,\dots,p$ 时写成矩阵形式 $\boldsymbol{\Gamma}_p\boldsymbol{\phi} = \boldsymbol{\gamma}_p$，且解存在唯一当且仅当自协方差矩阵 $\boldsymbol{\Gamma}_p$ 正定。
 
 ## 二、原理思路

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Brown 运动、指数鞅与 Novikov 条件、测度变换（Radon-Nikodym 导数）、Bayes 公式、Itô 引理、Lévy 鞅刻画定理、二次变差
+
 设 $W_t$ 为 $\mathbb{P}$ 下的 $d$ 维 Brown 运动，$\theta_t$ 为适应过程且满足 Novikov 条件。定义指数鞅 $L_t=\exp\{-\int_0^t\theta_s^\top dW_s - \frac12\int_0^t\|\theta_s\|^2ds\}$ 与新测度 $\frac{d\mathbb{Q}}{d\mathbb{P}}\big|_{\mathcal{F}_T}=L_T$。则在 $\mathbb{Q}$ 下，$\tilde{W}_t = W_t + \int_0^t\theta_s ds$ 是 Brown 运动。
 
 ## 二、原理思路

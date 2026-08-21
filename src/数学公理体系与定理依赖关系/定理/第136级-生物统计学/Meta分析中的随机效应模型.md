@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：随机效应模型、加权最小二乘、Cochran Q统计量（矩估计）、中心极限定理
+
 Meta 分析随机效应模型合并各研究的效应估计。设研究 $i$ 观测效应 $\hat\theta_i=\theta_i+e_i$，$e_i\sim N(0,v_i)$（研究内抽样误差）；真实效应 $\theta_i=\mu+\delta_i$，$\delta_i\sim N(0,\tau^2)$（研究间异质性）。模型为
 $$
 \hat\theta_i=\mu+\delta_i+e_i,\qquad \mathbb E[e_i]=0,\ \text{Var}(e_i)=v_i,\ \text{Var}(\delta_i)=\tau^2.

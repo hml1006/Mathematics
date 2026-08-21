@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Hecke算子与Hecke对应、D-模理论、局部系统与模空间LocSys、Fourier-Mukai变换、Opers
+
 Beilinson-Drinfeld定理是几何Langlands纲领的核心成果：设 $X$ 为亏格 $g>1$ 的光滑射影曲线，$G$ 为约化群，则 $\mathrm{Bun}_G$ 上（带Hecke本征性质）的D-模的范畴与 $L$-群 $^LG$ 的局部系统模空间 $\mathrm{LocSys}_{{}^LG}$ 上的拟凝聚层的范畴等价。它将算术的 Langlands 对应翻译成层论的范畴等价。
 
 ## 二、原理思路

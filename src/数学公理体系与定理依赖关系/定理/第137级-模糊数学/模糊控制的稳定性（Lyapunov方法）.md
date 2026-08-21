@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Lyapunov稳定性定理、Takagi-Sugeno模糊模型、线性矩阵不等式（LMI）、凸优化理论
+
 模糊控制的稳定性（Lyapunov 方法）把 T-S 模糊系统的稳定性分析化为 LMI 求解。T-S 模糊模型把非线性系统用"IF-THEN 规则 + 局部线性模型"描述：
 $$
 \text{Rule } i:\ \text{If }\theta_1(t)\text{ is }M_{i1}\text{ and }\dots\ \text{Then }\dot x=A_ix+B_iu.

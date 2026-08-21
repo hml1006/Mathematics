@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：矩生成函数、Legendre 变换（凸共轭）、独立同分布随机变量、切比雪夫型指数不等式、Esscher 测度（测度变换）、中心极限定理。
+
 设 $X_1,\dots,X_n$ 为 i.i.d. 随机变量，其矩生成函数 $M(\theta)=\mathbb E[e^{\theta X_1}]$ 在 $\theta=0$ 的某邻域内有限，记对数矩生成函数 $\Lambda(\theta)=\log M(\theta)$。令 $S_n=\sum_iX_i$，$\overline X_n=S_n/n$。则 $\{\overline X_n\}$ 满足速率为 $n$ 的大偏差原理，速率函数为
 $$
 I(x)=\sup_{\theta\in\mathbb R}\{\theta x-\Lambda(\theta)\},

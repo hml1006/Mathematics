@@ -5,6 +5,9 @@
 > **小例子**：取 $SU(2)$ 在二级别 $r$ 的模表示，用其 $6j$ 符号沿三角剖分求和，即得三维流形的不变量，并可计算如 $L(3,1)$ 等透镜空间的不变量。
 
 ## 一、定理介绍
+
+> **前置依赖**：ribbon Hopf 代数与拟三角结构、Yang–Baxter 方程与辫范畴、Lickorish–Wallace 手术定理、Kirby 移动与 Dehn 手术、模范畴的 $S$–矩阵与量子维数。
+
 Reshetikhin–Turaev 不变量是由 N. Reshetikhin 与 V. Turaev 在 1991 年严格构造的一类量子纽结不变量。它们从 ribbon/modular Hopf 代数的表示出发，不仅给纽结着色，还能进一步构造三维闭流形的不变量。
 
 ## 二、原理思路

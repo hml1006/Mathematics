@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：N=4超Yang-Mills理论、S-对偶（电磁对偶）、拓扑约化与二维TQFT、Wilson-＇t Hooft圈、几何Langlands
+
 Kapustin–Witten对偶断言：几何 Langlands 对应本质上就是 $\mathcal{N}=4$ 超 Yang–Mills（SYM）理论的 S-对偶（蒙哥马利–电磁对偶 $G\leftrightarrow{}^LG$）在 Wilson–'t Hooft 拓扑约化后的结果。它首次给出几何 Langlands 的物理推导与解释，把层论等价还原为场论的对偶对称性。
 
 ## 二、原理思路

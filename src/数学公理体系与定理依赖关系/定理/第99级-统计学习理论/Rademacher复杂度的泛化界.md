@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Rademacher 变量与对称化、McDiarmid 不等式、期望与概率界、损失函数有界性、Jensen 不等式
+
 设 $\mathcal{H}$ 为假设空间，损失函数 $L$ 取值于 $[0,1]$。定理断言：对任意 $\delta>0$，以至少 $1-\delta$ 的概率，对所有 $h\in\mathcal{H}$ 一致成立
 $$
 R(h)\le \hat{R}_n(h)+2\mathfrak{R}_n(\mathcal{H})+\sqrt{\frac{\log\frac1\delta}{2n}},

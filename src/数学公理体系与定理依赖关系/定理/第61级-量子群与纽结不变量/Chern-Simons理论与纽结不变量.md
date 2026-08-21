@@ -5,6 +5,9 @@
 > **小例子**：对 $SU(2)$ 的 Chern–Simons 理论，Wilson 圈的期望值给出 $SU(2)$ 量子不变量；沿二级别 $\,k\,$ 取极限还能回到经典的 Jones 多项式。
 
 ## 一、定理介绍
+
+> **前置依赖**：Chern–Simons 作用量与规范不变性、Wilson 圈与紧 Lie 群的表示论、路径积分与典范量子化、WZW 模型共形块、Reshetikhin–Turaev 不变量。
+
 1988 年 Edward Witten 提出，紧 Lie 群 $G$ 在三维流形上的 Chern–Simons 规范理论可以自然产生纽结与三维流形的量子不变量。该理论的配分函数与 Wilson 圈的期望值分别给出三维流形不变量与着色链环不变量。
 
 ## 二、原理思路

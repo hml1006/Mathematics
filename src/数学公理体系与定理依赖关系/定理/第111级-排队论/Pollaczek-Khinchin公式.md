@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：嵌入马尔可夫链、M/G/1 模型与负载、概率生成函数、平稳转移方程、均值与方差的矩计算。
+
 **Pollaczek-Khinchin（P-K）公式**：对 M/G/1 队列（Poisson 到达、一般服务分布、单服务台），稳态平均顾客数为
 $$
 L=\rho+\frac{\rho^2+\lambda^2\sigma^2}{2(1-\rho)},\qquad \rho=\frac{\lambda}{\mu},\ \sigma^2=\operatorname{Var}(S).

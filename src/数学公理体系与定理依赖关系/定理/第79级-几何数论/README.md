@@ -1,9 +1,30 @@
 # 第79级-几何数论
 
-本目录收录以下定理：
+> 一句话级别概述：几何数论用凸体体积与格点分布的几何方法研究整数方程的解，以 Minkowski 凸体定理等为核心，把丢番图问题转化为格与凸体的几何问题。
 
-- [Blichfeldt 定理](./Blichfeldt定理.md)
-- [Minkowski 凸体定理](./Minkowski凸体定理.md)
-- [Minkowski 线性型定理](./Minkowski线性型定理.md)
-- [Minkowski-Hlawka 定理](./Minkowski-Hlawka定理.md)
-- [二次型的 Minkowski 约化定理](./二次型的Minkowski约化定理.md)
+## 级别简介
+
+本级别研究格（$\mathbb{Z}^n$ 及其子格）与几何体的关系，用体积、凸性等几何工具判定格点的存在性。核心内容包括 Blichfeldt 定理、Minkowski 凸体定理、Minkowski 线性型定理、Minkowski-Hlawka 定理以及正定二次型的 Minkowski 约化理论。
+
+## 本级别定理
+
+- [Blichfeldt定理](./Blichfeldt定理.md)：体积超过格基本区域的集合中含两点之差落在格上。
+- [Minkowski凸体定理](./Minkowski凸体定理.md)：中心对称凸体体积超过 $2^n\det\Lambda$ 时必含非零格点。
+- [Minkowski线性型定理](./Minkowski线性型定理.md)：线性型乘积超过行列式时存在非零整点满足各线性型界限。
+- [Minkowski-Hlawka定理](./Minkowski-Hlawka定理.md)：存在密度极高的格，使中心对称凸体不含其它格点。
+- [二次型的Minkowski约化定理](./二次型的Minkowski约化定理.md)：正定二次型可经整数线性变换约化为标准形状。
+
+## 前置知识
+
+本级别依赖格与格点、凸体与体积、行列式以及多变量微积分积分工具，也用到前序丢番图逼近与线性代数知识。它建立在初等数论、实分析与线性代数基础之上。
+
+## 后继用途
+
+本级别为二次型理论、格密码学（LLL、最近向量问题）、丢番图逼近的几何化以及数的几何在代数数论中的应用提供基础。
+
+## 关键定理速览
+
+- Minkowski 凸体定理：几何数论的出发点，判定格点存在的体积准则。
+- Minkowski 线性型定理：线性型系统的非零整点存在性。
+- Minkowski-Hlawka 定理：高维格密度的估计与临界行列式。
+- 二次型的 Minkowski 约化定理：格的基与最短向量理论。

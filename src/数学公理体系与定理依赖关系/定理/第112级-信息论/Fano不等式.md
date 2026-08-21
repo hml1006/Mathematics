@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：熵与条件熵、互信息、链式法则、二元熵函数、对数的上界性质。
+
 **Fano 不等式**：设 $X,\hat X$ 取值于同一字母表 $\mathcal X$，$P_e=P(X\neq\hat X)$。则
 $$
 H(X|\hat X)\le H(P_e)+P_e\log(|\mathcal X|-1)\le1+P_e\log|\mathcal X|.

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：L-群的构造、局部Langlands对应、自守表示理论、稳定迹公式（Langlands-Arthur计划）、L-函数
+
 Langlands函子性猜想（functoriality）断言：给定约化群 $H,G$ 及其 $L$-群间的（$L$-同态）同态 $\varphi:{}^L H\to {}^L G$，$H$ 上的每个自守表示 $\pi$ 应"升"为一个 $G$ 上的自守表示 $\operatorname{Lift}(\pi)$，并且局部 L-因子随之传递。它把局部Langlands对应与全局表示理论统一到一个基本机制下。
 
 ## 二、原理思路

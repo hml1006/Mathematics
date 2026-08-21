@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Cauchy–Riemann 方程、复流形与实子流形、Levi 形式、Frobenius 定理、$\bar{\partial}_b$ 算子的次椭圆估计。
+
 CR 几何（CR Geometry）研究的是复流形实子流形上的"全纯几何"，是介于多复变函数论、微分几何与偏微分方程之间的核心领域。"CR"代表"Cauchy–Riemann"，因为 CR 流形的本质是在实子流形上保留了 Cauchy–Riemann 方程的某种"切向"结构。
 
 CR 几何的萌芽可追溯到 Poincaré（1907）对 $\mathbb{C}^2$ 中实超曲面的研究。Poincaré 发现 $\mathbb{C}^2$ 中实超曲面的双全纯等价问题有非平凡的局部不变量（Poincaré 不变量），与单复变中 Riemann 映射定理的"刚性"形成鲜明对比。现代 CR 几何理论由 Cartan、Tanaka、Chern–Moser（1974）等人系统发展。

@@ -10,6 +10,8 @@ Radon-Nikodym定理是实分析和测度论中最深刻的定理之一。它断�
 
 ## 分析
 
+**前置依赖**：测度的绝对连续性、Riesz 表示定理（Hilbert 空间）、$L^2$ 空间与 Cauchy-Schwarz 不等式、$\sigma$-有限性
+
 **定理的精确表述**：设 $(X, \mathcal{M}, \mu)$ 是 $\sigma$-有限测度空间，$\nu$ 是 $\mathcal{M}$ 上的 $\sigma$-有限测度（或带符号测度），且 $\nu \ll \mu$（即 $\nu$ 关于 $\mu$ 绝对连续：$\mu(A) = 0 \Rightarrow \nu(A) = 0$）。则存在可测函数 $f: X \to [0, \infty)$（或 $\mathbb{R}$）使得对任意 $A \in \mathcal{M}$，
 
 $$
@@ -84,3 +86,6 @@ $$
 **推论**：若 $\nu \ll \mu$ 且 $\mu \ll \lambda$，则 $\frac{d\nu}{d\lambda} = \frac{d\nu}{d\mu} \cdot \frac{d\mu}{d\lambda}$ $\lambda$-几乎处处（链式法则）。
 
 **应用**：在概率论中，条件期望 $\mathbb{E}(X \mid \mathcal{G})$ 的存在性可由 Radon-Nikodym 定理推出：令 $\nu(A) = \int_A X \, d\mathbb{P}$，则 $\nu \ll \mathbb{P}|_{\mathcal{G}}$，其 Radon-Nikodym 导数即为条件期望。
+## 相关条目
+
+- [Radon-Nikodym 定理（第98级-测度论与概率论）](../第98级-测度论与概率论/Radon-Nikodym定理.md)：与本条目为同一定理，另收录于第98级-测度论与概率论，可交叉参考。

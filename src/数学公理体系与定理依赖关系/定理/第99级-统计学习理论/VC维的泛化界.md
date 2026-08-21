@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：VC 维与生长函数、Sauer-Shelah 引理、对称化技巧、Hoeffding 不等式、联合界、0-1 损失
+
 设 $\mathcal{H}$ 为二分类假设空间，VC 维为 $d=\text{VCdim}(\mathcal{H})$，$R(h)$ 为期望风险，$\hat{R}_n(h)$ 为经验风险。定理断言：以至少 $1-\delta$ 的概率，对所有 $h\in\mathcal{H}$ 一致成立
 $$
 R(h)\le \hat{R}_n(h)+\sqrt{\frac{2d\log\frac{en}{d}}{n}}+\sqrt{\frac{\log\frac1\delta}{2n}}.

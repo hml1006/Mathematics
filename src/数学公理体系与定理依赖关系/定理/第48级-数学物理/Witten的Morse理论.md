@@ -10,6 +10,8 @@ Witten的Morse理论（Witten's Morse Theory）是 Edward Witten 在1982年提�
 
 ## 分析
 
+**前置依赖**：Morse 函数与 Morse 引理、Morse 指标、de Rham 上同调、Hodge 理论与 Hodge Laplacian、自伴算子的谱分析。
+
 **定理的精确表述**（Morse 不等式）：设 $M$ 是紧致光滑流形，$f: M \to \mathbb{R}$ 是 Morse 函数（所有临界点非退化）。令 $c_k$ 为 $f$ 的指标为 $k$ 的临界点个数，$b_k = \dim H^k_{\mathrm{dR}}(M)$ 为 $M$ 的第 $k$ 个 Betti 数。则
 
 $$

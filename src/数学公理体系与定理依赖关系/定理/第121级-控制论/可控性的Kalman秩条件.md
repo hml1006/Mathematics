@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：矩阵指数、Cayley-Hamilton定理、可控性Gramian与矩阵积分、线性代数（秩与核）、线性时不变系统理论。
+
 可控性的 Kalman 秩条件给出线性时不变系统 $(\boldsymbol A,\boldsymbol B)$ 完全可控的判据：可控性矩阵
 $$
 \mathcal C=[\boldsymbol B,\boldsymbol A\boldsymbol B,\ldots,\boldsymbol A^{n-1}\boldsymbol B]

@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：闭三维流形的三角剖分与 Pachner 移动、spherical fusion 范畴与量子维数、$6j$–符号与 Biedenharn–Elliott 恒等式、Witten–Reshetikhin–Turaev 不变量与 Dehn 手术。
+
 Turaev–Viro 不变量是定义在闭三维流形上的拓扑不变量，由 Turaev 与 Viro 于 1992 年利用量子群表示论中的 $6j$–符号构造。与 Alexander 多项式等经典不变量不同，Turaev–Viro 不变量通过流形的三角剖分（更一般地，胞腔剖分）计算，并对剖分的选择保持不变。当取特定参数时，它与 Witten–Reshetikhin–Turaev 不变量有密切联系，并为三维流形的量子拓扑分类提供了有力工具。
 
 ## 二、原理思路

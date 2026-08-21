@@ -5,6 +5,9 @@
 > **小例子**：平凡结的 Jones 多项式是 $1$；三叶结的 Jones 多项式为 $-t^{-4}+t^{-3}+t^{-1}$，可见两者不同。它的引入甚至推翻了 Alexander 多项式的若干猜想。
 
 ## 一、定理介绍
+
+> **前置依赖**：辫群与 Markov 定理、Temperley–Lieb 代数与 Hecke 代数、Ocneanu 迹、Kauffman 括号与拆接关系。
+
 1984 年 Vaughan Jones 在研究算子代数时发现了一个全新的纽结不变量——Jones 多项式。它通过辫群表示或 Kauffman 括号来定义，是 HOMFLY 多项式的一个重要特例。
 
 ## 二、原理思路

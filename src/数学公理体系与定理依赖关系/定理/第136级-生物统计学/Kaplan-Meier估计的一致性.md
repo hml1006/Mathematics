@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：计数过程与鞅、Nelson-Aalen估计、乘积限与乘积积分、鞅不等式
+
 Kaplan-Meier（乘积限）估计是一致估计生存函数 $S(t)=P(T>t)$ 的非参数方法。对独立删失生存数据 $X_i=\min(T_i,C_i)$，$\delta_i=\mathbf1_{\{T_i\le C_i\}}$，
 $$
 \hat S(t)=\prod_{t_i\le t}\Big(1-\frac{d_i}{n_i}\Big),

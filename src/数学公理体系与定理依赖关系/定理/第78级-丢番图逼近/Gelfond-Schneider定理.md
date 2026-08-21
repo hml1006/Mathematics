@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：代数数与超越数的定义、Siegel 引理、最大模原理、代数数的范数与高度估计。
+
 Gelfond-Schneider 定理由 Gelfond 与 Schneider 于 1934 年独立证明，解决了 Hilbert 第七问题。它断言：若 $\alpha,\beta$ 为代数数，$\alpha\neq0,1$，$\beta$ 非有理数，则 $\alpha^\beta$ 超越。这是时代数逼近理论最重要的成果之一。
 
 ## 二、原理思路

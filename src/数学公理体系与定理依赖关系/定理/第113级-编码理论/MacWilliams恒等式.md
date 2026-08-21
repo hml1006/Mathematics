@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：有限域上的线性码与对偶码、重量分布、有限 Fourier 分析、Poisson 求和公式、加法特征。
+
 **MacWilliams 恒等式**：设 $\mathcal C$ 为 $\mathbb F_q$ 上 $[n,k]$ 线性码，$\mathcal C^\perp$ 为其对偶码，重量分布分别为 $(A_i)$ 与 $(B_j)$，重量枚举多项式 $W_{\mathcal C}(x,y)=\sum_iA_ix^iy^{n-i}$。则
 $$
 W_{\mathcal C^\perp}(x,y)=\frac{1}{|\mathcal C|}W_{\mathcal C}\big(y-x,\ y+(q-1)x\big).

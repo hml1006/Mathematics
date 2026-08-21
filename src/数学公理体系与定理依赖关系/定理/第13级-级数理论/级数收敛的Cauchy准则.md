@@ -10,6 +10,8 @@
 
 ## 分析
 
+**前置依赖**：数列的 Cauchy 收敛准则、部分和、数列极限
+
 **定理内容**：级数 $\sum_{n=1}^{\infty} a_n$ 收敛当且仅当对任意 $\varepsilon>0$，存在正整数 $N$，使得当 $n>m>N$ 时，
 $$\left|\sum_{k=m+1}^{n} a_k\right|<\varepsilon$$
 

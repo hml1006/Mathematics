@@ -1,14 +1,77 @@
 # 第49级-黎曼几何
 
-本目录收录以下定理：
+> 一句话级别概述：黎曼几何在流形上以度量为基本对象，研究曲率与因几何拓扑及全局结构的联系，是现代几何与广义相对论的基石。
 
-- [Bonnet-Myers定理](./Bonnet-Myers定理.md)
-- [Cartan-Hadamard定理](./Cartan-Hadamard定理.md)
-- [Cheeger-Gromoll 分裂定理](./Cheeger-Gromoll分裂定理.md)
-- [Hodge分解定理](./Hodge分解定理.md)
-- [Nash 嵌入定理](./Nash嵌入定理.md)
-- [Rauch比较定理](./Rauch比较定理.md)
-- [Ricci流与Poincare猜想](./Ricci流与Poincare猜想.md)
-- [Riemann曲率张量的对称性](./Riemann曲率张量的对称性.md)
-- [截面曲率 Ricci曲率 标量曲率](./截面曲率Ricci曲率标量曲率.md)
-- [测地线与Jacobi场](./测地线与Jacobi场.md)
+## 级别简介
+
+本级别研究带黎曼度量的光滑流形，涵盖曲率张量与截面/Ricci/标量曲率、测地线与 Jacobi 场、比较定理、Hodge 理论以及嵌入与分裂等整体结果，并涉及 Ricci 流证明 Poincaré 猜想等前沿推进。
+
+## 本级别定理
+
+- [Bonnet-Myers定理](./Bonnet-Myers定理.md)：正曲率有界直径。
+- [Rauch比较定理](./Rauch比较定理.md)：曲率比较控制Jacobi场。
+- [Cartan-Hadamard定理](./Cartan-Hadamard定理.md)：非正曲率覆盖同胚欧氏空间。
+- [Ricci流与Poincare猜想](./Ricci流与Poincare猜想.md)：度量流证明三维球面猜想。
+- [Cheeger-Gromoll分裂定理](./Cheeger-Gromoll分裂定理.md)：非负Ricci下含直线即分裂。
+- [Riemann曲率张量的对称性](./Riemann曲率张量的对称性.md)：曲率张量的代数性质。
+- [Hodge分解定理](./Hodge分解定理.md)：调和形式分解上同调类。
+- [截面曲率Ricci曲率标量曲率](./截面曲率Ricci曲率标量曲率.md)：各层级曲率度量。
+- [Nash嵌入定理](./Nash嵌入定理.md)：黎曼流形欧氏空间等距嵌入。
+- [测地线与Jacobi场](./测地线与Jacobi场.md)：局部测地行为的变分刻画。
+
+## 前置知识
+
+本级别依赖前序级别的如下知识：微分几何（流形、切丛、联络）、张量分析、代数拓扑（上同调）以及常微分方程基础。
+
+## 后继用途
+
+黎曼几何为复几何、几何分析、广义相对论（时空几何）与辛几何提供几何框架，是比较几何、曲率流与谱几何等方向的直接基础。
+
+## 关键定理速览
+
+- Bonnet-Myers定理：正截面曲率导致有限直径。
+- Cartan-Hadamard定理：非正曲率单连通流形的几何刚性。
+- Hodge分解定理：调和形式与上同调的刻画。
+- Nash嵌入定理：抽象黎曼流形的欧氏实现。
+- Ricci流与Poincare猜想：几何流综合三维拓扑。
+ f="/home/louis/code/Mathematics/src/数学公理体系与定理依赖关系/定理/第135级-生物数学/README.md"; echo "lines=$(wc -l < "$f")"; echo "---head---"; head -3 "$f"; echo "---tail---"; tail -2 "$f"
+ f="/home/louis/code/Mathematics/src/数学公理体系与定理依赖关系/定理/第135级-生物数学/README.md"; echo "lines=$(wc -l < "$f")"; echo "---head---"; head -1 "$f"; echo "---tail---"; tail -1 "$f"
+ B="/home/louis/code/Mathematics/src/数学公理体系与定理依赖关系/定理"; cat > "$B/第40级-偏微分方程/README.md" <<'EOF'
+# 第40级-偏微分方程
+
+> 一句话级别概述：偏微分方程（PDE）理论研究刻画自然规律的微分方程的解的存在性、正则性与性态，是连接分析与应用的枢纽学科。
+
+## 级别简介
+
+本级别研究椭圆、抛物与双曲三类偏微分方程的定性理论，涵盖方程分类、Sobolev 空间、弱解与强解、正则性估计以及 Green 函数、最大原理等构造性工具，并触及伪微分算子与流体方程弱解存在性等前沿方向。
+
+## 本级别定理
+
+- [Lax-Milgram定理PDE应用](./Lax-Milgram定理PDE应用.md)：椭圆弱解存在唯一性。
+- [Navier-Stokes方程弱解存在性](./Navier-Stokes方程弱解存在性.md)：不可压流体弱解。
+- [Poisson方程与Green函数](./Poisson方程与Green函数.md)：位势方程显式解。
+- [Sobolev嵌入定理](./Sobolev嵌入定理.md)：弱函数与连续函数嵌入。
+- [Sobolev空间定义](./Sobolev空间定义.md)：带广义导数的函数空间。
+- [二阶线性PDE分类](./二阶线性PDE分类.md)：椭圆/抛物/双曲判别。
+- [伪微分算子](./伪微分算子.md)：Fourier符号化线性算符。
+- [椭圆型方程最大值原理](./椭圆型方程最大值原理.md)：解的极值与边值控制。
+- [椭圆正则性定理](./椭圆正则性定理.md)：光滑数据导出光滑解。
+- [波动方程与dAlembert公式](./波动方程与dAlembert公式.md)：弦振动显式解。
+- [热方程的基本解](./热方程的基本解.md)：热核与初值问题解。
+- [特征线法](./特征线法.md)：一阶PDE沿特征求解。
+
+## 前置知识
+
+本级别依赖前序级别的如下知识：多变量微积分与级数理论、实分析与测度论、泛函分析（Sobolev 空间与算子理论）以及 Fourier 分析基础。
+
+## 后继用途
+
+偏微分方程理论为计算数学（有限元、数值解）、随机分析（随机偏微分方程）、数学物理与工程科学提供严格的分析框架，是第 48 级数学物理和第 50 级计算数学的重要基础。
+
+## 关键定理速览
+
+- Lax-Milgram定理：强制双线性型保证椭圆弱解存在唯一。
+- Sobolev嵌入定理：控制弱解的正则性提升。
+- 椭圆正则性定理：椭圆算子的解随数据光滑化。
+- 椭圆型方程最大值原理：解的最大值仅在边界取得。
+- 热方程与波动方程基本解：抛物/双曲方程显式解的典范。

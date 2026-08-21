@@ -10,6 +10,8 @@ Gauss-Bonnet 定理的全局形式（也称为 Gauss-Bonnet-Chern 定理）是�
 
 ## 分析
 
+**前置依赖**：局部 Gauss-Bonnet 定理、Gauss 曲率与面积元、Euler 示性数与三角剖分（Euler 公式）、测地线
+
 **定理的精确表述**：设 $S$ 是紧致无边的定向 Riemann 曲面。则
 
 $$

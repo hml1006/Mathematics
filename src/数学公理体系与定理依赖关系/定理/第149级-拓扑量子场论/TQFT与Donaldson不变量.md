@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：自对偶Yang-Mills联络、瞬子模空间、基本类与交积、instanton Floer同调、四维沿三流形手术
+
 TQFT 与 Donaldson 不变量 的关系指 Donaldson 的 $SU(2)$-瞬子不变量（$d=4$，通过自对偶 Yang–Mills 的模空间计数）可被组织成（至少部分）四维 TQFT 般的结构：把四流形沿三流形切开，模板（边界模空间）诱导 $H_*(M)$ 上的线性映射；$d=4$ Seiberg–Witten（OS）被 Witten 嵌入超 TQFT。这一联系是"不变量=四维 TQFT 赋值"的重要实现。
 
 ## 二、原理思路

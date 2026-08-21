@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Itô 引理、随机微分方程与鞅、Kolmogorov 后向方程、条件期望与折现过程、Black-Scholes 型抛物方程
+
 Feynman-Kac 公式建立了二阶抛物型偏微分方程与布朗型随机过程的概率表示之间的联系。设 $X_t$ 满足 $dX_t=\mu(t,X_t)dt+\sigma(t,X_t)dW_t$，且 $f$ 满足 Kolmogorov 后向方程及终端条件 $f(T,x)=\Phi(x)$，则
 
 $$

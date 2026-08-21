@@ -10,6 +10,8 @@ Feynman路径积分（Feynman Path Integral）是 Richard Feynman 在1948年提�
 
 ## 分析
 
+**前置依赖**：经典作用量与 Lagrangian、传播子、Schrödinger 方程、高斯积分、时间分割逼近与 Wiener 测度。
+
 **定理的精确表述**（Feynman路径积分公式）：在量子力学中，从 $(x_a, t_a)$ 到 $(x_b, t_b)$ 的传播子为
 
 $$

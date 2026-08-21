@@ -9,6 +9,8 @@ $$
 
 ## 一、定理介绍
 
+> **前置依赖**：样本协方差矩阵、经验谱测度、Stieltjes变换、矩方法、自一致方程
+
 Marčenko–Pastur定律（MP，Marčenko–Pastur 1967）给出白化样本协方差矩阵经验谱分布在高维极限的极限本征：对 $p\times n$ 数据 $X$（iid 适正：均值零、协方差 $\Sigma$），当 $p,n\to\infty$、$p/n\to c\in(0,\infty)$ 时，$X\Sigma X^{\top}$ 的经验谱收敛到 MP 分布（参数 $c$、密度形如上述）。这是高维统计/随机矩阵协方差谱的基础。
 
 ## 二、原理思路

@@ -10,6 +10,8 @@ Kan扩张（Kan Extension）是范畴论中一个极为重要的概念，由 Dan
 
 ## 分析
 
+**前置依赖**：函子与自然变换、逗号范畴、余极限、伴随函子。
+
 **定理的精确表述**：设 $F: \mathcal{A} \to \mathcal{E}$ 和 $K: \mathcal{A} \to \mathcal{B}$ 是函子。$F$ 沿 $K$ 的**左Kan扩张**是一个对 $(\mathrm{Lan}_K F, \eta)$，其中 $\mathrm{Lan}_K F: \mathcal{B} \to \mathcal{E}$ 是函子，$\eta: F \Rightarrow \mathrm{Lan}_K F \circ K$ 是自然变换，且满足泛性质：对任意函子 $G: \mathcal{B} \to \mathcal{E}$ 和自然变换 $\alpha: F \Rightarrow G \circ K$，存在唯一的自然变换 $\beta: \mathrm{Lan}_K F \Rightarrow G$ 使得 $\alpha = \beta_K \circ \eta$。
 
 **对偶地**，**右Kan扩张** $(\mathrm{Ran}_K F, \varepsilon)$ 满足 $\varepsilon: \mathrm{Ran}_K F \circ K \Rightarrow F$ 的泛性质。

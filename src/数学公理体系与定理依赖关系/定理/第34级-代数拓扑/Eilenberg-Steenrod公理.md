@@ -10,6 +10,8 @@ Eilenberg-Steenrod 公理是 Samuel Eilenberg 和 Norman Steenrod 在 1945 年�
 
 ## 分析
 
+**前置依赖**：函子与自然变换、奇异同调群的构造、长正合序列、CW 复形与胞腔分解、Mayer-Vietoris 序列
+
 **公理的精确表述**：一个同调理论由一族函子 $H_n: \mathbf{Top}^2 \to \mathbf{Ab}$（$n \in \mathbb{Z}$）和连接同态 $\partial: H_n(X, A) \to H_{n-1}(A)$ 组成，满足以下公理：
 
 1. **函子性**：对每对拓扑空间 $(X, A)$，$H_n(X, A)$ 是 Abel 群。连续映射对 $f: (X, A) \to (Y, B)$ 诱导 $f_*: H_n(X, A) \to H_n(Y, B)$，满足 $(gf)_* = g_* f_*$，$\operatorname{id}_* = \operatorname{id}$。

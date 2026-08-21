@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Cauchy-Schwarz 不等式、协方差矩阵、Mahalanobis 距离、二次型。
+
 Fisher 线性判别是经典监督分类方法。该定理考虑均值分别为 $\boldsymbol{\mu}_1,\boldsymbol{\mu}_2$、共享协方差矩阵 $\boldsymbol{\Sigma}$ 的两类，断言在使 Fisher 比率最大化（等价于 Mahalanobis 意义下类间距离对类内方差的比值最大）的方向为 $\boldsymbol{a}\propto\boldsymbol{\Sigma}^{-1}(\boldsymbol{\mu}_1-\boldsymbol{\mu}_2)$。它提供了"向一维投影后线性可分离性最优"的严格刻画。
 
 ## 二、原理思路

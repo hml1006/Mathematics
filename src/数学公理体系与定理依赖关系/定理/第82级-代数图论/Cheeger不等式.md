@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Laplacian 矩阵、Courant–Fischer 定理、Rayleigh 商、Cauchy–Schwarz 不等式、Fiedler 向量。
+
 Cheeger 不等式是谱图理论与组合图论之间的桥梁。它把 Laplacian 的第二小特征值 $\mu_2$（代数量）与图的等周常数 $h(G)$（组合量，描述"至少切多少比例的边才能分离一部分顶点"）双向夹逼，因而既提供了计算 $h(G)$ 的有效途径，也给出了 $\mu_2$ 的组合意义。
 
 ## 二、原理思路

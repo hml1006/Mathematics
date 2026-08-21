@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：多元正态分布、Cholesky 分解、Jacobian 行列式、Stiefel 流形、Gamma 函数。
+
 Wishart 分布 $W_p(n,\boldsymbol{\Sigma})$ 描述随机矩阵 $\boldsymbol{W}=\sum_{i=1}^n\boldsymbol{X}_i\boldsymbol{X}_i^\top$ 的分布，其中 $\boldsymbol{X}_i\sim N_p(\boldsymbol{0},\boldsymbol{\Sigma})$。它是一元 $\chi^2$ 分布的多维推广，也是多元正态总体协方差矩阵估计、Hotelling $T^2$ 检验以及多元方差分析的理论基础。该定理给出了 Wishart 分布的显式密度函数，并刻画了其期望与可加性等关键性质。
 
 ## 二、原理思路

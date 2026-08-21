@@ -10,6 +10,8 @@ $$
 
 ## 一、定理介绍
 
+> **前置依赖**：Fukaya范畴、A_infinity结构、Flöer同调、有界导出范畴与凝聚层、伪全纯曲线模空间
+
 Kontsevich 同调镜像对称猜想（1994）是镜像对称的范畴化表述：对一对镜像 Calabi-Yau 流形 $M,W$，存在 $A_\infty$-函子的拟等价
 $$
 \mathcal F(M)\simeq D^b\mathrm{Coh}(W),

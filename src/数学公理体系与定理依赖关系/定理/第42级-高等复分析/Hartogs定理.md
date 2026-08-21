@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Cauchy 积分公式、Laurent 展开、恒等定理、多复变全纯函数、$\bar{\partial}$-方程的可解性。
+
 Hartogs 定理是多复变函数论中的基本定理，由 Friedrich Hartogs 于 1906 年证明。该定理揭示了多复变函数与单复变函数的本质区别：在多复变中，全纯函数可以自动延拓到"洞"上，即全纯函数的奇点集不能是紧致的。
 
 Hartogs 定理是多复变函数论的基石之一，它导致了全纯域（domain of holomorphy）、伪凸性（pseudoconvexity）和 Levi 问题等核心概念的发展。

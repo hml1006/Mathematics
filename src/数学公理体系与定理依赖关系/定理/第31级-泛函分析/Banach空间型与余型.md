@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Rademacher 随机变量、Khintchine 不等式、$L^p$ 空间与 Minkowski 不等式、对偶空间与 Hölder 不等式
+
 Banach 空间的型（type）与余型（cotype）是衡量 Banach 空间几何性质的重要指标，由 Jean-Pierre Kahane 和 Gilles Pisier 系统发展。它们刻画了 Banach 空间与 Hilbert 空间的"距离"，反映了空间中随机级数的收敛性质。
 
 型与余型理论在概率论、调和分析、算子理论和几何非线性分析中有深刻应用。例如，它们决定了 Banach 空间中强大数定律、中心极限定理是否成立，以及奇异积分算子的有界性。

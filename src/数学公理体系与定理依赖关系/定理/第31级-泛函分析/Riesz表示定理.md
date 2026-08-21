@@ -10,6 +10,8 @@ Riesz表示定理（Riesz Representation Theorem）是泛函分析中关于 Hilb
 
 ## 分析
 
+**前置依赖**：Hilbert 空间的完备性、正交分解定理（投影定理）、Cauchy-Schwarz 不等式、连续线性泛函的核是闭子空间
+
 **定理的精确表述**：设 $H$ 是 Hilbert 空间（完备内积空间），$\varphi: H \to \mathbb{R}$（或 $\mathbb{C}$）是连续线性泛函。则存在唯一的 $y \in H$ 使得
 
 $$

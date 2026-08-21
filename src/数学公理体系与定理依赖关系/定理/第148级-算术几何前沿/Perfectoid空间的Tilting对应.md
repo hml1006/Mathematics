@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：perfectoid环与affinoid空间、倾斜逆极限构造、Witt环结构、平展拓扑、拟凝聚层范畴
+
 Perfectoid 空间的 Tilting 对应（Scholze 2012）断言：给一个 perfectoid（特征 0/混合）affinoid 空间 $X$，存在其**倾斜**（tilt）$X^\flat$——一个特征 p 的 perfectoid 空间——使得由 $X\mapsto X^\flat$ 诱导的函子
 $$
 \operatorname{Perf}_0\;\xrightarrow{\;(-)^\flat\;}\;\operatorname{Perf}_p,\qquad X_{\acute et}\cong X^\flat_{\acute et}

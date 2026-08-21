@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：对称半正定矩阵的谱定理、特征值分解、正交基的扩充、向量组正交归一化、矩阵的秩与秩公式。
+
 奇异值分解（Singular Value Decomposition, SVD）是数值线性代数的"皇冠明珠"：任一 $m\times n$ 矩阵可分解为 $A=U\Sigma V^\top$，其中 $U\in\mathbb{R}^{m\times m}$、$V\in\mathbb{R}^{n\times n}$ 正交，$\Sigma$ 为 $m\times n$ 的"对角"阵，对角元为奇异值（$A$ 的奇异值为 $\sqrt{A^\top A}$ 的特征值）。SVD 同时给出秩的多项式判定、低秩近似（Eckart–Young）、灵敏性分析（条件数）与主成分分析（PCA）的理论基础。
 
 ## 二、原理思路

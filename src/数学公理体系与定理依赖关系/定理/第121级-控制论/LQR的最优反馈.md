@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：动态规划（HJB方程）、线性时不变系统理论、Lyapunov稳定性、可控性与可观性、代数Riccati方程。
+
 对线性时不变系统 $\dot{\boldsymbol x}=\boldsymbol A\boldsymbol x+\boldsymbol B\boldsymbol u$ 与二次指标 $J=\int_0^\infty(\boldsymbol x^{\top}\boldsymbol Q\boldsymbol x+\boldsymbol u^{\top}\boldsymbol R\boldsymbol u)\,dt$，LQR 定理给出最优反馈 $\boldsymbol u^*=-\boldsymbol K\boldsymbol x$，其中 $\boldsymbol K=\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P$，$\boldsymbol P$ 是代数 Riccati 方程唯一正定解。
 
 ## 二、原理思路

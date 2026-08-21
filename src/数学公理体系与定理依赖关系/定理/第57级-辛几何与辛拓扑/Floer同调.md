@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：辛流形、Morse 同调、Cauchy-Riemann 型方程与相容近复结构、Gromov 紧性定理、Conley-Zehnder 指标。
+
 Floer 同调由 Andreas Floer 于 1988 年左右提出，是辛拓扑与 Hamilton 动力系统的核心工具。Floer 同调将 Morse 瑞论的无穷维类比应用于 Hamilton 方程的周期解空间，将辛流形上的 1-周期轨道空间与连接它们的 Floer 轨道（即连接周期解的瞬子方程解）的模空间组织成一个同调群，称为 Floer 同调群。
 
 Floer 同调是 Arnold 猜想证明的关键工具，也是辛拓扑从几何走向代数拓扑化的桥梁。它将 Hamilton 同胚的不动点数下界转化为同调群的秩下界，并将 Morse 理论、辛几何、规范理论的工具统一起来。Floer 同调后来发展为多种变体（辛 Floer 同调、切触同调、嵌入切触同调、Wrapped Floer 同调等），成为现代辛拓扑与切触拓扑的主干。

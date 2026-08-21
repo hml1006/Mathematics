@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Malliavin 导数的定义、光滑柱函数、导数算子的封闭性、稠密逼近与 $L^2$ 收敛、普通微分链式法则
+
 设 $\varphi:\mathbb{R}^n\to\mathbb{R}$ 为 $C^1$ 且 $\partial_x\varphi$ 至少在多项式增长内，$\boldsymbol{F}=(F_1,\dots,F_n)$ 每个 $F_i\in\mathbb{D}^{1,2}$。则 $\varphi(\boldsymbol{F})\in\mathbb{D}^{1,2}$，且 Malliavin 导数满足链式法则：
 
 $$

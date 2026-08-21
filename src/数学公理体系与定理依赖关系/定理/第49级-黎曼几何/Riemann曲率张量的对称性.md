@@ -10,6 +10,8 @@ Riemann曲率张量（Riemann Curvature Tensor）是黎曼几何中刻画流形�
 
 ## 分析
 
+**前置依赖**：Riemann 度量、Levi-Civita 联络（无挠与度量相容）、曲率张量的定义、协变导数、极化恒等式。
+
 **定理的精确表述**：设 $(M, g)$ 是 Riemann 流形，$R$ 是 Riemann 曲率张量，$X, Y, Z, W \in T_pM$。则：
 1. **斜对称性**：$R(X, Y, Z, W) = -R(Y, X, Z, W) = -R(X, Y, W, Z)$。
 2. **交换对称性**：$R(X, Y, Z, W) = R(Z, W, X, Y)$。

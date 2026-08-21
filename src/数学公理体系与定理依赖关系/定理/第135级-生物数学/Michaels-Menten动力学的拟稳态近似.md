@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：质量作用定律、拟稳态近似（QSSA）、质量守恒、代数方程求解、时间尺度分离
+
 Michaels-Menten 动力学是酶促反应速率的基本模型。对反应
 $$
 E+S\underset{k_{-1}}{\overset{k_1}{\rightleftharpoons}}ES\xrightarrow{k_2}E+P,

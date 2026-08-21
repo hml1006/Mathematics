@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：PAC 可学习定义、VC 维与生长函数、Sauer-Shelah 引理、ERM 算法、对称化技巧、联合界
+
 设 $\mathcal{H}$ 为二分类假设空间。定理断言：$\mathcal{H}$ 是 PAC 可学习的当且仅当 $\text{VCdim}(\mathcal{H})<\infty$。若 $d=\text{VCdim}(\mathcal{H})<\infty$，则经验风险最小化（ERM）是 PAC 学习算法，样本复杂度满足
 $$
 m_\mathcal{H}(\varepsilon,\delta)=O\left(\frac{d}{\varepsilon}\log\frac1\varepsilon+\frac1\varepsilon\log\frac1\delta\right).

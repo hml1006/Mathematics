@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Hardy-Littlewood 极大函数及其弱型 $(1,1)$ 估计、二进方体与 Whitney 分解、Lebesgue 微分定理、Chebyshev 不等式
+
 Calderón-Zygmund 分解是调和分析中的基本工具，由 Alberto Calderón 和 Antoni Zygmund 于 1952 年引入。该分解将 $L^1$ 函数分解为"好部分"（$L^2$ 有界）和"坏部分"（具有 cancellation 性质），是研究奇异积分算子有界性的核心技术。
 
 Calderón-Zygmund 分解在调和分析中的地位类似于实分析中的 Vitali 覆盖引理，它为弱型估计和插值定理提供了基础框架，是现代调和分析的基石之一。

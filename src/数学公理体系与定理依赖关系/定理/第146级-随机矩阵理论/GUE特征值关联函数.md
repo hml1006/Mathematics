@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：GUE与厄米随机矩阵、Vandermonde行列式、Hermite正交多项式、Christoffel-Darboux公式、行列式点过程
+
 GUE 特征值关联函数给出了厄米矩阵（GUE）特征值的有限阶联合统计的行列式结构：谱点构造成行列式点过程，其 $k$-点关联（连同边缘）由 Hermite 多项式的核 $K_{n}(x,y)$ 表达。当缩放转变（bulk → sine 核、edge → Airy 核）时给出普适行为，是 Mehta 公式在数学上的核心产物。
 
 ## 二、原理思路

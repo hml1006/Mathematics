@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Plünnecke-Ruzsa 图、Plünnecke-Ruzsa 引理、Ruzsa 三角不等式、差集嵌入、数学归纳法。
+
 Plünnecke（1970）用图论（Plünnecke-Ruzsa 图）提出并证明：$|A+B|\le K|A|$ 蕴含对一切 $m,n\ge0$ 有 $|mB-nB|\le K^{m+n}|A|$。这是小和集的结构性关键不等式，也是加性组合"增长论"的枢纽。
 
 ## 二、原理思路

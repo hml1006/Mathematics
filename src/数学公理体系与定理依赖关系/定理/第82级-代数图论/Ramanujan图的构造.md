@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Alon–Boppana 定理、Cayley 图、Lagrange 四平方和定理、$PSL(2,q)$ 的特征标理论、Weil 猜想（Ramanujan 猜想）。
+
 Ramanujan 图是"最优展开图"：对于 $d$-正则图，Alon–Boppana 定理指出第二大特征值至少为 $2\sqrt{d-1}-o(1)$，故满足 $|\lambda|\le2\sqrt{d-1}$（除 $\lambda_1=d$）的图达到谱间隙的理论下界。Lubotzky–Phillips–Sarnak 用四元数与数论分支和构造出无穷族此类图。
 
 ## 二、原理思路

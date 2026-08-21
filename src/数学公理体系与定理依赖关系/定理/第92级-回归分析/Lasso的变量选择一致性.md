@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：线性回归模型、$L_1$ 范数与凸优化、K.K.T. 条件、大数定律与概率收敛、不可表示条件、相合性
+
 Lasso 用 $L_1$ 惩罚进行收缩与变量选择，其估计为 $\hat{\boldsymbol{\beta}}_{\text{Lasso}} = \arg\min_{\boldsymbol{\beta}}\frac{1}{2n}\|\boldsymbol{Y}-\boldsymbol{X}\boldsymbol{\beta}\|^2 + \lambda_n\|\boldsymbol{\beta}\|_1$。在一定条件下，Lasso 具有**变量选择一致性**：以趋于 1 的概率正确识别重要变量的集合。
 
 ## 二、原理思路

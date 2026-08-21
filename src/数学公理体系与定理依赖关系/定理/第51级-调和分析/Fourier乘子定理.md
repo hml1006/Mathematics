@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：Fourier 变换与逆变换、Plancherel 定理、Littlewood-Paley 二进分解、Calderón-Zygmund 奇异积分理论、Hörmander 条件
+
 Fourier 乘子理论研究的是：给定一个有界函数 $m(\xi)$，定义算子 $T_m f = \mathcal{F}^{-1}[m \cdot \hat{f}]$，问 $T_m$ 在 $L^p$ 空间上是否有界？这样的 $m$ 称为 $L^p$ 乘子。
 
 Mikhlin 乘子定理（1956年）给出了 $L^p$（$1 < p < \infty$）乘子的充分条件：若 $m(\xi)$ 满足适当的光滑性和衰减条件（对各阶导数的控制），则 $m$ 是 $L^p$ 乘子。这个定理统一并推广了许多经典结果（如 Riesz 变换的 $L^p$ 有界性），是现代调和分析中最实用的工具之一。

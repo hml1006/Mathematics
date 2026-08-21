@@ -6,6 +6,8 @@
 
 ## 一、定理介绍
 
+> **前置依赖**：正态线性回归模型、估计量分布（正态性）、卡方分布、t 分布与 F 分布、帽子矩阵与幂等性、独立性
+
 在正态线性回归模型 $\boldsymbol{Y} = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$（$\boldsymbol{\varepsilon} \sim N(\boldsymbol{0}, \sigma^2 \boldsymbol{I}_n)$）下，回归系数的估计量服从正态分布，其可导出用于单个系数检验的 $t$ 统计量与用于整体显著性检验的 $F$ 统计量，二者均可用精确分布做推断。
 
 ## 二、原理思路

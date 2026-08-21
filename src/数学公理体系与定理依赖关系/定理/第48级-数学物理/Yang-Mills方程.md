@@ -10,6 +10,8 @@ Yang-Mills方程（Yang-Mills Equations）是杨振宁和 Robert Mills 在1954�
 
 ## 分析
 
+**前置依赖**：主丛与规范变换、联络与曲率、协变外微分与 Bianchi 恒等式、Hodge 星算子、变分原理与 Euler-Lagrange 方程、Stokes 定理。
+
 **定理的精确表述**：设 $G$ 是紧致李群，$P \to M$ 是 $G$-主丛，$A$ 是 $P$ 上的联络（规范势），$F_A = dA + A \wedge A$ 是曲率（场强）。Yang-Mills 作用量为
 
 $$
