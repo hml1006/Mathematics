@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="300" viewBox="0 0 520 300" font-family="Arial, sans-serif">
+  <!-- 标题与说明 -->
+  <text x="20" y="28" font-size="18" font-weight="bold" fill="#222">柯西不等式的向量投影证明（二元情形）</text>
+  <text x="20" y="50" font-size="14" fill="#555">把 (a1,a2)、(b1,b2) 看成两个向量 u、v。</text>
+
+  <!-- 坐标系 -->
+  <line x1="40" y1="240" x2="440" y2="240" stroke="#999" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="60" y1="260" x2="60" y2="40"  stroke="#999" stroke-width="1.5" marker-end="url(#ax)"/>
+  <defs>
+    <marker id="ax" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#999"/>
+    </marker>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#1a73e8"/>
+    </marker>
+  </defs>
+
+  <!-- 起点 O -->
+  <circle cx="60" cy="240" r="3.5" fill="#222"/>
+  <text x="66" y="232"  font-size="14" fill="#222">O</text>
+
+  <!-- O 点坐标：向量 v 沿 x 轴 (0,0)->(5,0)，向量 u=(4,3) -->
+  <!-- 缩放：1 单位 = 36 px，原点(60,240) -->
+  <!-- v 终点 (5*36+60, 240)=(240,240)，u 终点 (4*36+60, 240-3*36)=(204,132)，P=(204,240) -->
+
+  <!-- v 向量（x 轴） -->
+  <line x1="60" y1="240" x2="240" y2="240" stroke="#d93025" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="250" y="244" font-size="15" fill="#d93025">v</text>
+
+  <!-- u 向量（斜边） -->
+  <line x1="60" y1="240" x2="204" y2="132" stroke="#1a73e8" stroke-width="3"/>
+  <polygon points="204,132 196,140 208,144" fill="#1a73e8"/>
+  <text x="120" y="150" font-size="15" fill="#1a73e8">u（斜边，长 |u|）</text>
+
+  <!-- 投影线段 OP（直角边，虚线） -->
+  <line x1="60" y1="240" x2="204" y2="240" stroke="#1a73e8" stroke-width="2.5" stroke-dasharray="7,5"/>
+  <text x="115" y="262" font-size="14" fill="#1a73e8">投影 = |u| cosθ = (u·v)/|v|</text>
+
+  <!-- 垂直分量 Pu -->
+  <line x1="204" y1="132" x2="204" y2="240" stroke="#666" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="210" y="210" font-size="13" fill="#666">⊥ 分量</text>
+
+  <!-- 直角记号 -->
+  <polyline points="204,232 216,232 216,220" fill="none" stroke="#222" stroke-width="1.5"/>
+
+  <!-- 夹角 θ -->
+  <path d="M 96,240 A 36,36 0 0 0 111,221" fill="none" stroke="#222" stroke-width="1.5"/>
+  <text x="84" y="216" font-size="14" fill="#222">θ</text>
+
+  <!-- 底部结论 -->
+  <text x="20" y="285" font-size="15" fill="#1a73e8" font-weight="bold">直角三角形的直角边（投影）≤ 斜边（|u|）  ⇒  |u·v|/|v| ≤ |u|  ⇒  (u·v)² ≤ |u|²|v|²</text>
+</svg>
