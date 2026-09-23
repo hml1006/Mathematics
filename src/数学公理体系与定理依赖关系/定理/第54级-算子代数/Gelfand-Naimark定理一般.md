@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：GNS 构造、交换 C*-代数的 Gelfand-Naimark 定理、Hahn-Banach 定理（状态的延拓）、谱半径公式与谱映射定理、Hilbert 空间直和与有界算子代数
+> GNS 构造、Gelfand-Naimark定理交换、Hahn-Banach 定理（状态的延拓）、谱半径公式与谱映射定理、Hilbert 空间直和与有界算子代数
 
 Gelfand-Naimark 定理（一般情形）是 C*-代数理论的巅峰成果之一，它表明：任何 C*-代数都等距 *-同构于某个 Hilbert 空间上有界线性算子代数的闭 *-子代数。这个定理最早由 Gelfand 和 Naimark 在 1943 年证明，标志着算子代数作为一个独立数学分支的诞生。
 

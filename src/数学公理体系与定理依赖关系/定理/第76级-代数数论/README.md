@@ -8,3 +8,4 @@
 - [Dirichlet 单位定理](./Dirichlet单位定理.md)
 - [二次互反律](./二次互反律.md)
 - [Kronecker-Weber 定理](./Kronecker-Weber定理.md)
+- [Kronecker 定理](./Kronecker定理.md)：一个代数整数，如果它的所有共轭的模长都不超过 $1$，那它一定是个单位根——没有"模都不大却永远转不回原地"的代数整数。

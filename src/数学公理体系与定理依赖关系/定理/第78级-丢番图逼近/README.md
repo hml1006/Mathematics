@@ -13,6 +13,7 @@
 - [Roth定理](./Roth定理.md)：代数无理数的有理逼近指数不超过 $2+\varepsilon$。
 - [Liouville定理](./Liouville定理.md)：$d$ 次代数无理数的逼近误差至少为 $c/q^d$（由此造出超越数）。
 - [Gelfond-Schneider定理](./Gelfond-Schneider定理.md)：$a^b$ 对代数数 $a,b$（$b$ 无理）为超越数。
+- [Siegel 引理](./Siegel引理.md)：一个"方程个数少于未知数个数"的整系数线性方程组，必有一个非零整数解，而且这个解的各分量可以被系数大小统一控制住——解不仅存在，还能很"小"。
 
 ## 前置知识
 

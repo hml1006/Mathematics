@@ -15,6 +15,8 @@
 - [Kodaira 消没定理](./Kodaira消没定理.md)：正线丛高次上同调全为零。
 - [Kähler 恒等式](./Kähler恒等式.md)：Kähler 流形上 Laplace 算子组合分解。
 - [Serre 对偶定理](./Serre对偶定理.md)：凝聚层上同调的配对计算。
+- [Riemann-Roch-Hirzebruch 定理](./Riemann-Roch-Hirzebruch定理.md)：紧复流形上，一个全纯向量丛的各阶上同调维数的交错和（解析指标）等于一个纯拓扑量——把该丛的 Chern 特征标与流形的 Todd 类相乘再积分。
+- [Bochner-Kodaira-Nakano 恒等式](./Bochner-Kodaira-Nakano恒等式.md)：$\bar\partial$ 的 Laplacian 与"联络 Laplacian"之间只差一个由向量丛曲率决定的零阶算子；曲率正时这个差项为正，于是上同调被迫消没。
 
 ## 前置知识
 

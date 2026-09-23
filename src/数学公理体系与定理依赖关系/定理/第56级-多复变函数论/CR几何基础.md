@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Cauchy–Riemann 方程、复流形与实子流形、Levi 形式、Frobenius 定理、$\bar{\partial}_b$ 算子的次椭圆估计。
+> **前置依赖**：Cauchy–Riemann 方程、复流形与实子流形、Levi 形式、Frobenius可积性定理、$\bar{\partial}_b$ 算子的次椭圆估计。
 
 CR 几何（CR Geometry）研究的是复流形实子流形上的"全纯几何"，是介于多复变函数论、微分几何与偏微分方程之间的核心领域。"CR"代表"Cauchy–Riemann"，因为 CR 流形的本质是在实子流形上保留了 Cauchy–Riemann 方程的某种"切向"结构。
 

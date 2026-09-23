@@ -1,0 +1,94 @@
+# Jordan 分解定理
+
+> **一句话大白话**：一个可正可负的"符号测度"，总能唯一地拆成"正的部分"减去"负的部分"，而且正负两部分各自住在互不相交的两块地盘上。
+>
+> **小例子**：若 $\nu=\delta_1-2\delta_{-1}$（在 $\mathbb R$ 上），则 $\nu^+=\delta_1$、$\nu^-=2\delta_{-1}$，二者分别集中在 $\{1\}$ 与 $\{-1\}$，互相奇异。
+
+## 介绍
+
+Jordan 分解定理是符号测度理论的基本定理。它断言：任何符号测度 $\nu$ 都可以唯一地写成两个正测度之差 $\nu=\nu^+-\nu^-$，且 $\nu^+$ 与 $\nu^-$ 相互奇异（分别集中于互不相交的两个集合上）。由此还可以定义全变差 $|\nu|=\nu^++\nu^-$。
+
+该定理以法国数学家卡米耶·若尔当（Camille Jordan）命名，是把"可正可负的测度"化归为"两个普通测度"的标准手段。它使得符号测度的积分理论（对 $\nu$ 积分）可以简单地分成正、负两部分分别处理。
+
+它在实数分析中与 Hahn 分解定理成对出现：先由 Hahn 分解找到分界集合 $P,N$，再据此定义 $\nu^\pm$，即得 Jordan 分解。
+
+## 分析
+
+**前置依赖**：符号测度、Hahn 分解定理、正测度与可数可加性、测度的奇异性
+
+**定理内容**：设 $\nu$ 是可测空间 $(X,\Sigma)$ 上的符号测度。则存在唯一的一对正测度 $\nu^+,\nu^-$，使得
+
+$$
+\nu=\nu^+-\nu^-,\qquad \nu^+\perp\nu^-
+$$
+
+其中 $\nu^+\perp\nu^-$ 表示存在 $P\in\Sigma$ 使 $\nu^+(X\setminus P)=0$ 且 $\nu^-(P)=0$。此外全变差
+
+$$
+|\nu|=\nu^++\nu^-
+$$
+
+是 $X$ 上的有限正测度。
+
+**数学内涵**：
+- $\nu^+$ 与 $\nu^-$ 分别叫 $\nu$ 的正部与负部，它们相互奇异。
+- 分解的唯一性意味着：符号测度的"正负结构"是由 $\nu$ 自身完全决定的，不依人的选择而变。
+
+## 思考过程
+
+由 Hahn 分解定理，存在分割 $X=P\cup N$（$P\cap N=\varnothing$），使得对任意 $E\in\Sigma$，$\nu(E\cap P)\ge0$、$\nu(E\cap N)\le0$。于是自然地把 $\nu$ 中所有"非负的贡献"归到 $\nu^+$、把"非正的贡献取反"归到 $\nu^-$：定义
+
+$$
+\nu^+(E)=\nu(E\cap P),\qquad \nu^-(E)=-\nu(E\cap N)
+$$
+
+这样 $\nu(E)=\nu(E\cap P)+\nu(E\cap N)=\nu^+(E)-\nu^-(E)$，且 $\nu^+\ge0$、$\nu^-\ge0$、$\nu^+\perp\nu^-$（分别集中在 $P$ 与 $N$）。
+
+唯一性靠奇异性：若 $\nu=\mu_1-\mu_2$ 且 $\mu_1\perp\mu_2$，取 $\mu_1$ 集中的集合 $A$（$\mu_2(A)=0$，$\mu_1$ 集中于此），可验证 $\mu_1,\mu_2$ 必与上述 $\nu^+,\nu^-$ 相同。
+
+## 证明过程
+
+**步骤 1：Hahn 分解。** 由 Hahn 分解定理，存在 $P,N\in\Sigma$，$P\cup N=X$、$P\cap N=\varnothing$，使得 $P$ 关于 $\nu$ 是正集（$\forall E\in\Sigma,\ \nu(E\cap P)\ge0$），$N$ 关于 $\nu$ 是负集（$\forall E\in\Sigma,\ \nu(E\cap N)\le0$）。
+
+**步骤 2：定义 $\nu^\pm$ 并验证是测度。** 对 $E\in\Sigma$ 令
+
+$$
+\nu^+(E)=\nu(E\cap P),\qquad \nu^-(E)=-\nu(E\cap N)
+$$
+
+先证 $\nu^+$ 是可数可加的正测度。正性由 $P$ 是正集得到：$\nu(E\cap P)\ge0$。若 $\{E_k\}$ 是 $\Sigma$ 中互不相交的序列，$\bigsqcup E_k=E$，则 $\{E_k\cap P\}$ 互不相交且并为 $E\cap P$，由 $\nu$ 的可数可加性
+
+$$
+\nu^+(E)=\nu(E\cap P)=\sum_k\nu(E_k\cap P)=\sum_k\nu^+(E_k)
+$$
+
+故 $\nu^+$ 是可数可加的正测度；$\nu^-$ 同理（负集保证非负，可数可加性同样成立）。
+
+**步骤 3：验证 $\nu=\nu^+-\nu^-$ 与相互奇异。** 对任意 $E$，
+
+$$
+\nu^+(E)-\nu^-(E)=\nu(E\cap P)+\nu(E\cap N)=\nu\big((E\cap P)\cup(E\cap N)\big)=\nu(E)
+$$
+
+又 $\nu^+(X\setminus P)=\nu(\varnothing)=0$，$\nu^-(P)=-\nu(P\cap N)=-\nu(\varnothing)=0$，故 $\nu^+\perp\nu^-$。
+
+**步骤 4：唯一性。** 设另有分解 $\nu=\mu_1-\mu_2$ 且 $\mu_1\perp\mu_2$。取 $A,B\in\Sigma$ 使 $A\cup B=X$、$A\cap B=\varnothing$、$\mu_1(B)=0$、$\mu_2(A)=0$。则对任意 $E$，
+
+$$
+\nu(E\cap A)=\mu_1(E\cap A)-\mu_2(E\cap A)=\mu_1(E\cap A)
+$$
+
+（因为 $E\cap A\subset A$ 且 $\mu_2(A)=0$），故 $\mu_1(E\cap A)=\nu(E\cap A)\ge0$，说明 $A$ 是 $\nu$ 的正集；由于 $\mu_1$ 集中于 $A$，
+
+$$
+\mu_1(E)=\mu_1(E\cap A)=\nu(E\cap A)=\nu^+(E)
+$$
+
+最后一步用到了关键事实：$\nu^+=\nu(\cdot\cap P)$ 的定义值与正集 $P$ 的选取无关（若 $P'$ 是另一正集，则 $\nu(E\cap P)=\nu(E\cap P')$，因为两正集的对称差上 $\nu$ 的取值受正、负两侧夹逼而为零）。同理 $\mu_2(E)=\nu^-(E)$。故分解唯一。$\square$
+
+**推论（全变差）**：由 $\nu=\nu^+-\nu^-$、$\nu^+\perp\nu^-$，定义 $|\nu|=\nu^++\nu^-$，则 $|\nu|$ 是有限正测度，且对任意 $E$，$|\nu|(E)$ 等于 $\nu$ 在 $E$ 的各可测子集上取值的上确界 $\sup\{\sum_i|\nu(E_i)|\}$。
+
+## 相关条目
+
+- [有界变差函数](./有界变差函数.md)：有界变差函数经由 Lebesgue–Stieltjes 测度与 Jordan 分解相联系。
+- [绝对连续函数](./绝对连续函数.md)：绝对连续性用符号测度与全变差的语言刻画。

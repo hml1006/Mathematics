@@ -10,7 +10,7 @@ Schwarz 反射原理（Schwarz reflection principle）是复分析中的基本�
 
 ## 分析
 
-**前置依赖**：全纯函数、解析延拓、Cauchy 积分公式、唯一性定理。
+全纯函数、解析延拓、Cauchy 积分公式、解析函数唯一性定理。
 
 **定理内容**：设 $\Omega^+ \subset \mathbb{C}^+$ 是上半平面中的开集，且 $\Omega^+$ 的边界包含实轴上的一个开区间 $I$。若 $f$ 在 $\Omega^+$ 上全纯，且对每个 $x \in I$，$\lim_{z \to x, \operatorname{Im}z > 0} f(z)$ 存在且为实数，则 $f$ 可解析延拓到 $\Omega = \Omega^+ \cup I \cup \overline{\Omega^+}$，延拓后的函数定义为
 $$F(z) = \begin{cases}

@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Picard-Fuchs方程、Gauss-Manin连接、Gromov-Witten不变量、周期积分、链式法则
+> Picard-Fuchs方程、Gauss-Manin连接、Gromov-Witten不变量、周期积分、链式法则多变量
 
 设 $M$ 是 Calabi-Yau $n$-重，$W$ 是其镜像流形。镜像对称断言 A-模型与 B-模型的 Yukawa 耦合在镜像映射下对应：
 $$

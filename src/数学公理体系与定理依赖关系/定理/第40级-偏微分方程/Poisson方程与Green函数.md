@@ -10,7 +10,7 @@ Poisson 方程 $\Delta u = f$ 是最经典的椭圆型偏微分方程之一，�
 
 ## 分析
 
-**前置依赖**：散度定理、Delta 函数、卷积、调和函数、最大值原理、Laplace 方程。
+高斯散度定理、Delta 函数、卷积、调和函数、最大值原理、Laplace 方程。
 
 **定理内容**：考虑有界区域 $\Omega \subset \mathbb{R}^n$ 上的 Dirichlet 问题
 $$\begin{cases}

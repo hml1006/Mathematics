@@ -10,7 +10,7 @@ Picard 小定理（Picard's little theorem）是复分析中最深刻的定理�
 
 ## 分析
 
-**前置依赖**：整函数、Liouville 定理、Casorati–Weierstrass 定理、模函数、单值化定理。
+整函数、Liouville定理、Casorati–Weierstrass 定理、模函数、单值化定理。
 
 **定理内容**：设 $f$ 是非常数整函数，则 $f(\mathbb{C})$ 在 $\mathbb{C}$ 中稠密，且最多遗漏一个值。即存在至多一个复数 $a$ 使得 $f(z) \neq a$ 对所有 $z \in \mathbb{C}$ 成立。
 
