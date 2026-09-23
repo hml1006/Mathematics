@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：$p$-进数域 $\mathbb{Q}_p$ 与 Hensel 引理、Hilbert 符号与 Hilbert 互反律、二次型的对角化与判别式、四元数代数与 Brauer 群、Chevalley-Warning 定理
+> **前置依赖**：完备化与Hensel引理、Hilbert 符号与 Hilbert 互反律、Sylvester惯性定律、四元数代数与 Brauer 群、Chevalley-Warning 定理
 
 Hasse-Minkowski 定理是代数数论中**局部整体原理**（Local-Global Principle）或称 **Hasse 原理**的最重要实例。该定理由 Hasse 于 1920 年代对二次型证明，Minkowski  earlier 的工作为其奠定了基础。
 

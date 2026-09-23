@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：$\bar\partial$ 算子与 $(0,q)$-形式、加权 $L^2$ 内积 $\langle u,v\rangle_\phi=\int u\bar v\,e^{-\phi}$、$\bar\partial^{*}_{\phi}$ 的显式表达式与 $\bar\partial$-Neumann 边界条件、定义函数 $\rho$ 与 Levi 形式、分部积分（Stokes 定理）、多次调和函数（plurisubharmonic）与拟凸域
+> **前置依赖**：$\bar\partial$ 算子与 $(0,q)$-形式、加权 $L^2$ 内积 $\langle u,v\rangle_\phi=\int u\bar v\,e^{-\phi}$、$\bar\partial^{*}_{\phi}$ 的显式表达式与 $\bar\partial$-Neumann 边界条件、定义函数 $\rho$ 与 Levi 形式、分部积分法、多次调和函数（plurisubharmonic）与拟凸域
 
 Morrey–Kohn–Hörmander 恒等式（Kohn–Morrey–Hörmander formula，20 世纪 60 年代由 Kohn、Morrey、Hörmander 分别独立获得）是 $\bar\partial$-Neumann 问题的核心恒等式。它把 $(0,1)$-形式的 $\bar\partial$ 与其加权伴随 $\bar\partial^{*}_{\phi}$ 的 $L^2$ 范数平方之和，精确地分解为三项：
 $$\int_\Omega|\bar\partial u|^{2}e^{-\phi}+\int_\Omega|\bar\partial^{*}_{\phi}u|^{2}e^{-\phi}

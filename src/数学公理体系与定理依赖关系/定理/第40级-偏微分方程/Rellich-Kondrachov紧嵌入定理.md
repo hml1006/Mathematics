@@ -14,7 +14,7 @@ Sobolev 嵌入定理告诉我们 $W^{k,p}(\Omega)\hookrightarrow L^q(\Omega)$ �
 
 ## 分析
 
-**前置依赖**：Sobolev 空间与弱导数、Sobolev 嵌入（Gagliardo–Nirenberg–Sobolev）不等式、Morrey 不等式、Fréchet–Kolmogorov 紧性准则、Minkowski不等式、Arzelà–Ascoli 定理、有界区域的延拓（反射）技巧。
+**前置依赖**：Sobolev 空间与弱导数、Sobolev嵌入定理、Morrey 不等式、Fréchet–Kolmogorov 紧性准则、Minkowski不等式、Arzelà–Ascoli 定理、有界区域的延拓（反射）技巧。
 
 **定理内容**：设 $\Omega\subset\mathbb R^n$ 是有界区域，边界 Lipschitz（例如 $C^1$ 或分段光滑），$1\le p<\infty$，$k\ge1$ 是整数，并记临界指数
 

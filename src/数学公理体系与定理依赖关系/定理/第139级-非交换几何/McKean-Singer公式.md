@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> Hilbert 空间与自伴算子、谱定理紧自伴算子、$\mathbb{Z}_2$-分次与超迹、Fredholm 算子与解析指标、热核
+> **前置依赖**：Hilbert 空间与自伴算子、谱定理紧自伴算子、$\mathbb{Z}_2$-分次与超迹、Fredholm 算子与解析指标、热核
 
 McKean-Singer 公式由 H. McKean 与 I. Singer 于 1967 年提出，是 Atiyah-Singer 指标定理"热方程证明"的起点。它指出：对分次 Hilbert 空间上的奇自伴 Dirac 算子 $D$，热核的超迹 $\mathrm{Str}(e^{-tD^2})$ 与 $t>0$ 无关，且恒等于 $D$ 的解析指标。
 

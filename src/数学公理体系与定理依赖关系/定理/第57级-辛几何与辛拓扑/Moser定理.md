@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：de Rham 上同调、Cartan 微分公式（魔法公式）、Poincaré 引理、辛形式的非退化性、常微分方程流的存在性。
+> **前置依赖**：de Rham 上同调、Cartan公式（魔法公式）、Poincaré 引理、辛形式的非退化性、Picard-Lindelöf定理。
 
 Moser 定理是辛几何的基础结果，由 Jürgen Moser 于 1965 年证明。它断言：在紧流形上，若一族辛形式 $\omega_t$ 在 de Rham 上同调中保持同调类不变（即 $\frac{d}{dt}\omega_t = d\sigma_t$），则存在依赖于 $t$ 的微分同胚族 $\varphi_t$ 使得 $\varphi_t^*\omega_t = \omega_0$。换言之，**同调于常数的辛形式是辛同胚等价的**。
 

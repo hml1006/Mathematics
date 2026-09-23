@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：辛流形、Morse 同调、Cauchy-Riemann 型方程与相容近复结构、Gromov 紧性定理、Conley-Zehnder 指标。
+> **前置依赖**：辛流形、Morse 同调、Cauchy-Riemann方程、Gromov 紧性定理、Conley-Zehnder 指标。
 
 Floer 同调由 Andreas Floer 于 1988 年左右提出，是辛拓扑与 Hamilton 动力系统的核心工具。Floer 同调将 Morse 瑞论的无穷维类比应用于 Hamilton 方程的周期解空间，将辛流形上的 1-周期轨道空间与连接它们的 Floer 轨道（即连接周期解的瞬子方程解）的模空间组织成一个同调群，称为 Floer 同调群。
 

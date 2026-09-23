@@ -7,3 +7,4 @@
 - [Lyapunov稳定性定理](./Lyapunov稳定性定理.md)
 - [LQR的最优反馈](./LQR的最优反馈.md)
 - [Pontryagin极大值原理](./Pontryagin极大值原理.md)
+- [代数Riccati方程](./代数Riccati方程.md)：给一个线性系统和一个"偏离代价 + 能量代价"的二次指标，最优反馈增益是由一个二次矩阵方程解出来的：这个方程就叫代数 Riccati 方程，它有唯一的半正定解，且使闭环稳定。

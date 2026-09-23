@@ -10,7 +10,7 @@ Weitzenböck 公式由奥地利数学家 Roland Weitzenböck 在 1923 年研究�
 
 ## 分析
 
-**前置依赖**：黎曼联络与协变导数、外微分与余微分、Hodge Laplacian、Riemann 曲率张量及其对称性、Clifford 代数与 Dirac 算子、Bochner 公式。
+**前置依赖**：黎曼联络与协变导数、外微分与余微分、Hodge Laplacian、Riemann曲率张量的对称性、Clifford 代数与 Dirac 算子、Bochner 公式。
 
 **定理内容**：设 $(M^n,g)$ 为黎曼流形，$\Omega^p(M)$ 为 $p$-形式丛，$\nabla$ 为诱导的 Levi-Civita 联络，$\nabla^*$ 为其 $L^2$ 形式伴随。则存在由 Riemann 曲率张量代数地定义的零阶自伴端同态 $\mathcal R_p\in\mathrm{End}(\Omega^p)$，使
 

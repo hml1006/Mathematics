@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：和集与 doubling 常数、Freiman 同态与 Freiman 同构、Plünnecke–Ruzsa 引理、Ruzsa 三角不等式、Bertrand 素数定理、中国剩余定理思想
+> **前置依赖**：和集与 doubling 常数、Freiman 同态与 Freiman 同构、Plünnecke–Ruzsa 引理、Ruzsa 三角不等式、Bertrand 素数定理、中国剩余定理
 
 Ruzsa 建模引理（Ruzsa modeling lemma）是 Freiman 定理证明链的第一环节。它说：只要 $A$ 的和集不大，就存在一个**较大的子集** $A'$，它可以被"倍数 + 取模"的方式忠实映射到 $\mathbb{Z}_p$ 中（$p$ 是大小受控的素数），并且加法的相等关系与不相等关系都被完整保留（即 Freiman 同构）。
 

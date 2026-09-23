@@ -18,7 +18,7 @@ $$
 
 ## 分析
 
-**前置依赖**：黎曼联络与协变导数、Hessian（第二协变导数）、Laplace–Beltrami 算子、Riemann 曲率张量及其对称性、Ricci 曲率、Ricci 恒等式（协变导数交换子）、极值原理。
+**前置依赖**：黎曼联络与协变导数、Hessian（第二协变导数）、Laplace-Beltrami算子与热方程、Riemann曲率张量的对称性、Ricci 曲率、Ricci 恒等式（协变导数交换子）、极大值原理。
 
 **定理内容**：设 $(M^n,g)$ 是黎曼流形，$f\in C^\infty(M)$，约定 $\Delta=\mathrm{tr}_g\nabla^2=\sum_i\nabla_i\nabla_i$（在标准正交标架下）。则
 

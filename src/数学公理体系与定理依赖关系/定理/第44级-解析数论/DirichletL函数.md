@@ -10,7 +10,7 @@ Dirichlet L 函数是 Dirichlet 特征与 Riemann Zeta 函数的结合，定义�
 
 ## 分析
 
-**前置依赖**：Riemann Zeta 函数、Dirichlet 特征、群特征标、Euler 乘积。
+**前置依赖**：Riemann Zeta 函数、Dirichlet 特征、群特征标、Euler乘积公式。
 
 **定理内容**：
 - 对 $\operatorname{Re}(s) > 1$，$L(s, \chi) = \sum_{n=1}^\infty \chi(n) n^{-s}$ 绝对收敛。

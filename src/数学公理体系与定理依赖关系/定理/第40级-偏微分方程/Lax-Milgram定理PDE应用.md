@@ -10,7 +10,7 @@ Lax–Milgram 定理是泛函分析中关于双线性形式的存在性定理，
 
 ## 分析
 
-**前置依赖**：Hilbert 空间、Riesz 表示定理、双线性形式、强制性和有界性、Sobolev 空间 $H^1$。
+**前置依赖**：Hilbert 空间、Riesz 表示定理、双线性形式、强制性和有界性、Sobolev空间定义。
 
 **定理内容**：设 $H$ 是实 Hilbert 空间，$a: H \times H \to \mathbb{R}$ 是双线性形式，满足：
 1. **有界性**（连续性）：存在 $M > 0$ 使得 $|a(u,v)| \le M\|u\|\|v\|$ 对所有 $u,v \in H$。

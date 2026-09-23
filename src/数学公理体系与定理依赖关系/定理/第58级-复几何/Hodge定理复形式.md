@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：紧 Kähler 流形、$\bar\partial$ 算子与其 $L^2$ 伴随、椭圆算子理论（有限维核、闭值域、椭圆正则性）、Sobolev 空间、Dolbeault 上同调。
+> **前置依赖**：紧 Kähler 流形、$\bar\partial$ 算子与其 $L^2$ 伴随、椭圆算子理论（有限维核、闭值域、椭圆正则性）、Sobolev空间定义、Dolbeault 上同调。
 
 Hodge 定理的复形式是 Kähler 几何的基础结果，由 W. V. D. Hodge 在 1930-1940 年代发展，并在 Gårding、Kodaira、Spencer 等人严格化后成型。该定理断言：在紧 Kähler 流形上，每一个 de Rham 上同调类都有唯一的调和代表元，且调和形式空间的维数有限。
 

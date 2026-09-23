@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Hausdorff 测度与 Hausdorff 维数、Lebesgue 测度、极大函数与覆盖引理、Fourier 限制性猜想、多项式方法（有限域上的线性代数）
+> **前置依赖**：Hausdorff 测度与 Hausdorff 维数、Lebesgue 测度、覆盖引理、Fourier 限制性猜想、多项式方法（有限域上的线性代数）
 
 Kakeya 猜想（也称为 Besicovitch 猜想）是几何测度论和调和分析中最著名的未解决问题之一。它断言：$\mathbb{R}^n$ 中每个包含单位线段所有方向（即每个方向上都有一条单位线段）的紧集（称为 Kakeya 集或 Besicovitch 集）的 Hausdorff 维数等于 $n$。
 

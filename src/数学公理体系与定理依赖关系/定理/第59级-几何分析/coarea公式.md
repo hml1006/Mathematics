@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Lipschitz 函数与 Rademacher 定理、梯度与 Jacobian、Hausdorff 测度与面积公式（area formula）、Sard 定理、Fubini 定理、隐函数定理。
+> **前置依赖**：Lipschitz 函数与 Rademacher 定理、梯度与 Jacobian、Hausdorff测度与维数、面积公式（area formula）、Sard 定理、Fubini 定理、隐函数定理。
 
 coarea 公式（coarea formula，又称余面积公式、水平集公式）是几何测度论中的基本积分公式，其系统形式由 Federer 在 1944 年的曲率测度研究与 1959 年的《Geometric Measure Theory》中确立。它的特殊情形早已为人熟知：Cauchy 用它计算曲面的"倾斜度"积分，而极坐标积分公式（球坐标）正是它最简单的例子。
 

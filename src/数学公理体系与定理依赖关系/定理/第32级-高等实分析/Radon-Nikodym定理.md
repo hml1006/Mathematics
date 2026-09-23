@@ -10,7 +10,7 @@ Radon-Nikodym定理是实分析和测度论中最深刻的定理之一。它断�
 
 ## 分析
 
-**前置依赖**：测度的绝对连续性、Riesz 表示定理（Hilbert 空间）、$L^2$ 空间与 Cauchy-Schwarz 不等式、$\sigma$-有限性
+**前置依赖**：测度的绝对连续性、Riesz 表示定理（Hilbert 空间）、Cauchy-Schwarz不等式、$\sigma$-有限性
 
 **定理的精确表述**：设 $(X, \mathcal{M}, \mu)$ 是 $\sigma$-有限测度空间，$\nu$ 是 $\mathcal{M}$ 上的 $\sigma$-有限测度（或带符号测度），且 $\nu \ll \mu$（即 $\nu$ 关于 $\mu$ 绝对连续：$\mu(A) = 0 \Rightarrow \nu(A) = 0$）。则存在可测函数 $f: X \to [0, \infty)$（或 $\mathbb{R}$）使得对任意 $A \in \mathcal{M}$，
 

@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：一阶语言与 $\mathcal L$-结构、项与公式的满足关系（Tarski 真定义）、子结构与嵌入、公式结构的归纳法、量词消去（用于例子）、初等链引理与 Löwenheim–Skolem 定理
+> **前置依赖**：一阶语言与 $\mathcal L$-结构、一阶逻辑的语法与语义、子结构与嵌入、一阶逻辑的语法与语义、量词消去（用于例子）、初等链引理与 Löwenheim–Skolem 定理
 
 模型论中最重要的关系之一是**初等子结构**：$\mathcal N\preceq\mathcal M$ 表示 $\mathcal N$ 是 $\mathcal M$ 的子结构，并且对每一条参数取自 $\mathcal N$ 的公式，两个结构的真值完全一致。这个定义是对无穷多条公式提出的要求，直接验证通常不可能。Tarski 与 Vaught 在 1957 年的论文《Arithmetical extensions of relational systems》中给出了一个只需检查“存在量词型的见证”的判别准则，把无穷多条要求压缩为一条可操作的检验条件。
 

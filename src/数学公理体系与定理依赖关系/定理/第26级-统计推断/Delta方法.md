@@ -10,7 +10,7 @@ Delta 方法（Delta Method）是数理统计中用于推导统计量渐近分�
 
 ## 分析
 
-**前置依赖**：中心极限定理、连续映射定理、Slutsky 引理、Taylor 展开。
+**前置依赖**：中心极限定理、连续映射定理、Slutsky定理、Taylor 展开。
 
 **数学内涵**：
 - 单变量情形：$\sqrt{n}(g(\hat{\theta}) - g(\theta)) \xrightarrow{d} N(0, [g'(\theta)]^2\sigma^2)$。

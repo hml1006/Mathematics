@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Cauchy 积分公式与 Cauchy 估计、Arzelà-Ascoli 定理、正规族的定义、Weierstrass 一致收敛定理、对角线方法。
+> **前置依赖**：全纯函数与Cauchy积分公式、Arzelà-Ascoli 定理、正规族的定义、Weierstrass 一致收敛定理、对角线方法。
 
 Montel 定理是复分析中关于正规族（normal family）的核心定理，由 Paul Montel 于 1912 年提出。该定理给出了全纯函数族为正规族的充分条件：局部一致有界的全纯函数族是正规族（即每个序列都有子列一致收敛于紧集上）。
 

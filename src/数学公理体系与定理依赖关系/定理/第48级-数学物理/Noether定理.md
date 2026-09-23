@@ -10,7 +10,7 @@ Noether定理（Noether's Theorem）是理论物理学中最重要的定理之�
 
 ## 分析
 
-**前置依赖**：Lagrangian 力学与作用量原理、Euler-Lagrange 方程、连续对称性、变分法与分部积分（Stokes 定理）。
+**前置依赖**：Lagrangian 力学与作用量原理、变分原理与Euler-Lagrange方程、连续对称性、变分法与分部积分（Stokes 定理）。
 
 **定理的精确表述**（经典场论版本）：设 $L(\phi, \partial_\mu \phi)$ 是 Lagrangian 密度，作用量 $S = \int L \, d^4x$ 在单参数连续变换群 $\phi(x) \to \phi(x) + \varepsilon \delta\phi(x)$（其中 $\varepsilon$ 无穷小）下不变。则存在守恒流 $j^\mu$ 满足
 

@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：凝聚层、Stein 流形、层上同调、Dolbeault 定理、$\bar{\partial}$ 方程的可解性。
+> **前置依赖**：凝聚层、Stein流形理论、层上同调、Dolbeault 定理、Dolbeault定理。
 
 Cartan 定理 A 与 B 是法国数学家 Henri Cartan 在 1951–1954 年间建立的关于 **凝聚层在 Stein 流形上上同调** 的两个基本定理，是多复变函数论与复几何的基石。
 

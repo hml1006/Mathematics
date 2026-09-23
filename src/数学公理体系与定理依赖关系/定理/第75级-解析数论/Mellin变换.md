@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Fourier 变换与反演、Laplace 变换、留数定理与解析延拓、Dirichlet 级数（概念）。
+> **前置依赖**：Fourier 变换与反演、Laplace 变换、留数定理、Dirichlet 级数（概念）。
 
 Mellin 变换由 Hjalmar Mellin 于 1896–1902 年系统发展，是把 Fourier–Laplace 变换适配到正实数乘法群的版本。对定义在 $(0,\infty)$ 上的函数 $f$，其 Mellin 变换为
 $$

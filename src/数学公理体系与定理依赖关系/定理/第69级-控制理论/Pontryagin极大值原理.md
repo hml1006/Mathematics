@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：变分法与 Euler–Lagrange 方程的推广、Hamilton 函数与协态变量、针状变分（Needle Variation）技术、线性变分方程与分部积分、横截条件。
+> **前置依赖**：变分原理与Euler-Lagrange方程、Hamilton 函数与协态变量、针状变分（Needle Variation）技术、分部积分与基本引理、横截条件。
 
 Pontryagin 极大值原理（Pontryagin's Maximum Principle, PMP）给出了最优控制问题中极值轨迹必须满足的一组必要条件。它由 Lev Pontryagin 及其学派于 20 世纪 50 年代提出，是变分法在最优控制领域的推广，能够处理控制受约束、终端状态受约束等复杂情形。
 

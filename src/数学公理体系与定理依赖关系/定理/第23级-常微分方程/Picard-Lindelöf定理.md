@@ -10,7 +10,7 @@ Picard-Lindelöf 定理（又称解的存在唯一性定理）是常微分方程
 
 ## 分析
 
-**前置依赖**：压缩映射原理（Banach 不动点定理）、一致收敛、连续函数空间、Lipschitz 条件。
+**前置依赖**：Banach不动点定理、一致收敛、连续函数空间、Lipschitz 条件。
 
 **数学内涵**：
 - 考虑初值问题：$y' = f(x, y)$，$y(x_0) = y_0$，其中 $f: D \subseteq \mathbb{R}^2 \to \mathbb{R}$ 连续。

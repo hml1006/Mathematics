@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：复流形与 $(p,q)$-形式、$\bar\partial$ 算子与 Dolbeault 复形、全纯 $p$-形式的层 $\Omega^p$、层上同调 $H^q(X,\mathcal F)$、细层（fine sheaf）与单位分解、$\bar\partial$-Poincaré 引理（Dolbeault–Grothendieck 引理）、层短正合列的长正合列
+> **前置依赖**：复流形与 $(p,q)$-形式、$\bar\partial$ 算子与 Dolbeault 复形、全纯 $p$-形式的层 $\Omega^p$、层上同调 $H^q(X,\mathcal F)$、细层（fine sheaf）与单位分解、Poincaré引理、层短正合列的长正合列
 
 Dolbeault 定理（由 Pierre Dolbeault 于 1953 年证明）是复几何的奠基定理，它把复流形上**解析对象**（全纯形式）的整体上同调，与**光滑对象**（$\bar\partial$ 算子）的局部可解性联系起来。具体地，它断言
 $$H^{p,q}_{\bar\partial}(X)\cong H^{q}(X,\Omega^{p}),$$

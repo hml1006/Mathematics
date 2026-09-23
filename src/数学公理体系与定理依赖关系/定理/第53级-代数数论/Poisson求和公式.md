@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Fourier 变换与逆变换、Schwartz 空间与速降性、Fourier 级数及系数衰减、Fubini 定理、周期化与过渡（Poisson 核）技巧
+> **前置依赖**：Fourier变换与逆变换公式、Schwartz 空间与速降性、Fourier 级数及系数衰减、Fubini 定理、周期化与过渡（Poisson 核）技巧
 
 Poisson 求和公式（Poisson summation formula）是连接"离散求和"与"连续傅里叶分析"的桥梁，其思想可追溯到 Euler 与 Poisson 对椭圆函数的研究。公式断言：对性质良好的函数 $f$，
 

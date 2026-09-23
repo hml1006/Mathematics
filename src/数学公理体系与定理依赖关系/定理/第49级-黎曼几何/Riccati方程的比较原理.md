@@ -10,7 +10,7 @@ Riccati 方程得名于意大利数学家 Jacopo Riccati（1724 年研究该方�
 
 ## 分析
 
-**前置依赖**：测地线与 Jacobi 场、Jacobi 场方程、Ricci 曲率、Laplace–Beltrami 算子、一阶常微分方程解的存在唯一性、Gronwall 不等式。
+**前置依赖**：测地线与 Jacobi 场、Jacobi方程、Ricci 曲率、Laplace-Beltrami算子与热方程、Picard-Lindelöf定理、Gronwall 不等式。
 
 **定理内容**：设 $k\in C^0[0,T)$，$u,v$ 在 $[0,T)$ 上可微，$v$ 满足等式
 

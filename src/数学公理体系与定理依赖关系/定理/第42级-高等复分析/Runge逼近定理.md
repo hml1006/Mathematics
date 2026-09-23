@@ -10,7 +10,7 @@ Runge 逼近定理（Runge's approximation theorem）是复分析中的基本逼
 
 ## 分析
 
-**前置依赖**：全纯函数、Laurent 展开、Cauchy 积分公式、一致收敛、紧集。
+**前置依赖**：全纯函数、Laurent 展开、柯西积分公式、一致收敛、紧集。
 
 **定理内容**：设 $K \subset \mathbb{C}$ 是紧集，$f$ 在 $K$ 的某个邻域上全纯。则：
 1. **有理函数逼近**：存在有理函数序列 $R_n$，其极点位于 $K$ 的补集 $\mathbb{C} \setminus K$ 中，使得 $R_n$ 在 $K$ 上一致收敛到 $f$。

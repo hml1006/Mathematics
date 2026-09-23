@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：椭圆曲线与导子、最小判别式与半稳定约化、模形式与 Hecke 代数、Galois 表示与模 $\ell$ 残差表示、模性定理（Wiles 等）、Serre 猜想与 $\varepsilon$-猜想、Mazur 的形变理论、Carayol 的局部-整体定理、Hecke 代数的 Gorenstein 性
+> **前置依赖**：椭圆曲线与导子、椭圆曲线的最小导子与半稳定约化、模形式与 Hecke 代数、Galois 表示与模 $\ell$ 残差表示、模性定理（Wiles 等）、Serre 猜想与 $\varepsilon$-猜想、Mazur 的形变理论、Carayol 的局部-整体定理、Hecke 代数的 Gorenstein 性
 
 Frey 曲线与 Ribet 的水平降低定理是 Fermat 大定理（FLT）证明链条上最关键的两环。1986 年 Gerhard Frey 观察到：若 $a^p+b^p=c^p$（$p\ge5$ 素数）有正整数解，构造椭圆曲线
 

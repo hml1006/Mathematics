@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：伪全纯曲线与 Cauchy–Riemann 方程 $\bar\partial_Ju=0$、辛形式与相容近复结构下的能量恒等式 $E(u)=\int u^*\omega=\frac12\int|du|^2$、$J$-全纯曲线的均值不等式（Gromov 单调性引理的局部形式）、全纯函数的 Laurent 展开与经典可去奇点定理、一致椭圆系统的 Weyl 引理（或 Calderón–Zygmund 估计）。
+> **前置依赖**：伪全纯曲线与 Cauchy–Riemann 方程 $\bar\partial_Ju=0$、辛形式与相容近复结构下的能量恒等式 $E(u)=\int u^*\omega=\frac12\int|du|^2$、全纯曲线的均值不等式、全纯函数的 Laurent 展开与经典可去奇点定理、一致椭圆系统的 Weyl 引理（或 Calderón–Zygmund 估计）。
 
 Gromov 可去奇点定理（Gromov Removable Singularity Theorem）是 Mikhail Gromov 在 1985 年关于伪全纯曲线的奠基性工作中证明的基本分析定理。它断言：$J$-全纯曲线 $u:D\setminus\{0\}\to M$ 只要能量有限，就不存在"真正的"奇点；$u$ 总可以光滑地延拓为整条圆盘 $D$ 上的 $J$-全纯曲线。
 

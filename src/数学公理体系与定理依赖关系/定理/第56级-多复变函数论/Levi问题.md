@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：全纯凸性、Levi 形式与伪凸性、多重次调和穷竭函数、Hartogs 现象、$\bar{\partial}$ 方程的 $L^2$ 估计。
+> **前置依赖**：全纯凸性、Levi 形式与伪凸性、多重次调和穷竭函数、Hartogs 现象、Morrey-Kohn-Hörmander恒等式。
 
 Levi 问题（Levi Problem）是多复变函数论中最核心的问题之一，由 Eugenio Elia Levi 于 1911 年提出。它探讨的是：**伪凸性是否等价于全纯凸性**，即伪凸域上是否存在足够多的全纯函数。
 

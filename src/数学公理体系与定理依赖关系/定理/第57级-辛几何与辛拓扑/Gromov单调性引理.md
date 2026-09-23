@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：伪全纯曲线与相容近复结构 $J$、辛形式 $\omega$ 与诱导度量、多重数（局部相交数）、Lelong–Poincaré 公式与正闭流（positive current）、$dd^{c}$ 与多次调和函数（plurisubharmonic）、坐标正规化（测地正规坐标 / Darboux 坐标）、比较定理
+> **前置依赖**：伪全纯曲线与相容近复结构 $J$、辛形式 $\omega$ 与诱导度量、多重数（局部相交数）、辛形式与相容近复结构下的能量恒等式、$dd^{c}$ 与多次调和函数（plurisubharmonic）、坐标正规化（测地正规坐标 / Darboux 坐标）、比较定理
 
 Gromov 单调性引理（monotonicity lemma，Gromov 1985）是伪全纯曲线局部理论的基本引理。它给出伪全纯曲线穿过一点时能量的**局部下界**：存在常数 $\hbar=\hbar(M,\omega,J,r)>0$，使任何非平凡的、经过 $p$ 且以多重数 $m$ 经过 $p$ 的 $J$-全纯曲线 $u$ 满足
 $$\int_{u^{-1}(B_r(p))}u^{*}\omega\ \ge\ m\,\hbar.$$

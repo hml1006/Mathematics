@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：再生核希尔伯特空间（RKHS）、Rademacher 复杂度、Cauchy-Schwarz 不等式、核函数性质、铰链损失
+> **前置依赖**：再生核希尔伯特空间（RKHS）、Rademacher复杂度的泛化界、Cauchy-Schwarz 不等式、核函数性质、铰链损失
 
 设 $\mathcal{H}$ 为再生核希尔伯特空间（RKHS）中的单位球 $\{f:\|f\|_\mathcal{H}\le\Lambda\}$，核函数满足 $K(x,x)\le1$，损失取铰链损失 $L(y,f(x))=\max(0,1-yf(x))$。则对任意 $\delta>0$，以至少 $1-\delta$ 的概率，对所有 $f\in\mathcal{H}$ 有
 $$

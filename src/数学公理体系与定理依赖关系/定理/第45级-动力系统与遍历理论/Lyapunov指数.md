@@ -10,7 +10,7 @@ Lyapunov指数（Lyapunov Exponent）是动力系统理论中刻画轨道稳定�
 
 ## 分析
 
-**前置依赖**：动力系统、常微分方程、线性化、矩阵的特征值、微分流形、遍历理论。
+**前置依赖**：动力系统、Picard-Lindelöf定理、线性化、矩阵的特征值、微分流形、遍历理论。
 
 **定理内容**：设 $M$ 是光滑流形，$f: M \to M$ 是 $C^1$ 映射，$\mu$ 是 $f$-不变遍历概率测度。对 $\mu$-几乎处处 $x \in M$ 和所有 $v \in T_xM \setminus \{0\}$，定义Lyapunov指数
 $$\lambda(x, v) = \limsup_{n \to \infty} \frac{1}{n} \log \|Df^n(x) \cdot v\|$$

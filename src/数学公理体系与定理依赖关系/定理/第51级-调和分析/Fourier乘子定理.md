@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Fourier 变换与逆变换、Plancherel 定理、Littlewood-Paley 二进分解、Calderón-Zygmund 奇异积分理论、Hörmander 条件
+> **前置依赖**：Fourier变换与逆变换公式、Plancherel 定理、Littlewood-Paley 二进分解、Calderón-Zygmund 奇异积分理论、Hörmander 条件
 
 Fourier 乘子理论研究的是：给定一个有界函数 $m(\xi)$，定义算子 $T_m f = \mathcal{F}^{-1}[m \cdot \hat{f}]$，问 $T_m$ 在 $L^p$ 空间上是否有界？这样的 $m$ 称为 $L^p$ 乘子。
 

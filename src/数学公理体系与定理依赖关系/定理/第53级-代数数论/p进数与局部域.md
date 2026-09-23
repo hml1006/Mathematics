@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：非 Archimedean 绝对值与强三角不等式、度量完备化（Cauchy 序列）、Newton 迭代法（Hensel 引理的证明）、离散赋值环与剩余域、Ostrowski 定理的素理想论证
+> **前置依赖**：非 Archimedean 绝对值与强三角不等式、度量完备化（Cauchy 序列）、Newton 迭代法（Hensel 引理的证明）、离散赋值环与剩余域、完备化与Hensel引理
 
 $p$-进数（$p$-adic numbers）是数论中最基本的局部域（local field），由 Hensel 于 1897 年引入。$p$-进数域 $\mathbb{Q}_p$ 是有理数域 $\mathbb{Q}$ 关于 $p$-进绝对值 $|\cdot|_p$ 的完备化，它与实数域 $\mathbb{R}$（$\mathbb{Q}$ 关于通常绝对值的完备化）一起，构成了 $\mathbb{Q}$ 的所有**位置**（places）对应的局部域。
 

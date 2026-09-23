@@ -10,7 +10,7 @@ Dirichlet 算术级数定理由 Dirichlet 于 1837 年证明，是解析数论�
 
 ## 分析
 
-**前置依赖**：Euler 乘积、Zeta 函数、群特征标、Dirichlet L 函数。
+**前置依赖**：Euler乘积公式、Zeta 函数、群特征标、Dirichlet L 函数。
 
 **定理内容**：设 $a, q$ 是正整数，$\gcd(a, q) = 1$，则存在无穷多个素数 $p$ 满足 $p \equiv a \pmod{q}$。
 

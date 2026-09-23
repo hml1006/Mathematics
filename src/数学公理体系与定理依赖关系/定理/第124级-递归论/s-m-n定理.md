@@ -5,7 +5,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：部分可计算函数与全可计算函数、图灵机／寄存器机与程序的 Gödel 编码、通用（枚举）定理 $(\mathrm{UTM})$、配对函数与原始递归函数、Church–Turing 论题、程序填充（padding）引理
+> **前置依赖**：部分可计算函数与全可计算函数、图灵机／寄存器机与程序的 Gödel 编码、通用枚举机器的构造、配对函数与原始递归函数、Church–Turing 论题、程序填充（padding）引理
 
 s-m-n 定理由 Kleene 于 1943 年在《Recursive predicates and quantifiers》中提出，名称来自其记号 $S^m_n$，故称 **s-m-n 定理**，又称**参数化定理**（parameter theorem）或**迭代定理**（iteration theorem）。它是可计算性理论中最基本的“技术引理”：几乎所有关于可计算函数编号的结论都要用到它。
 

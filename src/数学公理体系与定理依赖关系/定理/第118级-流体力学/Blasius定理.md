@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：复势与复速度、Bernoulli方程、围道积分与Cauchy积分定理、留数定理、Laurent展开、不可压缩势流理论。
+> **前置依赖**：复势与复速度、伯努利定理的严格证明、围道积分与Cauchy积分定理、留数定理、Laurent展开、不可压缩势流理论。
 
 Blasius 定理由德国流体力学家 Paul Richard Heinrich Blasius（1883–1970）在 1910 年发表于《Zeitschrift für Mathematik und Physik》的论文《Funktionentheoretische Methoden in der Hydrodynamik》（流体力学中的函数论方法）中提出。Blasius 是 Prandtl 在哥廷根的学生，同一时期他还在 1908 年的学位论文中给出了平板边界层的相似解（即著名的 Blasius 方程），但这里所述的"Blasius 定理"指的是势流中计算合力与力矩的复变函数方法，二者是不同结果，常在文献中因同名而混淆。
 

@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：辛流形、Hamilton 方程与作用泛函、Morse 理论、Floer 同调、Poincaré-Birkhoff 定理。
+> **前置依赖**：辛流形、辛流形基本理论、Morse 理论、Floer 同调、Poincaré-Birkhoff 定理。
 
 Arnold 猜想由 Vladimir Arnold 于 20 世纪 60 年代提出，是辛拓扑与 Hamilton 动力学的标志性猜想，被誉为现代辛拓扑的起点。它将 Morse 理论中临界点数与同调维数的关系类比推广到 Hamilton 同胚的不动点问题。
 

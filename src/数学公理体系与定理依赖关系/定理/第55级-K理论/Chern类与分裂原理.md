@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：复向量丛与结构群 $GL_n(\mathbb C)$、射影丛 $\mathbb P(E)$ 与重言线丛、上同调环 $H^*(M;\mathbb Z)$、Leray–Hirsch 定理与 Gysin 序列（沿纤维积分）、Thom 同构、Whitney 和与拉回、旗丛（flag bundle）
+> **前置依赖**：复向量丛与结构群 $GL_n(\mathbb C)$、射影丛 $\mathbb P(E)$ 与重言线丛、上同调环 $H^*(M;\mathbb Z)$、Leray-Hirsch定理、Thom 同构、Whitney 和与拉回、旗丛（flag bundle）
 
 Chern 类（陈省身类，1946 年前后由陈省身、Ehresmann、Grothendieck 等人建立）是复向量丛最基本的特征类：对复向量丛 $E\to M$ 的秩 $n$，可赋予上同调类
 $$c_i(E)\in H^{2i}(M;\mathbb Z),\qquad i=0,1,\dots,n,\qquad c_0(E)=1,$$

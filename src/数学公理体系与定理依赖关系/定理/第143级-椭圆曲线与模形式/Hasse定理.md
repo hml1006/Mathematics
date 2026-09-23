@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：椭圆曲线群律、Weil猜想（曲线情形）、ℓ-adic étale上同调、Lefschetz迹公式、Frobenius自同态
+> **前置依赖**：椭圆曲线的群律公式、Weil猜想（曲线情形）、ℓ-adic étale上同调、Lefschetz迹公式、Frobenius自同态
 
 Hasse定理（Hasse边界）给出有限域 $\mathbb{F}_q$（$q=p^n$）上椭圆曲线 $E$ 的 $\mathbb{F}_q$-有理点计数（含 $O$）的精确界：
 $$

@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> 紧李群与 Haar 测度、不可约酉表示、Schur 引理、谱定理紧自伴算子、Stone-Weierstrass 定理。
+> **前置依赖**：紧李群与 Haar 测度、不可约酉表示、Schur 引理、谱定理紧自伴算子、Stone-Weierstrass 定理。
 
 Peter-Weyl 定理是紧李群上的调和分析的基石。它把 $G$ 的不可约酉表示与 $L^2(G)$ 的 Hilbert 空间结构联系起来，断言三件事：不可约谱（类函数中的特征标）完备正交；矩阵系数在 $L^2(G)$ 中稠密；$L^2(G)$ 作为 $G\times G$ 表示分解为 $\bigoplus_V V\otimes V^*$。它把有限维表示论与函数空间的谱分解无缝衔接。
 

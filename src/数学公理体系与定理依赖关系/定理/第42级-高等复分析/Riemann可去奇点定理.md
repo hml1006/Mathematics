@@ -18,7 +18,7 @@ Riemann 可去奇点定理（Riemann's removable singularity theorem）给出了
 
 ## 分析
 
-**前置依赖**：全纯函数、孤立奇点与 Laurent 展开、Cauchy 积分公式与系数估计（Cauchy 估计）、幂级数展开与零点的孤立性、连续性极限与复可导的定义、整函数的 Liouville 定理（作为推论）。
+**前置依赖**：全纯函数、孤立奇点与 Laurent 展开、全纯函数与Cauchy积分公式、幂级数展开与零点的孤立性、连续性极限与复可导的定义、整函数的 Liouville 定理（作为推论）。
 
 **定理内容**：设 $z_0\in\mathbb C$，$r>0$，$f$ 在去心圆盘 $0<|z-z_0|<r$ 上全纯。则以下条件彼此等价：
 

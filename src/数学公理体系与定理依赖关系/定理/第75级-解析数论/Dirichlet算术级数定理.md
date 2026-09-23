@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Dirichlet 特征与特征正交性、Dirichlet L-函数、Euler 乘积、Tauber 定理。
+> **前置依赖**：Dirichlet 特征与特征正交性、Dirichlet L-函数、Euler乘积公式、Tauber 定理。
 
 Dirichlet 定理（1837）是解析数论的里程碑：它保证素数在每个"与模互素的算术级数"中分布无穷，并给出了它们的渐近密度 $\frac1{\varphi(q)}$。它首次系统引入 Dirichlet 特征与 L-函数，是数论从"初等"走向"解析"的分水岭，也是后续 Langlands 纲领的算术起点。
 

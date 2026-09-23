@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> Dirichlet 逼近定理、Liouville定理、Roth 引理与 Siegel 引理（辅助多项式构造）、Taylor 展开。
+> **前置依赖**：Dirichlet 逼近定理、Liouville定理、Roth 引理与 Siegel 引理（辅助多项式构造）、Taylor 展开。
 
 Roth 定理（1955）是丢番图逼近的最高峰之一（Roth 因之获 1958 Fields 奖）。它断言：对代数无理数 $\alpha$ 和任意 $\varepsilon>0$，不等式 $|\alpha-\frac pq|<\frac1{q^{2+\varepsilon}}$ 只有有限多个有理数解。这使指数 $2$ 成为代数无理数的精确临界指数。
 

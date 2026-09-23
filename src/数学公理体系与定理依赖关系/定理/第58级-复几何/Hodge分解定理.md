@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Kähler 流形、Kähler 恒等式、Hodge 定理（调和形式）、Dolbeault 定理、Serre 对偶定理。
+> **前置依赖**：Kähler 流形、Kähler 恒等式、Hodge定理复形式、Dolbeault 定理、Serre 对偶定理。
 
 Hodge 分解定理是 Kähler 几何中最优美的结果之一，由 William Hodge 在 1930-1941 年间提出并发展。该定理断言：在紧 Kähler 流形 $X$ 上，每个复系数 de Rham 上同调群 $H^k(X, \mathbb{C})$ 可以自然分解为 $(p, q)$-型 Dolbeault 上同调群的直和：
 

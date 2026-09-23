@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：交换 Banach 代数与极大理想、Gelfand-Mazur 定理、弱*拓扑与 Banach-Alaoglu 定理、谱半径公式与 C*-恒等式、Stone-Weierstrass 定理
+> **前置依赖**：交换 Banach 代数与极大理想、Gelfand-Mazur 定理、Banach-Alaoglu定理、谱半径公式与 C*-恒等式、Stone-Weierstrass 定理
 
 Gelfand-Naimark 定理（交换情形）是 C*-代数理论中的基础性定理，它建立了交换 C*-代数与局部紧 Hausdorff 空间上连续函数代数之间的对偶关系。这个定理最早由 I.M. Gelfand 和 M.A. Naimark 在 1943 年提出，标志着算子代数理论的诞生。
 

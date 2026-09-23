@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> **前置依赖**：Rademacher 随机变量、Khintchine 不等式、$L^p$ 空间与 Minkowski 不等式、对偶空间与 Hölder 不等式
+> **前置依赖**：Rademacher 随机变量、Khintchine 不等式、Minkowski不等式、对偶空间与 Hölder 不等式
 
 Banach 空间的型（type）与余型（cotype）是衡量 Banach 空间几何性质的重要指标，由 Jean-Pierre Kahane 和 Gilles Pisier 系统发展。它们刻画了 Banach 空间与 Hilbert 空间的"距离"，反映了空间中随机级数的收敛性质。
 

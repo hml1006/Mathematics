@@ -6,7 +6,7 @@
 
 ## 一、定理介绍
 
-> 数域的实嵌入与复嵌入、单位与范数、Kronecker 定理（代数整数共轭模长为 1 即为单位根）、有限生成Abel群基本定理、Minkowski 凸体定理与格论
+> **前置依赖**：数域的实嵌入与复嵌入、单位与范数、Kronecker 定理（代数整数共轭模长为 1 即为单位根）、有限生成Abel群基本定理、Minkowski凸体定理
 
 Dirichlet 单位定理（Dirichlet Unit Theorem）是代数数论中关于数域整数环单位群结构的经典结果，由 Dirichlet 于 1846 年证明。该定理完全确定了数域 $K$ 的整数环 $\mathcal{O}_K$ 中可逆元（单位）群 $\mathcal{O}_K^\times$ 的抽象结构。
 
