@@ -42,8 +42,7 @@ $$
 
 **步骤2：边界条件。** 终端条件 $V(S,T)=\max(S-K,0)$；$S=0$ 时 $V=0$；$S\to\infty$ 时 $V\sim S$。
 
-**步骤3：化为热传导方程。** 令 $\tau=T-t$、$x=\ln S$、$V=e^{-r\tau}u$，化简得 $
-u_\tau=\tfrac12\sigma^2u_{xx}+(r-\tfrac12\sigma^2)u_x$；再令 $y=x+(r-\tfrac12\sigma^2)\tau$，得标准热方程 $w_\tau=\tfrac12\sigma^2w_{yy}$，初值 $w(y,0)=\max(e^y-K,0)$。
+**步骤3：化为热传导方程。** 令 $\tau=T-t$、$x=\ln S$、$V=e^{-r\tau}u$，化简得 $u_\tau=\tfrac12\sigma^2u_{xx}+(r-\tfrac12\sigma^2)u_x$；再令 $y=x+(r-\tfrac12\sigma^2)\tau$，得标准热方程 $w_\tau=\tfrac12\sigma^2w_{yy}$，初值 $w(y,0)=\max(e^y-K,0)$。
 
 **步骤4：求解热方程。** 基本解 $G(y,\tau)=(2\pi\sigma^2\tau)^{-1/2}\exp(-y^2/(2\sigma^2\tau))$，解为
 $$

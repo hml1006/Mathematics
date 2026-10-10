@@ -1452,7 +1452,7 @@
 | [Chebotarev 密度定理](定理/第53级-代数数论/Chebotarev密度定理.md) | （Chebotarev 密度定理） 设 $L/K$ 是数域的有限 Galois 扩张，$G=\mathrm{Gal}(L/K)$，$C\subseteq G$ 是共轭类。记 | 数域与整数环、素理想的分解与 Frobenius 元素、Galois 扩张与 Galois 群、Artin L 函数与 Euler 乘积、Dedekind zeta 函数、Dirichlet 密度与自然密度、特征标正交关系、Tauberian 定理 |
 | [Frey 曲线与 Ribet 水平降低定理](定理/第53级-代数数论/Frey曲线与Ribet水平降低定理.md) | （Frey 曲线） 设 $a,b,c\in\mathbb Z^+$、$p\ge5$ 素数满足 $a^p+b^p=c^p$，且 $a\equiv-1\pmod 4$、$b\equiv0\pmod{16}$（可由初等变换保证）。定义 | 椭圆曲线与导子、椭圆曲线的最小导子与半稳定约化、模形式与 Hecke 代数、Galois 表示与模 $\ell$ 残差表示、模性定理（Wiles 等）、Serre 猜想与 $\varepsilon$-猜想、Mazur 的形变理论、Carayol 的局部-整体定理、Hecke 代数的 Gorenstein 性 |
 | [Chevalley-Warning 定理](定理/第53级-代数数论/Chevalley-Warning定理.md) | （Chevalley–Warning 定理） 设 $q=p^k$，$f_1,\dots,f_r\in\mathbb F_q[x_1,\dots,x_n]$，且 | 有限域 $\mathbb F_q$（$q=p^k$）与 $p$-幂特征、多元多项式环与总次数、有限域上的特征和 $\sum_{x\in\mathbb F_q}x^m$、Fermat 小定理、置换与计数的组合恒等式 |
-| [Carayol的局部-整体定理](定理/第53级-代数数论/Carayol的局部-整体定理.md) | 设 $\ell$ 为素数，$\bar\rho:G_{\mathbb Q}\to\mathrm{GL}_2(\bar{\mathbb F}_\ell)$ 连续、奇异且不可约。对每个素数 $p$ 记 $G_p=G_{\mathbb Q_p}$、$\bar\rho_p=\bar\rho\|_{G_p}$，并记 $\pi_f=\ | 伽罗瓦表示与分解群、模形式与Hecke算子、局部Langlands对应、Frobenius元素与惯性群、Serre模性猜想、R=T（模性提升）定理。 |
+| [Carayol的局部-整体定理](定理/第53级-代数数论/Carayol的局部-整体定理.md) | 设 $\ell$ 为素数，$\bar\rho:G_{\mathbb Q}\to\mathrm{GL}_2(\bar{\mathbb F}_\ell)$ 连续、奇异且不可约。对每个素数 $p$ 记 $G_p=G_{\mathbb Q_p}$、$\bar\rho_p=\bar\rho\|_{G_p}$，并记 $\pi_f=\ $ | 伽罗瓦表示与分解群、模形式与Hecke算子、局部Langlands对应、Frobenius元素与惯性群、Serre模性猜想、R=T（模性提升）定理。 |
 | [Tauberian定理](定理/第53级-代数数论/Tauberian定理.md) | （Ikehara 定理） 设 $a_n\ge0$（$n\ge1$），Dirichlet 级数 | Dirichlet级数与收敛横坐标、Laplace–Mellin变换、Riemann Zeta函数的解析延拓、Fourier变换与逆变换公式、Riemann–Lebesgue引理、Fubini定理。 |
 | [Minkowski 嵌入与数域判别式](定理/第53级-代数数论/Minkowski嵌入与数域判别式.md) | $\iota(x)=(\sigma_1(x),\dots)$ 把 $K$ 嵌入 $\mathbb R^{r_1}\times\mathbb C^{r_2}$，$\mathcal O_K$ 成为格且余体积为 $2^{-r_2}\sqrt{\lvert d_K\rvert}$；判别式 $d_K=\det(\mathrm{Tr}(\omega_i\omega_j))$ 非零且 $\lvert d_K\rvert>1$（$n\ge2$） | 本原元素定理、Minkowski凸体定理、共轭嵌入与迹形式、代数整数与整闭性 |
 
@@ -1488,7 +1488,7 @@
 | [代数 K 理论（$K_0$ 与 $K_1$）](定理/第55级-K理论/代数K理论.md) | 环 $R$ 的 $K_0(R)$ 由投射模的同构类构成；$K_1(R) = GL(R)/E(R)$（Whitehead 群） | 投射模、初等矩阵 |
 | [指标定理的 K 理论证明](定理/第55级-K理论/指标定理K理论证明.md) | Atiyah-Singer 指标定理可用 K 理论表述：椭圆算子的指标类由符号的 K 理论类通过 Thom 同构和 Chern 特征标确定 | Atiyah-Singer 指标定理、拓扑 K 理论 |
 | [向量丛分类定理](定理/第55级-K理论/向量丛分类定理.md) | 紧空间 $X$ 上的秩 $k$ 复向量丛与 $[X, BU(k)]$ 一一对应；$BU(k)$ 是 Grassmann 流形的极限 | 拓扑 K 理论、分类空间 |
-| [Chern 类与分裂原理](定理/第55级-K理论/Chern类与分裂原理.md) | （射影丛定理） 设 $E\to M$ 是秩 $n\ge1$ 的复向量丛，$M$ 仿紧（故有 $CW$/仿紧结构，上同调理论可用）。设 $\pi:\mathbb P(E)\to M$ 为射影丛，$\mathcal O(-1)\subset\pi^E$ 为重言子线丛，$\mathcal O(1)=\mathcal O(-1 | 复向量丛与结构群 $GL_n(\mathbb C)$、射影丛 $\mathbb P(E)$ 与重言线丛、上同调环 $H^(M;\mathbb Z)$、Leray-Hirsch定理、Thom 同构、Whitney 和与拉回、旗丛（flag bundle） |
+| [Chern 类与分裂原理](定理/第55级-K理论/Chern类与分裂原理.md) | （射影丛定理） 设 $E\to M$ 是秩 $n\ge1$ 的复向量丛，$M$ 仿紧（故有 $CW$/仿紧结构，上同调理论可用）。设 $\pi:\mathbb P(E)\to M$ 为射影丛，$\mathcal O(-1)\subset\pi^E$ 为重言子线丛，$\mathcal O(1)=\mathcal O(-1$ | 复向量丛与结构群 $GL_n(\mathbb C)$、射影丛 $\mathbb P(E)$ 与重言线丛、上同调环 $H^(M;\mathbb Z)$、Leray-Hirsch定理、Thom 同构、Whitney 和与拉回、旗丛（flag bundle） |
 | [覆盖同伦定理](定理/第55级-K理论/覆盖同伦定理.md) | （覆盖同伦定理） 设 $p:E\to B$ 是以 $F$ 为纤维的纤维丛，$B$ 仿紧（paracompact）。则 $p$ 具有同伦提升性质（HLP）：对任意拓扑空间 $X$、任意同伦 | 纤维丛（局部平凡化）、丛的拉回、同伦与同伦提升性质（HLP，即纤维化/fibration）、Serre 纤维化与 Hurewicz 纤维化、仿紧空间与单位分解、neighborhood 收缩、拉回丛的同构 |
 | [Swan 定理](定理/第55级-K理论/Swan定理.md) | 定理（Swan, 1962）：设 $X$ 是紧 Hausdorff 空间，$\mathbb{K}=\mathbb{R}$ 或 $\mathbb{C}$，$C(X)=C(X;\mathbb{K})$ 是带上确界范数的连续函数环。记 $\mathbf{Vect}(X)$ 为 $X$ 上有限秩 $\mathbb{K}$-向量 | 向量丛与截面、紧 Hausdorff 空间上的连续函数环 $C(X)$、有限生成投射模、单位分解、向量丛分类定理、拓扑 K 理论。 |
 | [Leray-Hirsch 定理](定理/第55级-K理论/Leray-Hirsch定理.md) | 若存在 $c_1,\dots,c_n\in H^*(E;A)$ 在每条纤维上限制为 $H^*(F;A)$ 的基，则 $H^*(E;A)$ 是以 $c_j$ 为基的自由 $H^*(B;A)$-模 | 拓扑K理论定义、Swan定理、覆盖同伦定理、谱序列、射影丛与重言线丛、上同调环、Gysin序列、沿纤维积分 |
@@ -1505,7 +1505,7 @@
 | [Cartan 定理 A 与 B](定理/第56级-多复变函数论/Cartan定理A与B.md) | 定理 A：凝聚层 $\mathcal{F}$ 由整体截面生成；定理 B：$H^q(X, \mathcal{F}) = 0$（$q \geq 1$）（Stein 流形上） | Stein 流形理论、凝聚层 |
 | [Bergman 核与核函数](定理/第56级-多复变函数论/Bergman核与核函数.md) | Bergman 核 $K(z,w)$ 再生全纯函数；双全纯映射 $\phi$ 下核满足 $K(z,w) = \phi'(z)K(\phi(z),\phi(w))\overline{\phi'(w)}$ | Hilbert 空间、全纯函数 |
 | [Dolbeault 定理](定理/第56级-多复变函数论/Dolbeault定理.md) | （Dolbeault 定理） 设 $X$ 是复流形，$\Omega^{p}=\Omega^{p}_{X}$ 是全纯 $p$-形式层。则对一切 $p,q\ge0$ 有自然的同构 | 复流形与 $(p,q)$-形式、$\bar\partial$ 算子与 Dolbeault 复形、全纯 $p$-形式的层 $\Omega^p$、层上同调 $H^q(X,\mathcal F)$、细层（fine sheaf）与单位分解、Poincaré引理、层短正合列的长正合列 |
-| [Morrey-Kohn-Hörmander 恒等式](定理/第56级-多复变函数论/Morrey-Kohn-Hörmander恒等式.md) | （Morrey–Kohn–Hörmander 恒等式） 设 $\Omega=\{\rho<0\}\Subset\mathbb C^{n}$ 是有 $C^{2}$ 边界的有界区域，$\rho$ 为定义函数，$\phi\in C^{2}(\overline\Omega)$ 为实值权重。设 $u=\sum_{j=1}^{n} | $\bar\partial$ 算子与 $(0,q)$-形式、加权 $L^2$ 内积 $\langle u,v\rangle_\phi=\int u\bar v\,e^{-\phi}$、$\bar\partial^{}_{\phi}$ 的显式表达式与 $\bar\partial$-Neumann 边界条件、定义函数 $\rho$ 与 Levi 形式、分部积分法、多次调和函数（plurisubharmonic）与拟凸域 |
+| [Morrey-Kohn-Hörmander 恒等式](定理/第56级-多复变函数论/Morrey-Kohn-Hörmander恒等式.md) | （Morrey–Kohn–Hörmander 恒等式） 设 $\Omega=\{\rho<0\}\Subset\mathbb C^{n}$ 是有 $C^{2}$ 边界的有界区域，$\rho$ 为定义函数，$\phi\in C^{2}(\overline\Omega)$ 为实值权重。设 $u=\sum_{j=1}^{n}$ | $\bar\partial$ 算子与 $(0,q)$-形式、加权 $L^2$ 内积 $\langle u,v\rangle_\phi=\int u\bar v\,e^{-\phi}$、$\bar\partial^{}_{\phi}$ 的显式表达式与 $\bar\partial$-Neumann 边界条件、定义函数 $\rho$ 与 Levi 形式、分部积分法、多次调和函数（plurisubharmonic）与拟凸域 |
 
 ### 第 57 级：辛几何与辛拓扑
 
@@ -1520,7 +1520,7 @@
 | [Moser 定理](定理/第57级-辛几何与辛拓扑/Moser定理.md) | 若 $\omega_t$ 是同调于常数的辛形式的光滑族，则存在微分同胚族 $\varphi_t$ 使 $\varphi_t^*\omega_t = \omega_0$ | de Rham 上同调、Cartan公式（魔法公式）、Poincaré 引理、辛形式的非退化性、Picard-Lindelöf定理|
 | [Poincaré-Birkhoff 定理](定理/第57级-辛几何与辛拓扑/Poincaré-Birkhoff定理.md) | （Poincaré–Birkhoff 定理） 设 $A=\mathbb R/\mathbb Z\times[0,1]$ 赋以面积形式 $\omega=d\theta\wedge dr$，$f:A\to A$ 是保面积同胚 | 辛流形 $(\mathbb R/\mathbb Z\times[0,1],\,d\theta\wedge dr)$、面积保持映射（辛同胚）、单调扭转条件、环面的万有覆盖与提升、生成函数（generating function）与变分原理、临界点与 Morse 理论、旋转数 |
 | [Gromov 紧性定理](定理/第57级-辛几何与辛拓扑/Gromov紧性定理.md) | （Gromov 紧性定理） 设 $(M,\omega)$ 是闭辛流形，$J_k$ 是 $\omega$-相容的近复结构序列，在 $C^{\infty}$ 下收敛到相容近复结构 $J$。设 $u_k:(\Sigma_k,j_k)\to(M,J_k)$ 是一列 $J_k$-全纯曲线，满足： - $\Sigma_k$ 是亏格 | 辛流形 $(M,\omega)$ 与相容近复结构 $J$、伪全纯曲线 $u:(\Sigma,j)\to(M,J)$（$\bar\partial_Ju=0$）、能量 $E(u)=\int u^{}\omega$、单值化与 Deligne–Mumford 稳定曲线、Gromov 单调性引理与能量量子化、Gromov 可去奇点定理、Arzelà–Ascoli 与椭圆正则性（气泡分析） |
-| [Gromov 单调性引理](定理/第57级-辛几何与辛拓扑/Gromov单调性引理.md) | （Gromov 单调性引理） 设 $(M,\omega)$ 是辛流形，$J$ 是与 $\omega$ 相容的近复结构，$g=\omega(\cdot,J\cdot)$ 为诱导 Riemann 度量，$p\in M$，取 $r<\text{inj}_{g}(p)$（单射半径）。则存在常数 $\hbar=\hbar(M,\ | 伪全纯曲线与相容近复结构 $J$、辛形式 $\omega$ 与诱导度量、多重数（局部相交数）、辛形式与相容近复结构下的能量恒等式、$dd^{c}$ 与多次调和函数（plurisubharmonic）、坐标正规化（测地正规坐标 / Darboux 坐标）、比较定理 |
+| [Gromov 单调性引理](定理/第57级-辛几何与辛拓扑/Gromov单调性引理.md) | （Gromov 单调性引理） 设 $(M,\omega)$ 是辛流形，$J$ 是与 $\omega$ 相容的近复结构，$g=\omega(\cdot,J\cdot)$ 为诱导 Riemann 度量，$p\in M$，取 $r<\text{inj}_{g}(p)$（单射半径）。则存在常数 $\hbar=\hbar(M,\ $ | 伪全纯曲线与相容近复结构 $J$、辛形式 $\omega$ 与诱导度量、多重数（局部相交数）、辛形式与相容近复结构下的能量恒等式、$dd^{c}$ 与多次调和函数（plurisubharmonic）、坐标正规化（测地正规坐标 / Darboux 坐标）、比较定理 |
 | [Gromov可去奇点定理](定理/第57级-辛几何与辛拓扑/Gromov可去奇点定理.md) | 设 $(M,J)$ 是近复流形（典型情形为辛流形 $(M,\omega)$ 配以与 $\omega$ 相容的近复结构 $J$），并固定 $M$ 上一个与 $J$ 相容的 Riemann 度量。记 $D=\{z\in\mathbb C:\|z\|<1\}$ 为单位圆盘。 | 伪全纯曲线与 Cauchy–Riemann 方程 $\bar\partial_Ju=0$、辛形式与相容近复结构下的能量恒等式 $E(u)=\int u^\omega=\frac12\int\|du\|^2$、全纯曲线的均值不等式、全纯函数的 Laurent 展开与经典可去奇点定理、一致椭圆系统的 Weyl 引理（或 Calderón–Zygmund 估计）。 |
 | [一致椭圆系统的 Weyl 引理](定理/第57级-辛几何与辛拓扑/一致椭圆系统的Weyl引理.md) | 一个偏微分方程的"弱解"（只要在积分意义下满足方程，导数可能很糟）如果是椭圆型方程的弱解，那它其实偷偷地和真正的光滑解一样光滑——弱解不弱。 | 椭圆正则性定理、椭圆型方程最大值原理、Sobolev空间定义、Sobolev嵌入定理、Laplace方程 |
 | [全纯函数的 Laurent 展开与经典可去奇点定理](定理/第57级-辛几何与辛拓扑/全纯函数的Laurent展开与经典可去奇点定理.md) | 全纯函数在孤立奇点附近可以写成一个"正整数幂 + 负整数幂"的级数；负幂项就是奇点的"病灶"——没有负幂项（或只有有限个）就是可去奇点（或极点），而"负幂项全消失"只要函数在该点附近有界就够了。 | 洛朗级数展开定理、Riemann可去奇点定理、全纯函数与Cauchy积分公式、Morera定理、留数定理、全纯函数零点的孤立性与恒等定理 |
@@ -1540,7 +1540,7 @@
 | [Kähler 恒等式](定理/第58级-复几何/Kähler恒等式.md) | Kähler 流形上 $\Delta' = \Delta'' = \frac{1}{2}\Delta$，其中 $\Delta$ 是 de Rham Laplacian | Kähler 度量、$\mathfrak{sl}_2$ 表示 |
 | [Serre 对偶定理](定理/第58级-复几何/Serre对偶定理.md) | 紧复 $n$ 维流形上 $H^q(X, E) \cong H^{n-q}(X, E^* \otimes K_X)^*$ | 层上同调、Hodge 星算子 |
 | [Riemann-Roch-Hirzebruch 定理](定理/第58级-复几何/Riemann-Roch-Hirzebruch定理.md) | （Riemann–Roch–Hirzebruch 定理） 设 $X$ 是 $n$ 维紧复流形，$E\to X$ 是全纯向量丛。则 | 紧复流形与全纯向量丛、Dolbeault 定理 $H^{q}(X,E)\cong H^{0,q}_{\bar\partial}(X,E)$、$\bar\partial_E$ 与 Dolbeault 复形、椭圆算子与指标（解析指标）、Chern 类与 Chern 特征标 $\operatorname{ch}$、Todd 类 $\operatorname{td}(X)$、分裂原理（Chern 根）、Atiyah–Singer 指标定理 |
-| [Bochner-Kodaira-Nakano 恒等式](定理/第58级-复几何/Bochner-Kodaira-Nakano恒等式.md) | （Bochner–Kodaira–Nakano 恒等式） 设 $(X,\omega)$ 是 Kähler 流形，$(E,h)\to X$ 是 Hermite 全纯向量丛，$\nabla$ 为 Chern 联络，$\Theta(E)=\nabla^{2}\in\mathcal A^{1,1}(X,\operatornam | Hermite 全纯向量丛 $(E,h)$ 与 Chern 联络 $\nabla=\nabla^{1,0}+\nabla^{0,1}$、曲率 $\Theta(E)=\nabla^{2}$、$\bar\partial_E$ 与 $\Box_{\bar\partial}=\bar\partial\bar\partial^{}+\bar\partial^{}\bar\partial$、Kähler 流形 $(X,\omega)$、Lefschetz 算子 $L=\omega\wedge\cdot$ 与其伴随 $\Lambda$、Kähler 恒等式 $[\Lambda,\bar\partial]=-\sqrt{-1}\partial^{}$、复 Laplace 算子 $\Delta'$ |
+| [Bochner-Kodaira-Nakano 恒等式](定理/第58级-复几何/Bochner-Kodaira-Nakano恒等式.md) | （Bochner–Kodaira–Nakano 恒等式） 设 $(X,\omega)$ 是 Kähler 流形，$(E,h)\to X$ 是 Hermite 全纯向量丛，$\nabla$ 为 Chern 联络，$\Theta(E)=\nabla^{2}\in\mathcal A^{1,1}(X,\operatornam$ | Hermite 全纯向量丛 $(E,h)$ 与 Chern 联络 $\nabla=\nabla^{1,0}+\nabla^{0,1}$、曲率 $\Theta(E)=\nabla^{2}$、$\bar\partial_E$ 与 $\Box_{\bar\partial}=\bar\partial\bar\partial^{}+\bar\partial^{}\bar\partial$、Kähler 流形 $(X,\omega)$、Lefschetz 算子 $L=\omega\wedge\cdot$ 与其伴随 $\Lambda$、Kähler 恒等式 $[\Lambda,\bar\partial]=-\sqrt{-1}\partial^{}$、复 Laplace 算子 $\Delta'$ |
 | [复 Monge-Ampère 方程](定理/第58级-复几何/复Monge-Ampère方程.md) | 想知道一个 Kähler 度量的"体积密度"如何随度量的改变而改变，只需解一个把 $\det$（体积）和 $\partial\bar\partial$（曲率）绑在一起的非线性方程——这就是复 Monge–Ampère 方程。 | Kähler恒等式、Calabi-Yau定理、椭圆正则性定理、椭圆型方程最大值原理、强极大值原理 |
 
 ### 第 59 级：几何分析
@@ -1633,7 +1633,7 @@
 | [欧拉示性数与网络分析](定理/第63级-组合代数拓扑与拓扑数据分析/欧拉示性数与网络分析.md) | 图和网络的高阶欧拉示性数与 Betti 数满足 $\chi = \sum (-1)^i \beta_i$ | 同调群、图论 |
 | [单纯逼近定理](定理/第63级-组合代数拓扑与拓扑数据分析/单纯逼近定理.md) | 记号：设 $K,L$ 为单纯复形，$\|K\|,\|L\|$ 为几何实现。对顶点 $v$，其开星形为 | 单纯复形与 simplicial 同调、Lebesgue数引理、细分引理、重心重分（概念）、连续映射的等价刻画。 |
 | [主理想整环上的有限生成模结构定理](定理/第63级-组合代数拓扑与拓扑数据分析/主理想整环上的有限生成模结构定理.md) | 定理：设 $R$ 是主理想整环，$M$ 是有限生成 $R$-模。则存在整数 $t\geq0$ 与非单位的元素 $d_1,d_2,\dots,d_s\in R\setminus\{0\}$ 使 | 主理想整环（PID）与唯一分解整环概念、自由模与子模的有限生成性、Smith标准形、Hilbert基定理、Krull–Schmidt定理。 |
-| [区间分解定理](定理/第63级-组合代数拓扑与拓扑数据分析/区间分解定理.md) | 定义（持久模）：持久模指一族 $k$-向量空间 $\{V_t\}_{t\in\mathbb R}$ 与线性映射 $\{\phi_{s,t}:V_s\to V_t\}_{s\leq t}$，满足 $\phi_{t,t}=\operatorname{id}$ 与 $\phi_{t,u}\circ\phi_{s,t}=\ph | 主理想整环上的有限生成模结构定理、Gabriel定理、持久同调基本定理、filtration 与诱导同调、秩函数与分级模（概念）。 |
+| [区间分解定理](定理/第63级-组合代数拓扑与拓扑数据分析/区间分解定理.md) | 定义（持久模）：持久模指一族 $k$-向量空间 $\{V_t\}_{t\in\mathbb R}$ 与线性映射 $\{\phi_{s,t}:V_s\to V_t\}_{s\leq t}$，满足 $\phi_{t,t}=\operatorname{id}$ 与 $\phi_{t,u}\circ\phi_{s,t}=\ph$ | 主理想整环上的有限生成模结构定理、Gabriel定理、持久同调基本定理、filtration 与诱导同调、秩函数与分级模（概念）。 |
 | [Gabriel 定理](定理/第63级-组合代数拓扑与拓扑数据分析/Gabriel定理.md) | 定理（Gabriel 1972）：设 $Q$ 是有限的连通箭图，$k$ 是域，$\operatorname{rep}_k(Q)$ 为 $Q$ 的有限维 $k$-线性表示范畴。则 $\operatorname{rep}_k(Q)$ 是有限表示型（即不可分解对象只有有限多个同构类）当且仅当 $Q$ 的底图 $\bar Q$ | 主理想整环上的有限生成模结构定理、箭图与路径代数、Krull–Schmidt定理、Dynkin图与根系（概念）、反射函子（概念）。 |
 | [连通分支与聚类算法](定理/第63级-组合代数拓扑与拓扑数据分析/连通分支与聚类算法.md) | 把点之间"距离足够近就连一条线"，再问"哪些点能顺着这些线互相走到"——走得通的一堆点就是一个簇。这就是单链接聚类，也正是 Mapper 算法里最底层的骨架计算。 | 度量空间与连通性、等价关系与集合划分、图的连通分支、并查集（union-find）、最小生成树与 Kruskal 算法、单链接聚类。 |
 | [nerve 定理与好覆盖](定理/第63级-组合代数拓扑与拓扑数据分析/nerve定理与好覆盖.md) | 若开覆盖 $\mathcal U$ 的任意有限交可缩（好覆盖），则 nerve 的几何实现与并空间同伦等价：$\lvert N(\mathcal U)\rvert\simeq\bigcup_\alpha U_\alpha$ | 单纯复形与simplicial同调、单纯逼近定理、持久同调基本定理、抽象单纯复形的构造、单位分解、同伦等价 |
@@ -1757,7 +1757,7 @@
 | [Erdős-Szekeres 定理](定理/第70级-离散几何与凸几何/Erdős-Szekeres定理.md) | 任意 $ES(n)$ 个一般位置点中包含 $n$ 个凸 $n$-边形的顶点；$ES(n) \leq \binom{2n-5}{n-2} + 1$ | Ramsey 理论、组合几何 |
 | [凸多面体理论](定理/第70级-离散几何与凸几何/凸多面体理论.md) | Euler 公式 $V - E + F = 2$；$f$-向量满足 Dehn-Sommerville 方程；Stanley 刻画 $g$-定理 | 组合拓扑、代数组合 |
 | [离散曲率与网络几何](定理/第70级-离散几何与凸几何/离散曲率与网络几何.md) | Ollivier-Ricci 曲率和 Forman 曲率将 Ricci 曲率推广到图和胞腔复形，反映网络几何与聚类性质 | Ricci 曲率、图论 |
-| [Steiner 公式](定理/第70级-离散几何与凸几何/Steiner公式.md) | 设 $K\subset\mathbb{R}^n$ 为紧凸体，$B^n$ 为单位球，$\omega_j=\|B^j\|$ 为 $j$ 维单位球的体积，$K_r=K+rB^n=\{x:\operatorname{dist}(x,K)\le r\}$ 为平行体。则存在只依赖于 $K$ 的非负数 $V_0(K),\dots,V_n | 凸体与 Minkowski 和、支撑函数与外法锥、Brunn-Minkowski 不等式、主曲率（概念）、Hausdorff 距离（概念）。 |
+| [Steiner 公式](定理/第70级-离散几何与凸几何/Steiner公式.md) | 设 $K\subset\mathbb{R}^n$ 为紧凸体，$B^n$ 为单位球，$\omega_j=\|B^j\|$ 为 $j$ 维单位球的体积，$K_r=K+rB^n=\{x:\operatorname{dist}(x,K)\le r\}$ 为平行体。则存在只依赖于 $K$ 的非负数 $V_0(K),\dots,V_n$ | 凸体与 Minkowski 和、支撑函数与外法锥、Brunn-Minkowski 不等式、主曲率（概念）、Hausdorff 距离（概念）。 |
 | [Sobolev 不等式](定理/第70级-离散几何与凸几何/Sobolev不等式.md) | 设 $1\le p<n$，Sobolev 共轭指数 $p^*$ 由 | Sobolev 嵌入定理、余面积公式、等周不等式、Hölder 不等式（概念）。 |
 | [余面积公式](定理/第70级-离散几何与凸几何/余面积公式.md) | 设 $f:\mathbb{R}^n\to\mathbb{R}$ 是 Lipschitz 函数，$g:\mathbb{R}^n\to[0,\infty]$ 为 Borel 可测函数。则 |Hausdorff测度与维数、Lipschitz 函数与 Rademacher 定理、层蛋糕表示公式、隐函数定理与变量代换、Sard 定理（概念）。 |
 
@@ -1783,7 +1783,7 @@
 | [Weyl 特征标公式](定理/第72级-李群与李代数/Weyl特征标公式.md) | 最高权表示的特征标为交错和之比：$\chi_{V(\lambda)}=\frac{\sum_{w\in W}\varepsilon(w)e^{w(\lambda+\rho)}}{\sum_{w\in W}\varepsilon(w)e^{w(\rho)}}$ | 半单李代数与最高权表示、根系与 Weyl 群、Weyl 分母公式、Weyl 积分公式、特征标正交性关系|
 | [半单李代数的分类定理](定理/第72级-李群与李代数/半单李代数的分类定理.md) | 有限维复半单李代数由根系（Dynkin 图）完全决定，只出现 $A_n,B_n,C_n,D_n,E_6,E_7,E_8,F_4,G_2$ | 半单李代数与单李代数直和分解、根系与 Cartan 矩阵、Dynkin 图、Chevalley-Serre 关系 |
 | [Weyl 分母公式](定理/第72级-李群与李代数/Weyl分母公式.md) | 设 $\mathfrak{g}$ 是秩 $r$ 的复半单李代数，$\Phi$ 为其根系，$\Phi^+$ 为取定的正根系，$W$ 为 Weyl 群，$\varepsilon(w)=\det(w)$ 为符号，$\rho=\frac12\sum_{\alpha\in\Phi^+}\alpha$。则作为形式指数（特征标）的恒 | 根系与正根、Weyl 群与反射、形式指数与特征标、交错性（概念）、Weyl 特征标公式。 |
-| [Weyl 积分公式](定理/第72级-李群与李代数/Weyl积分公式.md) | 设 $G$ 是紧连通李群，$\mathfrak{g}=\operatorname{Lie}G$ 的复化有根系 $\Phi$ 与正根系 $\Phi^+$，$T$ 是极大环面，$W=N_G(T)/T$ 是 Weyl 群，$dg$、$dt$ 分别为 $G$、$T$ 上的正规化 Haar 测度。设 $f$ 是连续类函数，即 $ | 紧李群与 Haar 测度、极大环面与极大环面定理、Weyl 群与反射、根空间分解、Weyl 分母公式。 |
+| [Weyl 积分公式](定理/第72级-李群与李代数/Weyl积分公式.md) | 设 $G$ 是紧连通李群，$\mathfrak{g}=\operatorname{Lie}G$ 的复化有根系 $\Phi$ 与正根系 $\Phi^+$，$T$ 是极大环面，$W=N_G(T)/T$ 是 Weyl 群，$dg$、$dt$ 分别为 $G$、$T$ 上的正规化 Haar 测度。设 $f$ 是连续类函数，即 $$ | 紧李群与 Haar 测度、极大环面与极大环面定理、Weyl 群与反射、根空间分解、Weyl 分母公式。 |
 | [Ado 定理](定理/第72级-李群与李代数/Ado定理.md) | 设 $k$ 是特征 $0$ 的域，$\mathfrak{g}$ 是 $k$ 上的有限维李代数。则存在正整数 $n$ 与单同态 | 李代数与理想、可解与幂零李代数、Levi 分解（概念）、半单李代数与 Cartan 判别法、Lie 定理、泛包络代数（概念）。 |
 | [Baker-Campbell-Hausdorff 公式](定理/第72级-李群与李代数/Baker-Campbell-Hausdorff公式.md) | 设 $\mathfrak{g}$ 是有限维实或复李代数（或含单位元的结合代数视作李代数）。则存在 $0$ 的邻域 $U\subseteq\mathfrak{g}$，使对一切 $X,Y\in U$，$\exp X\exp Y$ 落在指数映射的像中，且存在唯一 $Z\in\mathfrak{g}$ 使得 | 李代数与李括号、指数映射、伴随表示、形式幂级数与 Bernoulli 数（概念）、Lie 群与李代数的对应（概念）。 |
 | [极大环面定理](定理/第72级-李群与李代数/极大环面定理.md) | 设 $G$ 是紧连通 Lie 群，$\mathfrak g=\operatorname{Lie}G$，$G$ 的秩 $r=\operatorname{rank}G$ 定义为极大环面的维数。则： | 李群与李代数的对应定理、Baker-Campbell-Hausdorff公式、Peter-Weyl定理、Weyl积分公式、紧李群与 Haar 测度、Ad 表示与不变内积。 |
@@ -1896,7 +1896,7 @@
 | [Ruzsa 建模引理](定理/第81级-加性组合/Ruzsa建模引理.md) | （Ruzsa 建模引理）设 $A\subseteq\mathbb{Z}$ 是有限集，且存在 $C\ge1$ 使 | 和集与 doubling 常数、Freiman 同态与 Freiman 同构、Plünnecke–Ruzsa 引理、Ruzsa 三角不等式、Bertrand 素数定理、中国剩余定理|
 | [Bogolyubov 引理](定理/第81级-加性组合/Bogolyubov引理.md) | 定义 Bohr 集：对 $\Gamma\subseteq\widehat{\mathbb{Z}_N}\cong\mathbb{Z}_N$ 与 $\rho>0$， | 有限阿贝尔群 $\mathbb{Z}_N$ 上的 Fourier 变换与 Parseval 恒等式、Bohr 集、差集与和集 $2A-2A$、卷积 |
 | [Plünnecke-Ruzsa 引理](定理/第81级-加性组合/Plünnecke-Ruzsa引理.md) | （Plünnecke–Ruzsa 引理）设 $A$ 是阿贝尔群中的有限非空子集，$K=\dfrac{\|A+A\|}{\|A\|}$。则对一切整数 $m,n\ge0$， | 和集与差集 $mA-nA$、doubling 常数 $K=\|A+A\|/\|A\|$、Plünnecke 不等式、Ruzsa 三角不等式、归纳法 |
-| [超图正则性引理](定理/第81级-加性组合/超图正则性引理.md) | 先固定记号。设 $V$ 为顶点集，$G$ 是 $V$ 上的 $k$-均匀超图（边为 $k$-元子集）。对顶点分割 $V=V_1\cup\cdots\cup V_t$，$(a_1,\dots,a_k)$ 称为一个 $k$-元组（$a_i$ 互异）。$G$ 在 $V_{a_1},\dots,V_{a_k}$ 上张成的 $k | Szemerédi 正则引理、$\varepsilon$-正则对与能量增量（density increment）、$k$-均匀超图与其 $(k-1)$-影子、超图正则复形（regular complex）、Gowers 范数 |
+| [超图正则性引理](定理/第81级-加性组合/超图正则性引理.md) | 先固定记号。设 $V$ 为顶点集，$G$ 是 $V$ 上的 $k$-均匀超图（边为 $k$-元子集）。对顶点分割 $V=V_1\cup\cdots\cup V_t$，$(a_1,\dots,a_k)$ 称为一个 $k$-元组（$a_i$ 互异）。$G$ 在 $V_{a_1},\dots,V_{a_k}$ 上张成的 $k$ | Szemerédi 正则引理、$\varepsilon$-正则对与能量增量（density increment）、$k$-均匀超图与其 $(k-1)$-影子、超图正则复形（regular complex）、Gowers 范数 |
 | [计数引理](定理/第81级-加性组合/计数引理.md) | 设 $G$ 为图，$X,Y$ 是不交顶点集。回忆 $(X,Y)$ 称为 $\varepsilon$-正则的，若对一切 $X'\subseteq X,Y'\subseteq Y$ 且 $\|X'\|\ge\varepsilon\|X\|,\ \|Y'\|\ge\varepsilon\|Y\|$，均有 | Szemerédi 正则引理、$\varepsilon$-正则对与密度 $d(X,Y)$、邻域与度、二重计数、容斥与 Markov 型估计 |
 | [Szemerédi正则引理](定理/第81级-加性组合/Szemerédi正则引理.md) | 设 $G=(V,E)$ 是 $n$ 个顶点的图。对不相交顶点集 $X,Y\subseteq V$，定义边密度 | 图与二部边密度的定义、顶点划分与细分、容斥与双计数、全方差公式（条件期望的方差分解）、几何级数与迭代上界估计。 |
 | [全方差公式](定理/第81级-加性组合/全方差公式.md) | 一个随机变量的"总起伏"可以拆成两块——"在已知信息之下仍存在的平均起伏"，加上"已知信息的平均值本身就是随机所带来的起伏"；两块之和恰好等于原来的总起伏。 | 条件期望与条件方差（条件分布）、重期望公式（塔性质）、方差与协方差的双线性、$L^2$ 空间的正交投影、Fubini 定理与积分可数可加性、Chebyshev 不等式。 |
@@ -2019,7 +2019,7 @@
 | [Gleason–Yamabe 定理](定理/第90级-几何群论/Gleason–Yamabe定理.md) | 设 $G$ 为拓扑群。若 $G$ 局部紧、连通且作为拓扑空间有限维（即局部欧氏：存在单位元邻域 $U$ 与 $n\ge0$ 使 $U$ 同胚于 $\mathbb{R}^n$ 的开子集），则 $G$ 上存在唯一的光滑（解析）流形结构，使群运算 $(g,h)\mapsto gh^{-1}$ 光滑；即 $G$ 唯一地成为一个 | 局部紧拓扑群、Lie 群与 Lie 代数、群作用与齐性空间、连通性与局部连通、Montgomery–Zippin 定理。 |
 | [拟测地线稳定性引理](定理/第90级-几何群论/拟测地线稳定性引理.md) | 设 $X$ 为 $\delta$-双曲测地度量空间，$C\ge1$、$L\ge0$。则存在常数 $R=R(\delta,C,L)>0$，使对任意 $(C,L)$-拟测地线 $\gamma:[a,b]\to X$ 与任意测地线 $[p,q]$（其中 $p=\gamma(a)$、$q=\gamma(b)$）成立 | 测地空间与测地线、$(C,L)$-拟测地线、Gromov 双曲空间与 $\delta$-细测地三角形、拟等距嵌入、四点的 Gromov 积。 |
 | [Montgomery–Zippin 定理](定理/第90级-几何群论/Montgomery-Zippin定理.md) | （Montgomery–Zippin 定理） 设 $G$ 是局部紧拓扑群，$X$ 是连通、局部紧、有限维（覆盖维数有限）的拓扑空间，$G\times X\to X$ 是连续的群作用。 | 局部紧拓扑群与 Haar 测度、Lie 群与 Lie 代数、群作用与齐性空间、连通性与局部连通、Gleason–Yamabe定理、Svarc-Milnor引理。 |
-| [Nielsen 实现定理](定理/第90级-几何群论/Nielsen实现定理.md) | 设 $S$ 是紧致、可定向、连通曲面（可带边界分支或 puncture），$\mathrm{Mod}(S)=\pi_0(\mathrm{Homeo}^+(S))$ 为其保定向映射类群，$S$ 的内部带完备双曲结构，$\mathcal T(S)$ 为 Teichmüller 空间，$\pi:\mathrm{Homeo}^ | 曲面映射类群、映射类群的Dehn扭转生成定理、曲面的双曲结构与测地线、双曲群的Cartan-Hadamard定理、Svarc-Milnor引理、Teichmüller 空间与标记曲面。 |
+| [Nielsen 实现定理](定理/第90级-几何群论/Nielsen实现定理.md) | 设 $S$ 是紧致、可定向、连通曲面（可带边界分支或 puncture），$\mathrm{Mod}(S)=\pi_0(\mathrm{Homeo}^+(S))$ 为其保定向映射类群，$S$ 的内部带完备双曲结构，$\mathcal T(S)$ 为 Teichmüller 空间，$\pi:\mathrm{Homeo}^$ | 曲面映射类群、映射类群的Dehn扭转生成定理、曲面的双曲结构与测地线、双曲群的Cartan-Hadamard定理、Svarc-Milnor引理、Teichmüller 空间与标记曲面。 |
 
 ### 第 91 级：分歧理论
 
@@ -2099,7 +2099,7 @@
 | [鞅表示定理](定理/第97级-随机分析/鞅表示定理.md) | 见 Brown 运动信息的平方可积鞅可写成对 Brown 运动的加权积分 | Brown 运动、Itô 等距、可料过程、Wiener 混沌、指数随机变量稠密 |
 | [Doob-Meyer 分解定理](定理/第97级-随机分析/Doob-Meyer分解定理.md) | 平均趋势只升不降的过程唯一拆成"鞅 + 递增可料部分" | 下鞅与鞅、停时与一致可积、上穿不等式、dyadic 离散化、可料二次变差 |
 | [对偶恒等式](定理/第97级-随机分析/对偶恒等式.md) | 设 $D:\mathbb D^{1,2}\subset L^2(\Omega)\to L^2(\Omega;H)$ 为 Malliavin 导数，$H=L^2[0,T]$。定义 $\delta$ 为 $D$ 的伴随算子，其定义域 | Malliavin 导数 $D$ 与 Wiener 空间、Skorokhod 积分 $\delta$、分部积分公式、光滑柱函数的稠密性、伴随算子与闭算子。 |
-| [分部积分公式](定理/第97级-随机分析/分部积分公式.md) | 设 $W$ 为 Wiener 空间上的标准布朗运动，$H=L^2[0,T]$，$D$ 为 Malliavin 导数，$\delta$ 为其伴生算子（Skorokhod 积分），定义域为 $\mathrm{Dom}(\delta)$。则对 $F\in\mathbb D^{1,2}$ 与 $u\in\mathrm{Dom} | Malliavin 导数 $D$、Skorokhod 积分（伴生算子 $\delta$）、对偶恒等式、Itô 积分、光滑柱函数的稠密性与 $L^2$ 延拓。 |
+| [分部积分公式](定理/第97级-随机分析/分部积分公式.md) | 设 $W$ 为 Wiener 空间上的标准布朗运动，$H=L^2[0,T]$，$D$ 为 Malliavin 导数，$\delta$ 为其伴生算子（Skorokhod 积分），定义域为 $\mathrm{Dom}(\delta)$。则对 $F\in\mathbb D^{1,2}$ 与 $u\in\mathrm{Dom}$ | Malliavin 导数 $D$、Skorokhod 积分（伴生算子 $\delta$）、对偶恒等式、Itô 积分、光滑柱函数的稠密性与 $L^2$ 延拓。 |
 
 ### 第 98 级：测度论与概率论
 
@@ -2357,7 +2357,7 @@
 | [运动方程（Cauchy 第一运动定律）](定理/第119级-连续介质力学/运动方程（Cauchy第一运动定律）.md) | 加速度×质量 = 体积力 + 表面应力合力，即动量守恒方程 | 牛顿第二定律、Reynolds 输运定理、散度定理、局域化引理 |
 | [变形梯度与应变张量的关系](定理/第119级-连续介质力学/变形梯度与应变张量的关系.md) | 变形可拆成纯拉伸 + 纯转动，拉伸部分才是应变 | 张量代数、谱定理、正定矩阵平方根、正交张量 |
 | [本构方程的各向同性表示](定理/第119级-连续介质力学/本构方程的各向同性表示.md) | 各向同性时应力由 $\boldsymbol I,\boldsymbol b,\boldsymbol b^2$ 组合，系数只依赖三个不变量 | 张量代数、主不变量、Cayley-Hamilton、正交变换 |
-| [对称函数的表示定理](定理/第119级-连续介质力学/对称函数的表示定理.md) | （对称函数的表示定理） 设 $\mathrm{Sym}_n(\mathbb R)=\{\boldsymbol A\in\mathbb R^{n\times n}:\boldsymbol A^{\top}=\boldsymbol A\}$。设 $f:\mathrm{Sym}_n(\mathbb R)\to\mathbb | — |
+| [对称函数的表示定理](定理/第119级-连续介质力学/对称函数的表示定理.md) | （对称函数的表示定理） 设 $\mathrm{Sym}_n(\mathbb R)=\{\boldsymbol A\in\mathbb R^{n\times n}:\boldsymbol A^{\top}=\boldsymbol A\}$。设 $f:\mathrm{Sym}_n(\mathbb R)\to\mathbb$ | — |
 | [Reynolds输运定理](定理/第119级-连续介质力学/Reynolds输运定理.md) | （Reynolds 输运定理） 设 $\Omega\subseteq\mathbb R^3$ 为非空开集，$\boldsymbol v\in C^1(\Omega\times(t_1,t_2),\mathbb R^3)$ 为速度场。设 $V(t)\Subset\Omega$ 随速度场 $\boldsymbol v$ 运 | 多重 Riemann 积分与换元公式、Jacobi 行列式与 Jacobi 公式、物质导数（随体导数）、高斯散度定理、连续性与可微性 |
 | [体积分局域化引理](定理/第119级-连续介质力学/体积分局域化引理.md) | （体积分局域化引理） 设 $\Omega\subseteq\mathbb R^n$ 为非空开集，$\boldsymbol g\in C(\Omega,\mathbb R^m)$。以下三条等价： | 连续函数与一致连续、Riemann（Lebesgue）积分与积分中值定理、磨光核与 $L^1$ 收敛、高斯散度定理、静态平衡方程 |
 | [对称张量的谱定理](定理/第119级-连续介质力学/对称张量的谱定理.md) | （对称张量的谱定理） 设 $A\in\mathbb R^{n\times n}$ 满足 $A^{\top}=A$。则： | 内积与正交基、特征值与特征多项式、连续函数在紧集上的最值（Weierstrass 定理）、Lagrange 乘子法、子空间的正交分解 |
@@ -2411,7 +2411,7 @@
 | [Löwenheim-Skolem 定理](定理/第123级-模型论/Löwenheim-Skolem定理.md) | 一阶理论有无限模型则既可造小到可数也可造大到任意基数 | 紧致性定理、Skolem 化、初等子结构、Tarski-Vaught |
 | [紧致性定理](定理/第123级-模型论/紧致性定理.md) | 一阶理论所有有限片段可满足则整体可满足 | 完备性定理、Henkin 构造、Zorn 引理、极大一致理论 |
 | [Morgan 定理（初等链定理）](定理/第123级-模型论/Morgan定理（初等链定理）.md) | 初等链的极限仍是每项的初等扩张 | 初等子结构、Tarski-Vaught、超穷归纳、极限结构 |
-| [Tarski-Vaught 判别法](定理/第123级-模型论/Tarski-Vaught判别法.md) | （Tarski–Vaught 判别法） 设 $\mathcal L$ 为一阶语言（可含函数符号与常数符号），$\mathcal M$ 为 $\mathcal L$-结构，$\mathcal N\subseteq\mathcal M$ 为 $\mathcal M$ 的子结构（即 $N\subseteq M$ 非空，且 $ | 一阶语言与 $\mathcal L$-结构、一阶逻辑的语法与语义、子结构与嵌入、一阶逻辑的语法与语义、量词消去（用于例子）、初等链引理与 Löwenheim–Skolem 定理 |
+| [Tarski-Vaught 判别法](定理/第123级-模型论/Tarski-Vaught判别法.md) | （Tarski–Vaught 判别法） 设 $\mathcal L$ 为一阶语言（可含函数符号与常数符号），$\mathcal M$ 为 $\mathcal L$-结构，$\mathcal N\subseteq\mathcal M$ 为 $\mathcal M$ 的子结构（即 $N\subseteq M$ 非空，且 $$ | 一阶语言与 $\mathcal L$-结构、一阶逻辑的语法与语义、子结构与嵌入、一阶逻辑的语法与语义、量词消去（用于例子）、初等链引理与 Löwenheim–Skolem 定理 |
 
 ### 第 124 级：递归论
 
@@ -2422,7 +2422,7 @@
 | [Rice 定理](定理/第124级-递归论/Rice定理.md) | 程序的任何非平凡行为性质不可判定 | 停机问题、$m$-归约、s-m-n 定理、$\varphi_e$ 指标化 |
 | [递归定理（Kleene 递归定理）](定理/第124级-递归论/递归定理（Kleene递归定理）.md) | 每个可计算变换都有"不动点"程序，程序可自指 | s-m-n定理、部分可计算函数的指标化、对角线构造、函数复合与可计算性、不动点思想。 |
 | [停机问题的不可判定性](定理/第124级-递归论/停机问题的不可判定性.md) | 判定程序是否停机的程序不存在 | $\varphi_e$ 指标化、对角线论证、通用函数、反证法 |
-| [s-m-n 定理](定理/第124级-递归论/s-m-n定理.md) | （s-m-n 定理） 固定一个可接受编号 $\{\varphi^{(k)}_e\}_{e\in\mathbb N,\,k\ge1}$：即对每个 $k\ge1$，$e\mapsto\varphi^{(k)}_e$ 是全体 $k$ 元部分可计算函数的枚举，且 $(e,\bar y)\mapsto\varphi^{(k)}_ | 部分可计算函数与全可计算函数、图灵机／寄存器机与程序的 Gödel 编码、通用枚举机器的构造、配对函数与原始递归函数、Church–Turing 论题、程序填充（padding）引理 |
+| [s-m-n 定理](定理/第124级-递归论/s-m-n定理.md) | （s-m-n 定理） 固定一个可接受编号 $\{\varphi^{(k)}_e\}_{e\in\mathbb N,\,k\ge1}$：即对每个 $k\ge1$，$e\mapsto\varphi^{(k)}_e$ 是全体 $k$ 元部分可计算函数的枚举，且 $(e,\bar y)\mapsto\varphi^{(k)}_$ | 部分可计算函数与全可计算函数、图灵机／寄存器机与程序的 Gödel 编码、通用枚举机器的构造、配对函数与原始递归函数、Church–Turing 论题、程序填充（padding）引理 |
 | [程序填充引理](定理/第124级-递归论/程序填充引理.md) | 固定一个可接受的编号 $\{\varphi_e\}_{e\in\mathbb N}$（即满足通用枚举定理与 s-m-n 定理的编号）。 | 部分可计算函数与全可计算函数、程序的可计算编号（Gödel 编码与通用枚举定理）、寄存器机（或图灵机）的指令编码、原始递归函数与配对函数、可计算枚举集（r.e. 集）、s-m-n 定理。 |
 
 ### 第 125 级：证明论
@@ -2510,8 +2510,8 @@
 | [资产定价第二基本定理](定理/第132级-金融数学/资产定价第二基本定理.md) | 市场完备等价于等价鞅测度唯一 | 第一基本定理、Hahn-Banach、鞅表示、Radon-Nikodym |
 | [投资组合的 Markowitz 有效前沿](定理/第132级-金融数学/投资组合的Markowitz有效前沿.md) | 给定风险下收益最高的组合连成有效前沿 | 凸二次规划、Lagrange 乘子法、协方差正定性、两基金分离 |
 | [Feynman-Kac 公式在金融中的应用](定理/第132级-金融数学/FeynmanKac公式在金融中的应用.md) | 随机路径期望等于某个偏微分方程的解 | Itô 引理、鞅论、风险中性测度、抛物方程理论 |
-| [无套利原理](定理/第132级-金融数学/无套利原理.md) | （模型） 设 $(\Omega,\mathcal F,\mathbb P)$ 为有限概率空间，$\Omega=\{\omega_1,\dots,\omega_M\}$ 且 $\mathbb P(\omega_m)>0$ 对一切 $m$。市场上交易 $N$ 个资产：第 $0$ 个为无风险债券，价格 $S_0^0=\fra | 有限状态市场模型、矩阵与行列式、Hahn-Banach几何形式、条件期望与等价概率测度、凸集与仿射空间 |
-| [两基金分离定理](定理/第132级-金融数学/两基金分离定理.md) | （两基金分离定理，Tobin 形式） 设市场上有 $n$ 个风险资产，其收益率向量 $\boldsymbol r$ 的期望为 $\mu\in\mathbb R^n$、协方差矩阵为 $\Sigma\in\mathbb R^{n\times n}$ 且 $\Sigma$ 正定；另有收益率为 $R_f$ 的无风险资产。设 $ | Markowitz 均值—方差模型、二次型与正定矩阵、二次规划的 KKT 条件、Cauchy–Schwarz 不等式、矩阵求逆、随机变量的期望与协方差 |
+| [无套利原理](定理/第132级-金融数学/无套利原理.md) | （模型） 设 $(\Omega,\mathcal F,\mathbb P)$ 为有限概率空间，$\Omega=\{\omega_1,\dots,\omega_M\}$ 且 $\mathbb P(\omega_m)>0$ 对一切 $m$。市场上交易 $N$ 个资产：第 $0$ 个为无风险债券，价格 $S_0^0=\fra$ | 有限状态市场模型、矩阵与行列式、Hahn-Banach几何形式、条件期望与等价概率测度、凸集与仿射空间 |
+| [两基金分离定理](定理/第132级-金融数学/两基金分离定理.md) | （两基金分离定理，Tobin 形式） 设市场上有 $n$ 个风险资产，其收益率向量 $\boldsymbol r$ 的期望为 $\mu\in\mathbb R^n$、协方差矩阵为 $\Sigma\in\mathbb R^{n\times n}$ 且 $\Sigma$ 正定；另有收益率为 $R_f$ 的无风险资产。设 $$ | Markowitz 均值—方差模型、二次型与正定矩阵、二次规划的 KKT 条件、Cauchy–Schwarz 不等式、矩阵求逆、随机变量的期望与协方差 |
 
 ### 第 133 级：经济数学
 
@@ -2588,7 +2588,7 @@
 | [非交换几何与标准模型](定理/第139级-非交换几何/非交换几何与标准模型.md) | 谱作用量从非交换时空自然冒出费米子、希格斯与规范对称性 | 谱三元组、热核展开、谱作用原理、非交换微分几何 |
 | [非交换环面的基本性质](定理/第139级-非交换几何/非交换环面的基本性质.md) | $UV=e^{2\pi i\theta}VU$ 的非交换环面，K 理论与迹态随 $\theta$ 算术性质变化 | C*-代数交叉积、Pimsner-Voiculescu 正合序列、迹态理论 |
 | [McKean-Singer公式](定理/第139级-非交换几何/McKean-Singer公式.md) | 定理（McKean-Singer 公式）：设 $\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$ 是 $\mathbb{Z}_2$-分次的可分 Hilbert 空间，$D$ 是（可能无界的）自伴算子，满足 | — |
-| [谱作用原理](定理/第139级-非交换几何/谱作用原理.md) | 设 $(\mathcal{A},\mathcal{H},D)$ 为谱三元组：$\mathcal{A}$ 是 $\mathcal{H}$ 上有界表示的 $*$-代数，$\mathcal{H}$ 为分次 Hilbert 空间，$D$ 为奇自伴算子、$D^2$ 具紧预解式，且每个 $[D,a]$（$a\in\mathcal{A | 谱三元组、Dirac 算子与自伴扩张、热核的 Seeley-deWitt 展开、Laplace/Mellin 变换、Clifford 模与曲率、几乎交换几何 |
+| [谱作用原理](定理/第139级-非交换几何/谱作用原理.md) | 设 $(\mathcal{A},\mathcal{H},D)$ 为谱三元组：$\mathcal{A}$ 是 $\mathcal{H}$ 上有界表示的 $*$-代数，$\mathcal{H}$ 为分次 Hilbert 空间，$D$ 为奇自伴算子、$D^2$ 具紧预解式，且每个 $[D,a]$（$a\in\mathcal{A$ | 谱三元组、Dirac 算子与自伴扩张、热核的 Seeley-deWitt 展开、Laplace/Mellin 变换、Clifford 模与曲率、几乎交换几何 |
 
 ### 第 140 级：镜像对称
 
@@ -2666,7 +2666,7 @@
 | [Tracy-Widom 分布](定理/第146级-随机矩阵理论/Tracy-Widom分布.md) | 随机矩阵最大特征值的缩放起伏收敛到普适 Tracy-Widom 分布 | GUE 谱统计、Airy 核、Fredholm 行列式、Painlevé II |
 | [Marčenko-Pastur 定律](定理/第146级-随机矩阵理论/Marčenko-Pastur定律.md) | 样本协方差矩阵经验谱分布收敛到由比例决定的 MP 分布 | 样本协方差矩阵、经验谱测度、Stieltjes变换的反演公式、矩方法、自洽方程 |
 | [Wigner 半圆律](定理/第146级-随机矩阵理论/Wigner半圆律.md) | 随机 Hermite 矩阵特征值随尺寸趋大摊成半圆谱分布 | Wigner 矩阵、经验谱测度、矩方法、Catalan 数、Carleman 判定 |
-| [边缘普适性定理](定理/第146级-随机矩阵理论/边缘普适性定理.md) | 设 $H_N=(h_{ij})_{1\le i,j\le N}$ 为 Wigner 矩阵：上三角（或 Hermitian 的上三角）条目 $\{h_{ij}\}_{i\le j}$ 相互独立、$\mathbb{E}h_{ij}=0$、$\mathbb{E}\|h_{ij}\|^2=\sigma^2$（$i\ne j$）、$ | Wigner 矩阵与半圆律、Green 函数与 Stieltjes 变换、局部半圆律、Green 函数比较（Lindeberg 替换）、Tracy-Widom 分布 |
+| [边缘普适性定理](定理/第146级-随机矩阵理论/边缘普适性定理.md) | 设 $H_N=(h_{ij})_{1\le i,j\le N}$ 为 Wigner 矩阵：上三角（或 Hermitian 的上三角）条目 $\{h_{ij}\}_{i\le j}$ 相互独立、$\mathbb{E}h_{ij}=0$、$\mathbb{E}\|h_{ij}\|^2=\sigma^2$（$i\ne j$）、$$ | Wigner 矩阵与半圆律、Green 函数与 Stieltjes 变换、局部半圆律、Green 函数比较（Lindeberg 替换）、Tracy-Widom 分布 |
 
 ### 第 147 级：自由概率论
 
