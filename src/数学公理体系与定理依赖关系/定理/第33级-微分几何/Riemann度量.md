@@ -76,3 +76,17 @@ $$
 - **双曲度量**：在 Poincaré 上半平面 $\mathbb{H}^2 = \{(x, y) \mid y > 0\}$ 上，$g = \frac{dx^2 + dy^2}{y^2}$。
 
 **注**：Riemann 度量的存在性不是自动的——在紧致流形上，通过单位分解可以在任何光滑流形上构造 Riemann 度量。换言之，每个光滑流形都可以配备 Riemann 度量。
+
+## 课堂问答
+
+**老师**：Riemann 度量给流形附加了什么？为什么说它把流形变成"能量可测"的空间？
+
+**学生**：它是每点切空间上光滑选取的内积 $g_p$，局部 $g=g_{ij}\,dx^i\otimes dx^j$，矩阵 $(g_{ij})$ 对称正定。有了它才有长度 $L(\gamma)=\int\sqrt{g_{ij}\dot x^i\dot x^j}\,dt$、距离 $d(p,q)=\inf L(\gamma)$、体积元 $dV_g=\sqrt{\det(g_{ij})}\,dx^1\wedge\cdots\wedge dx^n$，以及等距条件 $f^*h=g$。
+
+**老师（追问）**：同一光滑流形能配不同度量吗？怎么保证任何流形都配得上一个？
+
+**学生**：能，而且通常很多。$\mathbb{R}^n$ 用 Euclid 度量 $g_{ij}=\delta_{ij}$，$S^2$ 用 $d\theta^2+\sin^2\theta\,d\varphi^2$，Poincaré 上半平面用 $\frac{dx^2+dy^2}{y^2}$，几何迥异。存在性靠单位分解：每张坐标卡取欧氏内积，乘以从属单位分解 $\rho_\alpha$ 加权求和 $\sum\rho_\alpha g_\alpha$，正定与光滑由凸组合保持，故任何光滑流形都可配 Riemann 度量。常见误区是以为度量由流形唯一决定。
+
+**老师（拓展）**：度量这一层结构向上长出了哪些几何？
+
+**学生**：它诱导 Levi-Civita 联络（唯一无挠且度量相容），进而有平行移动、测地线、Riemann 曲率张量，以及截面曲率、Ricci 曲率、标量曲率。放宽正定性为不定号即得伪 Riemann 度量（Lorentz 度量），这正是广义相对论时空的框架。

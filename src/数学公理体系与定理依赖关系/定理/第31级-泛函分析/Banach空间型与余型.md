@@ -122,3 +122,17 @@ $$\left(\sum \|x_i\|^2\right)^{1/2} \leq C_2(X) \left(\mathbb{E}\left\|\sum \var
 6. **嵌入定理**：型与余型与 Banach 空间的其他几何性质（如一致凸性、一致光滑性）有深刻联系。
 
 该理论由 Maurey、Pisier、Hoffmann-Jørgensen、Kwapień 等人系统发展，是现代 Banach 空间理论的核心组成部分。
+
+## 课堂问答
+
+**老师**：Banach 空间的型与余型到底在刻画什么？
+
+**学生**：刻画空间偏离 Hilbert 空间的程度。型 $p$ 是上界 $\big(\mathbb{E}\|\sum\varepsilon_ix_i\|^p\big)^{1/p}\le C\big(\sum\|x_i\|^p\big)^{1/p}$，余型 $q\ge2$ 是反向不等式，Rademacher 变量替代了正交性的角色。
+
+**老师（追问）**：Hilbert 空间与 $L^p$ 空间的型与余型如何？
+
+**学生**：Kwapień 定理：同时具有型 2 和余型 2 当且仅当同构于 Hilbert 空间。对 $1\le p\le2$，$L^p$ 有型 $p$、余型 2；对 $2\le p<\infty$，$L^p$ 有型 2、余型 $p$。对偶性：$X$ 有型 $p$ 当且仅当 $X^*$ 有余型 $p^*=p/(p-1)$。
+
+**老师（拓展）**：它与概率论中的极限定理有何联系？
+
+**学生**：Banach 空间中强大数定律与中心极限定理的成立，与空间具有型 2（等价地余型 2）密切相关。一个易混点：型的取值范围是 $1\le p\le2$，余型是 $2\le q\le\infty$，方向不能搞反。

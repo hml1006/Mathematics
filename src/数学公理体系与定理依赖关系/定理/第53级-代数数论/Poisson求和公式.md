@@ -129,6 +129,20 @@ $$
 
 **推广**：局部紧交换群上的抽象 Poisson 求和、Weil 的显式公式、以及迹公式（Selberg 迹公式、Atiyah–Singer 指标定理的指标公式）都可视为 Poisson 求和公式在非交换与几何情形的深刻推广。
 
+## 课堂问答
+
+**老师**：Poisson 求和公式把哪两个求和等同起来？证明的核心动作是什么？
+
+**学生**：公式是 $\sum_{n\in\mathbb Z}f(n)=\sum_{n\in\mathbb Z}\hat f(n)$，其中 $f\in\mathcal S(\mathbb R)$、$\hat f(\xi)=\int_{\mathbb R}f(x)e^{-2\pi ix\xi}dx$。证明动作是"周期化 $\to$ 展开 $\to$ 平移 $\to$ 认系数"：$F(x)=\sum_{k\in\mathbb Z}f(x+k)$ 是光滑 1-周期函数，其 Fourier 系数 $c_n=\int_0^1F(x)e^{-2\pi inx}dx=\int_{\mathbb R}f(y)e^{-2\pi iny}dy=\hat f(n)$，在 $x=0$ 取值即得。
+
+**老师（追问）**：级数为什么绝对收敛，条件能放宽到什么程度？
+
+**学生**：因为 $f\in\mathcal S$ 蕴含 $\hat f\in\mathcal S$，有 $|\hat f(n)|\le C_N(1+|n|)^{-N}$，取 $N=2$ 即保 $\sum_n|c_n|<\infty$，于是 $F$ 确实等于其 Fourier 级数。条件可放宽：只要 $f$ 连续有界变差、$\hat f$ 可积（或采用 Cesàro、Abel 等对称求和），公式仍成立，这在 theta 函数与函数方程的应用中很关键。
+
+**老师（拓展）**：多维形式是什么？有哪些常见误区与经典应用？
+
+**学生**：对格 $\Lambda$ 及其对偶格 $\Lambda^*$ 有 $\sum_{\lambda\in\Lambda}f(\lambda)=\frac{1}{\operatorname{vol}(\mathbb R^d/\Lambda)}\sum_{\mu\in\Lambda^*}\hat f(\mu)$。误区是忽略傅里叶变换的约定（$2\pi$ 因子）导致系数错位。它是抽样定理的实质，由 $f(x)=e^{-\pi x^2}$（自 Fourier 变换）给出 $\theta(1/t)=\sqrt t\,\theta(t)$，并用于推导 $\zeta$ 与 $L$ 函数的函数方程、Gauss 和与二次互反律。
+
 ## 相关条目
 
 - [DedekindZeta函数](./DedekindZeta函数.md)：其函数方程与解析延拓的推导使用 Poisson 求和与 θ 函数变换。

@@ -40,3 +40,17 @@ $$
 ## 五、应用与意义
 
 König 定理在基数理论中用途广泛：推出 Cantor 定理、证明 $\kappa<\kappa^{\operatorname{cf}(\kappa)}$、证明连续统的共尾性不可数、以及一系列有关 $\aleph_\omega$ 等奇异基数的性质。它是继 Cantor 定理之后基数"严格增长"的最有力工具，也是选择公理下基数算术的支柱之一。
+
+## 课堂问答
+
+**老师**：Cantor 定理只告诉你 $\kappa<2^\kappa$，König 定理为什么能升级成"逐项都小的和严格小于积"这种一般形式？
+
+**学生**：结论：对任意指标集 $I$，若 $\kappa_i<\lambda_i$，则 $\sum_{i\in I}\kappa_i<\prod_{i\in I}\lambda_i$。"$\le$"容易：各 $f_i:\kappa_i\to\lambda_i$ 单射，把 $(x,i)$ 映为仅在坐标 $i$ 取 $f_i(x)$、其余坐标取 $0$ 的函数，即为单射。
+
+**老师（追问）**：关键是"不能相等"，对角线论证怎么用？
+
+**学生**：反设存在双射 $h:\bigcup_{i\in I}(\kappa_i\times\{i\})\to\prod_{i\in I}\lambda_i$。对每个 $i$ 令 $S_i=\{h(\alpha,i)(i):\alpha<\kappa_i\}\subseteq\lambda_i$，由 $|S_i|\le\kappa_i<\lambda_i$ 得 $S_i\subsetneq\lambda_i$，取 $\beta_i\in\lambda_i\setminus S_i$，定义 $g(i)=\beta_i$。因 $h$ 满射，有 $g=h(\alpha,i)$；但 $g(i)=h(\alpha,i)(i)\in S_i$ 与 $g(i)=\beta_i\notin S_i$ 矛盾。常见误区是忘了 $\lambda_i$ 作为序数其基数即 $\lambda_i$，故 $\kappa_i<\lambda_i$ 直接给出 $S_i$ 覆盖不满 $\lambda_i$。
+
+**老师（拓展）**：由它能推出哪些著名基数结论？
+
+**学生**：取 $I=\omega$、$\kappa_i=\aleph_0$、$\lambda_i=2^{\aleph_0}$，得 $\aleph_0<\big(2^{\aleph_0}\big)^{\aleph_0}=2^{\aleph_0}$；对连续统作共尾表示再用定理，即得 $\operatorname{cf}(2^{\aleph_0})>\aleph_0$。它还是证明 $\kappa<\kappa^{\operatorname{cf}\kappa}$、研究 $\aleph_\omega$ 等奇异基数的核心引擎。

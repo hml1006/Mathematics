@@ -64,3 +64,17 @@ $$
 **推论**（共轭点比较）：若 $K_M \ge \kappa$（即截面曲率有正下界），则 $M$ 中测地线的共轭距离不超过常曲率 $\kappa$ 空间中的共轭距离。特别地，若 $K_M \ge 1$，则共轭距离 $\le \pi$。
 
 **推论**（体积比较）：Bishop–Gromov 体积比较定理：若 $\mathrm{Ric}_M \ge (n-1)\kappa$，则对任意 $p \in M$，体积比 $V(p, r)/V_\kappa(r)$ 是 $r$ 的非增函数，其中 $V_\kappa(r)$ 是常曲率 $\kappa$ 空间中半径为 $r$ 的球体积。
+
+## 课堂问答
+
+**老师**：陈述 Rauch 比较，并说明比较函数如何构造。
+
+**学生**：结论：设 $J(0)=\tilde J(0)=0$、$|\nabla J(0)|=|\nabla\tilde J(0)|$，且 $K_M\le K_{\tilde M}$，则 $|J(t)|\ge|\tilde J(t)|$，即大曲率测地线更晚发散。构造 $u=|J|^2,\tilde u=|\tilde J|^2$，由 Jacobi 方程与曲率比较得 $u''/u\ge\tilde u''/\tilde u$，再用 Riccati 量 $f=u'/u$ 比较并积分。误区是忽略初值匹配——没有初速相等，比值无意义。
+
+**老师（追问）**：为什么 $f(0)=\tilde f(0)$？
+
+**学生**：由 $J(0)=0$ 得 $J(t)\sim t\nabla J(0)$，故 $u\sim t^2|\nabla J(0)|^2$，于是 $f=u'/u\sim2/t$；两边初速相等使 $t\to0$ 时 $f$ 与 $\tilde f$ 同阶同值，积分比较才有共同起点。
+
+**老师（拓展）**：由此给出哪些标准推论？
+
+**学生**：共轭点比较——$K_M\ge\kappa$ 时共轭距离不超过常曲率 $\kappa$ 空间者，特别 $K_M\ge1$ 时不超过 $\pi$；以及 Bishop-Gromov 体积比较——$\mathrm{Ric}_M\ge(n-1)\kappa$ 时体积比 $V(p,r)/V_\kappa(r)$ 关于 $r$ 非增。Rauch 是这些全局比较的 Jacobi 场线性化版本。

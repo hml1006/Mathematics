@@ -84,3 +84,17 @@ $$
 由于 $\bigcup B_j$ 的测度有限（因为它是 $\mathbb{R}^n$ 中的有界集），且 $5^n - 1$ 是常数，这并不直接给出零测结论。标准论证需要更精细的估计，使用 Vitali 覆盖的"精细"性质：对任意 $\varepsilon > 0$，存在开集 $U \supset E$ 使得 $m(U) < m(E) + \varepsilon$，然后限制在 $U$ 中的球上，得到 $m(E \setminus \bigcup B_j) = 0$。$\square$
 
 **应用**：Vitali 覆盖引理是 Lebesgue 微分定理证明的核心工具——用于证明对于几乎每个 $x$，$\lim_{r \to 0} \frac{1}{|B(x,r)|} \int_{B(x,r)} f(y) dy = f(x)$。
+
+## 课堂问答
+
+**老师**：Vitali 覆盖引理的核心结论是什么？
+
+**学生**：结论：从一族直径可任意小的覆盖球中，能抽出可数不交子族 $\{B_j\}$，使其 5 倍放大几乎覆盖原集合：$m\big(E\setminus\bigcup_j B_j\big)=0$；有限版本则是 $\bigcup_{B\in\mathcal{B}}B\subset\bigcup_j 5B_j$。
+
+**老师（追问）**：为什么要对每一层"直径 $\le 1/n$"重复贪心，而不是一次选到底？
+
+**学生**：因为 5 倍放大版本只保证"并集被覆盖"，不直接给出测度零。要让漏下的点被越来越小的球接住：对 $\mathcal{B}_n=\{B:\operatorname{diam}B\le1/n\}$ 逐层贪心并挖去已覆盖部分，得到的不交族 $\{B_j^{(k)}\}$ 使余集 $E\setminus\bigcup_j B_j$ 落在任意小直径的 5 倍球里，测度必为零。
+
+**老师（拓展）**：它在实分析里最著名的用途是什么？
+
+**学生**：证明 Lebesgue 微分定理与 Hardy-Littlewood 极大不等式。本质是"化整为零"：把任意球族换成不交的、尺寸受控的球，再用可数可加性把测度换成 $\frac{1}{\alpha}\|f\|_1$。

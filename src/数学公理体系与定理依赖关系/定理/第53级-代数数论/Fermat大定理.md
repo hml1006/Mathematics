@@ -198,3 +198,17 @@ Fermat 大定理的证明体现了现代数学惊人的统一性：
 - **交换代数：** 形变环、Hecke 代数。
 
 Wiles 的证明不仅是 Fermat 大定理的证明，更是整个现代数论的一次壮丽展示。它揭示了看似不相关的数学领域之间的深刻联系，为未来的研究开辟了广阔的方向。
+
+## 课堂问答
+
+**老师**：Wiles 为什么要绕道椭圆曲线？证明链条的主干是什么？
+
+**学生**：因为直接攻方程无从下手，改为间接路线。假设 $a^p+b^p=c^p$（$p\ge5$ 素数）构造 Frey 曲线 $E:y^2=x(x-a^p)(x+b^p)$，其判别式 $\Delta=16(abc)^{2p}$、导子 $N=\operatorname{rad}(abc)$ 且 $p\|N$，是半稳定曲线；Ribet 水平降低把其模 $p$ 表示的水平降到 $2$，而 $S_2(\Gamma_0(2))=0$ 矛盾。其前提是 $E$ 模性，这正是 Wiles 的模性定理提供的。
+
+**老师（追问）**：Wiles 模性定理的技术核心是什么？
+
+**学生**：核心是 $R=\mathbb T$ 定理。取 $\bar\rho=\bar\rho_{E,p}$ 的万有形变环 $R$ 与 Hecke 代数 $\mathbb T$，存在自然满射 $R\to\mathbb T$；用 Euler 系统/Iwasawa 理论给出 Selmer 群 $H^1_\Sigma(G_{\mathbb Q},\operatorname{Ad}(\rho))$ 的上界，再用交换代数判据证其为同构。Wiles 原始证明在 Euler 系统部分有缺口，Taylor 协助用完全交叉性与两素数比较补上了困难，完成半稳定椭圆曲线模性定理。
+
+**老师（拓展）**：有哪些常见误区与深远影响？
+
+**学生**：误区是以为 Wiles 证明了完整的 Taniyama-Shimura-Weil 猜想——他只证半稳定情形，一般情形由 Breuil-Conrad-Diamond-Taylor 完成。指数可从 $n$ 约化到素因子（$(x^{n/p})^p+\cdots$）。这套"Frey 对象 + 模性"方法被推广到广义 Fermat 方程、Fermat-Catalan 猜想，并成为 Langlands 纲领在 $\operatorname{GL}_2/\mathbb Q$ 上最壮观的验证。

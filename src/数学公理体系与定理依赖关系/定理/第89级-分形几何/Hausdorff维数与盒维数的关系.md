@@ -38,3 +38,17 @@ $$
 ## 五、应用与意义
 
 这条不等式解释了为何盒维数常作为 Hausdorff 维数的"上界近似"，也警示要用更精细的测度手段才能区分一些退化集合。在实际计算中，当区间长度 $|U_i|^s$ 的求和能被盒子数目有效控制时，两者相等，这为数值维数估计提供了理论边界。
+
+## 课堂问答
+
+**老师**：Hausdorff 维数和盒维数，谁大谁小？
+
+**学生**：结论是 $\dim_H F\le\underline{\dim}_B F\le\overline{\dim}_B F$（$F$ 有界）。思路是拿盒覆盖控制 $s$ 维 Hausdorff 测度：若用 $N_\delta(F)$ 个直径 $\delta$ 的集合盖住 $F$，则 $\mathcal{H}^s_\delta(F)\le N_\delta(F)\delta^s$。当 $s<\dim_H F$ 时 $\mathcal{H}^s(F)=\infty$，迫使 $N_\delta(F)\delta^s>1$，即 $\frac{\log N_\delta(F)}{-\log\delta}>s$，取下极限得 $\underline{\dim}_B F\ge s$，再令 $s\to\dim_H F^-$。
+
+**老师（追问）**：那反向不等式为什么不成立？
+
+**学生**：因为盒维数太粗。反例是 $\mathbb{R}^n$ 里的可数稠密集：其 Hausdorff 维数为 $0$，但任何 $\delta$-盒子都避不开它的稠密点，故 $N_\delta(F)$ 的量级约为 $\delta^{-n}$，盒维数能达到 $n$。所以 $\dim_H\le\dim_B$ 不能取等号。
+
+**老师（拓展）**：那什么时候两者相等？这个不等式有什么用？
+
+**学生**：当覆盖和 $\sum|U_i|^s$ 能被盒子数目有效夹住时两者相等，例如自相似集在开集条件下。实际中人们常用盒维数作为 Hausdorff 维数的上界近似来做数值估计。常见误区是直接用盒维数代替 Hausdorff 维数——对退化集合那会严重高估。

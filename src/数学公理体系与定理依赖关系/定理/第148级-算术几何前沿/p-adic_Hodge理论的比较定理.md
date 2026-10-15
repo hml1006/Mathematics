@@ -37,3 +37,17 @@ $$
 ## 五、应用与意义
 
 比较定理奠定 p-adic Hodge 理论，用于定义 Hodge–Tate 权、晶体/半stable 表示分类、模曲线/Shimura 簇的算术及 p-adic Langlands 中 Galois 与自守的对接，也是 Fargues–Fontaine 曲线与现代 p-adic 几何的起点。
+
+## 课堂问答
+
+**老师**：比较定理把哪两个世界连起来？公式是什么？
+
+**学生**：结论：$H^i_{\acute et}(X_{\bar K},\mathbb{Q}_p)\otimes_{\mathbb{Q}_p}B_{\mathrm{dR}}\cong H^i_{\mathrm{dR}}(X/K)\otimes_K B_{\mathrm{dR}}$，为 $G_K$-等变且保滤级的同构。即 p-adic 伽罗瓦侧的 étale 上同调与几何侧的 de Rham 上同调，经 Fontaine 周期环对接。
+
+**老师（追问）**：$B_{\mathrm{dR}}$ 凭什么能充当这座桥？
+
+**学生**：$B_{\mathrm{dR}}$ 是完备的 de Rham 周期环，带 $G_K$ 作用与滤过，且 $B_{\mathrm{cris}}\hookrightarrow B_{\mathrm{dR}}$。关键机制是"两边都 $\otimes B_{\mathrm{dR}}$"——把 étale 侧与 de Rham 侧分别规范成 $B_{\mathrm{dR}}$ 上的滤过 $\varphi$-模/Hodge 结构，于是同构。光滑情形（filtered crystalline）由 Faltings 证明，半稳定情形用对数晶体上同调与 $B_{\mathrm{st}}$（Tsuji 等）。
+
+**老师（拓展）**：由它定义了哪些不变量？
+
+**学生**：它给出 Hodge–Tate 权，是对 crystalline / semi-stable / de Rham 表示分类的基础，控制模曲线与 Shimura 簇的算术，并支撑 p-adic Langlands 中 Galois 与自守表示的对接；也是 Fargues–Fontaine 曲线与现代 p-adic 几何的起点。 一句话：比较定理就是"代数侧与算术侧的上同调在周期环上同构"的桥。

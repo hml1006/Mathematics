@@ -68,6 +68,20 @@ $$\varphi\big(\mathbb E[X\mid\mathcal G]\big)\le\mathbb E\big[\varphi(X)\mid\mat
 2. 取 $\varphi(x)=-\log x$（$x>0$）得 $\mathbb E[\log X]\le\log\mathbb E[X]$，即算术-几何平均不等式；
 3. 取 $\varphi(x)=e^{x}$ 得矩母函数的对数凸性：$\log\mathbb E[e^{tX}]$ 关于 $t$ 是凸函数。
 
+## 课堂问答
+
+**老师**：$\varphi\big(\mathbb E[X]\big)$ 与 $\mathbb E[\varphi(X)]$ 哪个大？
+
+**学生**：凸函数下前者不超过后者，即 $\varphi\big(\mathbb E[X]\big)\le\mathbb E\big[\varphi(X)\big]$；凹函数则反向。取 $\varphi(x)=x^2$ 立刻得 $\mathbb E[X^2]\ge(\mathbb E[X])^2$，即方差非负。
+
+**老师（追问）**：证明为什么只需一条直线？
+
+**学生**：因为凸函数在 $\mu=\mathbb E[X]$ 处有支撑仿射函数 $\ell(x)=\varphi(\mu)+\lambda(x-\mu)$，满足 $\ell\le\varphi$ 且在 $\mu$ 处取等；对 $\ell(X)\le\varphi(X)$ 取期望并用线性即得结论。
+
+**老师（拓展）**：等号何时成立？
+
+**学生**：只有当 $X$ 几乎必然取常值（无条件时即 $X=\mathbb E[X]$ 几乎必然）且 $\varphi$ 严格凸时才取等，否则一般严格。条件版本 $\varphi(\mathbb E[X\mid\mathcal G])\le\mathbb E[\varphi(X)\mid\mathcal G]$ 同样成立。
+
 ## 相关条目
 
 - [马尔可夫不等式](./马尔可夫不等式.md)：同为矩条件导出的基本概率不等式。

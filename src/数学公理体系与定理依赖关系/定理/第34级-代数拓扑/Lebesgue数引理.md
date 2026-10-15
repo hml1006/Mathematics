@@ -60,6 +60,20 @@ $$d(y,x)\le d(y,x_{n_k})+d(x_{n_k},x)<\frac{1}{n_k}+\frac{\varepsilon}{2}<\varep
 
 故假设不成立，存在 $\delta>0$ 满足引理结论。$\square$
 
+## 课堂问答
+
+**老师**：什么叫开覆盖的 Lebesgue 数？
+
+**学生**：紧度量空间 $X$ 的任意开覆盖 $\mathcal U$ 存在 $\delta>0$，使得任何满足 $\operatorname{diam}(A)<\delta$ 的子集 $A$ 都含于某个 $U_\alpha$。$\delta$ 就是该覆盖的 Lebesgue 数。
+
+**老师（追问）**：为什么紧性不可少，证明怎么走？
+
+**学生**：非紧会失效，如 $\mathbb R$ 上覆盖 $\{(-\infty,n)\}_{n\in\mathbb N}$ 无正 Lebesgue 数。证明用反证与序列紧：若不存在，取 $A_n$ 直径 $<1/n$ 却含于任何成员之外，选 $x_n\in A_n$，由序列紧得子列 $x_{n_k}\to x\in U_{\alpha_0}$，取 $k$ 大使 $\frac1{n_k}<\frac\varepsilon2$ 且 $d(x_{n_k},x)<\frac\varepsilon2$，则 $A_{n_k}\subseteq B(x,\varepsilon)\subseteq U_{\alpha_0}$，矛盾。
+
+**老师（拓展）**：它在代数拓扑里怎么用？
+
+**学生**：它保证足够小的单形落进指定开集，是切除定理与细分引理的定量基础，也用于覆盖空间小片上的提升。常见误区是以为子集必须闭或有界——结论只要求直径够小，且 Lebesgue 数不唯一，任何更小的正数仍可用。
+
 ## 相关条目
 
 - [细分引理](./细分引理.md)：用 Lebesgue 数把覆盖的"小尺度"传递给重心重分后的单纯形。

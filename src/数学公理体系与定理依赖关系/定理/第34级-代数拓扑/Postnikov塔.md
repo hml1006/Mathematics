@@ -99,3 +99,17 @@ Postnikov 塔在同伦论中有广泛应用：
 7. **数学物理**：在拓扑量子场论中，Postnikov 塔用于分类拓扑相和缺陷。
 
 Postnikov 塔的推广包括：equivariant Postnikov 塔、参数化 Postnikov 塔、以及 $\infty$-范畴论中的 Postnikov 塔。
+
+## 课堂问答
+
+**老师**：Postnikov 塔把空间分解成什么？
+
+**学生**：一列空间 $X_n$ 及纤维化 $\cdots\to X_n\xrightarrow{p_n}X_{n-1}\to\cdots$，使 $\pi_i(X_n)=\pi_i(X)$（$i\le n$）、$\pi_i(X_n)=0$（$i>n$），且 $X\simeq\varprojlim X_n$（弱同伦等价）。
+
+**老师（追问）**：相邻两层之间的纤维与分类量是什么？
+
+**学生**：$p_n$ 是主 $K(\pi_n(X),n)$-纤维化，有纤维化序列 $K(\pi_n(X),n)\to X_n\xrightarrow{p_n}X_{n-1}\xrightarrow{k_n}K(\pi_n(X),n+1)$，$k_n$ 是 Postnikov 不变量，属 $H^{n+1}(X_{n-1};\pi_n(X))$。
+
+**老师（拓展）**：举个例子，常见误区在哪？
+
+**学生**：$S^2$ 的 $X_1=*$、$X_2=K(\mathbb Z,2)=\mathbb{CP}^\infty$，$k_2\in H^4(\mathbb{CP}^\infty;\mathbb Z)$ 是生成元。常见误区是以为每层只由同伦群决定——纤维化还依赖 $k$-不变量，它编码了各层的扭转信息。

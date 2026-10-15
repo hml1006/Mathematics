@@ -97,3 +97,17 @@ $$\tilde u_k(z)=u_k(p_0(\text{局部坐标})+\epsilon_k z)\quad\text{或}\quad \
 - **带边界的紧性**：带 Lagrange 边界的伪全纯曲线、Floer 同调的紧性需要额外的边界分析（边界气泡）。
 - **高亏格与相对 Gromov–Witten**：相对情形、orbifold 与对数辛几何中的紧性定理（Abramovich–Chen、Gross–Siebert 的对数 GW）。
 - **SFT 的高维紧性**：把"能量有界 ⇒ 紧"推广到带柱端的辛流形（Hofer 能量取代 $\omega$-能量），是全纯建筑理论的核心。
+
+## 课堂问答
+
+**老师**：Gromov 紧性定理断言什么？
+
+**学生**：设 $(M,\omega)$ 闭辛流形，$J_k\to J$，$u_k:(\Sigma_k,j_k)\to(M,J_k)$ 为亏格 $g$、能量一致有界 $E(u_k)\le C$ 的 $J_k$-全纯曲线列，则存在子列与稳定 $J$-全纯曲线（Gromov 极限）$((\Sigma_\infty,j_\infty),u_\infty)$，使在非结点正则部分 $C^\infty_{loc}$ 收敛，且能量与同调类守恒 $E(u_\infty)=\lim_kE(u_k)$。结论即 $\overline{\mathcal M}_{g,k}(M,J,A)$ 紧。常见误区是以为极限只能是光滑曲线——必须允许结点与气泡。
+
+**老师（追问）**：紧性由哪几个独立机制综合而成？
+
+**学生**：三个。一是能量量子化——由单调性引理每个球的能量要么为 $0$ 要么 $\ge\hbar$，故能量非零球数一致有界，这就排除了无限多气泡；二是正规点处的梯度界——平均值不等式 $\sup_{B_{r/2}}|du|^2\le\frac C{r^2}\int_{B_r}u^*\omega$ 配合椭圆正则性与 Arzelà–Ascoli 给出 $C^\infty_{loc}$ 收敛子列；三是气泡分解与可去奇点——在能量集中点按尺度 $\epsilon_k\to0$ 重标定得非平凡气泡 $\tilde u_\infty:\mathbb C\to M$，由可去奇点把它紧化为球面，每次至少耗掉 $\hbar$ 故有限步终止。
+
+**老师（拓展）**：定义域退化怎么处理？
+
+**学生**：用 Deligne–Mumford 空间 $\overline{\mathcal M}_{g,k}$ 的紧性。亏格固定、带 $k$ 个标记点的 Riemann 面序列在 $\overline{\mathcal M}_{g,k}$ 中有紧化，必要时把"细脖子"收缩为结点得到稳定曲线；再把气泡贴上、由可去奇点补全，就得到定义在稳定曲线上的 $J$-全纯映射，同调类与能量守恒。这是 Gromov–Witten 不变量定义、非挤压定理与 Floer 紧化的基石。

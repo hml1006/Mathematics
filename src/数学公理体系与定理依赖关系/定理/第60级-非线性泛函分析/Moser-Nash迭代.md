@@ -140,3 +140,17 @@ $$\operatorname{osc}_{B_{r_{k+1}}} u \leq \theta \operatorname{osc}_{B_{r_k}} u,
 - **Stampacchia 插值方法**：通过插值不等式证明正则性。
 - **Krylov-Safonov 理论**：非散度型椭圆方程的 Harnack 不等式（基于 Alexandrov-Bakelman-Pucci 极值原理）。
 - **DiBenedetto 的 $p$-Laplace 正则性理论**：将 Moser 迭代推广到退化与奇异方程。
+
+## 课堂问答
+
+**老师**：Moser 迭代如何"逐档提升"可积性？核心的递推不等式长什么样？
+
+**学生**：核心是以能量估计逐次升级 Sobolev 指标。对散度型方程取检验函数 $\varphi=u^{p-1}\eta^{2p}$，用一致椭圆性与 Young 不等式得 $\int|\nabla(u^{p/2}\eta^p)|^2\le Cp^2\int u^p|\nabla\eta|^{2p}$，再用 Sobolev 嵌入 $H^1\hookrightarrow L^{2^*}$（$2^*=\frac{2n}{n-2}=\kappa\cdot2$）得 $\|u\|_{L^{p_{k+1}}}\le(Cp_k)^{2/p_k}\|u\|_{L^{p_k}}$，其中 $p_{k+1}=\kappa p_k$。
+
+**老师（追问）**：这个乘积为什么收敛？指标为什么取几何增长？
+
+**学生**：因为 $p_k=2\kappa^k$ 几何增长，故 $\sum_k\frac{1}{p_k}=\frac12\sum_k\kappa^{-k}<\infty$（$\kappa>1$）。取对数后 $\sum_k\frac{2}{p_k}\log(Cp_k)<\infty$，于是乘积 $\prod_k(Cp_k)^{2/p_k}$ 收敛到有限值 $e^M$，得 $\|u\|_{L^\infty}\le C\|u\|_{L^2}$。若指标增长太慢则乘积发散，这正是选择几何增长的要害。
+
+**老师（拓展）**：为什么说这套迭代"不依赖系数的光滑性"？它与 Harnack 不等式是什么关系？
+
+**学生**：因为能量估计只用到一致椭圆性 $\lambda|\xi|^2\le\xi^TA\xi\le\Lambda|\xi|^2$ 与 Sobolev 嵌入，从不微分系数 $A(x)$，故系数可测即可——这正是 De Giorgi-Nash-Moser 理论与 Schauder 理论（需 Hölder 系数）的本质差别。同一套迭代对正解同时控制上确界与下确界，得到 Harnack 不等式 $\sup_{B_R}u\le C\inf_{B_R}u$，进而由振荡估计 $\mathrm{osc}_{B_{r_{k+1}}}u\le\theta\,\mathrm{osc}_{B_{r_k}}u$ 得 Hölder 连续性。

@@ -41,6 +41,29 @@ $$\log F(s)=\sum_{\chi}\sum_{p}\sum_{k\ge1}\frac{\chi(p^k)}{kp^{ks}}=\sum_{p^k\e
 ## 五、应用与意义
 
 Dirichlet 定理是素数分布理论的基本构件。它的"L-函数与特征分解"思想被推广为 Chebotarev 稠密定理（代数数域）、Langlands 对偶与自守形式理论——每个更深的"素数在算术群中的分布"问题都以之为原型。在密码学与算法数论中，它保证了构造大素数（特殊余类）的可行性，是现代素性检测与密钥生成的理论基础。
+
+## 课堂问答
+
+**老师**：为什么只要 $\gcd(a,q)=1$，级数 $a,a+q,a+2q,\dots$ 里就必有无限多素数？
+
+**学生**：因为有精确的等分布：$\#\{p\le x:p\equiv a\bmod q\}\sim\frac{1}{\varphi(q)}\frac{x}{\log x}$。它由特征正交性把余类上的求和写成 L-函数对数导数的加权和
+$$
+\sum_{n\equiv a\bmod q}\frac{\Lambda(n)}{n^s}=\frac1{\varphi(q)}\sum_{\chi\bmod q}\overline\chi(a)\Big(-\frac{L'(s,\chi)}{L(s,\chi)}\Big),
+$$
+再用 Tauber 定理读出渐近。
+
+**老师（追问）**：整件事的技术命门落在哪个断言上？
+
+**学生**：落在非主特征处 $L(1,\chi)\neq0$。否则设某 $\chi$ 使 $L(1,\chi)=0$，它会抵消主特征在 $s=1$ 的极点，使 $F(s)=\prod_\chi L(s,\chi)$ 在 $s=1$ 解析；但又
+$$
+\log F(s)=\sum_{p^k\equiv1\bmod q}\frac{\varphi(q)}{kp^{ks}}\ge0,\quad s>1,
+$$
+当 $s\to1^+$ 时 $F(s)\to+\infty$，矛盾。
+
+**老师（拓展）**：这个"特征分解加 $s=1$ 行为"的套路后来变成了什么？
+
+**学生**：它成了 Chebotarev 稠密定理、Artin 互反律与 Langlands 对偶的原型。误区是把 Dirichlet 定理当成"初等"结论，其实 $L(1,\chi)\neq0$ 与素数在余类中的等分布都是实打实的非初等解析输入。
+
 ## 相关条目
 
 - [Dirichlet 算术级数定理（第44级-解析数论）](../第44级-解析数论/Dirichlet算术级数定理.md)：与本条目为同一定理，另收录于第44级-解析数论，可交叉参考。

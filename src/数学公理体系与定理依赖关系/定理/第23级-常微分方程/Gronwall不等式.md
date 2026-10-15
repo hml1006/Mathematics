@@ -86,6 +86,22 @@ $$|y_1(t)-y_2(t)|\le\int_a^t L\,|y_1(s)-y_2(s)|\,ds.$$
 
 取 $\alpha\equiv0$、$\beta\equiv L$，由 Gronwall 不等式得 $|y_1(t)-y_2(t)|\le0$，即 $y_1=y_2$。
 
+## 课堂问答
+
+**老师**：设 $u\ge 0$ 连续，满足 $u(t)\le\alpha(t)+\int_a^t\beta(s)u(s)\,ds$，$\beta\ge0$。若取 $\alpha\equiv0$，你能立刻断定什么？
+
+**学生**：结论是 $u\equiv0$，这正是唯一性的关键形态。理由是把 $v(t)=\int_a^t\beta u$ 分离出来，由 $u\le v$ 得 $v'\le\beta v$，再用积分因子 $e^{-\int\beta}$ 积分得 $v\le 0$；又 $v\ge0$，所以 $v\equiv0$，从而 $u\equiv0$。常见误区是此时仍写 $u\le Ce^{\int\beta}$——那只能给出 $u\le0$，本质是"零源不能被放大"。
+
+**老师（追问）**：为什么条件 $\beta\ge0$ 不能去掉？若 $\beta$ 变号，积分因子还单调吗？
+
+**学生**：不能去。$\beta<0$ 时 $e^{\int\beta}$ 变成衰减因子，$v(t)\ge0$ 不再被约束，结论会失效。证明里用 $\frac{A(s)}{A(t)}=\exp\!\big(\int_s^t\beta\big)$，只有当 $\beta\ge0$、$s\le t$ 时它才 $\ge1$，才给出"增长型"控制。这正是它能与解对初值连续依赖无缝配合的原因。
+
+**老师（拓展）**：回到一般形式，源项 $\alpha$ 不是常数时，上界长什么样？这对依赖初值的估计有什么用？
+
+**学生**：一般上界是
+$$u(t)\le\alpha(t)+\int_a^t\alpha(s)\beta(s)\exp\!\Big(\int_s^t\beta(r)\,dr\Big)ds.$$
+当 $\alpha\equiv C$ 时化为 $u(t)\le Ce^{\int_a^t\beta}$。在解对初值连续依赖里取 $\beta\equiv L$，就得到 $|y-\bar y|\le A e^{L(x-x_0)}$，把"初值的小扰动"变成"全区间的一致小偏差"。
+
 ## 相关条目
 
 - [解对初值的连续依赖性](./解对初值的连续依赖性.md)：用 Gronwall 不等式估计不同初值对应解之间的偏差。

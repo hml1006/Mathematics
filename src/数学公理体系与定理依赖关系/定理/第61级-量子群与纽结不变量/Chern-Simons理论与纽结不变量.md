@@ -50,3 +50,17 @@ Chern–Simons 理论的严格数学证明目前仍部分依赖启发式路径�
 
 ## 五、应用与意义
 Chern–Simons 理论揭示了量子场论、量子群表示论与低维拓扑之间的深刻统一；它催生了拓扑量子场论的公理化，推动了 Gromov–Witten/拓扑弦对偶，并在量子引力与拓扑量子计算中持续发挥重要作用。
+
+## 课堂问答
+
+**老师**：Chern–Simons 作用量为什么是拓扑量？它凭什么给出纽结不变量？
+
+**学生**：结论：$S_{CS}$ 只依赖联络的规范等价类，故配分函数是拓扑的。写 $S_{CS}(A)=\frac{k}{4\pi}\int_M\operatorname{Tr}(A\wedge dA+\tfrac23A\wedge A\wedge A)$；在规范变换 $g$ 下 $S_{CS}(A^g)=S_{CS}(A)+2\pi k\,\mathrm{deg}(g)$，指数化后 $e^{iS_{CS}}$ 单值，故路径积分规范不变。再沿纽结插入 Wilson 圈 $W_R(K)=\operatorname{Tr}_R\mathrm{P}\exp\oint_KA$，其期望值被 Witten 断言等于 Reshetikhin–Turaev 不变量。
+
+**老师（追问）**：为什么量子参数要取 $q=e^{2\pi i/(k+h^\vee)}$？
+
+**学生**：因为 level $k$ 的量子化把形变参数锁在单位根处。$k+h^\vee$ 里的 $h^\vee$ 是对偶 Coxeter 数，来自典范量子化时 WZW 共形块的整数化；$q$ 取这个单位根时，$U_q(\mathfrak g)$ 的表示范畴恰在根式单位处截断为有限多个可积最高权表示，期望值才是良定义的多项式而非形式幂级数。
+
+**老师（拓展）**：这套路径积分严格吗？
+
+**学生**：不严格，$\mathcal DA$ 未定义、收敛性缺失。但它可被严格重建：沿曲面切割，Hilbert 空间 $\mathcal H_\Sigma$ 同构于 WZW 共形块空间，Wilson 圈给出 $\mathcal H_\Sigma$ 上的算子；对一般流形作手术粘合，所得结果与 Reshetikhin–Turaev 的代数构造一致，等于给路径积分提供了公理化替身。

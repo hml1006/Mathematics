@@ -42,3 +42,21 @@ $$
 ## 五、应用与意义
 
 $K_0$ 的泛性质是 K 理论一切结构结论的支点。它保证 $K_0$ 是"最经济的加法不变量"，从而可据以计算：$K_0(F)\cong\mathbb{Z}$、$K_0(R_1\times R_2)\cong K_0(R_1)\oplus K_0(R_2)$、Morita 等价下的不变性（$K_0(M_n(R))\cong K_0(R)$）等。在代数几何中 $K_0(X)$（向量丛的 K 群）与 Grothendieck-Riemann-Roch 定理紧密结合；在拓扑中 $K_0$ 与 Atiyah-Singer 指标理论相接。它亦为高次 K 群（$K_1,K_2$ 及 Quillen 的 $K_n$）的构建奠定概念基础。
+
+## 课堂问答
+
+**老师**：$K_0(R)$ 凭什么被称为"最优的加法不变量"？把它满足的泛性质完整说出来。
+
+**学生**：$K_0(R)$ 是有限生成射影模同构类生成的自由阿贝尔群，模去关系 $[P\oplus Q]=[P]+[Q]$。泛性质是：对任何阿贝尔群 $G$ 与任何满足 $\varphi(P\oplus Q)=\varphi(P)+\varphi(Q)$、$P\cong Q\Rightarrow\varphi(P)=\varphi(Q)$ 的映射 $\varphi$，存在唯一同态 $\tilde\varphi:K_0(R)\to G$ 使 $\tilde\varphi([P])=\varphi(P)$。
+
+**老师（追问）**：证明里"存在"与"唯一"分别卡在哪一步？
+
+**学生**："存在"卡在同态基本定理：把 $\varphi$ 线性扩张为自由群上的 $\psi$，只需验证关系子群 $N=\langle[P\oplus Q]-[P]-[Q]\rangle\subseteq\ker\psi$，而
+$$
+\psi([P\oplus Q]-[P]-[Q])=\varphi(P\oplus Q)-\varphi(P)-\varphi(Q)=0
+$$
+恰是 $\varphi$ 的加法性。"唯一"则因为 $[P]$ 已生成整个 $K_0(R)$。
+
+**老师（拓展）**：这套泛性质立刻能读出哪些具体计算？
+
+**学生**：它是"最经济"性的保证：$K_0(F)\cong\mathbb{Z}$ 由 $[F^n]\mapsto n$、$K_0(R_1\times R_2)\cong K_0(R_1)\oplus K_0(R_2)$、以及 Morita 不变性 $K_0(M_n(R))\cong K_0(R)$ 全都可以由泛性质唯一诱导，无须逐个验证。

@@ -84,3 +84,17 @@ $$\phi(\omega) = \lim_{n \to \infty} -\frac{1}{n} \log \mu(\omega_1^n)$$
 1. $|T_n| \leq e^{n(H+\varepsilon)}$，
 2. $\mu(T_n) \geq 1 - \varepsilon$，
 3. 对任意 $x_1^n \in T_n$，$e^{-n(H+\varepsilon)} \leq \mu(x_1^n) \leq e^{-n(H-\varepsilon)}$。$\square$
+
+## 课堂问答
+
+**老师**：Shannon–McMillan–Breiman 定理说了什么？
+
+**学生**：结论——平稳遍历信源下 $-\frac1n\log\mu(X_1^n)\to H$（$\mu$-a.e.），$H$ 是熵率。理由：$-\log\mu(\omega_1^n)=\sum_{k=0}^{n-1}f_k(\omega)$，其中 $f_k=-\log\mu(\omega_{k+1}\mid\omega_1^k)$ 平稳，$g_n=-\log\mu(\omega_1^n)$ 次可加，由 Kingman 定理得几乎处处极限，遍历性再将其常数化为 $H$。
+
+**老师（追问）**：这和典型集有什么关系？
+
+**学生**：直接推出典型集 $T_n$：$\mu(T_n)\ge1-\varepsilon$，且 $e^{-n(H+\varepsilon)}\le\mu(x_1^n)\le e^{-n(H-\varepsilon)}$，于是 $|T_n|\approx e^{nH}$——几乎全部概率压在指数级小的集合上。
+
+**老师（拓展）**：与压缩编码有何联系？
+
+**学生**：它是 Shannon 信源编码定理的 a.e. 基础：无损压缩的平均码长不能低于熵率 $H$，而算术编码可任意逼近，故 $H$ 是可达下界。

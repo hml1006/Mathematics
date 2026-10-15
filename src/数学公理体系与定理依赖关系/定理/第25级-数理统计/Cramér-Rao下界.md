@@ -71,3 +71,17 @@ $$\text{Cov}(\hat{\theta}) \geq [n I(\theta)]^{-1}$$
 （在矩阵正定意义下）。
 
 **注记**：达到 Cramér-Rao 下界的估计量称为有效估计量。当且仅当分布族是指数族时，有效估计量存在。例如，正态分布 $N(\mu, \sigma^2)$ 中样本均值 $\bar{X}$ 是 $\mu$ 的有效估计量。
+
+## 课堂问答
+
+**老师**：无偏估计的方差有下界吗？证明里那个关键的"1"从哪里冒出来？
+
+**学生**：结论：任意无偏估计满足 $\operatorname{Var}(\hat\theta)\geq\frac{1}{nI(\theta)}$。关键是先造出一个恒等于 1 的协方差：由无偏性 $E[\hat\theta]=\theta$ 对 $\theta$ 求导得 $1=E[\hat\theta\cdot S_n]$，而 $E[S_n]=0$，故 $\operatorname{Cov}(\hat\theta,S_n)=1$，再由 Cauchy-Schwarz 得 $1\leq\operatorname{Var}(\hat\theta)\operatorname{Var}(S_n)=\operatorname{Var}(\hat\theta)\cdot nI(\theta)$。
+
+**老师（追问）**：为什么联合信息量是 $I_n(\theta)=nI(\theta)$？若估计不无偏，这个下界还成立吗？
+
+**学生**：因为各样本的得分 $S_i$ 独立同分布、$\operatorname{Var}(S_i)=I(\theta)$，独立相加方差相加，故 $\operatorname{Var}(S_n)=nI(\theta)$。非无偏时 $1=E[\hat\theta\cdot S_n]$ 要换成 $E[\hat\theta]'(\theta)$，一般不为 1，下界变为 $\frac{(1+b'(\theta))^2}{nI(\theta)}$（$b$ 为偏差），甚至可能低于真实风险，机械套用不加修正的下界是常见错误。
+
+**老师（拓展）**：等式何时成立？为什么说"只有指数族才有有效估计"？
+
+**学生**：取等当且仅当 $S_n$ 与 $\hat\theta-\theta$ 几乎必然线性相关，即得分函数形如 $a(\theta)(\hat\theta-\theta)$，这正是指数族得分函数的结构，故有效估计的存在性等价于指数族；$N(\mu,\sigma^2)$ 中用 $\bar X$ 估计 $\mu$ 就是典型例子。多参数情形的下界是矩阵不等式 $\operatorname{Cov}(\hat\theta)\geq[nI(\theta)]^{-1}$。

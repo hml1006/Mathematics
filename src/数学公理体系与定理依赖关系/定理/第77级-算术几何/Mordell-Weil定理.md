@@ -38,3 +38,19 @@ $$P=m^nP_n+\sum_{k=1}^{n}m^{k-1}Q_{i_k}.$$
 ## 五、应用与意义
 
 Mordell-Weil 定理把椭圆曲线有理点结构归结为两个有限不变量（秩与挠群），是算术几何支柱之一。它支撑弱 Mordell-Weil 与 2-下降、Birch–Swinnerton-Dyer 猜想的表述（$L(E,s)$ 的零点阶 = 秩），并推广到高维 Abel 簇与 Jacobian，是 Faltings（Mordell 猜想）、Chabauty、以及现代"有效 Mordell"研究的基础。
+
+## 课堂问答
+
+**老师**：$E(K)$ 有限生成的证明主干是哪几步？
+
+**学生**：三步走，结论是
+$$E(K)\cong\mathbb{Z}^{r}\oplus E(K)_{\text{tors}},$$
+即弱 Mordell-Weil 定理（$E(K)/mE(K)$ 有限）、Néron-Tate 高度函数、以及无限下降引理，三者拼起来给出有限生成。
+
+**老师（追问）**：$E(K)/mE(K)$ 的有限性是从哪里冒出来的？
+
+**学生**：从 Kummer 正合列 $0\to E[m]\to E\xrightarrow{[m]}E\to0$ 取 Galois 上同调，得 Kummer 映射 $\kappa:E(K)/mE(K)\hookrightarrow H^1(G_K,E[m])$；再结合类数有限与 Dirichlet 单位定理给出的有限性论证，像落在有限子群中，故商群有限。
+
+**老师（拓展）**：下降引理用高度的哪条性质？秩可计算吗？
+
+**学生**：关键是 $\hat h([m]P)=m^2\hat h(P)$。反复写 $P=m^nP_n+\sum_{k=1}^{n}m^{k-1}Q_{i_k}$，因 $\hat h(P_n)=\hat h(P)/m^{2n}$ 被界住，$P_n$ 只能取有限个值，故全体由有限代表元生成。误区是以为秩 $r$ 可算法求出——一般 $E(K)$ 的秩没有已知算法，其"可计算性"正是 BSD 猜想的内容。

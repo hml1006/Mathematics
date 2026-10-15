@@ -29,3 +29,17 @@ $$
 ## 五、应用与意义
 
 该定理是几何Langlands对应最基本的严格结果，确立了层论框架下"自守/Fourier 对偶"的成对原理。它为随后由 Kapustin–Witten 提出、经 ABZ 与 Gaitsgory 发展的复杂化/范畴化奠定基础，并推动了 $p$-adic 与派生几何中对弦论全息、代沟函子等方向的追踪。
+
+## 课堂问答
+
+**老师**：请陈述 Beilinson–Drinfeld 定理，并说明左端为什么必须限制在"具 Hecke 本征性"的 D-模上。
+
+**学生**：先给结论：对亏格 $g>1$ 的光滑射影曲线 $X/\mathbb{C}$ 与约化群 $G$，存在范畴等价 $\mathrm{D\text{-}mod}(\mathrm{Bun}_G)_{\mathrm{Hecke}}\cong \mathrm{QCoh}(\mathrm{LocSys}_{{}^LG})$，左端是满足 $H_{x,V}(\mathcal{F})\cong\sigma_V(x)\boxtimes\mathcal{F}$ 的 D-模。限制的原因：一般的 $\mathrm{D\text{-}mod}(\mathrm{Bun}_G)$ 太大、太"分析"，只有 Hecke 本征的部分才带有足够刚性去对应某个整体局部系统 $\sigma$；这正是两个范畴能成对的关键一致性条件。
+
+**老师（追问）**：两个互逆函子各是怎么构造的？为什么要有 $g>1$？
+
+**学生**：正方向 $\Psi:\mathrm{QCoh}(\mathrm{LocSys}_{{}^LG})\to\mathrm{D\text{-}mod}_{\mathrm{Hecke}}$ 由"给定局部系统 $\sigma$ 造 Hecke 本征 D-模 $\mathcal{F}_\sigma$"给出（用 D-模的消去/唯一性）；逆方向 $\Phi$ 把 $\mathcal{F}$ 映到谱层，经 Hecke 特征值的几何构造与 Fourier–Mukai 型变换实现，再验证 $\Phi\Psi\simeq\mathrm{id}$、$\Psi\Phi\simeq\mathrm{id}$。$g>1$ 的技术作用在于让 $\mathrm{LocSys}_{{}^LG}$ 与 Hecke 本征层具备所需的有限性/刚性（$g=0,1$ 需另行处理）。常见误区：以为等价对任意 $\mathrm{Bun}_G$ 的 D-模成立——实际只在 Hecke 本征子范畴上成立。
+
+**老师（拓展）**：当局部系统带正则奇性时会发生什么？这条定理的地位如何？
+
+**学生**：带正则奇性时 Hecke 本征模与 Opers 相容，可由 Beilinson–Drinfeld 的消去原理给出更明确的构造。这条定理是几何 Langlands 最基本的严格结果，确立了层论框架下"自守/Fourier 对偶"的成对原理，为其范畴化与 Kapustin–Witten 的物理对应奠定基础。

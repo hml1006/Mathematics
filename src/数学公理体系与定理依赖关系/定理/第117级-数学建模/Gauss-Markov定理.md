@@ -41,6 +41,23 @@ Gauss-Markov 定理是线性模型估计理论的基石。它断言：在线性�
 ## 五、应用与意义
 
 Gauss-Markov 定理为回归分析的效率理论提供了基准，是计量经济、统计学与机器学习线性模型的地基。它也明确界定了“OLS 为何难以被线性无偏替代”，并引出岭回归、LASSO 等有偏但更稳健的方法。
+
+## 课堂问答
+
+**老师**：Gauss-Markov 定理说 OLS 是 BLUE，这个"线性无偏"限定了什么范围？
+
+**学生**：结论是它限定在所有形如 $\tilde{\boldsymbol\beta}=\boldsymbol C\boldsymbol Y$ 的估计量里。无偏要求 $\boldsymbol C\boldsymbol X=\boldsymbol I_p$，记 OLS 的 $\boldsymbol A=(\boldsymbol X^\top\boldsymbol X)^{-1}\boldsymbol X^\top$，令 $\boldsymbol D=\boldsymbol C-\boldsymbol A$，则 $\boldsymbol D\boldsymbol X=\boldsymbol 0$，于是
+$$\mathrm{Var}(\tilde{\boldsymbol\beta})-\mathrm{Var}(\hat{\boldsymbol\beta})=\sigma^2\boldsymbol D\boldsymbol D^\top\succeq\boldsymbol 0,$$
+故 OLS 的协方差在矩阵意义下最小。
+
+**老师（追问）**：这个结论需要误差服从正态分布吗？
+
+**学生**：不需要。定理只用到 $\mathbb{E}[\boldsymbol\varepsilon]=\boldsymbol 0$、$\mathrm{Var}(\boldsymbol\varepsilon)=\sigma^2\boldsymbol I_n$ 和 $\boldsymbol X$ 满列秩。常见误区是以为 Gauss-Markov 要靠正态性；正态假设只在做精确的 $t$、$F$ 检验时才需要。
+
+**老师（拓展）**：如果去掉同方差假设，OLS 还最优吗？
+
+**学生**：仍然线性无偏，但不再是 BLUE；此时广义最小二乘（GLS）才是 BLUE，这正是 Aitken 定理对 Gauss-Markov 的推广。可见"最优"是绑定在 Gauss-Markov 假设（同方差、无自相关）上的。
+
 ## 相关条目
 
 - [Gauss-Markov 定理（第92级-回归分析）](../第92级-回归分析/Gauss-Markov定理.md)：与本条目为同一定理，另收录于第92级-回归分析，可交叉参考。

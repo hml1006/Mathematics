@@ -91,3 +91,19 @@ $$
 **应用领域：** 几何数论（临界行列式、覆盖半径、最密堆积下界）、自守形式与 Eisenstein 级数（退化主级数的常数项）、随机矩阵与格密码学中的格分布模型。
 
 **推广：** 对一般的半单群 $G$ 与算术子群 $\Gamma$，同型的"展开公式"给出 Eisenstein 级数与轨道积分的均值公式，是 Langlands 纲领与迹公式的核心机制之一。
+
+## 课堂问答
+
+**老师**：Siegel 平均公式的等式是什么？它的意义在哪？
+
+**学生**：对 $f\in L^1(\mathbb{R}^n)$，
+$$\int_{\mathcal{L}}\Big(\sum_{v\in\Lambda\setminus\{0\}}f(v)\Big)\,d\mu(\Lambda)=\int_{\mathbb{R}^n}f(x)\,dx,$$
+其中 $\mathcal{L}=\operatorname{SL}_n(\mathbb{R})/\operatorname{SL}_n(\mathbb{Z})$ 参数化所有行列式为 $1$ 的格。取 $f=\chi_S$ 即得"非零格点计数的平均等于 $\operatorname{vol}(S)$"，把离散的格点求和化为连续积分。
+
+**老师（追问）**：证明里最关键的一步在做什么？
+
+**学生**：是展开技巧（unfolding）。把 $\sum_{v\ne0}f(vg)$ 按 $v=kw$（$k\ge1$、$w$ 本原）分解，本原向量与 $H/P_H$ 一一对应，展开技巧把 $H$-不变的求和换成 $\int_{P_H\backslash G}f(ke_1g)\,dg$；再用 $P_0\backslash G\cong\mathbb{R}^n\setminus\{0\}$ 把测度推前为 Lebesgue 测度 $dx$。
+
+**老师（拓展）**：常数怎么被吸收？为什么会冒出 $\zeta(n)$？
+
+**学生**：对倍数 $k$ 求和时出现 $\sum_{k\ge1}k^{-n}=\zeta(n)$，它与测度规范常数合并，用 Siegel 规范测度把总常数归一为 $1$。它是 Minkowski-Hlawka 定理、随机格极限分布与 Siegel 质量公式的共同基础。误区是忘记测度必须取 Siegel 规范，否则等式两边差一个常数倍。

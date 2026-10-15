@@ -114,3 +114,17 @@ $$
 - **步长设计**：固定步长 $2/(m+M)$、回溯线搜索与自适应步长都以 Hessian 界为安全依据。
 - **误差界换算**：二次夹逼把"函数值下降"翻译成"参数距离缩小"与"梯度变小"，是停止准则（$\|\nabla f\|\le\varepsilon$）合理性的来源。
 - **与无约束优化的联系**：牛顿法与拟牛顿法的局部分析都在 Hessian 界或其一阶近似下展开，$\kappa$ 也是正规方程与最小二乘病态程度的度量。
+
+## 课堂问答
+
+**老师**：为什么 $\nabla^2 f\preceq MI$ 和梯度 $M$-Lipschitz 是同一件事？
+
+**学生**：因为把 Hessian 界沿线段积分：$\nabla f(y)-\nabla f(x)=\int_0^1\nabla^2 f(x+t(y-x))(y-x)\,dt$，取范数并用 $\|\nabla^2 f\|\le M$ 即得 $\|\nabla f(y)-\nabla f(x)\|\le M\|y-x\|$。
+
+**老师（追问）**：反过来，从 $\|\nabla f(x)-\nabla f(y)\|\le M\|x-y\|$ 能推出 $\nabla^2 f\preceq MI$ 吗？
+
+**学生**：能。对 $y=x+tv$ 用 Taylor 展开 $\nabla f(x+tv)-\nabla f(x)=t\nabla^2 f(x)v+o(t)$，两边除以 $t$ 并令 $t\to0^+$，再与 Lipschitz 不等式取极限，得 $\|\nabla^2 f(x)v\|\le M\|v\|$，即 $\nabla^2 f(x)\preceq MI$。这就是 (H)、(Q)、(G) 三组条件等价的证明骨架。
+
+**老师（拓展）**：条件数 $\kappa=M/m$ 为什么既管收敛速度又管"病态"？
+
+**学生**：二次夹逼给出 $\frac m2\|x-x^*\|^2\le f(x)-f(x^*)\le\frac M2\|x-x^*\|^2$，同一函数值差对应的距离区间宽达 $\sqrt\kappa$ 倍；梯度下降的收缩率是 $(M-m)/(M+m)=(\kappa-1)/(\kappa+1)$，$\kappa$ 越大越贴近 1、收敛越慢。所以"曲率被夹得多扁"就同时决定迭代次数与数值稳定性，这正是等高线越扁越难优化的定量解释。

@@ -101,6 +101,20 @@ $$
 - **几何流**：Ricci 流与平均曲率流中的单调量（Huisken 单调公式、Perelman 熵）都建立在这一热算子框架与共轭热方程之上。
 - **抛物极值原理**：$\sup u$ 不增是张量极值原理的标量原型，也是曲率估计中"由内点极值导出矛盾"的标准手段。
 
+## 课堂问答
+
+**老师**：流形上的 Laplace 算子如何做到与坐标系无关？
+
+**学生**：结论是用散度形式定义 $\Delta f=\mathrm{div}(\nabla f)=\frac{1}{\sqrt{|g|}}\partial_i\left(\sqrt{|g|}\,g^{ij}\partial_jf\right)$；散度里含体积元 $\sqrt{|g|}$，保证 $\mathcal L_Xd\mu=(\mathrm{div}X)d\mu$，故整体不变。取 $X=h\nabla f$ 与散度定理立即得自伴性 $\int_Mh\Delta f\,d\mu=-\int_M\langle\nabla h,\nabla f\rangle d\mu=\int_Mf\Delta h\,d\mu$。
+
+**老师（追问）**：紧流形上热方程解的存在唯一性与光滑化从哪来？
+
+**学生**：$-\Delta$ 非负自伴且预解紧，谱离散 $0=\lambda_0<\lambda_1\le\lambda_2\le\cdots\to\infty$，于是 $u(x,t)=\sum_ke^{-\lambda_kt}\langle u_0,\varphi_k\rangle\varphi_k$ 既给出光滑解又给出 $t>0$ 的正则化。唯一性用能量 $\frac{d}{dt}\int_Mu^2d\mu=-2\int_M|\nabla u|^2d\mu\le0$ 与极值原理，二者都保证零初值只有零解。
+
+**老师（拓展）**：曲率是怎样进入梯度估计的？
+
+**学生**：靠 Bochner 恒等式 $\frac12\Delta|\nabla u|^2=|\mathrm{Hess}\,u|^2+\langle\nabla u,\nabla\Delta u\rangle+\mathrm{Ric}(\nabla u,\nabla u)$。若 $u$ 解热方程且 $\mathrm{Ric}\ge-(n-1)K$，则 $(\partial_t-\Delta)|\nabla u|^2\le2(n-1)K|\nabla u|^2$，对 $v=e^{-2(n-1)Kt}|\nabla u|^2$ 用极值原理得 $|\nabla u|^2\le e^{2(n-1)Kt}\sup_M|\nabla u_0|^2$。常见误区是以为散度项的符号可忽略，其实它正是"$\Delta\le0$"约定的来源。
+
 ## 相关条目
 
 - [coarea公式](./coarea公式.md)：与散度定理配合，把流形上的积分沿水平集分解。

@@ -82,6 +82,20 @@ $$
 - **Teichmüller 几何与刚性**：重心与凸性论证说明 $\mathcal T(S)$ 的 Busemann 凸性是映射类群作用的本质几何输入，也是 Mostow 刚性与 Thurston 紧化的技术基础。
 - **几何群论中的拟等距与边界**：实现后的等距群作用把曲面看成非正曲率空间（双曲群的 Cartan–Hadamard 定理给出唯一测地线与凸性），为拟测地线稳定性等结论提供模型。
 
+## 课堂问答
+
+**老师**：Nielsen 实现定理凭什么说映射类群的有限子群都能被几何实现？
+
+**学生**：先给结论——任意有限子群 $H\le\mathrm{Mod}(S)$ 存在截面 $\rho:H\hookrightarrow\mathrm{Homeo}^+(S)$，且可实现为同一双曲结构 $\sigma_0$ 的等距，即 $\rho(H)\subseteq\mathrm{Isom}^+(\sigma_0)$。核心事实：Teichmüller 空间 $\mathcal{T}(S)$ 完备且 Busemann 凸，$H$ 的轨道有唯一最小直径点，即不动点。
+
+**老师（追问）**：为什么凸性能保证有不动点？
+
+**学生**：定义轨道直径 $D([\sigma])=\max_{h,h'\in H}d_{\mathcal{T}}(h\cdot[\sigma],h'\cdot[\sigma])$。非正曲率、严格凸的空间上凸函数有唯一极小点 $[\sigma_0]$；由 $d_{\mathcal{T}}$ 的 $H$-不变性与极小点唯一性，得 $h\cdot[\sigma_0]=[\sigma_0]$。
+
+**老师（拓展）**：这个不动点是怎么变成"实现"的？
+
+**学生**：在不动点处 $\mathrm{Isom}^+(\sigma_0)$ 到 $\mathrm{Mod}(S)$ 的像恰为 $\mathrm{Stab}_{\mathrm{Mod}(S)}([\sigma_0])$，故 $H$ 落在其中，取逆即得同胚（且为有限阶）实现。由此得到 Hurwitz 界 $|\mathrm{Isom}^+|\le84(g-1)$，它也是 $\mathrm{Out}(F_n)$ 有限子群实现问题的原型。
+
 ## 相关条目
 
 - [曲面映射类群](../第62级-低维拓扑/曲面映射类群.md)：本定理的作用对象，其有限子群的可实现性正是定理内容。

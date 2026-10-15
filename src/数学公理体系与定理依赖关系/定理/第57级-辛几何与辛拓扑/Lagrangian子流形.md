@@ -136,3 +136,19 @@ $\square$
 - **Gromov 不嵌入定理**：$\mathbb{R}^{2n}$ 中不存在闭 Lagrangian；
 - **Audin 猜想**：每个 Lagrangian 嵌入到 $\mathbb{C}^n$ 的 Maslov 类非零；
 - **Lagrangian 设想（Arnold 4-问题）**：辛拓扑中 Lagrangian 子流形的拓扑限制问题，至今仍是活跃研究主题。
+
+## 课堂问答
+
+**老师**：什么是 Lagrangian 子流形？请给出它的等价刻画。
+
+**学生**：辛流形 $(M^{2n},\omega)$ 中的嵌入子流形 $i:L\hookrightarrow M$ 若 $\dim L=n$ 且 $i^*\omega=0$，则称为 Lagrangian。等价地，每点 $T_xL=(T_xL)^\omega$，即 $L$ 是极大 $\omega$-迷向子流形。例子：$\mathbb R^{2n}=\mathbb R^n_x\times\mathbb R^n_p$ 中的位置轴 $\mathbb R^n_x$、以及任何生成函数的图 $\mathrm{gr}(df)$ 都是。常见误区是只记住 $\omega|_L=0$——维数是"一半"这个最大性同样关键。
+
+**老师（追问）**：Weinstein 邻域定理说 Lagrangian 局部都平凡，它是怎么证的？
+
+**学生**：用 Moser 路径方法。先由 Lagrangian 条件得法丛 $NL=TM|_L/TL\cong T^*L$（由 $\omega$ 给出同构），构造 $L$ 邻域到 $T^*L$ 零截面邻域的微分同胚 $\Phi$。再取辛形式路径 $\omega_t=(1-t)\omega_{T^*L}+t\Phi^*\omega_M$；因两辛形式在零截面上限制一致，$\Phi^*\omega_M-\omega_{T^*L}$ 在零截面为零且闭，由 Poincaré 引理存在零截面为零的 $\alpha$ 使 $d\alpha=\Phi^*\omega_M-\omega_{T^*L}$。解 $\iota_{X_t}\omega_t=-\alpha$ 得流 $\varphi_t$，最后 $\varphi_1\circ\Phi$ 即为所求辛微分同胚。
+
+**老师（拓展）**：Lagrangian 相交与嵌入有哪些标志性结果？
+
+**学生**：Arnold–Lagrangian 相交猜想：$L_1=\varphi(L_0)$ 为 Hamilton 同胚像且横截时
+$$\#(L_0\cap L_1)\ge\dim H_*(L_0;\mathbb Z_2),$$
+由 Floer 在 $\pi_2(M,L)=0$ 时证明。Gromov 不嵌入定理：标准 $\mathbb R^{2n}$ 中不存在闭 Lagrangian 子流形（用 $\omega_0$ 精确与可去奇点导出的能量-边界矛盾）。此外 Audin 猜想、displaceability 与 displacement energy 是活跃主题；在镜像对称中 Fukaya 范畴正以 Lagrangian 为对象。

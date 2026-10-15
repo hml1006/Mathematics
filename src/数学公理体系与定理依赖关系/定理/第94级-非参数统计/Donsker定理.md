@@ -160,3 +160,17 @@ $$
 **4. 不变原理与随机游走应用。** 部分和形式的 Donsker 定理给出随机游走（排队系统、保险风险模型、随机游走极值）的重标度极限，是应用概率论中"用布朗运动替代离散模型"的合法性依据。
 
 **5. 推广。** 有多种方向的推广：相依数据的 Donsker 定理（混合序列、鞅差序列）、高维与函数型数据的 Donsker 定理、抽象 Donsker 定理（Dudley 的 $\ell^\infty$ 版本，用度量熵刻画 Donsker 类）、bootstrap 的 Donsker 定理（Efron 经验 bootstrap 在 $\ell^\infty$ 中收敛于同一布朗桥）。
+
+## 课堂问答
+
+**老师**：Donsker 定理把中心极限定理提升到"整条随机函数"，极限为什么与原始分布无关？
+
+**学生**：结论是 $S_n(t)=\frac{1}{\sqrt{n}}\sum_{k=1}^{\lfloor nt\rfloor}X_k$（线性插值）在 $\mathcal{C}[0,1]$ 中弱收敛到标准布朗运动 $B$，而布朗运动的有限维分布仅由 $\min(s,t)$ 决定，与 $X_i$ 的具体分布无关。证明走 Prokhorov 路线：有限维分布收敛（CLT 加 Cramér-Wold）加胎紧性（用极大不等式控制连续模），极限必为布朗运动。误区：应用连续映射定理时泛函必须对一致范数连续。
+
+**老师（追问）**：经验过程版本凭什么收敛到布朗桥？
+
+**学生**：$\alpha_n(t)=\sqrt{n}(F_n(t)-F(t))$ 经概率积分变换 $U_i=F(X_i)$ 化为均匀情形；其有限维协方差为 $\min(u,v)-uv$，正是布朗桥 $\mathbb{G}(t)=B(t)-tB(1)$ 的协方差，配合紧性即得 $\alpha_n\Rightarrow\mathbb{G}\circ F$。
+
+**老师（拓展）**：这如何解释 K-S 检验为何可查表且分布无关？
+
+**学生**：因为 $D_n=\sup_t|F_n(t)-F(t)|$ 是 $\alpha_n$ 的连续泛函，由连续映射定理 $\sqrt{n}D_n\Rightarrow\sup_u|\mathbb{G}(u)|$，其分布即 Kolmogorov 分布 $K(x)=1-2\sum_{k\ge1}(-1)^{k-1}e^{-2k^2x^2}$，与 $F$ 无关。

@@ -111,3 +111,17 @@ $$H^{q}\bigl(X,\Omega^{n}\otimes L\bigr)=0\qquad(q\ge1),$$
 - **非 Kähler 与 Hermite 情形**：一般 Hermite 流形上出现额外的一阶挠率项（"torsion"），得到 Demailly 的 BKN 型不等式。
 - **向量丛与 Nakano 正性**：把 $E$ 取为高秩丛并讨论 Nakano 正性/半正性，得到 Nakano 消没定理与弱正性理论。
 - **乘子理想层与 $L^{2}$ 方法**：BKN 与 Ohsawa–Takegoshi 延拓结合，是 Siu、Demailly、Hacon–McKernan 等解决代数几何中开猜想的关键工具。
+
+## 课堂问答
+
+**老师**：BKN 恒等式 $\Box_{\bar\partial}=\Delta'+[\sqrt{-1}\Theta(E),\Lambda]$ 里，为什么右边只剩一个零阶项？
+
+**学生**：因为右端的二阶项与一阶项在 Kähler 条件下全部相消。用 Kähler 恒等式 $[\Lambda,\partial]=\sqrt{-1}\bar\partial^*$、$[\Lambda,\bar\partial]=-\sqrt{-1}\partial^*$ 把 $\Box_{\bar\partial}=\bar\partial\bar\partial^*+\bar\partial^*\bar\partial$ 中的 $\bar\partial^*$ 换掉，再用 $\partial\bar\partial+\bar\partial\partial=0$ 与曲率交换子 $[\nabla^{1,0},\nabla^{0,1}]=\Theta(E)$ 整理，主部恰是联络 Laplacian $\Delta'$，唯一消不掉的就是曲率项 $[\sqrt{-1}\Theta(E),\Lambda]$。它保 $(p,q)$ 型（$\Theta$ 是 $(1,1)$-形式、$\Lambda$ 降 $(1,1)$ 次），故为零阶算子。
+
+**老师（追问）**：为什么这个零阶项是"正性导致消没"的引擎？
+
+**学生**：对 $\Box_{\bar\partial}$-调和的 $u$ 取内积，得 $0=\langle\Box_{\bar\partial}u,u\rangle=\|\nabla u\|^2+\langle[\sqrt{-1}\Theta(E),\Lambda]u,u\rangle$。$\Delta'$ 项非负，而 $\sqrt{-1}\Theta(E)>0$ 时在 $(0,q)$-形式（$q\ge1$）上 $[\sqrt{-1}\Theta(E),\Lambda]\ge cq>0$，两项之和要为零只能 $u=0$。取 $E=K_X\otimes L$（$L$ 正）即得 Kodaira 消没。这正是 Bochner 型"曲率正蕴含刚性"的复几何范式。
+
+**老师（拓展）**：如果流形不是 Kähler，这条恒等式会变成什么样？
+
+**学生**：非 Kähler（一般 Hermite）时 Kähler 恒等式多出与挠率（$d\omega$）相关的项，二阶一阶项不再完全相消，于是得到带一阶 torsion 项的 Demailly 型 BKN 不等式：除曲率项外还得处理挠率，消没定理便需要额外的正性/紧性条件。把 $E=\mathcal O$（$\Theta=0$）代回，恒等式退化为 Kähler 恒等式 $\Box_{\bar\partial}=\Delta'$，即 $\Delta_d=2\Delta_{\bar\partial}=2\Delta_\partial$。

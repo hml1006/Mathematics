@@ -279,3 +279,17 @@ $$\text{ind}(D) = \text{sign}(M) = \int_M L(TM)$$
 **导出代数几何**：在导出代数几何框架下重新理解指标定理。
 
 **同伦论方法**：使用稳定同伦论的工具研究指标定理。
+
+## 课堂问答
+
+**老师**：指标定理的 K 理论证明思路是什么？
+
+**学生**：结论：把解析指标化为 K 理论元素 $[\sigma(D)]\in K(T^*M)$，用 Thom 同构定义拓扑指标，再证明 $\mathrm{ind}(D)=\mathrm{tind}([\sigma(D)])$，其中 $\mathrm{ind}(D)=\dim\ker D-\dim\mathrm{coker}D$。
+
+**老师（追问）**：为什么指标只依赖象征类？
+
+**学生**：因为椭圆算子的指标在连续形变下不变，而象征类 $[\sigma(D_t)]$ 在 $K(T^*M)$ 中恒定，于是指标成为 $K(T^*M)\to\mathbb Z$ 的群同态。常见误区：以为要解每个算子，其实靠 K 理论函子性与 Bott 周期性把问题约化到 $\mathbb R^N$ 上验证。
+
+**老师（拓展）**：显式公式长什么样？
+
+**学生**：结论：$\mathrm{ind}(D)=(-1)^n\int_{T^*M}\mathrm{ch}([\sigma(D)])\cdot\mathrm{td}(T^*M\otimes\mathbb C)$。特例：de Rham 算子给出 Gauss-Bonnet，Dirac 算子给出 $\hat A$ 亏格，signature 算子给出 $L$ 类，三者分别对应 Euler 类、$\hat A$ 类与 Hirzebruch $L$ 类。

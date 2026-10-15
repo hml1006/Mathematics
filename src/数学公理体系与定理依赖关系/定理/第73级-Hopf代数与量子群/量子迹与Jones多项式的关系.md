@@ -45,3 +45,21 @@ $$
 ## 五、应用与意义
 
 该定理使 Jones 多项式有了深刻的量子群诠释，开创了"量子不变量"研究：把它推广到任意量子群与任意表示即得 Reshetikhin-Turaev 不变量、Witten-Turaev-Viro 3 流形不变量，与 Chern-Simons 拓扑量子场论（$SU(2)$）对应。它在低维拓扑、拓扑量子计算（拓扑维度、简并基态的信息编码）与统计力学（可积模型）之间架起桥梁，也是纽结表、DNA 拓扑与链环分类研究的重要工具。
+
+## 课堂问答
+
+**老师**：Jones 多项式怎么用量子群算出来？
+
+**学生**：用 $U_q(\mathfrak{sl}_2)$ 的二维表示与 $R$-矩阵把纽结配成辫子，再取量子迹。等价地，对闭辫子 $\beta\in B_n$，
+
+$$
+V_L(t)=\frac{(-t^{-3/4})^{w(\beta)}}{d^{\,n-1}}\operatorname{qtr}(\beta),\qquad \operatorname{qtr}(f)=\operatorname{tr}(f\circ K^{\otimes n}),\quad d=q+q^{-1},\ t=q^4.
+$$
+
+**老师（追问）**：量子迹凭什么保证给出的是纽结不变量？
+
+**学生**：$R$-矩阵在 $V_1$ 上给出 $B_n$ 的表示 $\sigma_i\mapsto\operatorname{id}^{\otimes(i-1)}\otimes\check R\otimes\operatorname{id}^{\otimes(n-i-1)}$（$\check R=\tau\circ R$）。先验证 skein 关系：$\operatorname{qtr}(\operatorname{id})=q+q^{-1}=d$，且 $\operatorname{qtr}(\sigma_i)-\operatorname{qtr}(\sigma_i^{-1})=(t^{1/4}-t^{-1/4})\operatorname{qtr}(\operatorname{id})$，与 Kauffman 括号一致；再由 Alexander 定理化任一链环为闭辫子，并证明在 Markov 移动（共轭与稳定化）下不变，从而良定义且满足 Jones 多项式公理。
+
+**老师（拓展）**：这套构造能推广多远？
+
+**学生**：把 $U_q(\mathfrak{sl}_2)$ 换成任意量子群、$V_1$ 换成任意表示，同样的"$R$-矩阵表示 + 量子迹"即给出 Reshetikhin–Turaev 不变量，并与 Chern-Simons 拓扑量子场论对应。它把低维拓扑、可积统计模型与拓扑量子计算连成一体。

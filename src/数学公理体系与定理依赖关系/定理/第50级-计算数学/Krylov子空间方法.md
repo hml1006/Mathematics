@@ -103,3 +103,17 @@ $$
 且收敛速度为 $2\left(\frac{\sqrt{\kappa} - 1}{\sqrt{\kappa} + 1}\right)^k$，其中 $\kappa = \kappa(A)$ 是条件数。
 
 **推论**（预处理）：Krylov 方法的收敛速度取决于矩阵的谱性质。通过预处理 $M^{-1}Ax = M^{-1}b$（或 $M^{-1/2} A M^{-1/2} \tilde{x} = \tilde{b}$），可以降低条件数，加速收敛。常用的预处理技术包括 Jacobi、SSOR、ILU 和不完全 Cholesky 分解。
+
+## 课堂问答
+
+**老师**：Krylov 方法为何"只需要矩阵-向量乘积"？
+
+**学生**：结论：近似解在 $\mathcal K_k(A,r_0)=\mathrm{span}\{r_0,Ar_0,\dots,A^{k-1}r_0\}$ 里选，构造基只需反复乘 $A$。Arnoldi 用 Gram-Schmidt 把 $A$ 约化为上 Hessenberg $H_k$，满足 $AV_k=V_{k+1}\tilde H_k$。误区：以为要显式访问矩阵元素，其实完全不需要。
+
+**老师（追问）**：GMRES 和 CG 的最优性分别最小化什么？
+
+**学生**：GMRES 最小化残差 $\|b-Ax_k\|_2=\min\|\beta e_1-\tilde H_k y\|_2$，对一般非对称适用；CG 只对对称正定，最小化 $A$-范数误差 $\|x_k-x^*\|_A$。两者都在同一 Krylov 子空间里，但度量的量不同。
+
+**老师（拓展）**：对称情形 Arnoldi 退化成什么？为何 CG 能有短递推？
+
+**学生**：退化为 Lanczos，$A$ 投影成三对角 $T_k$。对称性使递推只需保留前两个向量，故 CG 是短递推、存储 $O(n)$；而一般 GMRES 需保存全部基，存储和代价随 $k$ 增长。

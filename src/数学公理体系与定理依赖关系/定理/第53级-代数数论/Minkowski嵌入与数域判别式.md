@@ -184,3 +184,17 @@ $$
 **5. 迹形式与代数数论。** 迹形式 $T(x,y)=\mathrm{Tr}(xy)$ 给出 $\mathcal O_K$ 的对偶格与**不同理想**（different）$\mathfrak D_{K/\mathbb Q}$ 的刻画，进而给出判别式的理想论描述 $d_K=N(\mathfrak D)$ 与 Riemann–Roch 型定理（不同理想–判别式定理）。
 
 **6. 计算与算法。** Minkowski 嵌入与判别式界限是计算数域表、判别式分类与类群计算（如经 LLL 约化求整基与短向量）的核心工具。
+
+## 课堂问答
+
+**老师**：判别式到底是哪一个矩阵的行列式？它和格体积是什么关系？
+
+**学生**：$d_K=\det(\operatorname{Tr}_{K/\mathbb Q}(\omega_i\omega_j))=\det(\sigma_i(\omega_j))^2$，即迹形式在整基下的行列式。Minkowski 嵌入 $\iota(x)=(\sigma_1(x),\dots,\sigma_{r_1}(x),\sigma_{r_1+1}(x),\dots)$ 把 $\mathcal O_K$ 送成 $\mathbb R^{r_1}\times\mathbb C^{r_2}\cong\mathbb R^n$ 中的满秩格，其余体积为 $\operatorname{covol}(\iota(\mathcal O_K))=2^{-r_2}\sqrt{|d_K|}$。
+
+**老师（追问）**：判别式怎么控制"哪些素数分歧"？
+
+**学生**：有理素数 $p$ 在 $K$ 中分歧 $\iff p\mid d_K$。配合 Minkowski 判别式界限 $|d_K|\ge(\frac{n^n}{n!})^2(\frac\pi4)^{2r_2}>1$（$n\ge2$），立刻得到：每个数域只有有限多个分歧素数，且 $n\ge2$ 时不存在无分歧扩张（因为那会要求 $|d_K|=1$）。
+
+**老师（拓展）**：基变换公式和常见误区？
+
+**学生**：换 $\mathbb Q$-基时 $(\beta_i)=(\alpha_j)A$ 给出 $\operatorname{disc}(\beta_1,\dots,\beta_n)=\det(A)^2\operatorname{disc}(\alpha_1,\dots,\alpha_n)$，故整基实现最小判别式；对子格 $\Lambda=\mathbb Z\beta_1\oplus\cdots\oplus\mathbb Z\beta_n\subseteq\mathcal O_K$ 更有 $\operatorname{disc}(\beta)=[\mathcal O_K:\Lambda]^2 d_K$。误区是以为判别式会随基改变——它只差一个平方因子，作为数域的不变量（在选定整基后）完全确定。

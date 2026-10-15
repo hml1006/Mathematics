@@ -98,3 +98,17 @@ $$\|\Phi(\lambda)\|=\|\lambda I\|=|\lambda|\,\|I\|=|\lambda|,$$
 - **Gelfand–Mazur 的实版本**：$\mathbb R$ 上的可除 Banach 代数可有 $\mathbb R,\mathbb C,\mathbb H$ 等，非唯一。
 - **非结合情形**：在 Jordan–Banach 代数中有相应的"Gelfand–Mazur 型"定理（如 Wright–Youngson 定理），断言某些不可逆元结构的唯一性。
 - **局部凸版本**：在局部凸可除代数中定理不总成立，说明 Banach 范数的完备性不可缺。
+
+## 课堂问答
+
+**老师**：复 Banach 可除代数凭什么只能是 $\mathbb C$，关键在哪一步？
+
+**学生**：结论：$A$ 等距同构于 $\mathbb C$。关键在谱非空：若 $\sigma(a)=\emptyset$，预解算子 $R(\lambda)=(\lambda I-a)^{-1}$ 是整函数，且 $|\lambda|>\|a\|$ 时 $\|R(\lambda)\|\le(|\lambda|-\|a\|)^{-1}\to0$ 故有界，由 Liouville 定理得 $R\equiv0$，与 $R(\lambda)$ 可逆矛盾。
+
+**老师（追问）**：为什么取 $\lambda\in\sigma(a)$ 就能逼 $a$ 是标量？
+
+**学生**：因为 $\lambda\in\sigma(a)$ 意味着 $a-\lambda I$ 不可逆，可除性假设说不可逆元只能为 $0$，于是 $a-\lambda I=0$，即 $a=\lambda I$。常见误区：把"复"字去掉，实域上四元数 $\mathbb H$ 就是可除 Banach 代数却不同构于 $\mathbb C$。
+
+**老师（拓展）**：这条定理怎么成为 Gelfand 理论的枢纽？
+
+**学生**：结论：它给出交换 Banach 代数的特征标。对极大理想 $M$，$B/M$ 是含单位可除 Banach 代数，故 $B/M\cong\mathbb C$，得到特征标 $\varphi_M$，进而 Gelfand 变换 $b\mapsto\widehat b$ 把 $B$ 实现为极大理想空间上的连续函数代数。

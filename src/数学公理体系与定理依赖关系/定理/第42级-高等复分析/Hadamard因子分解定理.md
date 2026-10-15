@@ -63,3 +63,19 @@ $$f(z) = z^m e^{P(z)} \prod_{n=1}^\infty E_{p}\left(\frac{z}{a_n}\right)$$
 $$\sin(\pi z) = \pi z e^{P(z)} \prod_{n=1}^\infty \left(1 - \frac{z^2}{n^2}\right)$$
 由对称性，$P(z)$ 是常数，由 $\lim_{z\to 0} \sin(\pi z)/z = \pi$ 得 $P(z) = 0$，故
 $$\sin(\pi z) = \pi z \prod_{n=1}^\infty \left(1 - \frac{z^2}{n^2}\right)$$
+
+## 课堂问答
+
+**老师**：Weierstrass 分解中的整函数因子 $e^{g(z)}$，为什么在有限阶时会退化成 $e^{P(z)}$？
+
+**学生**：结论：阶为 $\rho$ 的整函数满足 $f(z)=z^m e^{P(z)}\prod E_{\lfloor\rho\rfloor}(z/a_n)$，其中 $P$ 是次数不超过 $\rho$ 的多项式。因为当 $g$ 不是多项式时 $e^g$ 的增长阶是无穷，而比较阶得 $\rho(e^g)\le\rho<\infty$，故 $g$ 只能是多项式，且次数不超过 $\rho$。
+
+**老师（追问）**：零点收敛指数凭什么不超过阶 $\rho$？
+
+**学生**：由 Jensen 公式
+$$\int_0^r\frac{n(t)}{t}\,dt\le\frac{1}{2\pi}\int_0^{2\pi}\log|f(re^{i\theta})|\,d\theta-\log|f(0)|,$$
+结合 $M(r)$ 增长阶为 $\rho$，可推出零点收敛指数 $\rho_1\le\rho$；于是取 $p=\lfloor\rho\rfloor$ 便有 $\sum|a_n|^{-(p+1)}<\infty$，乘积收敛、初等因子的指数有统一上界。
+
+**老师（拓展）**：举一个漂亮的例子。
+
+**学生**：$\sin(\pi z)$ 的阶为 $1$，零点为一切整数，故 $\sin(\pi z)=\pi z\,e^{P(z)}\prod_{n\ge1}(1-z^2/n^2)$；由它是偶函数以及 $\lim_{z\to0}\sin(\pi z)/z=\pi$，定出 $P\equiv0$，这正是经典的 Euler 乘积。

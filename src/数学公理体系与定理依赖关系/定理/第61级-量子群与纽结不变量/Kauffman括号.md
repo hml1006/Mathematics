@@ -42,3 +42,17 @@ $$
 
 ## 五、应用与意义
 Kauffman 括号提供了计算 Jones 多项式的直观算法，是统计力学中 Potts 模型与 Temperley–Lieb 代数的桥梁；它也是 Khovanov 同调的组合起点，在现代低维拓扑中仍具有重要价值。
+
+## 课堂问答
+
+**老师**：Kauffman 括号与 Jones 多项式是什么关系？为什么前者不是不变量？
+
+**学生**：结论：括号 $\langle D\rangle\in\mathbb Z[A^{\pm1}]$ 只是链环图的组合量，乘 writhe 修正后才不变。规则为 $\langle\bigcirc\rangle=1$、$\langle D\sqcup\bigcirc\rangle=(-A^2-A^{-2})\langle D\rangle$ 与交叉拆接 $\langle\text{交叉}\rangle=A\langle A\text{-平滑}\rangle+A^{-1}\langle B\text{-平滑}\rangle$。令 $X_D(A)=(-A^3)^{-w(D)}\langle D\rangle$，则 $X_D$ 是 Reidemeister 不变量；取 $A=t^{-1/4}$ 得 $V_D(t)$。
+
+**老师（追问）**：括号在 R-I 下差了什么因子？
+
+**学生**：差 $-A^{\pm3}$。单个正拧结被平滑后净效应为 $-A^3\langle\,|\,\rangle$，负拧结为 $-A^{-3}$。因为 writhe $w(D)$ 恰统计正负交叉数之差，乘以 $(-A^3)^{-w(D)}$ 就把每个 R-I 的因子逐一抵消，这正说明括号本身不是不变量、修正后才是不变量。
+
+**老师（拓展）**：这套组合定义的深层意义？
+
+**学生**：它把不变量化归为纯状态求和，是统计力学 Potts 配分函数的翻版，也是 Temperley–Lieb 代数的图形实现。作为 Khovanov 同调的组合起点，它的拆分交叉思想给出范畴化入口。

@@ -108,3 +108,17 @@ $$\int_X\operatorname{ch}(E)\operatorname{td}(X)=\int_X\left(r+c_1(E)\right)\lef
 - **Atiyah–Singer 指标定理**：把 HRR 推广到任意椭圆算子与 Dirac 型算子（$\hat A$-亏格、Signature 定理）。
 - **等变 HRR**：Atiyah–Segal–Singer 的等变指标定理（Lefschetz 不动点公式的推广）。
 - **特征 $p$ 与晶体情形**：Grothendieck–Riemann–Roch 在代数 $K$ 理论、晶体上同调、以及 Riemann–Roch 对奇异簇的推广（Verdier 的 RR）。
+
+## 课堂问答
+
+**老师**：Riemann-Roch-Hirzebruch 把"上同调维数的交错和"变成纯拓扑积分。它本质上是哪个定理的特例？
+
+**学生**：是指标定理的特例。由 Dolbeault 定理，$\sum_q(-1)^q\dim H^q(X,E)=\mathrm{ind}(\bar\partial_E)$，即 Dolbeault 复形（偶次到奇次）的解析指标。Atiyah-Singer 指标定理说解析指标等于拓扑指标 $\int_X\mathrm{ch}(E)\mathrm{td}(X)$，其中 $\bar\partial_E$ 的符号类给出 $\mathrm{ch}(E)$，流形贡献 $\mathrm{td}(X)=\prod_j\frac{x_j}{1-e^{-x_j}}$，$x_j$ 是 $T^{1,0}X$ 的 Chern 根。
+
+**老师（追问）**：不用指标定理，曲线情形能直接验证吗？
+
+**学生**：能。曲线 $X$ 上 $\mathrm{ch}(E)=r+c_1(E)$、$\mathrm{td}(X)=1+\frac12c_1(X)$，积分得 $\int_X(r+c_1(E))(1+\frac12c_1(X))=r(1-g)+\deg E$，而 Serre 对偶给 $\chi(X,E)=\deg E+r(1-g)$，两边一致。曲面情形则由 Noether 公式 $\chi(\mathcal O_X)=\frac{c_1^2+c_2}{12}$ 实现。
+
+**老师（拓展）**：分裂原理在定理证明中扮演什么角色？
+
+**学生**：它把计算从一般丛约化到线丛之和。取旗丛 $Fl(T^{1,0}X)$ 使 $\pi^*(T^{1,0}X)=\bigoplus_jL_j$、$\pi^*(E)=\bigoplus_iM_i$，$c_1(L_j)=x_j$、$c_1(M_i)=y_i$，于是 $\mathrm{ch}(E)=\sum_ie^{y_i}$、$\mathrm{td}(X)=\prod_j\frac{x_j}{1-e^{-x_j}}$，展开取 $2n$ 次分量即得由 Chern 数组成的拓扑不变量。其相对形式 Grothendieck-Riemann-Roch 进一步推广到态射 $f:X\to Y$，成为相交理论的核心。

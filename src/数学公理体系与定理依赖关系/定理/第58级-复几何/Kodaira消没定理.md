@@ -142,3 +142,17 @@ Kawamata-Viehweg 消没定理是 Kodaira 消没定理在 $(\mathbb{Q})$-除子�
 ### 7. Hodge 结构的研究
 
 消没定理在 Calabi-Yau 流形（$K_X$ 平凡）上给出 $H^q(X, L^{\otimes m}) = 0$（$q > 0$，$m > 0$），简化了 Hodge 数 $h^{p,q}$ 的计算。
+
+## 课堂问答
+
+**老师**：为什么"正"能制造"零"？消没定理背后的直觉在哪里？
+
+**学生**：结论是紧 Kähler 流形 $X^n$ 上正线丛 $L$ 满足 $H^q(X,K_X\otimes L^{\otimes m})=0$（$q>0$）。直觉在 Bochner-Kodaira-Nakano 恒等式 $\Box_{\bar\partial}=\Delta'+[\sqrt{-1}\Theta_L,\Lambda]$：对 $L$-值 $(0,q)$-形式 $u$（$q\ge1$）取内积，$\Delta'$ 项 $=\|\nabla u\|^2\ge0$，而曲率项由 $\sqrt{-1}\Theta_L>0$ 给出下界 $\ge cq\|u\|^2$；两者相加迫使调和形式 $u=0$，再由 Hodge 定理 $H^q\cong\mathcal H^{0,q}=0$。这就是"曲率正则上同调消没"的标准机制。
+
+**老师（追问）**：一般的 Akizuki–Nakano 形式消没哪些 $(p,q)$？为什么阈值偏偏是 $p+q>n$？
+
+**学生**：一般形式为 $H^q(X,\Omega^p_X\otimes L)=0$ 当 $p+q>n$。原因是在 $(p,q)$-形式上曲率算子 $[\sqrt{-1}\Theta_L,\Lambda]$ 的下界是 $c(p+q-n)$：收缩算子 $\Lambda$ 每作用一次就"吃掉"一个方向，只有被吃剩的次数足够少（$p+q>n$）时余下特征值之和才严格为正。取 $p=n$ 即 $H^q(X,K_X\otimes L)=0$，正是经典 Kodaira 消没。
+
+**老师（拓展）**：消没定理除了服务嵌入定理，还怎样简化 Riemann-Roch？
+
+**学生**：因为 $q>0$ 时 $h^q=0$，Hirzebruch-Riemann-Roch 里的交错和塌缩成单项：$h^0(X,L^{\otimes m})=\chi(X,L^{\otimes m})=\int_X\mathrm{ch}(L^{\otimes m})\mathrm{td}(X)$，右端是 $m$ 的多项式，主项 $\frac{m^n}{n!}\int_X c_1(L)^n$。这既保证截面足够多来嵌入，又把上同调维数变成纯代数计算。它的代数推广 Kawamata-Viehweg 消没，更是极小模型纲领中基点自由定理与锥定理的基石。

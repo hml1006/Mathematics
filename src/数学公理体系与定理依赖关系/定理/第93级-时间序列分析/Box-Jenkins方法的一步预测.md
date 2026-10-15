@@ -47,3 +47,17 @@ $$
 ## 五、应用与意义
 
 Box-Jenkins 方法的一步（及多步）预测是时间序列预测的支柱，广泛应用于经济预测、销售预测、信号处理等。它确立了"最小均方误差"框架下条件期望即最优预测的原则，并通过残差递推将不可观测的新息转化为可计算量，是模型识别、估计与预测一体化的理论核心。
+
+## 课堂问答
+
+**老师**：为什么最优一步预测就是条件期望？
+
+**学生**：结论是在均方误差准则下 $\hat{X}_{t+1|t}=\mathbb{E}[X_{t+1}\mid\mathcal{F}_t]$ 唯一最优。把 ARMA 展开为 $X_{t+1}=\phi_1X_t+\cdots+\phi_pX_{t-p+1}+\varepsilon_{t+1}+\theta_1\varepsilon_t+\cdots+\theta_q\varepsilon_{t-q+1}$，因 $\varepsilon_{t+1}$ 与 $\mathcal{F}_t$ 独立、条件期望为 0，取条件期望即得 $\hat{X}_{t+1|t}=\phi_1X_t+\cdots+\phi_pX_{t-p+1}+\theta_1\hat{\varepsilon}_t+\cdots+\theta_q\hat{\varepsilon}_{t-q+1}$。预测误差恰为 $\varepsilon_{t+1}$，方差 $\sigma^2$。误区：新息 $\varepsilon_t$ 不可观测，须用递推残差 $\hat{\varepsilon}_s=X_s-\hat{X}_{s|s-1}$ 近似。
+
+**老师（追问）**：多步预测里残差项为什么会"消失"？
+
+**学生**：因为 $s>t$ 时 $\hat{\varepsilon}_{s|t}=\mathbb{E}[\varepsilon_s\mid\mathcal{F}_t]=0$，条件期望对未来新息一律取零，多步预测只是把已实现部分推进、未来新息置零，方差随之累加为 $\sigma^2(1+\psi_1^2+\cdots+\psi_{k-1}^2)$。
+
+**老师（拓展）**：这个"条件期望即最优"的依据是哪条更一般的定理？
+
+**学生**：就是最小均方误差准则：$\mathbb{E}[Y\mid X]$ 是 $L^2$ 中的正交投影，唯一最小化 $\mathbb{E}[(Y-g(X))^2]$。Box-Jenkins 一步预测是它在时间序列滤波上的特例，也道出了 Kalman 更新步的本质。

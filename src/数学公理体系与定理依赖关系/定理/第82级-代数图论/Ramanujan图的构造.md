@@ -48,3 +48,17 @@ Ramanujan 图是"最优展开图"：对于 $d$-正则图，Alon–Boppana 定理
 ## 五、应用与意义
 
 LPS 构造是首次显式构造出 Ramanujan 图族，在图论、数论（四平方和、Kloosterman 和、Weil 猜想）与表示论（$PSL(2,q)$ 的特征标）之间架起深刻桥梁。Ramanujan 图作为最优展开图，广泛用于设计高容错通信网络、纠错码（expander codes）、伪随机数生成器与去随机化方法。
+
+## 课堂问答
+
+**老师**：$d$-正则图里，凭什么说 $|\lambda|\le2\sqrt{d-1}$ 就是"最优"？这个数从哪里冒出来的？
+
+**学生**：它正好卡在 Alon–Boppana 下界的极限上，不能再小。对 $d$-正则图，除平凡特征值 $d$ 外第二大特征值绝对值至少是 $2\sqrt{d-1}-o(1)$，所以把上界也定在 $2\sqrt{d-1}$ 就是理论最优，这样的图叫 Ramanujan 图。LPS 构造的 $X^{p,q}=\operatorname{Cay}(PSL(2,q),S)$ 有 $q(q^2-1)/2$ 个顶点，除 $p+1$ 外全部 $|\lambda|\le2\sqrt p$。
+
+**老师（追问）**：生成集 $S$ 是怎么来的？为什么恰好是 $p+1$ 个元素？
+
+**学生**：来自 Lagrange 四平方和 $a_0^2+a_1^2+a_2^2+a_3^2=p$ 的解，把 $(a_0,a_1,a_2,a_3)$ 映成矩阵 $\begin{bmatrix}a_0+a_1\sqrt{-1}&a_2+a_3\sqrt{-1}\\-a_2+a_3\sqrt{-1}&a_0-a_1\sqrt{-1}\end{bmatrix}\pmod q$。解有 $8(p+1)$ 组，在 $PSL(2,q)$ 里约化后恰得 $p+1$ 个元素，连同逆元构成对称生成集，所以图是 $(p+1)$-正则。容易搞错的是：$8(p+1)$ 是整数解个数，而非群元素个数，商掉单位和同伴后才是 $p+1$。
+
+**老师（拓展）**：那"所有非平凡特征值都 $\le2\sqrt p$"这一步靠什么保证？
+
+**学生**：靠特征标公式 $\lambda_\chi=\sum_{s\in S}\chi(s)$：Cayley 图的每个不可约特征标给一个特征值。非平凡 $\chi$ 下这个和是 Kloosterman 型指数和，其上界 $|\sum_{s\in S}\chi(s)|\le2\sqrt p$ 正是 Deligne 证明的 Weil 猜想（Ramanujan 猜想的数论版本）。围长下界也顺带得到：若存在长 $2k$ 的圈，则 $a_0^2+\cdots+a_3^2=p^k$ 模 $q$ 有非平凡解，需 $p^k\ge q$，故 $g\ge2\log_p q-\log_p4$。

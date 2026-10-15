@@ -29,3 +29,23 @@ Lurie 证明思路：把 $\operatorname{Bord}_d^{\mathrm{fr}}$ 视作 $(SimH^G)_
 ## 五、应用与意义
 
 Bordism 假设是扩展 TQFT、导出的辅-特定对象理论（Alg/$\mathbb E_\infty$）的立足点：它把 TQFT 与可定向对象、$\mathbb E_d$-代数与高范畴退化联系，广泛用于更高辫结构、Bor数码链传延以及数学物理的全息/TFT 现代架构。
+
+## 课堂问答
+
+**老师**：什么是"完全扩展 TQFT"？为什么 Lurie 的 Bordism 假设说它由点在某个对象上的值决定？
+
+**学生**：结论：完全扩展 TQFT 是 $(\infty,d)$-范畴间的对称幺半函子，它由点处的值决定，存在等价
+
+$$
+\operatorname{Fun}^{\otimes}(\operatorname{Bord}_d^{\mathrm{fr}},\mathcal C)\;\cong\;\Omega^{\mathrm{fr}}\mathcal C .
+$$
+
+右端是 $\mathcal C$ 中"$d$ 次框架化 loop 空间"的对象，也就是 $\mathbb E_d$-代数。
+
+**老师（追问）**：为什么只需点值就够了？"扩展"二字到底扩展了什么？
+
+**学生**：因为在 $\operatorname{Bord}_d^{\mathrm{fr}}$ 中一切由点生成：$0$-态射是带框架的点、$1$-态射是 $1$-cobordism，一直到 $d$-态射是 $d$-cobordism，任何框架化流形都能分解成把这些点粘合起来，函子性迫使整个 $Z$ 由 $Z(*)$ 唯一确定。"扩展"指把赋值从 $d$ 维流形逐层降到 $k$ 维子流形（$k=0,1,\dots,d$），低维赋值自动携带高维信息。常见误区：把它当成"又一条公理"，其实它是 $\operatorname{Bord}_d^{\mathrm{fr}}$ 作为自由 $(\infty,d)$-范畴的泛性质。
+
+**老师（拓展）**：这个假设与经典 Atiyah 公理、以及 $\mathbb E_d$-代数有什么联系？
+
+**学生**：取 $\mathcal C$ 为普通范畴、只看顶层态射，就回到 Atiyah–Segal 公理；而 $\Omega^{\mathrm{fr}}\mathcal C$ 恰是 $\mathbb E_d$-代数，所以 Bordism 假设把"分类 TQFT"等价地翻译成"求 $\mathbb E_d$-代数"，让量子场论的分类问题与大代数拓扑中的操作同伦接轨。

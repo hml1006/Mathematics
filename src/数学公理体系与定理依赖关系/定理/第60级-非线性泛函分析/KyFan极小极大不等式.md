@@ -104,6 +104,20 @@ $$
 - **不动点理论的统一入口**：KKM 引理、Fan 截面定理、角谷（Kakutani）型集值不动点定理与 [Brouwer不动点定理](../第34级-代数拓扑/Brouwer不动点定理.md) 构成同一技术族，本不等式是其中"分析形式"的代表。
 - **非线性分析的工具箱**：它与 Ekeland 变分原理、山路引理、Brezis–Nirenberg–Stampacchia 型结果一起，构成研究非线性方程可解性、多解性与均衡问题的基础工具集。
 
+## 课堂问答
+
+**老师**：Ky Fan 不等式的假设这么弱——只要拟凹加下半连续——怎么还够用？
+
+**学生**：因为它只需"单侧"结论 $\inf_x\sup_y\varphi(x,y)\le\sup_y\varphi(y,y)$，不需要鞍点等式。证明把它化为集合相交：令 $\gamma=\sup_y\varphi(y,y)$、$F(y)=\{x:\varphi(x,y)\le\gamma\}$，只要 $\bigcap_yF(y)\neq\varnothing$，取出的 $x_0$ 即满足 $\sup_y\varphi(x_0,y)\le\gamma$。下半连续保证每个 $F(y)$ 闭；拟凹性保证 $\{F(y)\}$ 满足 KKM 条件；再用 Fan 引理（紧凸集上 KKM 闭集族有非空交）收口。
+
+**老师（追问）**：KKM 条件那一步是怎么从拟凹性推出来的？
+
+**学生**：取有限 $y_1,\dots,y_m$ 与凸组合 $y_0=\sum_i\lambda_iy_i$，反设 $y_0\notin F(y_i)$ 对一切 $i$，则 $\varphi(y_0,y_i)>\gamma$，取 $\mu$ 使 $\gamma<\mu\le\min_i\varphi(y_0,y_i)$。由对第二个变量的拟凹性，$\{y:\varphi(y_0,y)\ge\mu\}$ 是含全部 $y_i$ 的凸集，故含 $y_0$，于是 $\varphi(y_0,y_0)\ge\mu>\gamma$，与 $\gamma$ 的定义矛盾。所以 $y_0\in\bigcup_iF(y_i)$，KKM 条件成立。
+
+**老师（拓展）**：这套论证与 Brouwer、Sion、变分不等式的关系如何？
+
+**学生**：在紧凸情形，KKM 引理、Fan 截面定理、Ky Fan 不等式与 Brouwer 不动点定理互相等价，证明核心都是"单位分解加 Brouwer"。把拟凹加强为凹、下半连续加强为上半连续并放松紧性，就得到 Sion 型等式极小极大定理，用于鞍点存在；而当 $\varphi(x,x)\le0$ 时右端为 $0$，直接给出变分不等式与 Nash 均衡、价格均衡的存在性。它也是由对偶变分原理证明 Sion 等式的桥梁。
+
 ## 相关条目
 
 - [对偶变分原理](./对偶变分原理.md)：用本不等式证明 Sion 型极小极大等式。

@@ -59,3 +59,23 @@ $$
 ## 五、应用与意义
 
 Rademacher 复杂度泛化界是 SRM、SVM 泛化分析、核方法与回归问题中通用的工具。由于它是数据相关、且对不同函数族（如 Lipschitz 收缩、RKHS 单位球）都能给出简洁界，通常比 VC 维界更紧、更普适，是当代统计学习理论的标准模块。
+
+## 课堂问答
+
+**老师**：Rademacher 复杂度凭什么说比 VC 维界更"贴数据"？
+
+**学生**：结论：它度量假设空间去拟合随机符号的能力，界为
+
+$$
+R(h)\le\hat{R}_n(h)+2\mathfrak{R}_n(\mathcal{H})+\sqrt{\frac{\log\frac1\delta}{2n}},
+$$
+
+其中 $\mathfrak{R}_n(\mathcal{H})=\mathbb{E}_S\big[\mathbb{E}_\varepsilon\sup_{h\in\mathcal{H}}\frac1n\sum_i\varepsilon_ih(x_i)\big]$。理由分三步：先用 McDiarmid 证明 $\Phi(S)=\sup_h(R(h)-\hat{R}_n(h))$ 围绕期望集中（换一个样本时损失落在 $[0,1]$ 使差分不超过 $1/n$，得 $\mathbb{P}(\Phi-\mathbb{E}\Phi\ge t)\le e^{-2nt^2}$）；再用对称化与 Jensen 得 $\mathbb{E}\Phi\le2\mathfrak{R}_n$；最后合成概率界。
+
+**老师（追问）**：为什么换一个样本的差分恰好是 $1/n$？
+
+**学生**：因为经验风险是 $n$ 项的平均、每项损失都在 $[0,1]$ 内，替换第 $i$ 个样本只动一项，故 $\hat{R}_n(h)$ 的变化最多 $1/n$；而 $\sup$ 是 $1$-Lipschitz 的，这个 $1/n$ 界就传递给 $\Phi(S)$，于是 $|\Phi(S)-\Phi(S')|\le1/n$。误区是把经验 Rademacher 复杂度 $\hat{\mathfrak{R}}_n$ 与总体 $\mathfrak{R}_n=\mathbb{E}_S[\hat{\mathfrak{R}}_n]$ 混为一谈，界里用的是后者。
+
+**老师（拓展）**：具体族上这个界能算出多紧的结果？
+
+**学生**：对单位球 RKHS 类，用 Riesz 表示与 Cauchy-Schwarz 可得 $\mathfrak{R}_n\le\Lambda/\sqrt n$，代入后 $R(h)\le\hat{R}_n(h)+O(1/\sqrt n)$，即样本量平方根级收敛。因为它是数据相关、且对 Lipschitz 收缩与核方法都给出简洁界，所以通常比 VC 界更紧也更普适。

@@ -81,3 +81,21 @@ $\square$
 2. **环面 $T^2$**：$T^2 = S^1 \times S^1$，可以分解为 $U = S^1 \times (S^1 \setminus \{p\})$ 和 $V = (S^1 \setminus \{q\}) \times S^1$。$U$ 和 $V$ 都同伦于 $S^1$，$U \cap V$ 同伦于 $S^1 \vee S^1$。计算得 $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$。
 
 3. **楔积 $X \vee Y$**：取 $U = X$ 加 $Y$ 的一个小邻域，$V = Y$ 加 $X$ 的一个小邻域，$U \cap V$ 可缩。由 Van Kampen 定理，$\pi_1(X \vee Y) \cong \pi_1(X) * \pi_1(Y)$。
+
+## 课堂问答
+
+**老师**：Van Kampen 定理的结论是什么？
+
+**学生**：$X=U\cup V$、$U\cap V$ 非空道路连通时
+
+$$\pi_1(X,x_0)\cong\pi_1(U,x_0)*_{\pi_1(U\cap V,x_0)}\pi_1(V,x_0),$$
+
+即融合自由积，融合关系由 $i_*(\gamma)=j_*(\gamma)$ 给出。
+
+**老师（追问）**：为什么重叠部分给的是融合关系而不是自由积？
+
+**学生**：$[\gamma]\in\pi_1(U\cap V)$ 在 $U$ 与 $V$ 中经 $i_*,j_*$ 映到 $\pi_1(X)$ 后代表同一元素，故 $\ker\Phi$ 由 $i_*(\gamma)j_*(\gamma)^{-1}$ 生成，由同态基本定理得融合自由积。若 $U\cap V$ 单连通则退化自由积 $\pi_1(U)*\pi_1(V)$。
+
+**老师（拓展）**：举例与常见误区？
+
+**学生**：两个 $S^1$ 沿一点粘成 8 字得 $\mathbb Z*\mathbb Z$；环面得 $\mathbb Z\times\mathbb Z$。常见误区是在交集不连通时硬用，如 $S^1$ 被两个开弧覆盖时 $U\cap V$ 有两个分量，须改用 groupoid 版本。

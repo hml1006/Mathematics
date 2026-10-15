@@ -37,6 +37,25 @@ $$K\subseteq\mathbb{Q}(\zeta_m),$$
 ## 五、应用与意义
 
 Kronecker-Weber 定理是"算术的阿贝尔类域"的漂亮封顶：它断言 $\mathbb{Q}$ 上所有阿贝尔扩张均可由单位根显式生成——即 $\operatorname{Gal}(\mathbb{Q}^{\mathrm{ab}}/\mathbb{Q})\cong\widehat{\mathbb{Z}}^\times$（整体类域论）。它是 Langlands 纲领与全局互反律的原始模型，也激发 Hilbert 第 12 问题（对一般域寻求类似"类域"的显式构造，虚二次域用椭圆函数复数乘）。在算法上配合分圆域提供了构造所有阿贝尔扩张的实用方法。
+
+## 课堂问答
+
+**老师**：Kronecker-Weber 定理断言了什么？
+
+**学生**：$\mathbb{Q}$ 的每个有限阿贝尔扩张 $K$ 都含于某个分圆域：存在 $m$ 使 $K\subseteq\mathbb{Q}(\zeta_m)$，且 $m$ 可取为 $K$ 的导子。换言之，所有阿贝尔扩张都由单位根生成。
+
+**老师（追问）**：为什么分圆域能"装下"所有阿贝尔扩张？
+
+**学生**：因为 $\operatorname{Gal}(\mathbb{Q}(\zeta_m)/\mathbb{Q})\cong(\mathbb{Z}/m\mathbb{Z})^\times$，恰是模 $m$ 的互素剩余类群，与类域论里"模 $m$ 射线类群"的 Artin 映射相匹配。任一阿贝尔扩张对应某模 $m$ 的射线类群，而 $\mathbb{Q}(\zeta_m)$ 实现同一模的覆盖，故 $K$ 是其子域。
+
+**老师（拓展）**：举个小例子，并说说它的一般化方向。
+
+**学生**：$\sqrt2\in\mathbb{Q}(\zeta_8)$，因为
+$$
+1+\zeta_8+\zeta_8^{-1}=\sqrt2,
+$$
+故 $\mathbb{Q}(\sqrt2)$ 是分圆域的子域。总体可写成 $\operatorname{Gal}(\mathbb{Q}^{\mathrm{ab}}/\mathbb{Q})\cong\widehat{\mathbb{Z}}^\times$。它是 Langlands 纲领与 Hilbert 第 12 问题的原始模型——虚二次域需用椭圆函数的复数乘去寻求类似构造。误区是以为结论只对二次域成立。
+
 ## 相关条目
 
 - [Kronecker-Weber 定理（第36级-伽罗瓦理论）](../第36级-伽罗瓦理论/Kronecker-Weber定理.md)：与本条目为同一定理，另收录于第36级-伽罗瓦理论，可交叉参考。

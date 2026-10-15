@@ -58,3 +58,17 @@ $$1 - g = 0 - g + 1$$
 1. 典范除子 $K$ 的次数为 $\deg K = 2g - 2$。
 2. 若 $\deg D > 2g - 2$，则 $\ell(K - D) = 0$，故 $\ell(D) = \deg D - g + 1$。
 3. 若 $\deg D < 0$，则 $\ell(D) = 0$。
+
+## 课堂问答
+
+**老师**：$\ell(D)$ 与校正项 $\ell(K-D)$ 之差为什么恰好是 $\deg D-g+1$？
+
+**学生**：结论：$\ell(D)-\ell(K-D)=\deg D-g+1$。用层上同调看：$\chi(\mathcal O(D))=\dim H^0(X,\mathcal O(D))-\dim H^1(X,\mathcal O(D))$，由 Serre 对偶得 $\dim H^1=\ell(K-D)$，于是 $\ell(D)-\ell(K-D)=\chi(\mathcal O(D))$。
+
+**老师（追问）**：$\chi(\mathcal O(D))$ 怎么定出等于 $\deg D-g+1$？
+
+**学生**：它在短正合列下可加、是拓扑量，只需验证 $D=0$：紧黎曼面上全局全纯函数只有常数，故 $\ell(0)=1$，又由 Serre 对偶 $\ell(K)=g$，代入得 $1-g=0-g+1$；再对 $D=[p]$ 用加性 $\chi(\mathcal O(D))=\chi(\mathcal O)+1$，即可推广到任意除子。
+
+**老师（拓展）**：什么时候校正项会消失？
+
+**学生**：典范除子次数为 $\deg K=2g-2$。当 $\deg D>2g-2$ 时 $\ell(K-D)=0$，公式退化为 $\ell(D)=\deg D-g+1$；而当 $\deg D<0$ 时 $\ell(D)=0$。

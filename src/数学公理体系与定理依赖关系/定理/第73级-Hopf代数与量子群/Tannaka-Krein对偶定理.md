@@ -39,3 +39,17 @@ $$
 ## 五、应用与意义
 
 Tannaka-Krein 对偶是"对偶理论"的典范，它把紧群用其表示论刻画，是重建理论与量子对称（量子双、Drinfeld 对偶）、代数量子群与纤维函子理论的基础。在数学物理中，它为观测数据的对称性重建提供范式；在范畴论与代数几何（如 Tannakian 范畴）中，它奠定了"从纤维函子恢复代数群"的框架，是 Langlands 纲领与表示论统一视角的深层工具之一。
+
+## 课堂问答
+
+**老师**：一个紧李群能被它的表示范畴完全决定吗？
+
+**学生**：能。设 $F:\operatorname{Rep}(G)\to\operatorname{Vect}_{\mathbb{C}}$ 为遗忘函子，则 $G\cong\operatorname{Aut}^{\otimes}(F)$；对 Hopf 代数 $H$ 有对应版本 $H\cong\operatorname{End}^{\otimes}(F)$。
+
+**老师（追问）**：为什么 $\operatorname{Aut}^{\otimes}(F)$ 恰好还原成 $G$，不多也不少？
+
+**学生**：每个 $g\in G$ 定义自然变换 $\eta^{(g)}_V=\rho_V(g)$，因 $\rho_{V\otimes W}(g)=\rho_V(g)\otimes\rho_W(g)$ 它是保持张量积的自同构，给出同态 $G\to\operatorname{Aut}^{\otimes}(F)$。单射性：若 $\rho_V(g)=\rho_V(h)$ 对一切 $V$ 成立，由 Peter-Weyl 定理不可约表示分离点得 $g=h$。满射性：任取 $\eta$，在正则表示 $L^2(G)\cong\bigoplus_V V\otimes V^*$ 上 $\eta_{L^2(G)}$ 是 $G\times G$-等变自同构，由 Schur 引理它必是某个 $g$ 的左乘，故 $\eta=\eta^{(g)}$。
+
+**老师（拓展）**：这个原理能推广到哪？
+
+**学生**：它把"由对称性数据恢复对象"范畴化，是 Tannakian 范畴、代数量子群、量子双与纤维函子理论的基础，也是 Langlands 纲领与表示论统一视角的深层工具。

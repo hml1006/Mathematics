@@ -124,6 +124,20 @@ $$
 
 **推论**：曲率形式满足 $d^\nabla\Omega=0$，从而 Chern–Weil 构造（取不变多项式 $P$ 后 $d\,P(\Omega)=P'(d^\nabla\Omega)=0$）给出良定义的上同调类——特征类。
 
+## 课堂问答
+
+**老师**：为什么 $d^\nabla d^\nabla=\Omega\wedge\cdot$ 里的 $\Omega$ 一定是 $C^\infty$-线性的张量？
+
+**学生**：结论：因为对 $\xi\in\Omega^0(M;E)$ 计算 $d^\nabla d^\nabla\xi=(dA+A\wedge A)\wedge\xi$，右端映射不涉及 $\xi$ 的导数，故是 $C^\infty(M)$-线性的。理由：$A\wedge A$ 项正是让两次作用不互相抵消、留下曲率的来源。常见误区：以为 $d^\nabla d^\nabla=0$。
+
+**老师（追问）**：Bianchi 恒等式怎么"形式化"地掉出来？
+
+**学生**：因 $\Omega\wedge\cdot=d^\nabla d^\nabla$，对 $\Omega\wedge\xi$ 用分次 Leibniz（偶次算子无符号）得 $d^\nabla(\Omega\wedge\xi)=(d^\nabla\Omega)\wedge\xi+\Omega\wedge d^\nabla\xi$；左端又等于 $d^\nabla d^\nabla d^\nabla\xi=\Omega\wedge d^\nabla\xi$，相减即得 $(d^\nabla\Omega)\wedge\xi=0$。
+
+**老师（拓展）**：这与第二 Bianchi 恒等式、Chern–Weil 有何联系？
+
+**学生**：取 $E=TM$ 与 Levi-Civita 联络，$d^\nabla\Omega=0$ 展开即 $\nabla_XR(Y,Z)+\nabla_YR(Z,X)+\nabla_ZR(X,Y)=0$（第二 Bianchi）；而 $d^\nabla\Omega=0$ 保证 $dP(\Omega)=0$，使不变多项式 $P$ 给出良定义的特征类。第一 Bianchi 则来自挠率 $T=0$。
+
 ## 相关条目
 
 - [Yang-Mills方程](./Yang-Mills方程.md)：以 $d^\nabla F=0$（Bianchi）与 $d^\nabla\ast F=0$（场方程）为基本方程组的规范场理论。

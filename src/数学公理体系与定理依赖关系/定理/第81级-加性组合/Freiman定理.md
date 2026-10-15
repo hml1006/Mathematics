@@ -38,3 +38,17 @@ Freiman 定理（Freiman 1973）刻画小和集结构：设 $A\subseteq\mathbb{Z
 ## 五、应用与意义
 
 Freiman 定理是加性组合最深刻的结构定理，是"结构 vs 随机"二分的高端成品。它被用于 sum-product 定理、Szemerédi 定理的结构化推广、以及许多 additive 问题的分解。其高维版本与 Green-Ruzsa 化定把握了群论与随机化，被用于概率数论、常量-Ramsey 与近同盟结构；逆向 Freiman 是 additive combinatorics 教科书的核心阵地。
+
+## 课堂问答
+
+**老师**："和集不胀"的整数集有什么结构？
+
+**学生**：Freiman 定理：若 $A\subseteq\mathbb{Z}$ 有限、$|A+A|\le C|A|$，则 $A$ 含于一个广义等差数列 $P=\{a_0+a_1x_1+\cdots+a_dx_d:\ 0\le x_i<L_i\}$，且 $|P|\le f(C)|A|$、维数 $d\le d(C)$（Green–Ruzsa：$d\le C-1$），其中 $f,d$ 只依赖 $C$。这是"结构 vs 随机"二分的高端成品。
+
+**老师（追问）**：证明主线的思路是什么？
+
+**学生**：经 Ruzsa 建模把 $A$ 的大子集 $A'$ 用 Freiman 同构搬进 $\mathbb{Z}_p$（$p\le C'|A|$）保和集规模；在 $\mathbb{Z}_p$ 里由 Bogolyubov 得 $2S-2S$ 含非平凡子群 $H$（$|H|\ge p/C$）；把 $H$ 参数化为低维 GAP；再用逆同构搬回 $\mathbb{Z}$，把 $A\setminus A'$ 吸收并略为扩容；最后控制维数与尺寸。误区：维数 $d(C)$ 可随 $C$ 增长，不能要求 $d$ 是绝对常数。
+
+**老师（拓展）**：给个小例子并说明其意义？
+
+**学生**：$A=\{1,\dots,10\}$ 满足 $|A+A|=19=2\cdot 10-1$，是 $1$ 维 GAP 的子集；而平方数集 $|A+A|$ 约 $|A|^2$，属"大和集"。Freiman 定理是 sum-product、Szemerédi 结构化与多项式 Freiman（Green–Tao–Ziegler）的基石。

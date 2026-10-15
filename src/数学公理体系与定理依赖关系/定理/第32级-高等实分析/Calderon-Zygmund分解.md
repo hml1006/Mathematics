@@ -114,3 +114,17 @@ Calderón-Zygmund 分解在现代分析中有广泛应用：
 6. **加权估计**：推广到加权 $L^p$ 空间和 Muckenhoupt $A_p$ 权理论。
 
 该分解的推广包括：连续 Calderón-Zygmund 分解、Cotlar-Stein 引理、以及 $T(1)$ 定理和 $T(b)$ 定理中的分解技术。
+
+## 课堂问答
+
+**老师**：Calderón-Zygmund 分解把 $f\in L^1$ 拆成 $f=g+b$，这个"好+坏"到底各好在哪？
+
+**学生**：结论：好部分有界可控、坏部分带 cancellation。具体地 $\|g\|_\infty\le 2^n\alpha$、$\|g\|_2^2\le 2^n\alpha\|f\|_1$，而 $b=\sum_j b_j$ 满足 $\int_{Q_j}b_j=0$、$\|b_j\|_1\le 2^{n+1}|Q_j|\alpha$ 且 $\sum_j|Q_j|\le\|f\|_1/\alpha$。
+
+**老师（追问）**：为什么坏部分非要有 $\int_{Q_j}b_j=0$？这对奇异积分估计有什么用？
+
+**学生**：因为核 $K$ 有光滑性（Hölder 条件）。cancellation 让 $Tb_j$ 在远离 $Q_j$ 处快速衰减：对 $x\notin 3Q_j$，$\int_{Q_j}K(x-y)b_j(y)\,dy=\int_{Q_j}\big(K(x-y)-K(x-y_j)\big)b_j(y)\,dy$，可被 $\frac{|y-y_j|}{|x-y_j|^{n+1}}\|b_j\|_1$ 控制，于是在 $\bigcup_j 3Q_j$ 之外可积。
+
+**老师（拓展）**：那弱 $(1,1)$ 估计里好、坏两部分各自怎么"付费"？
+
+**学生**：好部分用 $L^2$ 有界加 Chebyshev：$|\{|Tg|>\alpha/2\}|\le\frac{4}{\alpha^2}\|Tg\|_2^2\le\frac{C}{\alpha}\|f\|_1$；坏部分只在 $\Omega^*=\bigcup_j 3Q_j$ 内用测度 $\sum_j|3Q_j|\le 3^n\|f\|_1/\alpha$ 承担，在其外用核衰减得 $\|Tb\|_{L^1((\Omega^*)^c)}\le C\|f\|_1$，两段合并即得弱 $(1,1)$。

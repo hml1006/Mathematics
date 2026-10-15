@@ -47,3 +47,17 @@ $$
 - **各种权与区间**：Legendre（$\rho\equiv1$，$[-1,1]$）、Chebyshev、Jacobi、Laguerre 与 Hermite 正交多项式给出相应的 Gauss 型公式，广泛用于带权积分与奇异/半无穷区间。
 - **扩展**：Gauss–Lobatto、Gauss–Radau 在端点含权；矩方法、Christoffel–Darboux 公式、Golub–Welsch 算法用三对角 Jacobi 矩阵特征值高效求节点与权。
 - **局限**：权系数计算较繁琐，需用正交多项式的投影与对称矩阵特征分解；但对光滑被积函数，其收敛速度远快于等距公式，常配合自适应分段使用。
+
+## 课堂问答
+
+**老师**：同样用 $n+1$ 个节点做数值积分，为什么 Gauss 求积的代数精度能达到 $2n+1$，而等距的 Newton–Cotes 公式只能到 $n$？
+
+**学生**：因为 Gauss 把节点位置也当作未知量一起优化了。固定节点的插值型公式只有 $n+1$ 个权重自由度，最多精确到 $n$ 次；而 Gauss 让节点与权重共 $2n+2$ 个自由参数，去匹配 $m=0,\dots,2n+1$ 的矩条件 $\int_a^b w(x)x^m\,dx=\sum_i w_i x_i^m$，于是对任意 $f\in\mathbb{P}_{2n+1}$ 精确成立。保证这套方程可解的，正是取节点为 $n+1$ 次正交多项式 $p_{n+1}$ 的根。
+
+**老师（追问）**：为什么最优节点恰好是正交多项式的根？请给出关键那一步。
+
+**学生**：设节点为 $p_{n+1}$ 的根 $x_i$。对任意 $f\in\mathbb{P}_{2n+1}$ 做带余除法 $f=p_{n+1}q+r$，其中 $\deg q\le n$、$\deg r\le n$。由正交性 $\int_a^b w\,p_{n+1}q=0$，故 $\int_a^b w f=\int_a^b w r$；又因 $\deg r\le n$，插值型公式对它精确，得 $\int_a^b w r=\sum_i w_i r(x_i)$；而 $p_{n+1}(x_i)=0$ 使 $r(x_i)=f(x_i)$。三步串联即 $\int_a^b w f=\sum_i w_i f(x_i)$。
+
+**老师（拓展）**：那为什么代数精度停在 $2n+1$，不能到 $2n+2$？误差项又长什么样？
+
+**学生**：取 $f=p_{n+1}^2\in\mathbb{P}_{2n+2}$，左端 $\int_a^b w\,p_{n+1}^2>0$，右端 $\sum_i w_i p_{n+1}(x_i)^2=0$，矛盾，故 $2n+1$ 是上限。误差项为 $\int_a^b w f-\sum_i w_i f(x_i)=\frac{f^{(2n+2)}(\xi)}{(2n+2)!}\int_a^b w\,p_{n+1}(x)^2\,dx$，$\xi\in(a,b)$。常见误区是以为节点越多精度越高而不管分布——等距高阶 Newton–Cotes 会出现负权重与不稳定，而 Gauss 权重恒为正，并可用于 Legendre、Chebyshev 等各种权与半无穷区间。

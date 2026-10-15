@@ -59,6 +59,20 @@ $\square$
 - **局部 Langlands 对应的整体实现**：Carayol 的结果给出局部 Langlands 对应在模形式情形下的一个显式整体实现。
 - **算术几何**：控制椭圆曲线模 $\ell$ 表示的水平与权，用于 Frey 曲线与 Ribet 水平降低的论证。
 
+## 课堂问答
+
+**老师**：Carayol 的局部-整体定理要解决 Serre 配方中的什么核心问题？
+
+**学生**：它证明模 $\ell$ 伽罗瓦表示 $\bar\rho$ 的极小权 $k(\bar\rho)$ 与极小水平 $N(\bar\rho)=\prod_p p^{n_p}$ 完全由各局部限制 $\bar\rho_p=\bar\rho|_{G_{\mathbb Q_p}}$ 决定，并与模形式的局部自守成分在局部 Langlands 对应下相容。换言之，Serre 从局部数据算出的 $(k,N)$ 配方是"正确且可实现"的，从而把全局模性问题归约为逐素数的局部问题。
+
+**老师（追问）**：这些局部信息分别从哪里读出来？
+
+**学生**：$p\ne\ell$ 处，由 Deligne 构造 $\operatorname{tr}\bar\rho_f(\operatorname{Frob}_p)\equiv a_p$，新形式理论的 multiplicity one 使局部成分 $\pi_p$ 唯一，水平指数 $n_p$ 由 Artin conductor 给出：$I_p$ 上平凡则 $n_p=0$，$I_p$ 上为非平凡 unipotent 型则 $n_p=1$（对应 $p\|N$）。$p=\ell$ 处，权信息编码在 $\bar\rho|_{I_{\mathbb Q_\ell}}$ 的 tame 特征里，低权用 Fontaine-Laffaille 滤波分类直接读出 $k(\bar\rho)$，一般权用 Breuil 的低权分类。
+
+**老师（拓展）**：常见误区与它的历史地位？
+
+**学生**：误区是把"局部相容"当成自动的——它恰恰需要逐素数的精密匹配，这正是定理的内容。有了局部-整体相容，再配合 $R=\mathbb T$ 定理完成全局提升，就构成 Khare-Wintenberger 证明 Serre 猜想（并由此给出 Fermat 大定理新证明）的基础环节，也是局部 Langlands 对应在模形式情形下的显式整体实现。
+
 ## 相关条目
 
 - [Artin互反律](./Artin互反律.md)：伽罗瓦表示与自守对象对应的最早范例，是局部-整体思想的历史起点。

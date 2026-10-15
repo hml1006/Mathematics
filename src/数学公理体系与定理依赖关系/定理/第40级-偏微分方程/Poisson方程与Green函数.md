@@ -73,3 +73,17 @@ $$u(x) = \int_\Omega G(x,y) f(y) \, dy - \int_{\partial\Omega} u(y)\frac{\partia
 **例**（半空间 $\mathbb{R}^3_+$ 上的 Green 函数）：对上半空间 $\mathbb{R}^3_+ = \{x \in \mathbb{R}^3 \mid x_3 > 0\}$，Green 函数为
 $$G(x,y) = \frac{1}{4\pi|x-y|} - \frac{1}{4\pi|x - \tilde{y}|}$$
 其中 $\tilde{y} = (y_1, y_2, -y_3)$ 是 $y$ 关于边界平面的反射像。$\square$
+
+## 课堂问答
+
+**老师**：Green 函数法的骨架是什么？
+
+**学生**：把 $-\Delta u=f$、$u|_{\partial\Omega}=g$ 的解写成 $u(x)=\int_\Omega G(x,y)f(y)\,dy-\int_{\partial\Omega}\frac{\partial G}{\partial n_y}(x,y)\,g(y)\,dS_y$，其中 $G$ 是零边界下的点源响应，即 $-\Delta_xG(x,y)=\delta(x-y)$、$G|_{\partial\Omega}=0$。
+
+**老师（追问）**：这个表示式是从哪条恒等式逼出来的？
+
+**学生**：Green 第二恒等式 $\int_\Omega(u\Delta v-v\Delta u)\,dy=\int_{\partial\Omega}\big(u\frac{\partial v}{\partial n}-v\frac{\partial u}{\partial n}\big)dS$。取 $v=G(x,\cdot)$，用 $-\Delta_yG=\delta(x-y)$ 与筛选性 $\int_\Omega u(y)\delta(x-y)\,dy=u(x)$，再由 $G|_{\partial\Omega}=0$ 消去一项，整理即得积分表示。
+
+**老师（拓展）**：为什么 $G$ 对称？有界区域上怎么构造它？
+
+**学生**：对称性把两个点源 $G(x_1,\cdot)$、$G(x_2,\cdot)$ 放在 $\Omega\setminus(B_\varepsilon(x_1)\cup B_\varepsilon(x_2))$ 上用同一恒等式、令 $\varepsilon\to0$，得 $G(x_1,x_2)=G(x_2,x_1)$。构造上先用基本解做点源，再叠一个调和校正项使边界为零：上半空间即用镜像点 $\tilde y=(y_1,y_2,-y_3)$ 得 $G=\frac{1}{4\pi|x-y|}-\frac{1}{4\pi|x-\tilde y|}$。常见误区是基本解归一化记错（$n\ge3$ 用 $\frac{1}{n(n-2)\alpha_n}|x|^{2-n}$，$n=2$ 用 $-\frac{1}{2\pi}\log|x|$），或误以为边界积分项总可舍去。

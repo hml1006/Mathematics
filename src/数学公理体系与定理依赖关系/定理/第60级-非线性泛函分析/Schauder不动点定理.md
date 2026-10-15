@@ -115,3 +115,17 @@ $$u(x) = \int_\Omega K(x, y) f(y, u(y))\, dy$$
 - **Krasnoselskii 定理**：压缩算子与紧算子之和的不动点定理。
 - **Tychonoff 不动点定理**：局部凸拓扑向量空间上的推广。
 - **Fan-Glicksberg 定理**：自反 Banach 空间中弱紧凸集上的推广，应用于博弈论。
+
+## 课堂问答
+
+**老师**：Schauder 不动点定理在无穷维怎么绕开"单位球不紧"的困难？
+
+**学生**：靠 Schauder 投影做有限维逼近。先设 $K$ 紧凸，取有限 $1/n$-网构造投影 $P_n:K\to K_n=\mathrm{conv}\{x_i^{(n)}\}$，满足 $\|P_n(x)-x\|\le1/n$ 且 $P_n(K)\subset K$（凸性）。令 $T_n=P_n\circ T$，则 $T_n$ 是有限维紧凸集 $K_n$ 到自身的连续映射，Brouwer 定理给不动点 $x_n$。由 $\|T(x_n)-x_n\|=\|T(x_n)-P_n(T(x_n))\|\le1/n\to0$ 与 $K$ 紧取子列得 $x_n\to x^*$，再由 $T$ 连续性得 $T(x^*)=x^*$。
+
+**老师（追问）**：一般形式（闭凸集加紧映射）怎么化归到紧凸集形式？
+
+**学生**：令 $\tilde K=\overline{\mathrm{conv}(T(C))}$。因 $T(C)$ 相对紧，其闭凸包仍紧（用 Mazur 定理：紧集的凸包紧），且由 $C$ 闭凸含 $T(C)$ 故 $\tilde K\subset C$，又有 $T(\tilde K)\subset T(C)\subset\tilde K$。于是对 $T|_{\tilde K}:\tilde K\to\tilde K$ 用紧凸集形式即得不动点。这里凸性保证投影像落在集合内、紧性保证收敛子列，缺一不可。
+
+**老师（拓展）**：它和 Leray-Schauder、Kakutani 的关系是什么？
+
+**学生**：Leray-Schauder 度把 Schauder 的存在性升级为"度的非零即保证有解"并给出先验界判据（延拓原理），是更精细的工具；Krasnoselskii 处理压缩算子与紧算子之和；Kakutani/Fan-Glicksberg 把它推广到集值映射与自反空间弱紧凸集，是 Arrow-Debreu 一般均衡存在性的核心。它们同属把有限维拓扑（Brouwer）提升到无穷维的技术族。

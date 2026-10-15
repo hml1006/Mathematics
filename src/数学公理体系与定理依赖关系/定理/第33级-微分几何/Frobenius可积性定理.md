@@ -105,3 +105,17 @@ Frobenius 定理在多个数学领域有重要应用：
 7. **PDE 理论**：一阶偏微分方程组的相容性条件由 Frobenius 定理给出。
 
 该定理的推广包括：Stefan-Sussmann 定理（奇分布的叶状化）、无穷维 Frobenius 定理、以及超分布和广义分布的可积性理论。
+
+## 课堂问答
+
+**老师**：Frobenius 定理一句话怎么说？为什么可积性归李括号来判定？
+
+**学生**：结论是：光滑分布 $\Delta$ 完全可积（每点有积分流形）当且仅当它是对合的，即对任意 $X,Y\in\Delta$ 有 $[X,Y]\in\Delta$。必要性来自李括号是"沿 $X$ 的流搬运 $Y$ 的无穷小生成元"：若 $\Delta$ 贴合积分流形 $N$，$[X,Y]$ 必仍切于 $N$；充分性则通过坐标变换把 $\Delta$ 局部压平为 $\partial_{x^1},\dots,\partial_{x^k}$。
+
+**老师（追问）**：换成 Pfaff 系统 $\omega^1=\cdots=\omega^{n-k}=0$ 的语言，对合条件变成什么？
+
+**学生**：变成 $d\omega^\alpha\equiv 0 \pmod{\omega^1,\dots,\omega^{n-k}}$，即 $d\omega^\alpha=\sum_\beta\theta^\alpha_\beta\wedge\omega^\beta$。理由由 Cartan 公式 $d\omega(X,Y)=X\omega(Y)-Y\omega(X)-\omega([X,Y])$ 给出：当 $X,Y\in\Delta$ 时前两项为零，故 $d\omega(X,Y)=-\omega([X,Y])$；对合等价于右端恒零，也就等价于 $d\omega$ 落在理想 $(\omega^1,\dots,\omega^{n-k})$ 中。
+
+**老师（拓展）**：充分性证明为何要对维数 $k$ 归纳，卡在哪一步？
+
+**学生**：卡在把高维分布约化。取 $X_1$ 的局部流把 $X_1$ 变成 $\partial_{x^1}$，再在超平面 $\Sigma=\{x^1=0\}$ 上投影 $\tilde X_j=X_j-(X_jx^1)X_1$，使 $\tilde X_j$ 切于 $\Sigma$，得 $k-1$ 维分布 $\tilde\Delta$。关键在于验证 $\tilde\Delta$ 仍对合——这要用 $[X_i,X_j]\in\Delta$ 控制其 $x^1$ 分量，否则归纳假设无法施加。最后 $N=\bigcup_{|t|<\varepsilon}\phi_t(N')$ 拼出 $k$ 维积分流形。

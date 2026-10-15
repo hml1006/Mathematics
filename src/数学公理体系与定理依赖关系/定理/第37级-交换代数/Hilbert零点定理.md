@@ -102,3 +102,17 @@ $$
 2. 每个极大理想形如 $\mathfrak{m} = \langle x_1 - a_1, \ldots, x_n - a_n \rangle$，其中 $(a_1, \ldots, a_n) \in \mathbb{A}^n_k$。
 
 **应用**：Hilbert零点定理是代数几何的基石，建立了代数与几何之间的"字典"，为代数簇理论奠定了基础。$\square$
+
+## 课堂问答
+
+**老师**：Hilbert 零点定理的弱形式和强形式分别是什么？
+
+**学生**：设 $k$ 代数闭。弱形式：若 $I\ne k[x_1,\dots,x_n]$ 是真理想，则 $V(I)\ne\varnothing$。强形式：$I(V(I))=\sqrt{I}$，其中 $\sqrt{I}=\{f\mid f^m\in I,\ m\ge1\}$。二者合起来给出根理想与仿射代数集之间的反序一一对应。常见误区：强形式右边是根理想 $\sqrt{I}$ 而不是 $I$ 本身；且代数闭条件是必需的，例如 $\mathbb{R}[x]$ 中 $x^2+1$ 就没有实零点。
+
+**老师（追问）**：弱形式的证明核心是哪几步？Zariski 引理用在哪里？
+
+**学生**：取极大理想 $\mathfrak{m}\supseteq I$（Hilbert 基定理保证诺特性）。商环 $L=k[x_1,\dots,x_n]/\mathfrak{m}$ 是域且是有限生成 $k$-代数。Zariski 引理说：有限生成的域扩张必为有限代数扩张。因 $k$ 代数闭，只有 $L=k$，于是 $\mathfrak{m}=\langle x_1-a_1,\dots,x_n-a_n\rangle$，商映射给出点 $(a_1,\dots,a_n)$ 使 $I$ 中多项式全为零，故 $V(I)\ne\varnothing$。
+
+**老师（拓展）**：强形式是怎样归约到弱形式的？
+
+**学生**：用 Rabinowitsch 技巧。设 $f\in I(V(I))$，引入新变量 $y$，取 $J=\langle I,\,1-yf\rangle\subseteq k[x_1,\dots,x_n,y]$。若 $J$ 是真理想，弱零点定理给出点使 $f(a)=0$ 同时 $1-bf(a)=0$，即 $1=0$，矛盾。故 $1\in J$，存在 $1=\sum h_if_i+g(1-yf)$。令 $y\mapsto 1/f$ 并乘以 $f^m$ 消去分母，得 $f^m\in I$，即 $f\in\sqrt{I}$。

@@ -43,3 +43,17 @@ $$
 ## 五、应用与意义
 
 Itô 引理是随机分析与金融数学的基石，用于推导资产价格模型、计算衍生品定价（Black-Scholes 方程）、随机控制（动态规划）与遍历估计。它揭示了随机微积分与经典微积分的本质差异，是所有建立在 Itô 积分之上的理论的核心运算规则。
+
+## 课堂问答
+
+**老师**：随机微分里为什么会凭空多出一个二阶项？
+
+**学生**：先给结论——因为布朗运动的二次变差非零，$(dW_t)^2=dt$。对 $f$ 作二阶 Taylor 展开，$(dX_t)^2=\sigma_t^2dt$ 仍是 $dt$ 阶，不能像经典微积分那样丢掉，于是 $df=(f_t+\mu f_x+\frac12\sigma^2f_{xx})dt+\sigma f_x\,dW_t$。
+
+**老师（追问）**：那凭什么 $(dt)^2$ 和 $dt\,dW_t$ 可以丢，唯独 $(dW_t)^2$ 不能丢？
+
+**学生**：看量级。$(dt)^2=o(dt)$、$dt\,dW_t=o(dt)$ 都是高阶无穷小，而 $\sum(dW_t)^2\to t$（依 $L^2$）恰是一阶。常见误区是把它当普通链式法则，漏掉 $\frac12\sigma^2f_{xx}$，例如算 $\log S_t$ 就会丢掉 $-\frac12\sigma^2$ 漂移。
+
+**老师（拓展）**：多维情形这个二阶项怎么组织？
+
+**学生**：二阶项由协方差矩阵给出，$df=(\partial_tf+\sum_i\mu^i\partial_{x_i}f+\frac12\sum_{i,j}(\sigma\sigma^\top)_{ij}\partial_{x_ix_j}f)dt+\sum_i\partial_{x_i}f\sum_j\sigma^{ij}dW^j$，交叉项 $(dW^i)(dW^j)=\delta_{ij}dt$ 使 $\sigma\sigma^\top$ 出现。它正是 Black-Scholes 与 Feynman-Kac 的共同运算引擎。

@@ -77,3 +77,17 @@ $$
 ## 五、应用与意义
 
 Radon 定理与 Carathéodory 定理是凸几何、组合优化与计算几何的基石。Radon 定理直接用于证明 Helly 定理，并引出 Tverberg 定理等更一般的分割结果；Carathéodory 定理则保证凸包中的每一点都可由有限个极值点表示，是线性规划、凸优化与极值点理论的出发点。在计算几何中，Carathéodory 定理支撑了凸包算法与单纯形方法的正确性分析；Radon 定理则在聚类、鲁棒统计与几何划分问题中提供了划分策略。两者共同揭示了高维空间中凸结构的有限组合本质。
+
+## 课堂问答
+
+**老师**：请分别陈述 Radon 定理与 Carathéodory 定理。
+
+**学生**：Radon 定理：$\mathbb R^n$ 中任意 $n+2$ 个点可分成两组 $A,B$，使 $\operatorname{conv}(A)\cap\operatorname{conv}(B)\ne\varnothing$。Carathéodory 定理：若 $x\in\operatorname{conv}(S)$，则 $x$ 可写成 $S$ 中至多 $n+1$ 个点的凸组合 $x=\sum_{i=1}^m\lambda_ix_i$，其中 $m\le n+1$、$\lambda_i\ge0$、$\sum_i\lambda_i=1$。
+
+**老师（追问）**：Carathéodory 定理中的 $n+1$ 是怎么定出来的？
+
+**学生**：它是降维的下界。由凸包定义，$x$ 可写成有限凸组合 $x=\sum_{i=1}^k\lambda_ix_i$；若 $k>n+1$，则这 $k$ 个点在 $n$ 维空间仿射相关，存在不全为零的 $\mu_i$ 满足 $\sum_i\mu_i=0$ 与 $\sum_i\mu_ix_i=0$。取 $t=\min\{\lambda_i/\mu_i:\mu_i>0\}$，则 $x=\sum_i(\lambda_i-t\mu_i)x_i$ 仍是凸组合且至少一个系数为零，点数减一；反复消点直到 $k\le n+1$。常见误区是以为需要特殊算法，本质只是"仿射相关就消元"。Radon 则相反，用 $n+2$ 个点的仿射相关把正负系数分成两组造出公共点。
+
+**老师（拓展）**：这两个定理与 Helly 定理如何构成"组合三元组"？
+
+**学生**：三者可互推。Radon 是证明 Helly 的核心工具（构造 $m$ 个点后再用 Radon 找凸包交点导出矛盾）；Helly 又能推出 Carathéodory（对包含 $x$ 的单纯形族用 Helly 找到最小维情形）；Carathéodory 也支撑 Helly 的分离论证。三者共同刻画高维凸结构的有限组合本质，并推广为 Tverberg 定理与 Davenport–Schinzel 序列等结果，是线性规划与凸优化的极值点理论出发点。

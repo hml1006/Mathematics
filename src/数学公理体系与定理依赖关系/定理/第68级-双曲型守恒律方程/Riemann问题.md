@@ -133,3 +133,17 @@ $$
 ## 五、应用与意义
 
 Riemann 问题的精确解是构造高分辨率守恒律数值方法（如 Godunov 格式、近似 Riemann 解法器）的基石。它将复杂的非线性波相互作用分解为局部可解析的激波、稀疏波和接触间断，极大地推动了可压缩流体力学和交通流模型的数值模拟。对 Riemann 解结构的深入理解也为研究一般 Cauchy 问题的 BV 解、激波稳定性等提供了范式。
+
+## 课堂问答
+
+**老师**：补偿紧性作为一个"框架"，它的核心工具有哪些？
+
+**学生**：核心是 Tartar–Murat div-curl 引理：$U_\varepsilon\rightharpoonup U$、$V_\varepsilon\rightharpoonup V$ 于 $L^2$，若 $\operatorname{div}U_\varepsilon$、$\operatorname{curl}V_\varepsilon$ 在 $H^{-1}$ 中紧，则 $U_\varepsilon\cdot V_\varepsilon\rightharpoonup U\cdot V$。配套工具是 Young 测度与 Tartar 交换关系，用来把弱极限的不确定性逐步收紧到单点。
+
+**老师（追问）**：怎样把 div-curl 引理接到守恒律上，得到 Young 测度的交换关系？
+
+**学生**：守恒律 $\partial_t\nu_\varepsilon+\partial_x f(\nu_\varepsilon)=0$ 给出 $(\nu_\varepsilon,f(\nu_\varepsilon))$ 的散度紧；再有熵对 $(\eta_i,q_i)$ 时 $(q_i(\nu_\varepsilon),-\eta_i(\nu_\varepsilon))$ 的散度也紧。把这两类向量场分别取作 div-curl 引理的 $U_\varepsilon,V_\varepsilon$，得到关于 Young 测度 $\nu$ 的交换关系 $\langle\nu,q_i\eta_j-q_j\eta_i\rangle=\langle\nu,q_i\rangle\langle\nu,\eta_j\rangle-\langle\nu,q_j\rangle\langle\nu,\eta_i\rangle$。
+
+**老师（拓展）**：交换关系如何"逼出"强收敛？Murat 引理在其中起什么作用？
+
+**学生**：若熵对足够丰富，这些交换关系可迫使 Young 测度 $\nu$ 的支撑退化为 Dirac 测度，于是 $\nu_\varepsilon$ 几乎处处收敛，这就是强收敛的补偿来源。Murat 引理（$u_\varepsilon=v_\varepsilon^1-v_\varepsilon^2$，$v_\varepsilon^1$ 在 $W^{-1,r}$（$r>2$）有界、$v_\varepsilon^2$ 在 $\mathcal M$ 有界、$u_\varepsilon$ 在 $W^{-1,p}$（$p>2$）有界 $\Rightarrow u_\varepsilon$ 在 $H^{-1}_{\mathrm{loc}}$ 紧）常用来验证 div-curl 引理的前提。常见误区是把补偿紧性当成获得逐点收敛的工具：它只给出特定双线性型的收敛。

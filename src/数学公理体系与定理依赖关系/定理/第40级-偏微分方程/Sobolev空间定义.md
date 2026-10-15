@@ -62,3 +62,17 @@ $$\int_\Omega u^{(\alpha)} \varphi \, dx = \lim_{m \to \infty} \int_\Omega D^\al
 **例**：$H_0^1(\Omega) = W_0^{1,2}(\Omega)$ 是 Dirichlet 问题 $- \Delta u = f$ 变分提法的自然空间，其上的内积等价于 $(\nabla u, \nabla v)_{L^2}$。
 
 **重要性质**：Sobolev 空间满足嵌入定理（Sobolev 嵌入定理），即当 $kp > n$ 时，$W^{k,p}(\Omega)$ 中的函数可嵌入到 $C(\overline{\Omega})$ 中，从而具有经典意义下的连续性。
+
+## 课堂问答
+
+**老师**：为什么要引入"弱导数"来定义函数空间？
+
+**学生**：为了让 PDE 的自然解所在的空间完备。弱导数把分部积分当定义用：$u$ 的 $\alpha$ 阶弱导数 $D^\alpha u=v$ 是指对一切 $\varphi\in C_c^\infty(\Omega)$ 有 $\int_\Omega v\varphi=(-1)^{|\alpha|}\int_\Omega uD^\alpha\varphi$；于是 $W^{k,p}(\Omega)=\{u\in L^p:D^\alpha u\in L^p,\ |\alpha|\le k\}$。
+
+**老师（追问）**：凭什么说 $W^{k,p}$ 是 Banach 空间？
+
+**学生**：赋范 $\|u\|_{W^{k,p}}=\big(\sum_{|\alpha|\le k}\|D^\alpha u\|_{L^p}^p\big)^{1/p}$。取 Cauchy 列 $\{u_m\}$，每个 $\{D^\alpha u_m\}$ 是 $L^p$ 的 Cauchy 列，由 $L^p$ 完备收敛到 $u^{(\alpha)}$；对检验函数取极限，弱导数定义在极限下保持，故 $u\in W^{k,p}$ 且 $u_m\to u$。
+
+**老师（拓展）**：$H^k$ 与 $W_0^{k,p}$ 各扮演什么角色？
+
+**学生**：$p=2$ 时 $H^k=W^{k,2}$ 是 Hilbert 空间，内积为 $(u,v)_{H^k}=\sum_{|\alpha|\le k}\int_\Omega D^\alpha u\,D^\alpha v$，这让变分与投影方法可用；$W_0^{k,p}$ 是 $C_c^\infty$ 在范数下的闭包，是 Dirichlet 问题的自然空间，$H_0^1$ 上 $\int\nabla u\cdot\nabla v$ 与自身范数等价。常见误区是把 $C^k$ 当成完备空间——它在 $W^{k,p}$ 范数下不完备，而 $W^{k,p}$ 正是其完备化。

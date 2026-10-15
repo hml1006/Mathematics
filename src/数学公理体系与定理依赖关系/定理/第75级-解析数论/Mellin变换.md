@@ -103,6 +103,32 @@ $$
 - 在调和分析与非交换几何中，它是谱作用原理、热核渐近与 Seeley–deWitt 系数的展开工具。
 - 在信号处理与算法分析中，Mellin 变换用于尺度不变滤波与除法型分治算法的复杂度分析。
 
+## 课堂问答
+
+**老师**：Mellin 变换为什么被称为"乘法群上的傅里叶变换"？
+
+**学生**：换元 $x=e^t$ 直接给出
+$$
+\mathcal{M}f(s)=\int_0^\infty f(x)x^{s-1}dx=\int_{-\infty}^{\infty}f(e^t)e^{st}dt,
+$$
+右边正是 $F(t)=f(e^t)$ 的双边 Laplace / 傅里叶变换。于是乘性尺度 $x\to\lambda x$ 变为加性平移，乘性卷积变为乘积：$\mathcal{M}(f*g)=\mathcal{M}f\cdot\mathcal{M}g$。
+
+**老师（追问）**：反演公式与 Perron 公式的来历是什么？
+
+**学生**：由傅里叶反演在竖线 $\operatorname{Re}s=c$ 上得
+$$
+f(x)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}\mathcal{M}f(s)\,x^{-s}\,ds,
+$$
+再把累加函数 $A(x)=\sum_{n\le x}a_n$ 用 Stieltjes 型的 Mellin 表示联系到 $\sum a_nn^{-s}$，就是 Perron 公式，它是显式公式的技术来源。
+
+**老师（拓展）**：举一个靠 Mellin 变换"一眼看出"特殊函数性质的例子。
+
+**学生**：$f(x)=e^{-x}$ 给出 $\mathcal{M}f(s)=\Gamma(s)$；对几何级数逐项积分得
+$$
+\Gamma(s)\zeta(s)=\int_0^\infty\frac{x^{s-1}}{e^x-1}\,dx\quad(\operatorname{Re}s>1),
+$$
+由此 $\zeta$ 的解析延拓与函数方程都能从 Theta 变换、Poisson 求和里读出。误区是只在 $\operatorname{Re}s>1$ 里看它，而忽略它其实是收敛条 $a<\operatorname{Re}s<b$ 上的解析对象。
+
 ## 相关条目
 
 - [素数定理](./素数定理.md)：其显式公式与 Perron 公式本质是 Mellin 反演。

@@ -42,3 +42,21 @@ $$\pi^{-s/2}\Gamma\left(\frac s2\right)\zeta(s)=\pi^{-(1-s)/2}\Gamma\left(\frac{
 ## 五、应用与意义
 
 函数方程是 Zeta 函数理论的支柱。其一，它确定平凡零点 $s=-2,-4,-6,\dots$：当 $\sin(\pi s/2)=0$ 且 $\Gamma(1-s)$ 无极点时 $\zeta(s)=0$。其二，它把临界带 $0<\operatorname{Re}(s)<1$ 内非平凡零点的研究化为全场问题——Riemann 假设的对称表述正基于此。其三，它是证明素数定理及获得高阶误差项的关键步骤。该方程还推广到 Dirichlet L-函数（得到 Hecke-Groß 理论）与椭圆曲线 $L$-函数，是算术对偶与模形式的深层联系。
+
+## 课堂问答
+
+**老师**：请写出完备化 Zeta 的函数方程，并说清它同时完成了哪两件事。
+
+**学生**：令 $\xi(s)=\frac12 s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)$，则 $\xi(s)=\xi(1-s)$。它一举做了两件事：给出 $\zeta$ 到全平面的解析延拓（仅 $s=1$ 为简单极点，留数 $1$），并揭示临界线 $\operatorname{Re}s=\frac12$ 的对称性，Riemann 假设正建立在此对称上。
+
+**老师（追问）**：证明的枢纽为什么是 Theta 函数？
+
+**学生**：因为 $\theta(t)=\sum_{n\in\mathbb Z}e^{-\pi n^2t}$ 满足自对偶 $\theta(t)=\frac{1}{\sqrt t}\theta(1/t)$（来自 Poisson 求和）。把 $\pi^{-s/2}\Gamma(s/2)\zeta(s)=\int_0^\infty u^{s/2-1}\frac{\theta(u)-1}{2}du$ 拆成 $[0,1]$ 与 $[1,\infty)$，对前段用 $u\mapsto1/u$ 重组，即得
+$$
+\pi^{-s/2}\Gamma\Big(\frac s2\Big)\zeta(s)=\frac{1}{s(s-1)}+\int_1^\infty\big(u^{s/2}+u^{(1-s)/2}\big)u^{-1}\frac{\theta(u)-1}{2}du,
+$$
+右边在 $s\mapsto1-s$ 下不变。
+
+**老师（拓展）**：平凡零点是怎样从方程里掉出来的？
+
+**学生**：等价形式 $\zeta(s)=2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\zeta(1-s)$ 中含有因子 $\sin(\pi s/2)$，当 $s=-2,-4,-6,\dots$ 时它为零而 $\Gamma(1-s)$ 无极点，故 $\zeta$ 取零，这就是平凡零点。误区是把 $\zeta(-1)=-\frac{1}{12}$ 当成"发散级数和"的巧合，其实它是函数方程解析延拓的必然值。

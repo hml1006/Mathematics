@@ -54,3 +54,25 @@ $$\frac{\Delta f}{\Delta z}=\frac{\partial u}{\partial x}+i\frac{\partial v}{\pa
 取极限 $\Delta z\to 0$ 即得 $f'(z_0)$ 存在。
 
 $\square$
+
+## 课堂问答
+
+**老师**：复函数 $f(z)=u(x,y)+iv(x,y)$ 在某点可微，比"实部虚部各自可微"到底多了什么条件？
+
+**学生**：多了"复线性"。结论：$f$ 在 $z_0$ 可微当且仅当 $u,v$ 在 $z_0$ 处可微且满足 C-R 方程
+
+$$\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\qquad \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}$$
+
+理由：令 $\Delta z$ 先沿实轴、再沿虚轴趋于 $0$，复导数极限必须相等，比较实虚部即得这两式。
+
+**老师（追问）**：那么只要偏导数满足 C-R 方程，就能断定可微吗？
+
+**学生**：不能，这是个常见误区。C-R 方程只是必要条件，必须再补上 $u,v$ 可微（全微分）才充分，此时
+
+$$\frac{\Delta f}{\Delta z}=u_x+iv_x+\frac{\varepsilon_1+i\varepsilon_2}{\Delta z}\to f'(z_0)$$
+
+反例 $f(z)=\bar z$：$u=x,v=-y$，$u_x=1\ne v_y=-1$，不满足 C-R，故处处不可微。
+
+**老师（拓展）**：C-R 方程的几何意义是什么？
+
+**学生**：它等价于实雅可比矩阵形如"旋转-伸缩"阵，即 $f$ 在非临界点处是共形的（保角）。这也顺带说明为何解析函数的实部、虚部必为共轭调和函数，把复分析与 Laplace 方程联系起来。

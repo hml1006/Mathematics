@@ -114,6 +114,21 @@ $$
 $$
 
 **应用**：Weyl特征标公式是李群表示论中最核心的公式之一，广泛应用于粒子物理（强子的分类）、代数几何（Borel-Weil-Bott 定理）和数论（模形式理论）中。$\square$
+
+## 课堂问答
+
+**老师**：Weyl 特征标公式说的是什么？
+
+**学生**：对紧连通李群 $G$、极大环面 $T$、支配整权 $\lambda$，最高权 $\lambda$ 的不可约模的特征标为 $\chi_\lambda(\exp H)=\dfrac{\sum_{w\in W}\varepsilon(w)e^{i\langle w(\lambda+\rho),H\rangle}}{\sum_{w\in W}\varepsilon(w)e^{i\langle w(\rho),H\rangle}}$，其中 $\rho$ 是半根和，分母即 Weyl 分母 $\prod_{\alpha\in\Phi^+}2i\sin(\langle\alpha,H\rangle/2)$。由它取极限得维数公式 $\dim V_\lambda=\prod_{\alpha\in\Phi^+}\dfrac{\langle\lambda+\rho,\alpha\rangle}{\langle\rho,\alpha\rangle}$。常见误区：$\lambda$ 必须是支配整权；$\rho$ 是半根和而非根。
+
+**老师（追问）**：在 $SU(2)$ 上公式给出什么？
+
+**学生**：$SU(2)$ 的根系统是 $A_1$，$\rho=\alpha/2$，最高权 $\lambda=n\alpha/2$。代入得 $\chi_n(e^{i\theta})=\dfrac{e^{i(n+1)\theta}-e^{-i(n+1)\theta}}{e^{i\theta}-e^{-i\theta}}=\dfrac{\sin((n+1)\theta)}{\sin\theta}$，对应维数 $\dim V_n=n+1$，与熟知结论一致。
+
+**老师（拓展）**：维数公式怎么得到？这个公式统一了什么？
+
+**学生**：在特征标公式中令 $H\to0$，左端趋于 $\dim V_\lambda$，右端用 Weyl 分母的乘积形式展开取极限即得乘积公式。整体而言，它把根系统这样的局部数据与特征标这样的整体数据完全统一，是 Peter-Weyl 分解中每个不可约块的具体显式表达，也是李群表示分类理论的顶点。
+
 ## 相关条目
 
 - [Weyl 特征标公式（第72级-李群与李代数）](../第72级-李群与李代数/Weyl特征标公式.md)：与本条目为同一定理，另收录于第72级-李群与李代数，可交叉参考。

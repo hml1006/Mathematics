@@ -106,6 +106,24 @@ $EZ$ 是链同伦等价，故诱导同调同构 $H_n(X\times Y;R)\cong H_n(C_*(X
 $$H_n(X\times Y;R)\cong\bigoplus_{p+q=n}H_p(X;R)\otimes_R H_q(Y;R).$$
 上同调层面经由 $\operatorname{Hom}(-;R)$ 与杯积得到同样的分裂，这正是杯积定义的链层来源。
 
+## 课堂问答
+
+**老师**：AW 与 EZ 号称互为逆，是在什么意义下互逆？为什么不能逐项相等？
+
+**学生**：只在链同伦意义下互逆。$AW\circ EZ=\mathrm{id}$ 逐项成立，这是 shuffle 符号相消的组合恒等式；但 $EZ\circ AW$ 只能同伦于恒等，因为把乘积单形切开再重织会多出退化组合，不能逐项还原。
+
+**老师（追问）**：那证明 $EZ\circ AW\simeq\mathrm{id}$ 时，你靠什么工具绕开这些退化项？
+
+**学生**：靠 acyclic models 定理。取模型为标准单形 $\Delta^m$，$F=C_*(X\times Y)$ 在模型上自由，$G$ 在模型上无圈（$\Delta^m\times\Delta^k$ 可缩，正次数同调为零）；只需 $H_0(EZ\circ AW)=H_0(\mathrm{id})$，就得到自然链同伦。0 次时 $AW(\sigma)=[\xi]\otimes[\eta]$，$EZ$ 还原为常单形，正是 $\sigma$ 本身。
+
+**老师（拓展）**：这个定理对 Künneth 与杯积意味着什么？
+
+**学生**：$EZ$ 是链同伦等价，故 $H_n(X\times Y;R)\cong H_n(C_*(X)\otimes_R C_*(Y))$；当 $H_*(X;R)$ 自由或 $R$ 为域时退化为
+
+$$H_n(X\times Y;R)\cong\bigoplus_{p+q=n}H_p(X;R)\otimes_R H_q(Y;R).$$
+
+杯积则用对角映射复合 $AW$ 的转置在链水平定义，本定理保证其良定。常见误区是把 $AW$、$EZ$ 当成链同构——它们不是同构，只是链同伦逆。
+
 ## 相关条目
 
 - [上同调与杯积结构](./上同调与杯积结构.md)：杯积正是用对角线映射复合 $AW$ 后（转置）在链水平定义的，本定理保证其良定义与乘法结构。

@@ -43,3 +43,19 @@ $\blacksquare$
 ## 五、应用与意义
 
 Minkowski-Hlawka 定理提供密度理论、最密堆积与格覆盖问题的下界：它证明存在"相当稀疏"的密度 1 格避开指定凸体，从而给出格的覆盖半径、临界行列式的定性结果。它在圆法/格与编码理论中提供密度基准，也是 Siegel 均值与"平均格"思想的发源地，联系到自守形式与单模结构。其现代化形式广泛用于拟晶体、Riemann 函数与数论中的格随机模型。
+
+## 课堂问答
+
+**老师**：Minkowski-Hlawka 定理给出什么样的存在性？
+
+**学生**：设 $K$ 为中心对称凸体，若 $\operatorname{vol}(K)<2\zeta(n)$，则存在行列式为 $1$ 的格 $\Lambda$ 使 $\Lambda\cap\operatorname{int}(K)=\{0\}$；等价地临界行列式满足 $\Delta(K)\le\operatorname{vol}(K)/(2\zeta(n))$。
+
+**老师（追问）**：平均化方法在哪里使力？
+
+**学生**：用 Siegel 平均公式。行列式为 $1$ 的格由 $G/H$（$G=\operatorname{SL}_n(\mathbb{R})$，$H=\operatorname{SL}_n(\mathbb{Z})$）参数化并带不变测度，取 $f=\chi_K$ 得
+$$\int_{G/H}\#(\Lambda\cap K\setminus\{0\})\,d\mu(\Lambda)=\operatorname{vol}(K).$$
+$K$ 对称使每个格的非零计数为偶数，平均值小于阈值时必有一个格计数为 $0$。
+
+**老师（拓展）**：为什么阈值是 $2\zeta(n)$ 而不是 $2$？
+
+**学生**：对称性只给偶数计数、给出粗糙阈值 $2$；精细处理 $\operatorname{SL}_n(\mathbb{Z})$ 的轨道与尖点贡献、对倍数 $k$ 求和时出现 $\sum_{k\ge1}k^{-n}=\zeta(n)$，把存在性阈值提高到 $2\zeta(n)$。它给出最密堆积与格覆盖的密度下界，是 Siegel 均值与"平均格"思想的发源地。

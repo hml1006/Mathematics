@@ -113,3 +113,19 @@ $$0 \to \mathbb{Z} \to \mathcal{O} \to \mathcal{O}^* \to 0,$$
 5. **凝聚层理论的发展**：Cartan 引入凝聚层概念，是现代层论与同调代数的基石。Forster、Grauert、Hironaka 等的工作直接继承自 Cartan 的思想。
 
 6. **现代研究影响**：高维代数几何中 Kodaira 消灭定理、Kawamata–Viehweg 消灭定理都是 Cartan 定理 B 在紧 Kähler 流形上的对应发展；非紧复几何中 Takegoshi 消灭定理、Ohsawa–Takegoshi $L^2$ 延拓定理等都是其后续。
+
+## 课堂问答
+
+**老师**：Cartan 定理 A 与 B 是 Stein 流形上多复变的两块基石，请分别陈述。
+
+**学生**：设 $X$ 为 Stein 流形，$\mathcal F$ 为 $\mathcal O_X$-凝聚层。定理 A：对任意 $x\in X$，自然映射 $H^0(X,\mathcal F)\to\mathcal F_x$ 是满射，即全局截面逐点生成 $\mathcal F$。定理 B：对任意 $q\ge1$，$H^q(X,\mathcal F)=0$，即凝聚层高阶上同调消失。常见误区是把它们当作独立的两个定理——实际上二者互相依赖，完整证明需要并行归纳。
+
+**老师（追问）**：定理 B 从 $\mathcal O$ 到一般凝聚层的推广，核心机制是什么？
+
+**学生**：分两步。第一步用 Dolbeault 定理把 $H^q(X,\mathcal O)\cong H^{0,q}_{\bar\partial}(X)$，再用 Stein 上 $\bar\partial$ 的可解性（Hörmander $L^2$ 理论）证 $H^q(X,\mathcal O)=0$。第二步对任意凝聚层取局部展示 $0\to K\to\mathcal O^{\oplus q}\to\mathcal F\to0$，长正合列给出 $H^{q+1}(X,\mathcal F)\cong H^q(X,K)$（因自由层无环），再对层"层数"归纳把阶数逐步下降，最终归到 $H^1=0$，即 Cartan 的奇偶性归纳法。
+
+**老师（拓展）**：这些定理最漂亮的推论是哪一条？
+
+**学生**：是线丛分类化为拓扑问题。由指数层正合序列 $0\to\mathbb Z\to\mathcal O\to\mathcal O^*\to0$ 与定理 B，得
+$$\mathrm{Pic}(X)\cong H^1(X,\mathcal O^*)\cong H^2(X,\mathbb Z),$$
+即 Stein 流形上全纯线丛分类等价于拓扑分类（Oka–Grauert 原理）。Serre 1953 年把该层论方法移植到代数几何，建立 GAGA 原理，是代数几何层论革命的开端。

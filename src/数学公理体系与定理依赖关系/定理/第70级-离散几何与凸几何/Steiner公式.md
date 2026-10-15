@@ -77,6 +77,20 @@ $$
 - 在凸优化与机器学习中，Steiner 公式用于体积极小化、Wulff 构造与球面填充估计。
 - Steiner 公式推广到内蕴空间即 Weyl 管体积公式（tube formula），连接几何与谱几何。
 
+## 课堂问答
+
+**老师**：Steiner 公式把平行体的体积写成了什么？
+
+**学生**：$V_n(K_r)=\sum_{k=0}^{n}\omega_{n-k}V_k(K)\,r^{n-k}$，其中 $K_r=K+rB^n$ 是平行体，$V_0,\dots,V_n$ 是内在体积。即把凸体沿所有方向吹胖 $r$ 后的体积是关于 $r$ 的次数不超过 $n$ 的**多项式**，系数只依赖 $K$。
+
+**老师（追问）**：为什么展开后恰是多项式？Jacobian $\prod_i(1+t\kappa_i)$ 是怎么来的？
+
+**学生**：用外法向映射 $\Phi(x,t)=x+t\nu(x)$ 把平行体铺开成 $\partial K\times[0,r]$。在主方向 $e_i$ 上有 $d\Phi(e_i)=(1+t\kappa_i)e_i$，法向分量 $d\Phi(\partial_t)=\nu$ 与 $e_i$ 正交，故 $|\det d\Phi|=\prod_{i=1}^{n-1}(1+t\kappa_i)$，$\kappa_i$ 是主曲率。把乘积按 $t$ 展开得初等对称函数 $e_j(\kappa)$，逐项对 $t$ 积分即得关于 $r$ 的多项式。常见误区是把 $\kappa_i$ 符号搞错：按外法向有 $d\nu(e_i)=-\kappa_ie_i$，在 $r$ 小于最小曲率半径时行列式非负。
+
+**老师（拓展）**：Steiner 公式怎样一举给出 Brunn-Minkowski 与等周不等式？
+
+**学生**：由多项式结构可证 $|K+rB^n|^{1/n}$ 关于 $r$ 是**凸**函数，归一化后即得 $|A+B|^{1/n}\ge|A|^{1/n}+|B|^{1/n}$，这就是 Brunn-Minkowski。比较零次项（体积）与一次项（$V_{n-1}=\frac12 S$，即表面积）并对 $r$ 求导，即得等周不等式 $n\omega_n^{1/n}|E|^{(n-1)/n}\le P(E)$。此外 $V_0=1$、$V_n=|K|$，一整族内在体积把体积、表面积与平均曲率积分统一为刚体运动不变量；推广到内蕴空间即 Weyl 管体积公式。
+
 ## 相关条目
 
 - [Brunn-Minkowski 不等式](./Brunn-Minkowski不等式.md)：由 Steiner 公式的多项式对数凹性可推出本不等式。

@@ -88,3 +88,19 @@ R(X,Y)Z = c \left( g(Y, Z)X - g(X, Z)Y \right),
 $$
 
 且 $\mathrm{Ric}(X,Y) = (n-1)c \, g(X,Y)$，$S = n(n-1)c$。
+
+## 课堂问答
+
+**老师**：三个曲率概念怎样层层缩并得到？常曲率空间的关系是什么？
+
+**学生**：结论链条：截面曲率 $K(X,Y)=\frac{R(X,Y,Y,X)}{|X\wedge Y|^2}$ 最细；Ricci 是方向平均 $\mathrm{Ric}(X,X)=\sum_iK(X,e_i)$ 的 $(0,2)$ 张量；标量曲率是迹 $S=\mathrm{tr}_g\mathrm{Ric}=\sum_{i,j}R_{ijij}$。常曲率 $c$ 时 $R(X,Y)Z=c(g(Y,Z)X-g(X,Z)Y)$，$\mathrm{Ric}=(n-1)c\,g$，$S=n(n-1)c$。误区是以为从 Ricci 能反推 $K$——一般不能。
+
+**老师（追问）**：为什么说截面曲率完全决定曲率张量？
+
+**学生**：因 $R$ 经对称性视为 $\Lambda^2T_pM$ 上对称双线性型 $F$，在可分解双向量上 $F(X\wedge Y,X\wedge Y)=K(X,Y)|X\wedge Y|^2$ 正是截面曲率；再由极化恒等式
+$$F(\alpha,\beta)=\frac14\big(F(\alpha+\beta,\alpha+\beta)-F(\alpha-\beta,\alpha-\beta)\big)$$
+即可从截面曲率重构 $F$，从而重构 $R$。
+
+**老师（拓展）**：为何三者用途各异？
+
+**学生**：$K$ 最细、决定 $R$；$\mathrm{Ric}$ 中等，出现在 Bonnet-Myers、体积比较与 Einstein 方程；$S$ 最粗，出现在 Gauss-Bonnet 与 Einstein-Hilbert 作用量。Einstein 流形满足 $\mathrm{Ric}=\lambda g$，由第二 Bianchi 恒等式可推 $\nabla S=0$，即 $S=n\lambda$ 为常数。

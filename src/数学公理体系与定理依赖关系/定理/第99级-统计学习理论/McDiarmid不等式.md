@@ -111,6 +111,26 @@ $$
 - 随机算法：随机化贪心、随机舍入、负载均衡中最大负载的偏差控制。
 - 方法论意义：它展示了"用鞅 + Hoeffding 引理"这一通用机器，后来被推广为自归一化集中不等式、有界差分鞅不等式等更强结果。
 
+## 课堂问答
+
+**老师**：McDiarmid 和 Hoeffding 是同一件事吗？
+
+**学生**：不是，Hoeffding 是它的特例。结论：只要 $f$ 满足有界差分条件 $|f(x)-f(x')|\le c_i$（两点仅第 $i$ 个坐标不同），就有
+
+$$
+\mathbb{P}\big(|f(X)-\mathbb{E}f(X)|\ge t\big)\le2\exp\!\left(-\frac{2t^2}{\sum_{i=1}^n c_i^2}\right).
+$$
+
+Hoeffding 处理的是可加的 $f=\sum_iX_i$，此时 $c_i=b_i-a_i$，故退化回原式；McDiarmid 把独立性留在自变量上、只对函数提灵敏度要求。
+
+**老师（追问）**：证明主线是什么？
+
+**学生**：用鞅。令 $Z_i=\mathbb{E}[f(X)\mid X_1,\dots,X_i]$，则 $Z_0=\mathbb{E}f(X)$、$Z_n=f(X)$，是 Doob 鞅。有界差分条件推出鞅差 $|d_i|=|Z_i-Z_{i-1}|\le c_i$ 几乎必然；再由条件 Hoeffding 引理得 $\mathbb{E}[e^{\lambda d_i}\mid X_1,\dots,X_{i-1}]\le e^{\lambda^2c_i^2/8}$，于是指数过程 $M_k$ 是非负上鞅，用 Ville 极大不等式取出尾概率，最后对 $\lambda$ 求最小即得。
+
+**老师（拓展）**：举一个"不是和"的例子，说明它为何必需？
+
+**学生**：比如 $f(X)=\max_iX_i$，各 $X_i$ 独立均匀。改动任一 $X_i$ 对最大值的影响不超过 $1$，故 $c_i=1$，直接得 $\mathbb{P}(|\max_iX_i-\mathbb{E}\max_iX_i|\ge t)\le2e^{-2t^2/n}$。误区是以为只有"和"才能集中——像最长递增子序列、随机图染色数、经验风险这些非可加量，都靠有界差分框架处理。
+
 ## 相关条目
 
 - [Hoeffding不等式](./Hoeffding不等式.md)：本定理的起点与特例，处理独立随机变量之和。

@@ -103,6 +103,20 @@ $$
 
 Black–Scholes 型抛物方程把"无套利"原理翻译成一条可解的偏微分方程，开创了衍生品定价的定量时代：它给出欧式期权的闭式价格与全套 Greeks（$\partial_SV$、$\partial_S^2V$、$\partial_tV$ 等风险敏感度），并支撑二叉树、有限差分、蒙特卡洛等数值方法。作为一条后向抛物方程，它也是 Feynman–Kac 公式与 HJB 方程的原型实例，在风险管理、实物期权与利率模型中被广泛推广（如局部波动率、随机波动率模型）。
 
+## 课堂问答
+
+**老师**：期权价格为什么必须满足那条抛物型偏微分方程？
+
+**学生**：先给结论——$\partial_tV+\frac12\sigma^2S^2\partial_{SS}V+rS\partial_SV-rV=0$、$V(T,S)=\Phi(S)$。它由"复制组合 + 无套利"导出，是一条后向方程加分折现项。
+
+**老师（追问）**：对冲到底怎么消掉随机项的？
+
+**学生**：组合 $\Pi=V-\Delta S$，取 $\Delta=\partial_SV$，则 Its Itô 微分中 $dS$ 项正好相消，$d\Pi=(\partial_tV+\frac12\sigma^2S^2\partial_{SS}V)dt$ 已无 $dW_t$；无风险组合必须赚 $r$，即 $d\Pi=r\Pi\,dt$，比较 $dt$ 系数即得方程。
+
+**老师（拓展）**：最后怎么解出闭式定价公式？
+
+**学生**：方程化为折现后向方程 $(\partial_t+L-r)V=0$，鞅表示给 $V(t,S)=e^{-r(T-t)}\mathbb{E}[\Phi(S_T)\mid S_t=S]$；作 $x=\ln S$、$\tau=T-t$ 化为热方程，对 $\Phi=\max(S-K,0)$ 算得 $V=S\mathcal N(d_1)-Ke^{-r(T-t)}\mathcal N(d_2)$。常见误区是漏掉 $-\frac12\sigma^2$ 或用真实漂移 $\mu$ 代替 $r$。
+
 ## 相关条目
 
 - [Feynman-Kac公式](./Feynman-Kac公式.md)：把本方程的解写成带折现的期望。

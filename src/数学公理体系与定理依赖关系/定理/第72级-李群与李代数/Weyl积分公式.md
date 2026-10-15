@@ -77,6 +77,24 @@ $$
 - 在对称空间与 Lie 群上的调和分析中，它是 Harish-Chandra 积分公式、球函数理论的有限维原型。
 - 在物理中，它与 Chern-Simons 理论、格点规范理论的配分函数积分（Weyl 积分）密切相关。
 
+## 课堂问答
+
+**老师**：紧群上类函数的积分能化到一个环面上算吗？
+
+**学生**：能，公式为
+
+$$
+\int_G f(g)\,dg=\frac{1}{|W|}\int_T f(t)\,\big|\Delta(t)\big|^2\,dt,\qquad \big|\Delta(t)\big|^2=\prod_{\alpha\in\Phi^+}\big|e^{\alpha}(t)-1\big|^2.
+$$
+
+**老师（追问）**：权重 $|\Delta(t)|^2$ 与因子 $\frac1{|W|}$ 各自补偿什么？
+
+**学生**：考虑覆盖映射 $\phi:G/T\times T\to G$、$(gT,t)\mapsto gtg^{-1}$。把 $\mathfrak{g}$ 按 $\operatorname{Ad}(T)$ 分解为 $\mathfrak{t}\oplus\bigoplus_{\alpha>0}(\mathfrak{g}_\alpha\oplus\mathfrak{g}_{-\alpha})$，根平面 $\mathfrak{g}_\alpha$ 上 $\operatorname{Ad}(t)-1$ 的实二维 Jacobi 因子为 $|e^\alpha(t)-1|^2$，相乘即 $J(t)$。$\phi$ 在正则点 $t\in T_{\mathrm{reg}}$（$e^\alpha(t)\neq1$）处恰是 $|W|$ 重覆盖（来自 $N_G(T)/T$ 的陪集），故积分前出现 $\frac1{|W|}$。再用幺正性 $|e^{\alpha/2}-e^{-\alpha/2}|^2=|e^\alpha-1|^2$，由分母公式得 $J=|\Delta|^2$。
+
+**老师（拓展）**：这个权重在别处还有身份吗？
+
+**学生**：有。$|\Delta|^2$ 正是随机矩阵 $\beta=2$ 系综（GUE、CUE）特征值联合密度里的 Vandermonde 因子，是 Selberg 积分与谱统计的起点；它也是 Harish-Chandra 积分公式与球函数理论的有限维原型，并支撑特征标正交性的证明。
+
 ## 相关条目
 
 - [Weyl 特征标公式](./Weyl特征标公式.md)：本公式是其特征标正交性证明的核心工具。

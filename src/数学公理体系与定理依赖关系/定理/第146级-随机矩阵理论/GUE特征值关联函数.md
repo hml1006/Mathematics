@@ -36,3 +36,21 @@ $$
 ## 五、应用与意义
 
 关联函数的行列式形式使 GUE 的谱统计可显式处理（间距、间隙概率、谱形），是随机矩阵普适性、纠缠熵与自由概率校验的度量，也用于统计物理（二维色）与数学物理的非微扰新结构。
+
+## 课堂问答
+
+**老师**：GUE 的 $k$-点关联函数为什么能写成行列式？
+
+**学生**：结论：GUE 特征值构成行列式点过程。联合密度是 Vandermonde 型，
+$$\rho^{(n)}=\frac1{Z_n}e^{-\frac n2\sum\lambda_i^2}\prod_{i<j}(\lambda_i-\lambda_j)^2.$$
+用 Hermite 正交多项式展开 $\prod_{i<j}(\lambda_i-\lambda_j)$，得核 $K_n(x,y)=\frac{1}{\sqrt n}\big(h_{n+1}(x)h_n(y)-h_n(x)h_{n+1}(y)\big)e^{-\frac n4(x^2+y^2)}$（$h_n$ 归一 Hermite），于是
+$$R_k(x_1,\dots,x_k)=\det\big[K_n(x_i,x_j)\big]_{1\le i,j\le k}.$$
+常见误区是以为不同特征值独立——恰恰相反，行列式核编码了排斥。
+
+**老师（追问）**：这个核结构在缩放极限下变成什么？
+
+**学生**：由 Christoffel–Darboux 与 Plancherel–Rotach 渐近：bulk 尺度（谱内部，间距 $\sim n^{-1}$）下 $K_n$ 收敛到 sine 核；soft edge 尺度（$\sim n^{-2/3}$）下收敛到 Airy 核。行列式形式使间距分布、间隙概率、谱形成可显式计算的对象，且这种核表示是普适性的结构性来源。
+
+**老师（拓展）**：行列式点过程的好处是什么？
+
+**学生**：一旦关联函数是行列式，任意兴趣事件（$k$ 点、间隙、极值）都能化为 Fredholm 行列式或 Pfaffian，进而用可积系统（Painlevé、Riemann–Hilbert）显式求值。这也是 GUE/GOE/GSE 普适性、纠缠熵与自由概率一致性检验的统一技术框架。

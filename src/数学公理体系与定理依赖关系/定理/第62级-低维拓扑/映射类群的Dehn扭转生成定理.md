@@ -74,6 +74,20 @@ $$a_1,b_1,a_2,b_2,\dots,a_g,b_g,$$
 - **曲线图与几何群论**：$\operatorname{Mod}(S_g)$ 在曲线复形（curve complex）上的作用是（相对）双曲的（Masur–Minsky、Mazur–Minsky），Dehn 扭转是其基本元素。
 - **同调与 Torelli 群**：Dehn 扭转在 $H_1(S)$ 上的显式作用给出 $\operatorname{Mod}(S)\to\operatorname{Sp}(2g,\mathbb Z)$ 的满同态，Torelli 群、Johnson 同态与 Johnson 滤过都由 Dehn 扭转生成元刻画。
 
+## 课堂问答
+
+**老师**：Dehn 扭转生成定理的证明为什么能归结为归纳？
+
+**学生**：结论：靠 Dehn 的缩短归纳。取互不相交的真弧把曲面切成圆盘；若同胚 $f$ 固定所有弧的同痕类，则由 Alexander 技巧它在每块圆盘上同痕于恒等。若不固定，取弧 $\alpha$ 与其像 $f(\alpha)$ 的最内层区域定出本质曲线 $a$，$T_a^{\pm1}$ 消去一个交点使 $\#(\alpha\cap T_a^{\pm1}f(\alpha))<k$，对交点数归纳即把 $f$ 写成 Dehn 扭转之积。
+
+**老师（追问）**：环面情形怎么算？
+
+**学生**：$T^2=\mathbb R^2/\mathbb Z^2$，沿 $a,b$ 的扭转在基 $\{a,b\}$ 下是 $T_a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$、$T_b=\begin{pmatrix}1&0\\1&1\end{pmatrix}$，两者生成 $\operatorname{SL}_2(\mathbb Z)\cong\mathrm{Mod}(T^2)$；$T_aT_b$ 是 $60^\circ$ 旋转，故 $(T_aT_b)^6=1$，且满足 braid 关系 $T_aT_bT_a=T_bT_aT_b$。
+
+**老师（拓展）**：Humphries 生成元为何既够用又极小？
+
+**学生**：够用靠 pants 分解：每对裤子的交换同胚可写成三条边界曲线扭转的组合，沿分解拼接即得 $3g-1$ 个 Lickorish 生成元；再用 lantern 与 braid 关系化到链式曲线 $a_1,b_1,\dots,a_g,b_g$ 加一条 $c$，共 $2g+1$ 个。极小性由曲线图论证：能生成 $\operatorname{Mod}(S_g)$ 的最小邻域图恰有 $2g+1$ 个顶点。它是 Lickorish–Wallace 手术定理的代数输入。
+
 ## 相关条目
 
 - [曲面映射类群](./曲面映射类群.md)：本定理所生成的群的几何与代数结构与 Nielsen–Thurston 分类。

@@ -106,3 +106,17 @@ $\square$
 - **Gauss-Bonnet 定理**：$\chi(M) = \frac{1}{(2\pi)^n} \int_M \mathrm{Pf}(\Omega)$，其中 $\mathrm{Pf}$ 是 Pfaffian，$\Omega$ 是曲率形式。
 - **Hirzebruch 符号差定理**：$\tau(M) = \frac{1}{3} \int_M p_1(M)$，其中 $p_1$ 是第一 Pontryagin 类。
 - **Riemann-Roch 定理**：对 Riemann 面上的全纯线丛 $L$，$\mathrm{ind}(\bar{\partial}_L) = \deg L + 1 - g$。
+
+## 课堂问答
+
+**老师**：解析指标 $\dim\ker D-\dim\mathrm{coker}D$ 是整数，凭什么等于一个拓扑积分？
+
+**学生**：结论：$\mathrm{ind}(D)=\int_M\mathrm{ch}(\sigma(D))\cdot\hat A(TM)$。理由：用热核把指标写成 $\mathrm{Tr}(e^{-tD^*D})-\mathrm{Tr}(e^{-tDD^*})$，它对 $t$ 无关，而 $t\to0$ 的渐近展开给出局部示性类，积分后即拓扑指标。常见误区：以为它只是恒等式，忽视了它把分析量化为拓扑不变量。
+
+**老师（追问）**：为什么 $\mathrm{Tr}(e^{-t\Delta_+})-\mathrm{Tr}(e^{-t\Delta_-})$ 与 $t$ 无关？
+
+**学生**：因为两者之差等于核维数之差：$D$ 把非零谱方向成对映起来，正负谱一一配对互相抵消，只剩零模，故差的迹恒为 $\dim\ker D-\dim\ker D^*$。
+
+**老师（拓展）**：说出三个经典特例的对应形式。
+
+**学生**：Gauss–Bonnet 给 $\chi(M)=\int_M e(TM)$；Hirzebruch 符号差 $\tau(M)=\frac13\int_M p_1(M)$；Riemann 面上的 $\bar\partial_L$ 给 $\deg L+1-g$。而 de Rham 复形的指标正是 Euler 数。

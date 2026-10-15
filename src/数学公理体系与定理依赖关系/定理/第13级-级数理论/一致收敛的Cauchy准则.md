@@ -52,3 +52,17 @@ $$|f_n(x)-f(x)|=\lim_{m\to\infty}|f_n(x)-f_m(x)|\le\varepsilon/2<\varepsilon$$
 因此当 $n>N$ 时，对任意 $x\in E$ 有 $|f_n(x)-f(x)|<\varepsilon$，即 $\{f_n\}$ 一致收敛到 $f$。
 
 $\square$
+
+## 课堂问答
+
+**老师**：判断函数列一致收敛通常要先猜到极限函数，Cauchy 准则凭什么能省掉这一步？
+
+**学生**：结论是它给出充要条件：$\{f_n\}$ 在 $E$ 上一致收敛当且仅当对任意 $\varepsilon>0$ 存在 $N$，使 $n,m>N$ 时 $|f_n(x)-f_m(x)|<\varepsilon$ 对一切 $x\in E$ 成立，只涉及函数列自身。
+
+**老师（追问）**：必要性好证，充分性里"逐点极限"到"一致极限"的关键一步是什么？
+
+**学生**：对固定 $x$，$\{f_n(x)\}$ 是 Cauchy 列因而收敛，设 $f(x)=\lim_{m\to\infty}f_m(x)$；再固定 $n>N$ 令 $m\to\infty$，用极限保不等式得 $|f_n(x)-f(x)|=\lim_{m\to\infty}|f_n(x)-f_m(x)|\le\varepsilon/2<\varepsilon$，且此估计与 $x$ 无关。
+
+**老师（拓展）**：那把它搬到函数项级数上会变成什么样？
+
+**学生**：只需对部分和作差，即 $\sum u_n(x)$ 一致收敛当且仅当 $n>m>N$ 时 $\left|\sum_{k=m+1}^n u_k(x)\right|<\varepsilon$ 对一切 $x$ 成立，这正是 Weierstrass M 判别法的出发点。常见误区是把 $\varepsilon$ 后的 $N$ 写成依赖 $x$ 的 $N(x)$，那就退化成逐点收敛了。

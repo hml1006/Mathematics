@@ -118,3 +118,21 @@ $$\int_r^1 s^{-2n-1}\,ds=\frac{1}{2n}\Bigl(r^{-2n}-1\Bigr)\xrightarrow[r\downarr
 ## 五、应用与意义
 
 本组结论是全纯函数局部理论的全部来源：Laurent 展开给出留数与留数定理的计算框架，由此得到辐角原理、Rouché 定理与积分计算；奇点分类是 Mittag-Leffler 定理（构造给定主部的亚纯函数）与 Weierstrass 因子分解定理的前提；有限能量判据则是 Gromov 可去奇点定理在标量情形的模型，也是 Floer 同调中曲线端部渐近与"能量有限"假设的分析基础。
+
+## 课堂问答
+
+**老师**：全纯函数的孤立奇点如何由 Laurent 展开分类？
+
+**学生**：$f$ 在 $0<|z-z_0|<R$ 上有唯一展开 $f(z)=\sum_{k\in\mathbb Z}a_k(z-z_0)^k$，其主部（$k<0$ 部分）决定类型：主部为零 $\Rightarrow$ 可去奇点；主部为有限和（最高 $-m$ 次、$a_{-m}\neq0$）$\Rightarrow m$ 阶极点；主部为无穷级数 $\Rightarrow$ 本质奇点（由 Casorati–Weierstrass，像在 $\mathbb C$ 中稠密）。常见误区是以为判断奇点要靠计算各种极限——主部才是唯一本质的分类依据。
+
+**老师（追问）**：Riemann 可去奇点定理"有界即可去"怎么简证？
+
+**学生**：对 $k<0$ 由系数积分公式
+$$|a_k|\le\frac1{2\pi}\int_0^{2\pi}|f(z_0+\rho e^{i\theta})|\rho^{-k}d\theta\le M\rho^{|k|},$$
+令 $\rho\downarrow0$ 得 $a_k=0$，故 $f=\sum_{k\ge0}a_k(z-z_0)^k$ 可全纯延拓。更弱的判据是 $\lim_{z\to z_0}(z-z_0)f(z)=0$：令 $G=(z-z_0)f$，$G$ 有界可延拓且 $G(z_0)=0$，故 $f=G/(z-z_0)$ 的零点消掉一级奇异。
+
+**老师（拓展）**：有限能量判据怎样连到 Gromov 可去奇点定理？
+
+**学生**：模型情形直接算 Dirichlet 能量：
+$$\int_{r<|z-z_0|<1}|f'|^2\,dA=\sum_{k\ne0}2\pi k^2|a_k|^2\int_r^1s^{2k-1}\,ds,$$
+对 $k\le-1$ 积分 $\int_r^1s^{-2|k|-1}ds=\frac1{2|k|}(r^{-2|k|}-1)$ 在 $r\downarrow0$ 发散，故能量有限迫使一切负幂系数为零，$f$ 全纯延拓。这正是 Gromov 定理的标量模型——把 Laurent 系数换成"能量在收缩圆盘趋于零 $+$ 均值不等式 $+$ 椭圆正则性"三步，即推广到伪全纯曲线。

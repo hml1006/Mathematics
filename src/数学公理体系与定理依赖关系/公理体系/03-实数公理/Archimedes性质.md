@@ -53,3 +53,17 @@ Archimedes 性质以古希腊数学家阿基米德命名，他在《论球与圆
 - 该证明依赖于完备性公理，在域公理和序公理下不能证明 Archimedes 性质
 - 存在非 Archimedes 有序域（如超实数）满足域公理和序公理但不满足 Archimedes 性质
 - 因此，Archimedes 性质是实数的重要特征，而非逻辑必然
+
+## 课堂问答
+
+**老师**：Archimedes 性质是公理还是定理？为什么？
+
+**学生**：在实数公理体系中它是定理，可从完备性推出。反设 $\mathbb N$ 有上界，令 $s=\sup\mathbb N$；则存在 $n>s-1$，于是 $n+1>s$ 且 $n+1\in\mathbb N$，与 $s$ 为上界矛盾。故 $\forall x>0\,\exists n\in\mathbb N\,(n>x)$。
+
+**老师（追问）**：还有别的证明路径吗？
+
+**学生**：也可用闭区间套或单调有界定理。它的常用等价形式是 $\forall\varepsilon>0\,\exists n\,(1/n<\varepsilon)$，即 $\lim_{n\to\infty}1/n=0$。
+
+**老师（拓展）**：它为什么不是逻辑必然？
+
+**学生**：存在满足域公理与序公理的非 Archimedes 有序域，例如超实数 ${}^*\mathbb R$，其中含无穷小与无穷大元素。常见误区是把 Archimedes 性与完备性等同——前者弱于后者，非 Archimedes 域也可以具备别的完备性形式。

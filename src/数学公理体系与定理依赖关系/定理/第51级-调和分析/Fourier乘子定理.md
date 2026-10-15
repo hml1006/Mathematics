@@ -113,3 +113,17 @@ $T_m$ 的核 $K$ 满足 $|K(x)| \le C/|x|^n$ 和 Hörmander 条件。由 Mikhlin
 5. **非线性 PDE**：在非线性色散方程的研究中，分数次链式法则（fractional chain rule）和乘子估计依赖于 Mikhlin 定理的推广形式。
 
 6. **最优性**：Mikhlin 条件在某种意义上是最优的。Marcinkiewicz 乘子定理给出了更弱的条件（对每个变量的分离导数估计），而 Hörmander 的 $L^2$ 平均条件进一步推广了 Mikhlin 定理。
+
+## 课堂问答
+
+**老师**：Mikhlin 条件 $|\partial^\alpha m(\xi)|\le C|\xi|^{-|\alpha|}$ 的标度不变性为什么关键？
+
+**学生**：结论：它和二进分解天然匹配。换 $\xi\to2^j\xi$ 时两边标度一致，使 $m_j(\xi)=m(\xi)\varphi(2^{-j}\xi)$ 在每个二进环上近似常数。由此核估计 $|K_j(x)|\le C_N2^{jn}(1+2^j|x|)^{-N}$，求和得 $|K(x)|\le C/|x|^n$。
+
+**老师（追问）**：有了核的大小和光滑性，怎么得到 $L^p$ 有界？
+
+**学生**：验证 Hörmander 条件 $\int_{|x|>2|y|}|K(x-y)-K(x)|dx\le C$，配合 $|m|\le C$ 给 $L^2$ 有界（Plancherel），再用 Calderón-Zygmund 定理得到弱 (1,1) 型与全部 $1<p<\infty$ 的 $L^p$ 有界。
+
+**老师（拓展）**：Riesz 变换和分数次 Laplacian 哪个直接满足 Mikhlin 条件？
+
+**学生**：$R_j$ 符号 $-i\xi_j/|\xi|$ 零次齐次，满足条件，故 $L^p$ 有界。$(-\Delta)^{s/2}$ 符号 $|\xi|^s$ 无界不满足；但齐次化后的 $(-\Delta)^{s/2}(I-\Delta)^{-s/2}$，符号 $|\xi|^s/(1+|\xi|^2)^{s/2}$ 有界且满足条件。

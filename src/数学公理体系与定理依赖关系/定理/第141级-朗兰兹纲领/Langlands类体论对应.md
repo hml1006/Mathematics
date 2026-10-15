@@ -29,3 +29,17 @@ $$
 ## 五、应用与意义
 
 $GL(1)$ 情形的类体论既是朗兰兹纲领的基石，也是全局域的算术核心工具。它在虚二次域的复数乘法、Hecke L-函数的解析理论、以及解析/代数数论的互反律证明中起基础作用，并为 $GL(n)$ 的更高维推广确定了同构所应满足的各种性质（L-因子、$\varepsilon$-因子匹配）。
+
+## 课堂问答
+
+**老师**：$GL(1)$ 的 Langlands 对应就是类体论。请严格写出它断言的同构，并说明"$GL(1)$ 的自守表示"到底指什么。
+
+**学生**：先给结论：$F$ 上存在典范同构 $\mathrm{Gal}(F^{\mathrm{ab}}/F)\cong\mathbb{A}_F^\times/F^\times$。左端是最大 Abel 扩张的 Galois 群，右端是 idele 类群。$GL(1)$ 的自守表示就是 $\mathbb{A}_F^\times/F^\times$ 上的连续特征，它们与 $G_F$ 的一维 Galois 表示（即 $G_F^{\mathrm{ab}}$ 的特征）一一对应，Frobenius 元素对到相应的 Hecke 特征，L-因子逐位匹配。
+
+**老师（追问）**：这个同构是怎么证明的？为什么核恰好是 $F^\times$？
+
+**学生**：分四步：每个位 $v$ 先建局部类体论，得 $\theta_v:F_v^\times\to\mathrm{Gal}(F_v^{\mathrm{ab}}/F_v)$；把它们乘起来得全局映射 $\theta=\prod_v\theta_v:\mathbb{A}_F^\times\to\mathrm{Gal}(F^{\mathrm{ab}}/F)$；再由 Artin 互反律证明 $\theta$ 满射且 $\ker\theta=F^\times$（对角嵌入的全局单位）；最后由完全性得同构。常见误区：以为商掉 $F^\times$ 会丢信息——恰恰相反，商掉它才得到不依赖位选取的互反对象。
+
+**老师（拓展）**：既然 $GL(1)$ 只是 $GL(n)$ 的最低阶情形，为什么它仍被视作整个 Langlands 纲领的基石？
+
+**学生**：因为 $n=1$ 已经确立了对应应当满足的全部模板：有典范同构、保 L-因子与 $\varepsilon$-因子、Frobenius 对到 Hecke 特征。高维 Langlands 的每一项要求都是这条同构在 $\mathbb{A}_G$ 上的自然推广；它在虚二次域的复数乘法、Hecke L-函数解析理论与互反律证明中仍是核心工具。

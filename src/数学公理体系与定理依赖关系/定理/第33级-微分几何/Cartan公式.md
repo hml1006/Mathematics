@@ -88,6 +88,24 @@ $$\mathcal L_Xd=d\iota_Xd+\iota_Xd^2=d\iota_Xd=d(\iota_Xd)+d^2\iota_X=d(d\iota_X
 
 即李导数与外微分交换。因此 $\mathcal L_X$ 把闭形式映为闭形式、把恰当形式映为恰当形式，从而在 de Rham 上同调 $H^\bullet_{dR}(M)$ 上诱导线性算子（当 $X$ 是完备向量场时即由流诱导的同伦）。
 
+## 课堂问答
+
+**老师**：Cartan 公式号称把三种来源不同的运算缝在一起，是哪三种？公式怎么写？
+
+**学生**：结论是"李导数等于外微分与内乘之和"：
+$$
+\mathcal L_X\omega=d(\iota_X\omega)+\iota_X(d\omega).
+$$
+它缝合的正是来自流的李导数 $\mathcal L_X$、来自斯托克斯定理的外微分 $d$、以及纯代数的内乘 $\iota_X$。之所以"魔法"，是因为 $d\iota_X+\iota_Xd$ 恰好是次数 $0$ 的导子，与 $\mathcal L_X$ 同型。
+
+**老师（追问）**：你凭什么只用"函数"和"恰当 $1$-形式 $df$"两个生成元就断定处处相等？会不会漏？
+
+**学生**：靠的是导子的刚性。$A=d\iota_X+\iota_Xd$ 满足分次 Leibniz 律 $A(\omega\wedge\eta)=A\omega\wedge\eta+\omega\wedge A\eta$，而任意 $k$-形式局部可写成 $\sum_i f_i\,dg_{i1}\wedge\cdots\wedge dg_{ik}$。在 $f$ 上 $Af=Xf=\mathcal L_Xf$；在 $df$ 上 $A(df)=d(Xf)$，而 $\mathcal L_X(df)=d(\mathcal L_Xf)=d(Xf)$。生成元一致，楔积便一致。常见误区是逐项硬算，其实导子性质已把无穷多项约化为两类验证。
+
+**老师（拓展）**：由它能否直接看出 $\mathcal L_X$ 与 $d$ 交换？这对上同调意味着什么？
+
+**学生**：能。$\mathcal L_Xd=d\iota_Xd+\iota_Xd^2=d\iota_Xd=d(d\iota_X+\iota_Xd)=d\mathcal L_X$，其中用了 $d^2=0$。因此 $\mathcal L_X$ 把闭形式映为闭、恰当形式映为恰当，从而在 de Rham 上同调 $H^\bullet_{dR}(M)$ 上诱导线性算子——这正是辛几何 Moser 技巧中辛结构不变的算子层根据。
+
 ## 相关条目
 
 - [deRham上同调](./deRham上同调.md)：由本公式得 $\mathcal L_X$ 与外微分交换，从而作用在 de Rham 上同调上。

@@ -77,3 +77,21 @@ $$i(X,Y;z)=\chi\big(\mathcal{O}_{X,z}\otimes^{\mathbb{L}}_A\mathcal{O}_{Y,z}\big
 2. **导出代数几何的直接动机**：导出纤维积 $X\times^{\mathbb{R}}_PY$ 的结构层就是 $\mathrm{Tor}$ 复形，Serre 公式说明"导出相交 = 带同调信息的相交"。由此发展出导出相交理论、虚拟基本类、形变-障碍理论以及 Gromov-Witten/DT 理论中的虚拟计数。
 
 3. **推广**：公式可推广到非正规相交、非光滑环境与导出环谱（spectral algebraic geometry）的框架；在 $\infty$-范畴语言下，它成为"导出张量积的 Euler 特征 = 相交重数"的一般定理，并与 K-理论、Riemann-Roch（在导出设置下）紧密联系。
+
+## 课堂问答
+
+**老师**：Serre 相交公式把相交重数定义成什么？
+
+**学生**：结论：定义成 Tor 群的交错和（Euler 特征数）。对光滑环境 $P$ 中 $X,Y$ 与闭点 $z$，$A=\mathcal{O}_{P,z}$，
+$$i(X,Y;z)=\sum_{i\ge0}(-1)^i\,\ell_A\big(\mathrm{Tor}_i^A(\mathcal{O}_{X,z},\mathcal{O}_{Y,z})\big).$$
+它在"正常相交"（Tor-独立，$\mathrm{Tor}_i=0,\ i>0$）时退化为长度 $\ell_A(\mathcal{O}_{X,z}\otimes_A\mathcal{O}_{Y,z})$。常见误区是以为这求和可能有无限项——$P$ 光滑使 $A$ 正则，$X$ 局部由正则序列截出，Koszul 预解有限，故只有 $0\le i\le r$ 非零。
+
+**老师（追问）**：有限性和退化这两点各自靠什么？
+
+**学生**：有限性靠 Koszul 预解：$\mathcal{O}_{X,z}=A/(f_1,\dots,f_r)$ 有长度 $r$ 的自由预解，故 $\mathrm{Tor}_i=0$（$i>r$）。退化靠 Tor-独立：此时 $K_\bullet\otimes_A\mathcal{O}_{Y,z}$ 只在 $H_0$ 有同调，是有限自由预解，Euler 特征在同调上等于 $\ell_A(H_0)$，即交子概形局部长度。一般情形非负性是 Gillet–Soulé 型深刻结果。
+
+**老师（拓展）**：导出几何怎么解释这条公式？
+
+**学生**：导出纤维积 $X\times^{\mathbb{R}}_PY$ 的结构层就是 $\mathcal{O}_{X,z}\otimes^{\mathbb{L}}_A\mathcal{O}_{Y,z}$，其第 $i$ 个同调为 $\mathrm{Tor}_i$；于是
+$$i(X,Y;z)=\chi\big(\mathcal{O}_{X,z}\otimes^{\mathbb{L}}_A\mathcal{O}_{Y,z}\big)=\big[\mathcal{O}_{X\times^{\mathbb{R}}_PY,z}\big]\in K_0.$$
+即"几何相交重数 = 导出相交层的 $K_0$ 类"。推论给出 Bézout：$\sum_z i(X,Y;z)=\deg X\cdot\deg Y$。这把过相交（excess intersection）与形变理论统一处理。

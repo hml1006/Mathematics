@@ -61,6 +61,26 @@ $$
 - 它是 Kac-Moody 代数、Macdonald 恒等式与 Weyl-Kac 特征标公式的原型，也出现在模形式（Dedekind $\eta$ 函数、Jacobi 三重积）中。
 - 与 Weyl 积分公式配合，是紧李群特征标正交性与调和分析的代数基础。
 
+## 课堂问答
+
+**老师**：把 Weyl 分母公式写给我看。
+
+**学生**：作为形式指数恒等式，
+
+$$
+\sum_{w\in W}\varepsilon(w)e^{w(\rho)}=\prod_{\alpha\in\Phi^+}\big(e^{\alpha/2}-e^{-\alpha/2}\big)=e^{\rho}\prod_{\alpha\in\Phi^+}\big(1-e^{-\alpha}\big),
+$$
+
+其中 $\rho=\frac12\sum_{\alpha>0}\alpha$，$\varepsilon(w)$ 是符号。
+
+**老师（追问）**：怎么证明交错和正好因式分解成这些因子？
+
+**学生**：三步。其一，$F=\sum_w\varepsilon(w)e^{w\rho}$ 是 $W$-交错的：由 $w\mapsto vw$ 是置换及 $\varepsilon(v^{-1}w')=\varepsilon(v)\varepsilon(w')$ 得 $v(F)=\varepsilon(v)F$。其二，取简单反射 $s=s_{\alpha_i}$，把 $F$ 按 $e^{\alpha_i}$ 的幂整理后 $s(F)=-F$ 迫使系数 $c_k=-c_{-k}$，故每个因子 $e^{\alpha/2}-e^{-\alpha/2}$ 整除 $F$，正根因子两两互素故其乘积整除 $F$。其三，比较支配序最高项 $e^{\rho}$：两边系数均为 $1$，交错形式整式环以该乘积为自由基，故商恒为 $1$。
+
+**老师（拓展）**：令 $e^{\alpha}\to1$ 会得到什么？
+
+**学生**：因子 $e^{\alpha/2}-e^{-\alpha/2}\to\alpha$，于是乘积趋于 $\prod_{\alpha>0}\alpha$，交错和趋于 $\prod_{\alpha>0}(\lambda+\rho,\alpha)$ 的同型表达式，直接得到 Weyl 维数公式 $\dim V(\lambda)=\prod_{\alpha>0}\frac{\langle\lambda+\rho,\alpha\rangle}{\langle\rho,\alpha\rangle}$。它同时是 Schur 函数恒等式、Kac-Moody 与 Macdonald 恒等式族的原型。
+
 ## 相关条目
 
 - [Weyl 特征标公式](./Weyl特征标公式.md)：本公式正是其特征标公式的分母。

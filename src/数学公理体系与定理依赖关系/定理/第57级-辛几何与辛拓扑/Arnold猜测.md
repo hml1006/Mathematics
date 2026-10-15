@@ -149,3 +149,19 @@ $\square$
 - **相对 Arnold 猜想**：带边辛流形或带 Lagrangian 边界的情形。
 
 Arnold 猜想的证明及其后续发展深刻改变了辛拓扑、Hamilton 动力学与几何分析的面貌，是 20 世纪末数学的重大成就之一。
+
+## 课堂问答
+
+**老师**：请陈述 Arnold 猜想非退化情形的结论。
+
+**学生**：设 $(M,\omega)$ 是闭辛流形，$\varphi_H$ 是非退化 Hamilton 同胚（所有不动点处 $d\varphi_H$ 无特征值 $1$），则
+$$\#\mathrm{Fix}(\varphi_H)\ge\sum_{k=0}^{2n}\dim H_k(M;\mathbb Z_2).$$
+它把 Morse 理论"临界点数 $\ge$ Betti 数之和"从有限维函数搬到了 Hamilton 同胚的不动点，是辛刚性的标志。常见误区是以为一般微分同胚也有此下界——即使保体积的同胚也没有。
+
+**老师（追问）**：证明链条的关键几步是什么？
+
+**学生**：第一步，不动点 $\iff$ Hamilton 方程 $\dot x=X_H(t,x)$ 的 1-周期解 $\iff$ 作用泛函 $\mathcal A_H(x)=-\int_{D^2}\tilde x^*\omega+\int_0^1H(t,x)dt$ 的临界点（其变分 $d\mathcal A_H(x)[\xi]=\int_0^1\omega(\xi,\dot x-X_H)dt$）。第二步，按 Conley–Zehnder 指标 $\mu_{CZ}$ 分次构造 Floer 链复形 $CF_k=\bigoplus_{\mu_{CZ}=k}\mathbb Z_2\langle x\rangle$。第三步，用 Floer 方程模空间模 2 计数定义 $\partial$，证 $\partial^2=0$（Gromov 紧性与模空间边界分析）。第四步，取 $H=\varepsilon f$ 退化，$HF_*\cong MH_{*+n}\cong H_{*+n}(M;\mathbb Z_2)$。
+
+**老师（拓展）**：一般（可能退化）情形怎么处理球气泡？
+
+**学生**：由 Fukaya–Ono、Liu–Tian、Hofer–Salamon 用虚拟模空间技术。扰动 $H$ 为非退化 $H_\varepsilon$，用虚拟基本类替代简单模 2 计数处理球气泡，得到一般情形 $\#\mathrm{Fix}(\varphi_H)\ge\mathrm{SB}(M;\mathbb Z_2)$。它是现代辛拓扑的起点，并推广出量子、Lagrangian、等变与相对 Arnold 猜想。

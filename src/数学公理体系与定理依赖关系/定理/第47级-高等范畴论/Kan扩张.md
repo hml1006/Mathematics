@@ -83,3 +83,17 @@ $$
 $$
 
 **推论**：左Kan扩张是左伴随的推广。具体地，$F: \mathcal{A} \to \mathcal{E}$ 沿 $K: \mathcal{A} \to \mathcal{B}$ 的左Kan扩张存在当且仅当 $\mathrm{Lan}_K(-)$ 是 $- \circ K$ 的左伴随。
+
+## 课堂问答
+
+**老师**：左 Kan 扩张的存在性为什么只需要 $\mathcal E$ 余完备？
+
+**学生**：结论：可以逐点用逗号范畴的余极限显式造出它：$\mathrm{Lan}_K F(B)=\mathrm{colim}_{(K\downarrow B)}F(A)$。理由：每个 $(A,f:K(A)\to B)$ 是一个贡献，余极限把候选汇总并对齐，泛性质自动满足。常见误区：以为需要 $K$ 全忠实——其实 $K$ 可以任意。
+
+**老师（追问）**：那自然变换 $\eta:F\Rightarrow\mathrm{Lan}_K F\circ K$ 从哪来？
+
+**学生**：取单位态射这个对象 $(A,\mathrm{id}_{K(A)})\in(K\downarrow K(A))$ 对应的余极限包含映射 $\iota_A:F(A)\to\mathrm{Lan}_K F(K(A))$，它就是 $\eta_A$。这也说明为何 $\eta$ 是"最自然"的候选。
+
+**老师（拓展）**：能举一个"伴随是 Kan 扩张"的例子吗？
+
+**学生**：当 $\mathcal A=\mathcal B=\mathcal E$、$K=F$ 时，$F$ 沿自身的左 Kan 扩张存在当且仅当 $F$ 有右伴随，此时 $\mathrm{Lan}_F F=\mathrm{id}$。所以极限、余极限、伴随都是 Kan 扩张的特例，故有"概念之母"之称。

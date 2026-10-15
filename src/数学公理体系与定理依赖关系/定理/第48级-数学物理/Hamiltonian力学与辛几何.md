@@ -78,3 +78,17 @@ $$
 $$
 
 利用 $[X_F, X_G] = -X_{\{F, G\}}$（由 $\omega$ 闭可证），结合 $[X_H, X_G](F) = X_H X_G(F) - X_G X_H(F)$ 即可得证。$\square$
+
+## 课堂问答
+
+**老师**：为什么说辛几何的全局性质"由拓扑决定"，与 Riemann 几何相反？
+
+**学生**：结论：Darboux 定理说任意辛流形局部都同构于标准形式 $\omega=\sum_i dq^i\wedge dp_i$。理由：用 Moser 方法把 $\omega_1-\omega_0=d\alpha$ 沿插值消掉，说明辛形式没有局部不变量；而 Riemann 曲率恰是局部不变量。常见误区：以为存在"辛曲率"。
+
+**老师（追问）**：Hamilton 向量场由 $\iota_{X_H}\omega=dH$ 定义，它为什么保持辛体积？
+
+**学生**：因为 $\mathcal L_{X_H}\omega^n=n\omega^{n-1}\wedge d(\iota_{X_H}\omega)=n\omega^{n-1}\wedge d(dH)=0$。这里用了 $d\omega=0$ 与 $d^2=0$，这正是 Liouville 定理。
+
+**老师（拓展）**：能量守恒与 Poisson 定理怎么表述？
+
+**学生**：$\{H,H\}=0$ 给能量守恒；若 $F,G$ 是首次积分，即 $\{F,H\}=\{G,H\}=0$，则 Jacobi 恒等式给 $\{\{F,G\},H\}=0$，即 $\{F,G\}$ 也是首次积分——对称系统因此有"守恒量生成守恒量"的结构。

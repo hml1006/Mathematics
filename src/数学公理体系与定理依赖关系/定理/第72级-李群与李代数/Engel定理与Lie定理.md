@@ -43,3 +43,17 @@ Engel 定理的充分性通过归纳：先证明存在非零中心元素 $Z$（�
 ## 五、应用与意义
 
 Engel 与 Lie 定理是李代数结构理论和表示论的基石：Engel 定理用于刻画幂零性、证明 Lie 定理的可解三角化；Lie 定理给出可解李代数表示的上三角结构，是群表示的三角化定理（如酉群可约表示的上三角嵌入）的代数版本。它们在 Lie 根与 Killing 形式理论、Borel 子代数、Lie 定理与谱理论中反复出现，也为有限维群表示中 Jordan 块结构的研究提供框架，是连接抽象代数与表示几何的桥梁。
+
+## 课堂问答
+
+**老师**：Engel 定理与 Lie 定理各说了什么？
+
+**学生**：Engel：有限维李代数 $\mathfrak{g}$ 幂零当且仅当每个 $\operatorname{ad}(X)$ 都是幂零线性变换。Lie：特征 $0$ 代数闭域上的可解李代数，其任何有限维表示都能在一组基下同时上三角化。
+
+**老师（追问）**：Engel 的充分性怎么找到非零中心元？
+
+**学生**：取最大真子代数 $\mathfrak{h}$，考虑它在 $\mathfrak{g}/\mathfrak{h}$ 上的表示 $\rho(H)=\operatorname{ad}(H)$，每个 $\rho(H)$ 幂零，故由幂零线性变换的公共零化向量引理存在非零 $v$ 被全体 $\rho(H)$ 零化。取其代表 $X\notin\mathfrak{h}$，则 $[\mathfrak{h},X]\subset\mathfrak{h}$，由 $\mathfrak{h}$ 极大得 $\mathfrak{g}=\mathfrak{h}+\mathbb{C}X$；再对 $\mathfrak{g}/\mathbb{C}Z$ 归纳并检查降中心列，得到 $\mathfrak{g}$ 幂零。
+
+**老师（拓展）**：Lie 定理如何借助 Engel？
+
+**学生**：$\mathfrak{g}$ 可解推出 $[\mathfrak{g},\mathfrak{g}]$ 幂零，对 $[\mathfrak{g},\mathfrak{g}]$ 用 Engel 定理找到被其零化的非零 $v$。再取余维 $1$ 子代数 $\mathfrak{h}$ 做归纳，得到公共特征向量 $w$；由 $v,Xv,X^2v,\dots$ 张成的不变子空间上 $X$ 可上三角化，逐步拼出整体上三角基。它是 Schur 上三角化定理的代数版本。

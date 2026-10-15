@@ -86,6 +86,20 @@ $$
 
 证毕。
 
+## 课堂问答
+
+**老师**：为什么对一般 $C^\infty$ 函数也能写出 $f(x)=f(0)+\sum_i x_i g_i(x)$ 且 $g_i$ 光滑？
+
+**学生**：结论：把多元问题化为一元。沿射线 $h(t)=f(tx)$，由微积分基本定理 $f(x)-f(0)=\int_0^1\sum_i x_i\partial_i f(tx)\,\mathrm dt$，把 $x_i$ 提到积分号外即得 $g_i(x)=\int_0^1\partial_i f(tx)\,\mathrm dt$。常见误区：以为需要 Taylor 级数的收敛性。
+
+**老师（追问）**：$g_i$ 的光滑性与 $g_i(0)=\partial_i f(0)$ 分别怎么来？
+
+**学生**：光滑性来自 $\partial_j g_i(x)=\int_0^1 t\,\partial_j\partial_i f(tx)\,\mathrm dt$ 可反复进行；$g_i(0)$ 只需代入 $x=0$，得 $\int_0^1\partial_i f(0)\,\mathrm dt=\partial_i f(0)$。
+
+**老师（拓展）**：消没到 $k$ 阶的版本怎么推？
+
+**学生**：对 $f=\sum_{|\alpha|=1}x^\alpha g_\alpha$ 反复使用引理（各 $g_\alpha$ 消没到 $k-1$ 阶），归纳得 $f=\sum_{|\alpha|=k}x^\alpha g_\alpha$。这正是 Morse 引理把函数整理成 $x_ix_j a_{ij}(x)$ 的依据。
+
 ## 相关条目
 
 - [Morse函数与Morse引理](./Morse函数与Morse引理.md)：Morse 引理在临界点附近把函数化为二次型，其代数基础正是 Hadamard 引理。

@@ -102,3 +102,17 @@ $$
 ## 五、应用与意义
 
 该公式是算术代数几何的"计数引擎"：它把有理点计数、Hecke 对应与 Frobenius 的作用统一为相交数与局部因子问题，是 Weil 猜想（有理性、函数方程、Riemann 假设）证明框架中"迹 = 相交"这一环的关键；其带系数的局部因子形式支撑了 Deligne-Lusztig 对有限群表示的构造、Lefschetz 铅笔与单值性论证，以及现代迹公式（导出几何、形变理论、Weil II）中"计数即上同调"的范式。
+
+## 课堂问答
+
+**老师**：相比经典 Lefschetz 不动点公式，Lefschetz–Verdier 版本强在哪里？
+
+**学生**：结论：对对应 $X\xleftarrow{c_1}Z\xrightarrow{c_2}X$，有 $L(c,\mathcal F)=\sum_i(-1)^i\mathrm{tr}(c^*\mid H^i_c(X,\mathcal F))=\langle\Gamma_c,\Delta\rangle_{\mathcal F}$。它把迹读成"对应图与对角线的带系数相交数"，并额外给出**局部因子**，因而更强、更适用于算术。
+
+**老师（追问）**：正特征下交点往往不横截，怎么处理重数？
+
+**学生**：不靠横截假设，而是用 Verdier 的 trace map 与对偶 formalism 定义局部 Lefschetz 数。相交只在固定点集 $\mathrm{Fix}(c)$ 上有支撑，故可沿它局部化：$L(c,\mathcal F)=\sum_x L_x$；于是 $\mathrm{Fix}(c)=\emptyset\Rightarrow L(c,\mathcal F)=0$。当 $dc=0$ 时切空间因子为 $1$，$L_x$ 退化为茎上的迹 $\mathrm{tr}(\mathrm{Frob}_x\mid\mathcal F_x)$。
+
+**老师（拓展）**：Grothendieck–Lefschetz 数点公式怎么成为它的特例？
+
+**学生**：取 $k=\mathbb{F}_q$、$c=\Gamma_{\phi^n}$，则 $c^*=\phi^{n*}$，$\mathrm{Fix}(c)=X(\mathbb{F}_{q^n})$ 且每点孤立；因 Frobenius 在 $\mathbb{F}_{q^n}$-点切空间上微分平凡，局部数为茎迹，求和即得 $\sum_i(-1)^i\mathrm{tr}(\phi^{n*}\mid H^i_c)=\sum_{x\in X(\mathbb{F}_{q^n})}\mathrm{tr}(\mathrm{Frob}_x^n\mid\mathcal F_x)$。 一句话：这条"母版"公式就是"计数即上同调"在算术世界的严格化身。

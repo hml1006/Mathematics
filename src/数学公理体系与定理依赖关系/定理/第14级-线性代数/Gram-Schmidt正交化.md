@@ -66,3 +66,17 @@ $$\langle\mathbf{w}_k,\mathbf{u}_i\rangle=\langle\mathbf{v}_k,\mathbf{u}_i\rangl
 由归纳法，结论对所有 $k$ 成立。
 
 $\square$
+
+## 课堂问答
+
+**老师**：给我一组线性无关向量，怎么系统地变成两两垂直、长度为一的标准正交组，而且还保持张成空间不变？
+
+**学生**：结论：逐个"减去在已有方向上的投影再归一化"。设 $W_{k-1}=\operatorname{span}\{\mathbf u_1,\dots,\mathbf u_{k-1}\}$，取 $\mathbf w_k=\mathbf v_k-\sum_{j=1}^{k-1}\langle\mathbf v_k,\mathbf u_j\rangle\mathbf u_j$，再令 $\mathbf u_k=\mathbf w_k/\|\mathbf w_k\|$。
+
+**老师（追问）**：你怎么保证 $\mathbf w_k$ 一定不为零？如果它真的为零会怎样？
+
+**学生**：若 $\mathbf w_k=0$，则 $\mathbf v_k=\sum_{j<k}\langle\mathbf v_k,\mathbf u_j\rangle\mathbf u_j\in W_{k-1}=\operatorname{span}\{\mathbf v_1,\dots,\mathbf v_{k-1}\}$，与 $\{\mathbf v_1,\dots,\mathbf v_k\}$ 线性无关矛盾，故 $\mathbf w_k\ne0$。
+
+**老师（拓展）**：正交性凭什么成立？这个方法在数值上真的可靠吗？
+
+**学生**：对 $i<k$，$\langle\mathbf w_k,\mathbf u_i\rangle=\langle\mathbf v_k,\mathbf u_i\rangle-\sum_{j<k}\langle\mathbf v_k,\mathbf u_j\rangle\langle\mathbf u_j,\mathbf u_i\rangle=0$，靠的就是 $\langle\mathbf u_j,\mathbf u_i\rangle=\delta_{ij}$。常见误区是以为它数值稳定——经典 Gram-Schmidt 在向量近乎相关时会严重损失正交性，实践中要用改进版并做再正交化。

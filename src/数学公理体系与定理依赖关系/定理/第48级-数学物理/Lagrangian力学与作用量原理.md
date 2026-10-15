@@ -90,6 +90,20 @@ $$
 
 **注**：作用量原理中的"驻值"不必是最小值（如在某些区间上路径对应的是鞍点或极大），故更准确的名称是"驻值原理"。
 
+## 课堂问答
+
+**老师**：为什么"作用量取驻值"能等价于 Euler–Lagrange 方程，而不必是最小值？
+
+**学生**：结论：$\delta S=0$ 只要求一阶变分为零。理由：令 $q_\epsilon=q+\epsilon h$（端点为零），得 $\varphi'(0)=\int\sum_i(\frac{\partial L}{\partial q_i}h_i+\frac{\partial L}{\partial\dot q_i}\dot h_i)\,dt=0$，再分部积分把 $\dot h_i$ 移走。常见误区：称"最小作用量"，实为驻值，可能是鞍点或极大。
+
+**老师（追问）**：端点项为什么消失，最后一步靠什么定理？
+
+**学生**：端点项 $[\frac{\partial L}{\partial\dot q_i}h_i]$ 因 $h_i(t_1)=h_i(t_2)=0$ 消失；剩下 $\int\sum_i(\frac{\partial L}{\partial q_i}-\frac{d}{dt}\frac{\partial L}{\partial\dot q_i})h_i=0$，由变分法基本引理得括号恒为零。
+
+**老师（拓展）**：怎样过渡到 Hamilton 形式？
+
+**学生**：令 $p_i=\frac{\partial L}{\partial\dot q_i}$，经 Legendre 变换 $H=\sum_i p_i\dot q_i-L$，即得正则方程 $\dot q_i=\frac{\partial H}{\partial p_i}$、$\dot p_i=-\frac{\partial H}{\partial q_i}$，与 Poisson 括号形式一致。
+
 ## 相关条目
 
 - [Hamiltonian力学与辛几何](./Hamiltonian力学与辛几何.md)：Lagrange 形式经 Legendre 变换后的等价表述，辛几何为其自然舞台。

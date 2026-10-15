@@ -111,6 +111,21 @@ $$
 故 $\Psi(x) = \eta$，即 $\Psi \circ \Phi = \mathrm{id}$。$\square$
 
 **推论**（Yoneda嵌入）：$\mathrm{Hom}_{\mathcal{C}}(A, -) \cong \mathrm{Hom}_{\mathcal{C}}(B, -)$ 当且仅当 $A \cong B$。即，Hom 函子完全决定了对象。
+
+## 课堂问答
+
+**老师**：$\Phi(\eta)=\eta_A(\mathrm{id}_A)$ 为什么足以决定整个自然变换？
+
+**学生**：结论：自然性方块把 $\eta_B$ 逼出来——$F(f)(\eta_A(\mathrm{id}_A))=\eta_B(f)$，即 $\eta_B(f)=F(f)(x)$。所以自然变换在恒等映射上的取值就是它的全部数据。常见误区：以为该同构要求 $\mathcal C$ 小，其实局部小即可。
+
+**老师（追问）**：逆映射 $\Psi(x)_B(f)=F(f)(x)$ 的自然性关键用在哪？
+
+**学生**：用在复合 $g\circ f$ 上：$\Psi(x)_C(g\circ f)=F(g\circ f)(x)=F(g)\circ F(f)(x)$，正好等于自然性方块两边。这里 $F$ 是函子、保复合是核心，若 $F$ 只是映射则结论不成立。
+
+**老师（拓展）**：对 $F=h_B$ 会得到什么？
+
+**学生**：得 $\mathrm{Nat}(h_A,h_B)\cong\mathrm{Hom}(A,B)$，即米田嵌入的全忠实性，从而 $A\cong B\iff h_A\cong h_B$。这是"对象由它被打量的一切方式唯一决定"的精确表述。
+
 ## 相关条目
 
 - [Yoneda 引理（第126级-范畴论）](../第126级-范畴论/Yoneda引理.md)：与本条目为同一定理，另收录于第126级-范畴论，可交叉参考。

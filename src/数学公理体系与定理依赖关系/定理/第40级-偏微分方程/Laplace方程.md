@@ -96,6 +96,20 @@ $$v''(r)+\frac{n-1}{r}v'(r)=(n-1)(n-2)r^{-n}-(n-1)(n-2)r^{-n}=0.$$
 
 故 $\Phi=C\,|x|^{2-n}$ 在 $\mathbb R^n\setminus\{0\}$ 上调和；$n=2$ 时同理 $\Delta\log|x|=0$。这正是基本解"只在原点奇异"的来源。$\square$
 
+## 课堂问答
+
+**老师**：$\Delta u=0$ 最本质的刻画是什么，它凭什么推出唯一性？
+
+**学生**：本质是平均值性质 $u(x)=\frac{1}{|\partial B(x,r)|}\oint_{\partial B(x,r)}u\,dS=\frac{1}{|B(x,r)|}\int_{B(x,r)}u\,dV$：调和函数在每点等于其周围一圈的平均，因此内部既无源也无汇。
+
+**老师（追问）**：这个平均值性质怎么证出来？
+
+**学生**：记球面平均 $\phi(r)=\frac{1}{\omega_n}\oint_{|\xi|=1}u(x+r\xi)\,d\sigma(\xi)$，对 $r$ 求导得 $\phi'(r)=\frac{1}{|\partial B(x,r)|}\oint_{\partial B}\frac{\partial u}{\partial n}\,dS$；由散度定理它等于 $\frac{1}{|\partial B|}\int_{B(x,r)}\Delta u\,dV=0$，故 $\phi$ 为常数，再令 $r\to0$ 用连续性得 $\phi\equiv u(x)$。
+
+**老师（拓展）**：最大值原理与基本解分别起什么作用？
+
+**学生**：最大值原理是平均值性质的直接推论：若内部取最大 $M$，则 $M=u(x_0)=\fint_{B}u\le M$ 迫使 $u\equiv M$ 于该球，连通性把它传播成全局常数，于是 Dirichlet 问题两个解之差 $w=u_1-u_2$（$\Delta w=0$、$w|_{\partial\Omega}=0$）只能为零，解唯一。基本解 $\Phi$ 则给出点源响应：$n\ge3$ 时 $\Phi\propto|x|^{2-n}$，径向满足 $v''+\frac{n-1}{r}v'=0$，故 $\Delta\Phi=0$ 于 $\mathbb{R}^n\setminus\{0\}$。常见误区是把 $u=x^2+y^2$（$\Delta u=4\ne0$）当成调和，或遗漏"最小值"要对 $-u$ 用同一原理。
+
 ## 相关条目
 
 - [椭圆型方程最大值原理](./椭圆型方程最大值原理.md)：Laplace 方程作为一致椭圆算子的特例，其极值性质的一般化。

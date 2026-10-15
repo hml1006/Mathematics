@@ -94,3 +94,17 @@ $$
 通过适当的分解（将 $f$ 分解为 $|f| \le \alpha/2$ 和 $|f| > \alpha/2$ 两部分）可得 $\|M f\|_p \le C_p \|f\|_p$。$\square$
 
 **应用**：Hardy-Littlewood 极大不等式是 Lebesgue 微分定理证明中的关键步骤——它给出了 $M f$ 的分布估计，从而可以证明 $f$ 的 Lebesgue 点几乎处处存在。此外，在奇异积分理论中，Calderón-Zygmund 分解和极大函数方法都依赖于这个不等式。
+
+## 课堂问答
+
+**老师**：弱 $(1,1)$ 估计里的常数为什么长得像个"覆盖放大倍数"？
+
+**学生**：因为它完全来自覆盖。对每个 $x\in\{Mf>\alpha\}$ 取球 $B_x$ 使 $\frac{1}{|B_x|}\int_{B_x}|f|>\alpha$；用 Vitali 覆盖引理抽出不交子族 $\{B_j\}$，则 $\{Mf>\alpha\}\subset\bigcup_j 5B_j$，于是 $|\{Mf>\alpha\}|\le 5^n\sum_j|B_j|\le\frac{5^n}{\alpha}\|f\|_1$。
+
+**老师（追问）**：既然对 $L^p\,(p>1)$ 都有界，为什么唯独 $p=1$ 退化到弱型？
+
+**学生**：因为 $M$ 根本不是 $L^1$ 有界的。取 $f=\chi_{[0,1]}$，则 $Mf(x)\gtrsim\frac{1}{|x|}$（$|x|$ 稍大时），而 $\int_{\mathbb{R}}\frac{1}{|x|}\,dx=\infty$，故 $\|Mf\|_1=\infty$。弱 $(1,1)$ 就是端点 $p=1$ 能拿到的最好结果。
+
+**老师（拓展）**：那 $L^p$ 强有界怎么从弱 $(1,1)$ 推出来？
+
+**学生**：用 Marcinkiewicz 插值。$M$ 同时是弱 $(1,1)$ 型与强 $(\infty,\infty)$ 型，于是对一切 $1<p<\infty$ 是强 $(p,p)$ 型有界，$\|Mf\|_p\le C_p\|f\|_p$。

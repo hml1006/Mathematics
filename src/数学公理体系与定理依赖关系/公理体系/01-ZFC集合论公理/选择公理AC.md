@@ -70,3 +70,17 @@ $$ \forall \mathcal{F} (\emptyset \notin \mathcal{F} \rightarrow \exists f: \mat
 **争议性：**
 - 选择公理在某些数学哲学流派（如构造主义、直觉主义）中被拒绝
 - 但在经典数学中，选择公理被广泛接受和使用
+
+## 课堂问答
+
+**老师**：从每个非空盒子里各拿一个，这还需要公理吗？
+
+**学生**：有限族确实由 ZF 归纳可证；困难在无限族——当没有构造规则时仍要断言选择函数存在，这正是 AC：$\forall\mathcal F\,(\varnothing\notin\mathcal F\to\exists f:\mathcal F\to\bigcup\mathcal F\ \forall A\in\mathcal F\,(f(A)\in A))$。
+
+**老师（追问）**：它的威力与代价各是什么？
+
+**学生**：威力在于良序定理、Zorn 引理、Hamel 基、Tychonoff 定理、Hahn–Banach 定理；代价在于非构造性，并导出 Banach–Tarski 悖论与不可测的 Vitali 集。
+
+**老师（拓展）**：它的独立性是怎么确立的？
+
+**学生**：Gödel（1938）用可构造宇宙 $L$ 证 $\mathrm{ZF}+\mathrm{AC}$ 相对一致，Cohen（1963）用力迫法证 $\mathrm{ZF}+\neg\mathrm{AC}$ 相对一致，故 AC 独立于 ZF。它与良序定理、Zorn 引理等价。常见误区是把可数选择当成全 AC——$\mathrm{AC}_{\mathrm{countable}}$、$\mathrm{DC}$ 都是更弱却常常够用的形式。

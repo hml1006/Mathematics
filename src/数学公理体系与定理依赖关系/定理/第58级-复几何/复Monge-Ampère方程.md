@@ -117,3 +117,17 @@ $$\frac{\det(g_{i\bar j}+\varphi_{i\bar j})}{\det(g_{i\bar j})}=e^F\ge\delta>0$$
 ## 五、应用与意义
 
 复 Monge–Ampère 方程是 Kähler 几何的非线性中心：它的可解性等价于 Calabi 猜想，即 Calabi-Yau定理；由此得到 Ricci 平坦 Kähler 度量的存在唯一性，成为 Calabi–Yau 流形、弦论紧化与镜像对称的几何基础。其方法（先验估计 + 连续性方法 + 完全非线性椭圆正则性）后来被推广到 Kähler–Einstein 度量存在性（Yau–Tian–Donaldson 纲领）、复 Hessian 方程、退化复 Monge–Ampère 方程与测度传输问题，是现代几何分析与非线性 PDE 的共同范式。
+
+## 课堂问答
+
+**老师**：复 Monge-Ampère 方程为何是"完全非线性"的？它的线性化是什么？
+
+**学生**：方程是 $(\omega+\sqrt{-1}\partial\bar\partial\varphi)^n=e^F\omega^n$，即 $\det(g_{i\bar j}+\varphi_{i\bar j})=e^F\det(g_{i\bar j})$。因为未知函数 $\varphi$ 的二阶导数 $\varphi_{i\bar j}$ 出现在 $\det$ 内且非线性，故是完全非线性。线性化用 $\delta\log\det M=\mathrm{tr}(M^{-1}\delta M)$ 得 $DA(\varphi)[\delta\varphi]=(\omega_\varphi)^{i\bar j}\partial_i\partial_{\bar j}\delta\varphi=\Delta_{\omega_\varphi}\delta\varphi$；只要 $\omega_\varphi>0$，系数矩阵正定，算子就一致椭圆，可用最大值原理。
+
+**老师（追问）**：唯一性怎么证？为什么盯住 $\log\det$ 的凹性？
+
+**学生**：$\log\det$ 在正定 Hermite 矩阵锥上凹：$\log\det B-\log\det A\le\mathrm{tr}(A^{-1}(B-A))$。令 $A=[g_{i\bar j}+\varphi_{i\bar j}]$、$B=[g_{i\bar j}+\psi_{i\bar j}]$ 为两解，则 $\det A=\det B$，得 $\Delta_{\omega_\varphi}(\psi-\varphi)\ge0$；反向计算给 $\Delta_{\omega_\varphi}(\varphi-\psi)\le0$，即 $w=\varphi-\psi$ 关于 $\omega_\varphi$ 上调和。归一化 $\sup w=0$ 后用最大值原理（上调和函数在内点取最大必为常数），又 $X$ 紧无边，故 $w\equiv0$。这正是比较原理。
+
+**老师（拓展）**：存在性为什么最难？"先验估计加连续性方法"的核心缺口在哪？
+
+**学生**：连续性方法把方程嵌入 $(\omega+\sqrt{-1}\partial\bar\partial\varphi_t)^n=(1-t+te^F)\omega^n$：解集开性靠隐函数定理与线性椭圆理论，闭性靠一致先验界，难点全在 $C^0$、$C^2$ 估计。Yau 的关键是在 $\omega_\varphi$ 的法坐标下计算 $\Delta_{\omega_\varphi}\log u$（$u=\mathrm{tr}_\omega\omega_\varphi$），得 Chern-Lu 型不等式 $\Delta_{\omega_\varphi}\log u\ge-C_1\mathrm{tr}_{\omega_\varphi}\omega-C_2$，配合辅助函数 $\log u-A\varphi$ 的最大值原理得 $\Delta_\omega\varphi\le C$，反推 $\omega_\varphi\ge C^{-1}\omega$，最后由 Evans-Krylov-Safonov 与 Schauder 自举到 $C^\infty$。

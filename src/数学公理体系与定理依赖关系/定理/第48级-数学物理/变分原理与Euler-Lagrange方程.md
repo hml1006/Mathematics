@@ -104,6 +104,20 @@ Yang–Mills 方程、Maxwell 方程、Einstein 方程都是它的特例。
 
 **步骤 7：二阶条件与对称性。** $\delta J=0$ 只是极值的必要条件；判定极小还须 Legendre 条件 $\frac{\partial^2 L}{\partial y'^2}\ge0$（第二变分非负）。此外，若 $\mathcal L$ 在某个连续对称变换下不变，则由 Noether 定理存在对应的守恒流 $\partial_\mu j^\mu=0$——这正是变分原理与守恒律的桥梁。$\square$
 
+## 课堂问答
+
+**老师**：为什么泛函取驻值能化成微分方程，而多函数、高阶导、场论情形是同一套论证？
+
+**学生**：结论：核心是"分部积分加基本引理"。理由：$\delta J=\int(\frac{\partial L}{\partial y}h+\frac{\partial L}{\partial y'}h')\,dx=0$，把 $h'$ 的导数搬到系数上，端点项消失得 $\int E h\,dx=0$，由基本引理 $E\equiv0$。常见误区：以为要先转成 Hamilton 形式才能处理场论。
+
+**老师（追问）**：多函数情形为什么要逐个令 $h_i=0$？
+
+**学生**：这样才能把 $\int\sum_i E_ih_i\,dx=0$ 拆成每个 $\int E_ih_i\,dx=0$，对每个 $i$ 单独用基本引理得 $E_i\equiv0$。几何例子是测地线方程 $\ddot x^k+\Gamma^k_{ij}\dot x^i\dot x^j=0$。
+
+**老师（拓展）**：$\delta J=0$ 就足以判定极小吗？
+
+**学生**：不够，它只是必要条件；判定极小还须 Legendre 条件 $\frac{\partial^2L}{\partial y'^2}\ge0$（第二变分非负）。而对称性经 Noether 定理转成守恒流 $\partial_\mu j^\mu=0$。场论版本经多重分部积分给出 $\partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}-\frac{\partial\mathcal L}{\partial\phi}=0$。
+
 ## 相关条目
 
 - [Lagrangian力学与作用量原理](./Lagrangian力学与作用量原理.md)：本方程在经典力学中的具体化身，并给出 Legendre 变换到 Hamilton 形式。

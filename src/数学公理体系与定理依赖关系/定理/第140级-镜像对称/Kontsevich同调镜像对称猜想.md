@@ -53,3 +53,17 @@ $A_\infty$-关系式对应模空间边界退化。
 ## 五、应用与意义
 
 同调镜像对称是镜像对称最深层的表述，联结辛几何、代数几何与弦论；它统一了 Gromov-Witten 与 Hodge 结构等众多镜像现象，支持通过较易的 B-模型（凝聚层、矩阵因子化）计算 A-模型（Fukaya）不变量。该猜想驱动了 Fukaya 范畴、$A_\infty$-结构与镜对称形式化理论至今的发展。
+
+## 课堂问答
+
+**老师**：同调镜像对称比"数曲线"的镜像对称更本质在哪？
+
+**学生**：结论：它把等式提升到范畴层面。猜想：镜像 Calabi-Yau 流形 $M,W$ 之间存在 $A_\infty$-函子的拟等价 $\mathcal F(M)\simeq D^b\mathrm{Coh}(W)$，即 $M$ 的 Fukaya 范畴（A-模型）与 $W$ 上凝聚层的有界导出范畴（B-模型）等价。常见误区是以为"函子等价"只是形式口号——它要求对象、态射与 $A_\infty$-结构逐层匹配。
+
+**老师（追问）**：Fukaya 范畴的态射与运算怎么定义？
+
+**学生**：对象是满足相条件、带平直酉丛与 Spin 结构的 Lagrangian 子流形；态射为 Floer 链复形 $CF^*(L_0,L_1)=\bigoplus_{p\in L_0\cap L_1}\mathbb Cp$。$A_\infty$-运算 $\mathfrak m_k$ 通过计数伪全纯圆盘给出 $\mathfrak m_k(p_1,\dots,p_k)=\sum_{p_0}\#\mathcal M(p_0,\dots,p_k)\,p_0$，$A_\infty$-关系正对应模空间边界退化。
+
+**老师（拓展）**：这个等价怎么被验证？它在物理与计算上意味着什么？
+
+**学生**：构造镜像函子 $\Phi:\mathcal F(M)\to D^b\mathrm{Coh}(W)$ 并验证全忠实与本质满射，得 $H^*\mathrm{Hom}_{\mathcal F(M)}(L_0,L_1)\cong\mathrm{Hom}_{D^b\mathrm{Coh}(W)}(\Phi(L_0),\Phi(L_1))$；五次超曲面情形用矩阵因子化与 Landau-Ginzburg 对应显式验证。物理上即 A-模型 D-膜（Lagrangian）与 B-模型 D-膜（凝聚层）谱等价，计算上把 A-模型不变量（难算）迁移到较易的 B-模型。

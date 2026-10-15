@@ -64,3 +64,17 @@ $$E[I(X)^2] = \sum_i E[\xi_i^2 (B_{t_{i+1}} - B_{t_i})^2] = \sum_i E[\xi_i^2](t_
 **推论**（Itô 积分的二次变差）：$M_t = \int_0^t X_s \, dB_s$ 的二次变差为
 $$[M, M]_t = \int_0^t X_s^2 \, ds$$
 且 $M_t^2 - \int_0^t X_s^2 \, ds$ 是鞅。
+
+## 课堂问答
+
+**老师**：为什么 $\int_0^tB_s\,dB_s$ 不能直接当作 Riemann–Stieltjes 积分？
+
+**学生**：因为 $B$ 的轨道几乎处处不可微，二次变差 $[B]_t=t\ne0$，不是有界变差函数，Riemann–Stieltjes 积分不存在。Itô 的做法是先在简单可料过程 $X=\sum_i\xi_i1_{(t_i,t_{i+1}]}$ 上定义 $\int X\,dB=\sum_i\xi_i(B_{t_{i+1}}-B_{t_i})$——被积函数取区间左端点（"不看未来"），再靠 Itô 等距 $E[(\int X\,dB)^2]=E\int X^2\,ds$ 把定义延拓到 $L^2$。
+
+**老师（追问）**：左端点取值这个细节为什么不能改？
+
+**学生**：改了就不是 Itô 积分了。取中点 $\tfrac12(B_{t_i}+B_{t_{i+1}})$ 会得到 Stratonovich 积分，它满足普通链式法则但一般不再是鞅。Itô 取左端点使 $\sum_i\xi_i\Delta B_i$ 保持鞅性：$E[\xi_i\Delta B_i\mid\mathcal F_{t_i}]=\xi_iE[\Delta B_i\mid\mathcal F_{t_i}]=0$，其中 $\Delta B_i$ 与 $\mathcal F_{t_i}$ 独立且零均值。常见误区：以为 $\int_0^tB\,dB=\tfrac12B_t^2$；正确的是 $\tfrac12B_t^2-\tfrac t2$。
+
+**老师（拓展）**：延拓到一般的 $X$ 时，"极限与逼近序列无关"凭什么？
+
+**学生**：由等距。若 $X^{(n)}\to X$ 与 $Y^{(n)}\to X$，则差趋于零，$\|I(X^{(n)})-I(Y^{(n)})\|_{L^2}^2=E\int|X^{(n)}-Y^{(n)}|^2\,dt\to0$，两个 $L^2$ 极限相等。这说明积分算子 $I$ 是 $L^2(\Omega\times[0,T])\to L^2(\Omega)$ 的等距嵌入，唯一延拓存在。

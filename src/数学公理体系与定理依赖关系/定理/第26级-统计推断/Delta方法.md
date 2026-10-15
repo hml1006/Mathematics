@@ -113,3 +113,17 @@ $$\sqrt{n}(\sqrt{\bar{X}_n} - \sqrt{\lambda}) \xrightarrow{d} N\left(0, \frac{1}
 $$\sqrt{n}(\text{arctanh}(r) - \text{arctanh}(\rho)) \xrightarrow{d} N(0, 1)$$
 
 这使得相关系数的推断可以使用标准正态分布进行近似。
+
+## 课堂问答
+
+**老师**：一句话说清 Delta 方法，并写出单变量结论。
+
+**学生**：结论：光滑函数保渐近正态，方差乘导数平方。若 $\sqrt n(\hat\theta_n-\theta)\xrightarrow{d}N(0,\sigma^2)$ 且 $g'(\theta)\neq0$，则 $\sqrt n(g(\hat\theta_n)-g(\theta))\xrightarrow{d}N(0,[g'(\theta)]^2\sigma^2)$，本质是一阶线性化 $g(\hat\theta_n)-g(\theta)\approx g'(\theta)(\hat\theta_n-\theta)$。
+
+**老师（追问）**：证明里余项 $o_p(|\hat\theta_n-\theta|)$ 乘上 $\sqrt n$ 为什么是 $o_p(1)$？若 $g'(\theta)=0$ 呢？
+
+**学生**：因为 $\sqrt n(\hat\theta_n-\theta)=O_p(1)$，故 $|\hat\theta_n-\theta|=O_p(1/\sqrt n)$，乘以 $\sqrt n$ 得 $o_p(1)$，再由 Slutsky 合并。若 $g'(\theta)=0$，一阶项消失，改用二阶展开 $g(\hat\theta_n)-g(\theta)=\frac12g''(\theta)(\hat\theta_n-\theta)^2+o_p(\cdot)$，得 $n(g(\hat\theta_n)-g(\theta))\xrightarrow{d}\frac{g''(\theta)\sigma^2}{2}\chi^2_1$——极限从正态变成卡方，是最易漏掉的情形。
+
+**老师（拓展）**：举一个方差稳定化变换的例子，说明 Delta 方法如何让渐近方差与参数无关。
+
+**学生**：泊松样本 $\bar X$ 满足 $\sqrt n(\bar X-\lambda)\xrightarrow{d}N(0,\lambda)$，方差随 $\lambda$ 变。取 $g(\lambda)=\sqrt\lambda$，$g'(\lambda)=\frac1{2\sqrt\lambda}$，则渐近方差为 $[g'(\lambda)]^2\lambda=\frac{1}{4\lambda}\cdot\lambda=\frac14$，与 $\lambda$ 无关。多变量版相应为 $\sqrt n(g(\hat{\boldsymbol\theta})-g(\boldsymbol\theta))\xrightarrow{d}N(0,\nabla g^T\Sigma\nabla g)$。

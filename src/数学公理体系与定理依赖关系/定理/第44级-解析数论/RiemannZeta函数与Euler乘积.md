@@ -57,3 +57,17 @@ $$\sum_{p} \frac{1}{p^s} = \log \zeta(s) + O(1)$$
 **证明**：对 Euler 乘积取对数，
 $$\log \zeta(s) = -\sum_{p} \log(1 - p^{-s}) = \sum_{p} \sum_{k=1}^\infty \frac{p^{-ks}}{k} = \sum_{p} \frac{1}{p^s} + O\left(\sum_{p} \frac{1}{p^{2\sigma}}\right)$$
 其中 $\sigma = \operatorname{Re}(s) > 1$，余项有界。$\square$
+
+## 课堂问答
+
+**老师**：写出 Euler 乘积，并说明它的数论来源。
+
+**学生**：$\zeta(s)=\sum_{n\ge1}n^{-s}=\prod_p(1-p^{-s})^{-1}\ (\operatorname{Re}s>1)$。来源是算术基本定理：每个 $n$ 有唯一分解 $n=\prod_p p^{e_p}$，把几何级数 $\sum_{k\ge0}p^{-ks}$ 对所有素数相乘，展开后恰好遍历全体正整数，绝对收敛性保证求和与求积可以交换。
+
+**老师（追问）**：这个恒等式为什么如此重大？
+
+**学生**：它把"对全体整数求和"翻译成"扫过全体素数"，于是 $\zeta$ 的解析性质就编码了素数分布；取对数得 $\sum_p p^{-s}=\log\zeta(s)+O(1)$，$\zeta$ 的极点与零点便直接反映素数密度。
+
+**老师（拓展）**：它与素数定理如何衔接？
+
+**学生**：$\zeta$ 解析延拓后仅在 $s=1$ 有留数为 $1$ 的单极点，而它在直线 $\operatorname{Re}s=1$ 上无零点（借助 $3+4\cos\theta+\cos2\theta\ge0$）等价于 $\psi(x)\sim x$，即 $\pi(x)\sim x/\log x$；Riemann 假设进一步精确控制误差项。

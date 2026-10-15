@@ -60,6 +60,21 @@ $$
 - **构造性逼近**：Bernstein 多项式给出显式逼近与误差界，是曲线曲面的 Bezier 表示的理论来源。
 - **通往 Jackson 定理**：Bernstein 逼近的收敛速率分析直接启蒙了逼近速率（Jackson）与逆定理（Bernstein 型不等式）理论。
 - **数值应用**：为插值、曲线设计、有限元形函数、以及机器学习中"神经/多项式网络"的普适逼近性质提供原型。
+
+## 课堂问答
+
+**老师**：为什么闭区间上任意连续函数都能被多项式一致逼近？
+
+**学生**：因为这等价于说多项式在 $(C[a,b],\|\cdot\|_\infty)$ 中稠密。构造性证明用 Bernstein 多项式 $B_nf(t)=\sum_{k=0}^n\binom{n}{k}f(k/n)t^k(1-t)^{n-k}$，它在 $[0,1]$ 上一致收敛到 $f$。
+
+**老师（追问）**：Bernstein 构造的证明思路是什么？
+
+**学生**：把 $B_nf(t)$ 看成二项分布随机变量 $S_n\sim\operatorname{Bin}(n,t)$ 下的期望，即 $\mathbb{E}\big[f(S_n/n)\big]$。由大数定律 $S_n/n\to t$，再用一致连续模 $\omega_f$ 分界：$|f(t)-B_nf(t)|\le\eta+2\|f\|_\infty P\big(|S_n/n-t|\ge\delta\big)$。由 Chebyshev 不等式，$\operatorname{Var}(S_n)=nt(1-t)\le n/4$，故该概率 $\le\frac{1}{4n\delta^2}\to0$，取 $n$ 充分大即得一致逼近。
+
+**老师（拓展）**：更进一步能给出收敛速率吗？它怎样推广？
+
+**学生**：更精细的估计给出 $|f(t)-B_nf(t)|\le C\,\omega_f(1/\sqrt{n})$，这正为 Jackson 定理的量化逼近铺垫。常见误区是以为该构造一定高效——Bernstein 多项式收敛通常较慢，实用中更常用 Chebyshev 插值等。定理可抽象为 Stone–Weierstrass（子代数生成元的稠密性）与 Müntz 定理，也是 Bezier 曲线与有限元形函数的理论来源。
+
 ## 相关条目
 
 - [Weierstrass 逼近定理（第67级-逼近论与样条理论）](../第67级-逼近论与样条理论/Weierstrass逼近定理.md)：与本条目为同一定理，另收录于第67级-逼近论与样条理论，可交叉参考。

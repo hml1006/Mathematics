@@ -37,3 +37,17 @@ $$
 ## 五、应用与意义
 
 Doob 一致性定理从原理上保证了贝叶斯方法"数据足够时收敛到真相"，为贝叶斯推断提供了大样本合理性。它给出的是关于先验"几乎所有"点成立的一致性（不要求正则性条件），比频率的逐点一致性更宽松，并与频率大样本理论（如后验正态性 Bernstein-von Mises）衔接。
+
+## 课堂问答
+
+**老师**：Doob 定理说后验几乎必然集中到真值，靠的是什么机制？
+
+**学生**：结论是对先验支集上几乎所有 $\theta_0$，$\pi(\theta\in U\mid\boldsymbol{x}_n)\to1$。机制是似然比鞅：固定 $\theta$，$L_n(\theta)=\prod_{i=1}^n\frac{f(x_i\mid\theta)}{f(x_i\mid\theta_0)}$ 是鞅，由大数定律 $\frac{1}{n}\log L_n(\theta)\to-K(\theta_0,\theta)<0$（$\theta\neq\theta_0$），故 $L_n(\theta)\to0$，于是后验 $\frac{\int_U L_n(\theta)\pi(d\theta)}{\int_\Theta L_n(\theta)\pi(d\theta)}\to1$。误区：一致性只对先验支撑点成立，先验漏掉真值则无从谈起。
+
+**老师（追问）**：KL 散度在这里为什么必须严格为正？
+
+**学生**：$K(\theta_0,\theta)=\mathbb{E}_{\theta_0}[\log\frac{f(x\mid\theta_0)}{f(x\mid\theta)}]\ge0$，等号当且仅当 $f(\cdot\mid\theta)=f(\cdot\mid\theta_0)$（不可区分）。只有 $\theta\neq\theta_0$ 时严格为正，该处似然比才指数衰减到 0。
+
+**老师（拓展）**：它与频率派相合性、与 Bernstein-von Mises 有何关系？
+
+**学生**：Doob 要求更弱（不要求正则性，只对先验几乎处处成立），结论也更弱（仅一致性）；Bernstein-von Mises 进一步给出后验近似正态、均值趋于 MLE，把贝叶斯与频率大样本理论精细对接。

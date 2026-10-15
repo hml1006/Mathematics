@@ -37,3 +37,17 @@ $$
 ## 五、应用与意义
 
 Fargues–Fontaine 曲线是 p-adic Langlands（Fargues–Scholze 的对应）、向量丛与 $\widehat T$-倩华和 Hodge 理论统一的舞台，也用于构造 $\mathbb B_\mathrm{dR}$ 的几何化、膨胀 Hodge 滤级与 Sh[tem] 对应，是现代 p-adic 几何命名标志。
+
+## 课堂问答
+
+**老师**：Fargues–Fontaine 曲线到底特殊在哪，为什么需要它？
+
+**学生**：结论：$X=\mathrm{Proj}\big(\bigoplus_{n\ge0}B_{\mathrm{cris}}^{\varphi=p^n}\big)$ 是一条**过完备、分离、正则的一维曲线**，其闭点参数化（分级的）p-adic 局部域的完美化特征 p 域，是 p-adic Langlands 与 Hodge 理论的几何舞台。
+
+**老师（追问）**：它凭什么同时连接特征 $0$ 与特征 $p$？
+
+**学生**：坐标环由 Fontaine 周期环 $B_{\mathrm{cris}}$ 的 $\varphi=p^n$ 分次部分拼成：既含 p-adic 域（如 $A=B_{\mathrm{cris}}^{\varphi=1}$），又能借完美化/倾斜语言产生特征 p 的结构。其几何（拟凝聚层、向量丛）由分级 $\varphi$-模刻画，故自然出现线丛 $\mathcal O(1)$ 并承载 $G_K$ 作用。
+
+**老师（拓展）**：为什么人们把它称作"p-adic 世界的射影直线"？
+
+**学生**：因为它的向量丛分类、Picard 群与线丛、以及闭点与"硬核"对应，都很像 $\mathbb{P}^1$ 的代数几何，只是底对象换成 p-adic 完美化域。Fargues 的 $\varphi$-模分类给出闭点参数化，而向量丛的内核对偶（$\pi$-L 分裂）使它可以充当 p-adic Langlands 的"基础曲线"。 一句话：它把"混特征"的算术问题放到一条像射影直线一样好用的曲线上来处理。

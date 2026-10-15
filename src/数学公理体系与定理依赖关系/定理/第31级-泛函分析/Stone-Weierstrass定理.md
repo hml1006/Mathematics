@@ -73,3 +73,17 @@ $$
 **复版本证明概要**：设 $A$ 是满足分离点、包含常数和共轭封闭条件的复子代数。令 $A_{\mathbb{R}} = \{ \operatorname{Re} f \mid f \in A \}$，则 $A_{\mathbb{R}}$ 是实值连续函数子代数，满足分离点和包含常数条件。由实版本，$A_{\mathbb{R}}$ 在 $C(X, \mathbb{R})$ 中稠密。对任意 $f \in C(X, \mathbb{C})$，$f = u + iv$，$u, v \in C(X, \mathbb{R})$。存在 $u_n, v_n \in A_{\mathbb{R}}$ 逼近 $u, v$，则 $u_n + i v_n \in A$ 逼近 $f$。$\square$
 
 **应用**：三角多项式在 $C([0, 2\pi])$ 中一致稠密（Weierstrass 三角逼近定理）。这直接来自 Stone-Weierstrass 定理：取 $A$ 为由 $\{e^{inx}\}_{n \in \mathbb{Z}}$ 张成的代数，它分离点、包含常数、共轭封闭。
+
+## 课堂问答
+
+**老师**：Stone-Weierstrass 定理的充分条件是什么？
+
+**学生**：紧 Hausdorff 空间 $X$ 上，$C(X,\mathbb{R})$ 的子代数 $A$ 若分离点且包含常数，则一致稠密；复版本还要求 $A$ 对共轭封闭。
+
+**老师（追问）**：证明分哪几步？
+
+**学生**：先由多项式一致逼近 $|t|$ 证明 $|f|\in\overline A$，从而 $\max(f,g),\min(f,g)\in\overline A$；再对每个 $x$ 用分离点条件构造 $g_x$ 使 $g_x(x)=f(x)$ 且局部 $g_x>f-\varepsilon$，紧性取有限覆盖后取 $\max$；最后对 $x$ 取邻域并取 $\min$，得 $h\in\overline A$ 满足 $\|f-h\|_\infty<\varepsilon$。
+
+**老师（拓展）**：复版本为什么必须共轭封闭？
+
+**学生**：反例：单位圆盘上的多项式代数不能逼近 $\bar z$。加入共轭封闭后，取实部 $\operatorname{Re}f$ 构成满足条件的实子代数，由实版本稠密即可。它是经典 Weierstrass 逼近定理的推广，也解释了三角多项式在 $C([0,2\pi])$ 中稠密。

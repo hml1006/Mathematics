@@ -179,3 +179,17 @@ Tomita-Takesaki 模理论在数学和物理学中有深远影响：
 8. **量子场论**：在代数量子场论中，模理论用于研究局部代数的结构和因果性条件。Bisognano-Wichmann 定理表明，相对论性量子场论中的模自同构群对应于 Lorentz  boosts。
 
 Tomita-Takesaki 模理论展示了 von Neumann 代数中隐藏的深刻对称性，是现代算子代数理论中最优美的成果之一。它不仅解决了 III 型因子的结构问题，而且为量子物理提供了严格的数学框架，体现了数学与物理的深刻统一。
+
+## 课堂问答
+
+**老师**：Tomita-Takesaki 模理论从一对 $(M,\xi)$ 里造出了什么？
+
+**学生**：结论：造出模算子 $\Delta$ 与模共轭 $J$。由反线性算子 $S:x\xi\mapsto x^*\xi$（取闭包）极分解得 $S=J\Delta^{1/2}$，核心结论是 $JMJ=M'$。
+
+**老师（追问）**：模自同构群怎么定义，为何是自同构？
+
+**学生**：令 $\sigma_t(x)=\Delta^{it}x\Delta^{-it}$，由 $\Delta^{it}M\Delta^{-it}=M$ 知它是 *-自同构群。常见误区：以为需要额外动力学输入，其实它完全由忠实正规态 $\omega$ 决定，与 GNS 的具体实现无关。
+
+**老师（拓展）**：它和 KMS 条件如何衔接？
+
+**学生**：结论：$\omega$ 关于 $\sigma_t^\omega$ 恰满足 KMS 条件，取 $F(z)=\langle\xi,x\Delta^{iz}y\xi\rangle$ 在 $0\le\mathrm{Im}\,z\le1$ 上解析。Connes 用它分类 III 型因子（III$_\lambda$），不同态之间靠协循环 $u_{t+s}=u_t\sigma_t^\omega(u_s)$ 联系。

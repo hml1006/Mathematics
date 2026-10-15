@@ -102,6 +102,20 @@ $$
 
 **推论**：Schrödinger 方程是 Hilbert 空间中由自伴生成元 $\hat H$ 生成的单参数酉群 $U(t)=e^{-i\hat Ht/\hbar}$ 的无穷小形式，故解为 $\psi(t)=U(t)\psi(0)$ 且 $\|\psi(t)\|=\|\psi(0)\|$（幺正演化）。这与 Feynman 路径积分给出的传播子完全一致。$\square$
 
+## 课堂问答
+
+**老师**：这个方程不能被"证明"，那它凭什么是基本运动方程？
+
+**学生**：结论：它同时被两条路径支持——正则量子化 $p\to-i\hbar\nabla$ 与 de Broglie 平面波相位。理由：对 $\psi=Ae^{i(kx-\omega t)}$ 有 $i\hbar\partial_t\psi=\hbar\omega\psi=E\psi$、$-i\hbar\nabla\psi=\hbar k\psi=p\psi$，把 $E=H(q,p)$ 中的 $p$ 换 $\hat p$ 即得。常见误区：把它当作可由经典力学推出的定理。
+
+**老师（追问）**：概率守恒是怎么来的？
+
+**学生**：由方程与其复共轭相加，令 $\rho=|\psi|^2$、$j=\frac{\hbar}{2mi}(\bar\psi\nabla\psi-\psi\nabla\bar\psi)$，得 $\partial_t\rho+\nabla\cdot j=0$，其中 $\nabla\bar\psi\cdot\nabla\psi$ 与 $\nabla\psi\cdot\nabla\bar\psi$ 两项相消。
+
+**老师（拓展）**：定态与经典对应各说明什么？
+
+**学生**：分离变量 $\psi=e^{-iEt/\hbar}\phi$ 给定态方程 $\hat H\phi=E\phi$，自伴性保证 $E$ 为实、谱定理给完备本征态；Ehrenfest 定理 $\frac{d}{dt}\langle A\rangle=\frac{1}{i\hbar}\langle[A,\hat H]\rangle$ 让 $\langle\hat x\rangle,\langle\hat p\rangle$ 精确满足牛顿方程。
+
 ## 相关条目
 
 - [Feynman路径积分](./Feynman路径积分.md)：把作用量指数化并对路径求和，给出的传播子等价于 Schrödinger 方程的解。

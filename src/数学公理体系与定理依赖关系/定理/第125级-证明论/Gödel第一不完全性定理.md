@@ -44,3 +44,17 @@ $$
 ## 五、应用与意义
 
 Gödel 第一不完全性定理深刻揭示了形式系统的能力边界：一致而足够强的一阶系统必然不完备。它影响数理逻辑（证明论、递归论）、数学哲学（形式主义与直觉主义之争）乃至人工智能论（"可计算证明的局限"）。与第二不完全性定理共同构成对"自足公理化数学"的根本性否定。
+
+## 课堂问答
+
+**老师**：Gödel 语句 $G$ 究竟"说"了什么？
+
+**学生**：它说"我不可证"，即 $\mathcal{F}\vdash G\leftrightarrow\lnot\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)$。这种自指靠对角化引理实现：对任意 $\phi(x)$ 存在语句 $\psi$ 使 $\mathcal{F}\vdash\psi\leftrightarrow\phi(\ulcorner\psi\urcorner)$，取 $\phi(x)=\lnot\text{Prov}_\mathcal{F}(x)$ 即得 $G$。
+
+**老师（追问）**：两个方向的不可证分别怎么排除？
+
+**学生**：若 $\mathcal{F}\vdash G$，由算术可表示性 $\mathcal{F}\vdash\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)$，结合 $G$ 的定义得 $\mathcal{F}\vdash\lnot G$，与一致性矛盾。若 $\mathcal{F}\vdash\lnot G$，则 $\mathcal{F}\vdash\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)$；若 $\mathcal{F}$ 还是 $\omega$ 一致的，就存在实际 $n$ 使 $\text{Proof}_\mathcal{F}(\ulcorner G\urcorner,\bar n)$ 真，即 $G$ 实际可证，与上一步矛盾。故 $G$ 不可判定。
+
+**老师（拓展）**：$\omega$ 一致性这个假设能去掉吗？
+
+**学生**：能。Rosser 用"对每个给定证明都能找到更小的反证"造出 Rosser 语句，只假设一致性即可。常见误区是把"真"与"可证"混同：$G$ 在标准模型中为真却不可证，这正是定理深刻之处。

@@ -93,3 +93,17 @@ $r = 1$ 时即主理想定理。
 **定义**：$R$ 称为**正则局部环**，如果 $\dim R = \dim_{R/\mathfrak{m}} \mathfrak{m}/\mathfrak{m}^2$（即嵌入维数等于 Krull 维数）。
 
 **应用**：Krull维数定理是交换代数中维数理论的基石，广泛应用于代数几何（代数簇的维数）、局部环理论（正则性判定）和交换环的分类。$\square$
+
+## 课堂问答
+
+**老师**：Krull 维数定理的核心内容有哪些？
+
+**学生**：三条。主理想定理：诺特环中若 $a$ 既非零因子又非可逆元，则包含 $a$ 的每个极小素理想满足 $\operatorname{ht}\mathfrak{p}=1$。一般形式：$I=\langle a_1,\dots,a_r\rangle$ 的每个极小素理想满足 $\operatorname{ht}\mathfrak{p}\le r$。多项式环公式：$\dim R[x]=\dim R+1$，推论 $\dim k[x_1,\dots,x_n]=n$。常见误区：结论是"高度不超过生成元个数"的上界，而非相等；并且只对极小素理想成立。
+
+**老师（追问）**：主理想定理里为什么一定有 $\operatorname{ht}\mathfrak{p}=1$？
+
+**学生**：局部化到 $R_{\mathfrak{p}}$，其中 $\mathfrak{p}R_{\mathfrak{p}}$ 是唯一极大理想。$a$ 在其中仍非零因子，且 $\mathfrak{p}$ 关于 $a$ 极小，所以 $R_{\mathfrak{p}}/\langle a\rangle$ 只有零维素理想，从而 $\dim R_{\mathfrak{p}}=1$，即 $\operatorname{ht}\mathfrak{p}=1$。一般形式则对 $r$ 归纳：对素理想链 $\mathfrak{p}_0\subsetneq\cdots\subsetneq\mathfrak{p}_n=\mathfrak{p}$ 逐层剥离，每剥离一个生成元降 $1$，最终 $n\le r$。
+
+**老师（拓展）**：$\dim R[x]=\dim R+1$ 的双向不等式怎么证？
+
+**学生**：下界：对 $R$ 中链 $\mathfrak{p}_0\subsetneq\cdots\subsetneq\mathfrak{p}_n$，作链 $\mathfrak{p}_0[x]\subsetneq\cdots\subsetneq\mathfrak{p}_n[x]\subsetneq\mathfrak{p}_n[x]+\langle x\rangle$，长度 $n+1$。上界：把 $R[x]$ 中链收缩到 $R$，注意收缩到同一素理想 $\mathfrak{p}$ 的那些素理想落在 $k(\mathfrak{p})[x]$ 中，而它维数为 $1$，故每处至多添一层，总长不超过 $\dim R+1$。

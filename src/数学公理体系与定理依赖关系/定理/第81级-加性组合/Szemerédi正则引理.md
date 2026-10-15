@@ -84,6 +84,20 @@ $$
 - **性质检验与算法**：Frieze–Kannan 弱正则引理用于大规模图的性质检验与图极限（graphon）理论。
 - **代数推广**：Green 的算术正则引理、Gowers 范数、超图正则引理等把同一"结构 vs 随机"范式推广到群与超图。
 
+## 课堂问答
+
+**老师**：任意大的图能"近似随机"到什么程度？
+
+**学生**：Szemerédi 正则引理：对每个 $\varepsilon>0$ 与整数 $m$，存在 $M(\varepsilon,m)$，使任意 $n\ge m$ 的图都有等大的 $\varepsilon$-正则划分，块数 $k$ 满足 $m\le k\le M$。即除至多 $\varepsilon k^2$ 对"坏对"外，几乎所有块对是 $\varepsilon$-正则的：任意足够大的子块对，其边密度几乎等于原块对的密度 $d(X,Y)=e(X,Y)/(|X||Y|)$。
+
+**老师（追问）**：证明的核心机制是什么？
+
+**学生**：能量增量法。定义能量 $q(\mathcal P)=\sum_{i,j}\frac{|V_i||V_j|}{n^2}d(V_i,V_j)^2\in[0,1]$。若划分不正则，则存在超过 $\varepsilon k^2$ 对坏对，取见证子集同时细分各块，得块数 $\le k\,2^{k-1}$、能量至少增加 $c(\varepsilon)$（约 $\varepsilon^5$）。由全方差公式 $q(\mathcal Q)-q(\mathcal P)=\mathbb{E}[\mathrm{Var}(Z\mid\mathcal Q)]\ge 0$，细分只会升能量；能量有上界 $1$，故细分至多约 $1/c(\varepsilon)$ 次即停，最后等大化。
+
+**老师（拓展）**：它为什么是"定性"定理？
+
+**学生**：因为界 $M$ 是 $\varepsilon$ 的塔式函数，Gowers（1997）构造表明这种塔式增长本质必需。因此它给出结构存在性，定量应用常需弱正则或稳定正则替代。应用包括 Szemerédi 定理、三角形移除引理、性质检验与 graphon 理论。
+
 ## 相关条目
 
 - [Szemerédi 定理](./Szemerédi定理.md)：正则引理是 Szemerédi 原始证明的核心工具。

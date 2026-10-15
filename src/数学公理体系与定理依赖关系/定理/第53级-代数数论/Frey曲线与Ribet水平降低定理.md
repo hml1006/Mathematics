@@ -130,6 +130,20 @@ $$
 
 **推广**：Serre 猜想（Khare–Wintenberger 定理）把"每个可约/不可约的二维模 $p$ 奇表示都来自模形式"确立为定理，是 Ribet 定理的极大推广；模方法（modular method）现已成为解决一般衰减型丢番图方程的标准框架。
 
+## 课堂问答
+
+**老师**：Frey 曲线的"怪异"体现在哪里？Ribet 定理又是如何利用这一点的？
+
+**学生**：怪异在于 $\Delta=16(abc)^{2p}$ 是 $p$ 的高次幂，而导子 $N=\operatorname{rad}(abc)$ 无平方因子、且曲线半稳定，使模 $p$ 表示 $\bar\rho_{E,p}$ 在 $p$ 处不分歧（更精确地是有限平坦）。Ribet 水平降低定理说：若 $\bar\rho$ 不可约、$\ell\|N$ 且在 $\ell$ 处不分歧，则 $\bar\rho$ 也可由权 2、水平 $N/\ell$ 的新形式实现；反复降低奇素因子到 $N=2$，撞上 $S_2(\Gamma_0(2))=0$ 就得到矛盾。
+
+**老师（追问）**：降低引理的机制到底是什么？
+
+**学生**：$\bar\rho$ 对应 Hecke 代数 $\mathbb T_N$ 的一个极大理想 $\mathfrak m_N$。由 $J_0(N)$ 的 $\ell$-老/新分解，"$\bar\rho$ 在 $\ell$ 处不分歧 $\Rightarrow$ 在 $\mathfrak m_N$ 处 $U_\ell$ 可逆 $\Rightarrow$ $\mathfrak m_N$ 不能来自新部分"，只能来自老 Hecke 代数 $\mathbb T_{N/\ell}$；再借 $\mathbb T_N$ 的 Gorenstein 性与 multiplicity one，得到水平 $N/\ell$ 的同一残差表示。这就是 Mazur 的降低原理。
+
+**老师（拓展）**：常见误区与更广的联系？
+
+**学生**：误区是把 Ribet 定理当成 FLT 的唯一关键——它给出的是"若 $E$ 模则矛盾"，而"$E$ 是模的"要靠 Wiles 的模性定理补上，两环缺一不可。Frey 曲线的 $\Delta$ 与 $N$ 之比恰是 $abc$ 三元组的算术数据，把 FLT 与 ABC 猜想联系起来；Serre 猜想（Khare-Wintenberger 定理）把"每个二维模 $p$ 奇表示都来自模形式"确立为定理，是 Ribet 定理的极大推广。
+
 ## 相关条目
 
 - [Fermat大定理](./Fermat大定理.md)：Frey 曲线与 Ribet 水平降低定理正是其证明的关键两环。

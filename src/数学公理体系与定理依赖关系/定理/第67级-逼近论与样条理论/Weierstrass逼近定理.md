@@ -110,6 +110,20 @@ $$
 
 5. **泛函分析**：该定理可推广为 Stone-Weierstrass 定理，刻画了一般紧 Hausdorff 空间上连续函数代数的稠密子代数，是泛函分析中的经典结果。
 
+## 课堂问答
+
+**老师**：多项式这么"简单"，凭什么能一致逼近任意连续函数？
+
+**学生**：Weierstrass 逼近定理说，对 $f\in C[a,b]$ 与任意 $\varepsilon>0$，存在多项式 $P$ 使 $\sup_{[a,b]}|f-P|<\varepsilon$，即多项式空间在 $\|\cdot\|_\infty$ 下于 $C[a,b]$ 稠密。构造性证明可用 Bernstein 多项式 $B_n(f;x)=\sum_{k=0}^n f(k/n)\binom{n}{k}x^k(1-x)^{n-k}$，它一致收敛于 $f$。
+
+**老师（追问）**：Bernstein 多项式的收敛速度为什么是 $O(1/n)$？证明的精髓在哪一步？
+
+**学生**：把误差写成 $|f(x)-B_n(f;x)|=|\sum_k(f(x)-f(k/n))p_{n,k}(x)|$，按 $|k/n-x|<\delta$ 与 $\ge\delta$ 分两部分。近处用一致连续性给 $\varepsilon/2$；远处用方差恒等式 $\sum(k/n-x)^2p_{n,k}(x)=\frac{x(1-x)}{n}\le\frac1{4n}$ 配合 $\frac{2M}{\delta^2}(k/n-x)^2$ 控制，得 $|f-B_nf|\le\frac\varepsilon2+\frac{M}{2n\delta^2}$，取 $n$ 大即可。精髓是二项分布方差 $x(1-x)/n\to0$，即大数定律。
+
+**老师（拓展）**：为什么高次全局多项式逼近不能高枕无忧地用在数值计算里？定理又如何推广？
+
+**学生**：Bernstein 构造给出存在性，但收敛常数依赖 $\omega$，高次等距插值会出现 Runge 现象，实际计算常改用分片低次多项式（样条）或 Chebyshev 节点。定理可推广为 Stone-Weierstrass 定理：紧 Hausdorff 空间上若连续函数代数的子代数分离点且含常数，则在 $\|\cdot\|_\infty$ 下稠密于全体连续函数。常见误区是以为"存在多项式"就能给出好算法：Weierstrass 只保证逼近可能，不保证数值稳定。
+
 ## 相关条目
 
 - [Weierstrass 逼近定理（第104级-逼近论）](../第104级-逼近论/Weierstrass逼近定理.md)：与本条目为同一定理，另收录于第104级-逼近论，可交叉参考。

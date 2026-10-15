@@ -51,3 +51,17 @@ $$
 ## 五、应用与意义
 
 该定理是 C*-代数 K-理论计算与指标理论的核心机制，用于非交换环面、叶状结构、交叉积的 K-群计算并支撑 Connes 指标定理。它把 Toeplitz、指数映射与 Bott 周期统一到代数正合序列语言中，是非交换几何的主要计算引擎之一。
+
+## 课堂问答
+
+**老师**：短正合列为什么能自动连成六边形序列？
+
+**学生**：结论：对 C*-代数短正合列 $0\to J\to\mathcal A\xrightarrow\pi\mathcal B\to0$，K-函子的长正合序列因 Bott 周期为 2 呈现为六边形，交替排布 $K_0(J)\to K_0(\mathcal A)\to K_0(\mathcal B)$ 与 $K_0(\mathcal B)\to K_1(J)$ 等。常见误区是以为要逐项定义连接映射——它由提升自然诱导。
+
+**老师（追问）**：连接映射 $\partial:K_1(\mathcal B)\to K_0(J)$ 如何构造？
+
+**学生**：取酉 $[u]\in K_1(\mathcal B)$，由 $\pi$ 满射取提升 $v\in M_n(\mathcal A)$，用 $\pi(v^*v)=\pi(vv^*)=I$ 构造投影 $e=\begin{pmatrix}v^*v&v^*(1-vv^*)\\(1-v^*v)v&1-v^*v\end{pmatrix}\in M_{2n}(\tilde{\mathcal A})$，且 $e-\mathrm{diag}(I,0)\in M_{2n}(J)$，令 $\partial([u])=[e]-[\mathrm{diag}(I,0)]$。良定义性来自不同提升相差 $M_n(J)$、同伦可沿路径提升。
+
+**老师（拓展）**：六边形正合性怎么验证？它又怎么与指标定理、Bott 周期接上？
+
+**学生**：在每点证 $\mathrm{im}=\ker$：如 $K_0(\mathcal A)\to K_0(\mathcal B)\to K_1(J)$，若 $[p]=\pi_*([e])$ 可提升则相关酉为单位使 $\partial([p])=0$，反之 $\partial([p])=0$ 时可构造 $e\in\mathcal A$ 使 $\pi(e)=p$，故 $\ker\partial=\mathrm{im}\,\pi_*$。取 Toeplitz 序列 $0\to C_0(\mathbb R)\to T\to C(\mathbb T)\to0$，得 $\partial([f])=\mathrm{Index}(T_f)=-\mathrm{wind}(f)$；再由 $K_0(\mathbb C)\cong\mathbb Z$、$K_1(\mathbb C)=0$ 推出 $K_i(\mathcal A)\cong K_{i+2}(\mathcal A)$。

@@ -76,3 +76,17 @@ $\mathbf{L}$ 的构造是内模型理论的奠基性工作，它展示了如何�
 若 $M$ 是ZFC的可传递内模型且 $\text{Ord} \subseteq M$，则对每个序数 $\alpha$，$\text{Def}(\mathbf{L}_\alpha)^M = \text{Def}(\mathbf{L}_\alpha)$（由绝对性），因此 $\mathbf{L}_\alpha \subseteq M$ 对所有 $\alpha$ 成立，故 $\mathbf{L} \subseteq M$。$\square$
 
 **推论**：若ZFC一致，则ZFC + CH一致。$\square$
+
+## 课堂问答
+
+**老师**：可构成宇宙 $L$ 是怎么造出来的？
+
+**学生**：结论——$L_0=\varnothing$，$L_{\alpha+1}=\mathrm{Def}(L_\alpha)$，极限序数取并，$L=\bigcup_{\alpha\in\mathrm{Ord}}L_\alpha$，则 $L\models\mathrm{ZFC}+\mathrm{GCH}$。理由：$L$ 传递且对可定义子集运算封闭，逐条验证 ZFC；CH 来自 $\mathbb{R}\subseteq L_{\omega_1}$ 且 $|L_\alpha|=|\alpha|$。
+
+**老师（追问）**：为什么 $L$ 中 AC 自动成立？
+
+**学生**：因为构造本身给出 $L$ 上一个全局良序 $<_L$（先按出现层级、同层再按编码排序），于是每个集合都可良序，选择公理成立——这是"限制性构造"反过来赠送 AC 的漂亮现象。
+
+**老师（拓展）**：所谓"最小内模型"是什么意思？
+
+**学生**：任何含全部序数的 ZFC 传递内模型 $M$ 都满足 $L\subseteq M$。$L$ 用一个 $\Sigma_1$ 良序把 $\mathbb{R}\cap L$ 塞进 $\aleph_1$ 之内，故 $2^{\aleph_0}=\aleph_1$，这正是 CH 一致性的第一条证据。

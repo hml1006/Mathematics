@@ -53,3 +53,23 @@ $$
 ## 五、应用与意义
 
 该界解释了核方法（尤其是 SVM）在高维/无穷维特征空间仍能泛化的原因：复杂度由 RKHS 范数而非输入维度衡量。它支撑铰链损失的松弛处理、核函数的选择标准（$K(x,x)\le1$）以及正则化参数 $\Lambda$ 的调节，是统计学习理论与实践连接的重要桥梁。
+
+## 课堂问答
+
+**老师**：SVM 常被抱到一个高维甚至无穷维的 RKHS 里，为什么它的泛化界里反而看不见输入维度？
+
+**学生**：结论：SVM 的容量由 RKHS 范数界 $\Lambda$ 而非维度刻画，所以界与输入维度无关。理由走 Rademacher 复杂度这条线——用 Riesz 表示 $f(x_i)=\langle f,K(x_i,\cdot)\rangle_\mathcal{H}$ 把 $\frac1n\sum_i\varepsilon_if(x_i)$ 写成内积 $\langle f,\frac1n\sum_i\varepsilon_iK(x_i,\cdot)\rangle_\mathcal{H}$，再由 Cauchy-Schwarz
+
+$$
+\sup_{\|f\|_\mathcal{H}\le\Lambda}\Big\langle f,\tfrac1n\sum_i\varepsilon_iK(x_i,\cdot)\Big\rangle_\mathcal{H}\le\Lambda\Big\|\tfrac1n\sum_i\varepsilon_iK(x_i,\cdot)\Big\|_\mathcal{H}.
+$$
+
+对 $\varepsilon$ 取期望时交叉项 $\mathbb{E}[\varepsilon_i\varepsilon_j]=0$ 消失，只剩 $\frac1{n^2}\sum_iK(x_i,x_i)\le\frac1n$（用了 $K(x,x)\le1$），于是 $\mathfrak{R}_n(\mathcal{H})\le\Lambda/\sqrt n$，代入 Rademacher 泛化界 $R(f)\le\hat{R}_n(f)+2\mathfrak{R}_n+\sqrt{\frac{\log(1/\delta)}{2n}}$ 即得定理。
+
+**老师（追问）**：既然与维度无关，是不是核映射维度越高越安全、绝不会过拟合？
+
+**学生**：恰恰相反，这是个常见误区。界里的容量是真在起作用的 $\Lambda$，而不是维度。RBF 核把数据送到无穷维，但若不做正则化、把 $\Lambda$ 放大，$2\Lambda/\sqrt n$ 项照样会把界撑爆，也就是会过拟合。所以核 SVM 的正则化参数与 $\Lambda$ 才是控制泛化的旋钮。
+
+**老师（拓展）**：这个界和 VC 维泛化界相比，原理上的差别在哪？
+
+**学生**：VC 界用生长函数计数、只依赖最坏情形、与数据无关；Rademacher 界用随机符号的拟合能力度量，是数据相关的，通常更紧。而且它对 Lipschitz 收缩、单位球 RKHS 等一大类函数空间都能给出简洁的 $O(1/\sqrt n)$，所以成了当代统计学习理论的标准模块。

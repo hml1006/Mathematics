@@ -56,3 +56,25 @@ $$
 - **换元公式**：多重积分的变量替换以 $|\det D\Phi|$ 为体积因子，本公式给出该因子的代数来源（见多重 Riemann 积分与换元公式）。
 - **流动的几何**：$\dot J=J\,\nabla\cdot\boldsymbol v$ 说明不可压缩流动 $(\nabla\cdot\boldsymbol v=0)$ 恰好保持体积，是连续介质运动学的基石。
 - **一般工具**：Jacobi 公式在微分方程、李群（$\det e^{X}=e^{\operatorname{tr}X}$ 的推广）与矩阵分析中被广泛使用。
+
+## 课堂问答
+
+**老师**：Jacobi 公式 $\frac{d}{dt}\det A=\det A\cdot\mathrm{tr}(A^{-1}\dot A)$ 怎么证？
+
+**学生**：先按 Leibniz 公式把行列式展成 $n!$ 项乘积之和，用乘积法则逐项求导，每项恰是"把某一行换成其导数"的行列式，求和后按该行展开，系数是代数余子式，即
+$$
+\frac{d}{dt}\det A=\mathrm{tr}\big(\mathrm{adj}(A)\,\dot A\big).
+$$
+当 $A$ 可逆时用 $\mathrm{adj}(A)=\det A\cdot A^{-1}$ 即得可逆形式。
+
+**老师（追问）**：它和 Reynolds 输运定理有什么关系？
+
+**学生**：它是 Euler 体积膨胀公式的来源。取 $A=D\boldsymbol\chi$ 为变形梯度、$J=\det A$，由 $\dot A=(\nabla_{\boldsymbol x}\boldsymbol v)A$ 与迹的循环性得
+$$
+\dot J=J\,\mathrm{tr}(\nabla_{\boldsymbol x}\boldsymbol v)=J\,\nabla_{\boldsymbol x}\cdot\boldsymbol v,
+$$
+即体积微元的相对膨胀率等于速度散度，正是输运定理中对 $J$ 求导那一步。
+
+**老师（拓展）**：本可逆公式还能读出什么？
+
+**学生**：两边除以 $\det A$ 得 $(\ln|\det A|)^\prime=\mathrm{tr}(A^{-1}\dot A)$，对矩阵李群即 $\det e^{X}=e^{\mathrm{tr}X}$ 的微分版本；不可逆时必须退回伴随矩阵形式 $\mathrm{tr}(\mathrm{adj}(A)\dot A)$，不能除以 $\det A$。

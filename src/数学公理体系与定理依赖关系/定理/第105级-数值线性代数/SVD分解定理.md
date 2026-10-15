@@ -49,3 +49,17 @@ $$
 - **伪逆与最小二乘**：$A^+=V\Sigma^+ U^\top$ 给出 Moore–Penrose 伪逆，稳定求解最小二乘与病态方程组。
 - **条件数与灵敏度**：$\kappa(A)=\sigma_{\max}/\sigma_{\min}$ 刻画矩阵对扰动的敏感度，是数值稳定性分析的核心量。
 - **普遍应用**：推荐系统矩阵分解、信号处理、谱聚类、控制论中的系统辨识，皆以 SVD 为核心算子。
+
+## 课堂问答
+
+**老师**：为什么任意矩阵都能写成 $A=U\Sigma V^\top$？奇异值从哪来？
+
+**学生**：因为 $A^\top A$ 对称半正定，由谱定理可正交对角化：$A^\top A v_i=\lambda_i v_i$，$\lambda_i\ge0$。取 $\sigma_i=\sqrt{\lambda_i}$，$V$ 的列即 $v_i$。对 $\sigma_i>0$ 的部分定义 $u_i=Av_i/\sigma_i$，则 $u_i^\top u_j=\frac{v_i^\top A^\top Av_j}{\sigma_i\sigma_j}=\delta_{ij}$ 规范正交，再扩充成 $\mathbb{R}^m$ 的标准正交基得 $U$，于是 $A=U\Sigma V^\top$。
+
+**老师（追问）**：怎么看出 $\sigma_i>0$ 的个数恰好是秩？
+
+**学生**：由秩公式 $r=\operatorname{rank}(A^\top A)=\operatorname{rank}(A)$，故恰有 $\sigma_1\ge\cdots\ge\sigma_r>0$，其后 $\sigma_{r+1}=\cdots=0$。对 $j>r$，$\|Av_j\|^2=v_j^\top A^\top Av_j=\sigma_j^2=0$，即 $Av_j=0$；它与 $Av_j=\sigma_ju_j$ 一并给出映射在两组正交基下完整的对角作用。
+
+**老师（拓展）**：SVD 有哪些关键用途？分解唯一吗？
+
+**学生**：分解不唯一——重复奇异值处有正交旋转自由度，但奇异值本身唯一且稳定。用途集中体现在：低秩最优逼近（Eckart–Young）$A_k=\sum_{i\le k}\sigma_iu_iv_i^\top$，误差为 $\sigma_{k+1}$；伪逆 $A^+=V\Sigma^+U^\top$；条件数 $\kappa(A)=\sigma_{\max}/\sigma_{\min}$。常见误区是把它当成纯理论——它其实是 PCA、图像压缩、谱聚类与推荐系统的算法核心。

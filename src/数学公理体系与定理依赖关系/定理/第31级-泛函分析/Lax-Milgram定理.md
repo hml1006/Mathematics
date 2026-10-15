@@ -91,3 +91,17 @@ $$
 $$
 
 双线性形式 $a(u, v) = \int_\Omega \nabla u \cdot \nabla v$ 在 $H_0^1(\Omega)$ 上满足有界性和强制性（Poincaré 不等式），由 Lax-Milgram 定理知弱解存在唯一。
+
+## 课堂问答
+
+**老师**：Lax-Milgram 与 Riesz 表示定理的区别在哪？
+
+**学生**：Riesz 只处理内积（对称正定）；Lax-Milgram 允许非对称双线性形式，只要 $|a(u,v)|\le M\|u\|\|v\|$ 且 $a(u,u)\ge\alpha\|u\|^2$，则对任意 $f\in H^*$ 方程 $a(u,v)=f(v)$ 存在唯一解，且 $\|u\|\le\|f\|/\alpha$。
+
+**老师（追问）**：怎么证明算子 $A$ 可逆？
+
+**学生**：对固定 $u$，$v\mapsto a(u,v)$ 连续线性，由 Riesz 表示定理得 $Au$ 使 $a(u,v)=\langle Au,v\rangle$。强制性给 $\langle Au,u\rangle\ge\alpha\|u\|^2$，故 $A$ 单射、值域闭；若 $\operatorname{Range}(A)\ne H$，取非零 $w\perp\operatorname{Range}(A)$，则 $\alpha\|w\|^2\le\langle Aw,w\rangle=0$，矛盾。
+
+**老师（拓展）**：应用到什么样的方程？
+
+**学生**：Poisson 方程 $-\Delta u=f$ 的弱形式：$a(u,v)=\int_\Omega\nabla u\cdot\nabla v$ 在 $H_0^1(\Omega)$ 上，由 Poincaré 不等式满足强制性，于是弱解存在唯一。若 $a$ 对称，解还最小化能量泛函 $J(u)=\frac12a(u,u)-f(u)$。

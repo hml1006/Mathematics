@@ -40,3 +40,17 @@ $$
 ## 五、应用与意义
 
 Clark-Ocone 公式给出了鞅表示中被积函数的显式构造（通过条件 Malliavin 导数），是 Malliavin 计算最具实用价值的成果之一。它广泛应用于金融衍生产品的动态对冲与希腊字母（Greeks）计算、随机控制的灵敏度分析，并为随机积分与 Malliavin 导数的对偶关系提供了统一视角。
+
+## 课堂问答
+
+**老师**：鞅表示定理里的被积函数，能显式写出来吗？
+
+**学生**：先给结论——能。对 $F\in\mathbb D^{1,2}$，$F=\mathbb{E}[F]+\int_0^T\mathbb{E}[D_tF\mid\mathcal F_t]\,dW_t$，被积函数恰是 $F$ 的条件 Malliavin 导数 $D_tF$。
+
+**老师（追问）**：怎么从柱函数上先看出这一点？
+
+**学生**：对 $F=f(W_{t_1},\dots,W_{t_n})$ 有 $D_tF=\sum_i\partial_if\,\mathbf 1_{[0,t_i]}(t)$；在区间 $(t_{k-1},t_k]$ 上 $M_t=\mathbb{E}[F\mid\mathcal F_t]$ 是 $W_t$ 的可微函数，由 Itô 公式其扩散系数正是 $\mathbb{E}[D_tF\mid\mathcal F_t]$。再用柱函数稠密性作 $L^2$ 延拓即得一般 $F$。
+
+**老师（拓展）**：它在金融上有什么实际用途？
+
+**学生**：它给出对冲策略的显式表达 $\phi_t=\mathbb{E}[D_tF\mid\mathcal F_t]$，使 Greeks 可用 Malliavin 权重在蒙特卡洛模拟中直接计算，是鞅表示定理的定量增强。常见误区是忽略 $F$ 需属于 $\mathbb D^{1,2}$（Malliavin 可微）。

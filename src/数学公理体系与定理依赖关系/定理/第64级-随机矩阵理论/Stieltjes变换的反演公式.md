@@ -148,3 +148,17 @@ $$
 - **预解式方法**：随机矩阵的局部律、Green 函数比较（Lindeberg 替换法）都以 $m(z)$ 与 $G(z)=(W-zI)^{-1}$ 的对应为出发点。
 - **自由概率论**：Stieltjes 变换即 Cauchy 变换，与 R 变换、S 变换一起构成自由概率的"特征函数"体系，反演公式给出测度与变换的双向对应。
 - **正交多项式与连分数**：Stieltjes 变换是测度的连分数展开（J 分式）与正交多项式递推系数的编码，反演公式沟通矩问题与谱测度。
+
+## 课堂问答
+
+**老师**：反演公式为什么长成取虚部除以 $\pi$ 这样？
+
+**学生**：因为对 $z=x+i\varepsilon$ 有 $\frac{1}{u-z}=\frac{u-x}{(u-x)^2+\varepsilon^2}+i\frac{\varepsilon}{(u-x)^2+\varepsilon^2}$，虚部恰是 Poisson 核 $P_\varepsilon(x-u)=\frac{\varepsilon}{(x-u)^2+\varepsilon^2}$。于是 $\operatorname{Im}m(x+i\varepsilon)=\int P_\varepsilon(x-u)\,d\mu(u)=(P_\varepsilon*\mu)(x)$，而 $P_\varepsilon/\pi$ 是近似恒等核，$\varepsilon\to0^+$ 时恢复出 $\mu$，故 $\rho(x)=\frac1\pi\lim_{\varepsilon\to0^+}\operatorname{Im}m(x+i\varepsilon)$。
+
+**老师（追问）**：为什么 $P_\varepsilon/\pi$ 是好核，它满足哪两条？
+
+**学生**：两条：其一，$\int_{\mathbb R}P_\varepsilon(t)\,dt=\pi$，即归一化后总质量为 $1$；其二，对任意 $\delta>0$，$\sup_{|t|\ge\delta}P_\varepsilon(t)\le\varepsilon/\delta^2\to0$，即质量在原点外一致消失。有了这两条，由 Fubini 与控制收敛定理，$\frac1\pi\int f\operatorname{Im}m(x+i\varepsilon)\,dx\to\int f\,d\mu$ 对一切有界连续 $f$ 成立，这就是弱反演形式。
+
+**老师（拓展）**：这条反演为什么是随机矩阵推导的最后一步？
+
+**学生**：因为自洽方程只解出 Stieltjes 变换 $m(z)$，要得到谱密度必须靠它反演。半圆律、Marchenko–Pastur 律、自由卷积都走这条路。它还给出唯一性：若两个有限测度的 Stieltjes 变换在上半平面相等则测度相等，这保证了由极限 $m$ 反推极限谱分布是合法的。常见误区是把 $\varepsilon\to0$ 与 $N\to\infty$ 的次序搞混，应先在有限 $N$ 下对固定 $z$ 取值，再令 $\varepsilon\to0^+$。

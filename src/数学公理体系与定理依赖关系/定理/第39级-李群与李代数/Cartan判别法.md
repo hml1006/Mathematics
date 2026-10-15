@@ -67,3 +67,17 @@ $$\operatorname{tr}(YT) = \sum_i \operatorname{tr}([X_i, Z_i]T) = \sum_i \operat
 取 $X \in \mathfrak{a}^{(k-1)} \setminus \{0\}$，对任意 $Y \in \mathfrak{g}$，$\text{ad}_X \circ \text{ad}_Y$ 的像包含在 $\mathfrak{a}^{(k-1)}$ 中，且 $\text{ad}_X$ 在 $\mathfrak{a}^{(k-1)}$ 上为零（因为 $\mathfrak{a}^{(k-1)}$ 交换）。故 $\text{ad}_X \circ \text{ad}_Y$ 是幂零的，迹为零，即 $B(X,Y) = 0$ 对所有 $Y$ 成立，与 $B$ 非退化矛盾。故 $\operatorname{rad}(\mathfrak{g}) = 0$，$\mathfrak{g}$ 半单。$\square$
 
 **推论**：半单李代数 $\mathfrak{g}$ 的 Killing 型是非退化的，且 $\mathfrak{g}$ 可以分解为单李代数的直和：$\mathfrak{g} = \bigoplus_i \mathfrak{g}_i$，其中每个 $\mathfrak{g}_i$ 是单李代数，且该分解在 Killing 型下正交。
+
+## 课堂问答
+
+**老师**：Cartan 判别法用哪条"体检指标"判定半单性？
+
+**学生**：用 Killing 型 $B(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$。结论：$\mathfrak{g}$ 半单当且仅当 $B$ 非退化。理由是 $B$ 在 $\operatorname{ad}$ 下不变，即 $B([X,Y],Z)=B(X,[Y,Z])$，故其根 $\mathfrak{s}=\{X:B(X,\cdot)=0\}$ 是理想；再由可解性判别法知 $\mathfrak{s}$ 可解，必落在 $\operatorname{rad}(\mathfrak{g})$ 内，与半单（$\operatorname{rad}=0$）互相推出。
+
+**老师（追问）**：可解性判别法本身的条件与思路是什么？
+
+**学生**：设 $\mathfrak{g}\subseteq\mathfrak{gl}(V)$，若对任意 $X\in\mathfrak{g}$、$Y\in[\mathfrak{g},\mathfrak{g}]$ 有 $\operatorname{tr}(XY)=0$，则 $\mathfrak{g}$ 可解。关键是把 $Y$ 写成 $\sum_i[X_i,Z_i]$ 得 $\operatorname{tr}(YT)=0$，再用 Jordan 分解 $Y=Y_s+Y_n$ 与 $\operatorname{tr}(Y\overline{Y_s})=\sum|a_i|^2=0$ 逼出 $Y_s=0$，于是 $[\mathfrak{g},\mathfrak{g}]$ 中元素幂零，由 Engel 定理得它幂零。
+
+**老师（拓展）**：为什么"非退化"这一条就足以推出直和分解？
+
+**学生**：因为 $B$ 非退化且不变，$\mathfrak{g}$ 的极小理想两两正交，于是 $\mathfrak{g}=\bigoplus_i\mathfrak{g}_i$ 为单理想的正交直和，且 $B$ 在每个 $\mathfrak{g}_i$ 上仍非退化。常见误区：在实李代数上把非退化误当成正定——Cartan 判别法靠的是非退化性，与 $B$ 是否正定无关。

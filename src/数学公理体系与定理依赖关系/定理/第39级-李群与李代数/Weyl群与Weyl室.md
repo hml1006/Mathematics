@@ -63,3 +63,17 @@ $$C = \{v \in E \mid (v,\alpha_i) > 0,\ \forall \alpha_i \in \Delta\}$$
 **推论**（Weyl 维数公式）：设 $\mathfrak{g}$ 是半单李代数，$\lambda$ 是支配整权，则不可约表示 $V(\lambda)$ 的维数为
 $$\dim V(\lambda) = \prod_{\alpha > 0} \frac{(\lambda + \rho, \alpha)}{(\rho, \alpha)}$$
 其中 $\rho = \frac{1}{2}\sum_{\alpha > 0} \alpha$。
+
+## 课堂问答
+
+**老师**：Weyl 群与 Weyl 室分别是什么？
+
+**学生**：Weyl 群 $W$ 是由根反射 $s_\alpha(v)=v-2\frac{(v,\alpha)}{(\alpha,\alpha)}\alpha$ 生成的有限群；主 Weyl 室是 $C=\{v:(v,\alpha_i)>0,\ \forall\alpha_i\in\Delta\}$。结论：$W$ 在全体 Weyl 室上简单可迁，即每个轨道有唯一代表元，且 $|W|$ 等于 Weyl 室的个数。
+
+**老师（追问）**：$W$ 为什么有限，又为什么只由单根反射生成？
+
+**学生**：$s_\alpha$ 保持有限集 $\Phi$ 不变，且只有恒等元在 $\Phi$ 上作用平凡（$\Phi$ 张成 $E$），故 $W\hookrightarrow\operatorname{Sym}(\Phi)$ 必有限。生成性上，任一 $\alpha$ 可经 $w\in\langle s_{\alpha_i}\rangle$ 映到某个单根，于是 $s_\alpha=w^{-1}s_{w(\alpha)}w$ 也落入其中，故 $W=\langle s_{\alpha_i}\rangle$。
+
+**老师（拓展）**：Weyl 室的可迁性怎么证，用处是什么？
+
+**学生**：取 $v\in C'$，选使 $(w(v),\rho)$ 最大的 $w$ 把 $v$ 推入主室闭包；若不在 $C$ 内，再用相应反射可严格增大，矛盾，故 $w(C')=C$；唯一性由 $w(C)=C\Rightarrow w=1$ 得到。用处是把表示求和化为对 $W$ 的交错和，如 Weyl 特征标公式 $\chi_\lambda=\frac{\sum_{w\in W}\varepsilon(w)e^{w(\lambda+\rho)}}{\prod_{\alpha>0}(e^{\alpha/2}-e^{-\alpha/2})}$。

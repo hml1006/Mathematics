@@ -74,6 +74,20 @@ $$H^k_{dR}(U)=\frac{\ker(d:\Omega^k\to\Omega^{k+1})}{\operatorname{im}(d:\Omega^
 
 （当 $k=0$ 时，$\ker d$ 由局部常函数组成，连通时 $H^0_{dR}(U)=\mathbb R$。）对可缩流形，取收缩同伦按上述同一论证即得相同结论。$\square$
 
+## 课堂问答
+
+**老师**：Poincaré 引理断言什么？
+
+**学生**：设 $U\subseteq\mathbb R^n$ 星形（或可缩），$k\ge1$ 时任何闭形式必恰当：$d\omega=0\Rightarrow\omega=d\eta$，故 $H^k_{dR}(U)=0$。
+
+**老师（追问）**：$\eta$ 是怎么构造出来的？
+
+**学生**：用收缩同伦 $H_t(x)=tx$ 的积分算子 $K\omega=\int_0^1H_t^*(\iota_{V_t}\omega)\,dt$，$V_t$ 是沿 $H$ 的速度场。由 Cartan 公式得同伦公式 $\omega=dK\omega+Kd\omega$，当 $d\omega=0$ 时取 $\eta=K\omega$。$k\ge1$ 时 $t\to0$ 的奇异项被 $t^{k-1}$ 衰减抵消，故 $K$ 光滑良定。
+
+**老师（拓展）**：为什么整体上会失效？
+
+**学生**：有洞的区域破坏单值性，如 $\mathbb R^2\setminus\{0\}$ 上 $\frac{-y\,dx+x\,dy}{x^2+y^2}$ 闭而不恰当。常见误区是把它当作整体定理——它是局部结果，恰是 de Rham 上同调有意思的原因。
+
 ## 相关条目
 
 - [deRham定理](./deRham定理.md)：de Rham 上同调与奇异上同调的同构以本引理为其局部可缩情形的起点。

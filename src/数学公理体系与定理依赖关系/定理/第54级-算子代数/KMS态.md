@@ -161,3 +161,17 @@ KMS 态理论在数学和物理学中有广泛应用：
 8. **数学物理**：KMS 理论为数学物理中的平衡态统计力学提供了严格的公理化基础，连接了微观动力学和宏观热力学。
 
 KMS 态理论展示了算子代数方法在统计力学中的强大威力，是数学物理中最重要的成果之一。它不仅为热力学提供了严格的数学基础，而且揭示了量子系统深层的代数结构。
+
+## 课堂问答
+
+**老师**：KMS 条件到底在刻画什么？
+
+**学生**：结论：它刻画热平衡态。对 $(\beta,\alpha)$-动力学系统，要求对任意 $a,b$ 存在 $F_{a,b}(z)$ 在带状区域 $0\le\mathrm{Im}\,z\le\beta$ 上解析，边界取 $F_{a,b}(t)=\omega(a\alpha_t(b))$、$F_{a,b}(t+i\beta)=\omega(\alpha_t(b)a)$。
+
+**老师（追问）**：有限系统里它和 Gibbs 态是什么关系？
+
+**学生**：结论：两者完全等价。取 $a=|i\rangle\langle j|$，KMS 边界条件给出 $e^{-\beta(E_i-E_j)}\omega_{ij}=\omega_{ji}$，推出 $\omega_{ij}=Ce^{-\beta E_i}\delta_{ij}$，即 $\omega(a)=\mathrm{tr}(e^{-\beta H}a)/Z$。常见误区：以为 KMS 只对有限系统有意义，它正是无穷自由度平衡态的正确定义。
+
+**老师（拓展）**：它和模理论如何衔接？
+
+**学生**：结论：忠实正规态 $\omega$ 关于模自同构群 $\sigma_t^\omega(x)=\Delta^{it}x\Delta^{-it}$ 恰是 $(1,\sigma^\omega)$-KMS 态，取 $F_{a,b}(z)=\langle\xi_\omega,a\Delta^{iz}b\xi_\omega\rangle$。KMS 态一般不唯一，不同 KMS 态对应不同热力学相，非唯一性即相变。

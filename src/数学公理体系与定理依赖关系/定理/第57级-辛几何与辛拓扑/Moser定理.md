@@ -146,3 +146,21 @@ $$
 - ** Thurston 的辛结构构造**：基于 Moser 的同调刚性，构造具有给定上同调类的辛结构。
 
 Moser 定理以其简洁而深刻的内容，成为现代辛几何、Kähler 几何与微分拓扑的基本工具，是 20 世纪微分几何的代表性成果之一。
+
+## 课堂问答
+
+**老师**：Moser 定理（辛形式稳定性）讲了什么？
+
+**学生**：设 $\{\omega_t\}_{t\in[0,1]}$ 是闭流形 $M$ 上光滑依赖 $t$ 的辛形式族，若其上同调类与 $t$ 无关，等价地 $\frac{d\omega_t}{dt}=d\sigma_t$，则存在微分同胚族 $\varphi_t$（$\varphi_0=\mathrm{id}$）使
+$$\varphi_t^*\omega_t=\omega_0,\quad\forall t\in[0,1].$$
+推论：两个辛形式若同调且可由辛形式路径连接，则辛同胚等价；在子流形上一致的相对版本可要求 $\varphi|_N=\mathrm{id}_N$。常见误区是把它与 Darboux 混淆——后者是前者在一点邻域上的局部应用。
+
+**老师（追问）**：向量场 $X_t$ 是怎么造出来、又怎么验证的？
+
+**学生**：由非退化性，$\omega_t^\flat:X\mapsto\iota_X\omega_t$ 是 $T_xM\to T_x^*M$ 的同构，故可定义 $X_t=-\omega_t^{-1}\sigma_t$，即 $\iota_{X_t}\omega_t=-\sigma_t$。验证：由 Cartan 公式与 $d\omega_t=0$，
+$$\frac{d}{dt}\varphi_t^*\omega_t=\varphi_t^*\bigl(\mathcal L_{X_t}\omega_t+\tfrac{d\omega_t}{dt}\bigr)=\varphi_t^*\bigl(-d\sigma_t+d\sigma_t\bigr)=0.$$
+故 $\varphi_t^*\omega_t$ 与 $t$ 无关，代入 $t=0$ 得 $\varphi_t^*\omega_t=\omega_0$。紧流形上 $X_t$ 整体有界，流在整个 $[0,1]$ 上存在。
+
+**老师（拓展）**：Moser 定理的哲学意义是什么？
+
+**学生**：它说明辛几何的局部几何完全由上同调类决定——固定上同调类中辛形式没有局部模空间（离散的凸锥 $\subset H^2(M;\mathbb R)$），这与 Riemann 度量有无限维模空间（曲率连续变化）形成鲜明对比。它是 Darboux 定理、Weinstein 邻域定理、Gray 接触稳定性定理的统一工具，也是 Hamilton 向量场定义 $\iota_{X_t}\omega=dH$ 的来源。

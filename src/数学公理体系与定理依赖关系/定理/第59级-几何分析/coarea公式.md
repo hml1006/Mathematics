@@ -90,6 +90,20 @@ $$\int_M g\,J_f\,d\mu=\int_{\mathbb R^n}\Bigl(\int_{f^{-1}(y)}g\,d\mathcal H^{m-
 - **极小曲面与平均曲率流**：将体积积分的单调性、密度估计化为水平集几何量的估计。
 - **可求长性**：结合面积公式用于证明集合可求长（rectifiable）与 De Giorgi 结构定理。
 
+## 课堂问答
+
+**老师**：coarea 公式到底把什么分解成了什么？
+
+**学生**：$\int_Mg\,|\nabla f|\,d\mu=\int_{\mathbb R}\left(\int_{f^{-1}(t)}g\,d\mathcal H^{n-1}\right)dt$，即区域上的积分被沿水平集分解，再对水平值积分。
+
+**老师（追问）**：为什么左端会多出一个 $|\nabla f|$ 因子？
+
+**学生**：在 $\nabla f\ne0$ 处取正交标架使 $e_1=\frac{\nabla f}{|\nabla f|}$，其余切于水平集。对偶余标架满足 $\theta^1(e_1)=1$、$\theta^1(e_j)=0$（$j\ge2$），故 $\theta^1=\frac{df}{|\nabla f|}$。于是体积元 $d\mu=\theta^1\wedge\cdots\wedge\theta^n=\frac{df}{|\nabla f|}\wedge d\sigma$，即 $|\nabla f|\,d\mu=df\wedge d\sigma$，其中 $d\sigma$ 是水平集的 $\mathcal H^{n-1}$ 面积元。
+
+**老师（拓展）**：一般映射 $f:M^m\to\mathbb R^n$ 又如何？与面积公式什么关系？
+
+**学生**：把 $J_f=\sqrt{\det(df\,df^{\mathsf T})}$ 取代 $|\nabla f|$，就是 $\int_MgJ_fd\mu=\int_{\mathbb R^n}\left(\int_{f^{-1}(y)}g\,d\mathcal H^{m-n}\right)dy$。面积公式把测度推向像空间、coarea 沿水平集分解，两者互为对偶。常见误区是忽视临界点：$\nabla f=0$ 的点集由 Sard 定理其像测度为零，故不影响等式；取 $f(x)=|x|$ 就退化为球坐标积分公式。
+
 ## 相关条目
 
 - [第一变分公式](./第一变分公式.md)：把几何量沿曲面变分分解，与本公式"沿水平集分解"互补。

@@ -125,3 +125,17 @@ $$d_{GH}(X_i, X) \leq d_{GH}(X_i, S_{i, k}) + d_{GH}(S_{i, k}, S_k) + d_{GH}(S_k
 8. **机器学习**：在持久同调和形状分析中，GH 距离（及其松弛 Bottleneck 距离）用于度量点云数据的形状差异。
 
 Gromov-Hausdorff 收敛理论的引入从根本上改变了我们研究几何对象的方式，使"极限"成为几何学中可操作的严格概念。它将度量空间、流形、群和动力系统纳入统一的几何分析框架，成为现代数学的重要支柱。
+
+## 课堂问答
+
+**老师**：两个紧度量空间"越来越像"如何精确定义？
+
+**学生**：用 Gromov-Hausdorff 距离，它取遍所有公共度量空间中的等距嵌入 $\phi,\psi$，度量像集之间的 Hausdorff 距离再取下确界：$d_{GH}(X,Y)=\frac12\inf_R\sup_{(x,y),(x',y')\in R}|d_X(x,x')-d_Y(y,y')|$，其中 $R$ 遍历 $X\times Y$ 上的对应关系。$d_{GH}(X_i,X)\to0$ 即 $X_i\xrightarrow{GH}X$。
+
+**老师（追问）**：Gromov 紧性定理为什么必须要求"一致 totally bounded"，直径有界不够吗？
+
+**学生**：不够。直径有界只限制尺度，不限制复杂度，维数无限时可以有无限多个互不相同的构型。需要更强的条件：对每个 $\varepsilon>0$ 存在 $N(\varepsilon)<\infty$，使每个 $X_i$ 都有基数不超过 $N(\varepsilon)$ 的有限 $\varepsilon$-网。这样才能对每个固定网格尺度抽出子列，再用对角线法则拿到公共子列。
+
+**老师（拓展）**：为什么 Ricci 曲率下有界加直径有界就蕴含紧性？
+
+**学生**：由 Bishop-Gromov 体积比较，$\mathrm{Ric}\ge(n-1)k$ 使 $r\mapsto\mathrm{vol}(B(p,r))/V_k^n(r)$ 非增，于是 $\varepsilon$-分离集基数的 packing 估计有统一上界，正好满足 Gromov 紧性定理的 totally bounded 条件。常见误区是以为极限必定是同维流形：Ricci 下有界时可能发生坍塌，极限维数可严格小于 $n$，这正是 Cheeger-Fukaya-Gromov 坍塌理论的内容。

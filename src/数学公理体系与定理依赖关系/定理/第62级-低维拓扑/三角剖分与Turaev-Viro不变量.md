@@ -64,3 +64,17 @@ $$
 ## 五、应用与意义
 
 Turaev–Viro 不变量是三维量子拓扑的核心不变量之一。它不仅能区分同调球面、检测某些流形的非平凡性，还与拓扑量子场论（TQFT）的构造直接相关：Turaev–Viro 不变量可扩展为二维曲面到一维向量空间的 TQFT 函子。此外，它在量子计算与凝聚态物理中有重要应用：Kitaev 的 toric code 模型和 Levin–Wen 弦网模型均建立在 fusion category 与 $6j$–符号之上，其基态简并度与 Turaev–Viro 型不变量密切相关。近年来，Turaev–Viro 不变量的数值计算也被用于探索三维流形的量子不变量与经典几何不变量（如双曲体积）之间的渐近关系。
+
+## 课堂问答
+
+**老师**：Turaev–Viro 不变量为什么与剖分无关？
+
+**学生**：结论：因为状态求和在 Pachner 移动下不变。$TV_{\mathcal C}(M)=\sum_sW(s)$，其中 $W(s)$ 为顶点因子 $d_{i_v}^{-2}$、边因子 $d_{i_e}$ 与四面体 $6j$ 符号之积。$2\leftrightarrow3$ 移动的不变性正是 $6j$ 符号的 Biedenharn–Elliott 五边形方程；$1\leftrightarrow4$ 移动由 fusion 范畴的量子维数归一化抵消。剖分可经 Pachner 移动互化，故 $TV$ 只依赖 $M$。
+
+**老师（追问）**：为什么要用 spherical fusion category？
+
+**学生**：因为要给顶点、边配量子维数权重并保证归一化自洽。球面结构提供迹与 $d_i$，半单性保证简单对象直和分解，五边形与正交关系保证局部移动不变。$\mathcal C=\mathrm{Rep}_q(\mathfrak{sl}_2)$ 在 $q=e^{\pi i/r}$ 处即为标准例子，此时 $TV_{\mathcal C}(M)=|\mathrm{WRT}(M)|^2$。
+
+**老师（拓展）**：这项不变量与现代物理的联系？
+
+**学生**：它可扩展为从二维曲面到向量空间的 TQFT 函子，是 Kitaev toric code 与 Levin–Wen 弦网模型的数学骨架，基态简并度与 $TV$ 型不变量相关。近年还用 $TV$ 的数值与渐近行为探测三维流形量子不变量与双曲体积之间的关系，把组合态求和与几何量联系起来。

@@ -79,6 +79,23 @@ H^k_{\mathrm{dR}}(M) \cong \mathcal{H}^k(M).
 $$
 
 **证明**：设 $[\omega] \in H^k_{\mathrm{dR}}(M)$，由 Hodge 分解，$\omega = \alpha + d\beta + d^*\gamma$。由于 $d\omega = 0$ 且 $d\alpha = 0$，得 $d d^*\gamma = 0$，故 $\langle d^*\gamma, d^*\gamma \rangle = \langle d d^*\gamma, \gamma \rangle = 0$，即 $d^*\gamma = 0$。因此 $\omega = \alpha + d\beta$，$[\omega] = [\alpha]$。由分解的唯一性，$\alpha$ 是唯一的调和代表元。$\square$
+
+## 课堂问答
+
+**老师**：陈述 Hodge 分解，并说明正交性的来源。
+
+**学生**：结论：紧致定向 Riemann 流形上
+$$\Omega^k(M)=\mathcal H^k(M)\oplus d\Omega^{k-1}(M)\oplus d^*\Omega^{k+1}(M),$$
+其中 $\mathcal H^k=\ker\Delta$、$\Delta=dd^*+d^*d$。正交性来自伴随关系 $\langle d\beta,d^*\gamma\rangle=\langle d^2\beta,\gamma\rangle=0$，以及 $\langle\omega,d\beta\rangle=\langle d^*\omega,\beta\rangle=0$（对 $\omega\in\mathcal H^k$）。误区是以为 $\Delta\omega=0$ 只给封闭；其实 $0=\langle\Delta\omega,\omega\rangle=|d\omega|^2+|d^*\omega|^2$ 迫使 $d\omega=d^*\omega=0$。
+
+**老师（追问）**：分解的存在性靠什么分析事实？
+
+**学生**：靠 $\Delta$ 的椭圆性：主符号 $|\xi|^2$ 非退化，紧流形上 $\ker\Delta$ 有限维、像闭，故有 $L^2$ 正交分解 $\Omega^k=\ker\Delta\oplus\mathrm{Im}\,\Delta$；而 $\mathrm{Im}\,\Delta=d\Omega^{k-1}\oplus d^*\Omega^{k+1}$。这是 Fredholm 性质加椭圆正则性的产物。
+
+**老师（拓展）**：最重要的推论是什么？
+
+**学生**：Hodge 同构 $H^k_{\mathrm{dR}}(M)\cong\mathcal H^k(M)$：每个上同调类有唯一调和代表元。把 $\omega=\alpha+d\beta+d^*\gamma$ 代入闭性并用 $\langle d^*\gamma,d^*\gamma\rangle=0$ 消去余恰当部分即得。这把拓扑问题化为解椭圆方程，是 Hodge 理论的价值。
+
 ## 相关条目
 
 - [Hodge 分解定理（第58级-复几何）](../第58级-复几何/Hodge分解定理.md)：相关条目——本条目为 Riemann 流形上微分形式的 Hodge 分解；第58级条目为紧 Kähler 流形上按 (p,q)-型的细化分解。

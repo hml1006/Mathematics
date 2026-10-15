@@ -74,6 +74,20 @@ $$\nu_p\binom{n}{m}=\sum_{k\ge1}\Big(\Big\lfloor\frac{n}{p^k}\Big\rfloor-\Big\lf
 
 **步骤 6：应用举例。** $n!$ 的十进制末尾零的个数等于 $\min(\nu_2(n!),\nu_5(n!))=\nu_5(n!)=\sum_{k\ge1}\lfloor n/5^k\rfloor$（因为 $\nu_5\le\nu_2$）。例如 $n=100$ 时 $\lfloor100/5\rfloor+\lfloor100/25\rfloor=20+4=24$。
 
+## 课堂问答
+
+**老师**：素数 $p$ 在 $n!$ 中的指数怎么求？为什么是 $\sum_k\lfloor n/p^k\rfloor$，而不是只数 $p$ 的倍数？
+
+**学生**：因为 $\nu_p(m)$ 等于使 $p^k\mid m$ 成立的 $k$ 的个数，于是 $\nu_p(n!)=\sum_{m\le n}\#\{k:p^k\mid m\}=\sum_k\lfloor n/p^k\rfloor$。只数 $p$ 的倍数会漏掉 $p^2,p^3$ 带来的额外因子，例如 $10!=3628800=2^8\cdot3^4\cdots$ 中 $3$ 的指数是 $\lfloor10/3\rfloor+\lfloor10/9\rfloor=3+1=4$。
+
+**老师（追问）**：那二项式系数的素因子指数呢？
+
+**学生**：由可加性 $\nu_p\binom nm=\sum_k(\lfloor n/p^k\rfloor-\lfloor m/p^k\rfloor-\lfloor(n-m)/p^k\rfloor)\ge0$，非负性来自 $\lfloor x+y\rfloor\ge\lfloor x\rfloor+\lfloor y\rfloor$。特别地 $\nu_p\binom{2n}{n}$ 每项只取 $0$ 或 $1$，这正是 Bertrand 定理初等证明的关键。
+
+**老师（拓展）**：它还有别的用途吗？
+
+**学生**：计算 $n!$ 末尾零数即 $\nu_5(n!)=\sum_k\lfloor n/5^k\rfloor$（因 $\nu_5\le\nu_2$），如 $n=100$ 得 $20+4=24$。它也是 $p$ 进赋值最基本的算法。
+
 ## 相关条目
 
 - [Bertrand素数定理](./Bertrand素数定理.md)：其 Erdős 初等证明用本公式控制 $\binom{2n}{n}$ 的素因子指数。

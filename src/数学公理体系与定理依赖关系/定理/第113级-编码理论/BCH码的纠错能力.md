@@ -31,3 +31,17 @@
 - **代数译码".基于伴随式与 Berlekamp–Massey 算法实现高效译码。
 - **实用码族**.CD、QR 码、eMMC/SSD 纠错中 BCH 应用广泛。
 - **理论地位**.用"根条件→Vandermonde→距离下界"一箭双雕证明距离，是代数码经典范例。
+
+## 课堂问答
+
+**老师**：BCH 码怎么保证"设计距离 $\delta$ 就一定能纠 $t=\lfloor(\delta-1)/2\rfloor$ 个错误"？
+
+**学生**：结论是 $d_{\min}\ge\delta$。理由是码多项式以连续根 $\alpha^b,\alpha^{b+1},\dots,\alpha^{b+\delta-2}$ 为根，把 $c(\alpha^{b+i})=0$ 写成以非零系数为未知量的线性方程组，系数矩阵是 Vandermonde 阵；因 $\alpha^{i_r}$ 两两不同故可逆，若码字重量 $w\le\delta-1$ 则只有零解，矛盾。常见误区是以为根越多译码越难，其实连续根的个数直接锁定纠错能力。
+
+**老师（追问）**：Vandermonde 矩阵可逆这一步为什么关键？
+
+**学生**：因为 $\det V=\prod_{r<s}(\alpha^{i_s}-\alpha^{i_r})\ne0$，保证这组方程的前 $\delta-1$ 行内系数列线性无关，于是任何重量 $\le\delta-1$ 的码字都不存在，最小距离至少为 $\delta=2t+1$，从而可纠 $t$ 个错误。
+
+**老师（拓展）**：实际怎么译码？
+
+**学生**：用伴随式配合 Berlekamp-Massey 算法求错误位置多项式再求逆得到错误值。BCH 因"可设计纠错强度"而广泛用于 CD、QR 码以及 eMMC、SSD 的纠错，是"根条件 $\to$ Vandermonde $\to$ 距离下界"一箭双雕的经典范例。

@@ -101,3 +101,17 @@ $$\tfrac12\Delta|A|^2=|\nabla A|^2-|A|^4+c\,n\,|A|^2 .$$
 **理论意义**：Gauss 方程（连同 Codazzi 方程）是子流形几何的基本定理：它说明内蕴几何与外在几何如何互相制约，并直接给出 Gauss 绝妙定理——曲率是内蕴量。它也是 Riemann 几何与子流形可积性理论（Bonnet 定理：$g$ 与 $A$ 满足 Gauss–Codazzi 即可局部实现浸入）的出发点。
 
 **应用领域**：在极小曲面与几何分析中，它把内蕴曲率估计化为 $|A|^2$ 的估计，是 Simons不等式、曲率 pinching、稳定性不等式与平均曲率流奇点分析的基础；在常平均曲率超曲面与 Weingarten 曲面的分类中，它给出 Ricci 曲率与 $h_{ij}$ 的代数关系；在广义相对论中，它用于导出约束方程（initial data 的 Gauss–Codazzi 约束），是正质量定理与 Yamabe 问题相关论证的标准工具。
+
+## 课堂问答
+
+**老师**：子流形的内蕴曲率到底由什么决定？
+
+**学生**：结论是 Gauss 方程 $\langle R^N(X,Y)Z,W\rangle=\langle R^M(X,Y)Z,W\rangle+\langle A(X,Z),A(Y,W)\rangle-\langle A(X,W),A(Y,Z)\rangle$，即内蕴曲率 = 环境曲率限制到切向 + 第二基本形式 $A$ 的二次项。当 $N=\mathbb R^3$ 且 $M^2$ 是曲面时，$K=h_{11}h_{22}-h_{12}^2=\det A$。
+
+**老师（追问）**：$\det A$ 明明由浸入给出，凭什么说 $K$ 是内蕴量？
+
+**学生**：因为 $R^M$ 完全由 Levi-Civita 联络、即由第一基本形式 $g$ 决定，而 $h_{ij}$ 又被 Gauss–Codazzi 方程组与 $g$ 相互确定，所以 $\det A$ 只依赖 $g$，与具体浸入方式无关——这就是 Gauss 绝妙定理。常见误区是把"外在量"与"内蕴量"混淆：平面与柱面的 $A$ 差别很大，但 $\det A$ 都为零，故 $K$ 都为 $0$。
+
+**老师（拓展）**：Gauss 方程怎样和 Simons 恒等式接上？
+
+**学生**：对极小超曲面 $H\equiv0$，Gauss 方程的 Ricci 分量给出 $\mathrm{Ric}^M(e_j,e_j)=\sum_k\bar R^N_{jkkj}-\sum_kh_{jk}^2$；在 $\mathbb R^{n+1}$ 中化为 $-\sum_kh_{jk}^2\le0$，于是 $|\mathrm{Ric}^M|\le|A|^2$。把这个"内蕴曲率换成 $A$"的翻译代入 $\frac12\Delta|A|^2$ 的 Bochner 型计算，就得到 $\frac12\Delta|A|^2=|\nabla A|^2-|A|^4+cn|A|^2$。

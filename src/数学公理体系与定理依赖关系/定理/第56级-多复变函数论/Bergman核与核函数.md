@@ -134,3 +134,21 @@ Bergman 核与核函数理论在多复变与复几何中具有核心地位：
 5. **物理学应用**：Bergman 核在量子相空间几何、弦理论（Calabi–Yau 度量的 Bergman 逼近）、量子信息（Bergman 度量作为 Fisher 信息几何）有应用。
 
 6. **数值与计算复几何**：Bergman 核的数值计算与逼近在多复变函数论计算中至关重要。Bergman 核的快速计算方法在现代科学计算中有广泛应用。
+
+## 课堂问答
+
+**老师**：Bergman 核 $K_\Omega(z,w)$ 是有界域上规范的全纯对象，它为什么一定存在？本质用到的数学结构是什么？
+
+**学生**：存在的根本原因是"点赋值泛函在 $A^2(\Omega)$ 上有界 $+$ Riesz 表示定理"。先由 Cauchy 估计得 $|f(z)|\le C(z)\|f\|_{L^2}$，故 $L_z:f\mapsto f(z)$ 是 $A^2(\Omega)$ 上的有界线性泛函；再由 Riesz 表示定理，存在唯一 $K_z\in A^2(\Omega)$ 使 $f(z)=\langle f,K_z\rangle$，令 $K_\Omega(z,w):=\overline{K_z(w)}$ 即可。一个常见误区是以为核依赖积分区域的具体形状——它只依赖 $\Omega$ 与 $L^2$ 结构，且 $K_\Omega(z,z)=\|K_z\|^2>0$。
+
+**老师（追问）**：你说它是"再生核"，那它和投影到 $A^2(\Omega)$ 的正交投影算子是什么关系？
+
+**学生**：正交投影的积分核就是它。定义 Bergman 投影 $Pf(z)=\int_\Omega K_\Omega(z,w)f(w)\,dV(w)$，则 $P:L^2(\Omega)\to A^2(\Omega)$ 是正交投影，再生性恰是"对 $f\in A^2$ 有 $Pf=f$"。更一般地，$K$ 关于 $z$ 全纯、关于 $w$ 反全纯且有对称性 $K(z,w)=\overline{K(w,z)}$，这是 Riesz 表示唯一性的直接推论。
+
+**老师（拓展）**：既然核如此规范，它在双全纯映射下如何变化？
+
+**学生**：给出变换公式
+$$K_{\Omega_2}(\Phi(z),\Phi(w))\det\Phi'(z)\overline{\det\Phi'(w)}=K_{\Omega_1}(z,w),$$
+由此 $\log K$ 的混合二阶导数 $\log|\det\Phi'|^2$ 项因纯粹全纯 $+$ 反全纯而消失，故 Bergman 度量
+$$g^B_{j\bar k}(z)=\frac{\partial^2\log K_\Omega(z)}{\partial z_j\partial\bar z_k}$$
+是双全纯不变量，且在严格伪凸边界附近满足 Fefferman 渐近 $K_\Omega(z,z)\sim\varphi(z)/\mathrm{dist}(z,\partial\Omega)^{n+1}$——这正是双全纯映射光滑延拓到边界定理的分析根基。

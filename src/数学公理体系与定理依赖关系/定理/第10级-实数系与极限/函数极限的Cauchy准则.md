@@ -26,3 +26,17 @@
 必要性：设 $\lim_{x\to a} f(x) = L$，则对 $\varepsilon > 0$，$\exists \delta > 0$，$0 < |x-a| < \delta$ 时 $|f(x) - L| < \varepsilon/2$。故 $0 < |x-a|, |y-a| < \delta$ 时 $|f(x) - f(y)| \leq |f(x)-L| + |L-f(y)| < \varepsilon$。
 
 充分性：假设 $f$ 满足 Cauchy 条件。对任意 $x_n \to a$（$x_n \neq a$），由数列 Cauchy 收敛准则，$\{f(x_n)\}$ 收敛。由海涅定理，$\lim_{x\to a} f(x)$ 存在。$\square$
+
+## 课堂问答
+
+**老师**：函数极限的 Cauchy 准则和数列版本是不是一回事？凭什么能免去"预知极限"？
+
+**学生**：结论：$\lim_{x \to a} f(x)$ 存在 $\iff$ 对任意 $\varepsilon > 0$，存在 $\delta > 0$，使 $0 < |x-a|, |y-a| < \delta$ 时恒有 $|f(x) - f(y)| < \varepsilon$。它把数列版里"充分靠后的两项"换成"充分靠近 $a$ 的两个点"，同样只用 $f$ 的取值、不含极限值 $L$。
+
+**老师（追问）**：必要性直接可得，充分性靠什么把"点对"变成"数列"？
+
+**学生**：充分性用海涅定理加数列 Cauchy 准则。对任意 $x_n \to a$（$x_n \neq a$），取充分大的 $m, n$ 时 $|f(x_m) - f(x_n)| < \varepsilon$，故 $\{f(x_n)\}$ 是 Cauchy 列、收敛；由海涅定理，这个收敛值对所有 $x_n \to a$ 一致，于是 $\lim_{x\to a} f(x)$ 存在。要防的误区是把它写成含未知 $L$ 的形式——准则的精髓恰恰是式子里不出现 $L$。
+
+**老师（拓展）**：举个它判不存在的漂亮例子。
+
+**学生**：$\lim_{x\to 0}\sin\frac1x$ 不存在。取 $x_n = \frac{1}{2n\pi}$、$y_n = \frac{1}{(2n+1/2)\pi}$，两者都可任意接近 $0$，但 $|f(x_n) - f(y_n)| = 1$ 恒成立，破坏 Cauchy 条件，故极限不存在。这一构造比直接搬 $\varepsilon$-$\delta$ 定义简洁得多，是海涅定理"一个式子证不存在"威力的体现。

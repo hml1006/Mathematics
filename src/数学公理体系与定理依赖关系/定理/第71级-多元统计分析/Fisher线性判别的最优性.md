@@ -38,3 +38,17 @@ $$
 ## 五、应用与意义
 
 Fisher 线性判别是线性判别分析（LDA）的理论核心。当两类正态且共享协方差时，其判别规则与 Bayes 最优分类器一致，故该方向既是最大化类间可分性的方向，也是最接近最优分类的方向。在样本中，$\boldsymbol{\mu}_1,\boldsymbol{\mu}_2,\boldsymbol{\Sigma}$ 以其估计代入，算出判别系数并用于分类。LDA 广泛用于生物、医学、金融与机器学习中的分类与特征筛选。其思想可推广至多分类情形及"二次判别"（不共享协方差），是理解分类边界几何与降维可分性的基础工具。
+
+## 课堂问答
+
+**老师**：两类共享协方差矩阵，怎样找最优的一维投影方向？
+
+**学生**：先给结论：最大化 Fisher 比率 $J(\boldsymbol{a})=\frac{(\boldsymbol{a}^\top\boldsymbol{d})^2}{\boldsymbol{a}^\top\boldsymbol{\Sigma}\boldsymbol{a}}$（$\boldsymbol{d}=\boldsymbol{\mu}_1-\boldsymbol{\mu}_2$）的方向是 $\boldsymbol{a}\propto\boldsymbol{\Sigma}^{-1}\boldsymbol{d}$，最大值为 Mahalanobis 距离平方 $\Delta^2=\boldsymbol{d}^\top\boldsymbol{\Sigma}^{-1}\boldsymbol{d}$。
+
+**老师（追问）**：为什么不是 $\boldsymbol{a}\propto\boldsymbol{d}$？$\boldsymbol{\Sigma}^{-1}$ 到底起什么作用？
+
+**学生**：要按类内散布对距离加权。在 $\boldsymbol{\Sigma}$-内积 $\langle\boldsymbol{u},\boldsymbol{v}\rangle_\Sigma=\boldsymbol{u}^\top\boldsymbol{\Sigma}\boldsymbol{v}$ 下用 Cauchy-Schwarz，$(\boldsymbol{a}^\top\boldsymbol{d})^2=\langle\boldsymbol{a},\boldsymbol{\Sigma}^{-1}\boldsymbol{d}\rangle_\Sigma^2\le\|\boldsymbol{a}\|_\Sigma^2\|\boldsymbol{\Sigma}^{-1}\boldsymbol{d}\|_\Sigma^2=\boldsymbol{d}^\top\boldsymbol{\Sigma}^{-1}\boldsymbol{d}$，等号当 $\boldsymbol{a}$ 与 $\boldsymbol{\Sigma}^{-1}\boldsymbol{d}$ 共线。只有 $\boldsymbol{\Sigma}=\boldsymbol{I}$ 时才退化为 $\boldsymbol{a}\propto\boldsymbol{d}$；忽略 $\boldsymbol{\Sigma}^{-1}$ 会让方差大的坐标方向误导投影。
+
+**老师（拓展）**：这个方向和 Bayes 最优分类器是什么关系？
+
+**学生**：两类正态、等协方差时，Fisher 方向正是 Bayes 判别边界 $\boldsymbol{a}^\top\boldsymbol{x}=c$ 的法向，故它同时"最可分"又"最接近最优分类"。多分类要解类间/类内散布矩阵的广义特征问题，协方差不等时判别边界升级为二次曲面（QDA）。

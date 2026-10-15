@@ -102,3 +102,21 @@ $$
 $\square$
 
 **推论（曲线论基本定理）**：给定 $\kappa(s) > 0$ 和 $\tau(s)$，存在唯一的曲线（在等距变换意义下）以 $\kappa$ 和 $\tau$ 为曲率和挠率。
+
+## 课堂问答
+
+**老师**：一条空间曲线凭什么被两个数 $\kappa,\tau$ 完全决定？Frenet 公式的矩阵为什么是反对称的？
+
+**学生**：结论来自标架的正交归一。记 $T=\gamma'$、$N=T'/\kappa$、$B=T\times N$，则 $T'=\kappa N$、$N'=-\kappa T+\tau B$、$B'=-\tau N$。矩阵形式
+$$
+\frac{d}{ds}\begin{pmatrix}T\\N\\B\end{pmatrix}=\begin{pmatrix}0&\kappa&0\\-\kappa&0&\tau\\0&-\tau&0\end{pmatrix}\begin{pmatrix}T\\N\\B\end{pmatrix}
+$$
+反对称，因为它生成正交变换：标架保持正交规范，求导得到的必是反对称（角速度）矩阵。
+
+**老师（追问）**：为什么 $\tau\equiv 0$ 等价于平面曲线、$\kappa\equiv 0$ 等价于直线？$\kappa=0$ 时 $N$ 还能定义吗？
+
+**学生**：$\kappa\equiv 0$ 时 $T'=0$，$T$ 为常向量，积分得直线；$\tau\equiv 0$ 时 $B'=-\tau N=0$，$B$ 是常向量，曲线落在与之垂直的平面内。反过来平面曲线的 $B$ 恒定，故 $\tau=0$。至于 $\kappa(s_0)=0$，$N=T'/\kappa$ 在该点除法失效、标架退化——这是常见误区，通常假设 $\kappa>0$，此时用 $\tau=\dfrac{(\gamma'\times\gamma'')\cdot\gamma^{\prime\prime\prime}}{\kappa^2}$ 计算。
+
+**老师（拓展）**：曲线论基本定理说 $\kappa,\tau$ 唯一确定曲线，唯一性在哪？为什么不是任意两函数都行？
+
+**学生**：给定 $\kappa>0$ 与 $\tau$ 后，Frenet 公式是关于标架的一阶线性 ODE 组，初值 $T(s_0),N(s_0),B(s_0)$ 确定后解唯一；再由 $\gamma'=T$ 积分一次得曲线，故只在刚体运动（等距）意义下唯一。$\kappa$ 必须严格为正，否则 $N=T'/\kappa$ 出现除零奇点，方程不再正则。

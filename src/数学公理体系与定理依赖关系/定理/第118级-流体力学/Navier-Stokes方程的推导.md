@@ -37,3 +37,21 @@ $$
 ## 五、应用与意义
 
 N-S 方程在航空、海洋、气象与血流动力学中无处不在，其数学性质（光滑性与湍流唯一性）是千禧年问题之一。它是流体仿真与实验的理论基础，也是联系微观输运与宏观流动的桥梁。
+
+## 课堂问答
+
+**老师**：用一句话说，Navier-Stokes 方程是"什么守恒"在"什么假设"下的产物？
+
+**学生**：结论先行：它是质量守恒与动量守恒，在"不可压缩 + 牛顿流体本构 $\boldsymbol\sigma=-p\boldsymbol I+2\mu\boldsymbol D$"两条假设下的产物。积分守恒律经散度定理化为微分形式，本构代入动量方程即得
+$$
+\rho\left(\frac{\partial\boldsymbol u}{\partial t}+\boldsymbol u\cdot\nabla\boldsymbol u\right)=-\nabla p+\mu\nabla^2\boldsymbol u+\rho\boldsymbol f,\qquad \nabla\cdot\boldsymbol u=0 .
+$$
+常见误区是把 N-S 当成凭空规定的方程，它其实只是 $\dot{\boldsymbol p}=\text{合力}$ 的连续版本。
+
+**老师（追问）**：化简中 $\nabla\cdot(2\mu\boldsymbol D)=\mu\nabla^2\boldsymbol u$ 这一步，凭什么成立？
+
+**学生**：因为不可压缩 $\nabla\cdot\boldsymbol u=0$。展开 $\nabla\cdot(\nabla\boldsymbol u+(\nabla\boldsymbol u)^\top)=\nabla(\nabla\cdot\boldsymbol u)+\nabla^2\boldsymbol u=\nabla^2\boldsymbol u$，含 $\nabla(\nabla\cdot\boldsymbol u)$ 的项正是被不可压缩条件消掉的。若可压缩，就要保留 $\mu\nabla(\nabla\cdot\boldsymbol u)$ 一类项，粘性系数还可能依赖散度。
+
+**老师（拓展）**：那面力那一次变换里，散度定理做了什么？
+
+**学生**：它把面力 $\oint_{\partial V}\boldsymbol\sigma\cdot\boldsymbol n\,dS$ 化为 $\int_V\nabla\cdot\boldsymbol\sigma\,dV$，于是积分守恒律各项都写成同一区域上的体积分，才能被局域化成逐点方程。这也解释了 N-S 两层结构：上层守恒律普适，下层本构依材料而变；缺了后续的光滑性，弱解唯一性正是千禧年问题。

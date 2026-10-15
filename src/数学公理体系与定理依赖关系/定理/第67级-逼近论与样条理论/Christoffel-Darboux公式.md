@@ -112,6 +112,24 @@ $$
 - **正交多项式渐近**：合流形式把 $K_n(x,x)$ 化为相邻多项式的 Wronskian，是 Liouville–Green 渐近与缩放极限（sine 核）分析的起点。
 - **数值稳定性**：$K_n(x,x)>0$ 与 Christoffel 常数刻画了正交展开的 Lebesgue 常数与插值稳定性的定量上界。
 
+## 课堂问答
+
+**老师**：核函数 $K_n(x,y)=\sum_{k=0}^n \frac{p_k(x)p_k(y)}{h_k}$ 看起来无法求和，可有封闭形式？
+
+**学生**：有的，这就是 Christoffel-Darboux 公式：对 $x\ne y$，
+
+$$K_n(x,y)=\frac{k_n}{k_{n+1}h_n}\cdot\frac{p_{n+1}(x)p_n(y)-p_n(x)p_{n+1}(y)}{x-y}.$$
+
+它把"一大堆乘积之和"压成相邻两个多项式的反对称差商，常数因子由前导系数比 $k_n/k_{n+1}$ 与范数 $h_n$ 给出。
+
+**老师（追问）**：这个"望远镜"是怎么发生的？
+
+**学生**：关键是三项递推 $x\tilde p_k=a_k\tilde p_{k+1}+b_k\tilde p_k+a_{k-1}\tilde p_{k-1}$（正交归一下）。对 $x$ 与 $y$ 各用一次再相减，对角项 $b_k\tilde p_k(x)\tilde p_k(y)$ 相消，只剩 $(x-y)\tilde p_k(x)\tilde p_k(y)=a_kD_k-a_{k-1}D_{k-1}$，其中 $D_m=\tilde p_{m+1}(x)\tilde p_m(y)-\tilde p_m(x)\tilde p_{m+1}(y)$。对 $k$ 求和即望远镜相消，只剩 $a_nD_n$。
+
+**老师（拓展）**：令 $y\to x$ 得到什么？它对 Gauss 求积权重与零点交错有什么用？
+
+**学生**：合流形式为 $K_n(x,x)=\frac{k_n}{k_{n+1}h_n}(p_{n+1}'p_n-p_n'p_{n+1})$，即相邻多项式的 Wronskian。它给出 $K_{n-1}(x,x)>0$、Gauss 权重 $w_j=1/K_{n-1}(x_j,x_j)$，以及 $p_n$ 与 $p_{n+1}$ 零点严格交错。常见误区是把 $K_n$ 当成普通卷积核：它是 $L^2(w)$ 上投影到 $\mathcal P_n$ 的再生核，满足 $\int K_n(x,y)q(y)w(y)dy=q(x)$（$\deg q\le n$）。
+
 ## 相关条目
 
 - [正交多项式理论](./正交多项式理论.md)：本公式与三项递推、Christoffel 数的关系。

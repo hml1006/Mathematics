@@ -36,3 +36,17 @@ $$\operatorname{vol}(S)=\frac{1}{2^n}\operatorname{vol}(K)>\det(\Lambda).$$
 ## 五、应用与意义
 
 Minkowski 定理是几何数论的基石，能导出关键代数数论定理：Minkowski 界给出理想类群的有限性（类数有限）与判别式下界；线性型定理给出丢番图逼近存在性；配合对数嵌入给出 Dirichlet 单位定理。在扩展中它还联系 Siegel 均值、最密堆积、编码与格的几何，是研究格点分布与数论结构不可或缺的工具。
+
+## 课堂问答
+
+**老师**：Minkowski 凸体定理的结论与阈值是什么？
+
+**学生**：设 $\Lambda$ 为格、$K$ 为中心对称凸体，若 $\operatorname{vol}(K)>2^n\det\Lambda$，则 $K$ 含非零格点；当 $K$ 紧时 $\operatorname{vol}(K)\ge2^n\det\Lambda$ 也可（边界要小心）。
+
+**老师（追问）**：怎么从 Blichfeldt 定理推出来？
+
+**学生**：令 $S=\frac12K$，则 $\operatorname{vol}(S)=\operatorname{vol}(K)/2^n>\det\Lambda$，Blichfeldt 给出不同 $x',y'\in S$ 使 $x'-y'\in\Lambda$ 且非零。令 $x=2x',y=2y'\in K$，由 $K$ 对称得 $-y\in K$，由凸性得中点 $\frac{x+(-y)}2=x'-y'\in K$，即 $K$ 含非零格点。
+
+**老师（拓展）**：它是怎样支撑代数数论的？
+
+**学生**：用 Minkowski 界可得理想类群有限（类数有限）与判别式下界，配合对数嵌入给出 Dirichlet 单位定理，并直接推出线性型定理。误区是忽略"中心对称"这个前提——一般凸体的阈值并不是 $2^n\det\Lambda$。

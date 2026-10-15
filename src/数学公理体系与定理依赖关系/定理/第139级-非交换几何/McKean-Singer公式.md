@@ -72,3 +72,17 @@ $$\mathrm{tr}\big(e^{-tD^2}\big|_{\mathcal{H}_\pm}\big)=\int_M\mathrm{tr}\,k_t^\
 2. **非交换几何**：在谱三元组 $(\mathcal{A},\mathcal{H},D)$ 中，$\mathrm{Str}(e^{-tD^2})$ 给出与谱作用原理、Wodzicki 留数相容的"指标迹"；Connes 指标定理的局部指标公式正是由此推出。
 
 3. **推广**：对 $D$ 的连续族、Clifford 模与 twisted Dirac 算子，同样的配对论证给出 $\mathrm{Ind}(D\otimes E)=\int_M\mathrm{str}\,k_t^{D\otimes E}(x,x)\,dx$，这是族指标定理的出发点；公式也推广到 $D$ 为超对称生成元（Witten 指标、等变指标）的情形。
+
+## 课堂问答
+
+**老师**：McKean-Singer 公式说的"超迹与 $t$ 无关"为什么成立？
+
+**学生**：结论：对 $\mathbb Z_2$-分次 Hilbert 空间上的奇自伴算子 $D$，$\mathrm{Str}(e^{-tD^2})=\dim\ker D_+-\dim\ker D_-=\mathrm{Ind}(D_+)$，对一切 $t>0$ 成立。常见误区是以为这需要复杂分析——其实只用谱定理加一条配对观察。
+
+**老师（追问）**：配对观察具体是什么？
+
+**学生**：固定 $\lambda>0$，令 $E_\lambda=\ker(D^2-\lambda)$。因 $\|D\psi\|^2=\langle D^2\psi,\psi\rangle=\lambda\|\psi\|^2$，$D$ 给出线性同构 $E_\lambda^+\to E_\lambda^-$（逆为 $\lambda^{-1}D$），故 $\dim E_\lambda^+=\dim E_\lambda^-$，非零谱对超迹的贡献 $e^{-t\lambda}(\dim E_\lambda^+-\dim E_\lambda^-)=0$ 相消；只有 $\ker D^2=\ker D$ 幸存，留下 $\dim\ker D_+-\dim\ker D_-$。
+
+**老师（拓展）**：这条恒等式在指标定理里怎么用？分别令 $t\to0^+$ 与 $t\to\infty$ 会看到什么？
+
+**学生**：把超迹写成积分核 $\mathrm{Str}(e^{-tD^2})=\int_M\mathrm{str}\,k_t(x,x)dx$。因与 $t$ 无关，令 $t\to0^+$ 用 Seeley-deWitt 渐近展开即得局部曲率多项式（Atiyah-Singer 的热核证明）；令 $t\to\infty$ 则只保留零模，超迹自动等于 $\dim\ker D_+-\dim\ker D_-$，从另一侧印证公式。两端分别给出局部几何与零模计数，正是谱三元组中导出 Connes 局部指标公式的技术基石。

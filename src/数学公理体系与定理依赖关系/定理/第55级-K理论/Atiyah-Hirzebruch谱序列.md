@@ -221,3 +221,17 @@ $$E_2^{p,q} = H^{p-q}_{\text{mot}}(X; \mathbb{Z}(-q)) \Rightarrow K_{-p-q}(X)$$
 ### 9. 物理学应用
 
 在弦理论中，谱序列用于计算 D-膜电荷的 K 理论群，特别是在有挠上同调的情况下。
+
+## 课堂问答
+
+**老师**：Atiyah-Hirzebruch 谱序列的 $E_2$ 页长什么样，收敛到什么？
+
+**学生**：结论：$E_2^{p,q}=H^p(X;K^q(pt))$ 强收敛到 $K^{p+q}(X)$；因 $K^q(pt)$ 在 $q$ 偶时是 $\mathbb Z$、$q$ 奇时为 $0$，故 $E_2$ 只在 $q$ 偶时非零。
+
+**老师（追问）**：微分怎样抓出 K 理论与普通上同调的差异？
+
+**学生**：用骨架过滤 $F^pK^n(X)=\ker(K^n(X)\to K^n(X^{p-1}))$ 与相对群 $K^n(X^p,X^{p-1})\cong C^p(X;K^*(pt))$ 构造精确偶，得 $d_r:E_r^{p,q}\to E_r^{p+r,q-r+1}$。例如 $\tilde K(S^3)=0$ 但 $H^3(S^3;\mathbb Z)=\mathbb Z$，靠非平凡 $d_3$ 消灭。常见误区：以为 $d_2$ 一般非零，其实 $q$ 偶时目标为零故 $d_2=0$。
+
+**老师（拓展）**：有代表性的计算吗？
+
+**学生**：结论：$K^*(\mathbb{CP}^n)=\mathbb Z^{n+1}$（此时 $E_2=E_\infty$），而 $K^0(\mathbb{RP}^n)=\mathbb Z\oplus\mathbb Z_{2^{\lfloor n/2\rfloor}}$（靠 $d_3$ 消灭部分 2-挠）。它可推广到任意广义上同调：$E_2^{p,q}=H^p(X;E^q(pt))\Rightarrow E^{p+q}(X)$。

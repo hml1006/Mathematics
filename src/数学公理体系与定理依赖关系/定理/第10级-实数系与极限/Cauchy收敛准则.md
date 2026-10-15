@@ -32,3 +32,17 @@ Cauchy 准则的成立本质上等价于实数系的完备性——在有理数�
 必要性：若 $a_n \to L$，则对 $\varepsilon > 0$，$\exists N$，$n > N$ 时 $|a_n - L| < \varepsilon/2$。故 $m, n > N$ 时 $|a_m - a_n| \leq |a_m - L| + |L - a_n| < \varepsilon$。
 
 充分性：设 $\{a_n\}$ 是 Cauchy 列，则 $\{a_n\}$ 有界。由 Bolzano-Weierstrass 定理，存在收敛子列 $a_{n_k} \to L$。由 Cauchy 条件，对 $\varepsilon > 0$，$\exists N$，$m, n > N$ 时 $|a_m - a_n| < \varepsilon/2$。取 $k$ 充分大使 $n_k > N$ 且 $|a_{n_k} - L| < \varepsilon/2$，则 $n > N$ 时 $|a_n - L| \leq |a_n - a_{n_k}| + |a_{n_k} - L| < \varepsilon$。$\square$
+
+## 课堂问答
+
+**老师**：不知道极限值，怎么还能判断收敛？Cauchy 准则到底抓住了什么？
+
+**学生**：结论：$\{a_n\}$ 收敛 $\iff$ 它是 Cauchy 列，即 $\forall \varepsilon > 0, \exists N$，当 $m, n > N$ 时 $|a_m - a_n| < \varepsilon$。它的最大优势是只用到数列自身取值，不需要预知极限 $L$。
+
+**老师（追问）**：为什么"相邻两项趋近"不够，非要用"任意两项"？
+
+**学生**：因为相邻趋 $0$ 太弱。$a_n = \sqrt{n}$ 有 $a_{n+1} - a_n \to 0$，但取 $m = 4n$ 时 $|\sqrt{4n} - \sqrt{n}| = \sqrt{n}$ 并不趋 $0$，它不是 Cauchy 列，也不收敛。要防的误区是以为"任何度量空间里 Cauchy 列都收敛"——完备性正是保证这一点的额外条件。
+
+**老师（拓展）**：充分性怎么证？它的成立和什么深层性质绑定？
+
+**学生**：Cauchy 列必有界，由 Bolzano-Weierstrass 定理取收敛子列 $a_{n_k} \to L$，再用 Cauchy 条件把整个数列"拉向" $L$：$|a_n - L| \le |a_n - a_{n_k}| + |a_{n_k} - L| < \varepsilon$。它的成立本质上等价于 $\mathbb{R}$ 的完备性——在 $\mathbb{Q}$ 中，逼近 $\sqrt{2}$ 的有理 Cauchy 列并不收敛。

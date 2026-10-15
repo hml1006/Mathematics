@@ -95,3 +95,17 @@ $$ \det\big(h_{\mu_j-i+j}\big)=\frac{\det\big(x_i^{\mu_j}\big)_{i,j=1}^{n}}{\pro
 Jacobi–Trudi 恒等式是 Schur 函数理论的枢纽：它把 Schur 函数的组合定义（半标准表）与分析定义（行列式比 / bialternant）以及代数定义（$GL(n)$ 不可约特征标）三者连成一体，并使"对称性"（推论 2）与"正交性"（Hall 内积下 $\langle s_\lambda,s_\mu\rangle=\delta_{\lambda\mu}$）的证明只需一次符号计算。Vandermonde 行列式则是对称多项式、判别式 $\Delta=\prod_{i<j}(x_i-x_j)^2$、Weyl 分母公式、Gelfand–Tsetlin 模式与随机矩阵（$\beta$-系综的联合密度含 Vandermonde 因子）中的基本构件。
 
 具体用途包括：由 $s_{(k)}=h_k$、$s_{(1^k)}=e_k$ 得到 $h,e$ 的 Schur 展开；导出 Giambelli 公式与 Pieri 公式；在表示论中给出 Weyl 特征标公式的组合证明；在可积系统与 Schubert 演算中提供行列式（旗 Schur、双 Schur 函数）的统一表达；在代数组合中与钩长公式、RSK 对应共同完成 $n!=\sum_{\lambda\vdash n}(f^\lambda)^2$ 的两侧计算。
+
+## 课堂问答
+
+**老师**：Schur 函数的组合定义是半标准表的权重和，它能整个写成行列式吗？
+
+**学生**：能。$s_\lambda=\det\big(h_{\lambda_i-i+j}\big)_{1\le i,j\le r}=\det\big(e_{\lambda_i'-i+j}\big)_{1\le i,j\le r}$，其中 $h_k$ 是完全齐次对称函数、$e_k$ 是初等对称函数，约定 $h_0=e_0=1$、负下标为 $0$。证明是对 Leibniz 展开做符号消去：把行列式读成"行弱增的填充"，用一个交换相等相邻行条目的对合抵消反号项，幸存者恰是行弱增、列严格增的 SSYT，于是行列式等于 $\sum_T x^T=s_\lambda$。第二式把 $h$ 换成 $e$、$\lambda$ 换成共轭 $\lambda'$ 重复同一论证。
+
+**老师（追问）**：分母上那个 Vandermonde 行列式为什么恰等于 $\prod_{i<j}(x_i-x_j)$？
+
+**学生**：因为 $V(x)=\det(x_i^{\,n-j})$ 是交错多项式：交换两个变量等于交换两行，故变号；令 $x_i=x_j$ 则两行相同、$V=0$，由因子定理每个 $x_j-x_i$ 整除 $V$，诸因子互素故乘积整除 $V$，两者同为 $\binom{n}{2}$ 次齐次且主对角项系数都为 $1$，故相等。于是 $s_\lambda=\det(x_i^{\lambda_j+n-j})/\det(x_i^{\,n-j})$，即 Weyl 分母公式。
+
+**老师（拓展）**：由这个"行列式比"能一眼看出什么性质？
+
+**学生**：对称性。交换 $x_i,x_j$ 时分母 $V$ 与分子同为交错多项式、同时变号，比值不变，故 $s_\lambda$ 是对称函数——这正是 Schur 函数对称性的最短证明。常见误区是忘了约定负下标时 $h_k=e_k=0$、$h_0=e_0=1$，否则对非严格划分行列式会算错。

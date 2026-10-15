@@ -83,3 +83,17 @@ $$
 **推论**：对任意 $\sigma$-有限测度 $\mu$ 和 $\nu$，存在 $\mu$-零测集 $N$ 使得 $\nu|_N \perp \mu$ 且 $\nu|_{X \setminus N} \ll \mu$。这是 Lebesgue 分解定理的最常用形式。
 
 **应用**：在概率论中，Lebesgue 分解定理用于将概率分布分解为连续部分（有密度函数）和奇异部分（如 Cantor 分布）。在统计中，它用于区分不同的概率测度类型。
+
+## 课堂问答
+
+**老师**：固定 $\sigma$-有限测度 $\mu$，另一个 $\sigma$-有限测度 $\nu$ 能被怎么"切开"？
+
+**学生**：结论：唯一地写成绝对连续部分加奇异部分 $\nu=\nu_a+\nu_s$，其中 $\nu_a\ll\mu$、$\nu_s\perp\mu$。等价地存在 $f\ge0$ 与 $\mu$-零测集 $N$ 使 $\nu(A)=\int_A f\,d\mu+\nu(A\cap N)$。
+
+**老师（追问）**：这个分解是怎么从 Radon-Nikodym 定理造出来的？
+
+**学生**：取参考测度 $\lambda=\mu+\nu$，则 $\mu\ll\lambda$、$\nu\ll\lambda$。由 R-N 得 $\mu(A)=\int_A f\,d\lambda$、$\nu(A)=\int_A g\,d\lambda$。令 $N=\{f=0\}$，则 $\mu(N)=0$；取 $\nu_a(A)=\nu(A\setminus N)$、$\nu_s(A)=\nu(A\cap N)$ 即为所求。
+
+**老师（拓展）**：唯一性怎么保证？有没有奇异的实际例子？
+
+**学生**：唯一性：若 $\nu_a+\nu_s=\nu_a'+\nu_s'$，则 $\nu_a-\nu_a'=\nu_s'-\nu_s$ 既绝对连续又与 $\mu$ 奇异，只能恒为零。例子：Cantor 分布关于 Lebesgue 测度是奇异的（支撑在零测的 Cantor 集上），它没有密度函数。

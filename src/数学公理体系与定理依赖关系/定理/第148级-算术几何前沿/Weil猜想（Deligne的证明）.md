@@ -37,3 +37,17 @@ Grothendieck–M.Artin 用定义好的 ℓ-adic cohomology 证明有理/函数�
 ## 五、应用与意义
 
 Weil 猜想是二十世纪代几何/数论里程碑：确立 Zeta 函数与上同调的联系、推动 étale 拓扑与 ℓ-adic 方法，其技术（混合权、Weil II）渗透模形式、p-adic 理论并催生 Langlands 与算术几何现代全貌。
+
+## 课堂问答
+
+**老师**：Weil 猜想包含哪几部分？分别由谁证明？
+
+**学生**：结论：共四项——有理性、函数方程、Riemann 假设、Betti 数。前三项由 Grothendieck（与 Artin）用 $\ell$-adic étale 上同调证明；Riemann 假设部分由 Deligne（1973–74，Weil I / Weil II）证明，并推广到非固有情形。
+
+**老师（追问）**：Riemann 假设的等价位怎么写出？
+
+**学生**：Frobenius $F$ 在 $H^i(X_{\bar{\mathbb F}_q},\mathbb{Q}_\ell)$ 上的特征值 $\alpha$ 满足 $|\iota(\alpha)|=q^{i/2}$（对每个嵌入 $\iota$），等价位 Zeta 函数的零点/极点在 $|t|=q^{-(2i+1)/2}$。桥梁是迹公式 $|X(\mathbb{F}_{q^n})|=\sum_i(-1)^i\mathrm{Tr}(F^n\mid H^i)$ 与 $Z(t)=\prod_i\det(1-Ft\mid H^i)^{(-1)^{i+1}}$。
+
+**老师（拓展）**：Deligne 的关键招数是什么？
+
+**学生**：**混合权论**（Weil II）：追踪 Frobenius 作用的"权"滤波，用 Lefschetz 铅笔把一般簇归约到曲线/曲面，再结合 Hodge 指数定理与良约化证明特征值纯度；由此推出 $\ell$-无关性与 Betti 数比较，从而完整证得 Riemann 假设。 一句话：迹公式给有理性，Poincaré 对偶给函数方程，Deligne 的权论给 Riemann 假设。

@@ -37,3 +37,21 @@ Matsumoto 定理将 $K_2(F)$（Steinberg 群 $St(F)\to E(F)$ 的核）完全显�
 ## 五、应用与意义
 
 Matsumoto 定理是 $K_2$ 研究的枢纽。它使计算 $K_2(F)$ 如同处理"符号代数"，并导向 Milnor K 理论（$K_n^M(F)$）与 Bloch-Lichtenbaum 的模猜想。由它可算出 $K_2(\mathbb{F}_q)=1$、$K_2(\mathbb{Q})$ 的结构，且 $K_2$ 与二次互反律、Hilbert 符号、Norm 剩余符号及 Galois 上同调（Hilbert 定理 90 的推广）紧密相连，是类域论、代数几何与 K 理论在数论问题中交汇的工具。
+
+## 课堂问答
+
+**老师**：$K_2(F)$ 结构相当抽象，Matsumoto 定理怎样把它变成"可算"的对象？
+
+**学生**：结论是 $K_2(F)$ 由符号 $\{a,b\}$（$a,b\in F^\times$）生成，只有两类关系：双线性 $\{a_1a_2,b\}=\{a_1,b\}\{a_2,b\}$，以及 Steinberg 关系 $\{a,1-a\}=1$。它还带泛性质：任何满足这两条的双线性 $\psi:F^\times\times F^\times\to A$ 唯一地经过 $K_2(F)$ 分解。
+
+**老师（追问）**：符号 $\{a,b\}$ 凭什么落在 $K_2(F)=\ker(St(F)\to E(F))$ 里？
+
+**学生**：用 Weyl 元素 $w_{ij}(a)=x_{ij}(a)x_{ji}(-a^{-1})x_{ij}(a)$、$h_{ij}(a)=w_{ij}(a)w_{ij}(-1)$，可算出 $\varphi(h_{ij}(a))=\operatorname{diag}(a,a^{-1},1,\dots,1)$。再令
+$$
+\{a,b\}=[h_{ij}(a),h_{ik}(b)],
+$$
+对角矩阵相互交换，故它的像为 $1$，即属于核 $K_2(F)$。
+
+**老师（拓展）**：拿它算几个具体的 $K_2$，顺带说说常见误区。
+
+**学生**：有限域 $\mathbb{F}_q$ 的乘法群循环，由双线性可推所有符号 $\{a,b\}=1$，故 $K_2(\mathbb{F}_q)=1$；对 $\mathbb{Q}$ 则有 $K_2(\mathbb{Q})\cong\{\pm1\}\oplus\bigoplus_p(\mathbb{Z}/2\mathbb{Z})_p$。误区是以为 Steinberg 关系只是"额外技术条件"，其实它正是把 $K_2$ 与 Hilbert 符号、二次互反律连起来的核心。

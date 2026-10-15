@@ -105,3 +105,17 @@ $$
 令 $\varepsilon \to 0$ 即得 Schrödinger 方程 $i\hbar \partial_t \psi = \hat{H} \psi$。$\square$
 
 **推论**：路径积分表述与算符表述等价。传播子满足 $K(x_b, t_b; x_a, t_a) = \langle x_b | e^{-i\hat{H}(t_b - t_a)/\hbar} | x_a \rangle$。
+
+## 课堂问答
+
+**老师**：$\int\mathcal D[x]\,e^{iS/\hbar}$ 在数学上并不收敛，为什么还能用？
+
+**学生**：结论：它作为"时间分割后 $\mathbb R^{N}$ 上高斯积分的极限"是严格可行的，虚时间 $t\to-i\tau$ 下更是变成 Wiener 积分。理由：无穷小传播子 $K\sim\sqrt{m/(2\pi i\hbar\varepsilon)}\,e^{iS/\varepsilon}$ 把路径积分化为一串普通积分。常见误区：直接把它当 Lebesgue 积分。
+
+**老师（追问）**：从哪里能看出它满足 Schrödinger 方程？
+
+**学生**：做移位 $y=x+\eta$，把 $\psi(x+\eta)$ 展开到 $\eta^2$ 并用 $\int\eta^2 e^{ia\eta^2}\,d\eta=\frac{1}{2ia}\sqrt{i\pi/a}$，得 $\psi(x,t+\varepsilon)=\psi-\frac{i\varepsilon}{\hbar}\hat H\psi+O(\varepsilon^2)$，取极限即 $i\hbar\partial_t\psi=\hat H\psi$。
+
+**老师（拓展）**：经典路径在其中扮演什么角色？
+
+**学生**：是相位驻点：$\delta S=0$ 给出 Hamilton 原理；偏离经典路径时 $e^{iS/\hbar}$ 快速振荡相消，只剩经典路径邻域的贡献最大，故 $\hbar\to0$ 时恢复经典力学。

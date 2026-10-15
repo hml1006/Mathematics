@@ -78,3 +78,17 @@ $$L(f)=\sum_{F\subseteq X^f}\int_F\frac{\mathrm{ch}_f(\nu_F)}{\mathrm{euler}(\nu
 3. **模形式中的应用（Eichler-Selberg）**：对模曲线 $X_0(N)$ 上的 Hecke 对应 $T_m$ 应用迹公式，$H^1$ 部分的迹即 $\mathrm{tr}(T_m\mid S_k(\Gamma_0(N)))$，而不动点（椭圆点、CM 点、尖点）与 Eisenstein 部分给出显式的数论修正项。这使 Hecke 算子的迹可用 Hurwitz 类数、除子和等纯粹数论数据计算，是模形式理论的基本工具，也是本层级（椭圆曲线与模形式）中该定理的核心用途。
 
 4. **算术推广**：把同调换成 étale 上同调、把 $f$ 换成 Frobenius 对应，即得 Grothendieck-Lefschetz 迹公式 $\#X(\mathbb{F}_q)=\sum(-1)^i\mathrm{tr}(\mathrm{Frob}\mid H^i_c)$，是 Weil 猜想的证明框架（见 Lefschetz-Grothendieck 迹公式）。
+
+## 课堂问答
+
+**老师**：请写出 Lefschetz 数 $L(f)$ 的定义，并说明为什么它能数不动点。
+
+**学生**：先给结论：$L(f)=\sum_{i\ge0}(-1)^i\,\mathrm{tr}\big(f_*:H_i(X;\mathbb{Q})\to H_i(X;\mathbb{Q})\big)$，当不动点有限且非退化时 $L(f)=\sum_{p\in\mathrm{Fix}(f)}\mathrm{ind}_p(f)$，其中 $\mathrm{ind}_p(f)=\deg\big((1-f)|_{\partial U_p}\big)$ 是局部指标（在局部同胚处为 $\pm1$）。它能数不动点，是因为 Hopf 迹公式把同调上的交错迹换成链群上的交错迹，而单纯映射在链群上的对角元非零当且仅当该单纯形被映到自身——即贡献一个不动点。
+
+**老师（追问）**：证明里"无不动点则 $L(f)=0$"是怎么做到的？非退化假设又用在哪？
+
+**学生**：若无不动点，由单纯逼近（必要时细分）可让每个单纯形与自身像不相交，于是所有链层对角元为 $0$，$L(f)=0$；反过来 $L(f)\ne0$ 就保证存在不动点（Lefschetz 不动点定理）。非退化假设用在隔离不动点那步：把每个不动点用互不相交的小球邻域 $U_p$ 包住，$A=X\setminus U^\circ$ 上 $f$ 无不动点使 $L(f|_A)=0$，再用相对同调的长正合序列分解得 $L(f)=\sum_p L(f|_{U_p}\ \mathrm{rel}\ \partial U_p)$，而单个贡献等于 $\deg((1-f)|_{\partial U_p})$。常见误区：以为公式只在有限复形上成立——其实 CW 复形、紧可三角化空间均可。
+
+**老师（拓展）**：它在模形式与算术几何里有什么推广？
+
+**学生**：把公式用于模曲线 $X_0(N)$ 上的 Hecke 对应 $T_m$，$H^1$ 部分的迹即为 $\mathrm{tr}(T_m\mid S_k(\Gamma_0(N)))$，不动点（椭圆点、CM 点、尖点）与 Eisenstein 部分给出显式修正项，这就是 Eichler–Selberg 迹公式；再把它换成 étale 上同调、$f$ 换成 Frobenius，即得 Grothendieck–Lefschetz 迹公式 $\#X(\mathbb{F}_q)=\sum_i(-1)^i\mathrm{tr}(\mathrm{Frob}\mid H^i_c)$，是 Weil 猜想的证明框架。

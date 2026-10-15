@@ -66,6 +66,20 @@ $$\|x-y\|\ge\frac{d}{\|x_0-y_0\|}>\frac{d}{d/(1-\varepsilon)}=1-\varepsilon.$$
 
 **推论（无穷维闭单位球不紧）**：设 $X$ 无穷维。取 $x_1$ 为单位向量，令 $Y_1=\operatorname{span}\{x_1\}$（有限维故闭）。由 Riesz 引理取单位向量 $x_2$ 使 $\operatorname{dist}(x_2,Y_1)\ge1/2$，特别地 $\|x_2-x_1\|\ge1/2$。归纳地，令 $Y_k=\operatorname{span}\{x_1,\dots,x_k\}$（闭），取单位向量 $x_{k+1}$ 使 $\operatorname{dist}(x_{k+1},Y_k)\ge1/2$。则 $\{x_k\}$ 中任意两点距离 $\ge1/2$，没有收敛子列，故闭单位球不紧。这说明"有界闭集紧"是有限维空间的特征性质。
 
+## 课堂问答
+
+**老师**：Riesz 引理说了什么？
+
+**学生**：若 $Y\subsetneq X$ 是真闭子空间，则对任意 $\varepsilon\in(0,1)$ 存在单位向量 $x$ 使 $\operatorname{dist}(x,Y)\ge1-\varepsilon$。一般取不到 $1$，但"近似正交方向"永远存在。
+
+**老师（追问）**：证明的关键一步是什么？
+
+**学生**：取 $x_0\notin Y$，$d=\operatorname{dist}(x_0,Y)>0$，选 $y_0\in Y$ 使 $\|x_0-y_0\|<d/(1-\varepsilon)$，令 $x=(x_0-y_0)/\|x_0-y_0\|$。对任意 $y\in Y$，因 $y_0+\|x_0-y_0\|y\in Y$，得 $\|x-y\|\ge d/\|x_0-y_0\|>1-\varepsilon$。
+
+**老师（拓展）**：最重要的推论是什么？
+
+**学生**：无穷维赋范空间的闭单位球不紧。归纳地取单位向量 $x_{k+1}$ 使 $\operatorname{dist}(x_{k+1},\operatorname{span}\{x_1,\dots,x_k\})\ge1/2$，则任意两点距离 $\ge1/2$，无收敛子列。这正是"有界闭集紧"是有限维特征的体现。注意 $Y$ 必须闭，否则 $d$ 可能为 $0$。
+
 ## 相关条目
 
 - [Fredholm二择一定理](./Fredholm二择一定理.md)：$T$ 为紧算子时，$\lambda I-T$ 的核为有限维、值域闭等结论依赖本引理。

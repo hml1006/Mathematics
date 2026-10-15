@@ -74,3 +74,17 @@ $$
 **步骤 6**：严格化。由于 $A$ 是开集，对任意 $a \in A$，存在邻域 $U_a \subset A$，由此可证 $F(a) < \alpha$。若存在 $a \in A$ 使得 $F(a) = \alpha$，则 $a$ 是 $A$ 的内点，存在邻域 $U$ 使得 $a \in U \subset A$，但 $F$ 在 $U$ 上取值可以大于 $\alpha$（因为 $F$ 非零），与 $F(A) \le \alpha$ 矛盾。故 $F(a) < \alpha$ 对所有 $a \in A$ 成立。$\square$
 
 **推论（支撑超平面定理）**：设 $C$ 是闭凸集，$x_0 \notin C$，则存在 $f \in X^*$ 和 $\alpha \in \mathbb{R}$ 使得 $f(x_0) > \alpha$ 且 $f(x) \le \alpha$ 对所有 $x \in C$ 成立。
+
+## 课堂问答
+
+**老师**：凸集分离定理与 Hahn-Banach 延拓定理是什么关系？
+
+**学生**：几何形式说：若 $A,B$ 非空凸、$A\cap B=\varnothing$ 且 $A$ 开，则存在非零 $f\in X^*$ 与 $\alpha$ 使 $f(a)<\alpha\le f(b)$ 对所有 $a\in A,b\in B$。它本质是延拓定理的几何化，证明经由开凸集 $A$ 诱导的 Minkowski 泛函 $\mu(x)=\inf\{t>0:x\in tA\}$。
+
+**老师（追问）**：严格分离 $f(a)<\alpha$ 靠的是什么？
+
+**学生**：靠 $A$ 是开集。若两凸集都闭且其一紧，则可得到双向严格分离 $f(a)\le\alpha<\beta\le f(b)$。常见误区：仅假设两个不相交凸集，在无限维未必能严格分离。
+
+**老师（拓展）**：支撑超平面推论呢？
+
+**学生**：若 $C$ 闭凸、$x_0\notin C$，则存在 $f$ 使 $f(x_0)>\alpha$ 且 $f(x)\le\alpha$（$x\in C$），即把点与闭凸集分开。这正是凸分析与优化里分离原理的来源。

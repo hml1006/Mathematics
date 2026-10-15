@@ -77,3 +77,17 @@ $$\chi(C, \mathcal{O}_C(D)) = (1 - g) + \deg D = \deg D + 1 - g$$
 **推论**：若 $\deg D > 2g - 2$，则 $\ell(D) = \deg D + 1 - g$。
 
 **证明**：当 $\deg D > 2g - 2$ 时，$\deg(K_C - D) = 2g - 2 - \deg D < 0$，故 $H^0(C, \mathcal{O}_C(K_C - D)) = 0$，即 $\ell(K_C - D) = 0$。$\square$
+
+## 课堂问答
+
+**老师**：写出光滑射影曲线上的 Riemann-Roch 公式，并逐项说明含义。
+
+**学生**：$\ell(D)-\ell(K_C-D)=\deg D+1-g$。其中 $\ell(D)=\dim_k H^0(C,\mathcal{O}_C(D))$ 是线性系维数，$\ell(K_C-D)=\dim_k H^1(C,\mathcal{O}_C(D))$ 是对偶修正项，$g$ 是亏格。证明的枢纽是把两边都归到 Euler 示性数 $\chi(\mathcal{O}_C(D))=\deg D+1-g$，并用 Serre 对偶 $H^1(C,\mathcal{O}_C(D))\cong H^0(C,\mathcal{O}_C(K_C-D))^\vee$。
+
+**老师（追问）**：什么时候修正项 $\ell(K_C-D)$ 会消失？这对分类有什么用？
+
+**学生**：当 $\deg D>2g-2$ 时 $\deg(K_C-D)=2g-2-\deg D<0$，故其 $H^0=0$，于是 $\ell(D)=\deg D+1-g$。这给出"大次数除子的维数完全由次数和亏格决定"，是嵌入射影空间与曲线分类的基础。
+
+**老师（拓展）**：这个定理在高维有什么推广？
+
+**学生**：Hirzebruch-Riemann-Roch：$\chi(X,\mathcal{F})=\int_X\operatorname{ch}(\mathcal{F})\operatorname{td}(X)$；相对版本是 Grothendieck-Riemann-Roch。它们把曲线上的"次数—维数"关系升级为特征类与拓扑不变量的配对。

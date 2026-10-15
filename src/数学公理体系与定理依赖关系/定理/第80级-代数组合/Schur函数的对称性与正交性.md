@@ -39,3 +39,17 @@ $$\sum_\lambda s_\lambda(x)s_\lambda(y)=\sum_\lambda\frac1{z_\lambda}p_\lambda(x
 ## 五、应用与意义
 
 Schur 函数的对称性与正交性使其成为对称函数理论与表示的基岩：正交基保证 $s_\lambda$ 的唯一展开，使 Littlewood-Richardson 系数、Kostka 数良定义。它同时作为 $GL(n)$ 与 $S_n$ 的不可约特征标，连接组合（Young 表）、表示论、代数几何（Schubert 计算）与概率（Plancherel 测度）。Jacobi-Trudi 与 Cauchy 恒等式更深入矩形与超越恒等式的结构。
+
+## 课堂问答
+
+**老师**：为什么说 Schur 函数是"最对称"的对称函数？
+
+**学生**：两点：一是 $s_\lambda$ 对变量置换不变（对称性），二是在 Hall 内积下 $\{s_\lambda\}$ 正交归一，$\langle s_\lambda,s_\mu\rangle=\delta_{\lambda\mu}$。对称性由行列式比 $s_\lambda=\det(x_i^{\lambda_j+n-j})/\det(x_i^{\,n-j})$ 看出：分子分母同为交错多项式，置换变量时同乘 $\mathrm{sgn}(\sigma)$，比值不变。
+
+**老师（追问）**：正交性靠什么工具证明？
+
+**学生**：靠 Cauchy 恒等式 $\prod_{i,j}(1-x_iy_j)^{-1}=\sum_\lambda s_\lambda(x)s_\lambda(y)$，它又可写成 $\exp\big(\sum_k p_k(x)p_k(y)/k\big)=\sum_\lambda p_\lambda(x)p_\lambda(y)/z_\lambda$。把两种展开逐项比较系数，结合幂和基的正交性 $\langle p_\lambda,p_\mu\rangle=\delta_{\lambda\mu}z_\lambda$（$z_\lambda=\prod_i i^{m_i}m_i!$），即得 $\langle s_\lambda,s_\mu\rangle=\delta_{\lambda\mu}$。
+
+**老师（拓展）**：这个正交基有什么用处？
+
+**学生**：正交归一保证 $s_\lambda$ 的展开唯一，使 Kostka 数与 Littlewood–Richardson 系数良定义；并且 $s_\lambda$ 同时是 $GL(n)$ 与 $S_n$ 的不可约特征标，把组合（杨表）、表示论与 Schubert 计算串在一起。

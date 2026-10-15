@@ -185,3 +185,17 @@ Calabi-Yau 定理保证典则丛平凡流形上的 Ricci 平坦度量，使 Hodg
 ### 8. 与 Yau 的 Miyaoka-Yau 不等式
 
 通过 Ricci 平坦度量上的 Gauss-Bonnet-Chern 公式，可得到 $c_2 \geq 0$ 与高阶 Chern 类的精密不等式，是高维代数几何与微分几何交汇的核心结果。
+
+## 课堂问答
+
+**老师**：Calabi-Yau 定理说给定 $[\alpha]=2\pi c_1(X)$，存在唯一与 $\omega$ 同调、Ricci 形式为 $\alpha$ 的 Kähler 度量。它等价于解哪个方程？
+
+**学生**：等价于复 Monge-Ampère 方程。设 $\tilde\omega=\omega+\sqrt{-1}\partial\bar\partial\varphi$，由 $\mathrm{Ric}(\omega)=-\sqrt{-1}\partial\bar\partial\log\det(g_{i\bar j})$ 得 $\mathrm{Ric}(\tilde\omega)-\mathrm{Ric}(\omega)=-\sqrt{-1}\partial\bar\partial\log\frac{\det(\tilde g)}{\det(g)}$；要求 $\mathrm{Ric}(\tilde\omega)=\alpha$ 并把 $\mathrm{Ric}(\omega)-\alpha$ 写成 $\sqrt{-1}\partial\bar\partial F$，即得 $(\omega+\sqrt{-1}\partial\bar\partial\varphi)^n=e^{F-\varphi}\omega^n$（附 Kähler 性 $\tilde\omega>0$ 与 $\sup_X\varphi=0$）。
+
+**老师（追问）**：$c_1(X)=0$ 时方程变成什么？为什么这给出 Ricci 平坦度量？
+
+**学生**：此时取 $\alpha=0$、$F$ 为常数，方程化为 $(\omega+\sqrt{-1}\partial\bar\partial\varphi)^n=C\omega^n$（$C$ 由体积归一），等价于 $\log\det(g_{i\bar j}+\varphi_{i\bar j})$ 为常数，故 $\mathrm{Ric}(\tilde\omega)=0$。几何上这就是 K3 曲面与复环面的 Ricci 平坦 Kähler 结构；$h^{n,0}=1$ 与全纯 $n$-形式无零点是其代数特征，也是弦论紧化内空间的基石。
+
+**老师（拓展）**：Yau 证明的两个支柱是什么？它对后来的 Kähler-Einstein 问题意味着什么？
+
+**学生**：支柱是先验估计与连续性方法：把方程嵌入单参数族 $(\omega+\sqrt{-1}\partial\bar\partial\varphi_t)^n=(1-t+te^F)\omega^n$，解集开（隐函数定理与 $\Delta_{\tilde\omega}$ 椭圆）且闭（$C^0$、$C^2$ 一致先验界），其中 $C^2$ 估计靠 $\Delta_{\tilde\omega}\log\mathrm{tr}_\omega\tilde\omega$ 的 Chern-Lu 型不等式与 $\log(\mathrm{tr}_\omega\tilde\omega)-\lambda\varphi$ 的最大值原理。这套"估计加连续"的范式后来直接催生了 Kähler-Einstein 度量存在性的 Yau-Tian-Donaldson 纲领（$K$-稳定性）与 Ricci 流方法。

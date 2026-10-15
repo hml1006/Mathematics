@@ -36,3 +36,17 @@ $$\sum_\lambda\operatorname{vol}(S_\lambda)=\operatorname{vol}\Big(\bigcup_\lamb
 ## 五、应用与意义
 
 Blichfeldt 定理是几何数论的"体积-格点"基本桥梁，直接导出 Minkowski 凸体定理与线性型定理。在数论中它用于证明丢番图逼近、代数数论中理想格点的存在（从而推证类数有限、Dirichlet 单位定理等）。在几何与编码（格码）、数值分析苑地也有应用，是把连续体积信息转化为分立格点信息的典型工具。
+
+## 课堂问答
+
+**老师**：Blichfeldt 定理的结论与直觉是什么？
+
+**学生**：设 $\Lambda$ 是格、$S$ 可测且 $\operatorname{vol}(S)>\det\Lambda$，则存在不同点 $x,y\in S$ 使 $x-y\in\Lambda$。直觉是：体积超过一个基本区域的集合，塞回基本区域里必定重叠。
+
+**老师（追问）**：证明是怎样用基本区域的？
+
+**学生**：把 $\mathbb{R}^n=\bigsqcup_{\lambda\in\Lambda}(\mathcal{F}+\lambda)$ 铺开，令 $S_\lambda=S\cap(\mathcal{F}+\lambda)$ 再平移回 $\mathcal{F}$ 得 $S_\lambda'=S_\lambda-\lambda\subseteq\mathcal{F}$。各块体积和 $\operatorname{vol}(S)>\operatorname{vol}(\mathcal{F})=\det\Lambda$，若它们互不相交则并集体积 $\le\det\Lambda$，矛盾；于是某两块重叠，重叠点给出 $x-y=\lambda_1-\lambda_2\in\Lambda$。
+
+**老师（拓展）**：它与 Minkowski 凸体定理是什么关系？
+
+**学生**：它是 Minkowski 凸体定理的核心构件——只要取 $S=\frac12K$，就立刻导出凸体定理。误区是忽略严格不等号：只有 $\operatorname{vol}(S)>\det\Lambda$ 才保证结论，等号情形不成立。

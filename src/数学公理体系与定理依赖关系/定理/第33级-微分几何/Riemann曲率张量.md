@@ -111,3 +111,17 @@ $$
 **标量曲率**：$R = g^{ij} R_{ij} = \operatorname{tr}_g(\operatorname{Ric})$。
 
 **应用**：在广义相对论中，Einstein 场方程为 $\operatorname{Ric} - \frac{1}{2} R g = 8\pi T$，其中 $T$ 是能量-动量张量，将时空曲率与物质分布联系起来。
+
+## 课堂问答
+
+**老师**：曲率张量在度量什么？为什么写成两个协变导数的交换子再减去 $\nabla_{[X,Y]}$？
+
+**学生**：它在度量平行移动的不可交换性：$R(X,Y)Z=\nabla_X\nabla_YZ-\nabla_Y\nabla_XZ-\nabla_{[X,Y]}Z$ 即 $[\nabla_X,\nabla_Y]-\nabla_{[X,Y]}$，最后一项保证对 $X,Y$ 是 $C^\infty(M)$-线性的（张量性）。平面上先 $X$ 后 $Y$ 与先 $Y$ 后 $X$ 平移结果相同，$R=0$；球面则非零，量化"绕小回路搬一圈方向转过的角"。局部 $R_{ijk}^l=\partial_i\Gamma_{jk}^l-\partial_j\Gamma_{ik}^l+\Gamma_{jp}^l\Gamma_{ik}^p-\Gamma_{ip}^l\Gamma_{jk}^p$。
+
+**老师（追问）**：把这些对称性排一排，哪些是"免费"的，哪些必须用无挠与度量相容？
+
+**学生**：$R(X,Y)Z=-R(Y,X)Z$ 与 $g(R(X,Y)Z,W)=-g(R(X,Y)W,Z)$ 从定义直接得；交换对称 $g(R(X,Y)Z,W)=g(R(Z,W)X,Y)$ 要动用度量相容；第一 Bianchi 恒等式 $R(X,Y)Z+R(Y,Z)X+R(Z,X)Y=0$ 要用无挠（把 $[X,Y]$ 换成 $\nabla_XY-\nabla_YX$）与 Jacobi 恒等式。
+
+**老师（拓展）**：曲率张量如何"降维"成截面曲率、Ricci、标量曲率，又怎样在物理里出现？
+
+**学生**：截面曲率是二维平面 $\Pi$ 上的 $K(\Pi)=\dfrac{g(R(v,w)w,v)}{g(v,v)g(w,w)-g(v,w)^2}$，它完全决定曲率张量；Ricci 是迹 $\operatorname{Ric}(X,Y)=\sum_i g(R(e_i,X)Y,e_i)$，标量曲率再取迹 $R=g^{ij}R_{ij}$。广义相对论中 Einstein 场方程 $\operatorname{Ric}-\tfrac12Rg=8\pi T$ 把曲率与物质分布挂钩，Bianchi 恒等式对应能量-动量守恒。

@@ -35,3 +35,17 @@ $$\operatorname{vol}(T^{-1}(K))=\frac{\operatorname{vol}(K)}{|\det A|}=\frac{2^n
 ## 五、应用与意义
 
 线性型定理是把连续几何结论转化为整数不等式的高效桥梁，是 Minkowski 线性形式逼近理论的核心。它用于 Diophantine 逼近的 Dirichlet-type 存在性、同余系统与格的问题、金素数近似，也在密码与算法（线性同余与 Diophantine 不等式）中有用。推广形式（对复数线性型、多组线性型）见于现代算术逼近与遍历论（如 Littlewood 猜想研究）。
+
+## 课堂问答
+
+**老师**：线性型定理的形式与阈值是什么？
+
+**学生**：设 $L_i(x)=\sum_j a_{ij}x_j$、$A=(a_{ij})$ 可逆。若 $c_i>0$ 且 $c_1\cdots c_n>|\det A|$，则存在非零 $x\in\mathbb{Z}^n$ 使 $|L_i(x)|<c_i$ 对所有 $i$ 成立。
+
+**老师（追问）**：它是怎么化归到凸体定理的？
+
+**学生**：把 $T(x)=(L_1(x),\dots,L_n(x))=Ax$ 看成可逆线性变换，取 $K=\{y:|y_i|<c_i\}$，其体积 $\operatorname{vol}(K)=2^nc_1\cdots c_n$。原像 $T^{-1}(K)=\{x:|L_i(x)|<c_i\}$ 仍中心对称凸，体积 $\frac{2^nc_1\cdots c_n}{|\det A|}>2^n=2^n\det\mathbb{Z}^n$，对标准格 $\mathbb{Z}^n$ 应用 Minkowski 凸体定理即得非零整点。
+
+**老师（拓展）**：齐次形式与推广呢？
+
+**学生**：当 $c_1\cdots c_n\ge|\det A|$ 时可得 $|L_i(x)|\le c_i$。它是 Dirichlet 逼近的多维推广（Diophantine 存在性），并可推广到复数线性型与多组线性型（与 Littlewood 猜想研究相关）。误区是漏掉绝对值 $|\det A|$；$A$ 奇异时需改用秩陈述。

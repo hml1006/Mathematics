@@ -99,3 +99,17 @@ $$R\twoheadrightarrow T\ \text{在余切空间上同构}.$$
 2. **完全模性定理**：与 Breuil-Conrad-Diamond-Taylor 的工作结合，给出所有 $E/\mathbb{Q}$ 的模性，是 Langlands 纲领在 $GL_2/\mathbb{Q}$ 情形的完整实现。
 
 3. **方法论推广**：形变环与 Hecke 代数比较（$R=T$）的范式被推广到 $GL_n$（Clozel-Harris-Taylor、Scholze 等）、一般数域与更一般的代数群（模性提升、$\ell$-adic 与 $p$-adic Langlands、Fontaine-Mazur 猜想的部分进展）；Taylor-Wiles patching 也成为 $p$-adic 几何与算术几何的核心技术。
+
+## 课堂问答
+
+**老师**：请说明 $R$ 与 $T$ 各是什么，以及为什么 $R\twoheadrightarrow T$ 容易而难点在于同构。
+
+**学生**：先给结论：给定奇、绝对不可约且模的剩余表示 $\bar\rho:G_{\mathbb{Q}}\to GL_2(\mathbb{F})$，$R$ 是 $\bar\rho$ 最小形变问题的普适形变环，$T$ 是作用在模形式空间上、在对应极大理想 $\mathfrak{m}$ 处局部化的 Hecke 代数。由模形式构造 Galois 表示给出典范满射 $R\twoheadrightarrow T$；难点是证明它其实是同构 $R\cong T$，即"每个形变都来自模形式"。
+
+**老师（追问）**：Wiles 用什么手段把同构问题变成可验证的判据？
+
+**学生**：两步。第一是数值判据：若 $R$ 相对 $\mathcal{O}$ 是完全交（$R\cong\mathcal{O}[[x_1,\dots,x_g]]/(f_1,\dots,f_g)$，生成元数等于关系数）且 $\#(T/\eta_T)\le\#(R/\mathfrak{p}R)$，则 $R\cong T$。第二是 Taylor–Wiles 系统：在辅助素数集 $Q$（$q\equiv1\bmod p$，$\bar\rho(\mathrm{Frob}_q)$ 有两个互异特征值）处放行分歧，得 $R_Q\twoheadrightarrow T_Q$，此时由 Galois 上同调计算两边生成元数与关系数被打平（都带 $r=|Q|$ 个新方向），于是 $R_Q=T_Q$ 变得可证。常见误区：以为 $R=T$ 是"一次性定理"——它需要 patching 极限与降回原环才成立。
+
+**老师（拓展）**：patching 极限做了什么？$p=3$ 与可解像的情形怎么处理？
+
+**学生**：把诸 $(R_Q,T_Q)$ 放入相容逆向系统取极限 $R_\infty=\varprojlim R_Q$、$T_\infty=\varprojlim T_Q$，两者是有限型 $\mathcal{O}[[\Delta]]$-模，$T_\infty$ 自由、两边生成元数相同，故 $R_\infty\cong T_\infty$；再对 $\Delta$ 取余不变（$I$-进完备化）降回 $R\cong T$。$p=3$ 或像落在可解子群时，用 Langlands–Tunnell 保证 $\bar\rho$ 是模的，再由 Wiles 的"3-5 切换"覆盖半稳定椭圆曲线；最终结合 Frey 曲线与 Ribet 水平下降，得 Fermat 大定理。

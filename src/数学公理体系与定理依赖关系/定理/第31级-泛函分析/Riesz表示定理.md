@@ -88,3 +88,17 @@ $$
 **推论（Lax-Milgram 定理的准备工作）**：Riesz 表示定理保证了在 Hilbert 空间中，每个连续线性泛函对应于一个唯一的内积表示，这使得我们可以将变分问题转化为等价的算子方程。
 
 **注**：在复 Hilbert 空间中，映射 $y \mapsto \langle \cdot, y \rangle$ 是共轭线性的，即 $\langle x, \alpha y \rangle = \bar{\alpha} \langle x, y \rangle$。因此 $H$ 与 $H^*$ 之间的同构是共轭线性同构。
+
+## 课堂问答
+
+**老师**：Riesz 表示定理的核心是什么？
+
+**学生**：Hilbert 空间 $H$ 上每个连续线性泛函 $\varphi$ 可唯一写成 $\varphi(x)=\langle x,y\rangle$，且 $\|\varphi\|=\|y\|$，即 $H^*$ 与 $H$ 等距同构。复空间中该同构是共轭线性的。
+
+**老师（追问）**：$y$ 是怎么构造出来的？
+
+**学生**：若 $\varphi\ne0$，$\ker\varphi$ 是真闭子空间，其正交补一维；取 $z\in(\ker\varphi)^\perp$ 非零，令 $y=\overline{\varphi(z)}z/\|z\|^2$。对 $x=u+\alpha z$（$u\in\ker\varphi$）直接计算即得 $\langle x,y\rangle=\alpha\varphi(z)=\varphi(x)$；范数相等由 Cauchy-Schwarz 和取 $x=y$ 给出。
+
+**老师（拓展）**：它有什么用途？
+
+**学生**：它是 Lax-Milgram 及其他变分问题的准备，把泛函表示成内积后即可转化为算子方程；$L^2$ 是典型特例。别与同名的 Riesz 引理混淆——后者讲的是点到闭子空间的距离下界。

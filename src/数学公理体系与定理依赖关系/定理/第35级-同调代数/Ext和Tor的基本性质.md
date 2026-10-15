@@ -116,3 +116,21 @@ $$
 其中 $B$ 通过限制视为 $R$-模。
 
 **应用**：这些基本性质构成了同调代数计算的基础，广泛应用于代数拓扑、代数几何和表示论中。$\square$
+
+## 课堂问答
+
+**老师**：这些性质里，哪几条最能"算"？
+
+**学生**：长正合列、维数迁移、直和与直积、以及 $\operatorname{Ext}^1$ 分类扩张最实用。维数迁移
+$$
+\operatorname{Ext}^n_R(A,B)\cong\operatorname{Ext}^{n-1}_R(K,B),\qquad 0\to K\to P\to A\to0,\ P\ \text{投射}
+$$
+把高维化归低维；$\operatorname{Tor}$ 同样有 $\operatorname{Tor}_n(A,B)\cong\operatorname{Tor}_{n-1}(K,B)$。还要记住 $\operatorname{Tor}$ 对直和可交换，而 $\operatorname{Ext}(\bigoplus A_i,B)\cong\prod\operatorname{Ext}(A_i,B)$ 是直积。
+
+**老师（追问）**：这些性质形状为什么各不相同？
+
+**学生**：因为它们继承自 Hom 与 $\otimes$ 在未导出层的表现。$\operatorname{Hom}(\bigoplus A_i,B)\cong\prod\operatorname{Hom}(A_i,B)$ 反变，故 $\operatorname{Ext}(-,B)$ 把直和送到直积；而 $\operatorname{Hom}(A,\prod B_i)\cong\prod\operatorname{Hom}(A,B_i)$，故 $\operatorname{Ext}(A,-)$ 对直积表现良好。误用点是贸然把第二个变量写成直和：只有 $\operatorname{Tor}$ 在交换环上对称，$\operatorname{Ext}$ 一般不对称。
+
+**老师（拓展）**：怎么用一条性质把"平坦"翻译成同调语言？
+
+**学生**：$B$ 平坦 $\iff$ $\operatorname{Tor}_1^R(-,B)=0$ $\iff$ 所有 $n\ge1$ 的 $\operatorname{Tor}_n(-,B)=0$。充分性看长正合列：$\operatorname{Tor}_1(A'',B)=0$ 使 $A'\otimes B\to A\otimes B\to A''\otimes B\to0$ 正合，即 $\otimes B$ 左正合从而正合，故 $B$ 平坦。这正是"左导出函子度量非正合"的范本。

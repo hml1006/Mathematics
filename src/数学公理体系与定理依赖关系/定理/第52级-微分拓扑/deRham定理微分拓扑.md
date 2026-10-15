@@ -163,3 +163,17 @@ $$K\omega = \int_0^1 H^*(\omega) dt$$
 - **等变 de Rham 定理**：考虑群作用下的 de Rham 上同调
 - **非交换 de Rham 上同调**：在非交换几何中的推广
 - **Hodge 分解定理**：在紧 Kähler 流形上，de Rham 上同调可以分解为调和形式
+
+## 课堂问答
+
+**老师**：为什么上同调用的是"闭形式模恰当形式"？积分映射又怎么证明是良定义的？
+
+**学生**：因为 $d^2=0$，$H^k_{dR}(M)=\ker(d:\Omega^k\to\Omega^{k+1})/\operatorname{im}(d:\Omega^{k-1}\to\Omega^k)$ 才构成有意义的商。良定义全靠在 Stokes 公式上：$\int_\sigma(\omega+d\eta)=\int_\sigma\omega+\int_{\partial\sigma}\eta$，闭链 $\partial\sigma=0$ 使结果与代表元无关（$\int_{\partial\sigma}\eta=0$），而 $d\omega=0$ 使结果与同调类无关（$\int_{\partial\tau}\omega=\int_\tau d\omega=0$）。
+
+**老师（追问）**：证明同构的技术主线是什么？
+
+**学生**：用 Mayer-Vietoris 长正合列加五引理，从可收缩开集（由 Poincaré 引理 $H^k_{dR}=0$、$k>0$）逐层拼到一般流形，连接同态由单位分解给出 $\delta[\omega]=[d\rho_U\wedge\omega]$；积分映射与这序列交换，于是同构在 $U,V,U\cap V$ 上成立就传递到并集。
+
+**老师（拓展）**：最常见的误区和主要推论是什么？
+
+**学生**：误区是写成 $H^k_{dR}(M)\cong H^k(M;\mathbb Z)$——正确的是实系数 $H^k_{dR}(M)\cong H^k(M;\mathbb R)$，整数系数还要另加挠元。推论有 Poincaré 对偶 $H^k_{dR}(M)\cong H^{n-k}_{dR}(M)^*$、Künneth 公式 $H^*_{dR}(M\times N)\cong H^*_{dR}(M)\otimes H^*_{dR}(N)$；Hodge 理论进一步把每个类唯一表成调和形式。

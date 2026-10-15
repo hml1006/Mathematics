@@ -62,6 +62,26 @@ $$
 - 与 Levi 分解、Engel 定理、Lie 定理组合，构成有限维李代数结构理论的完整链条。
 - 在代数群与特征 $p$ 情形有相应推广（Iwasawa、Jacobson），是线性李代数理论的基础。
 
+## 课堂问答
+
+**老师**：抽象的有限维李代数，凭什么一定能"变成矩阵"？
+
+**学生**：结论：特征 $0$ 域 $k$ 上任意有限维李代数 $\mathfrak{g}$ 都存在忠实有限维表示 $\rho:\mathfrak{g}\hookrightarrow\mathfrak{gl}(n,k)$，即同构于矩阵李代数的子代数。这就是 Ado 定理。
+
+**老师（追问）**：半单部分好办，可解核难在哪？
+
+**学生**：用 Levi 分解 $\mathfrak{g}=\mathfrak{r}\rtimes\mathfrak{s}$，$\mathfrak{r}=\operatorname{rad}\mathfrak{g}$ 可解、$\mathfrak{s}$ 半单。半单部分伴随表示忠实（半单中心为零）。关键在于对可解核用维数归纳：取余维 $1$ 理想 $\mathfrak{h}\triangleleft\mathfrak{g}$，由归纳 $\mathfrak{h}$ 有忠实表示 $\rho_0$；再用 Zassenhaus 提升在 $W=\bigoplus_{i=0}^N V_i$ 上定义 $\mathfrak{g}$ 作用
+
+$$
+h\cdot v_i=\rho_0(h)v_i,\qquad x\cdot v_i=\rho_0(\operatorname{ad}x)v_i+v_{i+1}.
+$$
+
+$\operatorname{ad}x$ 保 $\mathfrak{h}$ 故有意义；取 $N$ 足够大（如 $N>\dim V$）即可保证整体忠实。
+
+**老师（拓展）**：为什么它是"李群–李代数对应"的必要前提？
+
+**学生**：要构造以 $\mathfrak{g}$ 为李代数的李群，先得把 $\mathfrak{g}$ 放进 $\mathfrak{gl}(n,\mathbb{R})$，才能在 $GL(n)$ 里用矩阵指数与 BCH 造群。没有 Ado，抽象李代数无从"落地"；特征 $p$ 情形则有 Jacobson 的相应推广，是线性李代数理论的基础。
+
 ## 相关条目
 
 - [李群与李代数的对应定理](./李群与李代数的对应定理.md)：Ado 定理是其存在性证明的第一步归约。

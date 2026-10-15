@@ -111,3 +111,17 @@ $$
 - **降维工具**：把 $n$ 维（或分数维）球面平均问题统一化归为常微分方程，是研究波动方程、热方程与色散方程的通用手段。
 - **广义 EPD 方程**：$u_{tt}+\frac{k}{t}u_t=c^2\Delta u$ 出现在广义相对论、共形几何与奇异摄动问题中，其可解性取决于参数 $k$ 的取值。
 - **反问题与成像**：球面平均算子及其逆是球形 Radon 变换的原型，直接支撑 CT 成像与地震波反演。
+
+## 课堂问答
+
+**老师**：三维波动方程取球面平均后，为什么会出现带 $\frac1r$ 的奇异项？怎么消掉它？
+
+**学生**：对 $\Delta u$ 取球面平均并用散度定理得 $\overline{\Delta u}=\bar u_{rr}+\frac{n-1}{r}\bar u_r$（三维即 $\bar u_{rr}+\frac2r\bar u_r$），代回 $\bar u_{tt}=c^2\overline{\Delta u}$ 得 EPD 方程。奇异项由球面积 $r^{n-1}$ 产生：$\overline{\Delta u}=\frac{1}{r^{n-1}}(r^{n-1}\bar u_r)_r$。令 $z=r\bar u$，由 $z_{rr}=2\bar u_r+r\bar u_{rr}$ 得 $\frac{z_{rr}}{r}=\bar u_{rr}+\frac2r\bar u_r$，于是 $z_{tt}=c^2z_{rr}$，奇异系数被完全吸收。
+
+**老师（追问）**：化成一维波动方程后初值怎么给？为什么需要奇延拓？
+
+**学生**：$z$ 的初值为 $z(r,0)=r\varphi(r)$、$z_t(r,0)=r\psi(r)$（$r>0$）。由 $\bar u$ 在 $r=0$ 有界得 $z(0,t)=0$，正是 Dirichlet 边界条件。为在整条直线用 d'Alembert 公式，把 $F(s)=s\varphi(|s|)$、$H(s)=s\psi(|s|)$ 奇延拓到 $s<0$，它们在 $s=0$ 连续且为奇函数，于是 $z(r,t)=\frac{F(r+ct)+F(r-ct)}2+\frac1{2c}\int_{r-ct}^{r+ct}H\,ds$。
+
+**老师（拓展）**：还原 $\bar u$ 时 $r<ct$ 与 $r>ct$ 为什么公式不同？这与 Huygens 原理有什么关系？
+
+**学生**：因为 $r-ct$ 的符号决定奇延拓是否被激活。$r>ct$ 时 $r-ct>0$，$\Phi(r\pm ct)=(r\pm ct)\varphi(r\pm ct)$ 直接代入；$0<r<ct$ 时 $r-ct<0$，用奇性 $\Phi(r-ct)=(r-ct)\varphi(ct-r)$，积分限也翻成 $[ct-r,ct+r]$。这正是 Huygens 无后效原理的代数化：三维扰动过后不留余波，而二维需令初值与 $x_3$ 无关积分得到 Poisson 公式，出现"拖尾"。常见误区是直接在 $r=0$ 处求 $\bar u$：必须借 $u(x,t)=\partial_r\tilde u(0,t)$ 的极限。

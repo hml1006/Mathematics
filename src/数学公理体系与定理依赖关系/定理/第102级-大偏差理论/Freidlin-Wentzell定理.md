@@ -54,3 +54,21 @@ $$
 ## 五、应用与意义
 
 Freidlin-Wentzell 理论刻画了小噪声随机系统的稀有跃迁与远离确定轨道的概率，是研究随机微分方程、逃逸问题与 metastability 的核心工具。它支撑随机动力系统中的"最小作用路径"、速率函数的变分计算，以及统计物理、金融与生态模型中噪声诱发转变的定量分析。
+
+## 课堂问答
+
+**老师**：带小噪声的 SDE，路径偏离确定解的概率由什么控制？
+
+**学生**：由作用泛函控制。$dX_t^\varepsilon=b(X_t^\varepsilon)\,dt+\varepsilon\,dW_t$在$\varepsilon\to0$时满足速率$1/\varepsilon^2$的 LDP，速率函数
+$$
+I(\varphi)=\frac12\int_0^T|\dot\varphi(t)-b(\varphi(t))|^2\,dt,\qquad\varphi\in H_0^1,\ \varphi(0)=x_0,
+$$
+不在其中的路径$I=\infty$。
+
+**老师（追问）**：这个速率函数是怎么从无漂移的 Schilder 情形改出来的？
+
+**学生**：先用 Girsanov 变换作测度变换，使$\mathbb Q_\varepsilon$下$X^\varepsilon=x_0+\varepsilon\widetilde W$，回到 Schilder 情形$I_0(\varphi)=\frac12\int|\dot\varphi|^2$；再把 Girsanov 指数项的极限贡献（经 Varadhan 引理）$\Delta I=-\frac12\int|b(\varphi)|^2-\int b(\varphi)\cdot\dot\varphi$加上，合并恰为$\frac12\int|\dot\varphi-b(\varphi)|^2$。
+
+**老师（拓展）**：最优路径有什么含义？
+
+**学生**：使$I(\varphi)$最小的路径即系统最可能的偏离轨迹，由 Euler–Lagrange 型极值条件确定，是沿确定流的"最小作用"逃逸路径。它支撑随机动力系统的逃逸问题与 metastability 分析，且$I$须为好速率函数（水平集紧致）才是 LDP 的前提。

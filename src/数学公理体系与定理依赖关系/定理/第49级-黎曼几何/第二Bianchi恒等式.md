@@ -89,6 +89,22 @@ $$\nabla^iG_{ij}=\nabla^iR_{ij}-\tfrac12\nabla_jS=\tfrac12\nabla_jS-\tfrac12\nab
 
 证毕。
 
+## 课堂问答
+
+**老师**：写出第二 Bianchi 恒等式及两次缩并的结果。
+
+**学生**：结论：
+$$\nabla_mR_{ijkl}+\nabla_kR_{ijlm}+\nabla_lR_{ijmk}=0,$$
+即对后三个指标轮换求和为零。一次缩并得 $\nabla^aR_{abcd}=\nabla_cR_{bd}-\nabla_dR_{bc}$；再缩并 $b,d$ 得 $2\nabla^aR_{ac}=\nabla_cS$，等价地 $\nabla^iG_{ij}=0$（$G_{ij}=R_{ij}-\frac12Sg_{ij}$）。误区是把它与第一 Bianchi 混为一谈——后者是同点代数恒等式，本式含协变导数是微分恒等式。
+
+**老师（追问）**：证明为何可只在一点用测地法坐标算？
+
+**学生**：这是张量等式，只需一点验证即可推广。取法坐标使 $\Gamma^l_{ij}(p)=0$、$\partial_mg_{ij}(p)=0$，于是 $\nabla_m|_p=\partial_m|_p$，$R_{ijkl}$ 退化为度量二阶导的组合；三项成为三次偏导之和，按偏导指标多重集与度量指标对两两配对相消，六组全抵消。
+
+**老师（拓展）**：它的物理与几何意义？
+
+**学生**：$\nabla^iG_{ij}=0$ 是广义相对论中场方程自动蕴含能量守恒 $\nabla^iT_{ij}=0$ 的几何根源；在几何分析中它是 Ricci 流通量单调性、孤立子方程与 Weitzenböck 公式推导反复用到的分部工具。
+
 ## 相关条目
 
 - [Riemann曲率张量的对称性](./Riemann曲率张量的对称性.md)：第一 Bianchi 恒等式与成对反对称性，是本定理缩并步骤的基础。

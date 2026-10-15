@@ -77,3 +77,23 @@ $$
 - **主成分与降维**：谱分解换元的 Jacobian $\prod_{i<j}(\lambda_i-\lambda_j)$ 解释了为什么特征值会"相互排斥"，是随机矩阵与主成分分析的理论基础。
 - **数值积分与采样**：蒙特卡洛中的变量代换、球坐标与极坐标采样、超球面上的均匀采样，都需以 Jacobian 因子修正权重。
 - **流形上的积分**：把一个流形的积分通过坐标卡拉到 $\mathbb R^p$ 时，Jacobian 是转移积分与体积元的通用机制，是微分几何中体积形式的技术核心。
+
+## 课堂问答
+
+**老师**：换元积分为什么一定要乘 $|\det J|$？
+
+**学生**：因为线性映射把单位立方体映成体积为 $|\det J|$ 的平行体，$|\det J|$ 就是局部体积的放大倍数，于是 $\mathrm{d}\boldsymbol{x}=|\det J|\,\mathrm{d}\boldsymbol{y}$。高维情形就是"局部线性化 + 分块拼接"。
+
+**老师（追问）**：矩阵换元时那个奇怪的幂次 $\prod_i t_{ii}^{p+1-i}$ 从哪来？
+
+**学生**：来自 Cholesky 换元 $\boldsymbol{A}=\boldsymbol{T}\boldsymbol{T}'$ 的分块归纳。设
+
+$$
+\boldsymbol{A}=\begin{pmatrix}\boldsymbol{A}_{p-1}&\boldsymbol{a}\\ \boldsymbol{a}^\top&a_{pp}\end{pmatrix},\qquad \boldsymbol{A}_{p-1}=\boldsymbol{T}_{p-1}\boldsymbol{T}_{p-1}'.
+$$
+
+末列映射 $\boldsymbol{t}\mapsto\boldsymbol{a}=\boldsymbol{T}_{p-1}\boldsymbol{t}$ 的 Jacobian 是 $\det\boldsymbol{T}_{p-1}=\prod_{i<p}t_{ii}$，而 $a_{pp}=\boldsymbol{t}^\top\boldsymbol{t}+t_{pp}^2$ 额外贡献因子 $2t_{pp}$。故每加一维每个 $t_{ii}$ 的幂次加一，以 $p=1$ 的 $\mathrm{d}a_{11}=2t_{11}\mathrm{d}t_{11}$ 为基，递推得 $\mathrm{d}\boldsymbol{A}=2^p\prod_i t_{ii}^{p+1-i}\mathrm{d}\boldsymbol{T}$。在 Wishart 密度里它正好合并出 $|\boldsymbol{W}|^{(n-p-1)/2}$ 幂次。
+
+**老师（拓展）**：谱分解换元的 Jacobian 为什么出现 Vandermonde 因子 $\prod_{i<j}|\lambda_i-\lambda_j|$？
+
+**学生**：在对角基下用反对称扰动 $\boldsymbol{\Omega}$ 做一阶展开，$\delta\boldsymbol{A}$ 的交叉项含 $[\boldsymbol{\Omega},\boldsymbol{\Lambda}]$，其 $(i,j)$ 分量为 $(\lambda_j-\lambda_i)\Omega_{ij}$，系数矩阵的行列式模给出 $\prod_{i<j}|\lambda_i-\lambda_j|$。特征值重根时该 Jacobian 为零、映射退化，这正是随机矩阵中特征值"相互排斥"的代数根源。

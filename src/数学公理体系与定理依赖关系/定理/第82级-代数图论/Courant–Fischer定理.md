@@ -108,6 +108,20 @@ $$
 - **主成分分析与统计**：样本协方差矩阵的主特征向量最大化方差（$k=1$ 情形），后续主成分由 $k=2,3,\dots$ 的极小极大问题给出，决定了降维的最优性。
 - **微分算子与 PDE**：Sturm–Liouville 与 Laplace–Beltrami 算子的第 $k$ 个特征值有同型变分刻画，是特征值估计与 nodal 域研究的工具，见 [对称张量的谱定理](../第119级-连续介质力学/对称张量的谱定理.md)。
 
+## 课堂问答
+
+**老师**：Rayleigh 商只给了最小、最大两个特征值，那中间的 $\lambda_k$ 怎么刻画？
+
+**学生**：用子空间维数。$\lambda_k=\min_{V\in\mathcal{V}_k}\max_{0\ne x\in V}R(x)=\max_{W\in\mathcal{W}_{n-k+1}}\min_{0\ne x\in W}R(x)$，其中 $R(x)=\frac{x^TAx}{x^Tx}$，$\mathcal{V}_k$ 是全部 $k$ 维子空间的集合。$k=1$ 退化为 $\lambda_1=\min R$，$k=n$ 退化为 $\lambda_n=\max R$。
+
+**老师（追问）**：两个方向的证明分别靠什么？
+
+**学生**：上界取"顺最优子空间" $V_0=\operatorname{span}\{u_1,\dots,u_k\}$，其中 $R(x)\le\lambda_k$，故极小值 $\le\lambda_k$；下界靠维数计数：任何 $k$ 维子空间 $V$ 与 $W_0=\operatorname{span}\{u_k,\dots,u_n\}$ 必有交（$\dim(V\cap W_0)\ge k+(n-k+1)-n=1$），交中向量满足 $R(x)\ge\lambda_k$，故极小值 $\ge\lambda_k$。两个方向合并即得。这正是 Cheeger 不等式中 $\mu_2=\min_{\mathbf{x}\perp\mathbf{1}}\frac{\mathbf{x}^TL\mathbf{x}}{\|\mathbf{x}\|^2}$ 的来源。
+
+**老师（拓展）**：这条变分原理能推出哪些有用推论？
+
+**学生**：至少三条：单调性与 Weyl 不等式 $\lambda_k(A)+\lambda_1(B)\le\lambda_k(A+B)\le\lambda_k(A)+\lambda_n(B)$；Cauchy 交错定理 $\lambda_k\le\mu_k\le\lambda_{k+n-m}$（主子矩阵特征值交错）；以及特征值扰动界。它们让子空间迭代、Lanczos 与主成分分析（$k=1$ 最大化方差）都有严格的最优性依据。
+
 ## 相关条目
 
 - [图的谱定理](./图的谱定理.md)：对称/正规矩阵的谱分解，是本定理的前提。

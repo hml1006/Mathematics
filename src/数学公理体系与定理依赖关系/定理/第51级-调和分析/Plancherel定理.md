@@ -124,6 +124,20 @@ $\mathcal S$ 在 $L^2$ 中稠密。对 $f\in L^2$ 取 $f_k\in\mathcal S$，$f_k\
 
 **推广**：Plancherel 定理可推广到局部紧交换群上的抽象傅里叶分析（Pontryagin 对偶）以及半单李群上的非交换调和分析，是朗兰兹纲领"局部-整体"思想的雏形。
 
+## 课堂问答
+
+**老师**：$L^2$ 函数未必可积，$\hat f$ 的积分无意义，Plancherel 怎么绕过这个矛盾？
+
+**学生**：结论：稠密延拓。先在 $\mathcal S$ 上由乘法公式 $\int\hat fg=\int f\hat g$ 取 $g=\overline{\hat f}$ 证得 $\|\hat f\|_2=\|f\|_2$；再因 $\mathcal S$ 在 $L^2$ 稠密、$L^2$ 完备，等距线性算子唯一延拓为 $L^2\to L^2$ 的酉算子。
+
+**老师（追问）**：怎么确保延拓后是满射而非只到 $L^2$ 的一半？
+
+**学生**：用逆变换：在 $\mathcal S$ 上 $\mathcal F^2f=\check f$、$\mathcal F^4=\mathrm{id}$，故 $\mathcal F^{-1}=\mathcal F^3$ 也在 $L^2$ 上有定义。对任意 $g\in L^2$ 取 $\mathcal F^{-1}g=\mathcal F^3g$ 即为原像，故满射，结合等距得酉。
+
+**老师（拓展）**：内积恒等式 $\langle\hat f,\hat g\rangle=\langle f,g\rangle$ 怎么来？
+
+**学生**：由范数等距加极化恒等式 $\langle f,g\rangle=\frac14\sum_{k=0}^3 i^k\|f+i^kg\|_2^2$ 直接给出。物理上这就是"时域能量等于频域能量"。
+
 ## 相关条目
 
 - [Fourier变换的L2理论](./Fourier变换的L2理论.md)：以 Plancherel 定理为核心，系统讨论 $L^2$ 上傅里叶变换的构造与性质。

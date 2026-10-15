@@ -38,3 +38,25 @@ $$
 ## 五、应用与意义
 
 局部化正合序列是计算高次 K 群的主力工具：用它可推导 Bass-Heller-Swan 定理（$K_n(R[t,t^{-1}])$ 的分解）、求 $K_n(\mathbb{Z})$、$K_n(\mathbb{Q})$ 乃至代数整数环的 K 群。它与 Milnor K 理论、Galois 上同调及算术 K 理论（在 Lichtenbaum-Quillen 猜想与 Kato 猜想背景下）紧密相连，是把局部代数对象（剩余域）拼合成全局不变量（K 群）的典型"局部-整体"方法。
+
+## 课堂问答
+
+**老师**：局部化 $R\to R_S$ 会改变 $K$ 群，Quillen 的局部化序列怎样精确"记账"？
+
+**学生**：对 Dedekind 整环 $R$ 与乘法闭集 $S$，有长正合序列
+$$
+\cdots\to K_{n+1}(R_S)\to\bigoplus_{\mathfrak{p}}K_n(\kappa(\mathfrak{p}))\to K_n(R)\to K_n(R_S)\to\cdots,
+$$
+其中 $\mathfrak{p}$ 遍历在局部化中被丢掉的素理想，$\kappa(\mathfrak{p})$ 是剩余域。中间那团"丢失的信息"由各剩余域的 $K$ 群拼成。
+
+**老师（追问）**：这条长正合列究竟从哪个范畴论事实"取同伦群"得来？
+
+**学生**：来自 Quillen Q 构造的纤维化：三个精确范畴 $\mathcal{P}(R)$、$\mathcal{P}(R_S)$ 与"被 $S$ 中某元素杀死的挠模"范畴 $\mathcal{C}$ 给出
+$$
+BQ\mathcal{C}\to BQ\mathcal{P}(R)\to BQ\mathcal{P}(R_S),
+$$
+对它取同伦群，$BQ\mathcal{C}$ 那一项恰好分解到剩余域直和，于是得到长正合列。
+
+**老师（拓展）**：它是"局部-整体"的典型，能具体支撑哪些结论？
+
+**学生**：Bass-Heller-Swan 定理正是对局部化序列的运用；此外 $K_n(\mathbb{Z})$、$K_n(\mathbb{Q})$ 及代数整数环的 $K$ 群计算都靠它，并连接 Milnor K 理论与算术 K 理论。注意它要求 $R$ 为 Dedekind 整环，一般环需换成更复杂的版本。

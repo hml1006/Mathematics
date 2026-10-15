@@ -55,3 +55,21 @@ $$
 
 ## 五、应用与意义
 Yang–Baxter 方程是可积统计模型与量子可积系统的可解性判据；它提供了辫群 $B_n$ 的线性表示，进而构造 Jones、HOMFLY 等纽结多项式，也是 Reshetikhin–Turaev 三维流形不变量的起点。
+
+## 课堂问答
+
+**老师**：Yang–Baxter 方程为什么是可解性的核心？它长什么样？
+
+**学生**：结论：它是三次张量方程，即两种换序方式结果相同：
+$$
+R_{12}R_{13}R_{23}=R_{23}R_{13}R_{12}.
+$$
+其中 $R_{12}=R\otimes\mathrm{id}$、$R_{23}=\mathrm{id}\otimes R$、$R_{13}=P_{23}R_{12}P_{23}$。它保证转移矩阵互相交换，是量子可积系统的判据，也给辫群 $B_n$ 的线性表示。
+
+**老师（追问）**：在拟三角 Hopf 代数里怎么证？
+
+**学生**：用泛 $R$-矩阵两条公理 $(\Delta\otimes\mathrm{id})(R)=R_{13}R_{23}$ 与 $(\mathrm{id}\otimes\Delta)(R)=R_{12}R_{13}$。由 $\Delta^{\mathrm{op}}(h)=R\Delta(h)R^{-1}$，对 $R$ 作用 $\Delta^{\mathrm{op}}\otimes\mathrm{id}$ 得 $(\Delta^{\mathrm{op}}\otimes\mathrm{id})(R)=R_{23}R_{13}$；另一方面展开为 $R_{12}R_{13}R_{23}R_{12}^{-1}$。两者相等后右乘 $R_{12}$ 即得 YBE。
+
+**老师（拓展）**：它与纽结、流形不变量的关系？
+
+**学生**：YBE 是辫关系的矩阵化身，故 $\rho(\sigma_i)=PR$ 给出 $B_n$ 的表示，闭辫取迹即得 Markov 迹式的链环不变量，Jones、HOMFLY 都是其特化。再把 $R$ 与 $6j$ 符号（五边形方程）组合，就搭出 Reshetikhin–Turaev 与 Turaev–Viro 的三维流形不变量，因此 YBE 是整条量子拓扑链条的起点。

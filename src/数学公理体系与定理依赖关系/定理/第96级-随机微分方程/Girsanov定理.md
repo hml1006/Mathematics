@@ -35,3 +35,17 @@ $$
 ## 五、应用与意义
 
 Girsanov 定理是金融数学的枢纽，用于风险中性测度与期权定价（通过改变测度消除漂移）、随机控制中的测度变换、以及统计中的随机检验（似然比）。它还奠基了测度变换与等价鞅测度理论，与布朗运动的拉普拉斯框架和大偏差方法紧密相连。
+
+## 课堂问答
+
+**老师**：换一个测度为什么能把带漂移的过程"扶正"成布朗运动？
+
+**学生**：先给结论——取指数鞅 $L_t=\exp\{-\int_0^t\theta_s^\top dW_s-\frac12\int_0^t\|\theta_s\|^2ds\}$，令 $\frac{d\mathbb{Q}}{d\mathbb{P}}\big|_{\mathcal{F}_T}=L_T$，则在 $\mathbb{Q}$ 下 $\tilde W_t=W_t+\int_0^t\theta_s\,ds$ 是布朗运动。
+
+**老师（追问）**：证明分几步走？
+
+**学生**：第一步由 Novikov 条件 $\mathbb{E}\exp\{\frac12\int_0^T\|\theta_s\|^2ds\}<\infty$ 保证 $L_t$ 为真鞅、$\mathbb{Q}$ 是概率测度；第二步用 Bayes 公式与 Itô 计算证 $\tilde W$ 为 $\mathbb{Q}$-鞅；第三步因漂移有界变差不改二次变差，$[\tilde W]_t=t$，最后由 Lévy 鞅刻画定理定调。
+
+**老师（拓展）**：它在金融里扮演什么角色？
+
+**学生**：它用 $\theta_t=(\mu_t-r)/\sigma_t$ 消去真实漂移，得到风险中性测度，使贴现价格成为 $\mathbb{Q}$-鞅，从而 $V_t=e^{-r(T-t)}\mathbb{E}^{\mathbb{Q}}[\Phi(S_T)]$。常见误区是忘记 Novikov 或等价性条件，导致 $\mathbb{Q}$ 不是概率或与原测度不等价。

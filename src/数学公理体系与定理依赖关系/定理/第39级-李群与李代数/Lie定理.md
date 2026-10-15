@@ -65,3 +65,17 @@ $$H(Xw) = X(Hw) + [H,X]w = X(\lambda(H)w) + \lambda([H,X])w = \lambda(H)(Xw) + \
 **步骤 6**：归纳完成。在 $V_1 = \mathbb{C}v_0$ 上，$\mathfrak{g}$ 的作用是标量乘。考虑商模 $V/V_1$，由归纳假设，存在 $V/V_1$ 中的 $\mathfrak{g}$-不变旗。拉回得到 $V$ 中的 $\mathfrak{g}$-不变旗，且包含 $V_1$。$\square$
 
 **推论**：若 $\mathfrak{g}$ 是 $\mathbb{C}$ 上的可解李代数，则 $\mathfrak{g}$ 的每个不可约表示是一维的。
+
+## 课堂问答
+
+**老师**：Lie 定理对可解李代数说了什么？
+
+**学生**：结论：$\mathbb{C}$ 上有限维可解李代数的任意有限维表示，都存在一组基使每个 $X$ 同时为上三角矩阵；等价地存在 $\mathfrak{g}$-不变旗 $0=V_0\subset V_1\subset\cdots\subset V_n=V$。其基础是导代数 $[\mathfrak{g},\mathfrak{g}]$ 幂零。误区：结论依赖 $\mathbb{C}$（特征 0 且代数闭），换到 $\mathbb{R}$ 上不一定能同时三角化。
+
+**老师（追问）**：证明里最关键的一步是什么？
+
+**学生**：找公共特征向量。取余维 1 的理想 $\mathfrak{h}\supseteq[\mathfrak{g},\mathfrak{g}]$，由归纳得 $\mathfrak{h}$ 的公共 $\lambda$-特征空间 $W$；因 $\lambda([\mathfrak{g},\mathfrak{g}])=0$，可证 $W$ 是 $\mathfrak{g}$-不变的，$X|_W$ 在代数闭域 $\mathbb{C}$ 上有特征向量 $v_0$，$\mathbb{C}v_0$ 一维 $\mathfrak{g}$-不变，再对商模 $V/\mathbb{C}v_0$ 归纳。
+
+**老师（拓展）**：可解李代数的不可约表示长什么样？
+
+**学生**：全是一维的——三角化后 $V_1=\mathbb{C}v_0$ 本身就是 $\mathfrak{g}$-不变子模，不可约便只能是它自身。这也与 Engel 定理"幂零 $\Rightarrow$ 严格上三角、对角为零"形成平行对照：一个管可解、一个管幂零。

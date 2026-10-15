@@ -41,6 +41,21 @@ $$
 ## 五、应用与意义
 
 Pontryagin 原理是火箭、导弹、自动驾驶与能源系统最优控制的基石，能处理 LQR 处理不了的一类带约束或奇异控制问题。它给出精确的必要条件，是 Bang-Bang 控制、奇异弧与最优轨迹分析的标准工具。
+
+## 课堂问答
+
+**老师**：与经典变分法相比，Pontryagin 极大值原理凭什么能处理 $\boldsymbol u$ 被限制在任意集合 $U$ 上、甚至最优控制不连续的情形？
+
+**学生**：结论：它把最优性写成对 $\boldsymbol u$ 的逐点最大化，即 $\mathcal H(\boldsymbol x^*,\boldsymbol u^*,\boldsymbol\lambda^*,t)=\max_{\boldsymbol u\in U}\mathcal H(\boldsymbol x^*,\boldsymbol u,\boldsymbol\lambda^*,t)$，这是"与所有可行控制比较"而非"对控制求导"。变分法要求 $\partial\mathcal H/\partial\boldsymbol u=\boldsymbol 0$，只在 $U$ 开且 $\mathcal H$ 可微时给出内点条件；极大值原理不要求可微或连续，故能刻画开关式的 Bang-Bang 控制。
+
+**老师（追问）**：协态方程 $\dot{\boldsymbol\lambda}=-\partial\mathcal H/\partial\boldsymbol x$ 与横截条件究竟从哪里冒出来？
+
+**学生**：把约束 $\dot{\boldsymbol x}=\boldsymbol f$ 用协态 $\boldsymbol\lambda$ 乘上后并入指标，得 $\mathcal H=L+\boldsymbol\lambda^{\top}\boldsymbol f$，再把控制摄动为 $\boldsymbol u^*+\varepsilon\boldsymbol v$ 求指标一阶变分。极值点一阶变分为零，对状态项分部积分后，内部项由变分任意性迫出 $\dot{\boldsymbol\lambda}=-\partial\mathcal H/\partial\boldsymbol x$，边界项给出横截条件（自由端点时如 $\boldsymbol\lambda(t_f)=\boldsymbol 0$）。常见误区是把它当作充分条件——它只是必要条件，还需凸性（如 Mangasarian 条件）才升级。
+
+**老师（拓展）**：那它与 LQR、与代数 Riccati 方程是什么关系？
+
+**学生**：LQR 是 $\mathcal H$ 对 $\boldsymbol u$ 有内点解、协态可取 $\boldsymbol\lambda=2\boldsymbol P\boldsymbol x$ 的特例，此时极大值条件退化为 $\partial\mathcal H/\partial\boldsymbol u=\boldsymbol 0$，直接给出 $\boldsymbol u^*=-\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P\boldsymbol x$，与代数 Riccati 方程一致。所以极大值原理覆盖 LQR，两者在无约束光滑情形重合。
+
 ## 相关条目
 
 - [Pontryagin 极大值原理（第69级-控制理论）](../第69级-控制理论/Pontryagin极大值原理.md)：与本条目为同一定理，另收录于第69级-控制理论，可交叉参考。

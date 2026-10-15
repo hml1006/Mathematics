@@ -71,6 +71,20 @@ $$
 - **费马大定理**：为 $p=3$ 的剩余表示提供模性起点，配合 R=T 完成"3-5 切换"。
 - **Langlands 纲领**：是 $GL_2$ 上 Langlands 对应与基变换理论的经典应用范例，推动自守表示下降问题的研究。
 
+## 课堂问答
+
+**老师**：请精确陈述 Langlands–Tunnell 定理的三个假设与结论。
+
+**学生**：先给结论：若 $\rho:G_{\mathbb{Q}}\to GL_2(\mathbb{C})$ 连续、不可约、奇（$\det\rho(c)=-1$，$c$ 为复共轭），且其射影表示 $\bar\rho:G_{\mathbb{Q}}\to PGL_2(\mathbb{C})$ 的像是可解群，则 $\rho$ 是模的：存在权 $1$ 的 Hecke 本征新形式 $f$ 使 $\rho\cong\rho_f$，从而 $L(s,\rho)=L(s,f)$ 全纯并满足函数方程。即 Artin 猜想在"射影像可解"的奇二维表示上成立。
+
+**老师（追问）**：证明按什么分类？各情形用什么工具？
+
+**学生**：因为像有限，$\bar\rho$ 的像必是 $PGL_2(\mathbb{C})$ 的有限子群 $D_n,A_4,S_4,A_5$ 之一，逐类处理：二面体 $D_n$ 时 $\rho\cong\mathrm{Ind}_{G_K}^{G_{\mathbb{Q}}}\chi$（$K$ 为二次域），由自守诱导直接得权 $1$ 模形式；四面体/八面体 $A_4,S_4$ 时在可解扩张 $L/\mathbb{Q}$ 上 $\rho|_{G_L}\cong\chi_1\oplus\chi_2$，用 Langlands 的循环基变换下降到 $\mathbb{Q}$；二十面体 $A_5$ 时由 Tunnell 用四元数代数上的自守形式与迹公式处理。常见误区：以为 $A_5$ 不可解所以不成立——恰是 Tunnell 的方法把它补全了。
+
+**老师（拓展）**：它在 Wiles 的证明中具体怎么被用？
+
+**学生**：对半稳定 $E/\mathbb{Q}$，剩余表示 $\bar\rho_{E,3}:G_{\mathbb{Q}}\to GL_2(\mathbb{F}_3)$ 的像含于阶 $48$ 的可解群 $GL_2(\mathbb{F}_3)$；嵌入 $\mathbb{F}_3\subset\mathbb{C}$ 后复合 $\rho:G_{\mathbb{Q}}\to GL_2(\mathbb{F}_3)\hookrightarrow GL_2(\mathbb{C})$ 是奇、射影像可解的二维复表示，由本定理它是模的，对应一个权 $1$ 模形式；再配合 Deligne–Serre 的模 $3$ 约化与 Hida 族的升降，得 $\bar\rho_{E,3}$ 是权 $2$ 模的，为 $R=T$ 提供 $p=3$ 的初始模性输入。
+
 ## 相关条目
 
 - [R=T 定理](./R=T定理.md)：Langlands–Tunnell 为其提供 $p=3$ 的初始模性输入。

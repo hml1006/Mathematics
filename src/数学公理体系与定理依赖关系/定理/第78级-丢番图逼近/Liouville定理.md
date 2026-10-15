@@ -42,3 +42,17 @@ $$\Big|\alpha-\frac pq\Big|=\sum_{n=d+1}^{\infty}10^{-n!}<2\cdot10^{-(d+1)!}=\fr
 ## 五、应用与意义
 
 Liouville 定理是超越数论的奠基：它提供首批超越数（Liouville 数）并确立"代数数的逼近指数 $\le d$"的下界基准，直接催生 Thue-Siegel-Roth 序列（最终把指数降到 2）。它也是丢番图逼近中"下界"技巧（最小多项式 + 中值定理 + 范数取整）的原型，其思想推广到线性形式、$p$-adic 逼近和量子定理，并用于 Diophantine 方程（如 Thue 方程）的有限性判定。
+
+## 课堂问答
+
+**老师**：Liouville 给出代数无理数的逼近下界，结论与证明的两半分别是什么？
+
+**学生**：$\alpha$ 是 $d$ 次代数无理数，则存在 $c(\alpha)>0$ 使对所有有理数 $p/q$ 有 $|\alpha-p/q|\ge c(\alpha)/q^d$。证明一半是整性下界 $|f(p/q)|\ge1/q^d$，另一半是中值定理上界 $|f(p/q)|\le M|\alpha-p/q|$。
+
+**老师（追问）**：为什么 $|f(p/q)|\ge1/q^d$？
+
+**学生**：把 $f(x)=a_dx^d+\cdots+a_0$ 代入并通分，得 $f(p/q)=\dfrac{a_dp^d+a_{d-1}p^{d-1}q+\cdots+a_0q^d}{q^d}$，分子 $N=q^df(p/q)$ 是非零整数（因 $f$ 不可约且 $\alpha$ 无理），绝对值至少为 $1$，故 $|f(p/q)|\ge1/q^d$。
+
+**老师（拓展）**：怎样由此造出超越数？
+
+**学生**：取 Liouville 数 $\alpha=\sum_{n\ge1}10^{-n!}$，用分母 $q=10^{d!}$ 的有理逼近误差约为 $2/q^{d+1}$，比任何 $d$ 次代数数下界 $c/q^d$ 都小，故 $\alpha$ 不可能是代数数。误区是常数 $c(\alpha)$ 依赖 $\alpha$，不能取成对全体统一的常数。指数 $d$ 后来被 Thue-Siegel-Roth 逐级降到 $2+\varepsilon$。

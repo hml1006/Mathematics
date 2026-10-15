@@ -80,3 +80,17 @@ $H^{1,1}_{\mathbb{R}}=\mathbb{R}\omega\oplus H^{1,1}_{\mathrm{prim}}$ 是正交�
 2. **Néron-Severi 与正锥**：定理刻画了正锥的强凸性与超平面负定性，是 Néron-Severi 群算术结构（Hasse-Hodge 定理、Hodge 猜想的曲面情形）、以及$\mathbb{Q}$-除子正性（nef、big、伪有效）理论的起点，并在 Mori 纲领（锥定理）中经由"负定性 ⇒ 极小模型"的论证发挥作用。
 
 3. **推广**：高维情形的对应物是 Hodge-Riemann 双线性关系与"指数定理"（在 $H^{p,p}$ 的原始部分上符号为 $(-1)^p$），它构成 Hodge 理论、Lefschetz 分解与 Gromov 的 Kähler 锥几何的基础；在算术几何中，Hodge 指数定理与 Hasse 原理、Tate 猜想（曲面情形）以及相交形式的算术解释密切相关。
+
+## 课堂问答
+
+**老师**：用一句话说清 Hodge 指数定理在光滑射影曲面上断言了什么？
+
+**学生**：结论：相交形式的符号差为 $(1,h^{1,1}-1)$——只有一个正方向。等价地：$H^2>0$；对任意 $D$ 有 $D\cdot H=0\Rightarrow D^2\le0$，且 $D^2=0\iff D\equiv0$（数值等价于零）。
+
+**老师（追问）**：证明里那个"逐点恒等式"为什么能给出全局负定？
+
+**学生**：取 Kähler 类 $\omega$，$H^\perp\cap H^{1,1}=H^{1,1}_{\mathrm{prim}}$。在 Kähler 正规坐标下，原始实 $(1,1)$-形式满足 $\alpha\wedge\alpha=-\frac12|\alpha|^2_\omega\,\omega\wedge\omega\le0$。因 $\omega^2/2$ 是正体积形式，积分得 $\alpha^2\le0$；而 $\alpha^2=0$ 迫使 $|\alpha|^2_\omega\equiv0$，即 $\alpha=0$，故在 $H^\perp$ 上负定且等号只在零类。加上 $\omega^2>0$ 即得符号差。
+
+**老师（拓展）**：高维有对应吗？它和算术几何什么关系？
+
+**学生**：高维对应是 Hodge–Riemann 双线性关系：在原始部分 $H^{p,p}_{\mathrm{prim}}$ 上符号为 $(-1)^p$。它是 Lefschetz 分解与 Kähler 锥/Mori 纲领（锥定理）的基础；算术上，曲面情形与 Hasse 原理合成为 Hasse–Hodge 定理，并与 Tate 猜想的曲面情形密切相关。 常见误区是以为"负定"对所有同调类成立——其实负定只在与丰沛类垂直的超平面 $H^\perp$ 上，正方向恰由 $H$ 本身贡献。

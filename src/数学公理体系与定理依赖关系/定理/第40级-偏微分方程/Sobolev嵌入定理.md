@@ -74,3 +74,17 @@ $$\|u\|_{C^{0,\gamma}(\overline{\Omega})} \le C \|u\|_{W^{1,p}(\Omega)}$$
 其中 $\gamma = 1 - n/p$，然后迭代。$\square$
 
 **推论**（紧嵌入）：若 $1 \le q < p^*$，则 $W^{1,p}(\Omega) \hookrightarrow\hookrightarrow L^q(\Omega)$ 是紧嵌入，即 $W^{1,p}$ 中的有界列在 $L^q$ 中有收敛子列。
+
+## 课堂问答
+
+**老师**：判断一个 $W^{k,p}$ 函数的正则性，看什么量？
+
+**学生**：看正则性指数 $k-n/p$。$kp<n$ 时 $W^{k,p}\hookrightarrow L^{p^*}$，$p^*=\frac{np}{n-kp}$；$kp=n$ 时嵌入到一切 $L^q\ (1\le q<\infty)$；$kp>n$ 时嵌入 Hölder 空间 $C^{k-\lfloor n/p\rfloor-1,\gamma}$。
+
+**老师（追问）**：作为基础的 Gagliardo–Nirenberg–Sobolev 不等式怎么证？
+
+**学生**：先做 $p=1$。由微积分基本定理 $\|u(x)\|\le\int|\partial_{x_1}u|\,dt_1$，$n$ 个方向相乘得 $|u(x)|^n\le\prod_{i=1}^n\int|\partial_{x_i}u|\,dt_i$，逐坐标用 Hölder 与 Fubini 迭代，最终 $\|u\|_{L^{n/(n-1)}}\le\int|\nabla u|$；一般 $1<p<n$ 对 $v=|u|^\gamma$ 再用一次 Hölder 即得。
+
+**老师（拓展）**：低维情形给出什么直观？
+
+**学生**：$n=3$ 的 $H^1=W^{1,2}$ 满足 $2<n$，故 $H^1\hookrightarrow L^{6}$（$p^*=6$）且紧嵌入到任意 $L^q\ (q<6)$；$n=2$ 时 $kp=n$，入一切 $L^q$ 但不一定连续；$n=1$ 时 $k-n/p=1/2>0$，$H^1\hookrightarrow C^{0,1/2}$。常见误区是漏掉 $kp>n$ 时 Hölder 指数在 $n/p$ 为整数与分数时的差别，以及以为 $kp=n$ 也能保证连续（其实一般不能）。

@@ -107,6 +107,23 @@ $$
 - 大偏差与经验过程：给出经验过程 $\sup_{k\le n}$ 型统计量的指数界，是经典大偏差原理的离散、非渐近对应物。
 - 自归一化统计：Pinelis 把不等式推广到以 $\sqrt{\sum_i X_i^{2}}$ 归一化的形式，适用于 t 统计量的非渐近分析。
 
+## 课堂问答
+
+**老师**：为什么"过程最大值$\max_{k\le n}S_k$"的尾界能不多付$\log n$？
+
+**学生**：因为不必对每个时刻单独做联合界，而是构造指数上鞅$M_k=\exp(\lambda S_k-\frac{\lambda^2}{2}\sum_{i\le k}c_i^2)$，其中补偿项抵消累积涨落。对非负上鞅用 Ville 极大不等式直接得到全时刻一致的界
+$$
+\mathbb P\Big(\max_{0\le k\le n}S_k\ge x\Big)\le\exp\Big(-\frac{x^2}{2\sigma^2}\Big),\qquad\sigma^2=\sum_i c_i^2.
+$$
+
+**老师（追问）**：上鞅性质依据哪一步？$\lambda$怎么定？
+
+**学生**：由条件 Hoeffding 引理，对鞅差$X_i\in[-c_i,c_i]$有$\mathbb E[e^{\lambda X_i}\mid\mathcal F_{i-1}]\le e^{\lambda^2c_i^2/2}$，逐项相乘并约掉补偿因子即得$\mathbb E[M_k\mid\mathcal F_{k-1}]\le M_{k-1}$。得到$\mathbb P(\max S_k\ge x)\le\exp(-\lambda x+\frac{\lambda^2\sigma^2}{2})$后对$\lambda$最优，取$\lambda=x/\sigma^2$即得指数$-\frac{x^2}{2\sigma^2}$。
+
+**老师（拓展）**：它在哪些场景不可替代？
+
+**学生**：序贯分析中构造置信序列、Bandit 的 regret 界、经验过程的$\sup_{k\le n}$型统计量都要求"对一切时刻同时成立"，终点界做不到。它与终点 Hoeffding–Azuma 界共享同一指数速率，不额外损失$\log n$因子，这正是 Pinelis 的关键贡献。
+
 ## 相关条目
 
 - [切比雪夫型指数不等式](./切比雪夫型指数不等式.md)：同属该级别的指数型尾界，可比较终点界与极大界的差别。

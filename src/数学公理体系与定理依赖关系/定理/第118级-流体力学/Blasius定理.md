@@ -111,6 +111,28 @@ $$
 - Kutta-Joukowski 升力定理与 d'Alembert 伴谬：公式取远场大圆并只保留 $1/z$ 项即得 $L=\rho U\Gamma$，并说明理想势流中阻力恒为零。
 - 复分析方法的应用范例：把物理量（力、力矩）化为全纯函数的围道积分与留数，是理论物理中"解析方法求全局量"的经典范式。
 
+## 课堂问答
+
+**老师**：为什么绕翼型的合力可以只用远场 Laurent 系数算出来，完全不必逐点积分压力？
+
+**学生**：因为可以把"压力沿边界的积分"整体改写成"复速度平方的围道积分"
+$$
+F_x-iF_y=\frac{i\rho}{2}\oint_C\left(\frac{dw}{dz}\right)^2dz,
+$$
+物体边界是流线（$\psi=\text{const}$），用 $q\,dz=\bar q\,d\bar z$ 消去共轭，再借 Cauchy 定理把围道变形到远场大圆，用留数只取 $1/z$ 项，结果与形状无关。
+
+**老师（追问）**："边界是流线"具体用在哪一步？
+
+**学生**：用在 $dw=d\phi$ 为实的全微分，从而 $q\,dz=\bar q\,d\bar z$，即 $d\bar z=\frac{q^2}{|q|^2}dz$。这一步把只含 $d\bar z$ 的压力积分换成含 $dz$ 的围道积分；常数项 $C\oint d\bar z=0$ 也随之消失，只剩 $\frac{i\rho}{2}\oint q^2dz$。
+
+**老师（拓展）**：力矩公式为什么多出一个 $z$？
+
+**学生**：因为力矩是 $\boldsymbol r\times\boldsymbol F$，在复数写法里对应 $\mathrm{Im}[\bar z\,dF]$，利用 $\oint\bar z\,dz=-\oint z\,d\bar z$ 把 $\bar z$ 转成 $z$，得
+$$
+M=\frac{\rho}{2}\,\mathrm{Re}\left[\oint_C z\left(\frac{dw}{dz}\right)^2dz\right].
+$$
+它比合力多依赖一阶远场系数，这解释了为何升力只看 $1/z$ 项，而力矩还要看更高阶项。
+
 ## 相关条目
 
 - [Kutta-Joukowski定理](./Kutta-Joukowski定理.md)：本定理取远场留数后的直接推论，给出升力 $L=\rho U\Gamma$。

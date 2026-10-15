@@ -95,3 +95,17 @@ $$
 **例**：在 $\mathbb{Z}_5$ 中，方程 $x^2 + 1 = 0$ 有解，因为模 $5$ 时 $x^2 + 1 \equiv (x-2)(x-3) \pmod{5}$，且两个因子互素。由 Hensel 引理，存在 $a \in \mathbb{Z}_5$ 使得 $a^2 + 1 = 0$，即 $\sqrt{-1} \in \mathbb{Q}_5$。
 
 **应用**：完备化与 Hensel 引理是代数数论（$p$-adic 数）、代数几何（形式概形）和局部环理论的基本工具。$\square$
+
+## 课堂问答
+
+**老师**：完备化与 Hensel 引理分别说了什么？
+
+**学生**：$(R,\mathfrak{m})$ 的 $\mathfrak{m}$-adic 完备化是 $\hat R=\varprojlim_n R/\mathfrak{m}^n$。Hensel 引理简单形式：完备局部环中若 $f(a_0)\equiv0\pmod{\mathfrak{m}}$ 且 $f'(a_0)$ 是单位，则存在唯一 $a\equiv a_0\pmod{\mathfrak{m}}$ 使 $f(a)=0$。一般形式：若 $\bar f=\bar g_0\bar h_0$ 且 $\bar g_0,\bar h_0$ 互素，则可提升为 $f=gh$，且 $\deg g=\deg\bar g_0$。常见误区：必须要求 $f'(a_0)$ 可逆；当 $p$ 整除导数时可能无根或出现重根分歧。
+
+**老师（追问）**：简单形式的迭代怎么构造？为什么一定收敛到真根？
+
+**学生**：用牛顿迭代 $a_{n+1}=a_n-f(a_n)f'(a_n)^{-1}$。由 $f'(a_0)$ 是单位可知各 $f'(a_n)$ 始终可逆，且 $f(a_n)\equiv0\pmod{\mathfrak{m}^{n+1}}$ 逐步精确一级。完备性保证 $\{a_n\}$ 在 $\mathfrak{m}$-adic 拓扑下是 Cauchy 列并收敛，极限 $a$ 满足 $f(a)=0$，唯一性由每步唯一决定保证。
+
+**老师（拓展）**：一般形式里的提升是怎么实现的？
+
+**学生**：设已有 $f-g_nh_n\in\mathfrak{m}^{n+1}R[x]$。因 $\bar g_0,\bar h_0$ 互素，存在 $a,b$ 使 $ag_0+bh_0\equiv1\pmod{\mathfrak{m}}$，取 $u_n=b(f-g_nh_n)$、$v_n=a(f-g_nh_n)$，则误差进入 $\mathfrak{m}^{n+2}$。完备性下 $\{g_n\},\{h_n\}$ 收敛为 $f=gh$。例如 $\mathbb{Z}_5$ 中 $x^2+1\equiv(x-2)(x-3)$ 提升给出 $\sqrt{-1}\in\mathbb{Q}_5$。

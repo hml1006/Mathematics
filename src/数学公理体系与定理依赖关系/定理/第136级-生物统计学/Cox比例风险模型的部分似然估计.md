@@ -61,3 +61,19 @@ $$
 ## 五、应用与意义
 
 Cox 模型是临床与流行病学生存分析的标准方法，广泛用于临床试验、药物疗效与预后因素分析。其"部分似然"思想无需估计基线风险，极大简化推断；结合鞅理论的稳健标准误与检验，已成生存分析最常用的回归工具。
+
+## 课堂问答
+
+**老师**：Cox 模型里基线风险 $h_0(t)$ 未知，凭什么还能估计 $\beta$？
+
+**学生**：结论——因为每个事件时刻的条件概率里 $h_0$ 相消，得到不依赖基线的**部分似然**
+$$L(\beta)=\prod_{i:\delta_i=1}\frac{e^{\beta'X_i}}{\sum_{j\in R(t_i)}e^{\beta'X_j}},\qquad R(t)=\{j:T_j\ge t\}$$
+理由：给定风险集 $R(t_i)$，事件恰在个体 $i$ 上的条件概率为 $\frac{h_0e^{\beta'X_i}}{\sum_jh_0e^{\beta'X_j}}=\frac{e^{\beta'X_i}}{\sum_je^{\beta'X_j}}$。常见误区：以为这样"丢掉了信息"——部分似然只对 $\beta$ 做推断，基线用 Breslow 估计量另行处理。
+
+**老师（追问）**：怎么证明 $\hat\beta$ 一致且渐近正态？
+
+**学生**：用计数过程鞅框架。取 $N_i(t)=\mathbf1_{\{T_i\le t,\delta_i=1\}}$、$Y_i(t)=\mathbf1_{\{T_i\ge t\}}$，则 $M_i=N_i-\Lambda_i$ 为鞅；得分函数可写成鞅积分 $U(\beta)=\sum_i\int_0^\infty[X_i-\bar X(\beta,s)]\,dM_i(s)$，其中 $\bar X(\beta,t)=\frac{\sum_{j\in R(t)}X_je^{\beta'X_j}}{\sum_{j\in R(t)}e^{\beta'X_j}}$。鞅积分期望为零、鞅 CLT 给 $n^{-1/2}U(\beta_0)\xrightarrow{d}N(0,\mathcal I)$，再由泰勒展开与 Slutsky 得 $\sqrt n(\hat\beta-\beta_0)\xrightarrow{d}N(0,\mathcal I^{-1})$。
+
+**老师（拓展）**：观察信息矩阵在结构上是什么？
+
+**学生**：$I(\beta)=\sum_{i:\delta_i=1}\text{Var}_{R(t_i)}(X)$，即各事件时刻风险集内协变量（按 $e^{\beta'X}$ 加权）的方差之和；$n^{-1}I(\beta)\xrightarrow{p}\mathcal I(\beta)$ 由大数定律与鞅收敛给出，这正是 M-估计一致性的关键。

@@ -40,3 +40,21 @@ $$
 ## 五、应用与意义
 
 LQR 是线性最优控制的标准解法，用于航空航天、机器人运动规划与工业过程控制。其“Riccati 方程 + 状态反馈”的结构兼顾性能与稳定性，也为 H∞ 控制、MPC 等现代方法奠定基础。
+
+## 课堂问答
+
+**老师**：对无限时域二次指标 $J=\int_0^\infty(\boldsymbol x^{\top}\boldsymbol Q\boldsymbol x+\boldsymbol u^{\top}\boldsymbol R\boldsymbol u)\,dt$，最优控制为什么一定是状态反馈，而且带一个常数增益？
+
+**学生**：结论是 $\boldsymbol u^*=-\boldsymbol K\boldsymbol x$，$\boldsymbol K=\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P$，常数增益来自值函数的二次型结构。因为系统与指标都定常、时不变，动态规划的最优值函数只依赖当前状态，而 $\boldsymbol Q,\boldsymbol R$ 与时间无关，故令 $V=\boldsymbol x^{\top}\boldsymbol P\boldsymbol x$ 后 $\boldsymbol P$ 也不依赖时间，反馈增益自然定常。
+
+**老师（追问）**：那你把最优控制回代 HJB，凭什么 $\boldsymbol P$ 满足的就是那个 Riccati 方程，闭环又凭什么稳定？
+
+**学生**：把 $V=\boldsymbol x^{\top}\boldsymbol P\boldsymbol x$、$\nabla V=2\boldsymbol P\boldsymbol x$ 代入定常 HJB，对 $\boldsymbol u$ 求导得 $2\boldsymbol R\boldsymbol u+2\boldsymbol B^{\top}\boldsymbol P\boldsymbol x=\boldsymbol 0$，故 $\boldsymbol u^*=-\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P\boldsymbol x$；回代即得
+$$
+\boldsymbol A^{\top}\boldsymbol P+\boldsymbol P\boldsymbol A-\boldsymbol P\boldsymbol B\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P+\boldsymbol Q=\boldsymbol 0 .
+$$
+再取 $V$ 为闭环 Lyapunov 函数，得 $\dot V=-\boldsymbol x^{\top}(\boldsymbol Q+\boldsymbol K^{\top}\boldsymbol R\boldsymbol K)\boldsymbol x\le0$，故闭环稳定。常见误区是把 Riccati 方程写成 $\boldsymbol A^{\top}\boldsymbol P+\boldsymbol P\boldsymbol A+\boldsymbol Q=\boldsymbol 0$，漏掉 $-\boldsymbol P\boldsymbol B\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P$ 这个负二次项。
+
+**老师（拓展）**：如果 $\boldsymbol Q$ 只是半正定，$\dot V$ 只能半负定，稳定性论证会怎样被削弱？
+
+**学生**：此时只能保证 Lyapunov 稳定，不能直接得渐近稳定；要靠 $(\boldsymbol A,\boldsymbol Q^{1/2})$ 可观使 $\{\dot V=0\}$ 不含非零完整轨道，再用 LaSalle 不变集原理补上。这正呼应代数Riccati方程里"可检测"的假设——可检测是可观的弱化，只在不可观子空间上额外要求自稳定。

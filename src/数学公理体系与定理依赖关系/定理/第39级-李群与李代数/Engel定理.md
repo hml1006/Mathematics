@@ -58,3 +58,17 @@ Engel 定理的证明依赖于一个关键引理：若 $\mathfrak{g}$ 是 $\math
 考虑商李代数 $\mathfrak{g}_1 = \mathfrak{g}/\langle Z \rangle$。对任意 $X \in \mathfrak{g}$，$\text{ad}_X$ 在 $\mathfrak{g}_1$ 上的诱导作用仍是幂零的。由归纳假设，$\mathfrak{g}_1$ 是幂零的。设 $\mathfrak{g}_1$ 的降中心列长度为 $k$，则 $\mathfrak{g}$ 的降中心列长度不超过 $k+1$，故 $\mathfrak{g}$ 是幂零的。$\square$
 
 **推论**：若 $\mathfrak{g}$ 是有限维李代数，且每个 $X \in \mathfrak{g}$ 是 $\text{ad}$-幂零的，则 $\mathfrak{g}$ 是幂零李代数。
+
+## 课堂问答
+
+**老师**：Engel 定理凭什么把"每个元素幂零"与"整体幂零"划等号？
+
+**学生**：结论是：有限维 $\mathfrak{g}$ 幂零 $\iff$ 每个 $\operatorname{ad}_X$ 幂零。充分性的核心是公共零向量引理——若子李代数 $\mathfrak{g}\subseteq\mathfrak{gl}(V)$ 中每个元素幂零，则存在非零 $v$ 使所有 $Xv=0$。把它用到 $\operatorname{ad}(\mathfrak{g})$ 上便得非零中心元 $Z$，再对商代数 $\mathfrak{g}/\langle Z\rangle$ 归纳即完成。
+
+**老师（追问）**：公共零向量引理怎么证？
+
+**学生**：对 $\dim\mathfrak{g}$ 归纳。取极大真子代数 $\mathfrak{h}$，由归纳得非零 $v$ 使 $\mathfrak{h}v=0$；令 $W=\{w:\mathfrak{h}w=0\}$，因 $[Y,\mathfrak{h}]\subseteq\mathfrak{h}$ 有 $YW\subseteq W$。取 $Y\notin\mathfrak{h}$，$Y|_W$ 幂零故有非零 $w\in W$ 使 $Yw=0$；又 $\mathfrak{g}=\mathfrak{h}\oplus\langle Y\rangle$，故 $w$ 对所有 $X\in\mathfrak{g}$ 零化。
+
+**老师（拓展）**：它最容易和哪个定理混淆？
+
+**学生**：容易和 Lie 定理混淆。Engel 对应"幂零 $\Rightarrow$ 可同时严格上三角化"（对角线全为 0），Lie 对应"可解 $\Rightarrow$ 可同时上三角化"（对角线未必为 0）。另一个误区是把"逐点幂零"当成"存在统一幂次 $n$ 使所有 $(\operatorname{ad}_X)^n=0$"——引理的真正作用正是把逐点性升级为整体幂零。

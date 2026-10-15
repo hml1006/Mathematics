@@ -160,3 +160,17 @@ Serre 对偶 $H^q(X, E) \cong H^{n-q}(X, E^* \otimes K)^*$ 的证明基于 $\bar
 ### 8. 调和形式作为规范代表
 
 Hodge 定理提供"标准代表"，使调和理论、规范固定（如 Donaldson 理论中 ASD 连络的规范选择）成为标准方法。
+
+## 课堂问答
+
+**老师**：Hodge 定理说每个上同调类都有唯一调和代表元。唯一性到底靠什么？
+
+**学生**：靠正交分解。$\Delta''=\bar\partial\bar\partial^*+\bar\partial^*\bar\partial$ 是紧流形上的椭圆自伴算子，于是 $\mathcal A^{p,q}=\mathcal H^{p,q}\oplus\Delta''\mathcal A^{p,q}$ 且 $\mathcal H^{p,q}=\ker\Delta''$ 有限维。给定 $\bar\partial$-闭的 $\alpha$，分解 $\alpha=h+\Delta''v$ 后作用 $\bar\partial$ 并利用 $\bar\partial^2=0$ 得 $\bar\partial^*\bar\partial v=0$，故 $\alpha=h+\bar\partial(\bar\partial^*v)$，与 $h$ 同类。唯一性用正交：若 $h_1-h_2=\bar\partial\beta$，则 $\langle\bar\partial\beta,h\rangle=\langle\beta,\bar\partial^*h\rangle=0$，于是 $h_1=h_2$。
+
+**老师（追问）**：如果度量不是 Kähler，这个定理还成立吗？Kähler 条件究竟用在哪一步？
+
+**学生**：$\bar\partial$-Hodge 定理对任意紧 Hermitian 复流形都成立（椭圆性不依赖 Kähler），所以同构 $\mathcal H^{p,q}\cong H^{p,q}$ 没问题。Kähler 条件用在更强的地方：它给出 $\Delta''=\frac12\Delta_d$，使调和 $(p,q)$-形式恰好是实调和 $k$-形式按类型的分解，这才把各个 $H^{p,q}$ 拼成 $H^k_{\mathrm{dR}}$ 的直和。换句话说，Kähler 性是"Hodge 结构"而非"有限维性"的关键。
+
+**老师（拓展）**：既然调和形式是最优的"标准代表元"，它在几何里扮演什么角色？
+
+**学生**：它给出每个上同调类唯一的能量最小代表，因此调和理论是几何中规范固定的标准工具（如 Hodge 分解定规范、Donaldson 理论中 ASD 联络的选取）；同时它使 $h^{p,q}$ 良定义，是 Hodge 数、周期映射与 Torelli 型问题的基础。

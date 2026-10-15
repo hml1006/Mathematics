@@ -34,3 +34,17 @@
 - **灵敏度/影子价格**.最优对偶变量给出约束松弛的边际价值，用于经济学与资源分配。
 - **内点与分解**.Slater 保证原–对偶内点法收敛到同一最优值，支撑大规模分解算法。
 - **理论地位**.把"原–对偶等价"严格化，是凸优化的核心结论之一。
+
+## 课堂问答
+
+**老师**：强对偶证明里，为什么要点出"Slater 保证"的那一步？
+
+**学生**：因为证明用摄动集 $\mathcal A=\{(u,t)\}$ 的支撑超平面得到乘子 $(\tilde\lambda,\tilde\mu)\ge0$，要把它归一化成 $\lambda=\tilde\lambda/\tilde\mu$ 才能回代拉格朗日函数，就必须 $\tilde\mu>0$，而这一步只有 Slater 能保证。
+
+**老师（追问）**：请还原"Slater $\Rightarrow\tilde\mu>0$"的反证。
+
+**学生**：取 Slater 点 $x_0$ 使所有非仿射约束 $f_i(x_0)<0$。由支撑超平面不等式 $\tilde\lambda^\top u+\tilde\mu t\ge\tilde\mu p^*$。若 $\tilde\mu=0$，代入 $(u_i,t)=(f_i(x_0),f_0(x_0))\in\mathcal A$ 得 $\sum_i\tilde\lambda_i f_i(x_0)\ge0$；但 $\tilde\lambda_i\ge0,\ f_i(x_0)<0$ 又给出 $\le0$，故该和为 $0$，因每个 $f_i(x_0)<0$ 必有 $\tilde\lambda_i=0$，于是 $(\tilde\lambda,\tilde\mu)=0$，与"非零"矛盾。
+
+**老师（拓展）**：哪些约束可以豁免 Slater 的"严格"要求？
+
+**学生**：仿射约束。因为 $f_i(x_0)<0$ 的严格不等是为了对负项做严格放缩；仿射约束 $a_i^\top x-b_i\le0$ 允许取等（本质只需在相对内点可行），对应项的 $\tilde\lambda_i$ 无法被强制归零。这正是定理表述里说"relint 内、非仿射约束严格成立"的原因——常见误区是把 Slater 误读成"所有约束都必须严格"，那会错误地排除掉带等式约束的正则问题。

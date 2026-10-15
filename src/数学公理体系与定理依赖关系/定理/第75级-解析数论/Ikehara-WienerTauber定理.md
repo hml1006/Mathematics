@@ -69,6 +69,24 @@ $$
 - 在加性数论与筛选理论中，它是圆法、Selberg 筛之外另一条"由解析奇性得渐近"的主干线。
 - Wiener 型版本把结论推广到任意 Tauber 核，是调和分析与数论的公共桥梁。
 
+## 课堂问答
+
+**老师**：Ikehara 定理把"解析奇性"翻译成"计数渐近"，请陈述它并指出最关键的假设。
+
+**学生**：设 $a_n\ge0$，$f(s)=\sum a_nn^{-s}$ 在 $\operatorname{Re}s>1$ 收敛。若 $h(s)=f(s)-\frac{A}{s-1}$ 可连续延拓到闭半平面 $\operatorname{Re}s\ge1$，则 $\sum_{n\le x}a_n\sim Ax$。最关键的是两条：系数非负，以及在 $\operatorname{Re}s=1$ 上除单极点外残留项连续。
+
+**老师（追问）**：非负性在证明里到底起什么作用？
+
+**学生**：它让 $A(x)$ 单调不减，从而能把"平滑平均收敛"升级为"逐点收敛"。由 Perron 公式左移积分路径，
+$$
+A(x)=Ax+\frac{1}{2\pi i}\int_{1-i\infty}^{1+i\infty}h(s)\frac{x^s}{s}ds,
+$$
+残余积分经傅里叶变换与 Riemann-Lebesgue 引理是 $o(x)$，再用 $\frac{A(\lambda x)}{x}\le\frac{A(x)}{x}\le\frac{A(\mu x)}{x}$ 夹逼取 $\lambda\to1^-,\mu\to1^+$，即得 $A(x)\sim Ax$。
+
+**老师（拓展）**：它为何被称为素数定理的"干净引擎"？
+
+**学生**：因为只要验证 $\zeta$ 在 $\operatorname{Re}s\ge1$ 无零点（等价于 $\zeta-\frac{1}{s-1}$ 连续延拓），定理立刻给出 $\psi(x)\sim x$，无须显式公式或零点分布知识；它同样是 Dirichlet 定理与 Chebotarev 密度定理最后一步的统一工具。
+
 ## 相关条目
 
 - [素数定理](./素数定理.md)：以本定理作为最后一步，由 $\psi(x)\sim x$ 推出 $\pi(x)\sim\frac{x}{\log x}$。

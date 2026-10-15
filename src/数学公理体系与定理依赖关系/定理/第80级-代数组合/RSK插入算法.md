@@ -81,3 +81,17 @@ $Q$：$Q_k$ 恰在 $P_k$ 新增格处填入 $k$，故 $\mathrm{sh}(Q_k)=\mathrm{
 RSK 插入算法是组合数学中"统一解释"的典范。它给出 $S_n$ 与 SYT 对的显式双射，从而推出 $n!=\sum_{\lambda\vdash n}(f^\lambda)^2$ 与钩长公式的表示论含义（$f^\lambda$ 是 $S_n$ 不可约表示维数）；由 $\lambda_1$ 与最长递增子序列的关系（Schensted 定理），它把 Ulam 问题、Baik–Deift–Johansson 定理与 Tracy–Widom 分布联系起来，成为随机排列与随机矩阵理论的桥梁。Greene 定理使形状成为"不交递增/递减子序列"的完整统计量。
 
 在推广方向，Knuth 等价类理论说明"同一 $P$ 表"刻画了词的 Knuth 等价，从而给出对称函数 $s_\lambda$ 与 Plactic 幺半群的标准结构；行插入与 crystal 理论中的"插入 (bumping) 算子"一致，是 Schur 函数、Littlewood–Richardson 系数与表示论（Schensted 对应、形状下置算子）计算的核心算法；在计算机科学中，它以耐心排序形式成为最长递增子序列 $O(n\log n)$ 算法的理论基础。
+
+## 课堂问答
+
+**老师**：RSK 的"挤牌式插入"规则是什么，为什么可行？
+
+**学生**：每读入一个数 $x$，从第一行找最小的 $>x$ 的元素 $y$，用 $x$ 顶掉它并把 $y$ 递归插入下一行，直到某行无更大元素就加在行尾；同时在新格处向记录表 $Q$ 填当前下标。可行性靠三个不变量：$P$ 始终行弱增、列严格增（置换情形取值互异，故 $P$ 是标准表）；每次插入形状恰增一个外角格；新格出现最晚、位置最外侧，故 $Q$ 行列严格增、也是标准表。终止性源于被顶元素逐行下落、行号严格增大。
+
+**老师（追问）**：怎么证明它是双射，并读出 $n!=\sum_{\lambda\vdash n}(f^\lambda)^2$？
+
+**学生**：逆算法确定：取 $Q$ 中最大下标所在格（最后一次插入的落点，必是 $P$ 的外角格），沿碰撞路径反向把元素"吸"回去，唯一还原被插入的数。正逆互逆，故 $\mathrm{RS}:\pi\mapsto(P,Q)$ 是 $S_n$ 到 $\bigcup_{\lambda\vdash n}\mathrm{SYT}(\lambda)\times\mathrm{SYT}(\lambda)$ 的双射，两边计数即得 $n!=\sum_{\lambda\vdash n}(f^\lambda)^2$；还有 $\mathrm{RS}(\pi^{-1})=(Q,P)$。
+
+**老师（拓展）**：形状本身有什么组合含义？
+
+**学生**：Greene 定理：$\lambda_1+\cdots+\lambda_k$ 等于 $\pi$ 的 $k$ 个两两不交递增子序列的最大总长，$\lambda'_1+\cdots+\lambda'_k$ 对应递减子序列，特别 $\lambda_1$ 就是最长递增子序列长度——这把它接到 Ulam 问题与随机矩阵（Tracy–Widom）上。误点：把"最小的 $>x$"写成"$\ge x$"会破坏置换情形的严格性。

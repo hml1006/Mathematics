@@ -110,3 +110,17 @@ de Rham 定理在数学中有深远影响：
 7. **同伦论**：de Rham 定理的推广（如 rational homotopy theory）用于研究流形的有理同伦类型。
 
 de Rham 定理的推广包括：带平坦丛系数的 de Rham 定理、等变 de Rham 定理、以及非交换几何中的推广。
+
+## 课堂问答
+
+**老师**：de Rham 定理说的同构是什么？
+
+**学生**：光滑流形上积分映射 $I:H^k_{\text{dR}}(M)\xrightarrow{\cong}H^k(M;\mathbb R)$，$I([\omega])([c])=\sum a_i\int_{\sigma_i}\omega$，且是环同构 $I([\omega]\wedge[\eta])=I([\omega])\cup I([\eta])$。
+
+**老师（追问）**：良定性与同构性分别靠什么？
+
+**学生**：良定性靠 Stokes：$c$ 是循环时 $\int_\sigma d\eta=\int_{\partial\sigma}\eta=0$，故恰当形式积分为零。同构性用 Poincaré 引理处理可缩开集，再对 $M=U\cup V$ 用 MV 序列与五引理归纳。
+
+**老师（拓展）**：环结构对应怎么证，常见误区在哪？
+
+**学生**：对 $\sigma:\Delta^{p+q}\to M$，有 $\int_\sigma\omega\wedge\eta=\int_{\sigma\circ\lambda_p}\omega\cdot\int_{\sigma\circ\rho_q}\eta=\langle I(\omega)\cup I(\eta),\sigma\rangle$，其中用了 AW 映射。常见误区是以为同构对任意系数成立——它本质是 $\mathbb R$ 系数，整数系数无此对应。

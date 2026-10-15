@@ -38,3 +38,23 @@ $$
 ## 五、应用与意义
 
 $R$-矩阵是量子群联系纽结理论、可积系统与统计力学的枢纽。它给出辫子群表示（通过 $\check{R}=\tau\circ R$），进而经量子迹构造 Jones 多项式等量子不变量。在统计力学中，$R$-矩阵是满足 Yang-Baxter 方程的可积传递矩阵的构造单元，是求解精确可积模型（如六顶点模型、Heisenberg 自旋链）的代数 Bethe ansatz 的基础。唯一性保证了拟三角结构的正则性，使其在量子代数和数学物理中被广泛用于构造不变量族。
+
+## 课堂问答
+
+**老师**：$U_q(\mathfrak{sl}_2)$ 的 $R$-矩阵具体是什么？
+
+**学生**：
+
+$$
+R=q^{\frac12 H\otimes H}\sum_{n=0}^{\infty}\frac{(1-q^{-2})^n}{[n]!}q^{\frac{n(n-1)}2}\big(E^n\otimes F^n\big),
+$$
+
+其中 $K=q^H$，$[n]!$ 为 q-阶乘。它在完备化中满足拟三角三条件与 Yang-Baxter 方程，且在完备化意义下唯一。
+
+**老师（追问）**：验证 $\Delta^{\rm op}(x)R=R\Delta(x)$ 时，对生成元 $E$ 具体怎么算？
+
+**学生**：$\Delta(E)=E\otimes K+1\otimes E$，$\Delta^{\rm op}(E)=K\otimes E+E\otimes1$，需证 $(K\otimes E+E\otimes1)R=R(E\otimes K+1\otimes E)$。关键是两个交换关系 $q^{\frac12 H\otimes H}(E\otimes1)=q^{1\otimes H}(E\otimes1)q^{\frac12 H\otimes H}$ 与 $q^{\frac12 H\otimes H}(1\otimes E)=q^{H\otimes1}(1\otimes E)q^{\frac12 H\otimes H}$，把指数因子挪过去后逐项核对 $E^n\otimes F^n$ 级数即得相等，$F$ 同理。另两条 $(\Delta\otimes\operatorname{id})R=R_{13}R_{23}$、$(\operatorname{id}\otimes\Delta)R=R_{13}R_{12}$ 由 $\Delta$ 的二项式展开验证。
+
+**老师（拓展）**：唯一性靠什么？这个 $R$ 有什么用？
+
+**学生**：唯一性由 Drinfeld 量子双的泛性质保证。用途上，$\check R=\tau\circ R$ 给出辫子群 $B_n$ 的表示，配合量子迹即可构造 Jones 等量子不变量；在统计力学中它给出满足 Yang-Baxter 方程的传递矩阵，是六顶点模型、Heisenberg 自旋链等可积模型代数 Bethe ansatz 的构造单元。

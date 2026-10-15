@@ -84,3 +84,19 @@ Levi 问题的解决具有深远影响：
 4. **复几何与代数几何**：在复几何中，Levi 问题的思想被推广到流形上的伪凸性（如 Grauert 的 Levi 问题），是紧 Kähler 流形、Stein 流形等理论的基础。
 
 5. **应用领域**：在量子场论、弦理论中涉及的复几何结构，以及信号处理与控制论中的多复变方法，都依赖于 Levi 问题建立的几何—分析对应。
+
+## 课堂问答
+
+**老师**：Levi 问题问的是什么？它最终由谁解决？
+
+**学生**：问"伪凸性是否等价于全纯凸性"，即伪凸域上是否有足够多的全纯函数。解答是 Levi–Oka 定理：$\Omega\subset\mathbb C^n$ 全纯凸 $\iff$ Levi 伪凸（存在 $C^2$ 穷竭函数 $\varphi$ 使 Levi 形式 $\sum\frac{\partial^2\varphi}{\partial z_j\partial\bar z_k}\xi_j\bar\xi_k\ge0$）。由 Oka(1953)、Bremermann(1954)、Norguet(1954) 独立肯定回答。常见误区是以为单复变的结论可照搬——单复变任何开集都全纯凸，问题只在多复变因 Hartogs 现象才显现。
+
+**老师（追问）**：核心方向"伪凸 $\Rightarrow$ 全纯凸"的现代证明怎么走？
+
+**学生**：关键是 Hörmander 的 $L^2$ 方法。给 $(0,1)$-形式 $g$（$\bar\partial g=0$）解 $\bar\partial u=g$ 且带权估计
+$$\int_\Omega|u|^2e^{-\varphi}\,dV\le\int_\Omega|g|^2e^{-\varphi}\,dV,$$
+再用 $\varphi_N=N\log|z-p|^2+\varphi$ 权先造带极点的近似全纯"芽"，解 $\bar\partial$ 方程修正非全纯部分，得到 $f\in\mathcal O(\Omega)$ 使 $|f(p)|>\sup_K|f|$；最后由穷竭函数证 $\hat K_\Omega$ 有界闭，故紧。
+
+**老师（拓展）**：这个结论对 Stein 流形理论意味着什么？
+
+**学生**：它是 Stein 流形的核心。Stein 流形 = 全纯凸 $+$ 全纯分离 $+$ 局部全纯坐标，本质上是"非紧复流形上的 Levi 问题"。它把几何凸性与全纯延拓能力绑定，使多复变可用几何方法研究函数论，也为 $\bar\partial$-Neumann 的 $L^2$ 理论提供了最初动机。

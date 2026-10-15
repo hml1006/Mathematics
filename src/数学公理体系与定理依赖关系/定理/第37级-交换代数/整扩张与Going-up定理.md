@@ -76,3 +76,17 @@
 **推论 2**（极大理想对应）：若 $A \subseteq B$ 是整扩张，则 $\mathfrak{m} \subseteq A$ 是极大理想当且仅当存在 $B$ 的极大理想 $\mathfrak{n}$ 使得 $\mathfrak{n} \cap A = \mathfrak{m}$。
 
 **应用**：整扩张和 Going-up 定理是代数数论（研究数域的整数环）、代数几何（研究有限态射）和交换代数中维数理论的基本工具。$\square$
+
+## 课堂问答
+
+**老师**：整扩张与 Going-up 定理讲的是什么？
+
+**学生**：$b\in B$ 在 $A$ 上整，指它是某个首一多项式 $x^n+a_{n-1}x^{n-1}+\cdots+a_0\in A[x]$ 的根；$B$ 中每个元素都整则 $B$ 是 $A$ 的整扩张。Going-up：若 $A$ 中有素理想链 $\mathfrak{p}_1\subseteq\cdots\subseteq\mathfrak{p}_n$，$B$ 中已给出前 $m<n$ 个提升满足 $\mathfrak{q}_i\cap A=\mathfrak{p}_i$，则可延伸出 $\mathfrak{q}_{m+1},\dots,\mathfrak{q}_n$ 保持包含。推论有 $\dim A=\dim B$。常见误区：整扩张并不要求 $B$ 是 $A$ 的有限生成模，只要求每个元素满足首一方程。
+
+**老师（追问）**：Going-down 与 Going-up 的区别从何而来？
+
+**学生**：Going-up 对任意整扩张都成立，方向是从下往上提升素理想；Going-down 需要额外假设——$A$ 整闭且 $B$ 整环——方向相反，从上往下提升。二者互补，合起来给出 $\dim A=\dim B$：Going-up 保证 $\dim A\le\dim B$，Going-down 保证 $\dim B\le\dim A$。
+
+**老师（拓展）**：单个素理想的提升（定理一）怎么证？关键工具是什么？
+
+**学生**：局部化 $S=A\setminus\mathfrak{p}$，$B_{\mathfrak{p}}=S^{-1}B$ 是 $A_{\mathfrak{p}}$ 的整扩张。令 $\mathfrak{m}=\mathfrak{p}A_{\mathfrak{p}}$，若 $\mathfrak{m}B_{\mathfrak{p}}=B_{\mathfrak{p}}$，则由整扩张与整性方程可知 $B_{\mathfrak{p}}$ 是有限生成 $A_{\mathfrak{p}}$-模，Nakayama 引理逼出 $B_{\mathfrak{p}}=0$，矛盾。故 $\mathfrak{m}B_{\mathfrak{p}}$ 是真正理想，含于某极大理想，交回 $B$ 即得 $\mathfrak{q}\cap A=\mathfrak{p}$。

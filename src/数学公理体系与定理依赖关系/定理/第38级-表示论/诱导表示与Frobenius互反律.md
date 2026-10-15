@@ -132,3 +132,17 @@ $\square$
 **推论 2**（诱导表示的维数）：$\dim \operatorname{Ind}_H^G W = [G:H] \cdot \dim W$。
 
 **应用**：诱导表示和 Frobenius 互反律是群表示论中最基本的工具之一，用于构造群的所有不可约表示、分析表示的结构以及在数论（Artin L-函数）和物理中都有重要应用。$\square$
+
+## 课堂问答
+
+**老师**：诱导表示的定义与 Frobenius 互反律是什么？
+
+**学生**：诱导表示 $\operatorname{Ind}_H^G W=\{f:G\to W\mid f(hg)=\sigma(h)f(g)\}$，等价于 $\mathbb{C}[G]\otimes_{\mathbb{C}[H]}W$，维数为 $[G:H]\dim W$。Frobenius 互反律：$\operatorname{Hom}_G(V,\operatorname{Ind}_H^GW)\cong\operatorname{Hom}_H(\operatorname{Res}_H^GV,W)$，特征标形式为 $\langle\operatorname{Ind}_H^G\psi,\chi\rangle_G=\langle\psi,\operatorname{Res}_H^G\chi\rangle_H$，即 $\operatorname{Ind}$ 是 $\operatorname{Res}$ 的左伴随。常见误区：诱导特征标在 $g$ 处不是限制的简单反向，而是 $\operatorname{Ind}_H^G\psi(g)=\frac{1}{|H|}\sum_{x^{-1}gx\in H}\psi(x^{-1}gx)$。
+
+**老师（追问）**：互反律中互为逆的映射是怎么构造的？
+
+**学生**：定义 $\Phi:\operatorname{Hom}_G(V,\operatorname{Ind}_H^GW)\to\operatorname{Hom}_H(\operatorname{Res}_H^GV,W)$，$\Phi(\varphi)(v)=\varphi(v)(1)$；逆映射 $\Psi(\alpha)(v)(g)=\alpha(g^{-1}v)$。前者是 $H$-等变，后者取值确实落在 $\operatorname{Ind}_H^GW$ 中且 $G$-等变，并验证 $\Phi\circ\Psi=\operatorname{id}$、$\Psi\circ\Phi=\operatorname{id}$，从而给出同构。
+
+**老师（拓展）**：由此可得哪些应用？
+
+**学生**：重数计算：$G$-表示 $V$ 中含 $\operatorname{Ind}_H^GW$ 的重数，等于限制 $\operatorname{Res}_H^GV$ 中含 $W$ 的重数，把 $G$ 上的问题化为 $H$ 上的问题。Mackey 判别法给出诱导表示不可约的充要条件，$\operatorname{Ind}$ 也是构造群全部不可约表示的关键工具，并出现在数论的 Artin L-函数中。

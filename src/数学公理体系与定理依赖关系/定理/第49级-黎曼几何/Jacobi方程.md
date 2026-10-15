@@ -101,3 +101,21 @@ $$
 反之，任取 $J$ 满足 Jacobi 方程，构造变分 $\Gamma(s,t)=\exp_{\gamma(t)}\big(s\,J(t)\big)$。对每个固定 $s$，$t\mapsto\Gamma(s,t)$ 未必是测地线；但沿 $\gamma$ 计算 $\nabla_TT$ 在 $s=0$ 的一阶导数时，上式第一步的推导反向可用：只要 $\nabla_S\nabla_TT|_{s=0}=0$ 且 $\nabla_ST=\nabla_TS$，就得到 $J$ 沿 $\gamma$ 的 Jacobi 方程成立。由 ODE 的**唯一性**（解由初值唯一确定），满足 Jacobi 方程且初值相同的场必与"由测地变分生成的场"一致；将 $\exp$ 换成沿 $J$ 的一阶变分并以 $\nabla_{\dot\gamma}J$ 的相应初值匹配，即可构造出以 $J$ 为变分场的单参数测地族。故 $J$ 是 Jacobi 场。$\square$
 
 **推论（共轭点）**：若存在非零 Jacobi 场 $J$ 使 $J(a)=J(b)=0$，则 $\gamma(a)$ 与 $\gamma(b)$ 互为共轭点；此时 $\gamma$ 不是局部的极小测地线，指数映射在 $t=b$ 处退化。
+
+## 课堂问答
+
+**老师**：写出 Jacobi 方程并给出它的变分刻画。
+
+**学生**：结论：沿测地线 $\gamma$ 的场 $J$ 是 Jacobi 场当且仅当
+$$\nabla_{\dot\gamma}\nabla_{\dot\gamma}J+R(J,\dot\gamma)\dot\gamma=0,$$
+等价地它是"每条曲线都是测地线"的单参数变分 $\Gamma(s,t)$ 在 $s=0$ 的变分场。推导只用两件事：每条曲线 $\nabla_TT=0$，以及对 $\nabla_S\nabla_TT=0$ 用 $[S,T]=0$ 的曲率交换 $\nabla_T\nabla_TS+R(S,T)T=0$。误区是把任意向量场都叫 Jacobi 场——它必须来自测地变分。
+
+**老师（追问）**：为什么全体 Jacobi 场构成 $2n$ 维空间？
+
+**学生**：在平行正交标架下写 $J=\sum_iJ^ie_i$，方程化为二阶线性 ODE 组
+$$\ddot J^i+\sum_jR^i_{\ j}(t)J^j=0,\quad R^i_{\ j}(t)=g(R(e_j,\dot\gamma)\dot\gamma,e_i),$$
+系数沿紧区间光滑有界，由存在唯一性定理，解由 $(J(0),\nabla_{\dot\gamma}J(0))$ 唯一确定，两组 $n$ 维数据给出 $2n$ 维解空间。
+
+**老师（拓展）**：Jacobi 场与共轭点、第二变分有何关系？
+
+**学生**：若非零 Jacobi 场满足 $J(a)=J(b)=0$，则 $\gamma(a),\gamma(b)$ 共轭，此时 $d\exp$ 退化、$\gamma$ 非局部极小。Jacobi 方程又正是指标形式（第二变分）的 Euler-Lagrange 方程，故 Jacobi 场是测地线二阶变分的零化方向，把稳定性纳入统一框架。

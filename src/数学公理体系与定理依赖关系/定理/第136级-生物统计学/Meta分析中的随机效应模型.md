@@ -47,3 +47,19 @@ $$
 ## 五、应用与意义
 
 随机效应模型是临床与流行病学 Meta 分析的标准做法，当研究间存在真实异质性时给出更稳健的合并效应与更诚实的置信区间，广泛用于循证医学证据综合、系统综述与指南制定。DerSimonian-Laird 法、$I^2$ 与 $\tau^2$ 已成为 Meta 分析报告与解释的核心术语。
+
+## 课堂问答
+
+**老师**：随机效应模型与固定效应模型的本质差别在哪？
+
+**学生**：结论——随机效应在权重里加入**研究间方差** $\tau^2$，即 $w_i=1/(v_i+\tau^2)$，而固定效应只用 $w_i=1/v_i$。理由：模型 $\hat\theta_i=\mu+\delta_i+e_i$ 下 $\text{Var}(\hat\theta_i)=v_i+\tau^2$，对 $\chi^2=\sum\frac{(\hat\theta_i-\mu)^2}{v_i+\tau^2}$ 最小化得加权估计 $\hat\mu=\frac{\sum_iw_i\hat\theta_i}{\sum_iw_i}$。常见误区：以为随机效应"总是更保守更好"——当 $\tau^2=0$ 时两者相同，且研究数很少时 $\hat\tau^2$ 不稳定。
+
+**老师（追问）**：$\tau^2$ 具体怎么估？
+
+**学生**：用矩估计（DerSimonian–Laird）。令 Cochran $Q=\sum_iw_i(\hat\theta_i-\hat\theta)^2$（$w_i=1/v_i$），矩条件 $Q\approx(k-1)+\big(\sum w-\frac{\sum w^2}{\sum w}\big)\tau^2$，解得
+$$\hat\tau^2=\max\Big(0,\ \frac{Q-(k-1)}{\sum_iw_i-\frac{\sum_iw_i^2}{\sum_iw_i}}\Big)$$
+再以 $w_i=1/(v_i+\hat\tau^2)$ 加权，并用 $I^2=\frac{Q-(k-1)}{Q}$ 度量异质性占比。
+
+**老师（拓展）**：为什么说随机效应"给离散研究更大权重"？
+
+**学生**：因为 $v_i+\tau^2$ 抬高了大方差（精度低）研究的总方差，使权重的相对差距被压缩，小研究获得更大权重、更接近等权；同时 $\text{Var}(\hat\mu)=1/\sum_iw_i$ 更大，置信区间更宽、更诚实。这就是循证医学中"研究间存在真实异质性时优先随机效应"的统计根据。

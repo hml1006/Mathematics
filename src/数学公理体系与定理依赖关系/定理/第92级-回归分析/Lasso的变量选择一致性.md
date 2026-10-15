@@ -38,3 +38,17 @@ $$
 ## 五、应用与意义
 
 Lasso 是稀疏高维回归与变量选择的核心工具，广泛应用于基因组、信号处理与机器学习稀疏建模。其变量选择一致性揭示了"何时能真正选对变量"的充分条件，也说明当不可表示条件被违反时 Lasso 可能失效，从而启发弹性网（Elastic Net）、自适应 Lasso 等改进。
+
+## 课堂问答
+
+**老师**：Lasso 凭什么能把系数精确压成 0，而岭回归做不到？
+
+**学生**：结论是 $L_1$ 惩罚的 K.K.T. 条件带 sign 约束，使不重要变量的内积只要不超过 $\lambda_n$ 就取 0。在不可表示条件 $\big|\boldsymbol{X}_2^\top\boldsymbol{X}_1(\boldsymbol{X}_1^\top\boldsymbol{X}_1)^{-1}\operatorname{sign}(\boldsymbol{\beta}_1^*)\big|<\boldsymbol{1}-\eta$ 下，oracle 解满足全部 K.K.T.，与 Lasso 解重合，于是 $\mathbb{P}(\{j:\hat{\beta}_j\neq0\}=\{j:\beta_j^*\neq0\})\to1$。其中 $\sqrt{n}\lambda_n\to\infty$ 负责压零，$\lambda_n\to0$ 负责让真信号不被过度收缩。
+
+**老师（追问）**：为什么 $\lambda_n$ 必须同时满足 $\to0$ 和 $\sqrt{n}\lambda_n\to\infty$？
+
+**学生**：$\sqrt{n}\lambda_n\to\infty$ 使噪声尺度下的假非零被压住（假阳趋 0），$\lambda_n\to0$ 使真信号的偏差消失（假阴趋 0）。两者夹出 $n^{-1/2}\ll\lambda_n\ll1$ 的窗口，缺一不可。
+
+**老师（拓展）**：不可表示条件一旦被违反会怎样？
+
+**学生**：那时两个高度相关的非重要变量可能被一起选入，Lasso 失去变量选择一致性；改用弹性网（加 $L_2$ 项）或自适应 Lasso 可在强相关下恢复精确选择。

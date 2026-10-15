@@ -137,6 +137,20 @@ $$
 
 **推广**：向 Galois 表示（Artin 表示的等分布，Chebotarev 的表示论形式）、向一般代数簇（Weil 猜测下的 Frobenius 等分布）、以及向函子性猜想（Langlands）的推广，构成现代算术几何的核心问题。
 
+## 课堂问答
+
+**老师**：Chebotarev 定理断言了素理想怎样的分布？怎么把"计数素理想"变成解析问题？
+
+**学生**：对未分歧素理想 $\mathfrak p$，$\operatorname{Frob}_{\mathfrak p}=C$ 的集合有自然密度 $|C|/|G|$，等价计数形式为 $\#\{\mathfrak p\in P_C:N\mathfrak p\le x\}\sim\frac{|C|}{|G|}\operatorname{li}(x)$。做法是用群特征标把指示函数展开 $\mathbf 1_C=\sum_\chi a_\chi\chi$，$a_\chi=\frac{|C|}{|G|}\overline{\chi(g_C)}$，把这些系数塞进 Artin L 函数的对数导数里。
+
+**老师（追问）**：解析输入是什么？为什么只有平凡特征标留下极点？
+
+**学生**：关键是 $L(s,\chi)$ 在 $\mathrm{Re}\,s\ge1$ 上除平凡 $\chi_0$（此时 $L(s,\chi_0)=\zeta_K(s)$，在 $s=1$ 有一阶极点）外全纯且非零，Galois 情形由 Brauer 诱导定理化到 Hecke L 函数再借类域论得出。于是 $\tilde f_C(s)=\frac{|C|}{|G|}\left(-\frac{\zeta_K'}{\zeta_K}\right)(s)+$ 在 $s=1$ 局部有界的项，读留数得 $|C|/|G|$，再用 Tauberian 定理把留数翻译成密度。
+
+**老师（拓展）**：常见误区与重要应用？
+
+**学生**：误区是以为它给出"每个共轭类的素理想绝对个数相等"——是密度比例而非个数，且这里用的是自然密度。取 $C=\{1\}$ 得完全分裂素理想密度 $1/[L:K]$；取 $K=\mathbb Q,L=\mathbb Q(\zeta_m)$ 即 Dirichlet 算术级数定理。Wiles 证明模性定理时靠它保证"足够多素数处表示同构 $\Rightarrow$ 模形式相同"，是 FLT 证明的定量支柱。
+
 ## 相关条目
 
 - [Artin互反律](./Artin互反律.md)：Chebotarev 定理给出 Artin 映射的满射性，是其证明的定量支柱。

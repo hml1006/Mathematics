@@ -92,6 +92,20 @@ $$\|u_{m_j}-u_{m_{j'}}\|_{L^p(0,T;B)}<\delta,$$
 $$H_0^1(\Omega)\hookrightarrow\hookrightarrow L^2(\Omega)\hookrightarrow H^{-1}(\Omega),$$
 配 $p=q=2$：Galerkin 近似 $u_m$ 有界于 $L^2(0,T;H_0^1)$、$\partial_tu_m$ 有界于 $L^2(0,T;H^{-1})$，于是 $u_m$ 在 $L^2(0,T;L^2)$ 中强收敛，从而可以对非线性项逐项取极限。这一"解空间—中间空间—对偶空间"的三明治结构正是 Aubin–Lions 引理的标准用法。
 
+## 课堂问答
+
+**老师**：$H_0^1\hookrightarrow\hookrightarrow L^2\hookrightarrow H^{-1}$，若近似解 $u_m$ 在 $L^p(0,T;X)$ 有界、$\partial_tu_m$ 在 $L^q(0,T;Y)$ 有界，为什么就能抽出在中间空间 $L^p(0,T;B)$ 中强收敛的子列？
+
+**学生**：结论是"两头受控 $\Rightarrow$ 中间强紧"。支点是由紧嵌入导出的插值不等式 $\|v\|_B\le\varepsilon\|v\|_X+C_\varepsilon\|v\|_Y$，它把 $B$ 范数拆成强空间 $X$ 的主控与弱空间 $Y$ 的尾巴校正。
+
+**老师（追问）**：时间方向的紧性从哪来？
+
+**学生**：由 Bochner 积分基本定理 $u_m(t+h)-u_m(t)=\int_t^{t+h}\partial_tu_m(s)\,ds$，再用 Hölder 得 $\|u_m(t+h)-u_m(t)\|_Y\le h^{1-1/q}\|\partial_tu_m\|_{L^q(t,t+h;Y)}$；经插值不等式换到 $B$ 范数后右端对 $m$ 一致趋于 $0$，正是 Fréchet–Kolmogorov 的平移判据。
+
+**老师（拓展）**：那空间方向与"取极限"这一步是怎么闭环的？
+
+**学生**：用紧嵌入作有限秩逼近 $P_\varepsilon$，使 $\|v-P_\varepsilon v\|_B\le\varepsilon\|v\|_X$，把问题降为有限维（$\cong\mathbb{R}^r$）空间上的经典 Kolmogorov–Riesz 紧性；再对 $\varepsilon_k=1/k$ 逐层抽子列取对角，得 $L^p(0,T;B)$ 中的 Cauchy 列。常见误区是以为 $L^\infty(0,T;X)$ 有界即可，实际上必须"强空间紧嵌入 + 弱空间连续嵌入"三明治，$L^p$ 与 $L^q$ 两界缺一不可。
+
 ## 相关条目
 
 - [Sobolev空间定义](./Sobolev空间定义.md)：$H_0^1,H^{-1}$ 与 Bochner 空间是引理的工作环境。

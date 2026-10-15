@@ -85,3 +85,17 @@ $$
 ## 五、应用与意义
 
 Alexander 多项式是纽结理论最经典的不变量之一。它可以有效区分大量纽结与链环，判定某些纽结是否非平凡，并用于研究纽结的切片性：Fox–Milnor 定理指出，若 $K$ 为切片纽结，则 $\Delta_K(t)$ 可分解为 $f(t)f(t^{-1})$（相差单位元）。Alexander 多项式也与纽结的纤维性密切相关：一个纽结为纤维纽结当且仅当其次级 Alexander 理想具有特定形式。此外，Alexander 多项式可推广为 Alexander–Conway 多项式、多变量 Alexander 多项式，并在代数几何（平面曲线奇点）、动力系统（辫群熵）以及低维流形手术研究中持续发挥重要作用。
+
+## 课堂问答
+
+**老师**：Alexander 多项式的两种定义为什么等价？
+
+**学生**：结论：一种来自纽结补无限循环覆盖同调，一种来自 Seifert 矩阵 $\det(V-tV^{\mathrm T})$。前者把 $G_K\to\mathbb Z$ 的覆盖 $\widetilde X$ 的第一同调看作 $\Lambda=\mathbb Z[t,t^{-1}]$ 上的挠模，其初等理想生成元即 $\Delta_K(t)$；后者用 Seifert 配对直接算行列式。二者相差 $\pm t^k$。
+
+**老师（追问）**：为什么 Alexander 模一定是挠模？
+
+**学生**：因为纽结补 $H_1(X)\cong\mathbb Z$，覆盖上 $H_0\cong\mathbb Z$ 被 $t-1$ 零化，$\partial_1$ 的像由 $(t-1)$ 生成。自由分解 $\Lambda^m\to\Lambda^n\to A(K)\to0$ 使 $E_1$ 理想非零，故 $A(K)$ 无自由部分、是挠模，初等因子给出非零多项式；这也解释了为何纽结的 $\Delta$ 不为零、而链环才可能为零因子。
+
+**老师（拓展）**：它有什么必有的对称性？
+
+**学生**：$\Delta_K(t)\doteq\Delta_K(t^{-1})$，并可归一化到 $\Delta_K(1)=\pm1$。由 $\det(V-tV^{\mathrm T})=(-t)^{2g}\det(V-t^{-1}V^{\mathrm T})$ 直接得到。它是区分纽结的经典手段，还用于切片性（Fox–Milnor：切片结满足 $\Delta_K(t)=f(t)f(t^{-1})$）与纤维性判定。

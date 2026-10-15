@@ -71,3 +71,21 @@ $$P(T_2 > t \mid T_1 = s) = P(\text{在 } (s, s+t] \text{ 内无事件} \mid N(s
 **推论**（叠加与分解）：
 - **叠加**：两个独立 Poisson 过程（强度 $\lambda_1, \lambda_2$）的叠加是强度 $\lambda_1 + \lambda_2$ 的 Poisson 过程。
 - **分解**：强度 $\lambda$ 的 Poisson 过程以概率 $p$ 独立标记每个事件，则标记事件和非标记事件分别构成强度 $\lambda p$ 和 $\lambda(1-p)$ 的独立 Poisson 过程。
+
+## 课堂问答
+
+**老师**：Poisson 过程为什么被"指数分布 + 独立增量"完全刻画？
+
+**学生**：因为无记忆性。若 $T_1\sim\text{Exp}(\lambda)$，则 $P(T_1>t)=e^{-\lambda t}=P(N(t)=0)$；再由独立增量，$P(T_2>t\mid T_1=s)=P(N(s+t)-N(s)=0)=e^{-\lambda t}$，于是各 $T_i$ 独立同分布 $\text{Exp}(\lambda)$。反过来，由间隔分布就能重建计数分布 $N(t)\sim\text{Poisson}(\lambda t)$。
+
+**老师（追问）**：$N(t)\sim\text{Poisson}(\lambda t)$ 怎么从微分方程得到？
+
+**学生**：设 $p_n(t)=P(N(t)=n)$，用 $p_n(t+h)=p_n(t)(1-\lambda h)+p_{n-1}(t)\lambda h+o(h)$ 取极限得
+
+$$p_n^{\prime}(t)=-\lambda p_n(t)+\lambda p_{n-1}(t),$$
+
+配初值 $p_0(0)=1$、$p_n(0)=0$ 归纳解得 $p_n(t)=(\lambda t)^ne^{-\lambda t}/n!$。这用到了稀有事件条件 $P(N(h)=1)=\lambda h+o(h)$ 与 $P(N(h)\ge2)=o(h)$。
+
+**老师（拓展）**：叠加与分解说明了什么？
+
+**学生**：两个独立 Poisson 过程叠加仍是 Poisson 过程，强度相加；每个事件独立以概率 $p$ 标记后，两类事件分别是强度 $\lambda p$、$\lambda(1-p)$ 的独立 Poisson 过程。这体现 Poisson 过程的"可分性"，是排队网络分析的基石。常见误区：把 $\lambda t$ 只当作均值——对 $N(t)$ 而言均值与方差都等于 $\lambda t$，这是 Poisson 分布的特殊巧合，一般计数过程不具备。

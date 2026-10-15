@@ -29,3 +29,17 @@ $$
 ## 五、应用与意义
 
 局部Langlands对应是 Langlands 纲领的基石之一：它给出局部 Langlands 函子性、局部上同调（Shimura 簇）的自守分解，以及在 $p$-adic Langlands 与算术几何（陷阱奇点、模形式局部行为）中扮演分析中枢。任何全局对应的验证最终都要求逐位局部对应成立。
+
+## 课堂问答
+
+**老师**：局部 Langlands 对应声称 $GL_n(F)$ 的不可约光滑表示与 $n$ 维 Langlands 参数一一对应。先告诉我参数长什么样，为什么还要多一个 $SL_2(\mathbb{C})$。
+
+**学生**：先给结论：参数是 $W_F\times SL_2(\mathbb{C})$ 的 $n$ 维半单表示（在 $SL_2$ 上代数），对应是唯一双射。多出的 $SL_2$ 是"单值化补丁"：分歧表示的 $W_F$ 部分未必半单，用 $SL_2$ 的幂零部分能统一描述单值化（unipotent）的 Jordan 块，于是所有不可约光滑表示被单一框架覆盖，不必再分成"分歧/非分歧"两类。$n=1$ 时 $W_F^{\mathrm{ab}}\cong F^\times$，这正是类体论。
+
+**老师（追问）**：对应要求保持哪些不变量？唯一性又是怎么定下来的？
+
+**学生**：要求 $L(s,\pi)=L(s,\varphi)$ 与 $\varepsilon(s,\pi,\psi)=\varepsilon(s,\varphi,\psi)$，并与所有局部 $\gamma$-因子相容，归根结底是保秩与保这些局部因子。Henniart 用特征理想论证加上 $\varepsilon$-因子对参数的强单调性把参数唯一定住；Harris–Taylor 从简单（Bernstein 型）表示出发构造参数并逐项验证 L-与 $\varepsilon$-因子。常见误区：以为 $n=1$ 与 $n>1$ 是两套独立理论——其实局部对应正是类体论在 $W_F\times SL_2$ 框架下的 $n$ 维推广。
+
+**老师（拓展）**：若参数可约，对应表示会怎样？这对全局对应意味着什么？
+
+**学生**：可约参数 $\varphi=\varphi_1\oplus\varphi_2$ 对应的表示就是相应抛物诱导的 Langlands 商，即由低维参数分量拼装而成；Jordan 分解 $\varphi=\bigoplus_i\varphi_i\otimes\mathrm{Sym}^{n_i}$ 恰好把表示分解为超 cuspidal 的诱导。全局上任何全局对应的验证都要求逐位（每个位 $v$）的局部对应成立，所以局部的保秩与保因子性质就是全局互反律的逐点积木。

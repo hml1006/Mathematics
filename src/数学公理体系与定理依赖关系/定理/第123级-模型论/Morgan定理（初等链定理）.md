@@ -33,3 +33,17 @@ Morgan 定理（初等链定理，Elementary Chain Theorem）是模型论中构�
 ## 五、应用与意义
 
 初等链定理是模型论构造性工具的基石：用于构建初等成员的并、构造满足可控性质的链、证明模型完备性（$\mathfrak{A}\subseteq\mathfrak{B}$ 时用链逼近）、构造可数饱和模型以及稳定理论中的各类构造。它把"无穷晋升"与"初等包含"无缝衔接，使得模型论能处理超穷步长的构造。
+
+## 课堂问答
+
+**老师**：一族结构逐层初等包含 $\mathfrak A_0\preccurlyeq\mathfrak A_1\preccurlyeq\cdots$，为什么它们的并仍初等包含每一层？
+
+**学生**：结论：若 $\{\mathfrak A_\alpha\}_{\alpha<\delta}$ 是初等链，$\mathfrak A=\bigcup_{\alpha<\delta}\mathfrak A_\alpha$，则对每个 $\alpha<\delta$ 有 $\mathfrak A_\alpha\preccurlyeq\mathfrak A$。用 Tarski-Vaught 判别法最省事，只需为存在公式找到落回 $\mathfrak A_\alpha$ 的见证。
+
+**老师（追问）**：见证的"降级"过程怎么做，为什么能拉回 $\mathfrak A_\alpha$？
+
+**学生**：设 $\bar b\in A_\alpha$ 且 $\mathfrak A\models\exists x\varphi(x,\bar b)$，见证 $c\in A_\beta$ 对某 $\beta$。取 $\beta\ge\alpha$，由 $\mathfrak A_\beta\preccurlyeq\mathfrak A$ 得 $\mathfrak A_\beta\models\exists x\varphi(x,\bar b)$，再由 $\mathfrak A_\alpha\preccurlyeq\mathfrak A_\beta$ 得 $\mathfrak A_\alpha$ 中已有见证 $c'$，最后回读得 $\mathfrak A\models\varphi(c',\bar b)$，判别条件满足即证初等。常见误区是直接对并作公式复杂度归纳而忘了极限步——用 Tarski-Vaught 一条条件覆盖全部复杂度，正是它的价值。
+
+**老师（拓展）**：初等链定理最常用于哪些构造场合？
+
+**学生**：它是"取并得初等扩张"的标准机器：合并初等子结构、逼近模型完备性（$\mathfrak A\subseteq\mathfrak B$ 时沿链攀升）、构造可数饱和模型与齐次模型都靠它。配合 Löwenheim-Skolem，就能从任意小片段出发一路爬升，得到基数受控且性质良好的大模型。

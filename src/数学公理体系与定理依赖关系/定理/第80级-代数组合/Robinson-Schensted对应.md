@@ -35,3 +35,17 @@ $$\text{RS}:S_n\,\xrightarrow{\,\sim\,}\,\bigcup_{\lambda\vdash n}\text{SYT}(\la
 ## 五、应用与意义
 
 RSK 对应是组合表示论的核心工具：它给出置换与标准表的双射、钩长公式（$f^\lambda$）、Schensted 插入与最长递增子序列的联系（对应 $\lambda_1$ 为最长递增子序列长度），并用于对数凸与长 Bijection 的改进。RSK 还推广到矩阵（矩阵-PRoux）、词，与对称函数、crystal 理论、Young 表相交织，连接 Ulam 问题、随机矩阵理论（Tracy-Widom）与可积概率。
+
+## 课堂问答
+
+**老师**：Robinson–Schensted 对应到底建立了什么对应？
+
+**学生**：对每个 $\pi\in S_n$，RSK 给出唯一一对同形状标准杨表 $(P,Q)$，于是 $\mathrm{RS}:S_n\to\bigcup_{\lambda\vdash n}\mathrm{SYT}(\lambda)\times\mathrm{SYT}(\lambda)$ 是双射，推出 $n!=\sum_{\lambda\vdash n}(f^\lambda)^2$，其中 $f^\lambda$ 由钩长公式 $f^\lambda=n!/\prod_{(i,j)\in\lambda}{\rm hook}(i,j)$ 给出。$P$ 记录排列内容，$Q$ 记录每个数字何时被放入。
+
+**老师（追问）**："同形状"与可逆性为什么成立？
+
+**学生**：每次插入形状恰增一格，$P,Q$ 同步长格故同形状；逆过程取 $Q$ 最大元素所在格，沿路径反吸回第一行即得被插数。误区：$Q$ 是"位置-时间"表，不能与 $P$ 混；$\pi$ 有重复项时 $P$ 退化为半标准表，须改用 Knuth 等价的词版本。
+
+**老师（拓展）**：给个例子与推论？
+
+**学生**：$\pi=3142$ 经算法得 $P=\begin{smallmatrix}1&2\\3&4\end{smallmatrix}$、$Q=\begin{smallmatrix}1&3\\2&4\end{smallmatrix}$，形状 $(2,2)$。由 $\lambda_1=$ 最长递增子序列长度可得 Schensted 定理，连接 RSK 与 Ulam 问题、随机杨表与 Plancherel 测度。

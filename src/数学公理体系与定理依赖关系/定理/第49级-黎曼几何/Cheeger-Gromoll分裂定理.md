@@ -102,3 +102,19 @@ Cheeger-Gromoll 分裂定理在多个领域有重要应用：
 6. **刚性定理**：分裂定理的加强形式（如几乎分裂定理）研究曲率接近非负时流形的结构。
 
 分裂定理的推广包括：Lorentz 分裂定理（广义相对论中的时空分裂）、几乎分裂定理（Gromov-Hausdorff 收敛意义下）、以及 orbifold 和度量空间上的分裂定理。
+
+## 课堂问答
+
+**老师**：完备、$\mathrm{Ric}\ge0$ 且含一条直线的流形，结论是什么？证明的三大工具？
+
+**学生**：结论是 $M$ 等距同构于 $\mathbb R\times N$（$\mathrm{Ric}_N\ge0$）。三件工具是 Busemann 函数、Laplacian 比较、强极大值原理。直线给出两射线，定义 $b^\pm(x)=\lim_{t\to\infty}(d(x,\gamma(\pm t))-t)$；三角不等式给 $b^++b^-\ge0$ 且沿 $\gamma$ 为零，Laplacian 比较给 $\Delta b^\pm\le0$，故 $b^++b^-$ 上调和，在 $\gamma(0)$ 取最小值 $0$，强极大值原理迫使 $b^++b^-\equiv0$。误区是忽略 Busemann 函数只是 Lipschitz 的，比较须先在分布意义下做。
+
+**老师（追问）**：如何从 $b^++b^-\equiv0$ 走到积结构？
+
+**学生**：于是 $b^+$ 调和。由 Bochner 公式
+$$\frac12\Delta|\nabla b^+|^2=|\mathrm{Hess}\,b^+|^2+\mathrm{Ric}(\nabla b^+,\nabla b^+)\ge0,$$
+$|\nabla b^+|^2$ 次调和、在 $\gamma$ 上等于 $1$，强极大值原理给它恒等于 $1$，进而 $\mathrm{Hess}\,b^+=0$。故 $\nabla b^+$ 是单位平行场，其流给出等距 $\mathbb R\times N\to M$，$N=(b^+)^{-1}(0)$ 全测地。
+
+**老师（拓展）**：这条定理在分类与相对论中的地位？
+
+**学生**：它是 Soul 定理与"非负曲率流形结构"研究的基石；相对论中有 Lorentz 分裂定理，Gromov-Hausdorff 意义下有几乎分裂定理，刻画曲率接近非负时的结构。

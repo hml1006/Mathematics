@@ -120,3 +120,21 @@ $$\int_\Omega|\bar\partial u|^{2}e^{-\phi}+\int_\Omega|\bar\partial^{*}_{\phi}u|
 - **$(0,q)$-形式的恒等式**：对 $q>1$ 有相应的恒等式，曲率项中出现 $q$ 个 Levi 特征值的和，正是"$q$-凸性"与弱 $q$-凸性的来源。
 - **向量丛取值与度量联络**：把 $u$ 换成取值于 Hermite 向量丛的 $(0,q)$-形式，权重曲率项换成联络的曲率（Chern 曲率）作用在取值空间上，得到 Bochner–Kodaira–Nakano 型恒等式。
 - **流形与完备情形**：在完备 Kähler 流形与紧复流形上有相应的 $L^{2}$ 恒等式（Demailly 的 $L^{2}$ 估计框架），是现代复几何的标准工具。
+
+## 课堂问答
+
+**老师**：Morrey–Kohn–Hörmander 恒等式把什么精确地分解为三项？
+
+**学生**：它把 $(0,1)$-形式的 $\bar\partial$ 与其加权伴随 $\bar\partial^*_\phi$ 的 $L^2$ 范数平方和，分解为三项：
+$$\int_\Omega|\bar\partial u|^2e^{-\phi}+\int_\Omega|\bar\partial^*_\phi u|^2e^{-\phi}=\underbrace{\sum_{j,k}\int_\Omega\phi_{j\bar k}u_j\bar u_k\,e^{-\phi}}_{\text{权重曲率项}}+\underbrace{\sum_{j,k}\int_\Omega|\bar\partial_k u_j|^2e^{-\phi}}_{\text{全导数项}}+\underbrace{\sum_{j,k}\int_{\partial\Omega}\rho_{j\bar k}u_j\bar u_k\frac{e^{-\phi}dS}{|\nabla\rho|}}_{\text{边界 Levi 形式项}}.$$
+前提是 $u$ 满足 Neumann 边界条件 $\sum_j u_j\,\bar\partial_j\rho|_{\partial\Omega}=0$。常见误区是把它与一般分部积分混同——它的关键在于 $\partial_j$ 与 $\bar\partial_k$ 可交换，使 $\phi$ 的一阶导项相消，只剩二阶导（曲率）项。
+
+**老师（追问）**：怎样从恒等式得到基本估计？用了什么假设？
+
+**学生**：取"权重多次调和 $+$ 区域拟凸"。若 $\phi$ 多次调和则 $\phi_{j\bar k}\ge0$，曲率项非负；若 $\Omega$ 拟凸则边界 Levi 形式非负，边界项非负。丢弃两项非负项即得
+$$\|\bar\partial u\|_\phi^2+\|\bar\partial^*_\phi u\|_\phi^2\ge\sum_{j,k}\left\|\frac{\partial u_j}{\partial\bar z_k}\right\|_\phi^2,$$
+由此推出 $\Box_\phi=\bar\partial\bar\partial^*_\phi+\bar\partial^*_\phi\bar\partial$ 有有界逆 $N_\phi$（Neumann 算子）与 $\bar\partial v=f$ 的 $L^2$ 可解性。
+
+**老师（拓展）**：这条恒等式在现代复几何里有哪些延伸？
+
+**学生**：它是 Hörmander $L^2$ 存在定理、Kohn 亚椭圆估计的技术核心；把权扭化为 $\phi-\log\eta$ 即得 Ohsawa–Takegoshi $L^2$ 延拓定理，是乘子理想与 Siu 方法的关键。对 $(0,q)$-形式，曲率项含 $q$ 个 Levi 特征值之和，正是一致/弱 $q$-凸性的来源；取值于 Hermite 丛时退化为 Bochner–Kodaira–Nakano 型恒等式。

@@ -50,3 +50,17 @@ $$\begin{CD}
 - $f(z) = z$ 的值域为 $\mathbb{C}$。
 - $f(z) = e^z$ 的值域为 $\mathbb{C} \setminus \{0\}$。
 - $f(z) = \sin z$ 的值域为 $\mathbb{C}$。
+
+## 课堂问答
+
+**老师**：为什么非常数整函数至多只能"躲开"一个值？
+
+**学生**：结论：非常数整函数的值域要么是 $\mathbb C$，要么是 $\mathbb C\setminus\{a\}$。等价地，若整函数不取两个不同值 $a,b$，它就是常数。证明思路：把 $(f-a)/(b-a)$ 化到不取 $0,1$，再借助模函数 $\lambda:\mathbb H\to\mathbb C\setminus\{0,1\}$。
+
+**老师（追问）**：这道关卡是怎么被 $\mathbb C$ 的单连通性打通的？
+
+**学生**：$\lambda$ 是万有覆盖映射，而 $\mathbb C$ 单连通，故存在提升：整函数 $\tilde f:\mathbb C\to\mathbb H$ 使 $f=\lambda\circ\tilde f$。又 $\mathbb H$ 共形等价于单位圆盘 $\mathbb D$，故 $\tilde f$ 有界，由 Liouville 定理 $\tilde f$ 为常数，从而 $f$ 为常数。
+
+**老师（拓展）**：它相对 Liouville 定理强在哪里？
+
+**学生**：Liouville 说"有界整函数是常数"，只用到有界性；Picard 强化为"不取两个值的整函数是常数"。例如 $e^z$ 漏掉 $0$ 却取遍其余全部非零值，说明"漏一个值"确有可能，而"漏两个值"绝无可能。

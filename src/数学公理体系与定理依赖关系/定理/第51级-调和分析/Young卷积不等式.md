@@ -148,6 +148,20 @@ $$
 
 **推广**：弱型 Young 不等式（用 Lorentz 空间 $L^{p,\infty}$ 代替 $L^p$）、以及双线性插值（特别是 $r\le1$ 的"端点多线性"情形，与 Brascamp–Lieb 不等式相关）为现代调和分析所用。
 
+## 课堂问答
+
+**老师**：Young 不等式的指数关系 $\frac1p+\frac1q=1+\frac1r$ 为什么长这样？
+
+**学生**：结论：它是两端点插值的必然结果。端点一 $p=1\Rightarrow r=q$（Minkowski）；端点二 $q=p'\Rightarrow r=\infty$（Hölder）。Riesz-Thorin 对 $1/r$ 与 $1/q$ 做对数凸插值，消去 $\theta$ 即得 $\frac1r=\frac1p+\frac1q-1$。
+
+**老师（追问）**：为什么 $L^1$ 在卷积下是 Banach 代数？和傅里叶变换什么关系？
+
+**学生**：取 $p=q=r=1$ 得 $\|f*g\|_1\le\|f\|_1\|g\|_1$，卷积封闭性成立。且 $\widehat{f*g}=\hat f\hat g$，傅里叶变换把卷积代数同构到乘法代数，这正是 Gelfand 抽象调和分析的原型。
+
+**老师（拓展）**：常数 1 是否最优？弱型与双线性版本又是什么？
+
+**学生**：最优，取逼近 $\delta$ 的 $f,g$ 可达等号。弱型版本用 $L^{p,\infty}$ 代替 $L^p$，是 Calderón-Zygmund 分解的配套工具；$r<1$ 的端点多线性情形与 Brascamp-Lieb 不等式相关。
+
 ## 相关条目
 
 - [Plancherel定理](./Plancherel定理.md)：由 $\widehat{f*g}=\hat f\hat g$ 与 $L^2$ 等距性，卷积估计可转化为乘子估计。

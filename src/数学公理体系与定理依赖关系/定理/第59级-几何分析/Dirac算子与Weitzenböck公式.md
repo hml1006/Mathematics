@@ -100,6 +100,20 @@ $$0=\int_M|D\psi|^2d\mu=\int_M|\nabla\psi|^2d\mu+\frac14\int_MS\,|\psi|^2d\mu.$$
 - **Seiberg–Witten 理论与旋量几何**：扭曲 Weitzenböck 公式是估计与消失定理的基本工具。
 - **Bochner 技巧的统一框架**：$p$-形式、旋量、$\mathrm{Spin}^c$ 结构上的 Weitzenböck 公式共享同一结构。
 
+## 课堂问答
+
+**老师**：旋量丛上的 Dirac 算子平方之后，为什么凭空冒出标量曲率那一项？
+
+**学生**：结论是 Lichnerowicz 公式 $D^2=\nabla^*\nabla+\frac14S$。展开 $D^2=\sum_{i,j}c_ic_j\nabla_i\nabla_j$，把 $\nabla_i\nabla_j$ 拆成对称与反对称两部分：对称部分因 $c_ic_j$ 反对称而只剩对角项，缩并成联络拉普拉斯 $\nabla^*\nabla$；反对称部分是旋量曲率 $R^{\mathbb S}_{ij}=\frac14\sum_{k,l}R_{ijkl}c_kc_l$，与 $c_ic_j$ 收缩后用第一 Bianchi 恒等式化简，恰好只剩 $\frac14S$。
+
+**老师（追问）**：为什么 Ricci 张量没留下，只有它的迹（标量曲率）存活？
+
+**学生**：展开 $c_ic_jc_kc_l$ 得到 $\delta$ 型项与全反对称项之和，而 $R_{ijkl}$ 关于 $(i,j)$、$(k,l)$ 各自反对称，凡含 $\delta_{ij}$ 或 $\delta_{kl}$ 的项全部为零；剩下的四指标项用 $R_{ijkl}+R_{jkil}+R_{kijl}=0$ 化简，指标逐对收缩。此时 Ricci 的无迹部分也因对称—反对称配对而消失，唯一存活的是全收缩 $S=\sum_{i,j}R_{ijij}$。
+
+**老师（拓展）**：这条公式如何变成正标量曲率的拓扑障碍？
+
+**学生**：设 $\psi\in\ker D$，在闭流形上积分 $0=\int_M|D\psi|^2d\mu=\int_M|\nabla\psi|^2d\mu+\frac14\int_MS|\psi|^2d\mu$。若 $S>0$ 而 $\psi\ne0$，右端两项非负加严格正，矛盾，故 $\ker D=\{0\}$；由 Atiyah–Singer 指标定理 $\hat A(M)=\mathrm{ind}\,D=0$。常见误区是把 $\frac14S$ 当成"低阶扰动"，其实它恰恰决定零模的有无，Witten 证明正质量定理正是同一论证搬到渐近平坦情形。
+
 ## 相关条目
 
 - [Bochner公式](../第49级-黎曼几何/Bochner公式.md)：函数与 1-形式上的 Weitzenböck 公式，本条目是它在旋量丛上的推广。

@@ -87,6 +87,20 @@ $$\int_\Omega\eta^2u^{2\beta}\lvert\nabla u\rvert^2\leq\frac{4}{(2\beta+1)^2}\in
 - **凸分析与优化**：Fenchel–Young 不等式是共轭对偶、次梯度与对偶间隙为零的代数基础。
 - **概率与信息论**：Young 不等式给出矩的控制，也是熵、KL 散度与 Young 型不等式的原型。
 
+## 课堂问答
+
+**老师**：Young 不等式 $ab\le\frac{a^p}{p}+\frac{b^q}{q}$ 的"带 $\varepsilon$ 版本"为什么在 PDE 里用处更大？
+
+**学生**：因为它能把难控的交叉项"吸收"进左边主项。由尺度化 $a\mapsto\varepsilon^{1/p}a$、$b\mapsto\varepsilon^{-1/p}b$ 得 $ab\le\varepsilon a^p+C_\varepsilon b^q$（$C_\varepsilon=\frac1q\varepsilon^{-q/p}$）。在能量估计里，交叉项 $2XY$ 用一个 $\varepsilon X^2$ 吸收后，剩下的 $\frac1\varepsilon Y^2$ 只含已知低阶量，于是可把主项解出来，得到形如 $X^2\le CY^2$ 的估计。没有这个"吸收"，交叉项会一直黏在不等号右边无法整理。
+
+**老师（追问）**：最漂亮的证明是几何的还是凸性的？
+
+**学生**：几何证明最直观：两条互逆曲线 $y=x^{p-1}$ 与 $x=y^{q-1}$（因 $\frac1p+\frac1q=1$ 蕴含 $q-1=\frac1{p-1}$）下方的两块面积分别是 $\frac{a^p}{p}$ 与 $\frac{b^q}{q}$，矩形 $[0,a]\times[0,b]$ 中任一点必落在其中一块内（若 $y>x^{p-1}$，则 $x<y^{q-1}$），故 $ab\le$ 两块面积之和，等号当且仅当 $a^p=b^q$。凸性证明则用 $e^x$ 的 Jensen：$\exp(\frac up+\frac vq)\le\frac{e^u}{p}+\frac{e^v}{q}$，取 $u=p\log a$、$v=q\log b$ 即得。
+
+**老师（拓展）**：Fenchel-Young 与截断函数怎样和 Moser 迭代配合？
+
+**学生**：Fenchel-Young 把 Young 推广到任意凸 $\Phi$，即 $ab\le\Phi(a)+\Phi^*(b)$（$\Phi^*$ 为凸共轭），说明"吸收"有对偶解释。截断函数 $\eta$（$=1$ 于 $B_r$、$\mathrm{supp}\,\eta\subset B_R$、$|\nabla\eta|\le\frac2{R-r}$）提供局部化：取试验函数 $\eta^2u^{2\beta+1}$，交叉项用带 $\varepsilon$ Young 吸收后得 $\int\eta^2u^{2\beta}|\nabla u|^2\le\frac4{(2\beta+1)^2}\int u^{2\beta+2}|\nabla\eta|^2$，再对 $\eta u^{\beta+1}$ 用 Sobolev 嵌入，便启动了 Moser 迭代的可积性升级。
+
 ## 相关条目
 
 - [Moser-Nash迭代](./Moser-Nash迭代.md)：截断函数与 Young 不等式配合的直接应用，逐尺度提升可积性。

@@ -60,3 +60,25 @@ $$= \sum_i \left[\frac{\partial f}{\partial t} \Delta t_i + \frac{\partial f}{\p
 **证明**：令 $f(t,x) = \ln x$，则 $\frac{\partial f}{\partial t} = 0$，$\frac{\partial f}{\partial x} = 1/x$，$\frac{\partial^2 f}{\partial x^2} = -1/x^2$。由 Itô 公式，
 $$d(\ln S_t) = \left(0 + \mu S_t \cdot \frac{1}{S_t} + \frac{1}{2} \sigma^2 S_t^2 \cdot \left(-\frac{1}{S_t^2}\right)\right) dt + \sigma S_t \cdot \frac{1}{S_t} dB_t = \left(\mu - \frac{\sigma^2}{2}\right) dt + \sigma dB_t$$
 积分即得。$\square$
+
+## 课堂问答
+
+**老师**：把 $dX_t=\mu_t\,dt+\sigma_t\,dB_t$ 代入普通链式法则，会漏掉什么？
+
+**学生**：漏掉二阶项。Taylor 展开里 $(dX_t)^2=\sigma_t^2(dB_t)^2+2\mu_t\sigma_t\,dt\,dB_t+\mu_t^2(dt)^2$；经典微积分认为 $(dX_t)^2=O(dt^2)$ 可丢，但 Brown 运动二次变差 $[B,B]_t=t$，即 $(dB_t)^2\to dt$，于是 $(dX_t)^2\to\sigma_t^2\,dt$ 是一阶量。所以
+
+$$df(t,X_t)=\left(f_t+\mu_tf_x+\tfrac12\sigma_t^2f_{xx}\right)dt+\sigma_tf_x\,dB_t.$$
+
+多出的 $\tfrac12\sigma_t^2f_{xx}\,dt$ 就是"随机换元"的全部代价。
+
+**老师（追问）**：那就用 $f=x^2$、$X=B$ 验一下，与普通积分差在哪？
+
+**学生**：此时 $f_{xx}=2$，$d(B_t^2)=2B_t\,dB_t+dt$，积分得
+
+$$\int_0^tB_s\,dB_s=\tfrac12B_t^2-\tfrac12t.$$
+
+普通微积分只会给 $\tfrac12B_t^2$，差额 $-\tfrac t2$ 正是二次变差 $[B]_t=t$ 的产物，确定性地每次都出现。常见误区：以为这是"积分常数没写对"；它也是 $\int_0^tB_s\,dB_s$ 与 $\int_0^t1\,dB_s=B_t$ 在 $L^2$ 中正交的根源（因 $E\int_0^tB_s\,ds=0$）。
+
+**老师（拓展）**：几何 Brown 运动 $dS_t=\mu S_t\,dt+\sigma S_t\,dB_t$ 的解里为什么出现 $-\sigma^2/2$？
+
+**学生**：对 $\ln S$ 用 Itô 公式：$f=\ln x$ 时 $f_{xx}=-1/x^2$，二阶项为 $\tfrac12\sigma^2S_t^2\cdot(-1/S_t^2)=-\tfrac12\sigma^2$。故 $d(\ln S_t)=(\mu-\tfrac{\sigma^2}{2})dt+\sigma\,dB_t$，积分并取指数即得 $S_t=S_0\exp\big((\mu-\tfrac{\sigma^2}{2})t+\sigma B_t\big)$。这解释了资产对数收益的漂移低于相对漂移 $\mu$——随机波动本身"拖累"了复合增长，这是 Itô 公式的严格结论而非离散化误差。

@@ -44,3 +44,29 @@ $$
 ## 五、应用与意义
 
 PAC 基本定理是"何时学习在理论上可行"的判定标准，为假设空间设计、ERM 的合理性、以及学习算法的样本复杂度分析提供了统一框架。它是模型选择、VC 维计算与学习理论课程的核心结论，也为主动学习、不可知学习等扩展理论奠定基础。
+
+## 课堂问答
+
+**老师**：一个假设空间"能不能学好"，究竟由什么决定？
+
+**学生**：结论很干净：$\mathcal{H}$ 是 PAC 可学习的当且仅当 $\operatorname{VCdim}(\mathcal{H})<\infty$。有限时经验风险最小化（ERM）就是 PAC 学习算法，样本复杂度
+
+$$
+m_{\mathcal{H}}(\varepsilon,\delta)=O\!\left(\frac{d}{\varepsilon}\log\frac1\varepsilon+\frac1\varepsilon\log\frac1\delta\right).
+$$
+
+理由是：把 VC 泛化界一致地用到 ERM 解 $\hat{h}_n$ 上，再用最优性 $\hat{R}_n(\hat{h}_n)\le\hat{R}_n(h^\ast)$。
+
+**老师（追问）**：充分性那步怎么把真实误差压到 $R(h^\ast)+\varepsilon$ 的？
+
+**学生**：由一致界与 $\hat{R}_n(\hat{h}_n)\le\hat{R}_n(h^\ast)$，
+
+$$
+R(\hat{h}_n)\le\hat{R}_n(h^\ast)+\varepsilon_{\text{comp}}\le R(h^\ast)+2\varepsilon_{\text{comp}},
+$$
+
+其中 $\varepsilon_{\text{comp}}(n)=\sqrt{\frac{8d\log(2en/d)}{n}}+\sqrt{\frac{8\log(2/\delta)}{n}}$。令 $n$ 大到使 $2\varepsilon_{\text{comp}}\le\varepsilon$，就得到上述样本复杂度。这里 $R(h^\ast)=\inf_hR(h)$，故是比较意义下的"近似正确"。
+
+**老师（拓展）**：必要性方向不用 ERM，怎么把任意算法都难住？
+
+**学生**：反设 $\operatorname{VCdim}(\mathcal{H})=\infty$，则对任意 $m$ 都存在被 $\mathcal{H}$ 打散的 $m$ 点集。取 $P$ 均匀支撑其上、标签由某个 $h^\ast$ 确定。由于 $2^m$ 种标签全可实现，任意算法最多看到 $m$ 个标签，对未观测点总能找到某个 $h^\ast$ 使该点误差达 $\frac12$，于是泛化误差可做到不小于 $\frac12$，与 PAC 定义矛盾。

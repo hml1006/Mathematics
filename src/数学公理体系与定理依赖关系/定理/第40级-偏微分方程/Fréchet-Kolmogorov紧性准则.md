@@ -114,6 +114,20 @@ $$\|u-v_i\|_p\le\|u-u*\rho_\delta\|_p+\|u*\rho_\delta-v_i\|_p<4\epsilon .$$
 
 **推论（序列形式）**：若 $(u_m)\subseteq L^p(\mathbb R^n)$ 满足 $\|u_m\|_p\le M$、$\sup_m\|u_m(\cdot+h)-u_m\|_p\to0\ (|h|\to0)$ 且 $\sup_m\|u_m\|_{L^p(|x|>R)}\to0\ (R\to\infty)$，则存在子列在 $L^p$ 中强收敛。这是 PDE 中"先验估计 $\Rightarrow$ 取极限"的标准接口。
 
+## 课堂问答
+
+**老师**：判定一族 $L^p(\mathbb{R}^n)$ 函数相对紧，要逐条验证哪几个条件？
+
+**学生**：三条缺一不可——(FK1) 一致有界 $\sup_{u\in\mathcal{F}}\|u\|_{L^p}<\infty$；(FK2) 平移等度连续 $\lim_{|h|\to0}\sup_{u\in\mathcal{F}}\|u(\cdot+h)-u\|_{L^p}=0$；(FK3) 质量一致集中 $\lim_{R\to\infty}\sup_{u\in\mathcal{F}}\int_{|x|>R}|u|^p\,dx=0$。
+
+**老师（追问）**：充分性证明为什么第一步要磨光？
+
+**学生**：磨光把"平移连续性"转成可直接估计的形式：由 $u*\rho_\delta(x)-u(x)=\int\rho_\delta(y)\big(u(x-y)-u(x)\big)\,dy$ 与 Minkowski 积分不等式得 $\|u*\rho_\delta-u\|_p\le\sup_{|y|\le\delta}\|u(\cdot-y)-u\|_p$，右端对全族一致，(FK2) 恰好把它压小。
+
+**老师（拓展）**：磨光之后怎样落到有限 $\epsilon$-网？
+
+**学生**：固定 $\delta$，$\{u*\rho_\delta\}$ 一致有界且 $|\nabla(u*\rho_\delta)|\le M\|\nabla\rho_\delta\|_q$，故一致 Lipschitz、(FK3) 把质量限制在固定大球上，Arzelà–Ascoli 给出有限 $\epsilon$-网；再由"完全有界 + 完备 $\Leftrightarrow$ 相对紧"（$L^p$ 完备由 Riesz–Fischer 保证）收尾。误区是以为"有界 + 平移连续"就够：无界区域上 (FK3) 不能省，像 $u_m(x)=\varphi(x-m)$ 质量跑到无穷远，任何子列都不收敛；必要性则靠紧支连续函数逼近验证三条。
+
 ## 相关条目
 
 - [Sobolev嵌入定理](./Sobolev嵌入定理.md)：紧嵌入所需的"平移估计 + 质量集中"正是本准则的三条判据。

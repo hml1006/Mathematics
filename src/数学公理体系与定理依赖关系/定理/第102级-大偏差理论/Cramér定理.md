@@ -52,3 +52,17 @@ $$
 ## 五、应用与意义
 
 Cramér 定理是大偏差理论的基石，给出了稀有事件概率（如误差超大概率、极端失败概率）的指数精确刻画。它支撑 Chernoff 界、Sanov 定理、假设检验的错误指数分析与金融极端损失估计，并作为 Gärtner-Ellis、近似计算等推广的起点。
+
+## 课堂问答
+
+**老师**：i.i.d. 样本均值偏离均值的概率，为什么按$e^{-nI(x)}$衰减？
+
+**学生**：结论是$\{\overline X_n\}$满足速率$n$的 LDP，速率函数是 Legendre 变换$I(x)=\sup_\theta\{\theta x-\Lambda(\theta)\}$，其中$\Lambda(\theta)=\log\mathbb E[e^{\theta X_1}]$。直觉是"指数矩下界"给出上界、"测度倾斜"给出下界。
+
+**老师（追问）**：上下界分别用什么工具？
+
+**学生**：上界用切尔诺夫不等式$\mathbb P(S_n\ge na)\le e^{-n(\theta a-\Lambda(\theta))}$对$\theta>0$取最优。下界用 Esscher 倾斜$\frac{d\mathbb Q_\theta}{d\mathbb P}=e^{\theta S_n-n\Lambda(\theta)}$，取$\Lambda'(\theta_a)=a$使新测度下均值恰为$a$，再由中心极限定理得$\mathbb Q_\theta(\overline X_n\in(a,a+\delta))$有正下界，于是$\frac1n\log\mathbb P\to-I(a)$。
+
+**老师（拓展）**：$I$有什么重要性质？边界情形呢？
+
+**学生**：$I$凸、下半连续、$\inf I=0$且$I(\mathbb E X_1)=0$；若$\Lambda'(\theta)=a$在$\theta>0$无解，则上确界在$\theta\to0^+$边界取到，给出平凡界。误区是忽略"$\Lambda$在$0$邻域有限"这一前提，它保证$I$在均值附近非退化。

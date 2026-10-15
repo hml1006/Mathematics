@@ -125,3 +125,25 @@ $$
 **理论意义**：定理给出“物质导数 = 局部导数 + 对流项”的积分版本，使 Lagrange 与 Euler 描述可互相翻译；它也是有限体积方法（FVM）的理论依据——FVM 直接对守恒律的积分形式做通量平衡，天然保证离散守恒性。
 
 **推广**：任意维数、黎曼流形（以 Lie 导数代替物质导数，$\frac{d}{dt}\int_{\boldsymbol\chi_t(V)}\phi=\int(\dot\phi+\phi\,\mathrm{div}\,\boldsymbol v)$）、含间断面情形（需加跳跃项 $\oint_\Sigma[\![\phi(\boldsymbol v-\boldsymbol v_\Sigma)\cdot\boldsymbol n]\!]dA$，即 Rankine–Hugoniot 条件）以及随机流下的 Itô–Wentzell 公式，都是本定理的推广。
+
+## 课堂问答
+
+**老师**：为什么积分区域随时间变动时，不能直接把导数搬进积分号？
+
+**学生**：因为 Leibniz 公式只对固定区域或简单端点变动成立，而 $V(t)$ 整体在运动。办法是引入参考坐标 $\boldsymbol X$ 与运动映射 $\boldsymbol x=\boldsymbol\chi(\boldsymbol X,t)$，用换元公式把积分拉回固定区域 $V_0$ 再求导，得
+$$
+\frac{d}{dt}\int_{V(t)}\phi\,dV=\int_{V(t)}\frac{\partial\phi}{\partial t}\,dV+\oint_{\partial V(t)}\phi\,\boldsymbol v\cdot\boldsymbol n\,dA,
+$$
+即"总量变化 = 内部变化 + 表面通量"。
+
+**老师（追问）**：$\dot J=J\nabla\cdot\boldsymbol v$ 是怎么冒出来的？
+
+**学生**：由 Jacobi 公式 $\frac{d}{dt}\det A=\det A\cdot\mathrm{tr}(A^{-1}\dot A)$ 与链式法则 $\dot F=(\nabla_{\boldsymbol x}\boldsymbol v)F$，再用迹的循环性：
+$$
+\dot J=J\,\mathrm{tr}\big(F^{-1}(\nabla_{\boldsymbol x}\boldsymbol v)F\big)=J\,\mathrm{tr}(\nabla_{\boldsymbol x}\boldsymbol v)=J\,\nabla_{\boldsymbol x}\cdot\boldsymbol v .
+$$
+即体积微元的相对膨胀率等于速度散度。
+
+**老师（拓展）**：随体导数与积分能自由交换吗？
+
+**学生**：仅当等容（$\nabla\cdot\boldsymbol u=0$）时才行，此时 $\dot J=0$，$\frac{D}{Dt}\int\phi\,dV=\int\frac{D\phi}{Dt}dV$。反之若对一切 $\phi$ 可交换，取 $\phi=1$ 便由局域化引理推出 $\nabla\cdot\boldsymbol u=0$，故等容性是交换成立的充要条件。常见错误是默认它总成立。

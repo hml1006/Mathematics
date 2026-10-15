@@ -122,3 +122,17 @@ Kodaira 嵌入定理表明，紧复流形能否被代数化，等价于是否存
 ### 6. 高维复几何的分类
 
 Kodaira 维数、典范丛的正性等概念，皆基于 Kodaira 嵌入定理建立的框架，是双有理几何分类理论的核心。
+
+## 课堂问答
+
+**老师**：正线丛怎么就把紧复流形"变成"射影代数簇了？嵌入映射从哪来？
+
+**学生**：从截面来。取 $\Phi_m:X\to\mathbb P(H^0(X,L^{\otimes m})^*)$ 由基截面给出。要成嵌入需两件事：截面分离点（对 $p\neq q$ 有 $s(p)=0,s(q)\neq0$）与分离切向量（$s(p)=0$ 且 $ds_p(v)\neq0$）。这两点靠 Kodaira 引理，即用 $\bar\partial$ 的加权 $L^2$ 估计把局部截面 $e^{\otimes m}$ 修成整体截面 $s=\eta e^{\otimes m}-u$，估计 $\int|u|^2e^{-m\varphi}\omega^n\le\frac{C}{m}\int|f|^2e^{-m\varphi}\omega^n$，$m$ 大时误差可压到任意小。
+
+**老师（追问）**：为什么一定要 $m$ 充分大？小 $m$ 为什么不行？
+
+**学生**：小 $m$ 时截面太少，无法分离点与切向量。大 $m$ 有双重好处：其一，消没定理保证 $H^q(X,L^{\otimes m}\otimes K_X)=0$（$q>0$），使 $h^0$ 等于交错和；其二，Riemann-Roch 给 $h^0(X,L^{\otimes m})=\frac{m^n}{n!}\int_Xc_1(L)^n+O(m^{n-1})\to\infty$，截面维数足够大，才有"足够的坐标函数"。
+
+**老师（拓展）**：反过来，射影嵌入为什么一定给出正线丛？"ample"与"positive"何以等价？
+
+**学生**：若 $\iota:X\hookrightarrow\mathbb{CP}^N$ 是嵌入，取 $L=\iota^*\mathcal O(1)$ 并拉回 Fubini-Study 度量，其曲率 $\iota^*\omega_{FS}>0$ 处处正定，故 $L$ 正。于是三者等价：存在正线丛 $\iff$ 存在丰富线丛 $\iff$ 可嵌入射影空间。这就是复分析"正性"与代数几何"ample"的字典，也是 Calabi-Yau 流形被证为射影、从而可代数化的依据。

@@ -156,6 +156,20 @@ $$
 
 5. **插值与拟合**：理解逼近速度有助于在实际应用中合理选择多项式次数、样条节点数目，以平衡计算成本与精度。
 
+## 课堂问答
+
+**老师**：逼近论里"光滑性"和"逼近速度"是一对互逆的刻画，请把两个方向的结论各说一句。
+
+**学生**：Jackson 定理（直接定理）说光滑的 $f$ 逼近快：$E_n^T(f)\le C\omega(f,1/n)$，若 $f\in C^r$ 则 $E_n^T(f)\le\frac{C_r}{n^r}\omega(f^{(r)},1/n)$，特别地 $f^{(r)}\in\mathrm{Lip}\,\alpha$ 时 $E_n^T(f)=O(n^{-(r+\alpha)})$。Bernstein 定理（逆定理）反过来：若 $E_n^T(f)=O(n^{-(r+\alpha)})$（$0<\alpha<1$），则 $f\in C^r$ 且 $f^{(r)}\in\mathrm{Lip}\,\alpha$；更精细地 $\sum n^{r-1}E_n^T(f)<\infty$ 蕴含 $f$ 是 $r$ 次连续可微。
+
+**老师（追问）**：Jackson 定理里常数 $C$ 与 $f$ 无关，你靠什么构造逼近多项式？
+
+**学生**：靠正卷积核。取 Jackson 核 $J_n(t)=\frac{1}{c_n}\left(\frac{\sin(nt/2)}{\sin(t/2)}\right)^4$，非负、偶、是三角多项式，且矩估计 $\int|t|^k J_n\le C_k n^{-k}$。定义 $(J_nf)(x)=\int f(x+t)J_n(t)dt$，由 $\int J_n=1$ 与连续模得 $\|J_nf-f\|_\infty\le C\omega(f,1/n)$；又 $J_nf$ 是次数 $\le n$ 的三角多项式，故 $E_n^T(f)\le\|J_nf-f\|_\infty$。四阶核让一阶矩消失，把误差从 $O(1)$ 压到 $O(1/n)$。
+
+**老师（拓展）**：逆定理证明中 Bernstein 导数不等式 $\|T'\|_\infty\le n\|T\|_\infty$ 起了什么作用？
+
+**学生**：它把"逼近误差"转成"导函数的收敛性"。取 $P_n$ 使 $\|f-P_n\|\le2E_n^T(f)$，令 $Q_0=P_1$、$Q_k=P_{2^k}-P_{2^{k-1}}$，则 $f=P_1+\sum Q_k$ 且 $\|Q_k\|\le CE_{2^{k-1}}$。由 Bernstein 不等式 $\|Q_k'\|\le2^k\|Q_k\|\le C2^kE_{2^{k-1}}$，在 $E_n=O(n^{-(1+\alpha)})$ 时 $\sum\|Q_k'\|<\infty$，故 $f'=\sum Q_k'$ 一致收敛且 $f'\in\mathrm{Lip}\,\alpha$。常见误区是以为逆定理对 $\alpha=1$ 也照搬：端点情形需要更精细的对数型条件。
+
 ## 相关条目
 
 - [Jackson 定理与 Bernstein 定理（第104级-逼近论）](../第104级-逼近论/Jackson定理与Bernstein定理.md)：与本条目为同一定理，另收录于第104级-逼近论，可交叉参考。

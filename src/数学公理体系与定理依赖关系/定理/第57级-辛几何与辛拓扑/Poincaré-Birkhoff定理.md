@@ -101,3 +101,19 @@ $w:S^{1}\to\mathbb R$ 连续。若 $w$ 非常数，则它在 $S^{1}$ 上取到�
 - **高维 Poincaré–Birkhoff**：Conley–Zehnder、Mather 等人把它推广到高维辛同胚与 $T^{2n}$ 上的扭转映射（Conley–Zehnder 定理：扭转映射至少有 $2n$ 个不动点）。
 - **非保面积扭转映射**：仅需扭转条件的版本（如 Franks 的定理，用拓扑方法给出至少两个不动点）。
 - **Arnold 猜测与 Floer 同调**：把"扭转 ⇒ 不动点"推广为"辛同胚 ⇒ 不动点数下界 = 极小子集数"的一般定理。
+
+## 课堂问答
+
+**老师**：Poincaré–Birkhoff 定理的陈述是什么？
+
+**学生**：设 $A=\mathbb R/\mathbb Z\times[0,1]$ 赋 $\omega=d\theta\wedge dr$，$f:A\to A$ 是保面积同胚、同伦于恒同、保持两边界面不变，且满足扭转条件 $\partial X/\partial y\neq0$、$X(x,0)-x>0$、$X(x,1)-x<0$（内外圈反向旋转），则 $f$ 至少有两个不动点。它是 Poincaré"最后几何定理"，由 Birkhoff 1913 年证明。常见误区是以为只需保面积就够——没有反向扭转，平移型映射可以没有不动点。
+
+**老师（追问）**：用生成函数怎么把不动点问题变成临界点问题？
+
+**学生**：扭转条件 $\partial X/\partial y\neq0$ 使 $(x,y)\mapsto(x,X)$ 局部可逆，可用 $(x,X)$ 参数化；保面积 $f^*\omega=\omega$ 等价于 1-形式 $\theta=Y\,dX-y\,dx$ 闭，在单连通覆盖上恰当，故存在 $h$ 使
+$$y=-\frac{\partial h}{\partial x}(x,X),\qquad Y=\frac{\partial h}{\partial X}(x,X).$$
+不动点条件 $X=x$ 给出 $y=h_X(x,x)$ 与 $y=-h_x(x,x)$，相加得 $h_x(x,x)+h_X(x,x)=0$，即 $w(x)=h(x,x)$ 满足 $w'(x)=0$。而 $h(x+1,X+1)=h(x,X)$ 使 $w$ 成为 $S^1$ 上的连续函数，非常数时必取到最大最小两个临界点，从而至少两个不动点。
+
+**老师（拓展）**：这条定理怎样推广到高维与更一般的尖扭转？
+
+**学生**：Conley–Zehnder 把它推广到高维：$T^{2n}$ 上的扭转映射至少有 $2n+1$（相应计数下更多）个不动点，是 Arnold 猜想的先声。用拓扑方法的 Franks 定理只须扭转条件即给至少两个不动点；生成函数 $+$ 临界点思想则发展成 Aubry–Mather 理论与辛算法（变分积分器）的长期稳定性分析。

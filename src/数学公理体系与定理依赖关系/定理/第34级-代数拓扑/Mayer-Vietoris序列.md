@@ -82,3 +82,19 @@ $$
 2. **环面 $T^2$ 的同调群**：将 $T^2$ 分解为两个开环带的并，利用序列计算得 $H_0 = \mathbb{Z}$，$H_1 = \mathbb{Z} \oplus \mathbb{Z}$，$H_2 = \mathbb{Z}$。
 
 3. **楔积 $X \vee Y$**：$H_n(X \vee Y) \cong H_n(X) \oplus H_n(Y)$ 对 $n > 0$，$H_0(X \vee Y) \cong \mathbb{Z}$。
+
+## 课堂问答
+
+**老师**：MV 序列的长正合列长什么样？
+
+**学生**：$X=U\cup V$ 为开集时
+
+$$\cdots\to H_n(U\cap V)\xrightarrow{(i_*,j_*)}H_n(U)\oplus H_n(V)\xrightarrow{k_*-l_*}H_n(X)\xrightarrow{\partial_*}H_{n-1}(U\cap V)\to\cdots$$
+
+**老师（追问）**：它从哪来，为什么能把 $H_n(U+V)$ 换成 $H_n(X)$？
+
+**学生**：链层有短正合列 $0\to C_n(U\cap V)\xrightarrow{\varphi}C_n(U)\oplus C_n(V)\xrightarrow{\psi}C_n(U+V)\to0$，其中 $\varphi(x)=(i_\#x,-j_\#x)$，对同调用蛇形引理得长正合列。关键是 $C_*(U+V)\hookrightarrow C_*(X)$ 是链同伦等价，由细分引理保证 $H_n(U+V)\cong H_n(X)$。
+
+**老师（拓展）**：用它怎么算球面同调？
+
+**学生**：取 $U=S^n\setminus\{N\}$、$V=S^n\setminus\{S\}$，各自可缩，$U\cap V\simeq S^{n-1}$，归纳得 $H_k(S^n)=\mathbb Z$（$k=0,n$）其余为零。常见误区是忘了 $U,V$ 必须是开集并覆盖 $X$，否则同伦等价那一步不成立。

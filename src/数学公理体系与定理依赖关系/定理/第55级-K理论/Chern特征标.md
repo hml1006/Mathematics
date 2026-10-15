@@ -202,3 +202,17 @@ $$\text{Lefschetz number} = \sum_{p \in \text{Fix}(f)} \frac{\text{tr}(f^*|_E)}{
 ### 7. 代数 K 理论
 
 Chern 特征标可以推广到代数 K 理论，提供从 $K_n(X)$ 到循环上同调的映射，这在算术几何中有重要应用。
+
+## 课堂问答
+
+**老师**：Chern 特征标是什么，为什么说它是"翻译官"？
+
+**学生**：结论：它是环同态 $\mathrm{ch}:K(X)\to H^{\mathrm{even}}(X;\mathbb Q)$，线丛上 $\mathrm{ch}(L)=e^{c_1(L)}$，把 K 类的加法与乘法翻译成上同调的加法与乘法。
+
+**老师（追问）**：为什么它良定义且总能写成 Chern 类的多项式？
+
+**学生**：因为 $\mathrm{ch}(E)=\sum_i e^{x_i}$（$x_i$ 为形式根，$c(E)=\prod_i(1+x_i)$）是对称多项式，由对称函数基本定理可表为 Chern 类的多项式，与分裂方式无关。常见误区：以为它在整系数上成立，其实必须张量 $\mathbb Q$ 才是同构。
+
+**老师（拓展）**：有理同构怎么证，有什么应用？
+
+**学生**：结论：$\mathrm{ch}:K(X)\otimes\mathbb Q\to H^{\mathrm{even}}(X;\mathbb Q)$ 是同构，用 Atiyah-Hirzebruch 谱序列知核为挠元，再用 Thom 构造证明满射。Chern-Weil 理论给出曲率表示 $\mathrm{ch}(E)=[\mathrm{tr}\exp(\frac{i}{2\pi}\Omega)]$；指标定理、Hirzebruch-Riemann-Roch 与 D-膜电荷都依赖它。

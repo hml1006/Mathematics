@@ -146,3 +146,17 @@ Artin 互反律和类域论的发展深刻影响了 20 世纪数学的多个方�
 - **上同调方法：** 类域论可以用群上同调重新表述（Tate 的全局类域论）。
 - **局部类域论：** 局部域 $K_v$ 的 Abel 扩张由 $K_v^\times$ 的闭子群描述（局部 Artin 映射）。
 - **几何类域论：** 代数曲线上的类域论（Arakelov 几何、几何 Langlands 纲领）。
+
+## 课堂问答
+
+**老师**：Artin 映射把什么送到什么？互反律的精确断言是什么？
+
+**学生**：Artin 映射 $\Phi_{L/K}:I_K(\mathfrak m)\to\operatorname{Gal}(L/K)$ 把与模 $\mathfrak m$ 互素的素理想 $\mathfrak p$ 送到 Frobenius 自同构 $\left(\frac{L/K}{\mathfrak p}\right)$，再乘性延拓到整个理想群。互反律断言它诱导出射线类群到 Galois 群的同构 $\operatorname{Cl}_{\mathfrak f}(K)/\ker\Phi_{L/K}\cong\operatorname{Gal}(L/K)$，其中 $\mathfrak f$ 是导子（使性质成立的最小模）。
+
+**老师（追问）**：Frobenius 自同构怎么定义，为什么 Abel 扩张时它只依赖 $\mathfrak p$？
+
+**学生**：$\left(\frac{L/K}{\mathfrak p}\right)$ 是唯一满足 $\sigma(x)\equiv x^{N(\mathfrak p)}\pmod{\mathfrak P}$（对所有 $x\in\mathcal O_L$）的自同构。一般它依赖 $\mathfrak P$ 的选取，但当 $L/K$ 是 Abel 扩张时，不同 $\mathfrak P$ 给出的元素彼此共轭、而群交换故相等，因此只依赖 $\mathfrak p$，记号才良定义。
+
+**老师（拓展）**：常见误区，以及它统一了哪些经典结果？
+
+**学生**：误区是把它只当作二次互反律的高维版。实际上 Artin 互反律配合 Takagi 存在性定理给出 $K$ 的有限 Abel 扩张与射线类群有限指数开子群之间的一一对应。推论包括二次互反律、Kronecker-Weber 定理（$\mathbb Q$ 的每个有限 Abel 扩张都含在某个分圆域 $\mathbb Q(\zeta_n)$ 中），以及 $K=\mathbb Q,L=\mathbb Q(\sqrt d)$ 时退回经典二次互反律；非 Abel 推广正是 Langlands 纲领。

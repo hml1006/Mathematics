@@ -49,3 +49,17 @@ $$
 ## 五、应用与意义
 
 这组性质提供了计算维数的"工具箱"：可数稳定性和单调性常用来放缩构造上下界，Lipschitz 与等距不变性保证维数是几何内在量（可独立于坐标与嵌入计算）。它们与质量分布原理结合，是证明 Cantor 集、Sierpinski 三角形、Koch 曲线维数的统一方法。
+
+## 课堂问答
+
+**老师**：Hausdorff 维数有哪些"像维数"的基本性质？
+
+**学生**：五条：单调性 $E\subset F\Rightarrow\dim_H E\le\dim_H F$；可数稳定性 $\dim_H(\bigcup_i F_i)=\sup_i\dim_H F_i$；Lipschitz 不变性 $\dim_H f(F)\le\dim_H F$；等距不变性；以及开集性——$\mathbb{R}^n$ 中非空开集维数恰为 $n$。
+
+**老师（追问）**：可数稳定性为什么取上确界，而不是把各维数相加？直觉上并起来不该更大吗？
+
+**学生**：关键在 $s$ 维 Hausdorff 测度可数次可加。设 $s>\sup_i\dim_H F_i$，则每个 $\mathcal{H}^s(F_i)=0$，于是 $\mathcal{H}^s(\bigcup_i F_i)\le\sum_i\mathcal{H}^s(F_i)=0$，故并集维数也不超过 $s$；反向不等式由单调性给出。可数多个 $0$ 维点并起来仍是 $0$ 维，正说明维数不会像测度那样累加。
+
+**老师（拓展）**：Lipschitz 不变性在证明里扮演什么角色？
+
+**学生**：它把维数变成几何内在量。设 Lipschitz 常数为 $c$，$F$ 的一个 $\delta$-覆盖被映到 $f(F)$ 的 $c\delta$-覆盖，于是 $\mathcal{H}^s_{c\delta}(f(F))\le c^s\mathcal{H}^s(F)$，取极限得 $\mathcal{H}^s(f(F))\le c^s\mathcal{H}^s(F)$，从而 $\dim_H f(F)\le\dim_H F$。误区是以为等距之外的一般 Lipschitz 映射也保持维数——它只保证不增大，只有等距（$c=1$）才双向保维。

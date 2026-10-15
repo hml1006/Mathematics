@@ -124,3 +124,17 @@ Navier-Stokes 方程弱解理论在多个领域有重要应用：
 - **部分正则性**：Caffarelli-Kohn-Nirenberg 定理证明了一维 Hausdorff 测度为零的奇点集。
 
 相关理论包括：Leray-Hopf 弱解、非常数密度 Navier-Stokes 方程、可压缩 Navier-Stokes 方程（Lions 弱解）。
+
+## 课堂问答
+
+**老师**：三维 Navier–Stokes 方程为什么只能先证弱解存在，而拿不到光滑强解？
+
+**学生**：因为非线性项 $(u\cdot\nabla)u$ 让先验估计不够强。Leray 用 Galerkin 逼近：在 Stokes 特征基 $V_m=\mathrm{span}\{w_1,\dots,w_m\}$ 上把方程化为有限维 ODE 组求解 $u_m$，再靠一致先验界去极限。
+
+**老师（追问）**：非线性项取极限靠什么？
+
+**学生**：核心是先拿到强收敛。能量估计给 $u_m$ 在 $L^\infty(0,T;L^2)\cap L^2(0,T;H^1)$ 一致有界，$\partial_tu_m$ 有界于 $L^{4/3}(0,T;H^{-1})$；由 Aubin–Lions 引理（$H^1\hookrightarrow\hookrightarrow L^2$ 配三明治结构）抽出子列强收敛于 $L^2(0,T;L^2)$，于是 $(u_m\cdot\nabla)u_m\to(u\cdot\nabla)u$ 在分布意义下成立。
+
+**老师（拓展）**：能量估计本身怎么来，为什么最后只写成不等式？
+
+**学生**：取测试函数为 $u_m$ 本身得 $\frac12\frac{d}{dt}\|u_m\|_{L^2}^2+\nu\|\nabla u_m\|_{L^2}^2=(f,u_m)$，其中对流项 $((u_m\cdot\nabla)u_m,u_m)=0$ 依赖 $\nabla\cdot u_m=0$（分部积分消去）；用 Young 与 Poincaré 估计右端并积分即得能量不等式。取极限时只有 $\|u(t)\|_{L^2}^2\le\liminf_m\|u_m(t)\|_{L^2}^2$（范数弱下半连续），严格等式未得，弱解的光滑性与唯一性正是千禧年难题。常见误区是把弱解直接当强解，或在未用无散度条件时错误地丢掉对流项。

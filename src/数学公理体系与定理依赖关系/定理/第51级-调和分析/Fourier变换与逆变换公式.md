@@ -114,6 +114,20 @@ $\square$
 - **概率论**：特征函数即分布的傅里叶变换，逆变换给出密度与分布的唯一性。
 - **数论与几何**：与 Poisson 求和公式配合，把格点的分布问题转化为对偶格点的求和。
 
+## 课堂问答
+
+**老师**：逆变换公式为什么必须借高斯函数来证？
+
+**学生**：结论：高斯 $\gamma(x)=e^{-\pi|x|^2}$ 自对偶（$\hat\gamma=\gamma$），其缩放族 $\gamma_\epsilon$ 是近似恒等核。在逆变换积分里插入收敛因子 $\gamma(\epsilon\xi)$ 保证绝对可积，用 Fubini 交换次序后内层积分化为 $\gamma_\epsilon(x-y)$，整体成为 $f*\gamma_\epsilon$。
+
+**老师（追问）**：最后 $\epsilon\to0$ 那步靠什么？
+
+**学生**：一方面 $f\in\mathcal S$ 时 $f*\gamma_\epsilon\to f$（连续点逐点）；另一方面由控制收敛定理 $I_\epsilon(x)\to\int\hat f(\xi)e^{2\pi ix\cdot\xi}d\xi$。两者比较即得 $\check{\hat f}=f$，一般 $f\in L^1\cap L^2$ 情形的几乎处处等号由稠密逼近延拓。
+
+**老师（拓展）**：由它怎么得到 $\mathcal F^4=\mathrm{id}$？
+
+**学生**：先由 $\check g(x)=\hat g(-x)$ 得 $\widehat{\hat f}(x)=\check{\hat f}(-x)=f(-x)$，即 $\mathcal F^2f=f(-\cdot)$；再作用一次得 $\mathcal F^4=\mathrm{id}$。这个四阶周期是傅里叶变换在 $L^2$ 上谱性质的根源。
+
 ## 相关条目
 
 - [Plancherel定理](./Plancherel定理.md)：把逆变换公式延拓到 $L^2$，得到傅里叶变换的酉性。

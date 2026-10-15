@@ -79,3 +79,17 @@ $\square$
 **推论**（遍历情形）：若 $T$ 是遍历的，则不变函数几乎处处为常数，因此 $P f = \int_X f \, d\mu \cdot \mathbf{1}_X$，从而
 $$\lim_{n \to \infty} \left\| \frac{1}{n} \sum_{k=0}^{n-1} f \circ T^k - \int_X f \, d\mu \right\|_{L^2} = 0$$
 $\square$
+
+## 课堂问答
+
+**老师**：von Neumann 定理与 Birkhoff 定理的区别在哪？
+
+**学生**：结论——von Neumann 只对 $f\in L^2$ 给出均方收敛：$\frac1n\sum_{k=0}^{n-1}U_T^kf\to Pf$（$P$ 是到 $U_T$-不变子空间的正交投影）；Birkhoff 给出 $L^1$ 函数的几乎处处逐点收敛。理由：把 $L^2=\ker(I-U_T)\oplus\overline{\operatorname{ran}(I-U_T)}$ 正交分解。
+
+**老师（追问）**：收敛速度如何？
+
+**学生**：在 $\overline{\operatorname{ran}(I-U_T)}$ 上，$\frac1n\sum U_T^kf=\frac1n(g-U_T^ng)$ 的范数不超过 $2\|g\|/n\to0$，即 $O(1/n)$；在不变子空间 $\ker(I-U_T)$ 上时间平均恒为恒等。
+
+**老师（拓展）**：遍历时投影是什么？
+
+**学生**：$Pf=\int_Xf\,d\mu\cdot\mathbf{1}_X$，即时间平均在均方意义下等于空间平均。要提醒的是，$L^2$ 收敛弱于逐点收敛，两者不能互相替代。

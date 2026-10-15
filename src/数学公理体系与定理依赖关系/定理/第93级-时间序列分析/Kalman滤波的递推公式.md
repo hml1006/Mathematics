@@ -53,3 +53,17 @@ $$
 ## 五、应用与意义
 
 Kalman 滤波是动态系统最优状态估计的核心工具，广泛用于自动驾驶、目标跟踪、导航、金融波动率（状态空间/随机波动模型）等。它把统计推断与时间序列建模统一起来，是可观测序列与潜状态之间桥接的典范，并推广到非线性（扩展 Kalman 滤波、无迹 Kalman 滤波）。
+
+## 课堂问答
+
+**老师**：Kalman 滤波的"预测—更新"两步各自在做什么，增益从哪来？
+
+**学生**：结论是高斯线性假设下条件分布始终是高斯的，只需递推均值与协方差。预测步 $\hat{\boldsymbol{\alpha}}_{t|t-1}=\boldsymbol{T}_t\hat{\boldsymbol{\alpha}}_{t-1|t-1}$、$\boldsymbol{P}_{t|t-1}=\boldsymbol{T}_t\boldsymbol{P}_{t-1|t-1}\boldsymbol{T}_t^\top+\boldsymbol{R}_t\boldsymbol{Q}_t\boldsymbol{R}_t^\top$；更新步用增益 $\boldsymbol{K}_t=\boldsymbol{P}_{t|t-1}\boldsymbol{Z}_t^\top(\boldsymbol{Z}_t\boldsymbol{P}_{t|t-1}\boldsymbol{Z}_t^\top+\boldsymbol{H}_t)^{-1}$，得 $\hat{\boldsymbol{\alpha}}_{t|t}=\hat{\boldsymbol{\alpha}}_{t|t-1}+\boldsymbol{K}_t(\boldsymbol{y}_t-\boldsymbol{Z}_t\hat{\boldsymbol{\alpha}}_{t|t-1})$、$\boldsymbol{P}_{t|t}=(\boldsymbol{I}-\boldsymbol{K}_t\boldsymbol{Z}_t)\boldsymbol{P}_{t|t-1}$。增益本质是先验不确定度对观测不确定度的权重。
+
+**老师（追问）**：为什么 $\boldsymbol{P}_{t|t}=(\boldsymbol{I}-\boldsymbol{K}_t\boldsymbol{Z}_t)\boldsymbol{P}_{t|t-1}$ 就保证后验协方差最小？
+
+**学生**：由联合高斯条件分布公式，后验协方差为 $\boldsymbol{P}_{t|t-1}-\boldsymbol{P}_{t|t-1}\boldsymbol{Z}_t^\top(\boldsymbol{Z}_t\boldsymbol{P}_{t|t-1}\boldsymbol{Z}_t^\top+\boldsymbol{H}_t)^{-1}\boldsymbol{Z}_t\boldsymbol{P}_{t|t-1}$，恰是 $(\boldsymbol{I}-\boldsymbol{K}_t\boldsymbol{Z}_t)\boldsymbol{P}_{t|t-1}$；它对观测噪声作最优折衷，$\boldsymbol{K}_t$ 即后验迹最小化之解。
+
+**老师（拓展）**：这套递推与最小二乘、MMSE 的关系是什么，何时失效？
+
+**学生**：它是 MMSE（条件期望）估计的在线递推，无观测噪声时退化为递推最小二乘；对非线性系统高斯性不再保持，会失效，需改用扩展 Kalman 滤波或无迹 Kalman 滤波。

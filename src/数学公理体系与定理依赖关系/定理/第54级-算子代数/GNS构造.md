@@ -150,3 +150,17 @@ GNS 构造在算子代数和相关领域有广泛应用：
 7. **非交换概率论**：GNS 构造是非交换概率论中从"分布"构造"随机变量"的基本工具，类似于经典概率论中从分布函数构造随机变量的过程。
 
 GNS 构造是连接抽象代数结构与具体算子实现的桥梁，是现代算子代数理论不可或缺的工具。
+
+## 课堂问答
+
+**老师**：一个状态怎么能"凭空造出"一个希尔伯特空间？
+
+**学生**：结论：用半内积 $\langle a,b\rangle_\omega=\omega(b^*a)$，商掉零空间 $N_\omega=\{a:\omega(a^*a)=0\}$ 再完备化得 $H_\omega$，$A$ 左乘作用给出 *-表示 $\pi_\omega$，且 $\pi_\omega(a)[b]=[ab]$。
+
+**老师（追问）**：为什么 $N_\omega$ 是左理想、左乘良定义？
+
+**学生**：由正泛函的 Cauchy-Schwarz $|\omega(b^*a)|^2\le\omega(b^*b)\omega(a^*a)$，得 $a\in N_\omega$ 时 $\omega((ba)^*(ba))=0$，故 $N_\omega$ 是左理想，商上内积良定义。常见误区：以为商空间本身就是 Hilbert 空间，其实还需完备化。
+
+**老师（拓展）**：循环向量与纯态有什么联系？
+
+**学生**：结论：$\xi_\omega=[1]$ 是循环向量且 $\omega(a)=\langle\xi_\omega,\pi_\omega(a)\xi_\omega\rangle$；$\omega$ 是纯态 $\iff$ $\pi_\omega$ 不可约。所有状态 GNS 表示的直和忠实，这正是 Gelfand-Naimark 一般情形的关键一步。

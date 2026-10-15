@@ -29,3 +29,19 @@ $$
 ## 五、应用与意义
 
 Toën–Vezzosi 的工作为派生代数几何提供自洽严格框架，支撑派生模空间、导出 HD、derived schemes with shtuka 与几何 Langlands 的派生层面。它是现代高级几何研究不可缺的基准，也是 Lurie 体系的平行实现。
+
+## 课堂问答
+
+**老师**：Toën–Vezzosi 框架的"基本定理"在讲什么？
+
+**学生**：结论：它给出派生概形/导出 stack 的严格构造，并证明 cotangent complex 的存在与其泛性质。设 $k$ 为基环（或谱），$\mathrm{dSt}_k$ 为派生 stack，则存在 cotangent 复形函子
+$$\mathbb{L}:\mathrm{dSt}_k^{\mathrm{op}}\to\mathrm{Sp}(\mathrm{QCoh}(\bullet))$$
+满足：对 affine，$\mathbb{L}_{\mathrm{Spec}\,A}=\mathbb{L}_{A/k}$；形变函子由 $\mathbb{L}$ 的谱同构表示；且对纤维积、推前与交换图保持完整。常见误区是以为它只是 Lurie 体系的重复，其实它用 model 范畴给出平行且自洽的构造。
+
+**老师（追问）**：$\mathbb{L}$ 在证明中是怎么"造出来"的？
+
+**学生**：先在 $\mathbb{E}_\infty$ 环与 Hopf 代数上由 dg-presentation 证明 cotangent complex 可表示；再经相对化与余积延拓到 stack，确立切空间/障碍的谱提取；用 $\infty$-model 结构与 descent 证传递性、纤维积完整性与幺半结构；最后建立该函子的泛性质——"任何派生 stack 的 cotangent 皆可算"。于是切空间 $\mathrm{H}^0\mathbb{L}$、障碍 $\mathrm{H}^1\mathbb{L}$、高阶 $T^i$ 全部就位。
+
+**老师（拓展）**：它相对 Lurie 的意义在哪？
+
+**学生**：它是导出代数几何的平行实现，用 $\mathbb{E}_\infty$-环 + model 结构刻画导出概形与派生 stack，并强调 cotangent complex 的普适计算。它支撑派生模空间、导出 Hitchin/HD、带 shtuka 的导出概形与几何 Langlands 的派生层面，是现代高级几何的基准框架之一。

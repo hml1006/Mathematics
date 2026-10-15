@@ -81,6 +81,24 @@ $$
 - 在算法分析与组合渐近中，Tauber 型结论用于由生成函数奇性估计系数和。
 - 它揭示了 Abel 求和与普通求和之间"差多少"的精确条件，是发散级数可和性理论的基石。
 
+## 课堂问答
+
+**老师**：Tauber 定理是 Abel 定理的"反向题"，反向所需的附加条件差在哪里？
+
+**学生**：Abel 方向是若 $\sum a_n$ 收敛则 $\sum a_nx^n\to S$；Tauber 方向在附加 $na_n\to0$（更弱地 $a_n=O(1/n)$）时反推 $\sum a_n=S$。条件不可去除：$\sum(-1)^nx^n\to\frac12$，但部分和振荡，正因 $|a_n|=1$ 不满足 $na_n\to0$。
+
+**老师（追问）**：证明里为什么取 $x=x_N=e^{-1/N}$ 这个特定值？
+
+**学生**：因为它让截断尺度与 $N$ 匹配。由
+$$
+|\sigma_N-f(x_N)|\le\Big|\sum_{n\le N}a_n(1-x_N^n)\Big|+\Big|\sum_{n>N}a_nx_N^n\Big|,
+$$
+低阶项用 $1-e^{-n/N}\le\frac nN$ 与 $na_n\to0$ 控制，尾项用 $|a_n|\le\frac{\epsilon}{n}$ 与 $\int_1^\infty e^{-u}u^{-1}du<\infty$ 控制，两者都趋于 $0$。
+
+**老师（拓展）**：数论里用的是哪一个变体，它靠什么原理？
+
+**学生**：Karamata 型：若 $a_n\ge0$ 且 $\sum a_nn^{-s}\sim\frac{A}{s-1}$（$s\to1^+$），则 $\sum_{n\le x}a_n\sim Ax$。原理仍是"非负性带来的单调性把平均收敛升级为逐点收敛"，与 Ikehara 定理共用同一步；Wiener 型则把它推广到"傅里叶变换处处不消失"的一般核。
+
 ## 相关条目
 
 - [Ikehara-Wiener Tauber 定理](./Ikehara-WienerTauber定理.md)：本定理在非负系数 Dirichlet 级数上的强力形式。

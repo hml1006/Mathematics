@@ -90,6 +90,20 @@ $$\lambda_1=\max_{\|x\|=1}\langle Ax,x\rangle,\qquad \lambda_k=\max_{x\perp v_1,
 
 极值由紧性（单位球在有限维投影下相对紧）保证可取得。这正是 Rayleigh–Ritz 方法与 Sturm–Liouville 特征展开的基础。
 
+## 课堂问答
+
+**老师**：Rayleigh 商与自伴算子的特征值有什么联系？
+
+**学生**：$\lambda_1=\min_{x\ne0}\frac{\langle Ax,x\rangle}{\langle x,x\rangle}$、$\lambda_n=\max_{x\ne0}\frac{\langle Ax,x\rangle}{\langle x,x\rangle}$，极值在对应特征向量处取得。更精细地，Courant-Fischer 给出 $\lambda_k=\min_{V\in\mathcal{V}_k}\max_{0\ne x\in V}R(x)$，其中 $\mathcal{V}_k$ 为一切 $k$ 维子空间。
+
+**老师（追问）**：为什么 Rayleigh 商必落在 $\lambda_1$ 与 $\lambda_n$ 之间？
+
+**学生**：在正交特征基下 $x=\sum_ic_iv_i$，于是 $R(x)=\frac{\sum_i\lambda_i|c_i|^2}{\sum_i|c_i|^2}$，这是以 $|c_i|^2$ 为权的特征值加权平均，自然夹在最小与最大之间；取 $x=v_1$ 或 $x=v_n$ 达到两端。
+
+**老师（拓展）**：Courant-Fischer 的维数论证怎么走？
+
+**学生**：任取 $k$ 维子空间 $V$，它与 $\operatorname{span}\{v_k,\dots,v_n\}$（维数 $n-k+1$）必有非零交，交中任一 $x$ 给 $R(x)\ge\lambda_k$，故 $\max_VR\ge\lambda_k$；取 $V=\operatorname{span}\{v_1,\dots,v_k\}$ 得 $\le\lambda_k$。注意自伴性是本质的，非自伴算子的 Rayleigh 商可能取复值且不反映特征值。
+
 ## 相关条目
 
 - [谱定理紧自伴算子](./谱定理紧自伴算子.md)：提供正交特征基，是本变分原理展开二次型的前提。

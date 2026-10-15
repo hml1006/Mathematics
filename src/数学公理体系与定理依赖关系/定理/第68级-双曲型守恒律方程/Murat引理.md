@@ -74,6 +74,20 @@ $$
 - **一般框架**：引理可推广到 $n$ 维与 $L^p$ 情形，是 div-curl 型补偿紧性结果的原型。
 - **其他领域**：在流体力学、磁流体与液晶模型中用于证明非线性量的强收敛。
 
+## 课堂问答
+
+**老师**：Murat 引理（div-curl 引理）说了一件什么事？为什么它叫"补偿紧性"？
+
+**学生**：若 $u_\varepsilon\rightharpoonup u$、$v_\varepsilon\rightharpoonup v$ 于 $L^2$，且 $\{\operatorname{div}u_\varepsilon\}$ 在 $H^{-1}_{\mathrm{loc}}$ 相对紧、$\{\operatorname{curl}v_\varepsilon\}$ 在 $H^{-1}_{\mathrm{loc}}$ 相对紧，则 $u_\varepsilon\cdot v_\varepsilon\rightharpoonup u\cdot v$ 于分布意义。一般弱收敛不保持乘积，但散度/旋度的紧性"补偿"了缺失的强收敛，把乘积的弱极限救回来，这正是补偿紧性。
+
+**老师（追问）**：证明的关键机制是什么？Helmholtz 分解起什么作用？
+
+**学生**：把 $u_\varepsilon=u+w_\varepsilon$、$v_\varepsilon=v+z_\varepsilon$，只需证 $w_\varepsilon\cdot z_\varepsilon\rightharpoonup0$。做分解 $w_\varepsilon=\nabla\phi_\varepsilon+g_\varepsilon$（$\operatorname{div}g_\varepsilon=0$）。由 $\operatorname{div}u_\varepsilon$ 紧，椭圆估计给出 $\phi_\varepsilon$ 在 $H^1_{\mathrm{loc}}$ 紧、$\nabla\phi_\varepsilon$ 强收敛；由 $\operatorname{curl}v_\varepsilon=\Delta\chi_\varepsilon$ 紧得无散度部分 $h_\varepsilon=\nabla^\perp\chi_\varepsilon$ 强收敛。这样内积四项中三项含强收敛因子可直接取极限，第四项 $g_\varepsilon\cdot\nabla\psi_\varepsilon=\operatorname{div}(\psi_\varepsilon g_\varepsilon)$ 用分部积分消去无控方向。
+
+**老师（拓展）**：它对守恒律熵解理论有什么用？$L^p$ 情形如何推广？
+
+**学生**：守恒律里状态与通量满足散度结构，熵对 $(\eta_i,q_i)$ 给出向量场 $(q_i(\nu_\varepsilon),-\eta_i(\nu_\varepsilon))$，用 div-curl 引理可得 Young 测度的交换关系，熵对足够多时可逼 Young 测度为 Dirac 测度，从而 $\nu_\varepsilon$ 几乎处处收敛。$L^p$ 情形：若 $u_\varepsilon\rightharpoonup u$ 于 $L^p$、$v_\varepsilon\rightharpoonup v$ 于 $L^q$，$1/p+1/q=1/r\le1$，散度、旋度分别在 $W^{-1,p},W^{-1,q}$ 紧，则 $u_\varepsilon\cdot v_\varepsilon\rightharpoonup u\cdot v$ 于 $L^r_{\mathrm{loc}}$。常见误区是漏掉"相对紧"这一条，只要求有界是不够的。
+
 ## 相关条目
 
 - [compensated-compactness](./compensated-compactness.md)：Murat 引理是补偿紧性理论中最基本的引理。

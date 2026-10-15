@@ -82,6 +82,20 @@ $$
 
 取平方根得 $\|\mathbf x+\mathbf y\|\le\|\mathbf x\|+\|\mathbf y\|$。$\square$
 
+## 课堂问答
+
+**老师**：两个向量内积的大小，凭什么一定被它们各自长度卡住？这不等式最干脆的证明是什么？
+
+**学生**：结论先行——$|\langle\mathbf x,\mathbf y\rangle|\le\|\mathbf x\|\,\|\mathbf y\|$，等号当且仅当两者线性相关。证明只用一个恒非负的二次式：$0\le\|\mathbf x+t\mathbf y\|^2=\|\mathbf x\|^2+2t\langle\mathbf x,\mathbf y\rangle+t^2\|\mathbf y\|^2$。
+
+**老师（追问）**：这个二次式恒非负，为什么就等价于判别式不超过零？等号情形又对应什么？
+
+**学生**：首项系数 $\|\mathbf y\|^2>0$，处处非负迫使判别式 $\Delta=(2\langle\mathbf x,\mathbf y\rangle)^2-4\|\mathbf y\|^2\|\mathbf x\|^2\le0$，开方即得。等号即 $\Delta=0$，此时二次式有重根 $t_0$，$\|\mathbf x+t_0\mathbf y\|=0$，故 $\mathbf x=-t_0\mathbf y$ 线性相关。
+
+**老师（拓展）**：把 $t$ 取成复数，实内积的证法还够用吗？
+
+**学生**：不够，要令 $t=-\langle\mathbf x,\mathbf y\rangle/\|\mathbf y\|^2$，代入得 $0\le\|\mathbf x\|^2-|\langle\mathbf x,\mathbf y\rangle|^2/\|\mathbf y\|^2$。常见误区是忘了复情形内积对第一变量线性、$\langle\mathbf y,\mathbf x\rangle=\overline{\langle\mathbf x,\mathbf y\rangle}$，照搬实展开会丢虚部。它还是三角不等式 $\|\mathbf x+\mathbf y\|\le\|\mathbf x\|+\|\mathbf y\|$ 的源头。
+
 ## 相关条目
 
 - [Gram-Schmidt 正交化](./Gram-Schmidt正交化.md)：依赖内积与投影，Cauchy-Schwarz 不等式保证投影系数良定义。

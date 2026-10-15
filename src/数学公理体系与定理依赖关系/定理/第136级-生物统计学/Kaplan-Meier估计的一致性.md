@@ -60,3 +60,17 @@ $$
 ## 五、应用与意义
 
 Kaplan-Meier 曲线是生存分析最常用的可视化与推断工具，被广泛用于临床试验、肿瘤随访、器械与生物统计研究。其基于计数过程鞅的严格理论支撑了区间估计、组间比较（Log-rank）与 Cox 模型的配套推断，是现代统计学处理删失数据的基石。
+
+## 课堂问答
+
+**老师**：$\hat S(t)=\prod_{t_i\le t}(1-d_i/n_i)$ 是怎么处理删失的，凭什么一致？
+
+**学生**：结论——删失者在事件时刻前始终计入风险分母 $n_i$，不会被误当死亡，且 $\hat S$ 在 $[0,\tau]$ 上一致收敛于 $S$。理由：$\hat S$ 为乘积限估计，$\hat\Lambda$ 为 Nelson–Aalen；由计数过程鞅 $M=N-\Lambda^*$ 得偏差表示 $\hat\Lambda(t)-\Lambda(t)=\int_0^t\frac{dM(s)}{Y(s)}$。常见误区：以为删失与死亡可随意等价——只有在**独立删失**下 $M$ 才是鞅，删失依赖才是偏倚来源。
+
+**老师（追问）**：一致性怎么从"逐点"升级到"一致"？
+
+**学生**：先算方差 $\text{Var}\int_0^t\frac{dM}{Y}=\mathbb E\int_0^t\frac{h(s)}{Y(s)}\,ds\to0$（风险集 $Y=O_p(n)\to\infty$），由 Chebyshev 得 $\hat\Lambda(t)\xrightarrow{p}\Lambda(t)$；再由乘积积分 $\hat S=\mathcal P_{s\le t}(1-d\hat\Lambda(s))$ 与连续映射得 $\hat S\xrightarrow{p}e^{-\Lambda}=S$；最后用 Lenglart 鞅不等式把 $\sup_{[0,\tau]}|\hat\Lambda-\Lambda|$ 也控住，即得一致收敛。
+
+**老师（拓展）**：为什么要限制 $t\le\tau$ 且 $P(T>\tau)>0,\ P(C>\tau)>0$？
+
+**学生**：因为末尾风险集可能变空使 $n_i=0$、$1-d_i/n_i$ 定义失效，$\hat S$ 在最大观测时间之后无定义（估不到 $S$ 的尾部）。限制 $\tau$ 使 $Y(\tau)$ 仍 $O_p(n)$ 有下界，保证分母可逆、方差估计与大数定律成立——这正是 KM 估计"尾部不稳"的根源。

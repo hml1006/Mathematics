@@ -150,3 +150,25 @@ $$
 3. **镜像对称**：Lagrangian Floer 同调是 Homological Mirror Symmetry 的核心代数对象，将几何问题转化为 $A_\infty$-范畴的计算。
 
 4. **规范理论**：Floer 同调启发了 Instanton Floer 同调、Heegaard Floer 同调、Monopole Floer 同调等，深刻影响低维拓扑的研究。
+
+## 课堂问答
+
+**老师**：Floer 链复形是怎样定义出来的？
+
+**学生**：对非退化 Hamilton 函数 $H$，取 Hamilton 方程 1-周期解集 $\mathcal P(H)$，按 Conley–Zehnder 指标分次：
+$$CF_k(H)=\bigoplus_{\substack{x\in\mathcal P(H)\\\mu_{CZ}(x)=k}}\mathbb Z_2\langle x\rangle,$$
+边界算子 $\partial_k$ 由连接 $x^-$ 到 $x^+$ 的 Floer 方程
+$$\partial_s u+J_t(u)(\partial_t u-X_H(t,u))=0,\quad \lim_{s\to\pm\infty}u=x^\pm$$
+的模空间（模 $\mathbb R$-平移）的模 2 计数给出。常见误区是把周期解误当普通临界点——这里临界点集是无穷维环路空间上的。
+
+**老师（追问）**：$\partial^2=0$ 凭什么成立？
+
+**学生**：由紧性。$\mu_{CZ}(x^-)-\mu_{CZ}(x^+)=2$ 的模空间 $\widehat{\mathcal M}(x^-,x^+)$ 是 1 维紧致带边流形，其边界恰为断裂轨道的组合
+$$\partial\widehat{\mathcal M}(x^-,x^+)=\bigsqcup_y\widehat{\mathcal M}(x^-,y)\times\widehat{\mathcal M}(y,x^+),$$
+1 维紧致带边流形的边界点数为偶数（模 2 为零），故 $\langle\partial^2x^-,x^+\rangle=0$。这依赖 Gromov 紧性（$\omega|_{\pi_2}=0$ 时无球气泡）。
+
+**老师（拓展）**：Floer 同调与奇异同调的关系，以及它的不变性从何而来？
+
+**学生**：取 $H=\varepsilon f$、$\varepsilon\to0$，$\mathcal A_H$ 逼近 Morse 函数，Floer 方程退化为负梯度流，故
+$$HF_*(M,\omega)\cong MH_{*+n}(M)\cong H_{*+n}(M;\mathbb Z_2),$$
+位移 $n$ 来自 $\mu_{CZ}$ 的规范选取。不变性由 continuation map $\Phi_{H_-H_+}:CF_*(H_-)\to CF_*(H_+)$ 给出：不同 $H,J$ 的 Floer 同调同构，故它只依赖 $(M,\omega)$。

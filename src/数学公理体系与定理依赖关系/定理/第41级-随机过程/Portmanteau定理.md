@@ -132,6 +132,20 @@ $$\Big|\int f\,d\mu_n-\int f\,d\mu\Big|\le\frac{\epsilon}{2}+\frac{\epsilon}{2}=
 
 **推论 3**：若 $\mu_n\Rightarrow\mu$ 且 $\mu$ 由某个子族决定（例如 $\mu$ 在一切 $\mu$-连续集上取值确定），则极限唯一。
 
+## 课堂问答
+
+**老师**：弱收敛定义在 $C_b(S)$ 上，为什么还要五种等价形式？
+
+**学生**：因为 $C_b(S)$ 太大，直接验证难，等价形式把"函数积分收敛"翻译成集合语言：(a) $C_b$ 积分收敛；(b) 开集 $\liminf\mu_n(G)\ge\mu(G)$；(c) 闭集 $\limsup\mu_n(F)\le\mu(F)$；(d) $\mu$-连续集上 $\mu_n(A)\to\mu(A)$；(e)(f) 有界一致连续/有界 Lipschitz 函数收敛。证明循环是 (a)⇒(b)⇒(c)⇒(d)⇒(a)，外加 (a)⇒(e)⇒(f)⇒(a)。
+
+**老师（追问）**：为什么开集只能给下极限而不是极限？
+
+**学生**：因为 $1_G$ 不连续，而弱收敛只控制连续函数。从下方逼近容易：$f_k(x)=\min(1,k\,d(x,G^c))\uparrow1_G$ 且 $f_k$ 有界连续，故 $\liminf\mu_n(G)\ge\int f_k\,d\mu\to\mu(G)$；从上方逼近则做不到，因为 $1_G$ 非上半连续。这就是"下极限"的来源，闭集情形取补集对称得到。
+
+**老师（拓展）**：为什么"$\mu(\partial A)=0$"是关键的夹逼条件？
+
+**学生**：因为它把集合用内部与闭包夹死：$\mathring A\subseteq A\subseteq\overline A$，且 $\mu(\mathring A)=\mu(A)=\mu(\overline A)$。于是 $\mu(\mathring A)\le\liminf\mu_n(A)\le\limsup\mu_n(A)\le\mu(\overline A)$ 两端相等，$\mu_n(A)$ 被迫收敛。常见误区：以为所有 Borel 集都收敛——取 $\delta_{1/n}\Rightarrow\delta_0$ 与 $A=\{0\}$，则 $\mu_n(A)=0\not\to1$，因为 $\mu(\partial\{0\})=1>0$。
+
 ## 相关条目
 
 - [紧性准则](./紧性准则.md)：Prokhorov 定理的证明反复使用本定理的开集下半连续性。

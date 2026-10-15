@@ -79,3 +79,17 @@ $$\mathfrak{g} = \mathfrak{h} \oplus \bigoplus_{\alpha \in \Phi} \mathfrak{g}_\a
 **证明思路**：通过分析单根之间的夹角和长度比，列出所有可能的 Coxeter 图，然后排除那些不能对应根系统的图（通过可对称化条件和整性条件）。剩余的图正好是上述列表。$\square$
 
 **推论**：每个有限维复半单李代数唯一地分解为单李代数的直和，其分类由 Dynkin 图完全决定。连通紧李群的分类也由相同的 Dynkin 图给出。
+
+## 课堂问答
+
+**老师**：根系统与 Dynkin 图各编码了什么？
+
+**学生**：在 Cartan 子代数下有分解 $\mathfrak{g}=\mathfrak{h}\oplus\bigoplus_{\alpha\in\Phi}\mathfrak{g}_\alpha$，根系统 $\Phi\subset\mathfrak{h}^*$ 满足张成 $\mathfrak{h}^*$、$\dim\mathfrak{g}_\alpha=1$、整性 $\frac{2(\beta,\alpha)}{(\alpha,\alpha)}\in\mathbb{Z}$ 与反射不变性。Dynkin 图取一组单根，节点间边数由 $\frac{4(\alpha,\beta)^2}{(\alpha,\alpha)(\beta,\beta)}$ 决定，多于一条边时箭头指向短根。
+
+**老师（追问）**：整性条件与反射不变性从哪里来？
+
+**学生**：来自每个根 $\alpha$ 对应的 $\mathfrak{sl}_2$-三元组 $\{H_\alpha,E_\alpha,E_{-\alpha}\}$。把 $\mathfrak{g}$ 看成该 $\mathfrak{sl}_2$ 的表示，$\beta$ 所在的权链给出 $\beta(H_\alpha)=\frac{2(\beta,\alpha)}{(\alpha,\alpha)}\in\mathbb{Z}$，同时 $s_\alpha(\beta)=\beta-\beta(H_\alpha)\alpha\in\Phi$，二者一并出来。
+
+**老师（拓展）**：分类最后为什么只剩 $A$–$G$ 那几张图？
+
+**学生**：单根夹角只能是 $90^\circ,120^\circ,135^\circ,150^\circ$，依次对应边数 $0,1,2,3$ 与长度比 $1,\sqrt2,\sqrt3$。用这些约束加可对称化与整性条件枚举所有 Coxeter 图并剔除不合法者，剩下的正是 $A_n,B_n,C_n,D_n,E_6,E_7,E_8,F_4,G_2$。误区：别只看图是否连通，箭头方向区分 $B_n$ 与 $C_n$，长短根颠倒就换成另一类。

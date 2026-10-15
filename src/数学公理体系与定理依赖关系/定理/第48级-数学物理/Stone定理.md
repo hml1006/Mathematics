@@ -76,3 +76,17 @@ $$
 由谱定理，$A = \int_{\mathbb{R}} \lambda \, dE(\lambda)$。定义 $V(t) = \int_{\mathbb{R}} e^{it\lambda} \, dE(\lambda)$，则 $\{V(t)\}$ 是强连续单参数酉群，且由步骤1中的生成元也是 $A$。由生成元的唯一性，$U(t) = V(t) = e^{itA}$。$\square$
 
 **推论**：Stone定理建立了酉表示与自伴算子之间的一一对应。在量子力学中，时间演化 $U(t) = e^{-iHt/\hbar}$ 由 Hamiltonian 算子 $H$ 生成，薛定谔方程 $i\hbar \frac{d}{dt}\psi = H\psi$ 的解正是 $U(t)\psi_0$。
+
+## 课堂问答
+
+**老师**：强连续单参数酉群与自伴算子为什么一一对应？
+
+**学生**：结论：$U(t)=e^{itA}$ 当且仅当 $A$ 自伴。理由：先取无穷小生成元 $A=\lim_{t\to0}\frac{U(t)-I}{it}$，它对称且闭，再证 $A\pm iI$ 满（用 $x=\int_0^\infty e^{-t}U(t)y\,\mathrm dt$）得自伴；反之用谱定理 $U(t)=\int e^{it\lambda}\,dE(\lambda)$。常见误区：以为 $A$ 必定有界。
+
+**老师（追问）**：为什么"$A\pm iI$ 满射"能推出 $A$ 自伴？
+
+**学生**：对称算子 $A$ 自伴当且仅当 $\mathcal D(A^*)=\mathcal D(A)$，等价于 $A+iI$ 与 $A-iI$ 都有满值域；这两个条件排除了谱落到上、下半平面，从而谱落在实轴上。
+
+**老师（拓展）**：这如何给出 Schrödinger 方程的严格解？
+
+**学生**：$H$ 自伴时 $U(t)=e^{-itH/\hbar}$ 是强连续酉群，$\psi(t)=U(t)\psi_0$ 即方程解，且 $\|\psi(t)\|$ 守恒（幺正演化），与路径积分给出的传播子完全一致。

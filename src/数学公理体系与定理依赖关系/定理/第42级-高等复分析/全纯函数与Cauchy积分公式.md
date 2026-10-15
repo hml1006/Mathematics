@@ -110,6 +110,21 @@ $$|f^{(n)}(z_0)|\le\frac{n!}{2\pi}\cdot\frac{M}{R^{n+1}}\cdot2\pi R=\frac{n!\,M}
 
 即 Cauchy 估计。再把 $\frac{1}{z-z_0}$ 在圆盘内按几何级数展开并逐项积分，即得 $f$ 的 Taylor 展开 $f(z)=\sum_{n\ge0}\frac{f^{(n)}(z_0)}{n!}(z-z_0)^n$：全纯函数局部是幂级数之和。作为推论，若 $f$ 在全平面全纯且有界，则对任意 $R$ 有 $|f'(z_0)|\le M/R\to0$，故 $f'\equiv0$，$f$ 为常数（Liouville 定理）。$\square$
 
+## 课堂问答
+
+**老师**：全纯函数的"刚性"到底源自哪里？
+
+**学生**：结论：复可导迫使实部与虚部满足 Cauchy–Riemann 方程 $u_x=v_y,\ u_y=-v_x$，由此得到 Cauchy 积分定理 $\oint_\gamma f\,dz=0$，闭曲线上的信息便"锁死"了区域内部的取值。
+
+**老师（追问）**：为什么积分公式要"挖一个小洞"来证？
+
+**学生**：因为被积函数 $\frac{f(z)}{z-z_0}$ 在 $z_0$ 处不解析，不能直接用积分定理；但它在挖去小圆盘的区域上解析，于是沿外边界与小圆周 $\gamma_\varepsilon$ 的积分相等。令 $\varepsilon\to0$，用小圆周上 $f(z)=f(z_0)+o(1)$，即得
+$$f(z_0)=\frac{1}{2\pi i}\oint_\gamma\frac{f(z)}{z-z_0}\,dz.$$
+
+**老师（拓展）**：从它能顺势推出哪些结论？
+
+**学生**：高阶导数公式 $f^{(n)}(z_0)=\frac{n!}{2\pi i}\oint_\gamma\frac{f(z)}{(z-z_0)^{n+1}}dz$、Cauchy 估计 $|f^{(n)}(z_0)|\le\frac{n!M}{R^n}$、幂级数展开，以及 Liouville 定理。要点是"复可导一次即可导无穷次"。
+
 ## 相关条目
 
 - [Cauchy-Riemann方程](../第18级-复分析/Cauchy-Riemann方程.md)：全纯性的实坐标刻画，本词条证明的起点。

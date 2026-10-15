@@ -83,3 +83,17 @@ $$|\hat{s}^{(k)}| \leq \frac{|\hat{H}_1^{(k)}|}{\gamma} |k|^\tau$$
 令 $\Phi^\nu = \Phi_1 \circ \cdots \circ \Phi_\nu$，则 $\Phi^\nu$ 在Cantor集 $\Omega_\varepsilon$ 上一致收敛到 $\Phi^\infty$。原系统在 $\Phi^\infty$ 下的像为可积系统，因此原系统在 $\Phi^\infty(\mathbb{T}^n)$ 上存在不变环面。$\square$
 
 **推论**：在KAM定理的条件下，近可积Hamilton系统在相空间中存在一个正测度的不变环面集，其上的运动是拟周期的。这表明即使系统不可积，其大部分轨道仍然表现出高度规则的行为。$\square$
+
+## 课堂问答
+
+**老师**：KAM 定理解决了什么问题？
+
+**学生**：结论——近可积 Hamilton 系统 $H=H_0(I)+\varepsilon H_1(I,\theta)$ 在小扰动下，Diophantine 频率对应的一大族不变环面仍然存在（仅微变形、运动拟周期），构成正测度的 Cantor 集。理由：用 Newton 型迭代使误差平方化 $\|R_{\nu+1}\|\le C_\nu\|R_\nu\|^2$。
+
+**老师（追问）**：小分母问题是什么、如何被克服？
+
+**学生**：解线性化方程 $\langle k,\omega\rangle\hat s^{(k)}=\hat H_1^{(k)}$ 时，$\langle k,\omega\rangle$ 可任意小，经典幂级数因此发散。Diophantine 条件 $|\langle k,\omega\rangle|\ge\gamma/|k|^\tau$ 给分母一致下界，配合 Newton 迭代的超指数收敛就能越过障碍。
+
+**老师（拓展）**：被破坏的环面跑到哪里？
+
+**学生**：集中在共振频率附近；存留环面的测度随 $\varepsilon\to0$ 趋于满测度，共振层则是 Arnold 扩散与混沌的地盘。这就是太阳系轨道长期稳定的动力学解释。

@@ -89,6 +89,20 @@ $$
 
 Tracy-Widom 分布的普适性远超随机矩阵领域。在组合数学中，随机排列最长递增子序列的长度在正确缩放后收敛到 $F_2$（Baik-Deift-Johansson 定理）。在统计物理中，它描述了一类随机生长模型（如 KPZ 方程与 TASEP）在长时间下的涨落分布。在高维统计中，Tracy-Widom 分布给出了主成分分析、协方差矩阵检验和稀疏检测中最大特征值显著性的精确临界分布。近年来，它还在机器学习的优化景观、随机图论以及排队论中被发现扮演重要角色，成为连接随机矩阵、可积系统与非线性波动方程的普适性标志。
 
+## 课堂问答
+
+**老师**：为什么最大特征值的涨落尺度是 $N^{2/3}$，而不是 CLT 的 $N^{-1/2}$？
+
+**学生**：因为半圆密度在边缘 $x=2$ 处按 $\sqrt{2-x}$ 消失，特征值被挤压，涨落被放大。精确结论是 $N^{2/3}(\lambda_{\max}^{(N)}-2)\xrightarrow{d}\mathrm{TW}_2$。$N^{-2/3}$ 正是边缘密度的消失速率与极值排斥共同决定的特征尺度，这也解释了为什么它不是普通高斯涨落。
+
+**老师（追问）**：TW 分布为什么能用 Painlevé II 显式写出？
+
+**学生**：因为 $\mathbb P(\lambda_{\max}\le t)=\det(I-K_N)$ 在 $L^2(t,\infty)$ 上，作 Plancherel–Rotach 渐近后 $\frac{1}{N^{2/3}}K_N\bigl(2+\frac{\xi}{N^{2/3}},2+\frac{\eta}{N^{2/3}}\bigr)\to K_{\mathrm{Ai}}(\xi,\eta)$，概率收敛到 $\det(I-K_{\mathrm{Ai}})$ 在 $L^2(s,\infty)$ 上。再对 Fredholm 行列式求对数导数并联系 Hamiltonian 系统，得 $F_2(s)=\exp\bigl(-\int_s^\infty(x-s)q(x)^2\,dx\bigr)$，$q$ 为 $P_{II}$ 的 Hastings–McLeod 解。
+
+**老师（拓展）**：三个 $\beta$ 之间有联系吗？TW 只属于随机矩阵吗？
+
+**学生**：有联系：$F_1(s)^2=F_2(s)\exp\bigl(-\int_s^\infty q(x)\,dx\bigr)$，$F_4$ 由类似公式给出，$\beta=1,2,4$ 分别对应 GOE、GUE、GSE。TW 远不止随机矩阵：随机排列最长递增子序列长度（Baik–Deift–Johansson）、KPZ 方程与 TASEP 的涨落都趋于 $F_1$ 或 $F_2$。常见误区是把 TW 当成高斯型，它是不对称分布，右尾近 Gumbel、左尾衰减快得多。
+
 ## 相关条目
 
 - [Tracy-Widom 分布（第146级-随机矩阵理论）](../第146级-随机矩阵理论/Tracy-Widom分布.md)：与本条目为同一定理，另收录于第146级-随机矩阵理论，可交叉参考。

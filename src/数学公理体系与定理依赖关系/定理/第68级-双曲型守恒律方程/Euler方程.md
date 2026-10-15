@@ -131,3 +131,17 @@ $$
 ## 五、应用与意义
 
 Euler 方程不仅是空气动力学、航空航天、内燃机燃烧等领域的核心模型，也是双曲守恒律数学理论的试金石。对 Euler 方程 Riemann 问题的完整理解直接催生了 Godunov 格式、Roe 格式、HLL 格式等现代计算流体力学方法。其数学理论中的严格双曲性、激波可容许性、熵解存在唯一性等成果，深刻影响了非线性偏微分方程、连续介质力学和数值分析的发展方向。研究 Euler 方程的弱解与奇性结构，至今仍是数学物理中的前沿课题。
+
+## 课堂问答
+
+**老师**：一维可压缩 Euler 方程为什么是双曲守恒律的"试金石"？它的特征结构是什么？
+
+**学生**：它把质量、动量、能量守恒写成 $\nu_t+f(\nu)_x=0$，$\nu=(\rho,\rho v,\rho E)$。在热力学稳定性条件 $p>0$、$\partial p/\partial e>0$、$\partial^2p/\partial\rho^2|_s>0$ 下，Jacobi 矩阵特征值为 $\lambda_1=v-c$、$\lambda_2=v$、$\lambda_3=v+c$（$c=\sqrt{\partial p/\partial\rho|_s}$ 是声速），三者互异，故系统严格双曲。
+
+**老师（追问）**：三个特征场里谁真非线性、谁线性退化？这决定了什么波？
+
+**学生**：第一、第三场真非线性（$\nabla\lambda_{1,3}\cdot r_{1,3}\ne0$），对应激波或稀疏波；第二场线性退化（$\nabla\lambda_2\cdot r_2=0$），只产生接触间断。取变量 $(\rho,v,s)$ 时方程组为 $\rho_t+v\rho_x+\rho v_x=0$、$v_t+vv_x+\frac1\rho p_x=0$、$s_t+vs_x=0$，特征方程 $(v-\lambda)[(v-\lambda)^2-c^2]=0$；接触间断两侧速度与压强连续、密度可跳跃。
+
+**老师（拓展）**：Riemann 问题解的结构如何？一般 Cauchy 问题怎么得到弱解？
+
+**学生**：左右状态充分接近时存在唯一 Lax 可容许自相似解，结构为 $\nu_L\xrightarrow{1\text{-波}}\nu_M^-\xrightarrow{\text{接触}}\nu_M^+\xrightarrow{3\text{-波}}\nu_+$，1、3 波各为激波或稀疏波，中间状态由 $v_M^-=v_M^+$、$p_M^-=p_M^+$ 确定。一般小 BV 初值可经 Glimm 格式或 front tracking 得到满足 RH 与 Lax 熵条件的 BV 弱解。常见误区是把 $\lambda_2=v$ 也当作产生激波：线性退化场永远只给接触间断。

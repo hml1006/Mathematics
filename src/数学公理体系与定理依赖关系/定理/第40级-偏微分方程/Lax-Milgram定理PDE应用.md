@@ -70,3 +70,17 @@ $$a(u,v) = \int_\Omega (\nabla u \cdot \nabla v + cuv) \, dx$$
 在 $H_0^1(\Omega)$ 上，$a$ 有界且强制（由 Poincaré 不等式），故对任意 $f \in L^2(\Omega)$，存在唯一的 $u \in H_0^1(\Omega)$ 满足
 $$\int_\Omega (\nabla u \cdot \nabla v + cuv) \, dx = \int_\Omega fv \, dx,\quad \forall v \in H_0^1(\Omega)$$
 即 Poisson 方程 $-\Delta u + cu = f$ 存在唯一的弱解。$\square$
+
+## 课堂问答
+
+**老师**：为什么双线性形式只要"有界 + 强制"，方程 $a(u,v)=f(v)$ 就一定有唯一解？
+
+**学生**：把它翻译成算子方程。对固定 $u$，由 Riesz 表示定理 $v\mapsto a(u,v)$ 给出唯一的 $Au\in H$ 使 $a(u,v)=(Au,v)$；有界性给 $\|Au\|\le M\|u\|$，强制性让 $A$ 可逆，于是对 $f$ 的 Riesz 代表元 $w$ 取 $u=A^{-1}w$ 即可。
+
+**老师（追问）**：满射性这一步的关键在哪？
+
+**学生**：强制性给出 $\alpha\|u\|^2\le a(u,u)=(Au,u)\le\|Au\|\|u\|$，故 $\|Au\|\ge\alpha\|u\|$，$A$ 单射且值域闭；若 $R(A)\neq H$，取非零 $w\perp R(A)$，则 $0=(Aw,w)=a(w,w)\ge\alpha\|w\|^2>0$，矛盾，故 $R(A)=H$，$A$ 是双射。
+
+**老师（拓展）**：对 $-\Delta u+cu=f$ 怎么落地？
+
+**学生**：在 $H_0^1(\Omega)$ 上取 $a(u,v)=\int_\Omega(\nabla u\cdot\nabla v+cuv)\,dx$。由 Poincaré 不等式 $\|u\|_{L^2}\le C\|\nabla u\|_{L^2}$ 得强制性 $a(u,u)\ge\min(1,1/C^2)\|u\|_{H^1}^2$，$c\ge0$ 保证有界性，于是对任意 $f\in L^2$，$-\Delta u+cu=f$ 有唯一弱解。常见误区是以为必须对称才可用——Lax–Milgram 并不要求对称，只要求强制；对称时它退化为 Riesz 表示，并可由能量泛函取极小得到。

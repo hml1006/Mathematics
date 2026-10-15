@@ -54,3 +54,17 @@ z=-\frac{\ell-\ell^{-1}}{m}.
 
 ## 五、应用与意义
 HOMFLY 多项式统一了 Jones、Alexander–Conway 与 $sl_N$ 量子不变量，是纽结分类与表格编制的重要工具，并在弦论、拓扑弦以及卫星纽结的研究中具有深刻应用。
+
+## 课堂问答
+
+**老师**：HOMFLY 与 Jones 多项式究竟差在哪里？
+
+**学生**：结论：HOMFLY 是双参数不变量，Jones 是它的单参数特化。HOMFLY 满足 $\ell P_{L_+}+\ell^{-1}P_{L_-}+mP_{L_0}=0$ 且 $P_{\bigcirc}=1$，由 Hecke 代数 $H_n$ 的双参数迹构造，稳定化给出 $z=-\frac{\ell-\ell^{-1}}{m}$。取 $l=-t^{1/2},\,m=-t^{-1/4}$ 即退化为 Jones 多项式，故 HOMFLY 能区分 Jones 分不开的结。
+
+**老师（追问）**：为什么它又叫 $sl_N$ 的量子不变量？
+
+**学生**：因为在 $\ell=q^{N}$ 之类的参数化下，HOMFLY 对应 $U_q(\mathfrak{sl}_N)$ 以基本表示着色链环的 Reshetikhin–Turaev 值。$\ell,m$ 两个自由度相当于记录 $N$ 与 $q$；Jones 是 $N=2$ 的切片。这正是它统一 Alexander–Conway 与 Jones 的原因。
+
+**老师（拓展）**：多变量推广是什么样？
+
+**学生**：对 $n$ 分量链环有多变量 HOMFLY，每个分量给一个变量，记录各分量间的环绕数信息，故一般是 $n+1$ 变量的多项式。它记录了 $L_+,L_-,L_0$ 与环绕数的完整数据，与 Kauffman 双变量多项式互为重排，并能区分手性。

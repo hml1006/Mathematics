@@ -113,3 +113,17 @@ Stokes 定理在数学和物理中有广泛应用：
 8. **指标定理**：Atiyah-Singer 指标定理的证明中，Stokes 定理用于处理流形边界上的贡献。
 
 Stokes 定理的推广包括：带奇异性流形上的 Stokes 定理、currents 理论中的 Stokes 定理、以及非交换几何中的推广。
+
+## 课堂问答
+
+**老师**：Stokes 定理为什么被称为微积分基本定理的"最高统一"？
+
+**学生**：因为它把 $\int_M d\omega=\int_{\partial M}\omega$ 一次写清，而微积分基本定理、Green 定理、Gauss 散度定理、经典 Stokes 定理都是它的特例。核心是外微分 $d$（局部运算）与边界积分（全局运算）由这一等式桥接；一维时 $[a,b]$ 上 $\int df=f(b)-f(a)$ 还原微积分基本定理。
+
+**老师（追问）**：证明为什么归结到上半空间 $\mathbb{R}^n_+$？边界那一项的符号从哪来？
+
+**学生**：用单位分解 $\omega=\sum\rho_\alpha\omega$，每片支撑在单张坐标卡内。内部卡 $U\cap\partial M=\varnothing$ 时每个 $\int_{\mathbb{R}}\partial_if_i\,dx^i=0$（紧支集），贡献为零。边界卡取 $x^n\ge0$、$\partial M=\{x^n=0\}$，只有 $i=n$ 项不消：$\int_0^\infty\partial_nf_n\,dx^n=-f_n(x',0)$。符号来自诱导定向——外向法向量为 $-\partial_{x^n}$，故 $\partial M$ 的定向形式带因子 $(-1)^{n-1}$，与边界项比对正好一致，得 $\int_M d\omega=\int_{\partial M}\omega$。
+
+**老师（拓展）**：两条推论分别有什么用？
+
+**学生**：其一，紧致无边流形上 $\int_M d\omega=0$，这是"恰当形式沿闭链积分为零"的根源；其二，$\int_M\omega$ 只依赖 $\omega$ 的上同调类，从而给出积分映射 $H^k_{dR}(M)\to\mathbb{R}$ 的良定性——这是 de Rham 定理与 Hodge 理论的关键基石。

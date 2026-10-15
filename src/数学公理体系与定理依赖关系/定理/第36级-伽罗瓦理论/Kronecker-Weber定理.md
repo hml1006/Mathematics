@@ -92,6 +92,21 @@ $\square$
 **推广**（Kronecker 青春之梦）：对于虚二次域 $K$，克罗内克猜想 $K$ 的最大阿贝尔扩张可以通过添加 $j$-函数值和椭圆曲线的挠点得到。这是希尔伯特第 12 问题的一部分，至今尚未完全解决。
 
 **应用**：Kronecker-Weber 定理在代数数论、类域论和模形式理论中具有广泛的应用，是理解 $\mathbb{Q}$ 的阿贝尔扩张的完整分类的基础。$\square$
+
+## 课堂问答
+
+**老师**：$\mathbb{Q}$ 的阿贝尔扩张凭什么全能被单位根"包住"？
+
+**学生**：结论：若 $L/\mathbb{Q}$ 有限伽罗瓦且 $\operatorname{Gal}(L/\mathbb{Q})$ 交换，则存在 $n$ 使 $L\subseteq\mathbb{Q}(\zeta_n)$；等价地 $\mathbb{Q}^{\text{ab}}=\bigcup_{n\ge1}\mathbb{Q}(\zeta_n)$。这是"阿贝尔扩张由射线类域刻画"这一结果在 $\mathbb{Q}$ 上的特例。
+
+**老师（追问）**：证明骨架是什么？局部到全局那一步怎么做？
+
+**学生**：分三层。一，按素数幂分解，只需处理 $p$ 部分。二，局部化：完备化得 $L_{\mathfrak p}/\mathbb{Q}_p$，用局部 Kronecker-Weber——$\mathbb{Q}_p$ 的每个有限阿贝尔扩张都含于某个 $\mathbb{Q}_p(\zeta_n)$，因 $\mathbb{Q}_p^{\text{ab}}$ 的伽罗瓦群是 $\hat{\mathbb{Z}}^\times$。三，全局化：取各 $n_p$ 的公倍数 $n$，用判别式判别法或 Minkowski 型论证排除多余素因子，证得 $L\subseteq\mathbb{Q}(\zeta_n)$。
+
+**老师（拓展）**：举两个具体嵌入，并说说更远的方向。
+
+**学生**：$\sqrt2=\zeta_8+\zeta_8^{-1}$ 故 $\mathbb{Q}(\sqrt2)\subseteq\mathbb{Q}(\zeta_8)$；$\mathbb{Q}(\sqrt{-1})=\mathbb{Q}(\zeta_4)$；一般 $\mathbb{Q}(\sqrt{p^*})\subseteq\mathbb{Q}(\zeta_p)$（高斯和）。取逆向极限得 $\operatorname{Gal}(\mathbb{Q}^{\text{ab}}/\mathbb{Q})\cong\hat{\mathbb{Z}}^\times=\prod_p\mathbb{Z}_p^\times$。推广方向是 Kronecker 青春之梦：虚二次域的最大阿贝尔扩张用 $j$-函数值与椭圆曲线挠点生成，属希尔伯特第 12 问题，至今未完全解决。
+
 ## 相关条目
 
 - [Kronecker-Weber 定理（第76级-代数数论）](../第76级-代数数论/Kronecker-Weber定理.md)：与本条目为同一定理，另收录于第76级-代数数论，可交叉参考。

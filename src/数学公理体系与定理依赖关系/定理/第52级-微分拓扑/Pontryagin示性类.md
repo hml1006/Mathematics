@@ -181,3 +181,17 @@ Novikov 证明了 Pontryagin 类在有理同伦意义下是不变的。
 - **Stiefel-Whitney 类**：实向量丛的 $\mathbb{Z}_2$ 值特征类
 - **K-理论特征类**：在 K-理论中的推广
 - **二次型特征类**：更一般的特征类理论
+
+## 课堂问答
+
+**老师**：Pontryagin 类 $p_i(E)$ 落在哪个上同调群？为什么奇数阶 Chern 类在这里"消失"了？
+
+**学生**：$p_i(E)=(-1)^i c_{2i}(E\otimes\mathbb C)\in H^{4i}(M;\mathbb Z)$，只取偶数阶 Chern 类，所以度数全是 4 的倍数。奇数阶类 $c_{2i+1}(E\otimes\mathbb C)$ 是 2-扭元：复共轭 $\sigma(v\otimes z)=v\otimes\bar z$ 给出 $\overline{E\otimes\mathbb C}\cong E\otimes\mathbb C$，而 $c_i(\bar E)=(-1)^i c_i(E)$，$i$ 奇数时 $c_i=-c_i$，即 $2c_i=0$。
+
+**老师（追问）**：那 Whitney 和公式为什么只能写成 $\bmod$ 2-扭元的形式？
+
+**学生**：因为 $p(E\oplus F)=p(E)\cdot p(F)$ 是复化后 Chern 类 Whitney 公式的产物，而 Pontryagin 类把 2-扭信息都抹掉了，只有系数换成 $\mathbb Z[1/2]$ 后才成为干净的多项式恒等式 $H^*(BO;\mathbb Z)\otimes\mathbb Z[1/2]\cong\mathbb Z[1/2][p_1,p_2,\dots]$。常见误区是把 $p(E\oplus F)=p(E)p(F)$ 当作整系数的精确等式。
+
+**老师（拓展）**：这些上同调类是怎么变成能算的"数"的？
+
+**学生**：在 $4k$ 维定向闭流形上取基本类 $[M]$，得 Pontryagin 数 $\langle p_{i_1}\cdots p_{i_r},[M]\rangle$，它只依赖定向配边类，这是 Thom-Pontryagin 定理的内容。Hirzebruch 符号差定理把交形式的符号差写成 $L$ 多项式 $\sigma(M)=\langle L_k(p_1,\dots,p_k),[M]\rangle$，如 $L_1=\frac13 p_1$，据此 $\sigma(\mathbb{CP}^2)=1$、$p_1(\mathbb{CP}^2)=3$ 正好吻合。

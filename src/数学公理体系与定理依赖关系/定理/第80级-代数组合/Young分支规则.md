@@ -162,3 +162,17 @@ $$
 **4. 与 RSK 对应的联系。** 删格链与 Robinson–Schensted 对应的逆过程把置换的"最长递减子序列"与杨表形状联系起来；分支规则给出这一对应的表示论解释。
 
 **5. 推广。** 分支规则可推广到：从 $S_n$ 限制到任意 Young 子群（Young 规则）、从 $GL_n$ 限制到 $GL_k\times GL_{n-k}$（Littlewood–Richardson 系数）、从典型群（$O_n,Sp_{2n}$）限制到子群（Littlewood 分支规则），以及仿射与量子情形（仿射 Hecke 代数、量子群的晶体基）。
+
+## 课堂问答
+
+**老师**：把 $S_n$ 的不可约表示限制到 $S_{n-1}$，会怎样分解？
+
+**学生**：完全可约，且 $\mathrm{Res}^{S_n}_{S_{n-1}}S^\lambda\cong\bigoplus_{\mu\nearrow\lambda}S^\mu$，其中 $\mu\nearrow\lambda$ 表示 $\mu\subseteq\lambda$ 且 $|\lambda/\mu|=1$，即从 $\lambda$ 删去一个角格。组合来源是标准杨表的删最大项双射：$n$ 必在角格，删去它得 $\mathrm{SYT}(\mu)$，故 $\mathrm{SYT}(\lambda)\cong\bigsqcup_{\mu\nearrow\lambda}\mathrm{SYT}(\mu)$，取基数得维数递推 $f^\lambda=\sum_{\mu\nearrow\lambda}f^\mu$。
+
+**老师（追问）**：表示层面的"直和"比维数等式多了什么？
+
+**学生**：多了分裂本身。证明走置换模路线：$M^\lambda=\mathbb{C}[S_n/S_\lambda]=\bigoplus_\mu K_{\mu\lambda}S^\mu$，限制到 $S_{n-1}$ 时比较两侧分解并用 Kostka 数的三角性（$K_{\mu\mu}=1$，$\mu\ntrianglelefteq\lambda$ 时为 $0$）逐层剥离，即得 $\bigoplus_{\mu\nearrow\lambda}S^\mu$。误区：只证维数相等不足以断言模同构。
+
+**老师（拓展）**：$GL_n$ 的平行结论是什么？
+
+**学生**：令 $x_n=0$，则 $s_\lambda(x_1,\dots,x_{n-1},0)=\sum s_\mu(x_1,\dots,x_{n-1})$，求和遍及 $\lambda/\mu$ 为垂直条（每行至多一格）的 $\mu$，因为含字母 $n$ 的半标准表格必须每行至多一个。它是 Pieri 规则的特例，与 LR 规则共同支撑对称函数的分支理论。

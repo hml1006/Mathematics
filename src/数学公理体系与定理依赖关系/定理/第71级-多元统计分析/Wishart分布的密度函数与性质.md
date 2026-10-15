@@ -47,3 +47,23 @@ $$
 ## 五、应用与意义
 
 Wishart 分布是样本协方差矩阵（乘自由度后）的精确分布，在多元统计推断中无处不在：Hotelling $T^2$ 统计量的分布、多元回归的误差协方差估计、似然比检验的分布都依赖它。可加性使高自由度 Wishart 可分解为低自由度之和，帮助建立卡方近似的极限理论。它与卡方、Beta 型（Wilks Lambda）及其乘法相关分布共同构成多元假设检验的分布基础。
+
+## 课堂问答
+
+**老师**：Wishart 分布是谁的推广，密度怎么记？
+
+**学生**：它是卡方分布的矩阵推广。若 $\boldsymbol{X}_1,\dots,\boldsymbol{X}_n$ 独立同分布于 $N_p(\boldsymbol{0},\boldsymbol{\Sigma})$，$\boldsymbol{W}=\sum\boldsymbol{X}_i\boldsymbol{X}_i^\top$，则对 $\boldsymbol{W}\succ0$ 有
+
+$$
+f(\boldsymbol{W})=\frac{|\boldsymbol{W}|^{(n-p-1)/2}\exp\!\big(-\tfrac12\operatorname{tr}(\boldsymbol{\Sigma}^{-1}\boldsymbol{W})\big)}{2^{np/2}\pi^{p(p-1)/4}|\boldsymbol{\Sigma}|^{n/2}\prod_{i=1}^p\Gamma\!\big(\frac{n+1-i}{2}\big)}.
+$$
+
+并有 $\mathbb{E}\boldsymbol{W}=n\boldsymbol{\Sigma}$ 与可加性。
+
+**老师（追问）**：推导中最难的一步是哪一步？
+
+**学生**：把 $\boldsymbol{X}$ 的密度换算成 $\boldsymbol{W}$ 的密度。写 $\boldsymbol{X}=\boldsymbol{U}\boldsymbol{T}$（$\boldsymbol{U}$ 取自 Stiefel 流形 $V_{n,p}$ 满足 $\boldsymbol{U}^\top\boldsymbol{U}=\boldsymbol{I}_p$），再做 Cholesky $\boldsymbol{W}=\boldsymbol{T}^\top\boldsymbol{T}$，变换 Jacobian 为 $\prod_i t_{ii}^{n-i}$。关键是在 $V_{n,p}$ 上用流形体积 $\operatorname{Vol}(V_{n,p})=\frac{2^p\pi^{np/2}}{\Gamma_p(n/2)}$ 积掉正交方向；指数 $\exp(-\frac12\operatorname{tr}\boldsymbol{W})$ 不变，幂次 $\prod_i t_{ii}^{n-i}$ 与 $\det\boldsymbol{T}=|\boldsymbol{W}|^{1/2}$ 合并即得 $(n-p-1)/2$ 指数。
+
+**老师（拓展）**：为什么强调参数范围？
+
+**学生**：幂指数 $(n-p-1)/2$ 要求自由度 $n$ 足够大（典型 $n\ge p$）才使密度在 $\boldsymbol{W}\succ0$ 上可积、非退化，否则测度落在低秩流形上。可加性 $W_p(n_1,\boldsymbol{\Sigma})+W_p(n_2,\boldsymbol{\Sigma})\sim W_p(n_1+n_2,\boldsymbol{\Sigma})$ 使大自由度可拆成小自由度之和，是 Hotelling $T^2$ 检验与 Wilks $\Lambda$ 分布的基础。

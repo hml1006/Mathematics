@@ -60,3 +60,17 @@ $$f(z) = z^m e^{g(z)} \prod_{n=1}^\infty E_{p_n}\left(\frac{z}{a_n}\right)$$
 **推论**：$\sin(\pi z)$ 的 Weierstrass 乘积展开为
 $$\sin(\pi z) = \pi z \prod_{n=1}^\infty \left(1 - \frac{z^2}{n^2}\right)$$
 这由 $\sin(\pi z)$ 的零点 $z = n$（$n \in \mathbb{Z}$）和 $g(z) = \log \pi$ 得到。
+
+## 课堂问答
+
+**老师**：整函数怎样像多项式那样"按零点拆开"？
+
+**学生**：结论：$f(z)=z^m e^{g(z)}\prod_{n\ge1}E_{p_n}(z/a_n)$，其中 $E_p(z)=(1-z)\exp(z+\frac{z^2}{2}+\cdots+\frac{z^p}{p})$ 是初等因子，$m$ 是 $0$ 处零点重数、$g$ 是整函数。
+
+**老师（追问）**：为什么非要在每个因子里塞进指数收敛因子？
+
+**学生**：直接乘积 $\prod(1-z/a_n)$ 通常不收敛（因为 $\sum1/|a_n|$ 可能发散）。而初等因子满足：当 $|z|\le1$ 时 $|1-E_p(z)|\le C|z|^{p+1}$。取 $p_n$ 使 $\sum(R/|a_n|)^{p_n+1}<\infty$，则 $\sum|1-E_{p_n}(z/a_n)|$ 在每个 $|z|\le R$ 上收敛，乘积局部一致收敛，$P(z)=\prod E_{p_n}(z/a_n)$ 是整函数且零点恰为 $\{a_n\}$。
+
+**老师（拓展）**：剩下的部分为什么一定写成 $e^{g(z)}$？
+
+**学生**：$h(z)=f(z)/(z^mP(z))$ 是处处非零的整函数，由单连通性可取对数，故 $h=e^g$，$g$ 为整函数。例如 $\sin(\pi z)$ 的 Weierstrass 乘积为 $\sin(\pi z)=\pi z\prod_{n\ge1}(1-z^2/n^2)$。

@@ -78,3 +78,17 @@ $\square$
 **推论**：$\zeta(s)$ 在 $s = -2, -4, -6, \ldots$ 处有零点（平凡零点），且 $\zeta(-2n) = 0$。
 
 **证明**：由函数方程，$\sin(\pi s/2)$ 因子在 $s = -2n$ 处为零，且 $\Gamma(1-s)$ 无极点，故 $\zeta(-2n) = 0$。$\square$
+
+## 课堂问答
+
+**老师**：写出 Riemann Zeta 函数的函数方程及其对称形式。
+
+**学生**：$\zeta(s)=2^s\pi^{s-1}\sin\!\left(\frac{\pi s}{2}\right)\Gamma(1-s)\zeta(1-s)$，等价地 $\xi(s)=\frac12 s(s-1)\pi^{-s/2}\Gamma\!\left(\frac s2\right)\zeta(s)$ 满足 $\xi(s)=\xi(1-s)$。它把 $\operatorname{Re}s>1$ 的信息反射到 $\operatorname{Re}s<0$，从而实现解析延拓。
+
+**老师（追问）**：证明的关键工具是什么？
+
+**学生**：Jacobi theta 函数的模变换 $\theta(x)=\frac{1}{\sqrt x}\theta(1/x)$（源自 Poisson 求和）。由 $\pi^{-s/2}\Gamma(\frac s2)\zeta(s)=\int_0^\infty x^{s/2-1}\psi(x)\,dx$（$\psi=\sum_{n\ge1}e^{-\pi n^2x}$），把积分拆为 $[0,1]$ 与 $[1,\infty)$，对前段用变换公式，右边即化为在 $s\mapsto1-s$ 下不变的形式。
+
+**老师（拓展）**：函数方程有哪些直接推论？
+
+**学生**：$\sin(\frac{\pi s}{2})$ 因子在 $s=-2,-4,\dots$ 给出平凡零点 $\zeta(-2n)=0$；对称性使非平凡零点关于临界线 $\operatorname{Re}s=1/2$ 成对出现，这正是 Riemann 假设的几何背景。

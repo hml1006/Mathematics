@@ -145,3 +145,17 @@ $p$-进数在算术几何中无处不在：
 - **刚性几何（Rigid Geometry）：** Tate 发展的 $p$-进解析几何。
 - **Perfectoid 空间：** Scholze 引入的 perfectoid 空间以 $p$-进数为基本对象，在 Langlands 纲领和局部 Langlands 对应中有突破性应用。
 - **$p$-进 Uniformization：** 代数簇的 $p$-进统一化理论。
+
+## 课堂问答
+
+**老师**：$p$-进绝对值与通常绝对值在结构上最本质的差别是什么？
+
+**学生**：$p$-进绝对值满足非 Archimedean 的强三角不等式 $|x+y|_p\le\max(|x|_p,|y|_p)$，而实数满足 Archimedean 性。由此 $\mathbb Q_p$ 是完全不连通的，每个三角形都是等腰的；$|x|_p=p^{-v_p(x)}$ 使 $p^n\to0$（$n\to\infty$），$p$-进世界捕捉的是整除性而非几何长度。
+
+**老师（追问）**：$\mathbb Z_p$ 的结构怎样？Hensel 引理在其中扮演什么角色？
+
+**学生**：$\mathbb Z_p=\{x:|x|_p\le1\}=\varprojlim\mathbb Z/p^n\mathbb Z$ 是离散赋值环，唯一极大理想 $p\mathbb Z_p$，剩余域 $\mathbb F_p$，且 $\mathbb Z_p$ 紧（同胚于 Cantor 集）。Hensel 引理是 Newton 迭代法的 $p$-进版：若 $f(a)\equiv0$、$f'(a)\not\equiv0\pmod p$，则存在唯一 $\alpha\in\mathbb Z_p$ 使 $f(\alpha)=0$ 且 $\alpha\equiv a\pmod p$，把模 $p$ 的解"提升"为精确解。
+
+**老师（拓展）**：常见误区和它在全局的地位？
+
+**学生**：误区是照搬实数直觉把 $p$-进展开当"小数"——它其实向高位延伸：$x=\sum_{i=v}^\infty a_ip^i$。Ostrowski 定理指出 $\mathbb Q$ 的完备化只有 $\mathbb R$ 与各 $\mathbb Q_p$，这些局部域合起来构成 adele 环，是 Hasse 局部-整体原理、局部类域论与 $p$-进 Hodge 理论的共同舞台。

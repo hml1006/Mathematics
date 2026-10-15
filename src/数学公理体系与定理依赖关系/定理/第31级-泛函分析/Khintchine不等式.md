@@ -82,6 +82,20 @@ $$\mathbb E|S|^p\ge\mathbb P\Big(|S|>\frac{\sigma}{\sqrt2}\Big)\Big(\frac{\sigma
 
 **步骤 6：合并。** 取 $A_p=\min(1,12^{-1/p}2^{-1/2})$、$B_p=\max(1,C\sqrt p)$，两步结论合并即得定理的双边估计。$\square$
 
+## 课堂问答
+
+**老师**：Khintchine 不等式凭什么说随机和的各阶矩彼此等价？
+
+**学生**：对 $S=\sum_{i=1}^na_ir_i$（$r_i$ 独立 Rademacher），有 $A_p\big(\sum a_i^2\big)^{1/2}\le\big(\mathbb{E}|S|^p\big)^{1/p}\le B_p\big(\sum a_i^2\big)^{1/2}$，常数只依赖 $p$。上界来自次高斯尾界 $\mathbb{P}(|S|\ge u)\le2e^{-u^2/(2\sigma^2)}$，其中 $\sigma^2=\sum a_i^2$。
+
+**老师（追问）**：$0<p<2$ 时的下界怎么来？
+
+**学生**：不能用范数单调性（方向反了），改用 Paley-Zygmund：由 $\mathbb{E}[S^4]\le3\sigma^4$ 得 $\mathbb{P}(|S|>\sigma/\sqrt2)\ge1/12$，于是 $\mathbb{E}|S|^p\ge12^{-1}2^{-p/2}\sigma^p$。只有 $p\ge2$ 时才由 Lyapunov 直接得 $\|S\|_p\ge\|S\|_2=\sigma$。
+
+**老师（拓展）**：它和 Banach 空间的型与余型是什么关系？
+
+**学生**：型与余型的定义直接以 Khintchine 型估计为范本：Hilbert 空间具有型 2 与余型 2。别把它与 Hoeffding 混淆——后者只给尾界，Khintchine 才是完整的双边矩等价。
+
 ## 相关条目
 
 - [Banach空间型与余型](./Banach空间型与余型.md)：型与余型的定义直接以 Khintchine 型估计为范本。

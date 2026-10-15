@@ -29,3 +29,17 @@ $$
 ## 五、应用与意义
 
 Hecke 特征值的几何构造是几何 Langlands 中"D-模 ⇒ 局部系统"这一方向的基石，使逆函子 $\Phi$ 得以严格定义。它在 $p$-adic Langlands、模曲线 Hecke 代数理论以及 Langlands 对应"特征值决定对象"的口径中持续发挥关键作用。
+
+## 课堂问答
+
+**老师**：几何 Langlands 的逆方向要"从 D-模读出局部系统"。请写出 Hecke 本征性给出的定义式。
+
+**学生**：先给结论：对具 Hecke 本征性的 $\mathcal{F}\in\mathrm{D\text{-}mod}(\mathrm{Bun}_G)$，每个 $x\in X$ 与表示 $V\in\mathrm{Rep}({}^LG)$ 满足 $H_{x,V}(\mathcal{F})\cong \sigma_V(x)\boxtimes\mathcal{F}$，其中 $\sigma_V$ 是 $X$ 上秩 $\dim V$ 的系数层族。把这些 $\sigma_V$ 沿 $X$ 拼起来，就得到整体的 $^LG$-局部系统 $\sigma\in\mathrm{LocSys}_{{}^LG}(X)$，即 Hecke 特征值。
+
+**老师（追问）**：为什么光有 Hecke 本征条件就能"恢复"出整个 $\sigma$，而无需预先知道它？
+
+**学生**：因为 Hecke 算子族 $H_{x,V}$ 随参数点 $x\in X$ 连续变化，本征条件对每个 $(x,V)$ 都给出一个约束，等价于要求 $\sigma_V$ 满足局部系统的过渡/标准公理，从而被唯一定义；再用表示论的完备性（各 $V$ 的系数层决定整个 $\sigma$），由 $\sigma_V$ 恢复 $\sigma$ 本身。证明依赖 D-模的刚性、绝对收敛与 Hecke 算子的相容条件。常见误区：以为要"猜"一个局部系统——恰恰相反，这个构造是把局部系统当作 Hecke 特征值解出来的。
+
+**老师（拓展）**：这一步在几何 Langlands 的整条逻辑链里处于什么位置？
+
+**学生**：它是"D-模 $\Rightarrow$ 局部系统"方向（逆函子 $\Phi$）的基石，使 Beilinson–Drinfeld 等价中把 $\mathcal{F}$ 映到 $\mathrm{LocSys}_{{}^LG}$ 上谱层这一步严格可行；也解释了为何"特征值决定对象"这一观念在 $p$-adic Langlands 与模曲线 Hecke 代数理论中反复出现。

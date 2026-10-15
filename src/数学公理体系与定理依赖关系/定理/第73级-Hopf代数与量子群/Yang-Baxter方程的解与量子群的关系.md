@@ -44,3 +44,21 @@ $$
 ## 五、应用与意义
 
 该联系把量子群与可积性统一起来：任一个拟三角 Hopf 代数经表示给出大批 Yang-Baxter 方程的解。这在统计力学（可积格模型、顶角模型、精确求解）、量子场论（量子群对称与散射矩阵）与纽结理论（辫子表示 → 量子不变量）中至关重要。它也启发了"量子群作为可积系统的对称代数生成器"的图景，使 Yang-Baxter 方程成为连接多学科的中心结构。
+
+## 课堂问答
+
+**老师**：拟三角 Hopf 代数的 $R$-矩阵，为什么自动给出 Yang-Baxter 方程的解？
+
+**学生**：因为拟三角的余乘法条件恰等价于 $R$ 在每个表示 $V$ 上满足
+
+$$
+(R_{V,V})_{12}(R_{V,V})_{13}(R_{V,V})_{23}=(R_{V,V})_{23}(R_{V,V})_{13}(R_{V,V})_{12}.
+$$
+
+**老师（追问）**：怎么从代数关系推出这个等式？
+
+**学生**：写 $R=\sum_i a_i\otimes b_i$，则三侧复合展开为 $R_{12}R_{13}R_{23}=\sum_{i,j,k}a_ia_j\otimes b_ia_k\otimes b_jb_k$，而 $R_{23}R_{13}R_{12}=\sum_{i,j,k}a_ja_k\otimes a_ib_k\otimes b_ib_j$。由 $(\Delta\otimes\operatorname{id})R=R_{13}R_{23}$ 得 $\sum_j\Delta(a_j)\otimes b_j=\sum_{j,k}a_j\otimes a_k\otimes b_jb_k$，由 $(\operatorname{id}\otimes\Delta)R=R_{13}R_{12}$ 得 $\sum_i a_i\otimes\Delta(b_i)=\sum_{i,k}a_ia_k\otimes b_k\otimes b_i$；再用 $\Delta^{\rm op}(x)R=R\Delta(x)$ 化简，两边化为同一表达式。
+
+**老师（拓展）**：为什么在表示上也成立，这条联系意义何在？
+
+**学生**：因为 $\rho_V$ 是代数同态，代数层的等式自然降到 $\operatorname{End}(V^{\otimes3})$ 中。这条联系把量子群与可积系统统一：任一拟三角 Hopf 代数经其表示即产出大批 Yang-Baxter 方程的解，用于统计力学顶角模型、量子场论散射矩阵与纽结不变量。

@@ -35,3 +35,17 @@ $$\operatorname{End}_K(A)\otimes_\mathbb{Z}\mathbb{Q}_\ell\to\operatorname{End}_
 ## 五、应用与意义
 
 Faltings 定理是算术几何的分水岭：它终结了 Mordell 猜想，并给出 $\mathbb{Q}$ 上亏格 $\ge2$ 曲线有理点有限的根本约束。它直接证明 Fermat 大定理的非代数部分（亏格分类排除无穷族），为现代"有效 Mordell"（Bombieri-Pila、Chabauty-Kim）提供了出发点，并贯穿 Abel 簇、等源、Tate 模、精细丢番图几何与"子品种定理"（Vojta 视角），是当代算术几何的核心基石。
+
+## 课堂问答
+
+**老师**：亏格 $g\ge2$ 的曲线在数域上为什么有理点反而有限？这个定理的骨架是什么？
+
+**学生**：结论是 $C(K)$ 有限。骨架有三块：把 $C$ 嵌入它的 Jacobi 簇 $J(C)$（$g$ 维 Abel 簇），由 Mordell-Weil 定理得 $J(C)(K)$ 有限生成，再证 $C(K)$ 中所有点的高度被一致地界住，于是只能有有限多个。
+
+**老师（追问）**：在一群有限生成的阿贝尔群 $J(C)(K)$ 里，"高度有界"凭什么是有限个点？
+
+**学生**：因为 Néron-Tate 高度的下水平集 $\{P:\hat h(P)\le M\}$ 有限。写 $J(C)(K)\cong\mathbb{Z}^r\oplus T$，高度是有界二次型，被界住的点只能落在有限个平移代表元附近，故有限。真正的难关在于证明 $C(K)$ 的高度上界——这正是 Faltings 高度的用武之地。
+
+**老师（拓展）**：Faltings 高度与 Tate 猜想/等源分类具体怎样介入？
+
+**学生**：对 Abel 簇定义模空间上的 Faltings 高度 $h_F(A)$，它给固定维数与极化的簇以一致下界，把曲线点的高度压住；再用 Tate 猜想 $\operatorname{End}_K(A)\otimes_\mathbb{Z}\mathbb{Q}_\ell\to\operatorname{End}_{G_K}(T_\ell A)\otimes_{\mathbb{Z}_\ell}\mathbb{Q}_\ell$ 是同构，得固定维数与极化的等源类有限。两者合起来把无穷多有理点逼成有限多个等源类，矛盾。常见误区是以为可直接对 $C$ 下降——但 $C$ 不是群，必须先抬到 $J(C)$。

@@ -54,3 +54,17 @@ $$
 ## 五、应用与意义
 
 这是经典计量经济推断的基石，为回归系数的置信区间、t/F 检验与诊断提供渐近理论保证。它确立"OLS 在正确设定下是最优线性无偏且渐近正态"的基准，横跨横截面、面板与时间序列回归的推断实践。
+
+## 课堂问答
+
+**老师**：OLS 的一致性与渐近正态性分别靠什么工具？
+
+**学生**：一致性靠大数定律：$\hat\beta_{OLS}-\beta_0=(S_n/n)^{-1}\frac1n\sum_ix_i\varepsilon_i$，由 $\mathbb E[x_i\varepsilon_i]=0$ 使后半趋于零；渐近正态靠鞅差 CLT：$\frac1{\sqrt n}\sum_ix_i\varepsilon_i\xrightarrow{d}N(0,\sigma^2Q)$，再用 Slutsky 得 $N(0,\sigma^2Q^{-1})$。
+
+**老师（追问）**：为什么用"鞅差"而不只是"独立同分布"？
+
+**学生**：因为回归元序列在时间序列或动态模型里不必独立，只要求 $\mathbb E[\varepsilon_i\mid\mathcal F_{i-1}]=0$ 的鞅差结构与条件方差 $\mathbb E[\varepsilon_i^2\mid\mathcal F_{i-1}]=\sigma^2$，就足以让条件方差收敛、Lindeberg 条件成立，从而仍得正态极限。
+
+**老师（拓展）**：如果误差存在异方差会怎样？
+
+**学生**：点估计仍一致，但条件方差不再收敛于 $\sigma^2Q$，需改用异方差稳健（Eicker-Huber-White）标准误；这说明"渐近正态的方差公式"依赖同方差设定，而一致性本身更稳健。

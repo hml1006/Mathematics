@@ -130,3 +130,17 @@ $$
 **应用领域：** 加性组合（和集结构）、遍历理论（多重回归的结构分析）、数论（素数中的等差数列）、理论计算机科学（伪随机与去随机化）。
 
 **推广：** 对一般有限阿贝尔群 $G$ 有同型结论（Bohr 集定义为对偶群上的特征限制）；在 $\mathbb{Z}_p$ 上，Bohr 集可视为"近似子群"，配合 Freiman 同构即得显式的子群/等差数列结构。
+
+## 课堂问答
+
+**老师**：密度不低的集合，为什么一定含有"周期性子结构"？
+
+**学生**：Bogolyubov 引理：若 $A\subseteq\mathbb{Z}_N$、$|A|=\alpha N$，则存在频率集 $\Gamma$ 使 Bohr 集 $B(\Gamma,\rho)\subseteq 2A-2A=A+A-A-A$，且 $|\Gamma|\le 4\alpha^{-2}$、$\rho=\alpha/(8\pi)$，于是 $|2A-2A|\ge\rho^{|\Gamma|}N$。证明是纯 Fourier：把 $x\in 2A-2A$ 的判定写成四重卷积 $T(x)=\#\{a_1+a_2-a_3-a_4=x\}$，其 Fourier 展开主项为 $\alpha^4N^3$；由 Parseval 只有至多 $4\alpha^{-2}$ 个大系数频率，小系数用 Parseval 控、大系数在 $B(\Gamma,\rho)$ 上相位接近 $1$ 也控，主项占优即得 $T(x)>0$。
+
+**老师（追问）**：为什么频率集的大小能被 $\alpha$ 控制？
+
+**学生**：关键取大频率集 $\Gamma=\{\xi:|\hat f(\xi)|>\tfrac12\alpha^{3/2}N\}$，每个贡献 $|\hat f(\xi)|^2>\tfrac14\alpha^3N^2$，而 Parseval 给出总和 $\sum_\xi|\hat f(\xi)|^2=\alpha N^2$，故 $|\Gamma|<4\alpha^{-2}$。误区：以为要列出全部频率；实际上频率空间虽大，能"说话"的少数几个就够了，这是不确定性原理的定量版。
+
+**老师（拓展）**：它在加性组合里扮演什么角色？
+
+**学生**：它是 Freiman 定理证明链的关键一步：先把小和集经 Ruzsa 建模搬到 $\mathbb{Z}_p$，再用 Bogolyubov 在 $2A-2A$ 中取出大子群/Bohr 集并参数化为广义等差数列；也是 Roth 密度增量中"结构返回"与 Gowers 范数逆定理的思想源头。

@@ -49,3 +49,19 @@ $$
 ## 五、应用与意义
 
 Univalence 是现代数学形式化与同伦类型论的核心理论支点：它使"结构保持同构的对象不可区分"这一朴素原则成为可代换的相等，简化了大量"重写/等价代换"证明，支撑 HoTT 中从初等对象到高阶结构的重新组织，并深刻影响范畴论、代数拓扑（路径、同伦等价）与定理助手的形式化实践。
+
+## 课堂问答
+
+**老师**：Univalence 公理的一句话表述与它的核心公式是什么？
+
+**学生**：同构的类型可以看成一回事：$(A\simeq B)\simeq(A=_\mathcal{U}B)$，即"等价"与"宇宙 $\mathcal{U}$ 中的相等"构成等价，从而把同构提升为可代换的相等。
+
+**老师（追问）**：从"相等到等价"的那个方向具体怎么造？
+
+**学生**：用 J 规则造：
+$$\text{IdToEquiv}:(A=_\mathcal{U}B)\to(A\simeq B),\quad \text{IdToEquiv}(p)=J(\lambda X.\,(A\simeq X),\,\text{id}_A,\,B,\,p).$$
+Univalence 断言 $\text{IdToEquiv}$ 本身是等价，即 $\text{ua}:\text{IsEquiv}(\text{IdToEquiv})$，于是存在逆映射 $\text{EquivToId}$。
+
+**老师（拓展）**：它和 MLTT 的一致性冲突吗？一致性由谁担保？
+
+**学生**：不冲突。Voevodsky 在单纯集模型中验证 Univalence 成立，故与 MLTT 一致。常见误区是把相等仅当作外部命题，忽略在 HoTT 中 $=_A$ 本身就是一个类型（路径空间）；正因如此，$\mathbf{bool}\simeq\mathbf{unit}\sqcup\mathbf{unit}$ 才能给出可操作的证路，使被同构的对象可平等代换。

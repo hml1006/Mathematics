@@ -51,3 +51,21 @@ $$
 ## 五、应用与意义
 
 Schilder 定理给出了 Brown 路径在平移空间上偏离原点的指数衰减，是路径空间大偏差的典型结果。它是 Freidlin-Wentzell 理论、热涨落、以及随机微分方程大偏差研究的基础，也用于计算随机过程中的"最小作用路径"与稀有跃迁概率。
+
+## 课堂问答
+
+**老师**：缩放的 Brown 运动$W^\varepsilon=\varepsilon W$偏离"零路径"的概率，衰减速度是多少？
+
+**学生**：速率$1/\varepsilon^2$，速率函数是路径能量
+$$
+I(f)=\frac12\int_0^1|\dot f(t)|^2\,dt,\qquad f\in H_0^1[0,1],\ f(0)=0,
+$$
+其他情形$I=\infty$，即$\mathbb P(W^\varepsilon\in\cdot)\approx e^{-I(f)/\varepsilon^2}$。
+
+**老师（追问）**：上界和下界各用什么？
+
+**学生**：上界用 Pinelis 极大不等式$\mathbb P(\|W\|_\infty\ge r)\le2e^{-r^2/2}$控制"远离紧集$K_R=\{f:\|f\|_H\le R\}$"的尾部概率，再在$K_R\cap C$上用 Cameron–Martin 公式作有限覆盖。下界对$f\in H_0^1$引入倾斜测度$\frac{d\mathbb Q_\varepsilon}{d\mathbb P}=\exp(\frac1\varepsilon\int_0^1\dot f\,dW-\frac1{2\varepsilon^2}\|f\|_H^2)$，此测度下$W^\varepsilon-f$仍是 Brown 运动，概率集中在$f$附近。
+
+**老师（拓展）**：为什么最优路径是直线？
+
+**学生**：$t=1$时刻超过$a$即要求$f(1)=a$，在能量$\frac12\int|\dot f|^2$最小的约束下最优路径是直线$f(t)=at$，能量为$\frac12a^2$，故概率约$e^{-a^2/(2\varepsilon^2)}$。它是 Freidlin–Wentzell 理论的基础模块。

@@ -112,6 +112,20 @@ $$
 
 这正是第二 Bianchi 恒等式。可见 Bianchi 恒等式不过是分次 Leibniz 法则（外加 $d^\nabla d^\nabla=\Omega\wedge\cdot$）三行推导的产物。$\square$
 
+## 课堂问答
+
+**老师**：$d(\alpha\wedge\beta)=d\alpha\wedge\beta+(-1)^p\alpha\wedge d\beta$ 里那个 $(-1)^p$ 到底从哪来？
+
+**学生**：结论：来自把奇次算子 $d$ 移过 $p$-形式 $\alpha$ 时的一次换序。理由：只需验证单项式 $\omega=f\,dx^I$、$\eta=g\,dx^J$，用 $d(fg)=df\,g+f\,dg$ 与 $\alpha\wedge\theta=(-1)^p\theta\wedge\alpha$，得两边的 $d\beta$ 项相差 $(-1)^p$。常见误区：把符号当装饰丢掉。
+
+**老师（追问）**：$d^2=0$ 怎么用这套语言看出？
+
+**学生**：因为 $[d,d]_{\mathrm{gr}}=2d^2$ 是次数 $2$ 的分次导子，而分次导子由它在生成元上的值唯一决定；在函数上 $d^2f=\sum_{i,j}\partial_j\partial_i f\,dx^j\wedge dx^i=0$，用了混合偏导对称与 $dx^j\wedge dx^i=-dx^i\wedge dx^j$。
+
+**老师（拓展）**：Bianchi 恒等式与它的关系？
+
+**学生**：把 $d$ 换成 $d^\nabla=d+A\wedge$ 后仍满足分次 Leibniz 法则，而曲率算子 $\Omega\wedge\cdot=d^\nabla d^\nabla$ 是偶次算子；对 $d^\nabla d^\nabla d^\nabla\xi$ 作两种展开即 $(d^\nabla\Omega)\wedge\xi=0$，即第二 Bianchi 恒等式。
+
 ## 相关条目
 
 - [协变外微分与Bianchi恒等式](./协变外微分与Bianchi恒等式.md)：其全部符号技巧都建立在分次 Leibniz 法则之上。

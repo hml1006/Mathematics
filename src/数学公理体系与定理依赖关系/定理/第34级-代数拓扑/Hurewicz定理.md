@@ -73,3 +73,17 @@ Hurewicz 定理的证明思路：
 - 计算 $H_1$：若 $\pi_1(X) = \langle a, b \mid aba^{-1}b^{-1} \rangle$（环面），则 $H_1 \cong \mathbb{Z} \oplus \mathbb{Z}$。
 - 若 $X$ 单连通，则 $H_1(X) = 0$，且 $\pi_2(X) \cong H_2(X)$。
 - 对 $S^n$（$n \ge 2$），$\pi_n(S^n) \cong \mathbb{Z}$（由 Hurewicz 定理和 $H_n(S^n) \cong \mathbb{Z}$）。
+
+## 课堂问答
+
+**老师**：Hurewicz 同态在 $n=1$ 与 $n\ge2$ 分别是什么？
+
+**学生**：$n=1$ 时 $h:\pi_1(X)\to H_1(X)$ 满射，核换位子子群，故 $H_1\cong\pi_1^{\mathrm{ab}}$；$n\ge2$ 且 $X$ 是 $(n-1)$-连通时，$h_n:\pi_n(X)\xrightarrow{\cong}H_n(X)$，且 $H_k=0$（$k<n$）。
+
+**老师（追问）**：$\pi_1$ 的元素怎么变成同调类？
+
+**学生**：把环路 $\gamma$ 当作奇异 $1$-单形，$\partial\gamma=\gamma(1)-\gamma(0)=0$，故它是 $1$-闭链，取 $h([\gamma])=[\gamma]$。保持基点同伦给出一条 $2$-链，其边缘为 $\gamma_1-\gamma_2$ 加上常值道路，故 $h$ 良定且是同态。
+
+**老师（拓展）**：条件 $\pi_k(X)=0$（$k<n$）能去掉吗？它有什么用？
+
+**学生**：不能，这是本质的。用处是对 $S^n$（$n\ge2$）得 $\pi_n(S^n)\cong H_n(S^n)\cong\mathbb Z$；单连通时 $\pi_2\cong H_2$。常见误区是用它算高同伦群——它只联系第一个非平凡的那一层。

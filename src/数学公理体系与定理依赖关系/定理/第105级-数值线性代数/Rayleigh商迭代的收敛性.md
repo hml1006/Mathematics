@@ -56,3 +56,17 @@ $$
 - **与 Arnoldi/Lanczos 衔接**：RQI 常用作大稀疏问题中局部收敛阶段的精化器。
 - **理论价值**：展示了"把特征问题视为极小化问题并用 Newton 思想加速"的机制，是位移选择与收敛速度分析的代表作。
 - **局限**：每步需解 $(A-\rho I)y=x$ 的新线性系统（无预分解基时代价高）；初值不好时可能收敛到非预期特征值。
+
+## 课堂问答
+
+**老师**：Rayleigh 商迭代为什么收敛这么快？
+
+**学生**：因为它用当前的 Rayleigh 商 $\rho_k=\frac{x_k^\top Ax_k}{x_k^\top x_k}$ 作为逆幂法的位移，而 $\rho_k$ 已相当逼近目标特征值，等价于对特征问题做 Newton 型加速。对对称矩阵，误差按三次方压缩：$\tan\theta_{k+1}\le c_1(\tan\theta_k)^3$，即三次收敛。
+
+**老师（追问）**：三次收敛的机制关键在哪一步？
+
+**学生**：关键在 $\lambda_1-\rho_k\asymp\sin^2\theta_k$。把 $x_k=v\cos\theta_k+u_k\sin\theta_k$（$u_k\perp v$）代入，得 $\rho_k=\lambda_1\cos^2\theta_k+O(\sin^2\theta_k)$，故 $\lambda_1-\rho_k\approx\lambda_1\sin^2\theta_k$。逆幂一步 $(A-\rho_kI)^{-1}$ 把主方向放大约 $1/(\lambda_1-\rho_k)$、正交分量放大约 $1/(\lambda_1-\rho_k-\lambda_2)$，两者之比给出 $\tan\theta_{k+1}\le C'(\tan\theta_k)^3$。
+
+**老师（拓展）**：非对称矩阵也三次吗？它的局限？
+
+**学生**：不。非对称情形 RQI 一般退化为二次收敛，三次收敛是对称（Hermite）情形的典型特性。常见误区是忽略初值——$\theta_0$ 不够小时可能收敛到非预期的特征值。实用中为避免 $(A-\rho_kI)$ 奇异要加微小位移，它常用作大稀疏问题中 Arnoldi/Lanczos 之后的精化器，每步需解一个新线性系统，代价较高。

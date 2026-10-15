@@ -55,3 +55,17 @@ $$
 **推论**（AAS 判定）：若两个三角形的两角及其中一角的对边分别对应相等，则这两个三角形全等。这是因为两角相等推出第三角相等，从而转化为 ASA 情形。
 
 **证明**：设 $\angle A = \angle D$，$\angle B = \angle E$，$BC = EF$。由内角和定理得 $\angle C = \angle F$。于是 $\angle B = \angle E$，$BC = EF$，$\angle C = \angle F$，由 ASA 得 $\triangle ABC \cong \triangle DEF$。$\square$
+
+## 课堂问答
+
+**老师**：ASA 判定说的是什么？它是公理还是定理？
+
+**学生**：结论：若 $\angle A=\angle D$、$AB=DE$、$\angle B=\angle E$，则 $\triangle ABC\cong\triangle DEF$。它是定理而非公理，可由 SAS 合同公理结合三角形内角和定理推出。
+
+**老师（追问）**：怎么把"两角夹边"转成能用 SAS 或叠合法的形式？
+
+**学生**：由内角和 $\angle C=180^\circ-\angle A-\angle B=180^\circ-\angle D-\angle E=\angle F$，于是三对角全部相等。再用叠合法：平移旋转使 $A$ 与 $D$、$B$ 与 $E$ 重合，$\angle A=\angle D$ 迫使射线 $AC$ 与 $DF$ 重合，$\angle B=\angle E$ 迫使射线 $BC$ 与 $EF$ 重合，交点 $C$ 与 $F$ 必重合。别把 AAS 当成新公理，它靠"两角相等推出第三角相等"化归为 ASA。
+
+**老师（拓展）**：测量中怎么用这条判定？
+
+**学生**：给定一条基线（已知边）与它两端的视角，三角形被唯一确定，这正是三角测量中确定远处目标距离的原理。

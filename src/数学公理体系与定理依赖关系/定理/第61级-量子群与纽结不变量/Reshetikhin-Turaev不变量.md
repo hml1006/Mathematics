@@ -41,3 +41,17 @@ $$
 
 ## 五、应用与意义
 Reshetikhin–Turaev 不变量为 Witten 的 Chern–Simons 路径积分不变量提供了严格的代数实现，是拓扑量子场论与量子群表示论的交汇点；它们在拓扑量子计算、三维流形分类以及范畴化同调理论中都有深远影响。
+
+## 课堂问答
+
+**老师**：RT 不变量怎么从链环升级为三维流形不变量？范畴要满足什么？
+
+**学生**：结论：用 ribbon Hopf 代数的表示范畴给链环着色得 $J_L(V_1,\dots,V_m)$，再用手术拼出流形不变量。关键是表示范畴须为模 ribbon 范畴，此时求和 $\tau_{\mathcal C}(M)=\Delta^{\sigma(L)}D^{-\sigma(L)-m-1}\sum_{\lambda_1,\dots,\lambda_m}(\prod_j\dim_{\lambda_j})J_L(V_{\lambda_1},\dots,V_{\lambda_m})$ 在 Kirby 移动下不变，其中 $D^2=\sum_i(\dim_i)^2$、$\Delta=\sum_i(\dim_i)^2\theta_i^{-1}$。
+
+**老师（追问）**：为什么模性（可逆 $S$-矩阵）是必要的？
+
+**学生**：因为三维流形的描述靠手术链环，不同描述差一次 Kirby 移动。手柄滑动在着色求和中对应 $S$-矩阵的作用，blow-up/down 对应 twist 与量子维数因子。只有当 $S$-矩阵可逆、范畴模化，这些因子才能系统抵消，求和才在全部 Kirby 移动下不变。ribbon 结构保证带框 R-I 不变，Yang–Baxter 保证 R-II、R-III 不变。
+
+**老师（拓展）**：取具体范畴会得到什么？
+
+**学生**：取 $\mathcal C=\mathrm{Rep}(U_q(\mathfrak{sl}_2))$ 在 $q=e^{\pi i/r}$ 处的可积表示范畴，得 $SU(2)$ 量子不变量，$\pm1$-框手术分支按量子维数加权。它与 Turaev–Viro 不变量满足 $TV_{\mathcal C}(M)=|\mathrm{WRT}(M)|^2$，从而把 Chern–Simons 的物理期望值落成可算的组合量。

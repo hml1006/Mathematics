@@ -50,3 +50,17 @@ $$f(z) = \lim_{n\to\infty} \frac{1}{2\pi i} \sum_j \frac{f(\zeta_j)}{\zeta_j - z
 **步骤 5**：具体地，对 $\zeta_j$ 远离 $K$ 时，$1/(\zeta_j - z) = \frac{1}{\zeta_j} \sum_{n=0}^\infty (z/\zeta_j)^n$ 是多项式的一致收敛级数。对 $\zeta_j$ 在 $K$ 附近但不在 $K$ 中，可通过路径移动将极点移至无穷远。$\square$
 
 **推论**：若 $K$ 是紧集且 $\mathbb{C} \setminus K$ 连通，则 $K$ 上全纯的函数可被多项式一致逼近。特别地，对任意圆盘 $D$ 上的全纯函数，可在 $D$ 的紧子集上被多项式一致逼近。
+
+## 课堂问答
+
+**老师**：什么时候全纯函数能用多项式一致逼近？
+
+**学生**：结论：$K$ 紧、$f$ 在 $K$ 的某邻域上全纯，则可用极点在 $\mathbb C\setminus K$ 中的有理函数一致逼近；若进一步 $\mathbb C\setminus K$ 连通，则可用多项式一致逼近。
+
+**老师（追问）**：补集的连通性为什么是关键？
+
+**学生**：由 Cauchy 积分公式 $f(z)=\frac{1}{2\pi i}\int_{\partial\Omega'}\frac{f(\zeta)}{\zeta-z}\,d\zeta$，把积分用 Riemann 和逼近即得有理函数 $\frac{1}{\zeta_j-z}$ 的线性组合，$\zeta_j\in\mathbb C\setminus K$。补集连通时 $\zeta_j$ 与无穷远点同属无界分支，可沿路径把极点移到无穷，展开 $\frac{1}{\zeta_j-z}=\frac1{\zeta_j}\sum_{n\ge0}(z/\zeta_j)^n$ 便是多项式一致逼近。若 $K$ 有洞，就必须在洞里布置极点，多项式不够用。
+
+**老师（拓展）**：最常用的推论是什么？
+
+**学生**：圆盘上全纯函数在其紧子集上可被多项式一致逼近，Taylor 截断就是最直接的实现。

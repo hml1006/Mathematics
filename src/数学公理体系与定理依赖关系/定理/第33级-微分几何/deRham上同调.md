@@ -116,3 +116,17 @@ de Rham 上同调在现代数学中有广泛应用：
 7. **复几何**：Dolbeault 上同调是 de Rham 上同调的复类比，Hodge 分解将 de Rham 上同调分解为 Dolbeault 上同调的直和。
 
 de Rham 上同调的推广包括：带系数的上同调、紧支集上同调、相对上同调、以及层上同调。
+
+## 课堂问答
+
+**老师**：de Rham 上同调数的是什么？为什么定义成"闭形式模恰当形式"？
+
+**学生**：它数流形上"有多少独立且全局非平凡的闭形式"，即第 $k$ 个洞。因 $d^2=0$，恰当形式 $B^k=\operatorname{im}d$ 落在闭形式 $Z^k=\ker d$ 内，故可定义 $H^k_{dR}(M)=Z^k(M)/B^k(M)$。Poincaré 引理说局部（如 $\mathbb{R}^n$）闭形式都恰当、$H^k=0\,(k\ge1)$，所以上同调衡量的恰是"局部为零、全局非零"的缺陷。
+
+**老师（追问）**：Poincaré 引理怎么用同伦算子证明？同伦不变性又意味着什么？
+
+**学生**：构造 $H\omega=\sum_I\big(\int_0^1t^{k-1}a_I(tx)\,dt\big)\iota_R(dx^I)$（$R=\sum x^i\partial_i$ 为径向场），得到 $dH+Hd=\omega-\omega(0)$。若 $d\omega=0$ 且 $k\ge1$，常值 $k$-形式 $\omega(0)=0$，故 $\omega=dH\omega$ 恰当。同伦不变性由 $dK+Kd=i_1^*-i_0^*$ 推出：同伦映射 $f\simeq g$ 诱导相同的 $f^*=g^*$，故可缩空间 $H^k=0\,(k\ge1)$、$H^0=\mathbb{R}$。
+
+**老师（拓展）**：如何真正"算出"上同调？它与奇异上同调什么关系？
+
+**学生**：用 Mayer-Vietoris 长正合序列把 $M=U\cup V$ 的 $H^k$ 由 $U,V,U\cap V$ 拼出来：$\cdots\to H^k(M)\to H^k(U)\oplus H^k(V)\to H^k(U\cap V)\xrightarrow{\delta}H^{k+1}(M)\to\cdots$，连接同态 $\delta(\omega)=d(\rho_V\omega)$。de Rham 定理进一步给出 $H^k_{dR}(M)\cong H^k(M;\mathbb{R})$，且杯积对应楔积——这把微分几何与代数拓扑接通。

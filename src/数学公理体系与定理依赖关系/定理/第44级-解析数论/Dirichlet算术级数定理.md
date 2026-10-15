@@ -83,6 +83,21 @@ $$\sum_{p \equiv a \pmod{q}} \frac{1}{p^s} \sim \frac{1}{\varphi(q)} \log \frac{
 这表明 $\sum_{p \equiv a \pmod{q}} \frac{1}{p}$ 发散，从而存在无穷多个满足条件的素数。$\square$
 
 **推论**：素数在模 $q$ 的互素剩余类中渐近均匀分布：$\pi(x; q, a) \sim \frac{x}{\varphi(q) \log x}$。$\square$
+
+## 课堂问答
+
+**老师**：定理内容是什么？证明为什么要构造 $L$ 函数？
+
+**学生**：若 $\gcd(a,q)=1$，则有无穷多个素数 $p\equiv a\pmod q$，等价于 $\sum_{p\equiv a\pmod q}1/p$ 发散。构造 $L(s,\chi)$ 是为了用正交关系 $\frac{1}{\varphi(q)}\sum_\chi\chi(a)^{-1}\chi(n)=\mathbf{1}_{n\equiv a\pmod q}$，把剩余类计数化为 $\sum_\chi\chi(a)^{-1}\log L(s,\chi)$ 的解析行为分析。
+
+**老师（追问）**：主特征与其他特征各贡献了什么？
+
+**学生**：主特征给出 $L(s,\chi_0)\sim\zeta(s)\sim\frac{1}{s-1}$，故 $\log L(s,\chi_0)\to\infty$，提供主发散项；而 $\chi\neq\chi_0$ 时由 $L(1,\chi)\neq0$ 且有限知 $\log L(s,\chi)$ 有界。合起来得 $\sum_{p\equiv a}1/p^s\sim\frac{1}{\varphi(q)}\log\frac{1}{s-1}\to\infty$。
+
+**老师（拓展）**：能进一步得到定量分布吗？
+
+**学生**：能，$\pi(x;q,a)\sim\frac{x}{\varphi(q)\log x}$，即素数在模 $q$ 的 $\varphi(q)$ 个互素剩余类中渐近均匀分布，这正是本定理的定量推论。
+
 ## 相关条目
 
 - [Dirichlet 算术级数定理（第75级-解析数论）](../第75级-解析数论/Dirichlet算术级数定理.md)：与本条目为同一定理，另收录于第75级-解析数论，可交叉参考。

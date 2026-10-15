@@ -113,6 +113,32 @@ $$
 - 随机算法分析：随机化算法的成功概率、负载均衡中最大负载的界等都依赖它。
 - 方法论意义：它把"独立 + 有界"这一最弱假设转化为指数型尾界，启发了 Azuma 不等式、McDiarmid 有界差分不等式等去独立化、去同分布的推广。
 
+## 课堂问答
+
+**老师**：Hoeffding 给出的衰减率由什么决定？
+
+**学生**：结论：设 $X_i\in[a_i,b_i]$ 相互独立，则
+
+$$
+\mathbb{P}\big(|S_n-\mathbb{E}S_n|\ge n\varepsilon\big)\le2\exp\!\left(-\frac{2n^2\varepsilon^2}{\sum_{i=1}^n(b_i-a_i)^2}\right),
+$$
+
+衰减快慢完全由各区间的长度 $b_i-a_i$ 决定；当所有 $X_i\in[0,1]$ 时化为 $\mathbb{P}(|\bar X-\mathbb{E}\bar X|\ge\varepsilon)\le2e^{-2n\varepsilon^2}$，指数里的 $n$ 说明样本越多集中越强。
+
+**老师（追问）**：Chernoff 方法加上 Hoeffding 引理，具体怎么拼起来？
+
+**学生**：先对 $t>0$ 用马尔可夫不等式把尾概率换成矩母函数，
+
+$$
+\mathbb{P}\Big(\sum_iY_i\ge n\varepsilon\Big)\le e^{-tn\varepsilon}\,\mathbb{E}\Big[e^{t\sum_iY_i}\Big],
+$$
+
+其中 $Y_i=X_i-\mathbb{E}X_i$；独立性把矩母函数拆成乘积 $\prod_i\mathbb{E}[e^{tY_i}]$，再用 Hoeffding 引理 $\mathbb{E}[e^{tY}]\le e^{t^2(b-a)^2/8}$ 逐项控制，合并得 $\exp(-tn\varepsilon+\frac{t^2}{8}\sum_i c_i^2)$，对 $t$ 取最小 $t=\frac{4n\varepsilon}{\sum_i c_i^2}$ 即得单侧界，双侧再乘系数 $2$。
+
+**老师（拓展）**：引理本身是怎么凑出 $e^{t^2(b-a)^2/8}$ 的？
+
+**学生**：用 $e^{ty}$ 在 $[a,b]$ 上的凸性把它压到连接两端的直线上，即 $e^{ty}\le\frac{b-y}{b-a}e^{ta}+\frac{y-a}{b-a}e^{tb}$，取期望并用 $\mathbb{E}Y=0$ 化为 $e^{ta}[(1-p)+pe^{u}]$（记 $u=t(b-a)$、$p=\frac{-a}{b-a}$）；对 $\log$ 那部分做泰勒展开，其二阶导不超过 $\frac14$，得 $\le e^{t^2(b-a)^2/8}$。误区是以为要事先知道方差——恰恰相反，Hoeffding 只需"有界"这一最易验证的信息。
+
 ## 相关条目
 
 - [McDiarmid不等式](./McDiarmid不等式.md)：把 Hoeffding 不等式推广到不独立、依赖有界差分的函数情形。

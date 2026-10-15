@@ -66,3 +66,17 @@ G := F
 **定理 3**（约化 Gröbner 基的唯一性）：对给定的单项式序，$I$ 的约化 Gröbner 基是唯一的。
 
 **证明**：设 $G$ 和 $G'$ 是两个约化 Gröbner 基。对任意 $g \in G$，$\operatorname{LT}(g) \in \langle \operatorname{LT}(G) \rangle = \langle \operatorname{LT}(G') \rangle$，故存在 $g' \in G'$ 使得 $\operatorname{LT}(g') \mid \operatorname{LT}(g)$。由对称性，$\operatorname{LT}(g) \mid \operatorname{LT}(g')$，故 $\operatorname{LT}(g) = \operatorname{LT}(g')$。再通过约化性证明 $g = g'$。$\square$
+
+## 课堂问答
+
+**老师**：什么是一组多项式理想的 Gröbner 基？Buchberger 判据凭什么能判定它是 Gröbner 基？
+
+**学生**：对给定单项式序，$G=\{g_1,\dots,g_t\}$ 是理想 $I$ 的 Gröbner 基当且仅当 $\langle\operatorname{LT}(g_1),\dots,\operatorname{LT}(g_t)\rangle=\langle\operatorname{LT}(I)\rangle$。判据是任意 $S(g_i,g_j)$ 在 $G$ 下约化为 $0$，因为 $S$-多项式恰好消去两个首项的最小公倍，从而能把任意 $\operatorname{LT}(f)$ 表示为被某个 $\operatorname{LT}(g_i)$ 整除。误区在于：随便一组生成元不是 Gröbner 基，余式会依赖除式顺序。
+
+**老师（追问）**：Buchberger 算法一定会停吗？
+
+**学生**：一定停。每次加入非零余式 $r$ 都有 $\operatorname{LT}(r)\notin\langle\operatorname{LT}(G')\rangle$，故首项理想严格增大；多项式环由 Hilbert 基定理是 Noether 的，严格升链必有限步终止。终止时所有 $S$-多项式约化为零，由判据即为 Gröbner 基。
+
+**老师（拓展）**：Gröbner 基怎么用来"解方程"？
+
+**学生**：取字典序算出约化 Gröbner 基后可读出消去理想，得到三角结构再逐次回代求根；还能判 $f\in I$（余式为零）、算理想维数与 Hilbert 函数。上除算法是其约化子程序，而约化 Gröbner 基在同一单项式序下唯一。

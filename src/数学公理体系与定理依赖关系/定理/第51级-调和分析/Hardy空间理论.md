@@ -108,3 +108,17 @@ $$\left|\int a(x)b(x)\,dx\right| = \left|\int a(x)(b(x) - b_Q)\,dx\right| \le \|
 5. **几何测度论**：Hardy 空间与补偿紧致性（compensated compactness）理论密切相关。Müller 和 Coifman 证明了某些非线性微分表达式（如 Jacobian）自动属于 $H^1$，这比 $L^1$ 估计更强。
 
 6. **概率论**：通过鞅论方法，Hardy 空间可以与随机过程的极大函数联系起来，为概率论和分析学之间建立桥梁。
+
+## 课堂问答
+
+**老师**：为什么 $p\le1$ 时要拿 $H^p$ 替代 $L^p$？
+
+**学生**：结论：$p\le1$ 时 $L^p$ 工具失效——奇异积分在 $L^1$ 上无界、对偶空间难描述。$H^p$ 用非切向极大函数 $\mathcal Nf\in L^p$ 定义，$H^1$ 是 Riesz 变换 $R_j:H^1\to L^1$ 有界的正确舞台，且 $(H^1)^*\cong BMO$。
+
+**老师（追问）**：原子分解里那个消去条件 $\int x^\alpha a=0$ 有什么用？
+
+**学生**：它补偿了 $p<1$ 时函数"振荡不足"，让核的奇性可控。验算时对 $x$ 远离 $\mathrm{supp}\,a$ 用消去条件把 $K(x-y)$ 换成 $K(x-y)-K(x)$ 获得快速衰减，靠近支集则用 $\|a\|_\infty\le|Q|^{-1/p}$。
+
+**老师（拓展）**：为什么 $H^p$ 与 $L^p$ 的关系在 $p=1$ 处断开？
+
+**学生**：因为 $p>1$ 时极大函数算子 $L^p$ 有界，$\mathcal Nf\in L^p\iff f\in L^p$；而 $p=1$ 时极大函数只弱 (1,1) 型，故 $H^1\subsetneq L^1$。$p<1$ 时 $H^p\subset\mathcal S'$ 但不再嵌入 $L^p$。

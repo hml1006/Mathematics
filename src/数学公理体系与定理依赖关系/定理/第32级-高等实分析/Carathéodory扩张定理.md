@@ -80,3 +80,17 @@ $$
 **步骤 5**：扩张和唯一性。令 $\mu = \mu^*|_{\sigma(\mathcal{A})}$，由步骤 3-4，$\mu$ 是 $\sigma(\mathcal{A})$ 上的测度且 $\mu|_{\mathcal{A}} = \mu_0$。若 $\mu_0$ 是 $\sigma$-有限的，由 $\pi$-$\lambda$ 定理（或单调类定理），$\mu$ 在 $\sigma(\mathcal{A})$ 上是唯一的。$\square$
 
 **应用——Lebesgue 测度的构造**：取 $\mathcal{A}$ 为 $\mathbb{R}$ 上有限个左闭右开区间 $[a,b)$ 的不交并组成的代数，$\mu_0([a,b)) = b-a$。Carathéodory 扩张定理给出 $\mathbb{R}$ 上的 Lebesgue 测度 $\mu$，且 $\mathcal{M} = \sigma(\mathcal{A})$ 包含所有 Borel 集。
+
+## 课堂问答
+
+**老师**：只给定代数 $\mathcal{A}$ 上的 $\sigma$-可加预测度 $\mu_0$，怎么长出整个 $\sigma(\mathcal{A})$ 上的测度？
+
+**学生**：结论：先造外测度、再挑可测集。令 $\mu^*(E)=\inf\{\sum_n\mu_0(A_n):A_n\in\mathcal{A},\ E\subset\bigcup_n A_n\}$，再采用 Carathéodory 条件：$E$ 可测当且仅当对一切 $A$，$\mu^*(A)=\mu^*(A\cap E)+\mu^*(A\setminus E)$。全体可测集构成 $\sigma$-代数，$\mu^*$ 在其上是完全测度。
+
+**老师（追问）**：唯一性凭什么？$\sigma$-有限条件究竟在哪一步起作用？
+
+**学生**：唯一性不是免费的。若 $\mu_0$ 是 $\sigma$-有限的，即 $X=\bigcup_n A_n$、$\mu_0(A_n)<\infty$，则由单调类定理或 $\pi$-$\lambda$ 定理，两个在 $\mathcal{A}$ 上一致、又都 $\sigma$-有限的测度必在 $\sigma(\mathcal{A})$ 上一致。没有 $\sigma$-有限，唯一性可以失效。
+
+**老师（拓展）**：Lebesgue 测度怎么成为它的一个特例？
+
+**学生**：取 $\mathcal{A}$ 为 $\mathbb{R}$ 上左闭右开区间 $[a,b)$ 的有限不交并构成的代数，令 $\mu_0([a,b))=b-a$。它 $\sigma$-有限（取 $A_n=[-n,n)$），扩张所得的 $\mu$ 就是 Lebesgue 测度，且 $\sigma(\mathcal{A})$ 包含全体 Borel 集。

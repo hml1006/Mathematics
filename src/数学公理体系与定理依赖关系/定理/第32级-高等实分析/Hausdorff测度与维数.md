@@ -130,3 +130,17 @@ Hausdorff 测度和维数在多个数学分支中有重要应用：
 7. **偏微分方程**：研究奇点集的维数和正则性。
 
 Hausdorff 维数与 Box 维数、填充维数等其他分形维数有密切联系，但具有更好的测度论性质（如可数稳定性）。
+
+## 课堂问答
+
+**老师**：Hausdorff 测度里为什么要先限制覆盖直径不超过 $\delta$，再取极限？
+
+**学生**：结论：为了强制覆盖变"精细"。定义是 $\mathcal{H}_\delta^s(E)=\inf\{\sum_i(\operatorname{diam}U_i)^s:E\subset\bigcup_i U_i,\ \operatorname{diam}U_i\le\delta\}$，再令 $\mathcal{H}^s(E)=\lim_{\delta\to0}\mathcal{H}_\delta^s(E)$。$\delta$ 越小可选覆盖越少，故该极限存在（且等于上确界）。
+
+**老师（追问）**：为什么维数一定是个"从 $\infty$ 跳到 $0$"的临界值？
+
+**学生**：因为对 $s<t$，若 $\mathcal{H}^t(E)<\infty$ 则 $\mathcal{H}^s(E)=0$：任一 $\delta$-覆盖满足 $\sum(\operatorname{diam}U_i)^s\le\delta^{s-t}\sum(\operatorname{diam}U_i)^t\to0$。于是 $\mathcal{H}^s(E)$ 关于 $s$ 单调，至多有一个临界值，$\dim_H(E)=\inf\{s:\mathcal{H}^s(E)=0\}$。
+
+**老师（拓展）**：具体算一个集合的维数，最常用什么工具？
+
+**学生**：质量分布原理。若 $E$ 上概率测度 $\mu$ 满足 $\mu(B(x,r))\le Cr^s$，则 $\mathcal{H}^s(E)\ge 1/C>0$，从而 $\dim_H E\ge s$。用它算三分 Cantor 集：$\mu(B(x,3^{-n}))\le 2^{-n}=(3^{-n})^{\ln2/\ln3}$，得 $\dim_H=\ln2/\ln3$。

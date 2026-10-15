@@ -31,6 +31,21 @@ Lyapunov 稳定性定理给出自治系统 $\dot{\boldsymbol x}=\boldsymbol f(\b
 ## 五、应用与意义
 
 Lyapunov 方法是非线性系统与最优控制稳定性的核心工具，广泛用于航天、机器人、电力与自适应控制。它无需显式解轨迹即可判定稳定，也是 LQR 闭环稳定性证明与神经网络控制设计的理论基础。
+
+## 课堂问答
+
+**老师**：判断 $\dot{\boldsymbol x}=\boldsymbol f(\boldsymbol x)$ 的原点稳定，为什么找一个正定函数 $V$ 且 $\dot V\le0$ 就够了？背后的几何图像是什么？
+
+**学生**：结论：正定 $V$ 的水平集 $\{V=c\}$ 是一圈圈包围原点的闭曲线，$\dot V\le0$ 说明轨道只能由外向内穿过或沿其走，永远逃不出去。严格地，对 $\epsilon$ 取 $\alpha=\min_{\|\boldsymbol x\|=\epsilon}V>0$，由连续性选 $\delta$ 使 $\|\boldsymbol x_0\|<\delta$ 时 $V(\boldsymbol x_0)<\alpha$；因 $V$ 沿轨道不增，$\|\boldsymbol x(t)\|<\epsilon$，即稳定。
+
+**老师（追问）**：那凭什么从 $\dot V<0$ 升级到渐近稳定，$V\to0$ 这一步怎么写？
+
+**学生**：反设 $V$ 递减到 $c>0$，轨道就落在紧集 $\{c\le V\le V(\boldsymbol x_0)\}$ 上，其上 $\dot V\le-\gamma<0$，于是 $V$ 以正速率线性下降，终将跌到 $c$ 以下，矛盾，故 $c=0$，$\boldsymbol x(t)\to\boldsymbol 0$。若只有 $\dot V\le0$，就用 LaSalle：$\omega$-极限集是不变集、其上 $V$ 恒为常数故 $\dot V=0$，轨道收敛到 $\{\dot V=0\}$ 的最大不变集。
+
+**老师（拓展）**：若一时找不到现成的 $V$，线性系统 $\dot{\boldsymbol x}=\boldsymbol A\boldsymbol x$ 能反过来由稳定性造出 $V$ 吗？
+
+**学生**：能。任取 $\boldsymbol Q>\boldsymbol 0$，解 Lyapunov 方程 $\boldsymbol A^{\top}\boldsymbol P+\boldsymbol P\boldsymbol A=-\boldsymbol Q$，取 $V=\boldsymbol x^{\top}\boldsymbol P\boldsymbol x$，则 $\dot V=-\boldsymbol x^{\top}\boldsymbol Q\boldsymbol x<0$，且当且仅当 $\boldsymbol A$ 的谱在左半平面时 $\boldsymbol P>\boldsymbol 0$。这与代数Riccati方程唯一性证明里"两个 Hurwitz 矩阵的 Sylvester 方程只有零解"同源。
+
 ## 相关条目
 
 - [Lyapunov 稳定性定理（第69级-控制理论）](../第69级-控制理论/Lyapunov稳定性定理.md)：与本条目为同一定理，另收录于第69级-控制理论，可交叉参考。

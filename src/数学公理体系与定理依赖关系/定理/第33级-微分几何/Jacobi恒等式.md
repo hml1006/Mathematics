@@ -89,6 +89,20 @@ $$[a,[b,c]]+[b,[c,a]]+[c,[a,b]]=0.\qquad\square$$
 2. 对 Poisson 括号 $\{\cdot,\cdot\}$，Jacobi 恒等式即 $C^\infty(M)$ 构成李代数，对应 Hamilton 向量场的 Lie 同态；
 3. 对 Levi-Civita 联络的曲率与挠率，Jacobi 恒等式给出第一 Bianchi 恒等式。
 
+## 课堂问答
+
+**老师**：Jacobi 恒等式是微分几何专属的吗？它的本质来自哪里？
+
+**学生**：不是，本质是结合性。对任意结合代数 $A$ 令 $[a,b]=ab-ba$，则 $[a,[b,c]]+[b,[c,a]]+[c,[a,b]]=0$。把三项展开为 $abc-acb-bca+cba$、$bca-bac-cab+acb$、$cab-cba-abc+bac$，每个单项恰以相反符号出现两次而抵消。向量场情形只是把算子复合当成乘法。
+
+**老师（追问）**：这条恒等式凭什么让向量场成为李代数，并在 Frobenius 定理里起作用？
+
+**学生**：李代数需要双线性、反对称与 Jacobi 三条公理；Jacobi 保证括号与分次 Leibniz 律相容，使对合分布 $\Delta$（满足 $[X,Y]\in\Delta$）成为 $\mathfrak X(M)$ 的李子代数，从而 Frobenius 定理的对合条件有良定义。对 Poisson 括号，它使 $C^\infty(M)$ 构成李代数，Hamilton 向量场构成 Lie 同态。
+
+**老师（拓展）**：Jacobi 恒等式还藏在曲率理论哪里？
+
+**学生**：藏在对 Levi-Civita 联络曲率与挠率的约束里。第一 Bianchi 恒等式 $R(X,Y)Z+R(Y,Z)X+R(Z,X)Y=0$ 的证明反复调用 $\nabla$ 的对称性与 Jacobi 恒等式，因此它本质上是"括号运算自洽"的代数约束，也是整套曲率恒等式能够自洽表述的根据。
+
 ## 相关条目
 
 - [Frobenius可积性定理](./Frobenius可积性定理.md)：对合分布（李括号封闭）的定义依赖向量场构成李代数，即 Jacobi 恒等式。

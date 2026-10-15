@@ -67,6 +67,20 @@ $$f_{n+1}(\alpha\sigma_n^{\pm1})=\delta^{\pm1}\cdot f_n(\alpha).$$
 - **辫群的词问题与算法**：由于 $B_n$ 有多种可判定的正规形（Garside 正规形等），Markov 移动为不变量的算法计算提供可操作路径。
 - **映射类群与 Birman 正合序列**：闭辫与映射类群的关系把 Markov 定理嵌入低维拓扑与几何群论的结构之中。
 
+## 课堂问答
+
+**老师**：Markov 定理说闭辫的冗余由哪两类操作刻画？它怎么产生不变量？
+
+**学生**：结论：$\bigsqcup_nB_n$ 在共轭 $\alpha\leftrightarrow\gamma\alpha\gamma^{-1}$（M1）与稳定化 $\alpha\leftrightarrow\alpha\sigma_n^{\pm1}$（M2）下的商双射于链环同痕类。于是任何满足 $f_n(\gamma\alpha\gamma^{-1})=f_n(\alpha)$ 与 $f_{n+1}(\alpha\sigma_n^{\pm1})=f_n(\alpha)$ 的函数族给出链环不变量 $F(\hat\alpha)=f_n(\alpha)$。
+
+**老师（追问）**：这两条移动的几何含义？
+
+**学生**：M1 对应沿闭辫移动切割圆盘、改变读辫起点，代数上就是共轭，是环面绕轴的整体旋转，不改链环。M2 是在一股上加或减一个自身小圈，即一次 Reidemeister I 型扭结。反之，任意两个闭辫表示的同痕可按时间分层，用共轭把变化挪到末尾相邻两股，再化为 $\sigma_n^{\pm1}$ 的插入，故 M1、M2 生成全部等价关系。
+
+**老师（拓展）**：举一个 Markov 迹的例子。
+
+**学生**：取 Temperley–Lieb 代数，$\rho(\sigma_i)=t^{1/2}e_i+t^{-1/2}$，$e_i^2=\delta e_i$ 且 $\delta=-t^{1/2}-t^{-1/2}$，Markov 迹满足 $\operatorname{tr}(xe_n)=\delta\operatorname{tr}(x)$，故 $f_{n+1}(\alpha\sigma_n^{\pm1})=\delta^{\pm1}f_n(\alpha)$。再用框修正 $(-\frac{1+t}{\sqrt t})^{n-1}$ 与指数和因子消去对 $n,\delta$ 的依赖，即得 Jones 多项式；换用量子群的 $R$-矩阵与量子迹则得 HOMFLY 与 RT 不变量。
+
 ## 相关条目
 
 - [Jones多项式](./Jones多项式.md)：由 Temperley–Lieb 代数的 Markov 迹经规范化得到，是 Markov 定理最著名的应用。

@@ -78,6 +78,20 @@ $\square$
 - 零点计数与显式公式是零点的统计研究（零点间距分布、$S(T)$ 的涨落）的出发点，也是"随机矩阵与数论"联系的起点。
 - 同一论证对 Dirichlet $L$ 函数逐字复制，给出算术级数中的素数定理与广义 Riemann 假设的误差刻画。
 
+## 课堂问答
+
+**老师**：显式公式把素数计数和 $\zeta$ 的零点连起来，它的骨架是什么？
+
+**学生**：$\psi(x)=x-\sum_\rho\frac{x^\rho}{\rho}-\log2\pi-\frac12\log(1-x^{-2})$，其中 $\rho$ 遍历非平凡零点。主项 $x$ 来自 $s=1$ 的极点，振荡项 $-x^\rho/\rho$ 来自每个零点，常数项 $-\log2\pi$ 来自 $s=0$，平凡零点合并成 $-\frac12\log(1-x^{-2})$。零点计数另有 $N(T)=\frac{T}{2\pi}\log\frac{T}{2\pi e}+O(\log T)$。
+
+**老师（追问）**：从 $\psi(x)$ 到零点和，技术上靠什么把求和变成零点？
+
+**学生**：两步。先用 Perron 公式把 $\psi(x)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}\bigl(-\frac{\zeta'}{\zeta}(s)\bigr)\frac{x^s}{s}\,ds$ 表示成围道积分；再把围道向左平移，用留数定理逐个收极点。关键是 $\frac{\xi'}{\xi}(s)=\sum_\rho\bigl(\frac{1}{s-\rho}+\frac1\rho\bigr)$（Hadamard 因子分解），使零点成为 $-\zeta'/\zeta$ 的极点，横边用 $N(T)$ 估计趋于零。
+
+**老师（拓展）**：这个公式怎么直接刻画素数定理与 Riemann 假设？
+
+**学生**：素数定理 $\psi(x)\sim x$ 等价于 $\zeta$ 在 $\operatorname{Re}s=1$ 无零点（此时 $x^\rho$ 项相对 $x$ 可忽略）；而 RH（$\operatorname{Re}\rho=\frac12$）等价于误差 $\psi(x)-x=O(\sqrt x\log^2 x)$，即每个振荡振幅 $\sqrt x$。常见误区是以为要逐个算零点，其实只需知道零点的实部上界就能控制误差阶。
+
 ## 相关条目
 
 - [随机矩阵与数论.md](./随机矩阵与数论.md)：零点间距的统计猜想与显式公式所描述的零点涨落直接相关。

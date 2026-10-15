@@ -103,3 +103,17 @@ $(\Leftarrow)$ 设 $\equiv$ 成立。由步骤 2，$da_i\in[0,L]$，故两个和
 **应用领域：** 加性组合（Freiman、Szemerédi、sum-product）、算术几何（有限域上的加法结构）、理论计算机科学（去随机化、伪随机生成器的加法结构分析）。
 
 **推广：** 对一般有限生成阿贝尔群、对高维 Freiman 同构（$m\ge2$）、以及对 $\mathbb{Z}^d$ 的建模都有相应版本；Green–Ruzsa 的"多项式 Freiman 定理"把建模思想推广到无挠群的高阶结构。
+
+## 课堂问答
+
+**老师**：为什么能把 $\mathbb{Z}$ 上的小和集"搬进"有限群去研究？
+
+**学生**：Ruzsa 建模引理：若 $A\subseteq\mathbb{Z}$ 有限、$|A+A|\le C|A|$，则存在 $C'(C)$ 与素数 $p\le C'|A|$，以及子集 $A'\subseteq A$（$|A'|\ge|A|/C'$），使 $\phi(a)=da \bmod p$ 给出 $A'$ 到 $\mathbb{Z}_p$ 的 Freiman $2$-同构：$a_1+a_2=a_3+a_4\iff\phi(a_1)+\phi(a_2)\equiv\phi(a_3)+\phi(a_4)\pmod p$。于是 $A$ 的加法信息被等量无损地移植到 $\mathbb{Z}_p$。
+
+**老师（追问）**：怎么保证取模不丢失信息？
+
+**学生**：先用 Plünnecke–Ruzsa 知 $|2A-2A|\le C^8|A|$（关系只有受控多个数值）；再把 $A$ 平移、取子集 $A'$ 并放大 $d$ 倍使其落入长度 $L\le C_1|A'|$ 的短区间；取素数 $p$ 使 $2\cdot 2L<p\le 4\cdot 2L$（Bertrand 定理保证存在，$p\le C'|A|$）。此时任意两和之差 $|s|\le 2L<p$ 且 $p\mid s$，故 $s=0$，同构成立。误区：忘了先"压缩尺度"再取模。
+
+**老师（拓展）**：它在 Freiman 证明链中的位置？
+
+**学生**：它是第一环：把 $A$ 搬到 $\mathbb{Z}_p$ 后，才能用 Bogolyubov 引理提取 Bohr 集/子群结构，再把结论逆映射回 $\mathbb{Z}$ 得到广义等差数列。它体现了加性组合"先在友好群求结构、再搬回"的通用范式。

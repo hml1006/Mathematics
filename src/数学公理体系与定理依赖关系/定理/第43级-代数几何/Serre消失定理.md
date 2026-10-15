@@ -65,3 +65,17 @@ $$\cdots \to H^i(X, \bigoplus \mathcal{O}_X(-m_i + n)) \to H^i(X, \mathcal{F}(n)
 **推论 1**（有限维性）：对射影簇 $X$ 上的凝聚层 $\mathcal{F}$，所有 $H^i(X, \mathcal{F})$ 是有限维 $k$-向量空间。
 
 **推论 2**（Hilbert 多项式）：函数 $\chi(X, \mathcal{F}(n)) = \sum_{i=0}^{\dim X} (-1)^i \dim_k H^i(X, \mathcal{F}(n))$ 是 $n$ 的多项式。$\square$
+
+## 课堂问答
+
+**老师**：Serre 消失定理说的是什么？它为什么是射影簇上同调计算的核心工具？
+
+**学生**：设 $X$ 是射影簇、$\mathcal{F}$ 是凝聚层，则存在 $n_0$ 使得对所有 $n\ge n_0$ 与所有 $i>0$ 有 $H^i(X,\mathcal{F}(n))=0$，其中 $\mathcal{F}(n)=\mathcal{F}\otimes\mathcal{O}_X(n)$。它保证足够正扭转后整体截面 $H^0$ 承载全部信息，从而 $\chi(X,\mathcal{F}(n))$ 是 Hilbert 多项式，上同调维数变成可有限计算的量。
+
+**老师（追问）**：证明的关键步骤是哪一步？
+
+**学生**：先对 $\mathcal{O}_{\mathbb{P}^N}(n)$ 用标准开覆盖直接算 Čech 上同调得 $H^i=0\ (i>0,n\ge0)$；再对一般凝聚层用正合序列 $0\to\mathcal{K}\to\bigoplus_i\mathcal{O}_X(-m_i)\to\mathcal{F}\to0$ 做对"存在长度"的归纳，长正合序列两端为零便逼出中间项为零。
+
+**老师（拓展）**：更一般地，高阶上同调在什么时候整体消失？
+
+**学生**：与 Serre 对偶结合可得 $H^i(X,\mathcal{F})=0$ 对 $i>\dim X$。要强调这只是"足够正扭转后"的消失，原层 $\mathcal{F}$ 本身未必消失。

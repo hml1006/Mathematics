@@ -98,3 +98,25 @@ $$
 - **高阶导数估计**：Leibniz 法则把 $D^\alpha(uv)$ 拆成低阶导数的乘积之和，是插值误差、分片多项式范数等价与 Sobolev 范数换算中的标准工具。
 - **分部积分与弱形式**：乘积求导法则 $(uv)'=u'v+uv'$ 移项即得分部积分公式，是 Lax–Milgram 弱形式与守恒律 Rankine–Hugoniot 条件的代数基础。
 - **幂级数与组合结构**：Leibniz 法则解释了 $(1+x)^n$ 的二项式系数来源，也是生成函数乘积与 Taylor 余项估计的基本手段。
+
+## 课堂问答
+
+**老师**：为什么有限元分析总把链式法则和 Leibniz 法则摆在一起讲？
+
+**学生**：因为一个管复合、一个管乘积。链式法则处理坐标变换：物理元与参考元由 $x=x_T+h_T\hat x$ 相连，故 $\nabla_x=\frac1{h_T}\nabla_{\hat x}$，逆估计里那个 $h^{-1}$ 就来自这里。Leibniz 法则处理乘积的高阶导与弱形式：
+$$
+(fg)^{(n)}=\sum_{k=0}^n\binom nk f^{(k)}g^{(n-k)},
+$$
+分部积分 $(uv)'=u'v+uv'$ 移项即得，是所有弱形式的代数起点。
+
+**老师（追问）**：Leibniz 法则证明的关键一步是什么？
+
+**学生**：在对 $n$ 的归纳。设 $n$ 成立，对 $(fg)^{(n)}$ 再求一次导得 $\sum_k\binom nk[f^{(k+1)}g^{(n-k)}+f^{(k)}g^{(n-k+1)}]$，把第一和的指标换 $k\to k-1$ 归并同类项，系数变成 $\binom n{k-1}+\binom nk$，再用 Pascal 恒等式 $\binom n{k-1}+\binom nk=\binom{n+1}k$ 收拢。常见误区是漏掉多指标情形：$D^\alpha(fg)=\sum_{\beta\le\alpha}\binom\alpha\beta D^\beta f\,D^{\alpha-\beta}g$，系数是各方向二项式系数之积。
+
+**老师（拓展）**：二阶链式法则为什么比一阶多出一项？
+
+**学生**：因为要对 $\nabla f^\top G'$ 再用乘积法则，而 $\frac{d}{dt}\nabla f(G(t))=\nabla^2 f(G(t))G'(t)$，于是
+$$
+\frac{d^2}{dt^2}f(G(t))=G'(t)^\top\nabla^2 f(G(t))G'(t)+\nabla f(G(t))^\top G''(t).
+$$
+多出的 $\nabla f^\top G''$ 项正是映射 $G$ 本身弯曲的贡献，$G$ 为直线时它消失；它在有限元的缩放映射与误差高阶展开里反复出现。

@@ -96,3 +96,21 @@ $\bar{\partial}$-Neumann 问题在多复变分析与几何中具有基础性地�
 5. **工程与物理学应用**：$\bar{\partial}$ 方程在量子场论（如规范理论的反常抵消）、信号处理（多维系统理论）以及统计物理中出现。$L^2$ 估计是这些应用的数学基础。
 
 6. **偏微分方程理论**：$\bar{\partial}$-Neumann 问题是第一个"次椭圆但非椭圆"的边值问题，其研究推动了偏微分方程一般理论（次椭圆性、紧可解性等）的发展。
+
+## 课堂问答
+
+**老师**：$\bar\partial$-Neumann 问题研究什么？它与单复变有何本质区别？
+
+**学生**：研究伪凸域 $\Omega\subset\mathbb C^n$ 上用 $L^2$ 方法解 $\bar\partial u=f$ 并给出估计。做法是把 $\bar\partial$ 视为 $L^2_{0,q}$ 中的稠定闭算子，解 $\bar\partial^*_\phi$ 满足的"Neumann 型"边界条件。本质区别：单复变中 $\bar\partial$ 可解是平凡的，而多复变里 $\bar\partial$ 非椭圆，可解性与估计强烈依赖区域的伪凸性，它是第一个非局部椭圆的 $\bar\partial$ 边值问题。常见误区是把它当作普通椭圆边值问题——其边界项符号恰好抵消 $\bar\partial$ 的非椭圆性。
+
+**老师（追问）**：基本估计怎样得到？Neumann 算子是什么？
+
+**学生**：由 Morrey–Kohn–Hörmander 恒等式，伪凸性使边界 Levi 形式项非负、权多次调和使曲率项非负，于是
+$$\|u\|_\varphi^2\le C\bigl(\|\bar\partial u\|_\varphi^2+\|\bar\partial^*_\varphi u\|_\varphi^2\bigr),$$
+它使 $\Box_q=\bar\partial^*_\varphi\bar\partial+\bar\partial\bar\partial^*_\varphi$ 强制（coercive），由 Lax–Milgram 得 Néumann 算子 $N_q=\Box_q^{-1}$ 有界，且 $\bar\partial u=f$ 的解可取 $u=\bar\partial^*_\varphi N_qf$。
+
+**老师（拓展）**：在光滑强伪凸域上，Kohn 还得到什么更强的结论？
+
+**学生**：子椭圆正则性：对任意 $s\ge0$ 有
+$$\|u\|_{s+1}\le C_s\bigl(\|\Box_q u\|_s+\|u\|_s\bigr),$$
+故 $N_q$ 提升 Sobolev 正则性。这不仅给出 Levi 问题最简洁的证明，也在无边界紧 Kähler 情形退化为 Hodge 理论，是分析与几何（Cartan 定理 B 的分析证明）之间的桥梁。

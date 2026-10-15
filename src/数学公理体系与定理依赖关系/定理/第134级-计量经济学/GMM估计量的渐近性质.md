@@ -48,3 +48,17 @@ $$
 ## 五、应用与意义
 
 GMM 是极灵活的估计框架，把 IV、2SLS、随机效应等纳入统一理论，广泛应用于金融（资产定价矩条件）、劳动经济与实证宏观。其三明治方差直接催生了稳健标准误（HAC）实践，是计量推断工具箱的支柱方法之一。
+
+## 课堂问答
+
+**老师**：GMM 的一致性靠什么？
+
+**学生**：靠目标函数的一致收敛加唯一最小性——$Q_n(\theta)=\bar g(\theta)'\hat W\bar g(\theta)\xrightarrow{p}Q_\infty(\theta)$，且 $Q_\infty(\theta_0)=0$、识别条件使 $\theta\ne\theta_0$ 时 $Q_\infty>0$，故 $\hat\theta\xrightarrow{p}\theta_0$。
+
+**老师（追问）**：渐近正态的方差为何是"三明治"形状？
+
+**学生**：因为 $\sqrt n(\hat\theta-\theta_0)=-(\hat G'\hat W\hat G)^{-1}\hat G'\hat W\sqrt n\bar g(\theta_0)$，而 $\sqrt n\bar g(\theta_0)\xrightarrow{d}N(0,S)$，Slutsky 给出 $(G'WG)^{-1}G'WSWG(G'WG)^{-1}$，两侧是两个 $G'WG$ 夹住中间的 $S$。
+
+**老师（拓展）**：最优权重为什么能"削减"夹心？
+
+**学生**：取 $W=S^{-1}$ 时 $G'WSWG=G'S^{-1}G=G'WG$，三明治两边相等、塌缩为 $(G'S^{-1}G)^{-1}$，在正定序下对所有 $W$ 最小；实践中用两步 GMM，先用 $\hat W=I$ 得残差再估 $\hat S$，并配 HAC 稳健协方差。

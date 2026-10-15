@@ -136,6 +136,20 @@ Dirichlet 单位定理可以看作代数 K 群 $K_1(\mathcal{O}_K)$ 的计算。
 
 Leopoldt 猜想断言：$\mathcal{O}_K^\times$ 在 $p$-进对数嵌入下的像的 $\mathbb{Z}_p$-秩等于 $r_1 + r_2 - 1$（即不"坍缩"）。这对 Abel 扩张已被证明（Brumer），一般情形仍是开放问题。
 
+## 课堂问答
+
+**老师**：单位群常常是无限的，它的结构由什么刻画？秩等于多少？
+
+**学生**：$\mathcal O_K^\times\cong W_K\times\mathbb Z^r$，其中 $W_K$ 是单位根群，秩 $r=r_1+r_2-1$。关键是"对数嵌入" $L(\varepsilon)=(\log|\sigma_1\varepsilon|,\dots,\log|\sigma_{r_1}\varepsilon|,2\log|\sigma_{r_1+1}\varepsilon|,\dots)$，由 $|N(\varepsilon)|=1$ 得各分量之和为 $0$，故像落在超平面 $H$（维数 $r_1+r_2-1$）内。
+
+**老师（追问）**：这个同态的核与像各怎么确定？
+
+**学生**：核 $\ker L=W_K$：若所有 $|\sigma_i\varepsilon|=1$，则 $\varepsilon$ 的共轭模全为 1、极小多项式系数有界且为整数，故共有有限多个极小多项式，$\varepsilon$ 只有有限多幂，从而 $\varepsilon$ 是单位根（Kronecker）。像 $L(\mathcal O_K^\times)$ 是 $H$ 中的格：离散性来自"共轭模有界 $\Rightarrow$ 只有有限多个 $\varepsilon$"，满秩性用 Minkowski 定理在厚环区域里构造出 $r$ 个线性无关的单位方向。
+
+**老师（拓展）**：常见误区与主要推广？
+
+**学生**：最常见误区是把秩写成 $n-1=r_1+2r_2-1$，多算了共轭对的重复。实二次域 $r=1$ 时基本单位给出 Pell 方程 $x^2-dy^2=\pm1$ 的全部解由 $\varepsilon_0^n$ 给出。允许在有限多个素理想处取极点得 S-单位群，秩升为 $r+|S|$；调节子 $R_K$ 则进入解析类数公式，是数域的另一重要不变量。
+
 ## 相关条目
 
 - [Dirichlet 单位定理（第76级-代数数论）](../第76级-代数数论/Dirichlet单位定理.md)：与本条目为同一定理，另收录于第76级-代数数论，可交叉参考。

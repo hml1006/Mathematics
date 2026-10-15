@@ -38,3 +38,17 @@ $\blacksquare$
 ## 五、应用与意义
 
 Ruzsa 三角不等式是加性组合的基础引理，用于控制多步和/差集的增长（经迭代得到增长界），是 Plünnecke-Ruzsa、Freiman 定理、以及 sum-product 与算术级数结构定理中的一贯武器。它在 Ruzsa 建模引理、Plünnecke 图与"结构-密度"理论中反复充当"中转传递"角色，也是准随机化与 additive energy 估计的基本工具。
+
+## 课堂问答
+
+**老师**：阿贝尔群里两个差集能怎么互相控制？
+
+**学生**：Ruzsa 三角不等式：$|A-C|\le\dfrac{|A-B|\cdot|B-C|}{|B|}$。证明是双计数：构造 $\phi:(A-B)\times(B-C)\to A-C$、$(d_1,d_2)\mapsto d_1+d_2$。对固定 $x=a-c$，遍历 $b\in B$ 得 $(a-b,b-c)$ 都落在纤维里且互不相同，故 $|\phi^{-1}(x)|\ge|B|$，于是 $|A-B||B-C|\ge|A-C||B|$。
+
+**老师（追问）**：为什么不同 $b$ 给出不同的对？
+
+**学生**：因为 $b=a-d_1$ 由 $d_1$ 唯一确定，故映射 $b\mapsto(a-b,b-c)$ 是单射，每点纤维至少 $|B|$ 个。误区：这里用的是纤维下界（不是上界），因为 $\mathrm{Im}\,\phi\subseteq A-C$，按纤维下界摊开即得 $|A-C||B|\le|A-B||B-C|$。
+
+**老师（拓展）**：它在加性组合里怎么被用？
+
+**学生**：它是"中转传递"的基本工具：迭代可控制多步和差集增长，与 Plünnecke 不等式合得 Plünnecke–Ruzsa 引理 $|mA-nA|\le K^{m+n}|A|$，并在 Freiman 定理、sum-product 与 Ruzsa 距离中反复充当底层不等式。

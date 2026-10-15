@@ -129,6 +129,22 @@ $$g(z):=\int_\gamma\frac{\varphi(\zeta)}{\zeta-z}\,d\zeta$$
 
 **推论 2（Weierstrass 一致收敛定理的钥匙）**：若 $f_n$ 全纯、$f_n\to f$ 内闭一致，则对任意三角形 $T\subseteq\Omega$，由 $\oint_{\partial T}f_n=0$（Cauchy 定理）与一致收敛可在积分号下取极限，得 $\oint_{\partial T}f=0$；由 Morera 定理，$f$ 全纯。
 
+## 课堂问答
+
+**老师**：不想求导，怎么判定一个连续函数是全纯的？
+
+**学生**：结论（Cauchy 定理的逆命题）：若连续函数 $f$ 沿一切内部含于区域的闭三角形积分为零，即 $\oint_{\partial T}f\,dz=0$，则 $f$ 全纯。它把"验证可导"这一较难的局部任务换成"验证积分"这一较易处理的整体任务。
+
+**老师（追问）**：为什么证明要在小圆盘里局部构造原函数？
+
+**学生**：对 $a\in\Omega$ 取圆盘 $D=B(a,r)\subseteq\Omega$，定义 $F(z)=\int_{[a,z]}f\,d\zeta$。对三角形 $\langle a,z,z+h\rangle$ 用假设得 $F(z+h)-F(z)=\int_{[z,z+h]}f$，于是
+$$\frac{F(z+h)-F(z)}{h}=\int_0^1 f(z+th)\,dt\xrightarrow{h\to0}f(z),$$
+即 $F'=f$、$F$ 全纯，故 $f=F'$ 全纯。局部构造绕开了整体路径无关与单连通假设。
+
+**老师（拓展）**：它最常被用来做什么？
+
+**学生**：证明 Weierstrass 一致收敛定理（$\oint f_n=0$ 取极限得 $\oint f=0$）、含参变量积分的全纯性，以及 Schwarz 反射原理中拼接函数的全纯性。
+
 ## 相关条目
 
 - [Weierstrass一致收敛定理](./Weierstrass一致收敛定理.md)：其"极限函数全纯"一步的证明正是本定理的直接应用。

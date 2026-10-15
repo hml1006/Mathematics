@@ -100,3 +100,17 @@ $$
 **例 2**：对于域 $k$ 上的向量空间，$\operatorname{Ext}^n_k(V, W) = 0$ 对 $n \ge 1$，$\operatorname{Tor}_n^k(V, W) = 0$ 对 $n \ge 1$。
 
 **应用**：$\operatorname{Ext}$ 和 $\operatorname{Tor}$ 是代数拓扑中万有系数定理和 Künneth 公式的基础，也是代数几何中凝聚层上同调的基本工具。$\square$
+
+## 课堂问答
+
+**老师**：Hom 左正合、$\otimes$ 右正合，都半途而废，怎么系统地把断掉的尾巴补出来？
+
+**学生**：用分解做导出。取投射分解 $P_\bullet\to A\to0$，定义 $\operatorname{Ext}^n_R(A,B)=H^n(\operatorname{Hom}_R(P_\bullet,B))$、$\operatorname{Tor}_n^R(A,B)=H_n(P_\bullet\otimes_R B)$；对内射分解 $0\to B\to I^\bullet$ 又定义 $\operatorname{Ext}^n_R(A,B)=H^n(\operatorname{Hom}_R(A,I^\bullet))$。关键低阶项 $\operatorname{Ext}^0=\operatorname{Hom}$、$\operatorname{Tor}_0=\otimes$。
+
+**老师（追问）**：凭什么取不同分解得到相同的群？
+
+**学生**：靠比较引理加链同伦。任意两个投射分解之间提升 $\operatorname{id}_A$ 的链映射存在且任意两个链同伦，链同伦在同调上诱导同一映射，故 $H^n(\operatorname{Hom}(P_\bullet,B))\cong H^n(\operatorname{Hom}(P'_\bullet,B))$。投射定义与内射定义的一致性同理，或用双复形谱序列证明。误区：以为"分解任意所以定义不唯一"——恰恰相反，同调抹掉了选取的自由度。
+
+**老师（拓展）**：给两个能背下来的例子。
+
+**学生**：$\operatorname{Ext}^1_{\mathbb{Z}}(\mathbb{Z}/n,\mathbb{Z})\cong\mathbb{Z}/n$，$\operatorname{Tor}_1^{\mathbb{Z}}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\mathbb{Z}/\gcd(m,n)$。几何上 $\operatorname{Ext}^1(A,B)$ 分类 $B$ 被 $A$ 的扩张，而 $\operatorname{Tor}_1$ 度量张量积的非正合性。域 $k$ 上向量空间一切模自由平坦，故高阶 $\operatorname{Ext}$、$\operatorname{Tor}$ 全为零。

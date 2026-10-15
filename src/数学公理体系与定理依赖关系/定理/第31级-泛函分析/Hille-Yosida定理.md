@@ -112,3 +112,17 @@ Hille-Yosida 定理在数学和应用科学中有广泛应用：
 5. **谱理论**：建立了算子的谱性质与半群渐近行为之间的联系。
 
 该定理的推广包括：Lumer-Phillips 定理（收缩半群的等价刻画）、Feller-Miyadera-Phillips 定理、以及非线性半群的 Crandall-Liggett 定理。
+
+## 课堂问答
+
+**老师**：Hille-Yosida 定理刻画的到底是什么？
+
+**学生**：它给出闭稠定算子 $A$ 生成满足 $\|T(t)\|\le Me^{\omega t}$ 的 $C_0$ 半群的充要条件：$\lambda>\omega$ 时 $\lambda\in\rho(A)$，且 $\|R(\lambda,A)^n\|\le M/(\lambda-\omega)^n$。于是 Cauchy 问题 $u'=Au,\ u(0)=u_0$ 有解 $u(t)=T(t)u_0$。
+
+**老师（追问）**：预解式估计为什么是关键？
+
+**学生**：必要性由 Laplace 变换给出 $R(\lambda)=\int_0^\infty e^{-\lambda t}T(t)dt$，再由 $\|T(t)\|\le Me^{\omega t}$ 积出估计。反过来，这些估计保证 Yosida 逼近 $A_\lambda=\lambda A R(\lambda,A)=\lambda^2R(\lambda,A)-\lambda I$ 的指数 $e^{tA_\lambda}$ 一致有界且收敛，其极限即所求半群。
+
+**老师（拓展）**：收缩半群时条件简化成什么？
+
+**学生**：$M=1,\omega=0$ 时条件化为 $\|\lambda R(\lambda,A)\|\le1$。常见误区：$C_0$ 半群的生成元必闭且稠定，而可逆性必须对某条半直线上的所有 $\lambda$ 成立，不能只验一个点。

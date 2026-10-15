@@ -82,6 +82,20 @@ $$
 
 证毕。
 
+## 课堂问答
+
+**老师**：说出 Riccati 比较原理的结论与证法。
+
+**学生**：结论：若 $v'+v^2+k=0$、$u'+u^2+k\le0$ 且 $u(0)\le v(0)$，则 $u\le v$。证法是首次接触点：令 $t_0$ 为 $\{u>v\}$ 的下确界，则 $u(t_0)=v(t_0)$ 且 $u'(t_0)\ge v'(t_0)$；但两式相减在 $u=v$ 处 $u^2-v^2=0$ 给 $u'(t_0)\le v'(t_0)$，矛盾。误区是硬解不等式——该原理只需接触点处的代数事实。
+
+**老师（追问）**：几何里 $u,v$ 具体是什么？
+
+**学生**：$u=\Delta r$，$v$ 是模型空间的 Laplacian。由 Jacobi 场方程取迹得矩阵 Riccati 方程 $\mathcal A'+\mathcal A^2+R_\gamma=0$（$\mathcal A=\mathrm{Hess}\,r$），用 $\mathrm{tr}(\mathcal A^2)$ 不小于迹平方的 $1/(n-1)$ 倍得 $u'+\frac{u^2}{n-1}+\mathrm{Ric}(\dot\gamma,\dot\gamma)\le0$；令 $w=u/(n-1)$ 即 $w'+w^2+k\le0$，与常曲率模型比较得 Laplacian 比较。
+
+**老师（拓展）**：为什么它能统一众多比较定理？
+
+**学生**：它把 Jacobi 场这一二阶线性方程的比较化归为一阶非线性方程的比较，从而调用纯 ODE 工具。Laplacian 比较、Bishop-Gromov、Bonnet-Myers、Cartan-Hadamard 都由"Riccati 不等式加模型解"导出，是曲率控制几何的统一机制。
+
 ## 相关条目
 
 - [Laplacian比较定理](./Laplacian比较定理.md)：由距离函数满足的 Riccati 不等式与模型空间比较直接得到。

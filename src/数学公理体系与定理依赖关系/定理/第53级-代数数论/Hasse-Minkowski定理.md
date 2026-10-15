@@ -147,3 +147,17 @@ Hasse-Minkowski 定理在 adele 语言中有更优雅的表述。设 $V$ 是 $\m
 
 - **数论中的 Hasse 原理：** 对线性代数群 $G$，$H^1(\mathbb{Q}, G) \to \prod_v H^1(\mathbb{Q}_v, G)$ 的核的研究。
 - **代数几何中的 Hasse 原理：** 对代数簇 $X/\mathbb{Q}$，$X(\mathbb{Q}) \neq \emptyset$ 与 $X(\mathbb{Q}_v) \neq \emptyset$（所有 $v$）之间的关系。
+
+## 课堂问答
+
+**老师**：局部-整体原理对二次型断言了什么？为什么对更高次一般不成立？
+
+**学生**：$\mathbb Q$ 上的二次型 $f$ 表示零 $\iff$ 它在 $\mathbb R$ 和所有 $\mathbb Q_p$ 上都表示零。证明靠 Witt 分解、局部不变量（维数、判别式、Hasse 不变量 $\epsilon_p(f)=\prod_{i<j}(a_i,a_j)_p$）与 Hilbert 互反律 $\prod_v(a,b)_v=1$，把问题归到四元数代数的 Hasse 原理。高次一般不成立，Selmer 的 $3x^3+4y^3+5z^3=0$（局部处处有解却整体无解）是最早反例。
+
+**老师（追问）**：维数上是怎么把问题约化下来的？
+
+**学生**：$\dim f\ge5$ 时 $f$ 在 $\mathbb Q$ 上必迷向（由 Chevalley-Warning 与 Hensel 引理，不需任何局部条件），所以只剩 $n=3,4$。此时"局部处处表示零"等价于四元数代数 $\left(\frac{a,b}{\mathbb Q}\right)$ 在所有 $\mathbb Q_v$ 处分裂；由 $\sum_v\operatorname{inv}_v=0$ 与处处 $\cong M_2(\mathbb Q_v)$ 推出 $A\cong M_2(\mathbb Q)$，即 $f$ 在 $\mathbb Q$ 上表示零。
+
+**老师（拓展）**：常见误区与后续发展？
+
+**学生**：误区是把 Hasse 原理当成对任意方程成立。它对二次型是定理，对三次曲面（如椭圆曲线）失效，失败要用 Brauer-Manin 障碍来系统刻画。它的实际价值是给出判定二次 Diophantine 方程可解性的有效算法——只需检查有限多个局部条件；这一思想在 adele 语言下表述为 $V$ 在 $\mathbb Q$ 上表示零 $\iff V_{\mathbb A}$ 在 adele 上表示零，是类域论的雏形。

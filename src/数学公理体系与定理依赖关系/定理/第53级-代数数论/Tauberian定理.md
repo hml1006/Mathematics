@@ -108,6 +108,20 @@ $\square$
 - **算术函数的平均阶**：$r_2(n)$、$\sigma(n)$、$\varphi(n)$ 等非负算术函数的平均阶由相应 Dirichlet 级数的极点留数给出。
 - **分析学与算子理论**：Wiener 的 Tauberian 定理是 Banach 代数与卷积算子可逆性理论的原型，深刻影响调和分析。
 
+## 课堂问答
+
+**老师**：Tauberian 定理把什么样的解析条件翻译成什么样的计数结论？
+
+**学生**：以 Ikehara 定理为准：设 $a_n\ge0$、$f(s)=\sum a_nn^{-s}$ 在 $\mathrm{Re}\,s>1$ 收敛，且 $f(s)-\frac{A}{s-1}$ 可连续延拓到闭半平面 $\mathrm{Re}\,s\ge1$，则 $\sum_{n\le x}a_n\sim Ax$。也就是说，"边界上的简单极点 $\to$ 部分和的线性增长"，这是把解析信息变成计数结论的机器。
+
+**老师（追问）**：为什么非负性能代替"缓慢振荡"这个条件？
+
+**学生**：先把部分和写成 Mellin 变换 $f(s)=s\int_1^\infty A(x)x^{-s-1}dx$，再换元 $x=e^t$、$B(t)=A(e^t)e^{-t}$ 化为 Laplace 变换问题；然后用 Wiener 的卷积测试核证明截断版本 $\nu([0,T])=AT+o(T)$，最后因 $a_n\ge0$ 使 $A$ 单调，用上下极限夹逼得 $\mu([0,T])\sim AT$。正是单调性替代了 Hardy-Littlewood 型定理所需的缓变条件。
+
+**老师（拓展）**：它的经典应用与常见误区？
+
+**学生**：取 $a_n=\Lambda(n)$，利用 $-\frac{\zeta'}{\zeta}(s)-\frac{1}{s-1}$ 可延拓到 $\mathrm{Re}\,s\ge1$、且 $\zeta$ 在 $\mathrm{Re}\,s=1$ 非零，即得素数定理 $\psi(x)\sim x$；对 Dedekind $\zeta$ 用同一招得素理想定理与 Chebotarev 密度。误区是把 Abel 定理方向搞反——由 $a_n\to a$ 推平均极限是容易的，Tauberian 是它的反方向，且必须附加非负或缓变这类条件才成立。
+
 ## 相关条目
 
 - [DedekindZeta函数](./DedekindZeta函数.md)：对其对数导数应用 Tauberian 定理给出素理想定理与 Chebotarev 密度。

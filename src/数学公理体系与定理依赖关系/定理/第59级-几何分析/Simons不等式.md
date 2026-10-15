@@ -133,6 +133,20 @@ $$
 - **奇点分析**：Simons 型恒等式配合单调公式给出 $|A|^2(x)\le C/r^2$ 的点估计与 $\varepsilon$-正则性，是平均曲率流与极小曲面奇点理论的技术基础。
 - **推广**：Chern–Yau 把该计算推广到 Codazzi 张量，Nomizu–Smyth 推广到常平均曲率超曲面，Hamilton 与 Böhm–Wilking 的张量极值原理则把"曲率条件在流下保持"系统化。
 
+## 课堂问答
+
+**老师**：极小曲面的弯曲程度 $|A|^2$ 受什么约束？
+
+**学生**：结论是 Simons 恒等式 $\frac12\Delta|A|^2=|\nabla A|^2-|A|^4+cn|A|^2$，其中 $c$ 是环境空间形式的截面曲率。丢符号得不等式：$\mathbb R^{n+1}$ 中 $\frac12\Delta|A|^2=|\nabla A|^2-|A|^4$，$\mathbb S^{n+1}$ 中为 $|\nabla A|^2+(n-|A|^2)|A|^2$。
+
+**老师（追问）**：证明中 Codazzi 方程与 Gauss 方程各起什么作用？
+
+**学生**：先写 $\frac12\Delta|A|^2=\langle A,\Delta A\rangle+|\nabla A|^2$，问题化为算 $\Delta A$。Codazzi 方程 $\nabla_ih_{jk}=\nabla_jh_{ik}$ 允许交换 $A$ 的协变导数指标，从而消去三阶导数；再用 Ricci 恒等式把交换子换成内蕴曲率 $R$，最后用 Gauss 方程 $R_{ijkl}=c(\delta_{ik}\delta_{jl}-\delta_{il}\delta_{jk})+(h_{ik}h_{jl}-h_{il}h_{jk})$ 把 $R$ 化为 $h$ 的二次项。在 $H\equiv0$ 时收缩得 $(\Delta h)_{ij}=-|A|^2h_{ij}+cnh_{ij}$。
+
+**老师（拓展）**：pinching 定理怎样从恒等式读出？
+
+**学生**：在闭 $\mathbb S^{n+1}$ 中（$c=1$）对恒等式积分，散度项为零，得 $0=\int_M\left(|\nabla A|^2+(n-|A|^2)|A|^2\right)d\mu$。若 $0\le|A|^2\le n$，两项均非负故都恒为零，于是 $|A|^2\equiv0$（全测地大球面）或 $|A|^2\equiv n$（Clifford 环面）。常见误区是漏掉 $n=2$ 的例外：此时 $\equiv n$ 的情形还包含 Veronese 曲面，分类更丰富。
+
 ## 相关条目
 
 - [极小曲面理论](./极小曲面理论.md)：Simons 不等式是其刚性结论的核心工具。

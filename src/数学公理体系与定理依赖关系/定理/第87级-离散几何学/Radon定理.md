@@ -35,3 +35,17 @@ Radon 定理断言 $\mathbb{R}^d$ 中 $d+2$ 个点必有 Radon 划分：分成�
 ## 五、应用与意义
 
 Radon 定理是 Helly 定理证明的枢纽，并广泛用于剖分、碰撞检测与计算几何中的区间查排（其平面形式"凸四边形的两条对角线相交"）。它还是 Tverberg 定理的 $r=2$ 退化情形，构成离散几何"局部一致 → 全局相交"推理链的一环。
+
+## 课堂问答
+
+**老师**：$\mathbb R^d$ 中任意 $d+2$ 个点为什么一定能分成两拨使凸包相交？
+
+**学生**：把点齐次化为 $\mathbb R^{d+1}$ 中的 $(x_i,1)$，$d+2>d+1$ 个必线性相关：存在不全为零的 $\lambda_i$ 使 $\sum\lambda_ix_i=0$ 且 $\sum\lambda_i=0$。按 $\lambda_i$ 的正负分成 $P,Q$，令 $s=\sum_{\lambda_i>0}\lambda_i=-\sum_{\lambda_i<0}\lambda_i>0$，则 $p=\sum_{P}\frac{\lambda_i}{s}x_i=\sum_{Q}\frac{-\lambda_i}{s}x_i\in\operatorname{conv}(P)\cap\operatorname{conv}(Q)$。
+
+**老师（追问）**：为什么 $\mathbb R^{d+1}$ 里的相关性能保证 $\sum\lambda_i=0$？
+
+**学生**：齐次化把每个点提升为 $(x_i,1)$，相关组合 $\sum\lambda_i(x_i,1)=0$ 的最后一维恰是 $\sum\lambda_i=0$，前 $d$ 维是 $\sum\lambda_ix_i=0$。"加一维"的技巧让仿射组合系数和为零自动满足。
+
+**老师（拓展）**：它与 Tverberg、Borsuk–Ulam 有何联系？
+
+**学生**：Radon 是 Tverberg 在 $r=2$ 的退化情形（$N=(d+1)(2-1)+1=d+2$）；$r=2$ 的 Tverberg 又等价于 $\mathbb Z_2$-等变的 Borsuk–Ulam（$S^{d+1}\to S^{d}$ 无等变映射），这正是 Sarkaria 框架的最小情形。

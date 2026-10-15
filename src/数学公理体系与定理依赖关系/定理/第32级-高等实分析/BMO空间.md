@@ -117,3 +117,17 @@ BMO 空间在现代分析中有广泛应用：
 7. **数论**：BMO 在加性数论和解析数论的某些问题中出现。
 
 BMO 空间的重要推广包括：vmo（vanishing mean oscillation）、CBMO（中心 BMO）、以及加权 BMO 空间。
+
+## 课堂问答
+
+**老师**：BMO 的半范数是怎么定义的，凭什么说它衡量的是函数"局部乖不乖"？
+
+**学生**：结论：它是用局部平均振荡来量度的。定义是 $\|f\|_{\text{BMO}}=\sup_Q \frac{1}{|Q|}\int_Q|f-f_Q|\,dx$，其中 $f_Q$ 为 $f$ 在方体 $Q$ 上的平均。上确界对所有方体取，意味着任何一处的振荡都不能失控。
+
+**老师（追问）**：那 $\log|x|$ 在 $\mathbb{R}$ 上无界，凭什么它属于 BMO？
+
+**学生**：因为 BMO 只管局部振荡、不管整体有界。在长度 $\ell$ 的区间上 $\log|x|$ 的平均振荡随区间尺度一致地被常数控制，故 $\|\log|x|\|_{\text{BMO}}<\infty$。反过来 $L^\infty\subset\text{BMO}$ 且 $\|f\|_{\text{BMO}}\le 2\|f\|_\infty$，所以 BMO 严格大于 $L^\infty$。
+
+**老师（拓展）**：既然允许无界，它还能给出多强的"可积性"？
+
+**学生**：John-Nirenberg 不等式给出局部指数可积：$|\{x\in Q:|f-f_Q|>\lambda\}|\le c_1|Q|e^{-c_2\lambda/\|f\|_{\text{BMO}}}$。由此进一步证得 $(H^1)^*\cong\text{BMO}$ 的 Fefferman 对偶，这正是 BMO 与奇异积分算子理论联姻的关键。

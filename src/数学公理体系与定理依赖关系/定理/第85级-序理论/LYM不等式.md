@@ -94,6 +94,20 @@ $$
 - **排序与算法**：LYM 型双计数是分析比较排序算法下界（决策树叶子数）、拓扑排序与偏序线性扩展计数（更一般的"加权 LYM"可用于估计线性扩展个数的上界）的基本工具；在随机图与网络可靠性中，它给出"极小割/极小路径族"的规模估计。
 - **后续发展**：由 LYM 出发的"正则化 LYM"（Pikhurko, 2001）解决了 $[n]$ 的 $k$ 部推广；"LYM 与射影几何的 Erdős–Moser 问题"则把同一套双计数搬到射影平面上，得到向量空间上的 Sperner 型结论（q-LYM 不等式）。
 
+## 课堂问答
+
+**老师**：为什么反链 $\mathcal F\subseteq 2^{[n]}$ 的权重和 $\sum_{A\in\mathcal F}\binom{n}{|A|}^{-1}$ 一定不超过 $1$？
+
+**学生**：双计数极大链。$2^{[n]}$ 的极大链与 $n!$ 个排列一一对应。集合 $A$ 被 $|A|!(n-|A|)!$ 条极大链穿过，而反链里每条链至多穿过一个成员，故 $\sum_{A\in\mathcal F}|A|!(n-|A|)!\le n!$，两边除以 $n!$ 即 $\sum_{A\in\mathcal F}\binom{n}{|A|}^{-1}\le1$。
+
+**老师（追问）**：怎么一步推出 Sperner 定理，等号何时取到？
+
+**学生**：中间层二项式系数最大，故 $\binom{n}{|A|}\le\binom{n}{\lfloor n/2\rfloor}$，于是 $|\mathcal F|/\binom{n}{\lfloor n/2\rfloor}\le\sum_A\binom{n}{|A|}^{-1}\le1$，即 $|\mathcal F|\le\binom{n}{\lfloor n/2\rfloor}$。取 $\mathcal F$ 为全体 $m=\lfloor n/2\rfloor$ 元子集时每项权重相等，和为 $1$，取等。
+
+**老师（拓展）**：换成一族两两相交的集合，还能照搬吗？
+
+**学生**：不能直接套用——相交族要用 Erdős–Ko–Rado 定理，结论是 $n\ge2k$ 时最多 $\binom{n-1}{k-1}$。但同一套双计数可改写成"随机排列下事件互斥"的概率论证，并推广到射影空间上的 q-LYM（Erdős–Moser 问题）。
+
 ## 相关条目
 
 - [Sperner定理](./Sperner定理.md)

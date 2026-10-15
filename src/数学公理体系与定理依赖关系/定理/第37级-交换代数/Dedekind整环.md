@@ -85,3 +85,17 @@ $$
 **例 3**：域上的多项式环 $k[x]$ 不是 Dedekind 整环（维数 $\ge 2$ 或维数 1 时是 PID），但 $k[x]$ 在有限扩张中的整闭包是 Dedekind 整环（对应曲线上的正则点）。
 
 **应用**：Dedekind 整环是代数数论的核心对象，为研究数域的算术性质（如素理想分解、理想类群、单位群等）提供了代数框架。$\square$
+
+## 课堂问答
+
+**老师**：Dedekind 整环到底刻画了什么，为什么要把"元素唯一分解"换成"理想唯一分解"？
+
+**学生**：结论先行——Dedekind 整环就是让"理想唯一分解"永远成立的那类整环。它有三个等价刻画：诺特且整闭、维数为 $1$；每个非零理想可逆；每个非零真理想唯一地分解为素理想之积。代数整数环如 $\mathbb{Z}[\sqrt{-5}]$ 不是 UFD，$6=2\cdot 3=(1+\sqrt{-5})(1-\sqrt{-5})$ 分解不唯一，但它仍是 Dedekind 整环。常见误区是把 Dedekind 当成 PID 或 UFD——它恰恰允许元素分解失败，只保住理想分解。
+
+**老师（追问）**：维数 $1$ 加整闭，凭什么就能保证理想唯一分解？关键环节在哪里？
+
+**学生**：关键在于局部化。对每个非零素理想 $\mathfrak{p}$，局部环 $R_{\mathfrak{p}}$ 是一维诺特整闭局部环，即离散赋值环，配有赋值 $v_{\mathfrak{p}}$。对非零理想 $I$ 定义 $v_{\mathfrak{p}}(I)=\min\{v_{\mathfrak{p}}(a)\mid a\in I\}$，则几乎处处 $v_{\mathfrak{p}}(I)=0$，且 $I=\prod_{\mathfrak{p}}\mathfrak{p}^{v_{\mathfrak{p}}(I)}$。唯一性由赋值唯一确定。整闭条件正是用来排除非 DVR 的退化情形。
+
+**老师（拓展）**：那么"离 PID 有多远"这个度量是怎么定义的？
+
+**学生**：用理想类群。非零分式理想在乘法下成群 $\operatorname{Id}(R)$，主分式理想构成子群 $\operatorname{PId}(R)$，商群 $\operatorname{Cl}(R)=\operatorname{Id}(R)/\operatorname{PId}(R)$。于是 $R$ 是 PID 当且仅当 $\operatorname{Cl}(R)=0$。当 $R$ 是数域的整数环时 $\operatorname{Cl}(R)$ 有限（Minkowski 定理的推论），例如 $\mathbb{Z}[\sqrt{-5}]$ 的类群阶为 $2$。

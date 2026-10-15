@@ -86,3 +86,17 @@ $$
 **推论 3**（群代数的结构）：$k[G] \cong \bigoplus_i \operatorname{End}_{k}(V_i)$ 作为 $k$-代数，其中 $V_i$ 取遍所有不可约 $k[G]$-模的同构类。
 
 **应用**：Maschke定理是群表示论的基础，保证了特征零域上表示的完全可约性，为特征标理论、诱导表示等后续理论的发展奠定了基础。$\square$
+
+## 课堂问答
+
+**老师**：Maschke 定理的条件与结论是什么？
+
+**学生**：设 $G$ 有限、$k$ 为域，则下列等价：群代数 $k[G]$ 半单；每个有限维 $k[G]$-模完全可约；$\operatorname{char}(k)\nmid|G|$。当 $\operatorname{char}(k)=0$（如 $\mathbb{C}$）时条件自动成立。常见误区：当 $\operatorname{char}(k)\mid|G|$ 时结论失效，模表示论里"可约"并不蕴含"完全可约"。
+
+**老师（追问）**：平均算子为什么能解决补空间问题？
+
+**学生**：设 $W\subseteq V$ 是 $G$-不变子模，取任意线性投影 $p:V\to W$，定义 $\tilde p(v)=\frac{1}{|G|}\sum_{g\in G}g\,p(g^{-1}v)$。$\frac{1}{|G|}$ 有意义正因 $\operatorname{char}(k)\nmid|G|$。可直接验证 $\tilde p$ 是 $G$-等变的投影，于是 $U=\ker\tilde p$ 是 $G$-不变子模且 $V=W\oplus U$；再对 $V$ 归纳即得完全可约。
+
+**老师（拓展）**：条件不满足时反例在哪里？
+
+**学生**：设 $p=\operatorname{char}(k)\mid|G|$，元素 $s=\sum_{g\in G}g$ 在 $k[G]$ 中满足 $s^2=|G|s=0$。$\langle s\rangle$ 是子模，却在 $k[G]$ 中没有 $G$-不变补模，故 $k[G]$ 不半单。这正是常表示论（特征零）与模表示论的分水岭。

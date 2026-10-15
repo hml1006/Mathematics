@@ -65,3 +65,17 @@ $$
 ## 五、应用与意义
 
 该公式是镜像对称的"计算发动机"。由于 B-模型只需解析地解周期积分（Picard-Fuchs 方程），而 A-模型要数有理曲线（极难），镜像映射让研究者从 B-模型一侧高效地读出 A-模型的计数几何信息。它是 GW 不变量计算、超弦紧化与模空间上的对偶性研究的基本工具。
+
+## 课堂问答
+
+**老师**：Yukawa 耦合是怎么把 A-模型和 B-模型接起来的？
+
+**学生**：结论：两侧的三点耦合通过镜像映射 $s=s(t)$ 的链式法则对应：$\kappa_{ijk}^A(t)=\kappa_{pqr}^B(s(t))\frac{\partial s^p}{\partial t^i}\frac{\partial s^q}{\partial t^j}\frac{\partial s^r}{\partial t^k}$，其中 $t$ 是 Kähler 模坐标、$s$ 是复结构模坐标。常见误区是以为两边可独立计算再"对答案"——必须先用镜像映射把两套坐标对齐。
+
+**老师（追问）**：两侧的 $\kappa$ 各自怎么定义？
+
+**学生**：B-模型 $\kappa_{ijk}^B=\int_M\Omega\wedge\partial_i\partial_j\partial_k\Omega$，归一化后化为周期向量形式 $\kappa_{ijk}^B=\mathbf\Pi^\top\partial_i\partial_j\partial_k\mathbf\Pi$；A-模型是 GW 级数 $\kappa_{ijk}^A=\sum_\beta\mathrm{GW}_{0,\beta}(\omega_i,\omega_j,\omega_k)q^\beta$，$q^\beta=\exp(2\pi i\int_\beta B+i\omega)$。
+
+**老师（拓展）**：镜像映射 $s(t)$ 从哪里来？等式又为何成立？
+
+**学生**：由周期之比定义 $s^i=\Pi_i(t)/\Pi_0(t)$。两组函数满足同一 Picard-Fuchs 方程 $\mathcal L_i\mathbf\Pi=0$，由 Schwarz 定理只差一个单值性变换，故镜像映射良定义。代入链式法则并用大复结构极限处的边界条件匹配两侧 Yukawa，即得 $\kappa^A=\kappa^B\frac{\partial s}{\partial t}\frac{\partial s}{\partial t}\frac{\partial s}{\partial t}$，于是"难算的曲线数"化为"好算的周期微商"。

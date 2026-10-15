@@ -111,3 +111,19 @@ $$H^{1}(X,\mathcal Z^{p,q-1})\cong H^{p,q}_{\bar\partial}(X).$$
 - **取值于向量丛的 Dolbeault 定理**：$H^{q}(X,\Omega^{p}\otimes E)\cong H^{p,q}_{\bar\partial}(X,E)$，是 Hodge 理论与指标定理的标准形式。
 - **无穷维与 Banach 流形**：对 Fréchet 层与 Banach 解析空间有相应的 Dolbeault 型定理（需要 Nash–Moser 型的估计）。
 - **非紧与 $L^2$ 版本**：以 $L^2$ 截面替换光滑截面即得 $L^2$-Dolbeault 上同调，是 $L^2$ 指标定理与非交换几何（Atiyah 覆盖指数定理）的起点。
+
+## 课堂问答
+
+**老师**：Dolbeault 定理把解析对象与光滑对象的整体障碍联系起来，请写出它的同构式。
+
+**学生**：对复流形 $X$ 与全纯 $p$-形式层 $\Omega^p$，有
+$$H^{p,q}_{\bar\partial}(X)\cong H^q(X,\Omega^p),$$
+左边是 $\bar\partial$-闭 $(p,q)$-形式模去 $\bar\partial$-恰当形式。它与光滑情形的 de Rham 定理 $H^*_{dR}(M)\cong H^*(M;\mathbb R)$ 完全对应，是复分析版"用可解性算整体障碍"。
+
+**老师（追问）**：证明由哪几个部件构成？细层为什么会无环？
+
+**学生**：三个部件。一是 Dolbeault 复形 $0\to\Omega^p\to\mathcal A^{p,0}\xrightarrow{\bar\partial}\mathcal A^{p,1}\to\cdots$ 在茎上正合，即 $\bar\partial$-Poincaré 引理；二是每个 $\mathcal A^{p,q}$ 是细层，取从属于局部有限开覆盖的单位分解 $\sum_\beta\rho_\beta=1$ 可把任意上循环写成上边缘，故 $H^k(X,\mathcal A^{p,q})=0\,(k\ge1)$；三是用短正合列 $0\to\mathcal Z^{p,q}\to\mathcal A^{p,q}\xrightarrow{\bar\partial}\mathcal Z^{p,q+1}\to0$ 的长正合列做维数移动，逐次上移得 $H^q(X,\Omega^p)\cong H^1(X,\mathcal Z^{p,q-1})\cong H^{p,q}_{\bar\partial}(X)$。
+
+**老师（拓展）**：它对紧 Kähler 流形的 Hodge 理论给出什么？
+
+**学生**：给出 Hodge 分次 $H^k(X,\mathbb C)=\bigoplus_{p+q=k}H^{p,q}_{\bar\partial}(X)$ 与 Hodge 数的解析解释 $h^{p,q}=\dim H^q(X,\Omega^p)$。Kodaira 消没、Riemann–Roch、Kodaira–Spencer 形变 $H^1(X,T_X)$ 都以它为技术前提；取值于向量丛的版本 $H^q(X,\Omega^p\otimes E)\cong H^{p,q}_{\bar\partial}(X,E)$ 是指标定理的标准形式。

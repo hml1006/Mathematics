@@ -103,6 +103,24 @@ $$
 
 证毕。
 
+## 课堂问答
+
+**老师**：陈述 Weitzenböck 公式，并说明 $p=1$ 时曲率项是什么。
+
+**学生**：结论：Hodge-de Rham 拉普拉斯与联络拉普拉斯只差一个零阶曲率端同态
+$$\Delta_H\alpha=\nabla^*\nabla\alpha+\mathcal R_p(\alpha),$$
+其中 $\mathcal R_p$ 由 Riemann 张量代数地定义；$p=1$ 时 $\mathcal R_1=\mathrm{Ric}$，即 $\Delta_H\alpha=\nabla^*\nabla\alpha+\mathrm{Ric}(\alpha,\cdot)$。理由是两算子之差形式上是一阶，但曲率是二阶协变导数的交换子，使差降为零阶。误区是以为 $\mathcal R_p$ 依赖标架——它其实是良定的张量端同态。
+
+**老师（追问）**：为什么它能推出 Bochner 消没定理？
+
+**学生**：取 $p=1$、$\mathrm{Ric}>0$、$\Delta_H\alpha=0$，在紧流形上积分
+$$0=\int_M\langle\Delta_H\alpha,\alpha\rangle=\int_M|\nabla\alpha|^2+\int_M\mathrm{Ric}(\alpha,\alpha)\ge0.$$
+两项非负、第二项正定，故 $\nabla\alpha=0$ 且 $\alpha=0$，从而 $b_1(M)=0$。核心是曲率项正定把调和对象逼没。
+
+**老师（拓展）**：旋量情形给出什么？
+
+**学生**：Lichnerowicz 公式 $D^2=\nabla^*\nabla+\frac14\mathrm{Scal}$。它在 $\mathrm{Scal}>0$ 时给出 Dirac 算子无核、指标消失，是 Lichnerowicz 特征值估计与 Atiyah-Singer 指标定理"曲率强制指标为零"的技术核心，也通向 Seiberg-Witten 理论。
+
 ## 相关条目
 
 - [Bochner公式](./Bochner公式.md)：函数与 1-形式情形的 Weitzenböck 恒等式，本公式是它的 $p$-形式推广。

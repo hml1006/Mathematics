@@ -131,3 +131,17 @@ $$f'(x_\varepsilon)[v] \geq -\frac{\varepsilon}{\lambda}\|v\|,$$
 - **Drop 定理**与 **Petal 定理**：几何形式的变分原理。
 - **Deville-Godefroy-Zizler 变分原理**：在 Banach 空间中给出更精细的可微扰动形式。
 - **Borwein-Preiss 变分原理**：使用光滑扰动函数的版本，便于在光滑空间中应用。
+
+## 课堂问答
+
+**老师**：Ekeland 原理说"总有近似临界点"。它不要紧性、不要线性结构，靠什么成立？
+
+**学生**：靠完备性、下半连续与距离惩罚技巧。设 $f$ 下方有界下半连续，从近似极小点 $x_0$（$f(x_0)\le\inf f+\varepsilon$）出发，在 $X$ 上定义偏序 $y\preccurlyeq x$ 当且仅当 $f(y)+\frac\varepsilon\lambda d(x,y)\le f(x)$，构造单调下降的 $S_n=\{y:y\preccurlyeq x_n\}$ 并选 $x_{n+1}$ 使 $f(x_{n+1})\le\inf_{S_n}f+\frac\varepsilon{\lambda2^n}$。由 $f$ 单调有下界与不等式链得 $\{x_n\}$ 是 Cauchy 列，完备性给极限 $x_\varepsilon$，下半连续给 $f(x_\varepsilon)\le\inf f$，故 $f(x_\varepsilon)\le f(x_0)$ 且满足变分不等式 $f(x)>f(x_\varepsilon)-\frac\varepsilon\lambda d(x,x_\varepsilon)$。
+
+**老师（追问）**：在 Banach 空间碰到可微泛函，这条变分不等式怎么变成"梯度小"？
+
+**学生**：取 $x=x_\varepsilon+tv$、$\|v\|=1$、$t\to0^+$。变分不等式给 $f'(x_\varepsilon)[v]\ge-\frac\varepsilon\lambda$ 对所有单位向量 $v$ 成立（对 $-v$ 也成立），故 $\|f'(x_\varepsilon)\|\le\frac\varepsilon\lambda$。取 $\lambda=\sqrt\varepsilon$ 便得 $\|f'(x_\varepsilon)\|\le\sqrt\varepsilon$，即近似临界点序列。
+
+**老师（拓展）**：Ekeland 原理为何能作为那么多定理的共同底座？
+
+**学生**：因为它把最难的"紧性"假设替换成最弱的"完备性"，凡是用 (PS) 或弱紧性推出的存在性，多半有 Ekeland 版本。它可直接推出 Caristi 不动点定理、Bishop-Phelps 定理、Banach 不动点定理，也是山路引理证明中在路径空间上造近似临界序列的工具，并被用于 Hamilton-Jacobi 粘性解、无紧性最优控制与非凸不可微优化的次梯度分析。

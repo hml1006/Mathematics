@@ -29,3 +29,17 @@ $$
 ## 五、应用与意义
 
 此对应是 $p$-adic Langlands（尤其 $\ell\ne p$ 情形）几何化研究方向：统一局部 Langlands、向量丛与 $\widehat T$、模空间 $\operatorname{Bun}_G$ 的结构，其整体性（层论）使之能承接深度、棱与缠绕分析，并延伸到 $\mathbf L$-函子性与算术几何的现代问题。
+
+## 课堂问答
+
+**老师**：Fargues–Scholze 对应的主断言是什么？
+
+**学生**：结论：存在 $(\infty)$-范畴等价 $\mathcal C_{G(K)}\cong\operatorname{QCoh}(\operatorname{Bun}_G)$，把 $G(K)$ 的光滑表示范畴对应到 Fargues–Fontaine 曲线上 $G$-向量丛的拟凝聚层范畴，并使 Hecke 算子的作用与 $\mathbf L$-参数匹配（$\ell\ne p$）。
+
+**老师（追问）**：Hecke 对应在层那一侧是怎样实现的？
+
+**学生**：借 $\varphi$-模块把 $G(K)$ 的不可约表示编码成曲线上 ${}^LG$-向量丛；Hecke 算子由关键层（如 $\mathbb B$ 的融合积）的作用给出，其谱数据正是 $\mathbf L$-参数（$\varphi$-半线性 / Garding 谱）。构造从光滑表示到"关键层"的下降（Bernstein–Zelevinsky / 几何化），再把整体形式重解释为拟凝聚层，从而验证 Hecke 与局部 Langlands 参数对齐。
+
+**老师（拓展）**：这个对应为什么重要？
+
+**学生**：它把局部 Langlands（$\ell\ne p$）几何化，统一了表示论、$\operatorname{Bun}_G$ 与对偶群理论，是 Fargues 猜想的现代实现。其层论整体性使它能够承接棱（prism）、缠绕与 $\mathbf L$-函子性问题，并通向算术几何与"几何局部 Langlands"的前沿。 一句话：它把 p-adic 局部 Langlands 从表示论搬到了 Fargues–Fontaine 曲线上的层论舞台。

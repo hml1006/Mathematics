@@ -75,3 +75,17 @@ MA最著名的推论之一是：在MA + $\lnot$CH下，$\aleph_1$ 个Lebesgue零
 **证明**（以Lebesgue测度的 $\aleph_1$-可加性为例）：
 
 设 $\{A_\alpha\}_{\alpha < \aleph_1}$ 是零测集。对每个 $\alpha$，存在开覆盖 $U_{\alpha,n}$ 使得 $\mu(U_{\alpha,n}) < 2^{-n}$。考虑偏序集 $\mathbb{P}$ 为所有有限部分函数 $p: \aleph_1 \times \omega \to \omega$，使得 $\bigcup_{\beta \in \text{dom}(p)} U_{\beta, p(\beta, \cdot)}$ 的测度可控。$\mathbb{P}$ 是c.c.c.的。由MA，存在滤子 $G$ 与 $\aleph_1$ 个稠密集相交，从而构造出覆盖 $\bigcup_\alpha A_\alpha$ 的零测集。$\square$
+
+## 课堂问答
+
+**老师**：Martin 公理到底说了什么？
+
+**学生**：结论——对任意满足可数链条件（c.c.c.）的偏序集 $\mathbb{P}$ 和任意少于 $2^{\aleph_0}$ 个稠密集 $\{D_\alpha\}$，存在滤子 $G$ 与所有 $D_\alpha$ 相交。理由：它把力迫中泛型的存在性从"可数多稠密集"（Rasiowa–Sikorski 引理）极大化到"任意 $<2^{\aleph_0}$ 个"。
+
+**老师（追问）**：MA 与 CH 是什么关系？
+
+**学生**：$\mathrm{CH}$ 蕴含 $\mathrm{MA}$（此时稠密集之数不超过 $\aleph_1$）；而 $\mathrm{MA}+\lnot\mathrm{CH}$（如 $2^{\aleph_0}=\aleph_2$）严格更强，可由长度 $\aleph_2$ 的有限支撑迭代力迫构造其一致性，迭代保持 c.c.c. 故基数不变。
+
+**老师（拓展）**：MA 的著名推论有哪些？
+
+**学生**：$\mathrm{MA}+\lnot\mathrm{CH}$ 下，$\aleph_1$ 个零测集之并仍是零测集（Lebesgue 测度的 $\aleph_1$-可加性）、Suslin 假设成立（无 Suslin 线）、每个 $\Sigma^1_2$ 集具有 Baire 性质。

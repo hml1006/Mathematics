@@ -125,3 +125,17 @@ $\forall v\,\varphi=\neg\exists v\neg\varphi$，由步骤 4、5 立得。也可�
 **理论意义**：判别法给出初等子结构的“局部”刻画——只需验证存在性见证，从而把检验无穷多条公式的困难化为对每个公式验证一个可用具体元素实现的条件。它同时说明：初等性失效的唯一来源是“论域太贫乏以至缺少见证”。
 
 **推广**：对抽象初等类（abstract elementary classes）有对应的 Tarski–Vaught 定理（此时“满足存在性公式的见证”升级为“存在闭包/饱和性条件”）；对无穷语言（$L_{\kappa\lambda}$）有相应判别法；在集合论中，$H_\kappa\prec V$ 的论证（对适当的大基数 $\kappa$）正是判别法的标准应用。
+
+## 课堂问答
+
+**老师**：判断 $\mathcal N\preceq\mathcal M$ 要对无穷多条公式逐条查，Tarski-Vaught 怎么把无穷检验压成一条？
+
+**学生**：结论：当且仅当对每个公式 $\varphi(v,\bar w)$ 与每个 $\bar a\in N^n$，只要 $\mathcal M\models\exists v\,\varphi(v,\bar a)$，就存在 $b\in N$ 使 $\mathcal M\models\varphi(b,\bar a)$——只查存在量词的"见证是否落在 $\mathcal N$ 内"。
+
+**老师（追问）**：为什么只查存在量词就够？全称量词那类错误怎么被顺带覆盖？
+
+**学生**：充分性对公式复杂度归纳。原子公式靠子结构使同一个项在两边取值相同，即 $t^{\mathcal N}(\bar a)=t^{\mathcal M}(\bar a)\in N$；$\neg,\wedge$ 由归纳假设处理；关键是 $\mathcal M\Rightarrow\mathcal N$ 方向：$\mathcal M$ 中的见证由判别条件被"搬进" $\mathcal N$，再由归纳假设回读真值。全称量词写成 $\neg\exists\neg$，其反例恰是一次存在性失败。常见误区是只验证"$\mathcal N$ 中的元素 $\mathcal M$ 中也有"这一显然方向，漏掉真正非平凡的 $\mathcal M\Rightarrow\mathcal N$。
+
+**老师（拓展）**：用这个判别法，$\mathbb Q\preccurlyeq\mathbb R$ 该怎样论证？
+
+**学生**：$\mathbb Q$ 是稠密线性序子结构。DLO 具有量词消去，故任意含参数 $\varphi$ 在 $\mathbb R$ 中等价于有限个 $v<a_i$ 或 $a_i<v$ 的布尔组合，其解集是有限个有理端点开区间的布尔组合；若非空，最精细的非退化开分量以某 $a_i\in\mathbb Q$ 或 $\pm\infty$ 为端点，而 $\mathbb Q$ 稠密且无端点，该开区间必含有理数 $b$，即为见证。故判别条件成立。

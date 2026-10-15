@@ -121,6 +121,22 @@ $$
 
 **推论**：由 $\Delta\rho\le(n-1)m_k(\rho)$ 与 $\Delta\rho=\partial_r\log(\text{体积元})$ 的变分公式，可得 Bishop–Gromov 体积比较；当 $k>0$ 时结合 $\Delta\rho$ 在李卡蒂解爆破点强制半径有界，即得 Bonnet–Myers 定理。
 
+## 课堂问答
+
+**老师**：陈述距离函数的 Laplacian 比较，并指出它的来源方程。
+
+**学生**：结论：$\mathrm{Ric}\ge(n-1)k$ 的完备流形上，$\rho(x)=d(p,x)$ 在 cut locus 外满足
+$$\Delta\rho\le(n-1)\frac{\mathrm{sn}_k'(\rho)}{\mathrm{sn}_k(\rho)},$$
+模型量取 $\sqrt k\cot(\sqrt k\rho)$、$1/\rho$、$\sqrt{|k|}\coth(\sqrt{|k|}\rho)$。来源是 Bochner 公式在 $|\nabla\rho|=1$ 下的退化式 $\partial_r(\Delta\rho)+|\mathrm{Hess}\,\rho|^2+\mathrm{Ric}(\partial_r,\partial_r)=0$，再用 $|\mathrm{Hess}\,\rho|^2\ge\frac{(\Delta\rho)^2}{n-1}$ 得 Riccati 不等式。误区是漏掉 Hessian 的迹零部分——Cauchy-Schwarz 那步必须做。
+
+**老师（追问）**：Riccati 不等式为何能与模型解比较？
+
+**学生**：令 $m=\Delta\rho/(n-1)$ 得 $m'+m^2+k\le0$，而模型 $m_k=\mathrm{sn}_k'/\mathrm{sn}_k$ 满足等号 $m_k'+m_k^2+k=0$；由首次接触点论证，满足"小于等于"的解不超过模型解，即 $m\le m_k$。$r\to0$ 时两边都趋于 $+\infty$ 提供对接，故不等式在首次奇异前成立。
+
+**老师（拓展）**：怎样推出体积比较与 Bonnet-Myers？
+
+**学生**：因 $\Delta\rho$ 等于体积元的对数导数，对 $m\le m_k$ 积分得 Bishop-Gromov 体积比单调；$k>0$ 时模型解在 $\pi/\sqrt k$ 爆破，迫使半径有界，即 Bonnet-Myers 直径估计。同一不等式也是 Cheeger-Gromoll 分裂中 $\Delta b^\pm\le0$ 的来源。
+
 ## 相关条目
 
 - [Bonnet-Myers定理](./Bonnet-Myers定理.md)：由 Laplacian 比较直接推出正 Ricci 曲率下流形紧致、直径有界。

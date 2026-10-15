@@ -96,6 +96,20 @@ $$
 - **可积模型**：随机排列的最长递增子序列、离散随机生长模型、无交缠随机游走等问题的分布都可写成 Fredholm 行列式，进而作渐近分析。
 - **统计与机器学习**：行列式点过程被广泛用作"多样性采样"的概率模型，核的选择直接决定点之间的排斥强度。
 
+## 课堂问答
+
+**老师**：说某区域里一个点都没有的概率等于 $\det(I-K)$，这句话为什么成立？
+
+**学生**：因为行列式点过程的第 $k$ 阶相关函数是 $\rho_k(x_1,\dots,x_k)=\det[K(x_i,x_j)]$。取生成函数 $\mathbb E[\prod_i(1-g(x_i))]$ 按点数展开，第 $k$ 项含积分 $\int\det[K(x_i,x_j)]\prod_i g(x_i)\,dx$。用 Gram 行列式与 Cauchy–Binet 展开，该积分恰为 $k!\operatorname{tr}(\wedge^k g K)$，求和即为 Fredholm 展开 $\det(I-gK)=\sum_k(-1)^k\operatorname{tr}(\wedge^k g K)$。取 $g=\mathbf 1_D$ 即得空区概率。
+
+**老师（追问）**：为什么积分 $\int\det[K(x_i,x_j)]\,dx$ 会冒出一个 $k!$ 和外幂的迹？
+
+**学生**：先把核写成有限秩 $K=\sum_m\varphi_m\otimes\overline{\varphi_m}$，则 $[K(x_i,x_j)]$ 是 Gram 矩阵 $UU^*$。按列子式展开（Cauchy–Binet）得 $\det(UU^*)=\sum_{|S|=k}|\det[\varphi_s(x_i)]|^2$。逐变量积分时用正交性 $\int\varphi_s\overline{\varphi_{s'}}=\delta_{ss'}$，两个行列式展开后只剩 $S=S'$ 存活，共 $k!\binom{M}{k}=k!\operatorname{tr}(\wedge^kK)$ 项。一般核用有限秩逼近加控制收敛过渡。
+
+**老师（拓展）**：这个公式直接把什么难题变简单了？
+
+**学生**：把求极值分布的概率变成算算子行列式。例如 GUE 有 $\mathbb P(\lambda_{\max}\le t)=\det(I-K_{\mathrm{Ai}})$ 在 $L^2(t,\infty)$ 上，这正是 Tracy–Widom 分布的出发点；把核作 Plancherel–Rotach 渐近得到 Airy 核后，对其行列式求对数导数即导出 Painlevé II。常见误区是以为必须知道全部相关函数，其实核 $K$ 已承载全部信息。
+
 ## 相关条目
 
 - [Tracy-Widom分布](./Tracy-Widom分布.md)：把 Airy 核代入空区概率公式所得到的谱边缘极限分布。

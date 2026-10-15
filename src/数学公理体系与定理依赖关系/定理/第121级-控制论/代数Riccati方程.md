@@ -109,3 +109,25 @@ $$
 3. **稳定性与鲁棒性**：稳定化解给出闭环的 Lyapunov 函数 $\boldsymbol x^{\top}\boldsymbol P\boldsymbol x$，并给出增益裕度等鲁棒性指标。
 
 **理论意义**：本条目把"最优控制"问题化为一个代数方程的可解性问题。解的存在性来自 LQR 最优值函数，解的唯一性来自 Hurwitz 矩阵的 Sylvester 方程性质，解的稳定性来自 Lyapunov 理论——三者合起来说明二次最优控制框架是良定的。（2）式还表明稳定化解可写成闭环轨迹上的二次型积分，这是 Riccati 方程"动态规划 $+$ Lyapunov"双重身份的体现。
+
+## 课堂问答
+
+**老师**：ARE 一般是非线性矩阵方程，解可能不唯一，凭什么说 LQR 用的那个解存在且唯一？
+
+**学生**：结论：在 $(\boldsymbol A,\boldsymbol B)$ 可稳定、$(\boldsymbol A,\boldsymbol Q^{1/2})$ 可检测时，ARE 存在唯一对称半正定解，且对应的 $\boldsymbol A_{\boldsymbol K}=\boldsymbol A-\boldsymbol B\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P$ 是 Hurwitz。存在性由 LQR 最优值函数给出积分表示
+$$
+\boldsymbol P=\int_0^\infty e^{\boldsymbol A_{\boldsymbol K}^{\top}t}(\boldsymbol Q+\boldsymbol K^{\top}\boldsymbol R\boldsymbol K)e^{\boldsymbol A_{\boldsymbol K}t}\,dt ,
+$$
+因 $\boldsymbol A_{\boldsymbol K}$ 稳定而绝对收敛，被积函数对称半正定，故 $\boldsymbol P=\boldsymbol P^{\top}\ge\boldsymbol 0$。
+
+**老师（追问）**：唯一性那一步，你究竟用了什么代数事实？
+
+**学生**：两个稳定化解之差 $\boldsymbol W=\boldsymbol P_1-\boldsymbol P_2$ 满足齐次 Sylvester 方程
+$$
+(\boldsymbol A-\boldsymbol S\boldsymbol P_1)^{\top}\boldsymbol W+\boldsymbol W(\boldsymbol A-\boldsymbol S\boldsymbol P_2)=\boldsymbol 0,\qquad \boldsymbol S=\boldsymbol B\boldsymbol R^{-1}\boldsymbol B^{\top} .
+$$
+算子 $\mathcal T(\boldsymbol X)=\boldsymbol A_1^{\top}\boldsymbol X+\boldsymbol X\boldsymbol A_2$ 的特征值是 $\lambda_i+\mu_j$；因 $\boldsymbol A_1,\boldsymbol A_2$ 都 Hurwitz，$\mathrm{Re}(\lambda_i+\mu_j)<0$，特别地不为零，故 $\mathcal T$ 可逆，只能 $\boldsymbol W=\boldsymbol 0$。常见误区是以为"半正定解唯一"不靠稳定性——离开两个闭环都稳定这一前提，非稳定化解可以有很多。
+
+**老师（拓展）**：积分表示除了证存在性，还告诉我们在什么意义上 $\boldsymbol P$ 是"最优"的？
+
+**学生**：它表明 $\boldsymbol P$ 恰是把闭环轨迹代入二次指标后的值函数系数，即最小代价为 $\boldsymbol x_0^{\top}\boldsymbol P\boldsymbol x_0$；只要 $\boldsymbol Q>\boldsymbol 0$ 或 $(\boldsymbol A,\boldsymbol Q^{1/2})$ 可检测，该积分核非奇异，$\boldsymbol P>\boldsymbol 0$，它同时充当闭环的 Lyapunov 函数，把"最优"与"稳定"绑在同一个 $\boldsymbol P$ 上。

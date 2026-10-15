@@ -161,3 +161,17 @@ Tate (1950) 的博士论文用 adele 和 idele 的语言重新证明了 Dedekind
 - 为全局类域论提供了最自然的解析框架。
 
 Tate 的方法已成为现代数论的标准工具，被广泛应用于自守形式、Langlands 纲领等领域。
+
+## 课堂问答
+
+**老师**：$\zeta_K$ 与 Riemann $\zeta$ 是什么关系？它在 $s=1$ 处表现如何？
+
+**学生**：$\zeta_K(s)=\sum_{\mathfrak a}N(\mathfrak a)^{-s}=\prod_{\mathfrak p}(1-N(\mathfrak p)^{-s})^{-1}$，当 $K=\mathbb Q$ 时退回 $\zeta(s)$。它在全复平面解析延拓，仅在 $s=1$ 有单极点，留数由解析类数公式给出 $\operatorname{Res}_{s=1}\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}h_KR_K}{w_K\sqrt{|d_K|}}$。
+
+**老师（追问）**：函数方程 $\Lambda_K(s)=\Lambda_K(1-s)$ 的来源是什么？
+
+**学生**：把和按理想类分解 $\zeta_K(s)=\sum_{C}\zeta_K(s,C)$，经 Minkowski 嵌入化为格上的 theta 函数 $\theta_C(t)=\sum_{\alpha\in\mathfrak b^{-1}}e^{-t\sum_i|\sigma_i(\alpha)|^2}$，用 Poisson 求和公式得变换公式 $\theta_C(1/t)=c\,t^{n/2}\theta_{C'}(t)$，再作 Mellin 变换即得完备化 $\Lambda_K(s)=|d_K|^{s/2}\Gamma_{\mathbb R}(s)^{r_1}\Gamma_{\mathbb C}(s)^{r_2}\zeta_K(s)$ 满足的对称函数方程。
+
+**老师（拓展）**：特殊值、推广与常见误区？
+
+**学生**：$\zeta_K(-n)$ 含算术信息（Siegel-Klingen 公式、Lichtenbaum 猜想与 étale 上同调），其非平凡零点有 Hilbert-Pólya 式谱解释。Artin L 函数是其推广，平凡表示时即为 $\zeta_K$；Artin 猜想（非平凡不可约表示处全纯）是 Langlands 纲领的核心猜想之一。误区是把它写成按"整数"求和的 Euler 乘积——$\mathcal O_K$ 没有元素唯一分解，必须按理想求和，这正是它比 $\zeta$ 更微妙的地方。

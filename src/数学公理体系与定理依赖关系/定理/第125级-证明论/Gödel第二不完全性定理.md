@@ -43,3 +43,17 @@ $$
 ## 五、应用与意义
 
 Gödel 第二不完全性定理直接终结了 Hilbert 纲领中"系统内证明系统一致"的构想，是数学基础与哲学的分水岭。它使 Gentzen 用超穷序数（$\varepsilon_0$）在系统外证明 PA 一致的方案成为必要，也在逻辑、人工智能与哲学上引发关于数学知识的本质、证明资源与"真与可证分离"的持久讨论。
+
+## 课堂问答
+
+**老师**：第二定理说"系统证不了自身一致性"，它比第一定理难在哪？
+
+**学生**：难在要在系统内形式化第一定理的证明，这需要可证性谓词满足 Hilbert–Bernays 可证性条件：若 $\mathcal{F}\vdash A$ 则 $\mathcal{F}\vdash\text{Prov}_\mathcal{F}(\ulcorner A\urcorner)$、对 $\to$ 的封闭性、以及可证性的可证性。有了它们才能推出 $\mathcal{F}\vdash\text{Con}_\mathcal{F}\to G$。
+
+**老师（追问）**：关键那步推导怎么走？
+
+**学生**：由 $G\leftrightarrow\lnot\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)$ 与可证性条件，得 $\mathcal{F}\vdash\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)\to\text{Prov}_\mathcal{F}(\ulcorner\bot\urcorner)$，即 $\mathcal{F}\vdash\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)\to\lnot\text{Con}_\mathcal{F}$，取逆否得 $\mathcal{F}\vdash\text{Con}_\mathcal{F}\to G$。若再有 $\mathcal{F}\vdash\text{Con}_\mathcal{F}$，就有 $\mathcal{F}\vdash G$，与第一定理（一致故 $G$ 不可证）矛盾。
+
+**老师（拓展）**：常见误区是什么？
+
+**学生**：误以为它否定了一切一致性证明。实际上它只排除"系统内自证"；Gentzen 在 $\varepsilon_0$ 归纳下证明 PA 一致完全合法，因为所用元理论更强。这正是"真与可证分离"的哲学冲击所在。

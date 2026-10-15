@@ -55,3 +55,17 @@ $$
 ## 五、应用与意义
 
 Gärtner-Ellis 定理把 Cramér 的独立同分布条件放宽为"对数矩生成函数极限存在且本质光滑"，可处理带依赖、时间非齐次序列及 $\mathbb R^d$ 情形。它是统计物理（相变）、随机矩阵与信息论中大偏差分析的核心工具，量化了独立性不足时稀有事件概率仍呈指数衰减的条件。
+
+## 课堂问答
+
+**老师**：样本不再独立同分布，大偏差原理还成立吗？
+
+**学生**：只要$\Lambda_n(\theta)=\frac1n\log\mathbb E[e^{n\theta Z_n}]$的极限$\Lambda(\theta)$存在且在$0$附近本质光滑，就仍满足速率$n$的 LDP，速率函数同样是 Fenchel–Legendre 变换$I(x)=\sup_\theta\{\theta x-\Lambda(\theta)\}$。
+
+**老师（追问）**："本质光滑"这个条件起什么作用？
+
+**学生**：上界仍靠指数不等式对$\Lambda_n\to\Lambda$取极限；下界用倾斜测度$\frac{d\mathbb Q_n}{d\mathbb P}=\exp(n\theta_aZ_n-n\Lambda_n(\theta_a))$使均值趋近$a$。本质光滑（$\Lambda$在$\mathcal D_\Lambda$内部可微且边界处$|\Lambda'|\to\infty$）保证$\Lambda'$取遍整个实轴，从而对每个$x$都能找到$\theta_x$满足$\Lambda'(\theta_x)=x$，下界对一切$x$成立。
+
+**老师（拓展）**：它相对 Cramér 定理推广了什么？
+
+**学生**：把 i.i.d. 假设放宽为"对数矩生成函数极限存在且本质光滑"，可处理带依赖、时间非齐次序列及$\mathbb R^d$取值情形。若$\Lambda$不本质光滑，LDP 可能不成立，此时只能得到上界或需用更弱的版本，这是它与 Cramér 的关键区别。

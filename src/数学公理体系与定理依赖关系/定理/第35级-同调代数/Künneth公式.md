@@ -117,3 +117,25 @@ $$
 - 其他为零
 
 **应用**：Künneth公式是代数拓扑中计算乘积空间同调群的标准方法，也是代数几何中Künneth公式的起源。$\square$
+
+## 课堂问答
+
+**老师**：两个复形张量积的同调，跟各自同调的张量积到底差多少？
+
+**学生**：差一个 $\operatorname{Tor}$ 修正项，而且是分裂短正合列
+$$
+0\to\bigoplus_{p+q=n}H_p(C)\otimes_R H_q(D)\to H_n(C\otimes_R D)\to\bigoplus_{p+q=n-1}\operatorname{Tor}^R_1(H_p(C),H_q(D))\to0
+$$
+当 $R$ 是域或某个因子的同调平坦时 $\operatorname{Tor}=0$，退化为同构。注意这个分裂是"逐项分裂"却**非自然**分裂，正是它比万有系数定理更微妙之处。
+
+**老师（追问）**：环面 $T^2=S^1\times S^1$ 的同调用它能直接读出吗？
+
+**学生**：能。$H_*(S^1)$ 在 $0,1$ 次为 $\mathbb{Z}$，且无挠。用无挠情形同构：$H_0=\mathbb{Z}$，$H_1$ 由 $(p,q)=(1,0),(0,1)$ 两项给出 $\mathbb{Z}^2$，$H_2=\mathbb{Z}\otimes\mathbb{Z}=\mathbb{Z}$，其余为零，正是直接计算的结果。常见误区：把 Künneth 当"直接展开"——对有挠因子（如 $\mathbb{RP}^2$）必须保留 $\operatorname{Tor}$，否则漏项。
+
+**老师（拓展）**：拓扑版凭什么能成立？
+
+**学生**：要用 Eilenberg-Zilber 定理给出奇异链复形的链等价
+$$
+C_\bullet(X;R)\otimes_R C_\bullet(Y;R)\simeq C_\bullet(X\times Y;R)
+$$
+把乘积空间的奇异链换成张量积复形，再套代数 Künneth。这也是 EZ 定理常与 Künneth 并称的原因；少了这步链等价，乘积的链结构与张量积的链结构并不天生相等。

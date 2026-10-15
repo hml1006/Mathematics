@@ -58,3 +58,17 @@ $$
 ## 五、应用与意义
 
 Brunn-Minkowski 不等式是等周不等式、Prékopa-Leindler 不等式以及对数凹测度理论的基石。它在凸几何中用于推导 Aleksandrov-Fenchel 不等式与混合体积理论，在概率论中孕育了 Brunn-Minkowski 型浓度不等式，并在泛函分析、最优传输以及信息论中均有深远影响。该不等式还说明：高维体积在 Minkowski 加法下具有强烈的集中与凹性特征，是理解几何测度结构的枢纽工具。
+
+## 课堂问答
+
+**老师**：请陈述 Brunn-Minkowski 不等式，并说明"凹性"体现在哪。
+
+**学生**：对可测集 $A,B\subset\mathbb R^n$ 与 $\lambda\in[0,1]$，$|\lambda A+(1-\lambda)B|^{1/n}\ge\lambda|A|^{1/n}+(1-\lambda)|B|^{1/n}$，即体积的 $n$ 次方根关于 Minkowski 加法是**凹**的；等价地体积本身 log-凹：$|\lambda A+(1-\lambda)B|\ge|A|^\lambda|B|^{1-\lambda}$。
+
+**老师（追问）**：一维其实是等号，为什么高维退化成不等式？等号何时成立？
+
+**学生**：一维时 $|[a,b]+[c,d]|=|[a,b]|+|[c,d]|$，因为长度的 $1$ 次方就是线性函数，等式成立。高维时 Minkowski 和的"边角"会重叠，实际体积小于线性相加所预期的量，故退化为不等式。等号当且仅当 $A,B$ 位似（互为相似放大加平移）。常见误区是把 $\ge$ 记成 $\le$：体积的 $n$ 次方根是凹函数，和集的根**不小于**两根之和。
+
+**老师（拓展）**：Steiner 对称化在这条不等式中起什么作用？
+
+**学生**：它把一般情形化归到球。对称化 $\sigma_u$ 保持体积、改善对称性，且满足相容性 $\sigma_u(A)+\sigma_u(B)\subseteq\sigma_u(A+B)$；迭代一组方向 $(u_k)$ 使对称体逼近与原体积相同的球，沿途 $|{\cdot}|^{1/n}$ 不减。球的情形 $|\lambda A+(1-\lambda)B|^{1/n}=(\omega_n(\lambda r_A+(1-\lambda)r_B)^n)^{1/n}$ 恰好取等，于是对任意凸体成立，一般可测集再用内逼近推广。它是 Aleksandrov–Fenchel 不等式与 Prékopa–Leindler 不等式的基石。

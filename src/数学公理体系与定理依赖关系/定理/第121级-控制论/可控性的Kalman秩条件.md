@@ -36,3 +36,17 @@ $$
 ## 五、应用与意义
 
 Kalman 秩条件是线性控制设计（极点配置、LQR）的前提，广泛用于飞行器、机器人、电力系统的可控性校验。它把抽象的可达性概念落实为可计算的秩判定，是控制理论最基础、最常用的结果。
+
+## 课堂问答
+
+**老师**：为什么"完全可控"这个描述动态可达性的概念，会等价于一个纯线性代数的秩条件 $\mathrm{rank}\,\mathcal C=n$？
+
+**学生**：结论：因为可达性等价于可控性 Gramian $\boldsymbol W_c(t)=\int_0^t e^{\boldsymbol A\tau}\boldsymbol B\boldsymbol B^{\top}e^{\boldsymbol A^{\top}\tau}d\tau$ 可逆，而 Gramian 的可逆性又能借 Cayley-Hamilton 归结为可控性矩阵满秩。给定目标 $\boldsymbol x_1$，取 $\boldsymbol u(\tau)=\boldsymbol B^{\top}e^{\boldsymbol A^{\top}(t-\tau)}\boldsymbol W_c^{-1}(t)\big(\boldsymbol x_1-e^{\boldsymbol At}\boldsymbol x_0\big)$ 即可实现转移。
+
+**老师（追问）**：Cayley-Hamilton 这一步到底起了什么作用？
+
+**学生**：它把无穷多个 $\boldsymbol A^j$ 压缩成有限组合 $e^{\boldsymbol A\tau}=\sum_{j=0}^{n-1}\alpha_j(\tau)\boldsymbol A^j$。于是 $\boldsymbol W_c(t)$ 奇异 $\iff$ 存在 $\boldsymbol v\ne\boldsymbol 0$ 使 $\boldsymbol v^{\top}e^{\boldsymbol A\tau}\boldsymbol B\equiv\boldsymbol 0$ $\iff$ $\boldsymbol v^{\top}\boldsymbol A^j\boldsymbol B=\boldsymbol 0\ (j=0,\dots,n-1)$ $\iff$ $\boldsymbol v^{\top}\mathcal C=\boldsymbol 0$，即 $\mathrm{rank}\,\mathcal C<n$ 的判据。
+
+**老师（拓展）**：若秩不足，你能从 $\ker\mathcal C^{\top}$ 读出哪些自由度不可控吗？
+
+**学生**：能——$\ker\mathcal C^{\top}$ 张成的方向与所有 $\boldsymbol A^j\boldsymbol B$ 正交，构成一个 $\boldsymbol A$-不变的不可控子空间，控制作用永远进不去。这引出更弱的"可稳定"概念：该子空间若自身渐近稳定，就足以让 ARE 有解，这正是代数 Riccati 方程假设 $(\boldsymbol A,\boldsymbol B)$ 可稳定而非可控的原因。

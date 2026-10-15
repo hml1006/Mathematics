@@ -67,3 +67,17 @@ $$
 - **点云形状推断**：从采样点恢复未知流形的同调，应用于计算机图形学、机器人感知与材料科学。
 - **计算权衡**：Čech 复形拓扑精确但构造复杂（需检查高维交）；Vietoris–Rips 复形完全由成对距离决定，可用邻接矩阵高效实现，适合高维数据。
 - **多尺度分析**：随半径 $r$ 变化形成的 filtration 与持久同调结合，可区分噪声与真实拓扑特征。
+
+## 课堂问答
+
+**老师**：Čech 与 Vietoris–Rips 复形分别记录了什么？
+
+**学生**：Čech 记录球交：$\sigma\in\operatorname{\check{C}ech}(X,r)$ 当且仅当 $\bigcap_{x\in\sigma}B(x,r)\neq\varnothing$；VR 只看直径：$\sigma\in\operatorname{VR}(X,r)$ 当且仅当 $\operatorname{diam}(\sigma)\le r$。VR 完全由成对距离决定、计算便宜，但可能多出伪洞。
+
+**老师（追问）**：两者如何互相夹逼，意义是什么？
+
+**学生**：恒有 $\operatorname{VR}(X,r)\subseteq\operatorname{\check{C}ech}(X,r)\subseteq\operatorname{VR}(X,2r)$。第一个包含因为若直径不超过 $r$，任取 $y\in\sigma$ 就有 $y\in\bigcap_{x\in\sigma}B(x,r)$；第二个用三角不等式得 $d(x,x')<2r$。于是两族 filtration 是 $2$-interleaved，其持久同调在 bottleneck 距离下只差常数。
+
+**老师（拓展）**：Čech 为什么能同伦等价于球的并？
+
+**学生**：因为欧氏空间里球的有限交是凸集即可缩，球族构成好覆盖，由 nerve 定理得 $\operatorname{\check{C}ech}(X,r)\simeq\bigcup_x B(x,r)$。常见误区是把交非空直接当成同伦等价，离开好覆盖条件这一步就不成立。

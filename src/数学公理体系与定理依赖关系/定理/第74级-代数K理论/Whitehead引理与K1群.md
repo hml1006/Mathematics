@@ -47,3 +47,25 @@ $\square$
 ## 五、应用与意义
 
 $K_1$ 群把"可逆矩阵的稳定同伦"编码为代数不变量，在代数 K 理论、代数几何与同伦论中广泛应用。对环的同态 $R\to S$ 诱导 $K_1(R)\to K_1(S)$（同伦不变性），且 $K_1$ 满足矩阵不变性与 Morita 不变性（$K_1(M_n(R))\cong K_1(R)$）。$K_1(\mathbb{Z})\cong\mathbb{Z}/2\mathbb{Z}$ 等计算连接数论（单位群、类群）；高次 K 群（$K_2,K_3,\dots$）在 $K_1$ 基础上发展，Whitehead 引理是理解这些不变量的重要支点。它还与 Whitehead 扭、带符号的动力系统及 Milnor-Wood 型理论相通。
+
+## 课堂问答
+
+**老师**：$K_1(R)$ 为什么可以定义成 $GL(R)/[GL(R),GL(R)]$，而不是 $GL(R)/E(R)$？
+
+**学生**：因为 Whitehead 引理断言 $E(R)=[GL(R),GL(R)]$，初等矩阵群恰等于换位子群，两种定义一致。于是 $K_1(R)=GL(R)/E(R)$，且对域 $F$ 有 $K_1(F)\cong F^\times$，由行列式实现。
+
+**老师（追问）**：Whitehead 引理的两个包含关系各用什么手法证明？
+
+**学生**：正向 $E(R)\subseteq[GL,GL]$ 用
+$$
+[e_{ik}(r),e_{kj}(1)]=e_{ij}(r)
+$$
+即每个初等矩阵都是换位子；反向 $[GL,GL]\subseteq E(R)$ 用共轭封闭性
+$$
+Ae_{ij}(r)A^{-1}=e_{ij}\Bigl(\sum_{k,l}A_{ik}r(A^{-1})_{lj}\Bigr)\in E(R),
+$$
+故 $E(R)\trianglelefteq GL(R)$ 且商群交换，换位子落回 $E(R)$。
+
+**老师（拓展）**：那 $K_1(F)\cong F^\times$ 这一步缺了哪块砖？
+
+**学生**：关键在 $SL(F)=E(F)$——域上行列式为 $1$ 的矩阵都能用初等行变换化为单位矩阵。由此 $\ker\det=SL(F)=E(F)=[GL,GL]$，比出 $K_1(F)\cong F^\times$。常见误区是以为这对一般环也成立：对 $\mathbb{Z}$ 只有 $K_1(\mathbb{Z})\cong\{\pm1\}$，而 $SL_2(\mathbb{Z})$ 并不由初等矩阵生成。

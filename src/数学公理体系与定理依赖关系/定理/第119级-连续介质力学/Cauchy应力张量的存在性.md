@@ -35,3 +35,21 @@ $$
 ## 五、应用与意义
 
 Cauchy 应力张量是连续介质力学的核心概念，是弹性、塑性、流体等本构理论的标尺。Cauchy 定理的存在性证明（四面体论证）保证了应力描述的普适性，也为后续守恒律与有限元方法提供了基础。
+
+## 课堂问答
+
+**老师**：为什么"任意小面上的力"都能用一个矩阵统一表示？
+
+**学生**：因为动量平衡迫使面力关于法向是线性的：对法向三个坐标分量分解，且关于法向是奇函数。于是存在二阶张量 $\boldsymbol\sigma$ 使 $\boldsymbol t(\boldsymbol n)=\boldsymbol\sigma\cdot\boldsymbol n$，并且由角动量守恒得对称性 $\boldsymbol\sigma=\boldsymbol\sigma^\top$。
+
+**老师（追问）**：无穷小四面体论证里，体积项为什么可以丢？
+
+**学生**：因为四面体收缩时面力 $\sim O(h^2)$、体力 $\sim O(h^3)$，故
+$$
+\boldsymbol t(\boldsymbol n)S-\sum_{i=1}^{3}\boldsymbol t(\boldsymbol e_i)n_iS+\rho\boldsymbol b\,\Delta V=\rho\boldsymbol a\,\Delta V,
+$$
+当 $h\to0$ 体积项相对面力项是高阶小量而被消去，剩下的正是线性关系 $\boldsymbol t(\boldsymbol n)=\sum_i n_i\boldsymbol t(\boldsymbol e_i)$。
+
+**老师（拓展）**：对称性是从哪条守恒律来的？
+
+**学生**：从角动量守恒（Cauchy 第二运动定律）。对无穷小体元写力矩平衡，无力偶应力时必须 $\sigma_{ij}=\sigma_{ji}$。注意对称性并非来自动量平衡，而是额外用了一次角动量守恒；在 Cosserat 等含力偶的极性介质中，$\boldsymbol\sigma$ 一般不对称。

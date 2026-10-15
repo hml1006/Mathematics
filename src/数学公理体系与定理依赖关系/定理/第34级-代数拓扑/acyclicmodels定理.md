@@ -120,6 +120,20 @@ $$\partial s_q\big(F(f)e_j^q\big)=G(f)\partial g_j^{q+1}=G(f)d_j=\Theta_q\big(F(
 
 **推论（常用形式）**：在定理的假设下，若 $\eta$ 是同构（例如 $H_0F\cong H_0G$），则 $\Phi$ 是链同伦等价。特别地，$F$ 与 $G$ 的自然链同伦型由它们在模型上的 $H_0$ 数据唯一决定。这正是 Eilenberg–Zilber 定理的证法：取 $F=C_*(X)\otimes C_*(Y)$（在模型 $\Delta^n$ 上自由）、$G=C_*(X\times Y)$（在模型上无圈，因为 $\Delta^n$ 与 $\Delta^n\times\Delta^m$ 可缩），则由 $H_0$ 上的恒等映射得到 Eilenberg–Zilber 映射，并自动得到其同伦逆的存在性与唯一性。
 
+## 课堂问答
+
+**老师**：acyclic models 定理的假设与结论？
+
+**学生**：若 $F$ 在模型上自由、$G$ 在模型上无圈，则任一自然变换 $\eta:H_0F\to H_0G$ 可提升为自然链映射 $\Phi:F\to G$ 使 $H_0\Phi=\eta$，且这样的提升在自然链同伦下唯一。
+
+**老师（追问）**：为什么自由与无圈正好配套？
+
+**学生**：自由性把构造局部化到模型生成元 $e_j^q$，只需在这些元素上取值再线性延拓；无圈性保证归纳中出现的循环 $\Phi_{q-1}(\partial e_j^q)$ 是边界，从而能解出 $\Phi_q(e_j^q)$。$q=1$ 时 $\Phi_0(\partial e_j^1)$ 为边界正由 $\eta$ 在 $H_0$ 上诱导给出。
+
+**老师（拓展）**：典型应用与常见误区？
+
+**学生**：用于证明 Eilenberg-Zilber 定理、Künneth 定理、奇异与胞腔同调的比较映射。常见误区是以为任意自然变换都能提升——缺少自由或无圈假设时提升可能不存在，也不唯一。
+
 ## 相关条目
 
 - [Alexander-Whitney映射与Eilenberg-Zilber定理](./Alexander-Whitney映射与Eilenberg-Zilber定理.md)：其证明正是本定理的标准应用（模型取标准单形）。

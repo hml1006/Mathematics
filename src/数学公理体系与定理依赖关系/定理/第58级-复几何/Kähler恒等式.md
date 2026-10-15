@@ -209,3 +209,17 @@ Kähler 恒等式是 $\partial\bar\partial$-引理的几何前提：在 Kähler 
 ### 10. 非紧 Kähler 流形的推广
 
 Kähler 恒等式可推广到完备 Kähler 流形（$L^2$-上同调）与适当完备的全纯向量丛值形式（Bochner-Kodaira-Nakano 恒等式），是非紧复几何的核心工具。
+
+## 课堂问答
+
+**老师**：Kähler 流形上三种 Laplacian 相等，最底层的那条恒等式是什么？
+
+**学生**：是 $[\Lambda,\partial]=\sqrt{-1}\bar\partial^*$ 与 $[\Lambda,\bar\partial]=-\sqrt{-1}\partial^*$（其中 $L=\omega\wedge\cdot$，$\Lambda=L^*$）。由它可把 $\Delta'=\partial\partial^*+\partial^*\partial$ 与 $\Delta''=\bar\partial\bar\partial^*+\bar\partial^*\bar\partial$ 都写成 $\sqrt{-1}[\partial\Lambda,\bar\partial]$，故 $\Delta'=\Delta''$；再用 $d=\partial+\bar\partial$ 展开，交叉项 $\partial\bar\partial^*+\bar\partial^*\partial=0$ 消失，得 $\Delta_d=\Delta'+\Delta''=2\Delta''$。
+
+**老师（追问）**：Kähler 条件 $d\omega=0$ 具体用在哪？换成一般 Hermite 会怎样？
+
+**学生**：用在正规坐标下：$\omega(p)=\sqrt{-1}\sum_jdz_j\wedge d\bar z_j$，$g_{i\bar j}=\delta_{ij}$ 且 $\partial g=\bar\partial g=0$ 于 $p$，度量导数项因此消失，$[\Lambda,\bar\partial]=-\sqrt{-1}\partial^*$ 才精确成立。一般 Hermite 流形上会出现与 $\partial g$ 相关的额外项，于是 $\Delta'\neq\Delta''$，Hodge 分解与硬 Lefschetz 都失效——这正是 Kähler 性不可替代之处。
+
+**老师（拓展）**：由 $\Delta_d$ 与 $L$ 交换，能得到什么拓扑结论？
+
+**学生**：硬 Lefschetz 定理：$L^k:H^{n-k}(X,\mathbb C)\to H^{n+k}(X,\mathbb C)$ 是同构。它源于 $L,\Lambda,H$ 构成 $\mathfrak{sl}_2$ 表示（$[L,\Lambda]=H$，$[H,L]=2L$，$[H,\Lambda]=-2\Lambda$）以及 $[L,\Delta_d]=0$，把调和 $k$-形式按原始形式分解为 $\mathcal A^k=\bigoplus_jL^j\mathcal P^{k-2j}$。这既是 Kähler 流形的强拓扑约束（例如排除 $S^3\times S^3$），也是 Lefschetz 分解与 Hodge-Riemann 双线性关系的代数基础。

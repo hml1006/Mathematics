@@ -228,3 +228,17 @@ $$Rf_* R\mathcal{H}om(F, f^!\mathcal{O}_Y) \cong R\mathcal{H}om(Rf_* F, \mathcal
 ### 10. de Rham 上同调的 Poincaré 对偶复化
 
 结合 Hodge 分解与 Serre 对偶，Poincaré 对偶 $H^k \cong H^{2n-k*}$ 在 Kähler 流形上细化为 $H^{p,q} \cong H^{n-p, n-q*}$，给出 Hodge 数 $h^{p,q} = h^{n-p, n-q}$，是镜面对称中 $h^{1,1} \leftrightarrow h^{n-1,1}$ 对应的几何基础。
+
+## 课堂问答
+
+**老师**：Serre 对偶 $H^q(X,E)\cong H^{n-q}(X,E^*\otimes K_X)^*$ 的直觉是什么？$K_X$ 为什么出现？
+
+**学生**：它是 Poincaré 对偶的复版本。实情形 $H^k\cong H^{n-k*}$ 由 Hodge 星算子实现，复情形则用 $\Omega^{0,q}(X,E)$ 与 $\Omega^{0,n-q}(X,E^*\otimes K_X)$ 配对。$K_X$ 出现的理由是次数要凑成 $(n,n)$ 才能积分：$u\wedge v$ 需是 $K$-值 $(n,n)$-形式，配对由迹映射 $\mathrm{Tr}([u],[v])=\int_Xu\wedge v$ 给出，良定义靠 Stokes（因 $X$ 紧无边且 $\bar\partial v=0$，$\int\bar\partial u'\wedge v=0$）。$K_X=\Omega^n_X$ 正是把 $(0,q)$ 与 $(0,n-q)$ 的类型补齐到 $(n,n)$ 的那一半。
+
+**老师（追问）**：那曲线上的经典 Riemann–Roch $h^0(D)-h^1(D)=\deg D+1-g$ 怎么从对偶读出来？
+
+**学生**：取 $E=\mathcal O(D)$，Serre 对偶给 $h^1(D)=h^0(X,K_X\otimes\mathcal O(-D))=h^0(K-D)$；再算 Euler 示性数 $\chi(\mathcal O(D))=\deg D+1-g$（$\deg$ 与 $\mathrm{rank}$ 可加），于是 $h^0(D)-h^1(D)=h^0(D)-h^0(K-D)=\deg D+1-g$。这正是把"高次上同调"翻译成"低次截面空间"的对偶配对。
+
+**老师（拓展）**：在现代导出范畴里 Serre 对偶是什么形态？
+
+**学生**：函子 $E\mapsto E^*\otimes K_X[n]$ 给出 $D^b(\mathrm{Coh}(X))$ 上的 Serre 函子，是 Calabi-Yau 范畴的定义基础：当 $K_X\cong\mathcal O_X$ 时它只是平移 $[n]$，正体现 CY 流形 $c_1=0$ 的"自对偶"。这也说明 Serre 对偶是 Grothendieck-Serre 对偶在 $f:X\to\mathrm{pt}$、$f^!\mathcal O=K_X[n]$ 处的特例。

@@ -95,3 +95,17 @@ $$
 - **机器人**：机械臂、倒立摆、无人车的平衡与轨迹跟踪常以 LQR 为基准控制器。
 - **模型预测控制（MPC）**：LQR 的有限时域版本是线性 MPC 问题的核心子问题。
 - **理论与计算**：Riccati 方程连接了最优控制、Hamilton 系统、谱分解与 $H_2$/$H_\infty$ 控制，是现代鲁棒控制理论的重要出发点。
+
+## 课堂问答
+
+**老师**：LQR 的核心结论是什么？$P$ 满足哪条方程？
+
+**学生**：最优控制是线性状态反馈 $u^*=-Kx$，$K=R^{-1}B^{\mathsf T}P$，其中 $P=P^{\mathsf T}\succeq0$ 是代数 Riccati 方程 $A^{\mathsf T}P+PA-PBR^{-1}B^{\mathsf T}P+Q=0$ 的解，最优指标 $J^*=x_0^{\mathsf T}Px_0$。前提是 $(A,B)$ 能镇定、$(A,Q^{1/2})$ 能检测。
+
+**老师（追问）**：Riccati 方程里的非线性项 $PBR^{-1}B^{\mathsf T}P$ 是从哪冒出来的？为什么不能只写 Lyapunov 方程？
+
+**学生**：它来自对 HJB 关于 $u$ 求极小。设 $V=x^{\mathsf T}Px$，则 $\nabla V=2Px$，一阶条件 $2Ru+2B^{\mathsf T}Px=0$ 给出 $u^*=-R^{-1}B^{\mathsf T}Px$；代回 $\inf_u\{x^{\mathsf T}Qx+u^{\mathsf T}Ru+2x^{\mathsf T}PBu\}$，最优控制贡献的 $u^{*\mathsf T}Ru^*=x^{\mathsf T}PBR^{-1}B^{\mathsf T}Px$ 就是那个二次项。常见误区是漏掉它。只写 $A^{\mathsf T}P+PA+Q=0$ 得到的是**给定**控制下的代价，不是最优控制的代价。
+
+**老师（拓展）**：闭环 $(A-BK)$ 为什么必然渐近稳定？这与 Lyapunov 方法如何衔接？
+
+**学生**：取 $V=x^{\mathsf T}Px$ 作 Lyapunov 函数，沿 $\dot x=(A-BK)x$ 求导得 $\dot V=x^{\mathsf T}[(A-BK)^{\mathsf T}P+P(A-BK)]x$，用 ARE 化简为 $\dot V=-x^{\mathsf T}(Q+PBR^{-1}B^{\mathsf T}P)x\le0$。若 $Q\succ0$ 则负定直接渐近稳定；若 $Q\succeq0$ 则用能检测性排除 $\dot V\equiv0$ 于非零轨迹，配合 LaSalle 不变集原理收尾。有限时间情形改用微分 Riccati 方程 $-\dot P=A^{\mathsf T}P+PA-PBR^{-1}B^{\mathsf T}P+Q$，终值 $P(T)=P_f$，最优值 $V(t,x)=x^{\mathsf T}P(t)x$。

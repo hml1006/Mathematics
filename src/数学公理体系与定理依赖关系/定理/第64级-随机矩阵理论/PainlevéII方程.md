@@ -100,3 +100,17 @@ $$
 - **可积系统与等单值形变**：$P_{II}$ 是 Painlevé 方程作为等单值形变的标准范例，Lax 对与 Stokes 乘子的理论由此发展，并推广到矩阵模型与量子可积系统。
 - **正交多项式与随机矩阵**：在边缘标度极限下，正交多项式的连接问题等价于 $P_{II}$ 的 Riemann–Hilbert 问题，成为渐近分析中"steepest descent 加 Painlevé 方程"这一范式的原型。
 - **数值计算**：由于 $F_2$ 的高精度计算归约为 $P_{II}$ 的两点边值问题，数值上可用渐近级数与初值问题的匹配高效求解，广泛用于多元统计检验临界值表。
+
+## 课堂问答
+
+**老师**：$q''=2q^3+sq$ 看着普通，为什么它这么重要？
+
+**学生**：因为它是 Hastings–McLeod 解所满足的方程，而这支解把 Tracy–Widom 分布完全钉死：$F_2(s)=\exp\bigl(-\int_s^\infty(x-s)q(x)^2\,dx\bigr)$。与 Airy 函数一样，它在 $s\to+\infty$ 时 $q\sim\mathrm{Ai}(s)$ 衰减、在 $s\to-\infty$ 时 $q\sim-\sqrt{-s/2}$ 增长，双边边界条件唯一挑出这一支。它是非线性特殊函数，没有简单积分表示。
+
+**老师（追问）**：$P_{II}$ 的解那么多，凭什么说 Hastings–McLeod 解唯一？
+
+**学生**：满足 $s\to+\infty$ 时 $q\to0$ 的解构成一维族，渐近形如 $q(s)\sim c\,\mathrm{Ai}(s)$。只有唯一的 $c$（取 $c=1$）能让解在 $s\to-\infty$ 不振荡，而是按 $-\sqrt{-s/2}$ 单调增长；其余 $c$ 会在负半轴产生振荡。这是由 Stokes 现象或等价的 Bäcklund 变换分析决定的。
+
+**老师（拓展）**：它和 Fredholm 行列式、可积系统是怎么挂钩的？
+
+**学生**：记 $D(s)=\det(I-K_{\mathrm{Ai}})$ 在 $L^2(s,\infty)$ 上。Airy 核满足 $(\partial_x+\partial_y)K_{\mathrm{Ai}}(x,y)=-\mathrm{Ai}(x)\mathrm{Ai}(y)$，由此 $\log D$ 的各阶导数满足封闭 Hamiltonian 系统，消元即得 $P_{II}$；等价地 $P_{II}$ 是 Lax 对的零曲率条件 $U_\lambda-V_s+[U,V]=0$，即等单值形变。要点是 $\frac{d^2}{ds^2}\log F_2(s)=-q(s)^2$。

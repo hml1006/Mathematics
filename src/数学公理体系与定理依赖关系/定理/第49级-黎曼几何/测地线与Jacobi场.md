@@ -89,3 +89,19 @@ $$
 其中 $R^i_j(t) = g(R(e_j, \dot{\gamma})\dot{\gamma}, e_i)$。这是二阶线性常微分方程组，由标准 ODE 理论，解空间维数为 $2n$。$\square$
 
 **推论**（共轭点与指数映射）：设 $\gamma$ 是测地线，$\gamma(0) = p$，则 $\gamma(a)$ 是 $\gamma(0)$ 沿 $\gamma$ 的共轭点当且仅当 $d\exp_p|_{a\dot{\gamma}(0)}$ 退化，即指数映射 $\exp_p$ 在 $a\dot{\gamma}(0)$ 处不是局部微分同胚。
+
+## 课堂问答
+
+**老师**：给出测地线方程与 Jacobi 方程，并说明二者的联系。
+
+**学生**：结论：测地线满足 $\nabla_{\dot\gamma}\dot\gamma=0$（局部坐标 $\ddot x^k+\Gamma^k_{ij}\dot x^i\dot x^j=0$）；沿它的 Jacobi 场满足
+$$\nabla_{\dot\gamma}\nabla_{\dot\gamma}J+R(J,\dot\gamma)\dot\gamma=0.$$
+联系在于：Jacobi 场是测地线单参数变分的变分场，也是能量泛函二阶变分（指标形式）$E''(0)=\int(|\nabla_{\dot\gamma}J|^2-R(J,\dot\gamma,\dot\gamma,J))dt$ 的 Euler-Lagrange 方程的解。误区是把"测地线局部最短"当成全局最短——只有足够小邻域才成立。
+
+**老师（追问）**：共轭点与指数映射退化如何对应？
+
+**学生**：$\gamma(a)$ 是 $\gamma(0)=p$ 的共轭点当且仅当存在非零 Jacobi 场 $J$ 使 $J(0)=J(a)=0$，这等价于 $d\exp_p|_{a\dot\gamma(0)}$ 奇异，即 $\exp_p$ 在该点不是局部微分同胚。直观上就是邻近测地线重新聚焦的地方。
+
+**老师（拓展）**：解空间维数与初值如何？
+
+**学生**：沿测地线取平行正交标架，方程化为 $\ddot J^i+\sum_jR^i_{\ j}(t)J^j=0$，故解空间 $2n$ 维，由 $J(0)$ 与 $\nabla_{\dot\gamma}J(0)$ 唯一确定。这正是比较定理能在统一初值下比较不同曲率测地线散开速度的原因。

@@ -66,6 +66,20 @@ $$P\bigl(X>\theta E[X]\bigr)\ \ge\ (1-\theta)^2\,\frac{\bigl(E[X]\bigr)^2}{E[X^2
 
 证毕。
 
+## 课堂问答
+
+**老师**：Paley-Zygmund 给的是尾概率的上界还是下界？
+
+**学生**：是下界：对非负随机变量 $X$，$\mathbb{P}(X>t)\ge(\mathbb{E}X-t)^2/\mathbb{E}X^2$；取 $t=\theta\mathbb{E}X$ 得 $\mathbb{P}(X>\theta\mathbb{E}X)\ge(1-\theta)^2(\mathbb{E}X)^2/\mathbb{E}X^2$。方向与 Markov、Chebyshev 的尾上界正好互补。
+
+**老师（追问）**：证明的骨架是什么？
+
+**学生**：截断加 Cauchy-Schwarz。把 $\mathbb{E}X=\mathbb{E}[X\mathbf{1}_{\{X>t\}}]+\mathbb{E}[X\mathbf{1}_{\{X\le t\}}]\le\mathbb{E}[X\mathbf{1}_{\{X>t\}}]+t$ 移项得 $\mathbb{E}[X\mathbf{1}_{\{X>t\}}]\ge\mathbb{E}X-t$；再由 $\mathbb{E}[X\mathbf{1}_{\{X>t\}}]\le\sqrt{\mathbb{E}X^2}\sqrt{\mathbb{P}(X>t)}$ 平方即得。
+
+**老师（拓展）**：它在哪里被用到？
+
+**学生**：它是 Khintchine 不等式在 $0<p<2$ 时下界的标准步骤，也用于证明随机级数几乎必然发散以及加性组合中集合和集的下界。常见误区：必须 $t<\mathbb{E}X$（否则右端非正，结论平凡）。
+
 ## 相关条目
 
 - [Khintchine不等式](./Khintchine不等式.md)：Paley–Zygmund 不等式是其标准证明中的关键步骤，用于从二阶矩控制随机三角级数的大偏差概率。

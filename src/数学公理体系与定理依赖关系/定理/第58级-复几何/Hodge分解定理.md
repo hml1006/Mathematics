@@ -162,6 +162,20 @@ Kodaira 嵌入定理保证射影代数流形为 Kähler，从而具有 Hodge 分
 
 Hodge 分解使每个上同调类有 $(p,q)$-分量。**Hodge 猜想**断言：$H^{p,p}(X, \mathbb{Q})$ 中的类皆由代数闭链的 Chern 类生成（$p$ 偶情形）。这是 Clay 数学研究所千禧年问题之一，依赖 Hodge 分解的精致结构。
 
+## 课堂问答
+
+**老师**：Hodge 分解把 de Rham 上同调按复类型 $(p,q)$ 拆成直和；凭什么这种分解会成立？
+
+**学生**：结论是 $H^k_{\mathrm{dR}}(X,\mathbb C)=\bigoplus_{p+q=k}H^{p,q}(X)$，其中 $H^{p,q}\cong H^q(X,\Omega^p_X)$。理由是 Kähler 恒等式给出 $\Delta_d=2\Delta_{\bar\partial}=2\Delta_\partial$，而 $\Delta_{\bar\partial}$ 与投影 $\Pi^{p,q}$ 可交换，于是调和 $k$-形式被 $(p,q)$-型封闭，谱分解自然成立。注意这只对紧 Kähler 流形成立；一般 Hermite 流形上 $\Delta_d\neq 2\Delta_{\bar\partial}$，没有 Hodge 分解。
+
+**老师（追问）**：复共轭把 $(p,q)$ 送到 $(q,p)$，你能立刻说出哪些 Betti 数的奇偶性吗？
+
+**学生**：由 $\overline{H^{p,q}}=H^{q,p}$ 得 $h^{p,q}=h^{q,p}$，于是 $b_{2m+1}=\sum_{p+q=2m+1}h^{p,q}=2\sum_{p<q}h^{p,q}$ 为偶数。但这不是充分条件：要排除 $S^3\times S^3$ 得用硬 Lefschetz——Kähler 流形上 $L^k:H^{n-k}\to H^{n+k}$ 是同构，而它复维为 3 时 $H^1=0$ 却 $H^3=\mathbb Z^2$，$L:H^1\to H^3$ 不可能是同构，故非 Kähler。
+
+**老师（拓展）**：Hodge 分解还牵出 Serre 对偶给出的 $h^{p,q}=h^{n-p,n-q}$ 与镜面对称，对吧？
+
+**学生**：对。Serre 对偶 $H^q(X,\Omega^p_X)\cong H^{n-q}(X,\Omega^{n-p}_X)^*$ 给出 $h^{p,q}=h^{n-p,n-q}$，与共轭对称合成 Poincaré 对偶的复版本，即 Hodge 菱形的四重对称 $h^{p,q}=h^{q,p}=h^{n-p,n-q}=h^{n-q,n-p}$。这正是镜面对称中 $h^{1,1}(X)=h^{2,1}(Y)$（复三维 Calabi-Yau）这类对应的几何底座，也是 Hodge 猜想讨论 $H^{p,p}(X,\mathbb Q)$ 是否由代数闭链生成的对象。
+
 ## 相关条目
 
 - [Hodge 分解定理（第49级-黎曼几何）](../第49级-黎曼几何/Hodge分解定理.md)：相关条目——本条目为紧 Kähler 流形上按 (p,q)-型的 Hodge 分解；第49级条目为 Riemann 流形上微分形式的一般 Hodge 分解。

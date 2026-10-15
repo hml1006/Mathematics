@@ -49,3 +49,21 @@ $$
 ## 五、应用与意义
 
 AdaBoost 的理论保证说明"弱学习器集成"可以变成强学习器，其指数误差界是 Boosting 家族（Gradient Boosting、XGBoost 等）的经典理论支柱。界式还给出了关键时刻：当优势过小或 $\sum_t\gamma_t^2$ 收敛时误差才有正下界，从而指导弱学习器设计与轮数选取。
+
+## 课堂问答
+
+**老师**：AdaBoost 真能把一堆"略好于猜测"的弱学习器变成强学习器吗？
+
+**学生**：能，而且有指数级误差界。结论：若每轮优势 $\gamma_t=\frac12-\varepsilon_t\ge\gamma>0$，则最终分类器的训练误差
+
+$$
+\hat{R}_n(H)\le\prod_{t=1}^TZ_t=\prod_{t=1}^T\sqrt{1-4\gamma_t^2}\le e^{-2\sum_t\gamma_t^2}\le e^{-2\gamma^2T}.
+$$
+
+**老师（追问）**：指数衰减是从哪两步来的？
+
+**学生**：第一步把训练误差换成指数损失：因 $\mathbf1_{\{y\ne H(x)\}}\le e^{-yF(x)}$，权重归一化递推给出 $\frac1n\sum_ie^{-y_iF_T(x_i)}=\prod_tZ_t$，其中 $Z_t=(1-\varepsilon_t)e^{-\alpha_t}+\varepsilon_te^{\alpha_t}$。第二步在最优 $\alpha_t=\frac12\log\frac{1-\varepsilon_t}{\varepsilon_t}$ 处化简，得 $Z_t=2\sqrt{\varepsilon_t(1-\varepsilon_t)}=\sqrt{1-4\gamma_t^2}$，再用对数不等式 $\sqrt{1-4\gamma^2}\le e^{-2\gamma^2}$ 转成指数。连乘即得 $\exp(-2\sum_t\gamma_t^2)$。
+
+**老师（拓展）**：是不是只要弱学习器准确率超过 $\frac12$ 就够了？
+
+**学生**：不够，有两个要点常被误解。其一，需要优势有一致下界 $\gamma_t\ge\gamma>0$；若 $\sum_t\gamma_t^2$ 收敛（例如后期逼近 $\frac12$），界就不再趋于零。其二，这个界只保证训练误差指数衰减，泛化还依赖弱学习器复杂度与训练集大小，需另用泛化界控制。从优化看，AdaBoost 其实是在坐标下降地最小化指数损失 $e^{-yF(x)}$，最优 $\alpha_t$ 正是该损失下加权误差的极小点。

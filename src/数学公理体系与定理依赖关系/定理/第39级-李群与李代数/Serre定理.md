@@ -69,3 +69,17 @@ $$\begin{aligned}
 **唯一性**：设 $\mathfrak{g}$ 是有限维复半单李代数，Cartan 矩阵为 $A$。取 $\mathfrak{g}$ 的 Cartan 子代数 $\mathfrak{h}$，单根 $\alpha_i$，以及对应的 $\mathfrak{sl}_2$-三元组 $\{e_i, f_i, h_i\}$，其中 $[e_i, f_i] = h_i$，$\alpha_i(h_j) = a_{ji}$。可以验证 Serre 关系成立，故存在满同态 $\mathfrak{g}(A) \to \mathfrak{g}$。由 $\mathfrak{g}(A)$ 的半单性，该同态是同构。$\square$
 
 **推论**：有限维复半单李代数到其 Cartan 矩阵（或 Dynkin 图）的对应是一一对应。因此，半单李代数的分类化为 Dynkin 图的分类。
+
+## 课堂问答
+
+**老师**：Serre 定理凭什么说一张 Cartan 矩阵就能"拼出"整个半单李代数？
+
+**学生**：结论：给定 Cartan 矩阵 $A=(a_{ij})$，由生成元 $e_i,f_i,h_i$ 与关系 $[h_i,h_j]=0$、$[h_i,e_j]=a_{ij}e_j$、$[h_i,f_j]=-a_{ij}f_j$、$[e_i,f_j]=\delta_{ij}h_i$ 以及 Serre 关系 $(\operatorname{ad}_{e_i})^{1-a_{ij}}e_j=0$、$(\operatorname{ad}_{f_i})^{1-a_{ij}}f_j=0$（$i\neq j$）生成的 $\mathfrak{g}(A)$，正好是有限维复半单李代数。故半单李代数与 Dynkin 图一一对应。
+
+**老师（追问）**：Serre 关系里的幂次为什么恰是 $1-a_{ij}$？
+
+**学生**：它来自 $\mathfrak{sl}_2$-根串。沿 $\alpha_i$ 方向看 $\alpha_j$ 所在的根串，长度由 $\frac{2(\alpha_j,\alpha_i)}{(\alpha_i,\alpha_i)}=-a_{ij}$ 控制，即从 $\alpha_j$ 最多连续加 $-a_{ij}$ 次 $\alpha_i$ 仍在根系统中，再多一步就越界，正对应 $\operatorname{ad}_{e_i}^{1-a_{ij}}e_j=0$。
+
+**老师（拓展）**：这个定理的最大价值在哪，有什么要小心的地方？
+
+**学生**：它把半单李代数的分类彻底化为 Cartan 矩阵（Dynkin 图）的分类，并给出统一的生成元–关系刻画，把 Serre 关系"量子化"还得到量子群。要小心的是：并非任意 Cartan 矩阵都给出有限维代数，只有有限型（Dynkin 图属 $A$–$G$ 表）才行，一般可对称化矩阵对应的是无穷维 Kac–Moody 代数。

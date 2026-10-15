@@ -105,3 +105,21 @@ $$\int_{u^{-1}(B_r(p))}u^{*}\omega\ \ge\ m\,\hbar,\qquad \hbar=\hbar(M,\omega,J,
 - **带边界的单调性**：对带 Lagrange 边界的曲线，在边界点附近用"平方距离到 Lagrange"作为多次调和函数，得到边界型单调性（Groman–Solomon 反向等周不等式、Duval 的证明）。
 - **多重数与相交数**：带多重数 $m$ 的版本；以及曲线与除子/子流形相交的局部下界。
 - **高余维与正流**：对正闭流（任意余维）的 Lelong 数与单调性，是正流极值理论的基础。
+
+## 课堂问答
+
+**老师**：Gromov 单调性引理给出什么定量下界？
+
+**学生**：设 $J$ 与 $\omega$ 相容，$p\in M$，$r<\mathrm{inj}(p)$，则存在 $\hbar=\hbar(M,\omega,J,r)>0$，使任何经过 $p$、在 $p$ 处重数为 $m$ 的 $J$-全纯曲线满足
+$$\int_{u^{-1}(B_r(p))}u^*\omega\ge m\,\hbar.$$
+即在 $(\mathbb C^n,\omega_0,i)$ 中 $\mathrm{Area}(u\cap B_r)\ge\pi r^2m$，且 $r\to0$ 时比值 $\to m$。常见误区是把 $\hbar$ 理解为曲线整体能量——它只是小球内的局部能量下界。
+
+**老师（追问）**：在 $\mathbb C^n$ 模型中，单调性是怎么来的？
+
+**学生**：令 $a(r)=\frac1{r^2}\int_{u^{-1}(B_r)}u^*(dd^c\rho)$（$\rho=|z|^2$，$dd^c\rho=2\omega_0$）。由 $dd^c\rho=\rho\,dd^c\log\rho$ 与 Stokes 得 $a(r)=\int_{u^{-1}(\partial B_r)}u^*(d^c\log\rho)$，于是
+$$a(r)-a(s)=\int_{u^{-1}(B_r\setminus B_s)}u^*(dd^c\log\rho)\ge0,$$
+最后一步用 $dd^c\log\rho\ge0$（$\log|z|$ 调和）与全纯拉回保正性，故 $a$ 单调不减；再由 Lelong–Poincaré 公式 $a(r)\to\pi m$ 得下界。流形上取 Darboux 坐标把 $\omega$ 化为 $\omega_0+O(|z|)$、用度量比较吸收常数即得。
+
+**老师（拓展）**：这条引理在辛拓扑中扮演什么角色？
+
+**学生**：它是"能量量子化"的核心：曲线经过一点必付出统一正的能量，故能量有界时经过某点的次数一致有界，从而 Gromov 紧性中气泡数目有限；也是辛刚性（非挤压）与 Floer 能量估计的分析根基。带 Lagrange 边界的版本（对边界点用"到 $L$ 的平方距离"作为多次调和函数）给出边界型单调性。

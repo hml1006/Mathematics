@@ -40,3 +40,21 @@ Dedekind 整环是代数数论的基本对象。该定理断言：任何数域�
 ## 五、应用与意义
 
 该定理是代数数论一切理想论的基础。它直接引出两个核心推论：任意非零真理想唯一分解为素理想的乘积，以及理想类群 $Cl(K)$ 是有限阿贝尔群（类数有限）。Dedekind 整环的三条公理也构成抽象代数中可一般处理的理想类结构，被推广到 Dedekind 概形、算术曲线与算术几何，是现代算术代数几何的根基。
+
+## 课堂问答
+
+**老师**：为什么数域的整数环 $\mathcal{O}_K$ 一定是 Dedekind 整环？三条公理各由什么保证？
+
+**学生**：三条是 Noether、整闭、维数 $1$。Noether 源于 $\mathcal{O}_K$ 是有限生成 $\mathbb{Z}$-模而 $\mathbb{Z}$ 是 Noether 环；整闭来自取共轭与对称函数；维数 $1$ 来自范数取整使 $\mathfrak p\cap\mathbb{Z}=p\mathbb{Z}$，从而 $\mathcal{O}_K/\mathfrak p$ 是有限域。
+
+**老师（追问）**：维数为 $1$ 的证明里"有限整环是域"这一步不显然，请说清逻辑。
+
+**学生**：对非零素理想 $\mathfrak p$，取非零 $a\in\mathfrak p$，其范数 $N(a)\in\mathfrak p\cap\mathbb{Z}$ 是非零整数，故 $\mathfrak p\cap\mathbb{Z}=p\mathbb{Z}$。于是 $\mathcal{O}_K/\mathfrak p$ 是有限生成 $\mathbb{Z}/p\mathbb{Z}$-模，从而是有限整环（$\mathfrak p$ 素），而
+$$
+\text{有限整环}\ \Longrightarrow\ \text{域},
+$$
+因乘法左移是有限集上的单射故为满射。于是 $\mathcal{O}_K/\mathfrak p$ 是域，即 $\mathfrak p$ 极大。
+
+**老师（拓展）**：为什么说"元素的唯一分解失去了，理想的唯一分解还在"？
+
+**学生**：$\mathbb{Z}[\sqrt{-5}]$ 中 $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ 是两种元素分解，故非唯一析因；但 Dedekind 整环中每个非零理想唯一分解为素理想之积，这一结构定理正是从上述三条公理推出的，是理想类群与素理想分解理论的地基。

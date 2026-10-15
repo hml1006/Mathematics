@@ -80,3 +80,17 @@ $$\max_{\alpha \in \text{劣弧}} |S(\alpha)| \ll N (\log N)^{-A}$$
 由优弧主项支配，$R(N) \gg N^2$，故存在至少一种表示方式。$\square$
 
 **推论**：每个充分大的奇数可表示为三个素数之和。特别地，Goldbach 猜想对所有充分大的偶数成立若每个充分大的奇数可表示为三个素数之和，则偶数 $N-3$ 可表示为两个素数之和。$\square$
+
+## 课堂问答
+
+**老师**：Vinogradov 三素数定理的内容是什么？为什么证明需要 Vaughan 恒等式？
+
+**学生**：存在 $N_0$ 使得每个奇数 $N\ge N_0$ 都能写成三个素数之和。圆法把表示数表为 $\int_0^1 S(\alpha)^3e^{-2\pi iN\alpha}\,d\alpha$，其中 $S(\alpha)=\sum_{p\le N}(\log p)e^{2\pi ip\alpha}$；在劣弧上要控制 $\Lambda$ 的素数指数和，Vaughan 恒等式把 $\Lambda=\mu*\log$ 拆成 Type I、Type II 两类和分别估计，分别用几何级数求和与 Cauchy-Schwarz 双线性估计。
+
+**老师（追问）**：Vaughan 恒等式具体怎么拆？
+
+**学生**：从 $\Lambda(n)=\sum_{d\mid n}\mu(d)\log\frac nd$ 出发，把 $d$ 的求和按 $\le U$ 拆开，再把 $e=n/d$ 的求和按 $\le V$ 拆开，得到三项形如 $\sum_{d\mid n,d\le U}\mu(d)\log\frac nd-\sum_{de\mid n,d\le U,e\le V}\mu(d)\Lambda(e)+\sum_{d\mid n,d>U,e>V,de=n}\mu(d)\Lambda(e)$。前两项结构短、可控，末项留作长型双线性处理。
+
+**老师（拓展）**：主项的形态是什么？
+
+**学生**：$R(N)=\frac12\mathfrak{S}(N)N^2+O\!\left(N^2(\log N)^{-A}\right)$，其中 $\mathfrak{S}(N)=\prod_{p\nmid N}\left(1-\frac{1}{(p-1)^2}\right)\prod_{p\mid N}\left(1+\frac{1}{p-1}\right)$。优弧给出主项，劣弧用 $\max|S(\alpha)|\ll N(\log N)^{-A}$ 压成余项，于是 $R(N)\gg N^2>0$。

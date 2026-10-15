@@ -96,6 +96,21 @@ $$
 - 空间旋转不变性 $\Rightarrow$ 角动量守恒：$L = \sum_i r_i \times p_i$。
 
 **例**（Klein-Gordon 场）：对 $L = \frac{1}{2}(\partial_\mu \phi \partial^\mu \phi - m^2 \phi^2)$，平移对称性 $\phi(x) \to \phi(x + a)$ 给出能量-动量张量 $T_{\mu\nu} = \partial_\mu \phi \partial_\nu \phi - \eta_{\mu\nu} L$，满足 $\partial^\mu T_{\mu\nu} = 0$。
+
+## 课堂问答
+
+**老师**：为什么"作用量在连续变换下不变"就能挤出一个守恒流？
+
+**学生**：结论：$\partial_\mu j^\mu=0$，其中 $j^\mu=\frac{\partial L}{\partial(\partial_\mu\phi)}\delta\phi-K^\mu$。理由：$\delta S=\int(\frac{\partial L}{\partial\phi}\delta\phi+\frac{\partial L}{\partial(\partial_\mu\phi)}\partial_\mu\delta\phi)\,d^4x$，代入 Euler–Lagrange 方程后整体化作一个全散度，对任意区域为零故被积函数为零。常见误区：把"对称"与"守恒"当成两条独立事实。
+
+**老师（追问）**：$K^\mu$ 那一项什么时候才出现？
+
+**学生**：当 Lagrangian 的变化不是严格为零，而是一个全散度 $\delta L=\varepsilon\partial_\mu K^\mu$ 时。此时守恒流要减去 $K^\mu$ 才能仍满足 $\partial_\mu j^\mu=0$。
+
+**老师（拓展）**：把三个基本对称对应到守恒量。
+
+**学生**：时间平移给能量 $H=\sum_i p_i\dot q^i-L$；空间平移给动量 $P=\sum_i p_i$；空间旋转给角动量 $L=\sum_i r_i\times p_i$。要注意必须是连续对称，离散对称不适用。
+
 ## 相关条目
 
 - [Noether 定理（第150级-数学物理）](../第150级-数学物理/Noether定理.md)：与本条目为同一定理，另收录于第150级-数学物理，可交叉参考。

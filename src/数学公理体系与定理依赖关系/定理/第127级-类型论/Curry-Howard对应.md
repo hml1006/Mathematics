@@ -47,3 +47,17 @@ $$
 ## 五、应用与意义
 
 Curry-Howard 对应是逻辑—计算同构的典范：它支撑依赖类型编程（Agda、Coq、Lean 中"证明就是程序"的证明自动化）、抛光类型理论（命题即类型）、以及程序语言理论中的类型系统设计。它把"证明数学定理"一以贯之地变成"写出能类型检查的程序"，是现代形式化数学的根基。
+
+## 课堂问答
+
+**老师**：先用一句话概括：直觉主义命题逻辑的自然演绎与简单类型 λ 演算之间到底是什么关系？
+
+**学生**：命题＝类型，证明＝程序，二者一一对应。形式化地，$\lfloor A\to B\rfloor=\lfloor A\rfloor\to\lfloor B\rfloor$、$\lfloor A\land B\rfloor=\lfloor A\rfloor\times\lfloor B\rfloor$、$\lfloor A\lor B\rfloor=\lfloor A\rfloor+\lfloor B\rfloor$，于是命题 $A$ 可证当且仅当类型 $A$ 可居留。
+
+**老师（追问）**：那"证明规范化"在程序一侧对应什么？请给出一个具体例子。
+
+**学生**：对应项的 $\beta$-归约。$(\to I)$ 对应 λ 抽象、$(\to E)$ 对应函数应用，于是 $(\lambda x{:}\lfloor A\rfloor.\,t)\,u\to_\beta t[u/x]$。命题 $A\to(B\to A)$ 的证明正是 $\lambda x{:}A.\,\lambda y{:}B.\,x$，它已无 redex，归约到自身，说明该证明是正规形式。
+
+**老师（拓展）**：这个对应会不会让你以为"排中律"也能照样翻译过来？
+
+**学生**：不会。对应只针对直觉主义逻辑；排中律 $A\lor\neg A$ 对应类型 $\lfloor A\rfloor+(\lfloor A\rfloor\to\bot)$，其居留项一般不存在，这正是经典与直觉主义的分界。常见误区是把"命题可证"与"经典真"混为一谈，忽略了该同构恰恰划出了直觉主义的边界。

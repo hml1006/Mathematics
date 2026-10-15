@@ -89,3 +89,17 @@ $$
 因此对 $\mu$-几乎每个 $x$，$\int_Y |f(x, y)| \, d\nu(y) < \infty$，即 $f(x, \cdot)$ 是 $\nu$-可积的。对 $f = f^+ - f^-$ 分别应用 Tonelli 定理即得结论。$\square$
 
 **应用**：Fubini-Tonelli 定理在概率论中用于计算期望的迭代（$\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X \mid Y]]$），在调和分析中用于处理卷积 $f * g$ 的积分，在偏微分方程中用于交换积分和微分算子。
+
+## 课堂问答
+
+**老师**：Tonelli 和 Fubini 到底差在哪一步？
+
+**学生**：结论：差在是否要求绝对可积。Tonelli 只要 $f\ge 0$ 可测就成立；Fubini 要求 $f\in L^1(\mu\times\nu)$，即 $\int_{X\times Y}|f|\,d(\mu\times\nu)<\infty$。两者都断言 $\int_X\int_Y f\,d\nu\,d\mu=\int_{X\times Y}f\,d(\mu\times\nu)$。
+
+**老师（追问）**：那 $\sigma$-有限是可有可无的技术条件吗？
+
+**学生**：不是。乘积测度的构造与截面可测性都依赖 $\sigma$-有限。若一处用计数测度、一处用 Lebesgue 测度，就会破裂：取 $X=Y=[0,1]$、$f=\chi_D$（$D$ 为对角线），一个累次积分为 $\infty$、另一个为 $0$，等式不成立。
+
+**老师（拓展）**：它在概率论里最直接的形式是什么？
+
+**学生**：条件期望的迭代：$\mathbb{E}[X]=\mathbb{E}\big[\mathbb{E}[X\mid\mathcal{G}]\big]$。把 $\Omega\times\Omega$ 上的积分换序，"先对 $\sigma$-代数 $\mathcal{G}$ 取条件期望、再取期望"就等于直接求期望。

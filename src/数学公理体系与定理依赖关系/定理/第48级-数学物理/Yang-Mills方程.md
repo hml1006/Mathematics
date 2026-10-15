@@ -105,3 +105,17 @@ S_{\mathrm{YM}}(A) = 8\pi^2 |k|,
 $$
 
 其中 $k = \frac{1}{8\pi^2} \int_M \mathrm{Tr}(F_A \wedge F_A)$ 是第二陈数。
+
+## 课堂问答
+
+**老师**：Yang-Mills 方程为什么是非线性的，而 Maxwell 是线性的？
+
+**学生**：结论：因为场强含 $A\wedge A$ 项。理由：$F_A=dA+A\wedge A$，作用量 $S=\int\mathrm{Tr}(F_A\wedge*F_A)$ 对 $A$ 变分时 $F_{A+t\alpha}=F_A+t\,d_A\alpha+t^2\alpha\wedge\alpha$，二次项使 Euler–Lagrange 方程 $d_A*F_A=0$ 非线性。常见误区：以为它是 $d*F=0$ 的直接推广而忽略 $d_A$ 里隐含的 $A$。
+
+**老师（追问）**：Bianchi 恒等式 $d_AF_A=0$ 为什么对任意联络都成立？
+
+**学生**：它是纯代数恒等式。把 $F_A=dA+A\wedge A$ 代入 $d_AF_A=dF_A+A\wedge F_A-F_A\wedge A$，用 $d^2=0$ 与 $d(A\wedge A)=dA\wedge A-A\wedge dA$ 展开，各项两两抵消为零，与运动方程无关。
+
+**老师（拓展）**：四维流形上的瞬子是怎么回事？
+
+**学生**：若 $*F_A=\pm F_A$，则 $d_A*F_A=\pm d_AF_A=0$ 自动满足 Yang-Mills。这类自对偶解叫瞬子，作用量由拓扑数决定 $S_{YM}=8\pi^2|k|$，$k$ 是第二陈数，其模空间给出 Donaldson 不变量。

@@ -113,3 +113,19 @@ $$f\in W^{k,2}_{\mathrm{loc}}\Longrightarrow u\in W^{k+2,2}_{\mathrm{loc}}\qquad
 **理论意义**：Weyl 引理确立了"弱解 = 经典解"这一现代偏微分方程的基本原则：解的正则性由方程决定，而非由解的定义假设决定。它使人们可以先用能量法（Lax–Milgram、变分法）在 Sobolev 空间取得弱解，再用正则性理论把解提升为经典解，从而把"存在性"与"光滑性"分成两个独立步骤。
 
 **应用领域**：在几何分析中，它是椭圆方程 Schauder/Calderón–Zygmund 自举的出发点，用于调和映射、极小曲面与 Yamabe 问题的正则性；在辛拓扑中，Gromov 可去奇点定理与 Gromov 紧性定理依赖系统版本的 Weyl 引理把伪全纯方程的连续弱解提升为光滑解，这是 Floer 同调中模空间光滑结构与紧化的基础；在复分析中，$\Delta u=0$ 弱意义下的正则性给出 Weyl 对"弱调和函数"的原始定理。
+
+## 课堂问答
+
+**老师**：Weyl 引理为何被称为"弱解不弱"？
+
+**学生**：因为它说解的正则性由方程而非解的定义假设决定。对散度型一致椭圆算子 $Lu=\partial_i(a^{ij}\partial_ju)+b^i\partial_iu+cu$（$\lambda|\xi|^2\le a^{ij}\xi_i\xi_j\le\Lambda|\xi|^2$）的弱解 $u\in W^{1,2}_{loc}$：若 $f\in W^{k,2}_{loc}$ 则 $u\in W^{k+2,2}_{loc}$；特别地 $f\in C^\infty$ 且系数光滑则 $u\in C^\infty$。原文推论：$\Delta u=0$ 的分布解几乎处处等于光滑调和函数。常见误区是以为"弱解"意味着解本身粗糙——实际上它只是定义宽松。
+
+**老师（追问）**：证明的两个步骤是什么？
+
+**学生**：一是差商法处理常系数模型 $-\Delta u=f$。取测试函数 $\varphi=-D_i^{-h}(\eta^2D_i^hu)$，用离散分部求和把差商搬到测试函数上，得对一切小 $|h|$ 一致估计
+$$\int\eta^2|D_i^h\nabla u|^2\le C\bigl(\|f\|_{L^2}^2+\|u\|_{W^{1,2}}^2\bigr),$$
+差商一致有界即得 $u\in W^{2,2}_{loc}$。二是冻结系数过渡到变系数：$L_0u=f-(L-L_0)u$，$|a^{ij}(x)-a^{ij}(x_0)|\le\varepsilon$ 使其最高阶项可被"小量吸收"。最后自举 $+$ Sobolev 嵌入 $W^{k,2}_{loc}\hookrightarrow C^m_{loc}$ 到 $C^\infty$。
+
+**老师（拓展）**：它在辛拓扑中的用途是什么？
+
+**学生**：用在 Gromov 可去奇点定理的最后一步。坐标化后的伪全纯方程是系统 $\partial_{\bar z}f+q(f)\partial_zf=0$，其线性部分是 Cauchy–Riemann 算子，一致椭圆（旋转成 $-\Delta$ 型）。由系统版 Weyl 引理把 "$f$ 连续 $+$ $f\in W^{1,2}$" 提升到 $W^{2,2}_{loc}$，再配合 Schauder 估计自举到 $C^\infty$，从而完成"光滑延拓"的证明；Gromov 紧性中气泡在爆破点附近的正则性也依赖此。

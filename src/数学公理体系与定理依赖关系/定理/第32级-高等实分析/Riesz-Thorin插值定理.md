@@ -136,3 +136,17 @@ $$
 对 $g$ 取上确界得 $\|T f\|_{q_\theta} \le M_0^{1-\theta} M_1^\theta \|f\|_{p_\theta}$。$\square$
 
 **应用——Hausdorff-Young 不等式**：Fourier 变换 $\mathcal{F}: L^p(\mathbb{R}^n) \to L^{p'}(\mathbb{R}^n)$ 有界，其中 $1 \le p \le 2$，$1/p + 1/p' = 1$。这由 $\mathcal{F}: L^1 \to L^\infty$ 有界和 $\mathcal{F}: L^2 \to L^2$ 有界通过 Riesz-Thorin 插值得到。
+
+## 课堂问答
+
+**老师**：Riesz-Thorin 给出的算子范数界为什么带一个几何平均的形式？
+
+**学生**：结论：$M_\theta\le M_0^{1-\theta}M_1^\theta$，指数按 $1/p_\theta=\frac{1-\theta}{p_0}+\frac{\theta}{p_1}$ 做调和插值。这个几何平均正是三线定理中解析函数沿带形凸性的直接产物。
+
+**老师（追问）**：证明里的解析函数 $F(z)$ 是怎么搭起来的？
+
+**学生**：先对偶化 $\|Tf\|_q=\sup_{\|g\|_{q'}=1}|\int(Tf)g\,d\nu|$，再把 $f,g$ 参数化为 $f_z(x)=|f|^{a(z)}\operatorname{sgn}f$、$g_z=|g|^{b(z)}\operatorname{sgn}g$（$a,b$ 关于 $z$ 线性），令 $F(z)=\int(Tf_z)g_z\,d\nu$。取 $a,b$ 使 $z=0$ 对应端点 $p_0,q_0$、$z=1$ 对应端点 $p_1,q_1$，则 $F$ 在带形上解析有界。
+
+**老师（拓展）**：用它怎么得到 Hausdorff-Young 不等式？
+
+**学生**：Fourier 变换有 $\|\hat f\|_\infty\le\|f\|_1$（$L^1\to L^\infty$）与 Plancherel $\|\hat f\|_2=\|f\|_2$。对这两端做 Riesz-Thorin，即得 $\|\hat f\|_{p'}\le\|f\|_p$，其中 $1\le p\le2$、$1/p+1/p'=1$。

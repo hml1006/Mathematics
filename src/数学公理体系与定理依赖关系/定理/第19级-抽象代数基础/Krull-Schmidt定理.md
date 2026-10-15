@@ -59,6 +59,20 @@ M_2\oplus\cdots\oplus M_r\cong\bigoplus_{k\ne j}N_k .
 $$
 对因子个数 $r$ 作归纳（$r=1$ 时 $M$ 不可分解，故 $s=1$），即得 $r-1=s-1$ 与因子的一一同构对应。补上 $M_1\cong N_j$ 即得 $r=s$ 与所求置换 $\sigma$。证毕。
 
+## 课堂问答
+
+**老师**：把有限长度模 $M$ 分解成不可分解因子的直和，凭什么保证"零件清单"到同构唯一？
+
+**学生**：结论：若 $M=M_1\oplus\cdots\oplus M_r=N_1\oplus\cdots\oplus N_s$ 且各因子非零不可分解，则 $r=s$，且存在置换 $\sigma$ 使 $M_i\cong N_{\sigma(i)}$。关键是有限长度让 Fitting 分解 $M=\ker f^n\oplus\mathrm{im}\,f^n$ 成立，从而每个不可分解因子的自同态环是局部环，再用"诸元之和为单位则至少一项为单位"造出某个 $M_1\to N_j$ 的同构，最后消去归纳。
+
+**老师（追问）**：为什么"不可分解"不够，还必须有限长度？
+
+**学生**：因为 Fitting 分解要用两条链的稳定：$\ker f\subseteq\ker f^2\subseteq\cdots$ 需要 Noether 性，$\mathrm{im}\,f\supseteq\mathrm{im}\,f^2\supseteq\cdots$ 需要 Artin 性；有限长度同时提供两者，并保证单射自同态保长度从而双射。反例正出在既非 Artin 又非 Noether 的模上，不要以为任意模都成立。
+
+**老师（拓展）**：得到 $M_1\cong N_j$ 后怎样收尾，这套机制在别处还出现吗？
+
+**学生**：用消去法：$M/M_1$ 同时同构于 $M_2\oplus\cdots\oplus M_r$ 与 $\bigoplus_{k\ne j}N_k$，对因子个数归纳即得。更一般地，这正是 PID 上有限生成模结构定理唯一性所依赖的同一套"局部自同态环"机制。
+
 ## 相关条目
 
 - [主理想整环上有限生成模结构定理](./主理想整环上有限生成模结构定理.md)：把有限生成模分解为循环模，其分解唯一性与 Krull–Schmidt 相互印证。

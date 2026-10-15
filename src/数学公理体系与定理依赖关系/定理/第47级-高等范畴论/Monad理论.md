@@ -109,3 +109,17 @@ $$
 - 该Monad恰好是 $U^{\mathbf{T}} \circ F^{\mathbf{T}}$。$\square$
 
 **推论**（Kleisli构造）：存在另一个极端的分解，Kleisli范畴 $\mathcal{C}_{\mathbf{T}}$ 以 $\mathcal{C}$ 的对象为对象，从 $A$ 到 $B$ 的态射是 $\mathcal{C}$ 中的态射 $A \to T(B)$。
+
+## 课堂问答
+
+**老师**：为什么任意伴随 $F\dashv G$ 的复合 $T=G\circ F$ 自动成为 Monad？
+
+**学生**：结论：单位取 $\eta$，乘法取 $\mu=G\varepsilon F$ 即可。理由：结合律来自 $\varepsilon$ 的自然性，单位律正是三角恒等式 $\varepsilon F\circ F\eta=\mathrm{id}_F$ 经 $G$ 作用的结果。常见误区：只写下 $T^2\to T$ 的形状，却忽略 $\mu$ 真正被 $\varepsilon$ 的"里射"控制。
+
+**老师（追问）**：给定 Monad，为什么会有两种相反的分解？
+
+**学生**：Kleisli 范畴最自由（态射是 $A\to T(B)$），Eilenberg–Moore 范畴最严格（对象是满足 $a\circ\eta_A=\mathrm{id}$、$a\circ T(a)=a\circ\mu_A$ 的代数）。两者是伴随分解的两个极端，EM 范畴还是使分解通过遗忘函子 $U^{\mathbf T}$ 的泛解。
+
+**老师（拓展）**：幂集 Monad 的代数长什么样？
+
+**学生**：$\mathbf{Set}$ 上 $\mathcal P$ 的代数恰是完备格配上并运算。$\eta_A$ 把 $a$ 映成 $\{a\}$、$\mu$ 取并，代数条件就是"并保持上确界"，这说明 Monad 把"自由—遗忘"的代数结构统一了起来。

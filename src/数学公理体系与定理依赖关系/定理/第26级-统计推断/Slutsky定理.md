@@ -76,6 +76,20 @@ $$\varphi_{(X_n,Y_n)}(s,t)=\mathbb E\big[e^{isX_n+itY_n}\big]=\mathbb E\big[e^{i
 
 即得 $(X_n,Y_n)\xrightarrow{d}(X,c)$（$\mathbb E[e^{isX_n}e^{it(Y_n-c)}]-\mathbb E[e^{isX_n}]\to0$ 的论证与引理相同）。
 
+## 课堂问答
+
+**老师**：Slutsky 定理在算什么？它为什么要求"其中一个的极限是常数"？
+
+**学生**：结论：若 $X_n\xrightarrow{d}X$、$Y_n\xrightarrow{p}c$（$c$ 为常数），则 $X_n+Y_n\xrightarrow{d}X+c$、$X_nY_n\xrightarrow{d}cX$、且 $c\neq0$ 时 $X_n/Y_n\xrightarrow{d}X/c$。要求极限为常数，是为了让 $(X_n,Y_n)\xrightarrow{d}(X,c)$ 的联合收敛自动成立，从而能套用连续映射。
+
+**老师（追问）**：关键引理"$X_n\xrightarrow{d}X$ 且 $W_n\xrightarrow{p}0\Rightarrow X_n+W_n\xrightarrow{d}X$"怎么证？和、积、商如何归约到它？
+
+**学生**：用 Lévy 连续性定理看特征函数，$|\varphi_{X_n+W_n}(t)-\varphi_{X_n}(t)|\leq E\min(|t||W_n|,2)\leq|t|\delta+2P(|W_n|>\delta)$，先令 $n\to\infty$ 再令 $\delta\downarrow0$ 即为零。和：$X_n+Y_n=X_n+(Y_n-c)+c$；积：$X_nY_n=cX_n+X_n(Y_n-c)$，其中 $X_n(Y_n-c)\xrightarrow{p}0$（用 $\{X_n\}$ 的紧性）；商：取截断 $Z_n=\frac1{Y_n}\mathbf 1_{\{|Y_n|>\delta\}}$，把随机倒数换成依概率收敛到 $1/c$ 的量。
+
+**老师（拓展）**：若 $X_n\xrightarrow{d}X$、$Y_n\xrightarrow{d}Y$ 而 $Y$ 非常数，$X_n+Y_n$ 还依分布收敛到 $X+Y$ 吗？
+
+**学生**：一般不成立！缺的是联合收敛，$X_n$ 与 $Y_n$ 的依赖结构会破坏和的极限。反例：取 $X_n=Z$、$Y_n=-Z$（$Z\sim N(0,1)$），两者分别依分布收敛到 $N(0,1)$ 与 $-N(0,1)$，但 $X_n+Y_n=0$ 却"应当"收敛到 $N(0,2)$，矛盾。Slutsky 定理之所以在统计中频繁使用，正因为分母（如 $S/\sigma$）恰好依概率收敛到常数。
+
 ## 相关条目
 
 - [Delta方法](./Delta方法.md)：其证明把 $\sqrt n(g(\hat\theta)-g(\theta))$ 的随机斜率换成常数，正是 Slutsky 定理的应用。

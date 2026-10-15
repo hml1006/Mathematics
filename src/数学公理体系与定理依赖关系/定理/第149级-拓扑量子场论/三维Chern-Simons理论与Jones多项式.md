@@ -41,3 +41,33 @@ Witten 论证分：(1) 用路径积分反推 skein 关系——考虑 crossing �
 ## 五、应用与意义
 
 Witten 的这项发现在 3-流形不变量（Turaev–Viro、RT）与纽结理论间架桥，把 Jones 多项式、量子 $6j$-符号与 Chern–Simons TQFT 统一，并催生 TQFT 与"几何拓扑—量子场论"深入交互；其产物（skein、模范畴）至今是低维拓扑与量子群研究的动力。
+
+## 课堂问答
+
+**老师**：Jones 多项式原本是纯组合的，Witten 怎么给了它几何含义？
+
+**学生**：结论：Jones 多项式就是 Chern–Simons 理论中沿纽结的 Wilson 圈期望值。作用量
+
+$$
+S_{\mathrm{CS}}=\frac{k}{4\pi}\int_M\operatorname{Tr}\!\Big(A\wedge dA+\tfrac23 A\wedge A\wedge A\Big)
+$$
+
+只在 $k\in\mathbb Z$ 时良定，配分函数 $Z_{\mathrm{CS}}(M)=\int_{\mathcal A/\mathcal G}\mathcal DA\,e^{iS_{\mathrm{CS}}}$ 给出三维 TQFT；对 $G=SU(2)$ 基本表示，
+
+$$
+\langle W_R(L)\rangle=V_L\big(e^{2\pi i/(k+2)}\big).
+$$
+
+**老师（追问）**：路径积分本身不严格，凭什么信任这条等式？skein 关系从哪里来？
+
+**学生**：可信是因为从路径积分能直接推出 skein 关系
+
+$$
+t^{-1}\langle L_+\rangle-t\langle L_-\rangle=(t^{-1/2}-t^{1/2})\langle L_0\rangle,\qquad t=e^{2\pi i/(k+2)},
+$$
+
+配合归一化 $V_{\text{unknot}}=1$ 恰好唯一确定 Jones 多项式。再把这一步交给 Reshetikhin–Turaev 用 $U_q(\mathfrak{sl}_2)$ 的 R-矩阵严格实现，路径积分就化为可证明的代数定理。常见误区：以为 $t=e^{2\pi i/(k+2)}$ 对任意群都成立——不同规范群与表示对应不同的 $t$-level 换算。
+
+**老师（拓展）**：这套想法能推广到什么程度？
+
+**学生**：推广到任意紧 Lie 群与任意表示，得到一整个量子不变量族；量子 $6j$-符号给出可计算形式，并催生了 Turaev–Viro 与模张量范畴理论，把纽结理论、量子群与低维拓扑统一在同一框架里。

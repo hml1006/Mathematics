@@ -71,3 +71,17 @@ $$A\xrightarrow{\ i'\ }B'\xrightarrow{\ p\ }B,$$
 2. **Joyal 模型结构**：内 anodyne 态射是 Joyal 模型结构上由内纤维化生成的余纤维化类；填单引理是"拟范畴 = fibrant 对象"以及稳定 $\infty$-范畴、$\infty$-topos 理论的基本工具，也是 $\infty$-Yoneda 引理与（余）极限存在性判据的前提。
 
 3. **推广**：同一提升框架给出"内纤维化 = 相对所有内角右提升"的刻画，并可推广到双单纯集合上的内 anodyne/内纤维化、$(\infty,n)$-范畴的缩放单形（scaled simplicial set）、以及运算 $\infty$-范畴（$\infty$-operad）中的填单结构。
+
+## 课堂问答
+
+**老师**：填单引理的"代数化"体现在哪里？它比"内角都能填"多说了什么？
+
+**学生**：结论：它把填充性质改写成提升性质，并识别出生成它的饱和类。定理断言三命题等价：(1) $C$ 是拟范畴（每个 $\Lambda^n_k\to C$、$0<k<n$ 可延拓到 $\Delta^n$）；(2) $C$ 对所有内 anodyne 态射有左提升性质；(3) 带参数形式：$\Lambda^n_k\times K\to C$ 可延拓为 $\Delta^n\times K\to C$。内 anodyne 态射就是内角包含在推出、复合、收缩、小余极限下生成的饱和类 $\mathcal{A}$。常见误区是以为 (2) 是额外假设，其实与 (1) 等价。
+
+**老师（追问）**：为什么饱和类等于"相对所有内纤维化普遍左提升"的态射类？反方向怎么证？
+
+**学生**：用**小对象论证**。若 $i:A\to B$ 相对所有内纤维化普遍左提升，把 $i$ 分解为 $A\xrightarrow{i'}B'\xrightarrow{p}B$，$i'\in\mathcal{A}$、$p$ 为内纤维化；由假设提升给出 $r:B\to B'$ 使 $pr=\mathrm{id}_B$、$ri=\mathrm{id}_A$（至同伦），即 $i$ 是 $i'$ 的收缩，而 $\mathcal{A}$ 对收缩封闭，故 $i\in\mathcal{A}$。反方向：生成元相对内纤维化有左提升，且该性质沿推出、复合、收缩、小余极限保持。由此 $\mathcal{A}$ 恰是全体普遍左提升态射。
+
+**老师（拓展）**：复合与结合同伦具体由哪些单形给出？
+
+**学生**：$n=2,k=1$：可复合态射对 $f:x\to y$、$g:y\to z$ 给出 $\Lambda^2_1\to C$，填充为 $\Delta^2\to C$ 后其第 $1$ 条边就是 $g\circ f$。结合律至同伦：对 $x\xrightarrow{f}y\xrightarrow{g}z\xrightarrow{h}w$，$\Lambda^3_1$ 与 $\Lambda^3_2$ 的填充给出 $(hg)f$ 与 $h(gf)$ 之间的两个 $2$-胞腔，再用内角填充证这两个胞腔本身同伦。这就是"结合律不是等式而是同伦"的精确来源。

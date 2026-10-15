@@ -115,6 +115,24 @@ $$
 
 **注**：符号约定（$\Delta$ 是否带负号、Ricci 的正负号）会影响各块的符号，但"平方项 $+$ 曲率项"的结构不变；本仓库统一采用上述约定。
 
+## 课堂问答
+
+**老师**：请写出 Bochner 公式（函数版）并指出其中恒非负的一项。
+
+**学生**：结论先说：对光滑函数 $f$，
+$$\frac12\Delta|\nabla f|^2=|\mathrm{Hess}\,f|^2+\langle\nabla f,\nabla\Delta f\rangle+\mathrm{Ric}(\nabla f,\nabla f),$$
+其中 $|\mathrm{Hess}\,f|^2\ge0$ 恒非负。理由是在满足 $\nabla_i e_j=0$ 的测地标架里展开 $\sum_{i,j}(\nabla_i\nabla_j f)^2$ 恰得 Hessian 的范数平方；交换三阶协变导数次序时用 Ricci 恒等式 $(\nabla_i\nabla_j-\nabla_j\nabla_i)\nabla_k f=R_{ijkl}\nabla_l f$，把 $R_{ijil}$ 收缩成 $\mathrm{Ric}(\nabla f,\nabla f)$。常见误区是忘记标架条件，把二阶导当成普通偏导来算。
+
+**老师（追问）**：若 $M$ 紧致、$\mathrm{Ric}>0$ 而 $f$ 调和，请由此推出 $f$ 只能是常数。
+
+**学生**：$\Delta f=0$ 时中间项 $\langle\nabla f,\nabla\Delta f\rangle=0$，在 $M$ 上对 $\frac12\Delta|\nabla f|^2$ 积分：
+$$0=\int_M\frac12\Delta|\nabla f|^2=\int_M\big(|\mathrm{Hess}\,f|^2+\mathrm{Ric}(\nabla f,\nabla f)\big).$$
+两项都非负、第二项在 $\nabla f\ne0$ 时严格正，故只能 $\nabla f\equiv0$，$f$ 为常数。对调和 $1$-形式同理得 $\alpha=0$，于是 $b_1(M)=0$。
+
+**老师（拓展）**：这套机制如何推广到 $p$-形式与旋量？
+
+**学生**：把 Hessian 换成 $\nabla\alpha$、把 $\mathrm{Ric}$ 换成曲率端同态 $\mathcal R_p$，即得 Weitzenböck 公式 $\Delta_H\alpha=\nabla^*\nabla\alpha+\mathcal R_p(\alpha)$；旋量版是 Lichnerowicz 公式 $D^2=\nabla^*\nabla+\frac14\mathrm{Scal}$。结构永远是"平方项加曲率项"，只要曲率项正定，积分法就把调和对象挤没，这正是 Hodge 消没与指标定理的分析核心。
+
 ## 相关条目
 
 - [Bonnet-Myers定理](./Bonnet-Myers定理.md)：第二变分与 Bochner 型计算共同给出正 Ricci 曲率下的直径与拓扑限制。

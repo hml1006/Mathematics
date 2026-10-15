@@ -33,3 +33,27 @@ $\mathcal O$ 共形维数 $\Delta=\frac d2+\sqrt{\frac{d^2}{4}+m^2R^2}$；半经
 ## 五、应用与意义
 
 GKPW 使 AdS/CFT 成为可计算全息框架：提供弦论态到 CFT 关联的显式对应，支撑热力学/黑洞、重态修正与纠缠熵研究，并用解析工具（Witten diagram）连同相变方程直达强耦合规范理论。它是现代全息/共形场论必遵的核心。
+
+## 课堂问答
+
+**老师**：GKPW 公式到底断言了 CFT 的什么量与 AdS 的什么量相等？
+
+**学生**：结论：CFT 的生成泛函等于带边界条件的 AdS 配分函数。把 AdS 场 $\phi$ 的边界值 $\phi_0$ 当作对偶 CFT 算子 $\mathcal O$ 的源：
+
+$$
+\Big\langle \exp\Big(\int_{\partial}\phi_0\,\mathcal O\Big)\Big\rangle_{\mathrm{CFT}}=Z_{\mathrm{AdS}}[\phi_0]=\int_{\phi|_{\partial}=\phi_0}\mathcal D\phi\,e^{-S_{\mathrm{AdS}}[\phi]} .
+$$
+
+**老师（追问）**：边界值怎么会"变成"源？共形维数 $\Delta$ 又是怎么定出来的？
+
+**学生**：看近边渐近展开 $\phi(z,x)\sim z^{d-\Delta}\phi_0(x)+z^\Delta\phi_1(x)$，其中 $\phi_0$ 是不衰减的边界数据、充当源的系数；要求解在 AdS 内部正则，就逼出
+
+$$
+\Delta=\frac d2+\sqrt{\frac{d^2}{4}+m^2R^2},
+$$
+
+它正是 $\mathcal O$ 的共形维数。常见误区：把 $\phi_0$ 当成可以随意取的"物理边界条件"——它必须落在允许的渐近类内，且 $\phi_0$ 对应源、$\phi_1$ 对应期望值，两者是两种量子化。
+
+**老师（拓展）**：为什么这个公式让 AdS/CFT 变得"可算"？
+
+**学生**：因为半经典下 $Z_{\mathrm{AdS}}\simeq e^{-S_{\mathrm{on-shell}}}$，只要在 AdS 里解经典运动方程，就能用 Witten 图算出 CFT 的关联函数，从而把强耦合 CFT 的计算换成弱耦合引力的树图计算，这正是全息对偶作为计算工具的威力。

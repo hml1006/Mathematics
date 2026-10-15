@@ -45,3 +45,17 @@ $$
 ## 五、应用与意义
 
 Hodge 菱形翻转是镜像效应的第一个数值例证与识别工具，广泛用于构造与检验镜像对、寻找 Calabi-Yau 反射（如光学模空间）。它把"是否互为镜像"简化为可计算的 Hodge 数核对，是镜像对称从猜想走向实用鉴别的可靠抓手。
+
+## 课堂问答
+
+**老师**：怎么用 Hodge 数判断两个 Calabi-Yau 是否互为镜像？
+
+**学生**：结论：镜像对满足 $h^{p,q}(M)=h^{n-p,q}(W)$，即 Hodge 菱形上下翻转。例：三次 Calabi-Yau 3-重 $h^{1,1}=1,h^{2,1}=101$，镜像则 $h^{1,1}=101,h^{2,1}=1$。常见误区是以为这是镜像的定义——它只是最直观的可验证"指纹"。
+
+**老师（追问）**：这个翻转在切空间层面怎么体现？
+
+**学生**：镜像映射 $\Phi:\mathcal M_{cs}(M)\to\mathcal M_{\mathrm{K\"ah}}(W)$ 是局部同构。由 Kodaira-Spencer，$T\mathcal M_{cs}(M)\cong H^{n-1,1}(M)$；而 $T\mathcal M_{\mathrm{K\"ah}}(W)\cong H^{1,1}(W)$。故切映射给出 $H^{n-1,1}(M)\cong H^{1,1}(W)$，即 $h^{n-1,1}(M)=h^{1,1}(W)$，正是翻转在中间的化身。
+
+**老师（拓展）**：高阶 Hodge 数与整体翻转如何证明？有没有更本质的来源？
+
+**学生**：由变化 Hodge 结构与周期映射 $\mathcal P:\mathcal M_{cs}\to\mathcal D/\Gamma$ 保持 Hodge 滤过，镜像映射在周期域间诱导同构并翻折整个菱形，$h^{0,0}=h^{n,n}=1$、$h^{n,0}=h^{0,n}=1$ 与 Serre 对偶 $h^{p,q}=h^{n-p,n-q}$ 固定外围。更本质上来自同调镜像对称：范畴等价 $\mathcal F(M)\simeq D^b\mathrm{Coh}(W)$ 使两者 Hochschild 同调同构，而 Hochschild 同调分别给出 $h^{p,q}$，故 $h^{p,q}(M)=h^{n-p,q}(W)$。

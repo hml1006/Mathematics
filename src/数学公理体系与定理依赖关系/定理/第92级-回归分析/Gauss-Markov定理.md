@@ -39,6 +39,21 @@ $$
 ## 五、应用与意义
 
 Gauss-Markov 定理保证了最小二乘法在线性无偏估计类中的最优性，为经典回归推断提供了理论基础。当假设被违背（如异方差、自相关）时，它自然引出加权最小二乘（WLS）与广义最小二乘（GLS）的动机——通过对数据进行线性变换恢复"同方差"条件后再套用该定理，从而保持最优性。
+
+## 课堂问答
+
+**老师**：OLS 为什么被称为 BLUE？它凭什么在无穷多个线性无偏估计里胜出？
+
+**学生**：结论是 OLS 在协方差矩阵的半正定意义下最小，即对任意线性无偏 $\tilde{\boldsymbol{\beta}}=\boldsymbol{A}\boldsymbol{Y}$ 都有 $\text{Var}(\tilde{\boldsymbol{\beta}})\ge\text{Var}(\hat{\boldsymbol{\beta}}_{\text{OLS}})$。理由是把 $\tilde{\boldsymbol{\beta}}$ 分成 OLS 分量加正交扰动：令 $\boldsymbol{D}=\boldsymbol{A}-(\boldsymbol{X}^\top\boldsymbol{X})^{-1}\boldsymbol{X}^\top$，则无偏性迫使 $\boldsymbol{A}\boldsymbol{X}=\boldsymbol{I}$，于是 $\boldsymbol{D}\boldsymbol{X}=\boldsymbol{0}$，多出的 $\boldsymbol{D}\boldsymbol{D}^\top$ 半正定，只增方差无益。常见误区是把它当成"OLS 在所有估计中最优"，其实它只在线性无偏类、且同方差、无自相关的前提下成立。
+
+**老师（追问）**：无偏性在这里起了什么作用？为什么非要 $\boldsymbol{A}\boldsymbol{X}=\boldsymbol{I}$？
+
+**学生**：因为 $\mathbb{E}[\tilde{\boldsymbol{\beta}}]=\boldsymbol{A}\boldsymbol{X}\boldsymbol{\beta}$ 要对一切 $\boldsymbol{\beta}$ 都等于 $\boldsymbol{\beta}$，只能 $\boldsymbol{A}\boldsymbol{X}=\boldsymbol{I}$。正是这个约束使 $\boldsymbol{X}^\top\boldsymbol{D}^\top=\boldsymbol{0}$，扰动项才纯属浪费。若放弃无偏，处处有偏的估计可能方差更小、MSE 更低，所以"BLUE"的 B 字不能省。
+
+**老师（拓展）**：如果同方差假设被破坏，结论怎样变化？
+
+**学生**：那时 OLS 不再是 BLUE，应转向加权最小二乘或广义最小二乘：对数据作线性变换把噪声协方差拉回 $\sigma^2\boldsymbol{I}$，再套用 Gauss-Markov。可见定理的条件恰好划出了 GLS/WLS 的适用边界。
+
 ## 相关条目
 
 - [Gauss-Markov 定理（第117级-数学建模）](../第117级-数学建模/Gauss-Markov定理.md)：与本条目为同一定理，另收录于第117级-数学建模，可交叉参考。

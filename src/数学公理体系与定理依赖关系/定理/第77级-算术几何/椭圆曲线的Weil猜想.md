@@ -45,3 +45,17 @@ $\square$
 ## 五、应用与意义
 
 椭圆曲线 Weil 猜想的完整证明标志着有限域上算术-几何桥梁的打通，是 Weil 猜想（对一般簇由 Deligne 于 1973 年证明）最重要的特训。它给出 Hasse 界 $|N_1-(q+1)|\le2\sqrt q$（密码学加解密安全性关键）、有限域上曲线的 Hash 点计数，并与单变量函数域 Riemann 假设（Ver尸）直接相关。$L$-函数与 $\alpha$ 的联系进入 BSD 猜想、极化 Hecke 与等源分类（Tate 猜想），是算术几何谱系的中枢。
+
+## 课堂问答
+
+**老师**：有限域上点数公式 $N_m=1+q^m-(\alpha^m+\bar\alpha^m)$ 是怎么来的？
+
+**学生**：核心是 Frobenius。$\operatorname{Frob}_q$ 在 Tate 模 $T_\ell(E)\cong\mathbb{Z}_\ell^2$ 上诱导线性变换 $F$，Lefschetz 不动点公式给出 $N_m=1-\operatorname{Tr}(F^m)+q^m$；设 $F$ 的特征值为 $\alpha,\bar\alpha$，则 $N_m=1+q^m-(\alpha^m+\bar\alpha^m)$。
+
+**老师（追问）**：$|\alpha|=\sqrt q$（Riemann 假设）凭什么成立？
+
+**学生**：靠对偶化射。$F$ 与其对偶 $\hat F$ 满足 $F\circ\hat F=q$（乘 $q$ 态射），且 $\hat F$ 与 $F$ 有相同特征多项式；于是若 $\alpha$ 是 $F$ 的特征值，则 $q/\alpha$ 是 $\hat F$ 的特征值即 $\bar\alpha$，得 $\alpha\bar\alpha=q$，故 $|\alpha|=\sqrt q$。
+
+**老师（拓展）**：它给出什么推论？与一般 Weil 猜想的关系如何？
+
+**学生**：直接推论是 Hasse 界 $|N_1-(q+1)|\le2\sqrt q$，以及 Zeta 函数 $Z=\frac{1-aT+qT^2}{(1-T)(1-qT)}$。误区是以为 $\alpha$ 是实数——它一般是复数。椭圆曲线情形正是 Deligne 对一般簇证明 Weil 猜想的最基础的完整样例。

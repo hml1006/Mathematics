@@ -82,3 +82,17 @@ $$\lambda(x, v) = \limsup_{t \to \infty} \frac{1}{t} \log \|D\varphi_t(x) \cdot 
 Oseledets定理同样适用于线性化系统 $v(t) = D\varphi_t(x) \cdot v_0$，只需将离散乘积替换为连续时间的发展算子。$\square$
 
 **推论**：若 $\mu$ 是遍历测度，则Lyapunov指数 $\lambda_i(x)$ 和维数 $k(x)$ 在 $\mu$-几乎处处为常数，记为 $\lambda_i$ 和 $k$。$\square$
+
+## 课堂问答
+
+**老师**：Lyapunov 指数到底刻画了什么？
+
+**学生**：结论——它量化相邻轨道的平均指数发散率：$\lambda(x,v)=\limsup_n\frac1n\log\|Df^n(x)v\|$，最大指数为正就是混沌。理由：由 Oseledets 乘法遍历定理，$\mu$-几乎处处存在滤子 $\{0\}=V_0\subsetneq\cdots\subsetneq V_k=T_xM$，当 $v\in V_i\setminus V_{i-1}$ 时极限恰为 $\lambda_i$。
+
+**老师（追问）**：指数与体积演化什么关系？
+
+**学生**：各指数之和等于 $\lim_n\frac1n\log|\det Df^n(x)|$，即体积的指数变化率；对保守（保测）系统体积守恒，故和为零——负指数必被正指数抵消。
+
+**老师（拓展）**：遍历性带来什么简化？
+
+**学生**：$\lambda_i$ 与个数 $k$ 在 $\mu$-几乎处处为常数。技术上靠 Kingman 次可加遍历定理处理 $\log\|P_nv\|$ 的次可加性，并用 Furstenberg–Kesten 定理证 $\frac1n\log\|P_n\|$ 几乎处处收敛。

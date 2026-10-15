@@ -105,6 +105,20 @@ $$\big\lvert\mathbb Eh(W_n)-\mathbb Eh(G_n)\big\rvert\leq C_kn^{-c_k}\lVert h\rV
 - **非线性泛函的普适性**：对谱多项式、线性统计量、特征值间距等泛函，替换法把普适性从高斯系综传递到一般系综。
 - **误差控制与计算**：替换法的误差界给出显式的收敛速度，可用于选择高斯近似与样本量。
 
+## 课堂问答
+
+**老师**：证明 CLT 时一次只把一个变量换成正态变量，凭什么误差可控？
+
+**学生**：因为把两和之差写成望远镜求和 $\mathbb Eh(S_n)-\mathbb Eh(N)=\sum_{k=1}^n\bigl(\mathbb Eh(S^{(k-1)})-\mathbb Eh(S^{(k)})\bigr)$，每步只换一个变量。对 $h$ 作三次 Taylor 展开，一次项因同均值、二次项因同方差而精确抵消，高斯又有 $\mathbb EY^3=0$，余项只剩三阶矩：$\bigl|\mathbb Eh(Z+X)-\mathbb Eh(Z+Y)\bigr|\le\frac{\|h^{\prime\prime\prime}\|_\infty}{2}\mathbb E|X|^3$。求和即得 Berry–Esseen 型 $O(\sum_k\mathbb E|X_{n,k}|^3)$。
+
+**老师（追问）**：三阶矩可能发散，这一步怎么补？
+
+**学生**：先截断 $\hat X_{n,k}=X_{n,k}\mathbf 1_{\{|X_{n,k}|\le\varepsilon\}}-\mathbb E[X_{n,k}\mathbf 1_{\{|X_{n,k}|\le\varepsilon\}}]$，用 Lindeberg 条件控制 $\sum_k\mathbb E|X_{n,k}-\hat X_{n,k}|\to0$，使截断和与原和在概率意义下渐近相同；再对截断变量用替换引理，其误差 $\le\|h^{\prime\prime\prime}\|_\infty\lambda_n\varepsilon$，先令 $n\to\infty$ 再令 $\varepsilon\to0$ 即得 CLT。
+
+**老师（拓展）**：它怎么推广到随机矩阵的普适性？
+
+**学生**：把每个矩阵元素 $x_{ij}$ 逐个替换为同方差高斯 $g_{ij}$，单步误差用 resolvent 展开与局部化界控制；只要前四阶矩匹配，低阶项精确抵消，累积误差为 $O(n^{-c})$，于是把高斯系综的半圆律传给一般系综。要点是 CLT 只需二阶矩匹配，半圆律需四阶匹配，阶数决定能证到的普适性强度。
+
 ## 相关条目
 
 - [四矩匹配定理](./四矩匹配定理.md)：与本方法配合，把高斯系综的普适性传给一般系综。

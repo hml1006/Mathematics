@@ -61,3 +61,17 @@ $$\Lambda(s, \chi) = \varepsilon(\chi) q^{1/2-s} \Lambda(1-s, \overline{\chi})$$
 $$\prod_{\chi} L(s, \chi) = \prod_p \prod_{\chi} \frac{1}{1 - \chi(p)p^{-s}}$$
 
 若 $\chi$ 是实特征且 $L(1, \chi) = 0$，则 $L(s, \chi)$ 在 $s=1$ 处有零点，导致乘积在 $s=1$ 处为零，但 $\prod_{\chi} L(s, \chi)$ 在 $s=1$ 处的极点阶数可计算，导出矛盾。对复特征，若 $L(1, \chi) = 0$，则 $L(1, \overline{\chi}) = 0$，零点阶数至少为 2，同样矛盾。$\square$
+
+## 课堂问答
+
+**老师**：为什么要在 $\zeta$ 上装一个特征 $\chi$？$L(s,\chi)$ 的定义与 Euler 乘积是什么？
+
+**学生**：为了用正交关系把算术级数里的素数筛出来，定义 $L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}=\prod_p(1-\chi(p)p^{-s})^{-1}\ (\operatorname{Re}s>1)$，其 Euler 乘积来自 $\chi$ 的完全积性。非主特征时有 $\sum_{n=1}^q\chi(n)=0$，部分和 $S(x)=\sum_{n\le x}\chi(n)$ 有界，经 Abel 求和可解析延拓为整函数。
+
+**老师（追问）**：为什么 $L(1,\chi)\neq0$ 是全部难点？
+
+**学生**：它是 Dirichlet 定理的命门。复特征若 $L(1,\chi)=0$ 则同时 $L(1,\bar\chi)=0$，零点阶数至少为 $2$，与 $\prod_\chi L(s,\chi)$ 在 $s=1$ 处的极点阶数矛盾；实特征需更精细的论证才能排除 $L(1,\chi)=0$。
+
+**老师（拓展）**：$L$ 函数还有哪些深刻用途？
+
+**学生**：主特征 $L(s,\chi_0)$ 在 $s=1$ 有单极点、留数为 $\prod_{p\mid q}(1-p^{-1})$；本原特征满足函数方程，把 $\Lambda(s,\chi)$ 与 $\Lambda(1-s,\bar\chi)$ 联系；类数公式把二次域类数写成 $L(1,\chi)$ 的值，GRH 则断言其非平凡零点都在 $\operatorname{Re}s=1/2$。

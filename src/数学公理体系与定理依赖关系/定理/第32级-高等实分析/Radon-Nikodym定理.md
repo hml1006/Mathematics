@@ -86,6 +86,21 @@ $$
 **推论**：若 $\nu \ll \mu$ 且 $\mu \ll \lambda$，则 $\frac{d\nu}{d\lambda} = \frac{d\nu}{d\mu} \cdot \frac{d\mu}{d\lambda}$ $\lambda$-几乎处处（链式法则）。
 
 **应用**：在概率论中，条件期望 $\mathbb{E}(X \mid \mathcal{G})$ 的存在性可由 Radon-Nikodym 定理推出：令 $\nu(A) = \int_A X \, d\mathbb{P}$，则 $\nu \ll \mathbb{P}|_{\mathcal{G}}$，其 Radon-Nikodym 导数即为条件期望。
+
+## 课堂问答
+
+**老师**：$\nu\ll\mu$ 时，那个"密度函数"到底是怎么产生的？
+
+**学生**：结论：存在 $f=\frac{d\nu}{d\mu}$ 使得 $\nu(A)=\int_A f\,d\mu$，且 $f$ 在 $\mu$-几乎处处意义下唯一。
+
+**老师（追问）**：为什么证明非要先假设 $\mu$、$\nu$ 是有限测度？
+
+**学生**：因为要用 Hilbert 空间。令 $\lambda=\mu+\nu$ 有限，在 $L^2(\lambda)$ 上定义 $\varphi(f)=\int f\,d\nu$，由 Cauchy-Schwarz 它连续，再由 Riesz 表示定理得 $g$ 使 $\int f\,d\nu=\int fg\,d\lambda$，从而推出 $g<1$ 且 $f=\frac{g}{1-g}$。$\sigma$-有限时先在有限测度块上做再拼接；若没有 $\sigma$-有限，定理可能失效。
+
+**老师（拓展）**：在概率与统计里它对应什么？
+
+**学生**：R-N 导数就是似然比 $d\mathbb{P}_\theta/d\mathbb{P}_0$；条件期望的存在性也由它保证——取 $\nu(A)=\int_A X\,d\mathbb{P}$，则 $\nu\ll\mathbb{P}|_{\mathcal{G}}$，其 R-N 导数即 $\mathbb{E}[X\mid\mathcal{G}]$。它还给出链式法则 $\frac{d\nu}{d\lambda}=\frac{d\nu}{d\mu}\cdot\frac{d\mu}{d\lambda}$。
+
 ## 相关条目
 
 - [Radon-Nikodym 定理（第98级-测度论与概率论）](../第98级-测度论与概率论/Radon-Nikodym定理.md)：与本条目为同一定理，另收录于第98级-测度论与概率论，可交叉参考。
