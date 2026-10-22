@@ -1,0 +1,4331 @@
+[
+ {
+  "level": 92,
+  "idx": 1,
+  "slug": "linear-model",
+  "file": "kp-92-1-linear-model.svg",
+  "heading": "7.1 用一堆因素的加权和去猜结果",
+  "alt": "每个解释变量乘上权重后相加、末尾附带随机误差的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 2,
+  "slug": "least-squares",
+  "file": "kp-92-2-least-squares.svg",
+  "heading": "7.2 在散点里拉一根最合适的直尺",
+  "alt": "散点与一条最小二乘直线，竖线段表示每个点到线的残差",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 3,
+  "slug": "maximum-likelihood",
+  "file": "kp-92-3-maximum-likelihood.svg",
+  "heading": "7.3 反推“最顺理成章”的参数",
+  "alt": "最大似然的思想：让已观测到的这批数据出现概率最大的参数最可信",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 4,
+  "slug": "r-squared",
+  "file": "kp-92-4-r-squared.svg",
+  "heading": "7.4 这条线比平均值聪明多少",
+  "alt": "决定系数示意：回归线相比水平平均线减少了多少竖直偏差",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 5,
+  "slug": "multicollinearity",
+  "file": "kp-92-5-multicollinearity.svg",
+  "heading": "7.5 当几个变量长得几乎一样",
+  "alt": "高度相关的解释变量让系数估计左右摇摆的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 6,
+  "slug": "heteroscedasticity",
+  "file": "kp-92-6-heteroscedasticity.svg",
+  "heading": "7.6 误差的嗓门忽大忽小",
+  "alt": "误差散布范围随横轴增大而变宽的漏斗形示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 7,
+  "slug": "autocorrelation",
+  "file": "kp-92-7-autocorrelation.svg",
+  "heading": "7.7 今天的噪声会传给明天",
+  "alt": "相邻观测的误差彼此相关的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 8,
+  "slug": "wls-gls",
+  "file": "kp-92-8-wls-gls.svg",
+  "heading": "7.8 给更可信的发言更多投票权",
+  "alt": "对误差小的观测赋予更大权重进行加权的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 9,
+  "slug": "regularization",
+  "file": "kp-92-9-regularization.svg",
+  "heading": "7.9 给系数套上一根缰绳",
+  "alt": "在损失上追加惩罚项、把系数往小里约束的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 10,
+  "slug": "nonlinear-regression",
+  "file": "kp-92-10-nonlinear-regression.svg",
+  "heading": "7.10 规律未必是直的一条",
+  "alt": "直线无法贴合而一条曲线能更好描述弯曲关系的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 11,
+  "slug": "gauss-markov",
+  "file": "kp-92-11-gauss-markov.svg",
+  "heading": "7.11 为什么偏偏要用最小二乘",
+  "alt": "在所有线性无偏估计中最小二乘方差最小的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 12,
+  "slug": "t-f-test",
+  "file": "kp-92-12-t-f-test.svg",
+  "heading": "7.12 这个系数到底靠不靠谱",
+  "alt": "面向单个系数与整体模型的两类显著性检验示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 13,
+  "slug": "anova",
+  "file": "kp-92-13-anova.svg",
+  "heading": "7.13 把总波动拆成两半",
+  "alt": "总平方和被拆成回归解释部分与残差部分的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 14,
+  "slug": "ridge",
+  "file": "kp-92-14-ridge.svg",
+  "heading": "7.14 用一点偏差换回一大截稳定",
+  "alt": "惩罚强度增大时偏差上升而方差下降的权衡示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 92,
+  "idx": 15,
+  "slug": "lasso",
+  "file": "kp-92-15-lasso.svg",
+  "heading": "7.15 自动把无关变量压成零",
+  "alt": "Lasso 把无关变量系数压成零、只留关键变量的示意",
+  "md": "src/07-应用数学/第92级-回归分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 1,
+  "slug": "stationary",
+  "file": "kp-93-1-stationary.svg",
+  "heading": "7.1 脾气稳定，才好预测",
+  "alt": "平稳性对比：上图脾气稳定的序列，下图均值持续上移的非平稳序列",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 2,
+  "slug": "acf",
+  "file": "kp-93-2-acf.svg",
+  "heading": "7.2 今天和几天前的自己有多像",
+  "alt": "自相关示意：相关系数随滞后天数逐格下降并左右摆动",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 3,
+  "slug": "pacf",
+  "file": "kp-93-3-pacf.svg",
+  "heading": "7.3 去掉中间人，只剩直接关系",
+  "alt": "偏自相关示意：剔除中间时刻影响后，只剩两端的直接相关",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 4,
+  "slug": "white-noise",
+  "file": "kp-93-4-white-noise.svg",
+  "heading": "7.4 没有记忆的纯粹随机",
+  "alt": "白噪声示意：围绕零均值上下跳动、前后互不相关的随机序列",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 5,
+  "slug": "ar",
+  "file": "kp-93-5-ar.svg",
+  "heading": "7.5 用过去的值推今天",
+  "alt": "自回归示意：今天的值由过去若干时刻的值加权递推得到",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 6,
+  "slug": "ma",
+  "file": "kp-93-6-ma.svg",
+  "heading": "7.6 用过去的意外推今天",
+  "alt": "滑动平均示意：今天的值由最近几期的随机冲击加权叠加而成",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 7,
+  "slug": "arma",
+  "file": "kp-93-7-arma.svg",
+  "heading": "7.7 两股记忆一起上",
+  "alt": "自回归滑动平均示意：数值记忆与冲击记忆两路合流决定今天",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 8,
+  "slug": "arima",
+  "file": "kp-93-8-arima.svg",
+  "heading": "7.8 先把趋势拧掉再建模",
+  "alt": "差分示意：对带趋势的序列做差分后，坡度被抹平为平稳波动",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 9,
+  "slug": "sarima",
+  "file": "kp-93-9-sarima.svg",
+  "heading": "7.9 把\"去年同期\"也记进来",
+  "alt": "季节示意：序列在长期走势之上叠加一层按固定周期重复的节拍",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 10,
+  "slug": "unit-root-adf",
+  "file": "kp-93-10-unit-root-adf.svg",
+  "heading": "7.10 判断该不该差分",
+  "alt": "单位根检验示意：随机趋势与平稳趋势对比，检验判断是否需要差分",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 11,
+  "slug": "box-jenkins",
+  "file": "kp-93-11-box-jenkins.svg",
+  "heading": "7.11 识别、估计、诊断、预测四步走",
+  "alt": "Box-Jenkins 流程示意：识别、估计、诊断、预测四个环节循环推进",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 12,
+  "slug": "exponential-smoothing",
+  "file": "kp-93-12-exponential-smoothing.svg",
+  "heading": "7.12 用新数据轻轻修正老预测",
+  "alt": "指数平滑示意：预测线随新数据逐点轻轻修正，平滑地追随趋势",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 13,
+  "slug": "kalman",
+  "file": "kp-93-13-kalman.svg",
+  "heading": "7.13 边收数据边更新判断",
+  "alt": "Kalman 滤波示意：预测与校正两步循环，估计随新观测逐步逼近真值",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 14,
+  "slug": "garch",
+  "file": "kp-93-14-garch.svg",
+  "heading": "7.14 波动本身也有记忆",
+  "alt": "GARCH 示意：大波动与小波动成簇出现，波动强度本身也在自回归",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 15,
+  "slug": "arma-stationarity",
+  "file": "kp-93-15-arma-stationarity.svg",
+  "heading": "7.15 ARMA平稳性条件",
+  "alt": "平稳性条件示意：根落在单位圆外时序列收敛，落在圆内时发散",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 16,
+  "slug": "yule-walker",
+  "file": "kp-93-16-yule-walker.svg",
+  "heading": "7.16 Yule-Walker方程",
+  "alt": "Yule-Walker 示意：把自相关序列代入线性方程组反解出自回归参数",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 17,
+  "slug": "wold-decomposition",
+  "file": "kp-93-17-wold-decomposition.svg",
+  "heading": "7.17 Wold分解定理",
+  "alt": "Wold 分解示意：平稳序列拆成白噪声加权累加与确定性成分两部分",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 18,
+  "slug": "box-jenkins-forecast",
+  "file": "kp-93-18-box-jenkins-forecast.svg",
+  "heading": "7.18 一步预测公式",
+  "alt": "一步预测示意：把随机项的期望取零，用模型的确定性部分外推下一格",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 93,
+  "idx": 19,
+  "slug": "kalman-recursion",
+  "file": "kp-93-19-kalman-recursion.svg",
+  "heading": "7.19 Kalman滤波递推公式",
+  "alt": "Kalman 递推示意：预测步与校正步循环，卡尔曼增益自动分配信任权重",
+  "md": "src/07-应用数学/第93级-时间序列分析.md"
+ },
+ {
+  "level": 94,
+  "idx": 1,
+  "slug": "basic-idea",
+  "file": "kp-94-1-basic-idea.svg",
+  "heading": "7.1 不猜分布，只排名次",
+  "alt": "非参数统计示意：不分出身、只按名次比较两组数据",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 2,
+  "slug": "sign-test",
+  "file": "kp-94-2-sign-test.svg",
+  "heading": "7.2 打个正负号就够了",
+  "alt": "符号检验示意：只记下每个样本变好还是变差",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 3,
+  "slug": "wilcoxon-signed-rank",
+  "file": "kp-94-3-wilcoxon-signed-rank.svg",
+  "heading": "7.3 名次也带上大小",
+  "alt": "符号秩检验示意：按变化大小排名次并带上正负号",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 4,
+  "slug": "mann-whitney-u",
+  "file": "kp-94-4-mann-whitney-u.svg",
+  "heading": "7.4 两组混排看谁靠前",
+  "alt": "两样本秩检验示意：两组混排后比较名次先后",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 5,
+  "slug": "kruskal-wallis",
+  "file": "kp-94-5-kruskal-wallis.svg",
+  "heading": "7.5 多组一起比",
+  "alt": "多组秩检验示意：各组平均名次之间的差异",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 6,
+  "slug": "friedman-test",
+  "file": "kp-94-6-friedman-test.svg",
+  "heading": "7.6 同一批人反复测",
+  "alt": "区组秩检验示意：每轮内部先排名次再汇总",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 7,
+  "slug": "ks-test",
+  "file": "kp-94-7-ks-test.svg",
+  "heading": "7.7 看整条曲线的差距",
+  "alt": "分布比较示意：经验分布与目标分布之间的最大竖直距离",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 8,
+  "slug": "cramer-von-mises",
+  "file": "kp-94-8-cramer-von-mises.svg",
+  "heading": "7.8 把差距攒起来",
+  "alt": "平方偏差示意：把曲线上各处的差距累积起来",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 9,
+  "slug": "rank-correlation",
+  "file": "kp-94-9-rank-correlation.svg",
+  "heading": "7.9 名次的关联度",
+  "alt": "秩相关示意：两个变量换成名次后同向排列",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 10,
+  "slug": "kernel-density",
+  "file": "kp-94-10-kernel-density.svg",
+  "heading": "7.10 在每个数据点上盖个小土包",
+  "alt": "核密度示意：每个观测点上盖小土包并叠成平滑曲线",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 11,
+  "slug": "ecdf",
+  "file": "kp-94-11-ecdf.svg",
+  "heading": "7.11 一节一节长上去的台阶",
+  "alt": "经验分布示意：随数值增大而逐级抬升的阶梯曲线",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 12,
+  "slug": "brownian-bridge",
+  "file": "kp-94-12-brownian-bridge.svg",
+  "heading": "7.12 随机游走的连续版",
+  "alt": "布朗桥示意：两端固定为零的随机起伏曲线",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 13,
+  "slug": "spline-smoothing",
+  "file": "kp-94-13-spline-smoothing.svg",
+  "heading": "7.13 让曲线长成数据的形状",
+  "alt": "非参数回归示意：由局部平滑拼出的贴合曲线",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 14,
+  "slug": "bootstrap",
+  "file": "kp-94-14-bootstrap.svg",
+  "heading": "7.14 用数据自己给自己抽签",
+  "alt": "自助法示意：从原样本有放回地重抽样多次",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 15,
+  "slug": "glivenko-cantelli",
+  "file": "kp-94-15-glivenko-cantelli.svg",
+  "heading": "7.15 样本越多越像真相",
+  "alt": "一致收敛示意：样本增多时经验分布贴近真实分布",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 16,
+  "slug": "ks-asymptotic",
+  "file": "kp-94-16-ks-asymptotic.svg",
+  "heading": "7.16 最高落差有多高",
+  "alt": "渐近分布示意：统计量收敛到一种通用的极限分布",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 17,
+  "slug": "wilcoxon-asymptotic",
+  "file": "kp-94-17-wilcoxon-asymptotic.svg",
+  "heading": "7.17 名次和的钟形归宿",
+  "alt": "渐近正态示意：秩统计量标准化后趋近钟形曲线",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 18,
+  "slug": "kde-mse-bandwidth",
+  "file": "kp-94-18-kde-mse-bandwidth.svg",
+  "heading": "7.18 土包多大才合适",
+  "alt": "带宽权衡示意：偏差与方差随带宽此消彼长",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 94,
+  "idx": 19,
+  "slug": "nonparametric-regression-rate",
+  "file": "kp-94-19-nonparametric-regression-rate.svg",
+  "heading": "7.19 维度越高越难学",
+  "alt": "收敛速度示意：维数增加时所需数据迅速增多",
+  "md": "src/07-应用数学/第94级-非参数统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 1,
+  "slug": "bayesian-philosophy",
+  "file": "kp-95-1-bayesian-philosophy.svg",
+  "heading": "7.1 贝叶斯的基本哲学",
+  "alt": "先验与证据相乘得到后验",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 2,
+  "slug": "prior-distribution",
+  "file": "kp-95-2-prior-distribution.svg",
+  "heading": "7.2 先验分布",
+  "alt": "先验分布：看数据前的信念",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 3,
+  "slug": "likelihood-function",
+  "file": "kp-95-3-likelihood-function.svg",
+  "heading": "7.3 似然函数",
+  "alt": "似然函数：数据为参数投票",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 4,
+  "slug": "posterior-distribution",
+  "file": "kp-95-4-posterior-distribution.svg",
+  "heading": "7.4 后验分布",
+  "alt": "后验分布：看完数据的信念",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 5,
+  "slug": "conjugate-prior",
+  "file": "kp-95-5-conjugate-prior.svg",
+  "heading": "7.5 共轭先验",
+  "alt": "共轭先验让后验同族",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 6,
+  "slug": "bayesian-estimation",
+  "file": "kp-95-6-bayesian-estimation.svg",
+  "heading": "7.6 贝叶斯估计",
+  "alt": "后验山里挑一个代表点",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 7,
+  "slug": "credible-interval",
+  "file": "kp-95-7-credible-interval.svg",
+  "heading": "7.7 可信区间",
+  "alt": "可信区间覆盖参数的概率",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 8,
+  "slug": "bayes-factor",
+  "file": "kp-95-8-bayes-factor.svg",
+  "heading": "7.8 Bayes 因子",
+  "alt": "Bayes 因子像一架证据天平",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 9,
+  "slug": "predictive-distribution",
+  "file": "kp-95-9-predictive-distribution.svg",
+  "heading": "7.9 预测分布",
+  "alt": "预测分布把不确定性算进去",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 10,
+  "slug": "hierarchical-bayes",
+  "file": "kp-95-10-hierarchical-bayes.svg",
+  "heading": "7.10 分层贝叶斯模型",
+  "alt": "分层模型让各组互相借力",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 11,
+  "slug": "mcmc",
+  "file": "kp-95-11-mcmc.svg",
+  "heading": "7.11 马尔可夫链蒙特卡洛",
+  "alt": "MCMC 用随机游走踩出后验",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 12,
+  "slug": "metropolis-hastings",
+  "file": "kp-95-12-metropolis-hastings.svg",
+  "heading": "7.12 Metropolis-Hastings 算法",
+  "alt": "提议、接受或拒绝的随机游走",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 13,
+  "slug": "gibbs-sampling",
+  "file": "kp-95-13-gibbs-sampling.svg",
+  "heading": "7.13 Gibbs 采样",
+  "alt": "逐个变量轮流采样",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 14,
+  "slug": "bayesian-vs-frequentist",
+  "file": "kp-95-14-bayesian-vs-frequentist.svg",
+  "heading": "7.14 贝叶斯与频率学派之争",
+  "alt": "两种概率观的对照",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 15,
+  "slug": "bayes-theorem-density",
+  "file": "kp-95-15-bayes-theorem-density.svg",
+  "heading": "7.15 贝叶斯定理的密度形式",
+  "alt": "密度形式的贝叶斯公式",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 16,
+  "slug": "conjugate-prior-existence",
+  "file": "kp-95-16-conjugate-prior-existence.svg",
+  "heading": "7.16 共轭先验的存在性",
+  "alt": "指数族配得上共轭先验",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 17,
+  "slug": "doob-consistency",
+  "file": "kp-95-17-doob-consistency.svg",
+  "heading": "7.17 Doob 一致性定理",
+  "alt": "样本增多后验收敛到真值",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 18,
+  "slug": "mcmc-convergence",
+  "file": "kp-95-18-mcmc-convergence.svg",
+  "heading": "7.18 MCMC 的收敛性",
+  "alt": "马尔可夫链收敛到后验",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 95,
+  "idx": 19,
+  "slug": "bayes-factor-marginal-likelihood",
+  "file": "kp-95-19-bayes-factor-marginal-likelihood.svg",
+  "heading": "7.19 Bayes 因子的边际似然表示",
+  "alt": "边际似然之比给出 Bayes 因子",
+  "md": "src/07-应用数学/第95级-贝叶斯统计.md"
+ },
+ {
+  "level": 96,
+  "idx": 1,
+  "slug": "brownian-motion",
+  "file": "kp-96-1-brownian-motion.svg",
+  "heading": "7.1 花粉为什么会乱抖",
+  "alt": "布朗运动：连续却处处磕绊的随机路径",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 2,
+  "slug": "ito-integral",
+  "file": "kp-96-2-ito-integral.svg",
+  "heading": "7.2 面对噪声的两种求和方式",
+  "alt": "伊藤积分：只用左端点取值来累加",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 3,
+  "slug": "stratonovich-integral",
+  "file": "kp-96-3-stratonovich-integral.svg",
+  "heading": "7.3 换一种取点方式的积分",
+  "alt": "斯特拉托诺维奇积分：改取中点处的值来累加",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 4,
+  "slug": "ito-lemma",
+  "file": "kp-96-4-ito-lemma.svg",
+  "heading": "7.4 随机世界里的链式法则",
+  "alt": "伊藤引理：比普通链式法则多出一个二阶修正项",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 5,
+  "slug": "sde-definition",
+  "file": "kp-96-5-sde-definition.svg",
+  "heading": "7.5 把随机写进方程",
+  "alt": "随机微分方程：趋势项加噪声项",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 6,
+  "slug": "strong-weak-solution",
+  "file": "kp-96-6-strong-weak-solution.svg",
+  "heading": "7.6 强解与弱解：谁在事先定好",
+  "alt": "强解与弱解：噪声是否事先给定",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 7,
+  "slug": "existence-uniqueness",
+  "file": "kp-96-7-existence-uniqueness.svg",
+  "heading": "7.7 方程一定有解吗",
+  "alt": "解的存在唯一性：温和系数保证唯一解",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 8,
+  "slug": "linear-sde",
+  "file": "kp-96-8-linear-sde.svg",
+  "heading": "7.8 能写出公式的一类方程",
+  "alt": "线性随机微分方程：系数是状态的线性函数",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 9,
+  "slug": "geometric-brownian-motion",
+  "file": "kp-96-9-geometric-brownian-motion.svg",
+  "heading": "7.9 股价为什么不跌成负数",
+  "alt": "几何布朗运动：价格按百分比随机涨跌且始终为正",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 10,
+  "slug": "ornstein-uhlenbeck",
+  "file": "kp-96-10-ornstein-uhlenbeck.svg",
+  "heading": "7.10 被橡皮筋拉回的过程",
+  "alt": "OU 过程：随机路径被持续拉向中心值",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 11,
+  "slug": "diffusion-process",
+  "file": "kp-96-11-diffusion-process.svg",
+  "heading": "7.11 连续乱走的统称",
+  "alt": "扩散过程：被小团随机扰动推动的连续运动",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 12,
+  "slug": "fokker-planck",
+  "file": "kp-96-12-fokker-planck.svg",
+  "heading": "7.12 看整体分布的方程",
+  "alt": "福克-普朗克方程：概率分布随时间的流动与扩散",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 13,
+  "slug": "girsanov-theorem",
+  "file": "kp-96-13-girsanov-theorem.svg",
+  "heading": "7.13 换一副公平的眼镜",
+  "alt": "吉萨诺夫定理：换一种概率尺度改变漂移",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 14,
+  "slug": "stochastic-control",
+  "file": "kp-96-14-stochastic-control.svg",
+  "heading": "7.14 随机世界里怎么做最优决策",
+  "alt": "随机最优控制：在系统随机的条件下做最优决策",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 15,
+  "slug": "sde-finance",
+  "file": "kp-96-15-sde-finance.svg",
+  "heading": "7.15 从花粉到华尔街",
+  "alt": "SDE 在金融中的应用：从花粉运动到期权定价",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 16,
+  "slug": "ito-lemma-theorem",
+  "file": "kp-96-16-ito-lemma-theorem.svg",
+  "heading": "7.16 伊藤引理到底说了什么",
+  "alt": "伊藤引理定理：多出的二阶修正项",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 17,
+  "slug": "existence-uniqueness-theorem",
+  "file": "kp-96-17-existence-uniqueness-theorem.svg",
+  "heading": "7.17 存在唯一性定理的用处",
+  "alt": "存在唯一性定理：温和系数保证强解存在且唯一",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 18,
+  "slug": "girsanov-theorem-statement",
+  "file": "kp-96-18-girsanov-theorem-statement.svg",
+  "heading": "7.18 吉萨诺夫定理的表述",
+  "alt": "吉萨诺夫定理：用指数鞅密度重设概率",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 19,
+  "slug": "feynman-kac",
+  "file": "kp-96-19-feynman-kac.svg",
+  "heading": "7.19 连接偏微分方程与随机方程的桥",
+  "alt": "费曼-卡茨公式：把偏微分方程的解写成随机期望",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 96,
+  "idx": 20,
+  "slug": "fokker-planck-derivation",
+  "file": "kp-96-20-fokker-planck-derivation.svg",
+  "heading": "7.20 福克-普朗克方程的来历",
+  "alt": "福克-普朗克方程推导：由伊藤引理与分部积分得到",
+  "md": "src/07-应用数学/第96级-随机微分方程.md"
+ },
+ {
+  "level": 97,
+  "idx": 1,
+  "slug": "stochastic-process",
+  "file": "kp-97-1-stochastic-process.svg",
+  "heading": "7.1 随机过程：给“随机”装上时间轴",
+  "alt": "随机过程示意：一条随时间上下波动的样本路径",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 2,
+  "slug": "continuous-martingale",
+  "file": "kp-97-2-continuous-martingale.svg",
+  "heading": "7.2 连续鞅：时间连续版的公平赌局",
+  "alt": "连续鞅示意：连续的随机曲线，任意时刻往后看期望不变",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 3,
+  "slug": "quadratic-variation",
+  "file": "kp-97-3-quadratic-variation.svg",
+  "heading": "7.3 二次变差：随机路径专属的尺子",
+  "alt": "二次变差示意：细分越密，平方增量之和越稳定地收敛到时间长度",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 4,
+  "slug": "stochastic-integral",
+  "file": "kp-97-4-stochastic-integral.svg",
+  "heading": "7.4 随机积分的一般理论：对噪声做微积分",
+  "alt": "随机积分示意：随时间的随机增量被权重累加为总收益",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 5,
+  "slug": "semimartingale",
+  "file": "kp-97-5-semimartingale.svg",
+  "heading": "7.5 半鞅：能同时容纳漂移和抖动的对象",
+  "alt": "半鞅示意：一条平稳趋势线叠加随机抖动",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 6,
+  "slug": "doob-meyer",
+  "file": "kp-97-6-doob-meyer.svg",
+  "heading": "7.6 Doob-Meyer分解：把上鞅拆成两部分",
+  "alt": "Doob-Meyer分解示意：一条曲线拆成随机波动部分与单调下降部分",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 7,
+  "slug": "local-martingale",
+  "file": "kp-97-7-local-martingale.svg",
+  "heading": "7.7 局部鞅：先局部公平，再拼成整体",
+  "alt": "局部鞅示意：用停时把过程一段段截断，各段都保持公平",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 8,
+  "slug": "integral-representation",
+  "file": "kp-97-8-integral-representation.svg",
+  "heading": "7.8 随机积分表示定理：每个鞅都有来源",
+  "alt": "随机积分表示示意：一个目标鞅由布朗运动的加权积分重建",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 9,
+  "slug": "ito-clifford",
+  "file": "kp-97-9-ito-clifford.svg",
+  "heading": "7.9 Ito-Clifford积分：给多重随机积分立代数",
+  "alt": "Ito-Clifford积分示意：多重嵌套随机积分的对称代数结构",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 10,
+  "slug": "malliavin-calculus",
+  "file": "kp-97-10-malliavin-calculus.svg",
+  "heading": "7.10 Malliavin微积分：给随机变量找导数",
+  "alt": "Malliavin微积分示意：微扰驱动路径，观察随机变量随之变化",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 11,
+  "slug": "wiener-space",
+  "file": "kp-97-11-wiener-space.svg",
+  "heading": "7.11 Wiener空间：所有可能的随机路径住的地方",
+  "alt": "Wiener空间示意：无穷多条连续路径构成一个巨大的空间",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 12,
+  "slug": "malliavin-derivative",
+  "file": "kp-97-12-malliavin-derivative.svg",
+  "heading": "7.12 Malliavin导数：沿路径方向的灵敏程度",
+  "alt": "Malliavin导数示意：路径沿某方向扰动，目标量随之增长",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 13,
+  "slug": "skorokhod-integral",
+  "file": "kp-97-13-skorokhod-integral.svg",
+  "heading": "7.13 Skorokhod积分：不求适应，允许提前看",
+  "alt": "Skorokhod积分示意：权重可依赖全时段信息再对随机增量求和",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 14,
+  "slug": "clark-ocone",
+  "file": "kp-97-14-clark-ocone.svg",
+  "heading": "7.14 Clark-Ocone公式：把鞅表示算出来",
+  "alt": "Clark-Ocone公式示意：由条件期望给出积分表示的权重",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 15,
+  "slug": "stochastic-variation",
+  "file": "kp-97-15-stochastic-variation.svg",
+  "heading": "7.15 随机变分法：在随机世界里求极值",
+  "alt": "随机变分法示意：在众多随机路径中寻找使目标最优的一条",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 16,
+  "slug": "doob-meyer-theorem",
+  "file": "kp-97-16-doob-meyer-theorem.svg",
+  "heading": "7.16 Doob-Meyer分解定理：上鞅的唯一解剖",
+  "alt": "Doob-Meyer分解定理示意：唯一拆分为鞅与递增可料过程",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 17,
+  "slug": "martingale-representation",
+  "file": "kp-97-17-martingale-representation.svg",
+  "heading": "7.17 鞅表示定理：一种噪声撑起全部不确定",
+  "alt": "鞅表示定理示意：单一布朗噪声生成所有鞅",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 18,
+  "slug": "malliavin-chain-rule",
+  "file": "kp-97-18-malliavin-chain-rule.svg",
+  "heading": "7.18 Malliavin链式法则：复合函数的求导规则",
+  "alt": "Malliavin链式法则示意：复合函数求导分解为两层相乘",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 19,
+  "slug": "clark-ocone-theorem",
+  "file": "kp-97-19-clark-ocone-theorem.svg",
+  "heading": "7.19 Clark-Ocone定理：可计算版表示定理",
+  "alt": "Clark-Ocone定理示意：条件期望给出显式积分表示",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 97,
+  "idx": 20,
+  "slug": "skorokhod-ito",
+  "file": "kp-97-20-skorokhod-ito.svg",
+  "heading": "7.20 Skorokhod的Itô引理：更一般形式的推广",
+  "alt": "Skorokhod的Itô引理示意：非适应情形下链式展开多出修正项",
+  "md": "src/07-应用数学/第97级-随机分析.md"
+ },
+ {
+  "level": 98,
+  "idx": 1,
+  "slug": "measure-space",
+  "file": "kp-98-1-measure-space.svg",
+  "heading": "7.1 给集合先划个圈，再谈它有多大",
+  "alt": "先划出可测集合的圈，再为它们指定大小",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 2,
+  "slug": "measurable-function",
+  "file": "kp-98-2-measurable-function.svg",
+  "heading": "7.2 能被“称重”的函数才叫可测函数",
+  "alt": "函数把区间原像映回可测集合，才够格被积分",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 3,
+  "slug": "lebesgue-integral",
+  "file": "kp-98-3-lebesgue-integral.svg",
+  "heading": "7.3 横着切的积分",
+  "alt": "左图竖着切（黎曼），右图横着切（勒贝格）",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 4,
+  "slug": "lp-space",
+  "file": "kp-98-4-lp-space.svg",
+  "heading": "7.4 一起量函数“体格”的 $L^p$ 空间",
+  "alt": "按函数的大小度量，把它们分组放进不同的空间",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 5,
+  "slug": "product-measure",
+  "file": "kp-98-5-product-measure.svg",
+  "heading": "7.5 两个空间相乘，还能分开算积分",
+  "alt": "大矩形切成小格，先按行累加再按列累加，结果相同",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 6,
+  "slug": "radon-nikodym-derivative",
+  "file": "kp-98-6-radon-nikodym-derivative.svg",
+  "heading": "7.6 两把秤之间的换算密度",
+  "alt": "一个测度相对另一个测度的密度，像放大系数",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 7,
+  "slug": "conditional-expectation",
+  "file": "kp-98-7-conditional-expectation.svg",
+  "heading": "7.7 知道得更多，就重新押注：条件期望",
+  "alt": "随着已知信息增多，估计值不断更新",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 8,
+  "slug": "probability-random-variable",
+  "file": "kp-98-8-probability-random-variable.svg",
+  "heading": "7.8 概率就是总重为一的测度",
+  "alt": "事件像集合一样被称重，总和恰为一",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 9,
+  "slug": "characteristic-function",
+  "file": "kp-98-9-characteristic-function.svg",
+  "heading": "7.9 用一把复指数尺看清分布",
+  "alt": "把整个分布压缩成一条复指数曲线",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 10,
+  "slug": "wiener-process",
+  "file": "kp-98-10-wiener-process.svg",
+  "heading": "7.10 永远抖动、却处处连续：Wiener 过程",
+  "alt": "一条处处连续却处处不可微的随机轨迹",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 11,
+  "slug": "monotone-convergence",
+  "file": "kp-98-11-monotone-convergence.svg",
+  "heading": "7.11 单调上升，就能把极限搬进积分",
+  "alt": "一列函数逐级上升，积分也随之逼近极限",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 12,
+  "slug": "fatou-lemma",
+  "file": "kp-98-12-fatou-lemma.svg",
+  "heading": "7.12 差一点也是差一点：Fatou 引理",
+  "alt": "函数上下起伏，但积分的下界始终被守住",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 13,
+  "slug": "dominated-convergence",
+  "file": "kp-98-13-dominated-convergence.svg",
+  "heading": "7.13 被一个可积函数罩住，就能换极限",
+  "alt": "一列函数被同一个可积函数压住，积分与极限可安全交换",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 14,
+  "slug": "radon-nikodym-theorem",
+  "file": "kp-98-14-radon-nikodym-theorem.svg",
+  "heading": "7.14 什么时候测度真有一个密度",
+  "alt": "密度函数 h 把测度写成对另一个测度的积分",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 15,
+  "slug": "conditional-expectation-existence",
+  "file": "kp-98-15-conditional-expectation-existence.svg",
+  "heading": "7.15 信息一确定，最好的猜测就唯一",
+  "alt": "在给定信息下，最优估计存在且几乎必然唯一",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 98,
+  "idx": 16,
+  "slug": "central-limit-theorem",
+  "file": "kp-98-16-central-limit-theorem.svg",
+  "heading": "7.16 大量小随机叠加，必然靠近钟形",
+  "alt": "许多随机变量叠加后的分布逐渐变成钟形",
+  "md": "src/07-应用数学/第98级-测度论与概率论.md"
+ },
+ {
+  "level": 99,
+  "idx": 1,
+  "slug": "supervised-learning",
+  "file": "kp-99-1-supervised-learning.svg",
+  "heading": "7.1 监督学习框架",
+  "alt": "监督学习框架：输入经假设映射到输出并计算损失",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 2,
+  "slug": "empirical-risk-minimization",
+  "file": "kp-99-2-empirical-risk-minimization.svg",
+  "heading": "7.2 经验风险最小化",
+  "alt": "经验风险最小化：用样本平均损失近似真实风险并挑选最小者",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 3,
+  "slug": "overfitting-generalization",
+  "file": "kp-99-3-overfitting-generalization.svg",
+  "heading": "7.3 过拟合与泛化",
+  "alt": "过拟合与泛化：训练误差持续下降而测试误差先降后升",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 4,
+  "slug": "vc-dimension",
+  "file": "kp-99-4-vc-dimension.svg",
+  "heading": "7.4 VC 维",
+  "alt": "VC 维：假设空间能打散的最大样本点数",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 5,
+  "slug": "rademacher-complexity",
+  "file": "kp-99-5-rademacher-complexity.svg",
+  "heading": "7.5 Rademacher 复杂度",
+  "alt": "Rademacher 复杂度：模型跟随随机符号的最大能力",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 6,
+  "slug": "pac-learning",
+  "file": "kp-99-6-pac-learning.svg",
+  "heading": "7.6 PAC 学习",
+  "alt": "PAC 学习：以高概率逼近最优误差的样本量承诺",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 7,
+  "slug": "structural-risk-minimization",
+  "file": "kp-99-7-structural-risk-minimization.svg",
+  "heading": "7.7 结构风险最小化",
+  "alt": "结构风险最小化：经验风险加复杂度惩罚共同决定选择",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 8,
+  "slug": "kernel-method",
+  "file": "kp-99-8-kernel-method.svg",
+  "heading": "7.8 核方法",
+  "alt": "核方法：用核函数在内积层面完成高维映射",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 9,
+  "slug": "support-vector-machine",
+  "file": "kp-99-9-support-vector-machine.svg",
+  "heading": "7.9 支持向量机",
+  "alt": "支持向量机：最大化两类之间的分类间隔",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 10,
+  "slug": "algorithmic-stability",
+  "file": "kp-99-10-algorithmic-stability.svg",
+  "heading": "7.10 学习算法的稳定性",
+  "alt": "学习算法的稳定性：单个样本的替换对输出的影响受控",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 11,
+  "slug": "vc-generalization-bound",
+  "file": "kp-99-11-vc-generalization-bound.svg",
+  "heading": "7.11 VC 维的泛化界",
+  "alt": "VC 泛化界：经验风险加上由 VC 维与样本量决定的复杂度项",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 12,
+  "slug": "rademacher-bound",
+  "file": "kp-99-12-rademacher-bound.svg",
+  "heading": "7.12 Rademacher 复杂度的泛化界",
+  "alt": "Rademacher 泛化界：经验风险加两倍 Rademacher 复杂度",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 13,
+  "slug": "pac-fundamental-theorem",
+  "file": "kp-99-13-pac-fundamental-theorem.svg",
+  "heading": "7.13 PAC 学习的基本定理",
+  "alt": "PAC 基本定理：有限 VC 维等价于可学习",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 14,
+  "slug": "svm-generalization-bound",
+  "file": "kp-99-14-svm-generalization-bound.svg",
+  "heading": "7.14 SVM 的泛化界",
+  "alt": "SVM 泛化界：误差上界由间隔规模与样本量决定",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 99,
+  "idx": 15,
+  "slug": "stability-generalization",
+  "file": "kp-99-15-stability-generalization.svg",
+  "heading": "7.15 稳定性与泛化",
+  "alt": "稳定性与泛化：由算法稳定性直接得到收敛速度",
+  "md": "src/07-应用数学/第99级-统计学习理论.md"
+ },
+ {
+  "level": 100,
+  "idx": 1,
+  "slug": "supervised-learning",
+  "file": "kp-100-1-supervised-learning.svg",
+  "heading": "7.1 有答案的练习册",
+  "alt": "分类示意：两类样本点被一条学到的分界线分开",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 2,
+  "slug": "decision-tree-forest",
+  "file": "kp-100-2-decision-tree-forest.svg",
+  "heading": "7.2 像玩\"二十问\"一样分类",
+  "alt": "决策树示意：层层提问把样本分到不同岔路",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 3,
+  "slug": "support-vector-machine",
+  "file": "kp-100-3-support-vector-machine.svg",
+  "heading": "7.3 在两类点之间留出最宽的路",
+  "alt": "分类间隔示意：两类点之间画出最宽的分界通道",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 4,
+  "slug": "neural-network",
+  "file": "kp-100-4-neural-network.svg",
+  "heading": "7.4 一层层提炼特征的流水线",
+  "alt": "神经网络示意：多层节点层层提炼特征",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 5,
+  "slug": "gradient-descent",
+  "file": "kp-100-5-gradient-descent.svg",
+  "heading": "7.5 下坡找谷底，再回头分配责任",
+  "alt": "梯度下降示意：沿最陡下降方向逐步逼近谷底",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 6,
+  "slug": "regularization",
+  "file": "kp-100-6-regularization.svg",
+  "heading": "7.6 别死记硬背，也别只考一套题",
+  "alt": "正则化示意：过于复杂的曲线被约束得更平滑",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 7,
+  "slug": "ensemble-learning",
+  "file": "kp-100-7-ensemble-learning.svg",
+  "heading": "7.7 一队普通选手，胜过一位天才",
+  "alt": "集成学习示意：多个弱模型投票或接力得到强模型",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 8,
+  "slug": "dimensionality-reduction",
+  "file": "kp-100-8-dimensionality-reduction.svg",
+  "heading": "7.8 把复杂的描述浓缩成几个关键数",
+  "alt": "降维示意：高维数据被压缩到少数几个主方向",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 9,
+  "slug": "clustering",
+  "file": "kp-100-9-clustering.svg",
+  "heading": "7.9 物以类聚，没人贴标签也分堆",
+  "alt": "聚类示意：散点按距离自动聚成三团，星号表示各团中心",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 10,
+  "slug": "autoencoder",
+  "file": "kp-100-10-autoencoder.svg",
+  "heading": "7.10 先压扁，再还原",
+  "alt": "自编码器示意：数据经瓶颈压缩再还原",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 11,
+  "slug": "bias-variance",
+  "file": "kp-100-11-bias-variance.svg",
+  "heading": "7.11 太笨学不会，太聪明会背题",
+  "alt": "偏差方差示意：欠拟合与过拟合之间的平衡",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 12,
+  "slug": "evaluation-metrics",
+  "file": "kp-100-12-evaluation-metrics.svg",
+  "heading": "7.12 别让\"准确率\"骗了你",
+  "alt": "评估指标示意：混淆矩阵里各类错误的分布",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 13,
+  "slug": "gd-convergence",
+  "file": "kp-100-13-gd-convergence.svg",
+  "heading": "7.13 只要坡够好走，就一定能到谷底",
+  "alt": "凸函数收敛示意：迭代路径稳步滑向最低点",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 14,
+  "slug": "svm-margin",
+  "file": "kp-100-14-svm-margin.svg",
+  "heading": "7.14 最宽的那条路是唯一确定的",
+  "alt": "最大间隔示意：分界线只由少数支持向量决定",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 15,
+  "slug": "universal-approximation",
+  "file": "kp-100-15-universal-approximation.svg",
+  "heading": "7.15 足够多神经元，能凑出任意形状的函数",
+  "alt": "万能逼近示意：折线不断逼近任意平滑曲线",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 16,
+  "slug": "adaboost-guarantee",
+  "file": "kp-100-16-adaboost-guarantee.svg",
+  "heading": "7.16 一群弱选手，也能练成强选手",
+  "alt": "AdaBoost 示意：后一个模型专攻前一个做错的样本",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 100,
+  "idx": 17,
+  "slug": "kmeans-convergence",
+  "file": "kp-100-17-kmeans-convergence.svg",
+  "heading": "7.17 挪来挪去，总会安定下来",
+  "alt": "K 均值收敛示意：簇心移动使总距离单调下降",
+  "md": "src/07-应用数学/第100级-机器学习.md"
+ },
+ {
+  "level": 101,
+  "idx": 1,
+  "slug": "order-statistics",
+  "file": "kp-101-1-order-statistics.svg",
+  "heading": "7.1 把一堆数据从小到大排好队",
+  "alt": "顺序统计量：数据从小到大排队，队尾即最大值",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 2,
+  "slug": "extreme-value-distribution",
+  "file": "kp-101-2-extreme-value-distribution.svg",
+  "heading": "7.2 最大值也有自己的概率分布",
+  "alt": "极值分布：最大值的概率分布与其尾部形状",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 3,
+  "slug": "gev",
+  "file": "kp-101-3-gev.svg",
+  "heading": "7.3 一条曲线装下三种极端",
+  "alt": "广义极值分布：用形状参数把三种极值类型连成一条曲线",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 4,
+  "slug": "mda",
+  "file": "kp-101-4-mda.svg",
+  "heading": "7.4 你的数据究竟归哪一类",
+  "alt": "最大吸引域：原始分布的尾部把最大值吸引到某个极值类型",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 5,
+  "slug": "von-mises",
+  "file": "kp-101-5-von-mises.svg",
+  "heading": "7.5 用一条尾部条件判归属",
+  "alt": "von Mises 条件：用尾部函数的稳定性质判断极值类型",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 6,
+  "slug": "pot-gpd",
+  "file": "kp-101-6-pot-gpd.svg",
+  "heading": "7.6 只盯着超过及格线的部分",
+  "alt": "POT 与广义帕累托分布：只研究超过阈值的超额部分",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 7,
+  "slug": "tail-index",
+  "file": "kp-101-7-tail-index.svg",
+  "heading": "7.7 测量极端到底有多\"厚\"",
+  "alt": "极值指标估计：用尾部数据估计指数刻画厚度",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 8,
+  "slug": "quantile-estimation",
+  "file": "kp-101-8-quantile-estimation.svg",
+  "heading": "7.8 算一算百年一遇有多高",
+  "alt": "分位数估计：在极值分布的高分位处读出重现水平",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 9,
+  "slug": "applications",
+  "file": "kp-101-9-applications.svg",
+  "heading": "7.9 从洪水到金融危机",
+  "alt": "应用领域：金融、水文、气象与保险中的极值方法",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 10,
+  "slug": "ftg-theorem",
+  "file": "kp-101-10-ftg-theorem.svg",
+  "heading": "7.10 三型极限定理",
+  "alt": "三型极限定理：标准化最大值只会收敛到三种极值类型",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 11,
+  "slug": "von-mises-mda",
+  "file": "kp-101-11-von-mises-mda.svg",
+  "heading": "7.11 极值指数如何决定归属",
+  "alt": "极值指数与吸引域：尾部条件决定分布属于哪一型",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 12,
+  "slug": "pickands-balkema",
+  "file": "kp-101-12-pickands-balkema.svg",
+  "heading": "7.12 超阈值为何总服从 GPD",
+  "alt": "超阈值极限定理：超过高阈值的超额量趋于广义帕累托分布",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 101,
+  "idx": 13,
+  "slug": "estimator-asymptotics",
+  "file": "kp-101-13-estimator-asymptotics.svg",
+  "heading": "7.13 估计量好不好，定理说了算",
+  "alt": "估计的渐近性质：样本增多时估计量趋于真值并近似正态",
+  "md": "src/07-应用数学/第101级-极值概率论.md"
+ },
+ {
+  "level": 102,
+  "idx": 1,
+  "slug": "ldp-principle",
+  "file": "kp-102-1-ldp-principle.svg",
+  "heading": "7.1 大偏差原理：给\"罕见\"定个刻度",
+  "alt": "大偏差原理示意：稀有事件概率被上下界夹住，并随规模指数衰减",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 2,
+  "slug": "rate-function",
+  "file": "kp-102-2-rate-function.svg",
+  "heading": "7.2 速率函数与水平集",
+  "alt": "速率函数与水平集示意：代价相等的点连成层层套叠的等高线",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 3,
+  "slug": "cramer-theorem",
+  "file": "kp-102-3-cramer-theorem.svg",
+  "heading": "7.3 克拉默定理：稀有概率的价目表",
+  "alt": "克拉默定理示意：样本均值偏离越远，指数速率越大",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 4,
+  "slug": "gartner-ellis-theorem",
+  "file": "kp-102-4-gartner-ellis-theorem.svg",
+  "heading": "7.4 加特纳-埃利斯定理：放宽独立性",
+  "alt": "加特纳-埃利斯定理示意：一般序列只要矩生成函数有极限就满足大偏差",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 5,
+  "slug": "schilder-theorem",
+  "file": "kp-102-5-schilder-theorem.svg",
+  "heading": "7.5 希尔德定理：布朗运动的能量代价",
+  "alt": "希尔德定理示意：小噪声下布朗运动路径偏离的代价由能量泛函给出",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 6,
+  "slug": "varadhan-laplace",
+  "file": "kp-102-6-varadhan-laplace.svg",
+  "heading": "7.6 瓦拉丹引理与拉普拉斯原理",
+  "alt": "瓦拉丹引理示意：指数型积分的主贡献集中在收益减代价的最优点",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 7,
+  "slug": "freidlin-wentzell",
+  "file": "kp-102-7-freidlin-wentzell.svg",
+  "heading": "7.7 弗莱德林-温策尔理论：小噪声下的跳轨",
+  "alt": "弗莱德林-温策尔理论示意：小噪声下系统偶尔偏离确定性轨道",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 8,
+  "slug": "rare-event-efficiency",
+  "file": "kp-102-8-rare-event-efficiency.svg",
+  "heading": "7.8 稀有事件与渐近效率",
+  "alt": "稀有事件与渐近效率示意：聪明抽样让估计精度不按指数塌陷",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 9,
+  "slug": "cramer-proof",
+  "file": "kp-102-9-cramer-proof.svg",
+  "heading": "7.9 克拉默定理的证明",
+  "alt": "克拉默定理证明示意：指数不等式收紧上界，倾斜测度补上下界",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 10,
+  "slug": "gartner-ellis-proof",
+  "file": "kp-102-10-gartner-ellis-proof.svg",
+  "heading": "7.10 加特纳-埃利斯定理的证明",
+  "alt": "加特纳-埃利斯定理证明示意：上下界夹逼推广到非独立情形",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 11,
+  "slug": "schilder-proof",
+  "file": "kp-102-11-schilder-proof.svg",
+  "heading": "7.11 希尔德定理的证明",
+  "alt": "希尔德定理证明示意：把路径展开成独立坐标后逐项应用大偏差",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 12,
+  "slug": "varadhan-lemma-proof",
+  "file": "kp-102-12-varadhan-lemma-proof.svg",
+  "heading": "7.12 瓦拉丹引理的证明",
+  "alt": "瓦拉丹引理证明示意：围绕最优点取一小块区域，其余贡献可忽略",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 102,
+  "idx": 13,
+  "slug": "freidlin-wentzell-proof",
+  "file": "kp-102-13-freidlin-wentzell-proof.svg",
+  "heading": "7.13 弗莱德林-温策尔定理的证明",
+  "alt": "弗莱德林-温策尔定理证明示意：用测度变换消去漂移再套用希尔德定理",
+  "md": "src/07-应用数学/第102级-大偏差理论.md"
+ },
+ {
+  "level": 103,
+  "idx": 1,
+  "slug": "error-analysis",
+  "file": "kp-103-1-error-analysis.svg",
+  "heading": "7.1 浮点数为什么算不准",
+  "alt": "误差来源示意：舍入误差与截断误差各有出处",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 2,
+  "slug": "interpolation",
+  "file": "kp-103-2-interpolation.svg",
+  "heading": "7.2 穿针引线地补空白",
+  "alt": "插值示意：曲线穿过全部已知观测点",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 3,
+  "slug": "numerical-integration",
+  "file": "kp-103-3-numerical-integration.svg",
+  "heading": "7.3 把曲线下的面积切成小条",
+  "alt": "数值积分示意：用一排细条逼近曲线下的面积",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 4,
+  "slug": "numerical-differentiation",
+  "file": "kp-103-4-numerical-differentiation.svg",
+  "heading": "7.4 用差分代替导数",
+  "alt": "数值微分示意：用接近两点的连线斜率代替切线",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 5,
+  "slug": "nonlinear-equations",
+  "file": "kp-103-5-nonlinear-equations.svg",
+  "heading": "7.5 一步步逼近方程的解",
+  "alt": "非线性方程求解示意：从猜测出发逐步逼近根",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 6,
+  "slug": "linear-systems",
+  "file": "kp-103-6-linear-systems.svg",
+  "heading": "7.6 消元法解庞杂的线性方程组",
+  "alt": "线性方程组求解示意：把方程整理成矩阵后系统消元",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 7,
+  "slug": "eigenvalue-computation",
+  "file": "kp-103-7-eigenvalue-computation.svg",
+  "heading": "7.7 找出被矩阵方向不变的方向",
+  "alt": "特征值计算示意：矩阵作用后方向不变的特殊向量",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 8,
+  "slug": "function-approximation",
+  "file": "kp-103-8-function-approximation.svg",
+  "heading": "7.8 用简单函数去仿复杂函数",
+  "alt": "函数逼近示意：用简单曲线贴近复杂曲线",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 9,
+  "slug": "fast-fourier-transform",
+  "file": "kp-103-9-fast-fourier-transform.svg",
+  "heading": "7.9 把信号拆成一堆波",
+  "alt": "快速 Fourier 变换示意：复杂信号拆成简单波叠加",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 10,
+  "slug": "least-squares-fitting",
+  "file": "kp-103-10-least-squares-fitting.svg",
+  "heading": "7.10 给散点找一条最贴切的线",
+  "alt": "最小二乘拟合示意：一条直线整体贴近散点",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 11,
+  "slug": "iterative-convergence",
+  "file": "kp-103-11-iterative-convergence.svg",
+  "heading": "7.11 迭代会不会收敛到答案",
+  "alt": "迭代收敛示意：误差一步比一步小直到稳定",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 12,
+  "slug": "matrix-condition-number",
+  "file": "kp-103-12-matrix-condition-number.svg",
+  "heading": "7.12 病态方程组：输入微动，答案乱跳",
+  "alt": "病态方程组示意：微小扰动引起解的剧烈变化",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 13,
+  "slug": "interpolation-uniqueness",
+  "file": "kp-103-13-interpolation-uniqueness.svg",
+  "heading": "7.13 插值多项式为何存在且唯一",
+  "alt": "插值唯一性示意：穿过给定点的曲线只有一条",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 14,
+  "slug": "interpolation-error",
+  "file": "kp-103-14-interpolation-error.svg",
+  "heading": "7.14 插值误差究竟有多大",
+  "alt": "插值误差示意：相邻已知点之间误差最大",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 15,
+  "slug": "newton-convergence",
+  "file": "kp-103-15-newton-convergence.svg",
+  "heading": "7.15 牛顿法在根附近一定收敛",
+  "alt": "牛顿法收敛示意：根附近每步误差迅速缩小",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 16,
+  "slug": "gauss-quadrature",
+  "file": "kp-103-16-gauss-quadrature.svg",
+  "heading": "7.16 高斯求积的代数精度",
+  "alt": "高斯求积示意：少量特殊点达到很高精度",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 103,
+  "idx": 17,
+  "slug": "qr-algorithm",
+  "file": "kp-103-17-qr-algorithm.svg",
+  "heading": "7.17 QR 算法为何收敛",
+  "alt": "QR 算法收敛示意：矩阵反复分解后趋于对角形",
+  "md": "src/07-应用数学/第103级-数值分析.md"
+ },
+ {
+  "level": 104,
+  "idx": 1,
+  "slug": "best-approximation",
+  "file": "kp-104-1-best-approximation.svg",
+  "heading": "7.1 最佳逼近问题",
+  "alt": "从候选函数里挑出离目标最近的那一个",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 2,
+  "slug": "weierstrass",
+  "file": "kp-104-2-weierstrass.svg",
+  "heading": "7.2 Weierstrass 逼近定理",
+  "alt": "多项式次数越高越贴合目标曲线",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 3,
+  "slug": "bernstein",
+  "file": "kp-104-3-bernstein.svg",
+  "heading": "7.3 Bernstein 多项式",
+  "alt": "Bernstein 多项式随次数升高逐步贴合目标",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 4,
+  "slug": "chebyshev",
+  "file": "kp-104-4-chebyshev.svg",
+  "heading": "7.4 Chebyshev 多项式",
+  "alt": "切比雪夫多项式让误差均匀起伏",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 5,
+  "slug": "legendre",
+  "file": "kp-104-5-legendre.svg",
+  "heading": "7.5 Legendre 多项式",
+  "alt": "勒让德多项式彼此正交、各管一摊",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 6,
+  "slug": "uniform-l2",
+  "file": "kp-104-6-uniform-l2.svg",
+  "heading": "7.6 一致逼近与 $L^2$ 逼近",
+  "alt": "两种尺子对同一目标给出不同的最佳逼近",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 7,
+  "slug": "pade",
+  "file": "kp-104-7-pade.svg",
+  "heading": "7.7 有理逼近与 Padé 逼近",
+  "alt": "有理逼近用更低的次数取得更小的误差",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 8,
+  "slug": "fourier",
+  "file": "kp-104-8-fourier.svg",
+  "heading": "7.8 三角多项式逼近与 Fourier 级数",
+  "alt": "复杂周期波分解成若干正弦成分",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 9,
+  "slug": "spline",
+  "file": "kp-104-9-spline.svg",
+  "heading": "7.9 样条逼近",
+  "alt": "分段低次多项式拼接成光滑曲线",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 10,
+  "slug": "order",
+  "file": "kp-104-10-order.svg",
+  "heading": "7.10 逼近阶",
+  "alt": "误差随次数增大而下降的速率",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 11,
+  "slug": "orthogonal",
+  "file": "kp-104-11-orthogonal.svg",
+  "heading": "7.11 正交多项式",
+  "alt": "正交多项式像互相垂直的坐标轴",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 12,
+  "slug": "thm-weierstrass",
+  "file": "kp-104-12-thm-weierstrass.svg",
+  "heading": "7.12 定理 1（Weierstrass 逼近定理）",
+  "alt": "任意精度下都存在足够高的逼近多项式",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 13,
+  "slug": "thm-existence",
+  "file": "kp-104-13-thm-existence.svg",
+  "heading": "7.13 定理 2（最佳逼近的存在唯一性）",
+  "alt": "最佳逼近多项式存在且唯一",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 14,
+  "slug": "thm-alternation",
+  "file": "kp-104-14-thm-alternation.svg",
+  "heading": "7.14 定理 3（Chebyshev 交替定理）",
+  "alt": "误差在若干点上正负交替达到峰值",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 15,
+  "slug": "thm-orthogonal",
+  "file": "kp-104-15-thm-orthogonal.svg",
+  "heading": "7.15 定理 4（正交多项式的最佳逼近性质）",
+  "alt": "正交多项式截断即均方最佳逼近",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 104,
+  "idx": 16,
+  "slug": "thm-jackson",
+  "file": "kp-104-16-thm-jackson.svg",
+  "heading": "7.16 定理 5（Jackson 定理与 Bernstein 定理）",
+  "alt": "函数越光滑误差下降越快，速度亦有上限",
+  "md": "src/07-应用数学/第104级-逼近论.md"
+ },
+ {
+  "level": 105,
+  "idx": 1,
+  "slug": "lu-decomposition",
+  "file": "kp-105-1-lu-decomposition.svg",
+  "heading": "7.1 把复杂矩阵拆成两块三角形",
+  "alt": "LU 分解把矩阵拆成下三角与上三角两块",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 2,
+  "slug": "cholesky",
+  "file": "kp-105-2-cholesky.svg",
+  "heading": "7.2 对称正定矩阵的专属捷径",
+  "alt": "Cholesky 分解把对称正定矩阵写成一个下三角乘它的转置",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 3,
+  "slug": "qr-decomposition",
+  "file": "kp-105-3-qr-decomposition.svg",
+  "heading": "7.3 用一组互相垂直的标尺重搭矩阵",
+  "alt": "QR 分解把矩阵拆成一组正交列和一个上三角矩阵",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 4,
+  "slug": "svd",
+  "file": "kp-105-4-svd.svg",
+  "heading": "7.4 SVD：任何矩阵都是旋转、拉伸、再旋转",
+  "alt": "SVD 把矩阵分解为旋转、拉伸、再旋转",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 5,
+  "slug": "eigen-decomposition",
+  "file": "kp-105-5-eigen-decomposition.svg",
+  "heading": "7.5 找到矩阵的\"不变方向\"",
+  "alt": "特征值分解找的是矩阵作用后方向不变的那些向量",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 6,
+  "slug": "condition-number",
+  "file": "kp-105-6-condition-number.svg",
+  "heading": "7.6 数据一晃，答案会被放大多少倍",
+  "alt": "条件数衡量输入微扰会被放大多少倍",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 7,
+  "slug": "gaussian-elimination",
+  "file": "kp-105-7-gaussian-elimination.svg",
+  "heading": "7.7 老祖宗的消元法也得防翻车",
+  "alt": "Gauss 消元逐步化为上三角并挑选主元",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 8,
+  "slug": "iterative-methods",
+  "file": "kp-105-8-iterative-methods.svg",
+  "heading": "7.8 不直接求解，而是一步步靠近",
+  "alt": "迭代法从初始猜测出发一步步逼近真解",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 9,
+  "slug": "krylov-subspace",
+  "file": "kp-105-9-krylov-subspace.svg",
+  "heading": "7.9 在低维子空间里找最优近似",
+  "alt": "Krylov 方法在由迭代向量张成的低维子空间里搜索解",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 10,
+  "slug": "rayleigh-quotient",
+  "file": "kp-105-10-rayleigh-quotient.svg",
+  "heading": "7.10 用商数定位特征值",
+  "alt": "Rayleigh 商给出特征值的近似，逆迭代不断逼近目标向量",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 11,
+  "slug": "singular-values",
+  "file": "kp-105-11-singular-values.svg",
+  "heading": "7.11 奇异值也算得出来",
+  "alt": "奇异值可由对称矩阵的特征值开平方得到",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 12,
+  "slug": "qr-existence",
+  "file": "kp-105-12-qr-existence.svg",
+  "heading": "7.12 定理 1：QR 分解为什么总存在",
+  "alt": "几何上把一组向量逐步正交化便得到唯一的 QR 分解",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 13,
+  "slug": "svd-theorem",
+  "file": "kp-105-13-svd-theorem.svg",
+  "heading": "7.13 定理 2：SVD 分解定理",
+  "alt": "SVD 分解定理保证任何矩阵都是旋转拉伸再旋转",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 14,
+  "slug": "cg-convergence",
+  "file": "kp-105-14-cg-convergence.svg",
+  "heading": "7.14 定理 3：共轭梯度法为何越算越快",
+  "alt": "共轭梯度法在能量范数下逐步缩短误差",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 15,
+  "slug": "gmres-convergence",
+  "file": "kp-105-15-gmres-convergence.svg",
+  "heading": "7.15 定理 4：GMRES 的收敛保证",
+  "alt": "GMRES 在子空间内取残差最小的解，残差单调下降",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 105,
+  "idx": 16,
+  "slug": "rayleigh-convergence",
+  "file": "kp-105-16-rayleigh-convergence.svg",
+  "heading": "7.16 定理 5：Rayleigh 商迭代的收敛性",
+  "alt": "Rayleigh 商迭代末段以立方速率飞快收敛",
+  "md": "src/07-应用数学/第105级-数值线性代数.md"
+ },
+ {
+  "level": 106,
+  "idx": 1,
+  "slug": "variational-weak-form",
+  "file": "kp-106-1-variational-weak-form.svg",
+  "heading": "7.1 变分形式与弱解",
+  "alt": "变分形式把微分方程改写成对所有试探函数成立的积分等式",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 2,
+  "slug": "galerkin-method",
+  "file": "kp-106-2-galerkin-method.svg",
+  "heading": "7.2 Galerkin 方法",
+  "alt": "Galerkin 方法把无穷维问题投影到有限维子空间",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 3,
+  "slug": "finite-element-space",
+  "file": "kp-106-3-finite-element-space.svg",
+  "heading": "7.3 有限元空间",
+  "alt": "Ciarlet 三要素：单元、形函数空间与自由度共同确定有限元空间",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 4,
+  "slug": "shape-function",
+  "file": "kp-106-4-shape-function.svg",
+  "heading": "7.4 形函数",
+  "alt": "形函数像每个节点顶起的小帐篷，加权叠加成整体曲线",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 5,
+  "slug": "stiffness-matrix",
+  "file": "kp-106-5-stiffness-matrix.svg",
+  "heading": "7.5 刚度矩阵",
+  "alt": "刚度矩阵记录各基函数之间的耦合能量，呈现稀疏结构",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 6,
+  "slug": "element-assembly",
+  "file": "kp-106-6-element-assembly.svg",
+  "heading": "7.6 单元分析与整体组装",
+  "alt": "单元分析先算局部矩阵，整体组装再按节点映射累加成全局矩阵",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 7,
+  "slug": "boundary-conditions",
+  "file": "kp-106-7-boundary-conditions.svg",
+  "heading": "7.7 边界条件处理",
+  "alt": "三类边界条件：钉死取值、自然给定坡度与折中的边界积分项",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 8,
+  "slug": "error-estimate",
+  "file": "kp-106-8-error-estimate.svg",
+  "heading": "7.8 误差估计",
+  "alt": "先验误差估计事前预报趋势，后验误差估计事后指明加密位置",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 9,
+  "slug": "cea-lemma",
+  "file": "kp-106-9-cea-lemma.svg",
+  "heading": "7.9 Céa 引理",
+  "alt": "Céa 引理把数值解误差锁在最佳逼近误差之内",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 10,
+  "slug": "isoparametric-element",
+  "file": "kp-106-10-isoparametric-element.svg",
+  "heading": "7.10 等参单元",
+  "alt": "等参单元用同一组形函数同时描述几何变换与函数逼近",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 11,
+  "slug": "mixed-fem",
+  "file": "kp-106-11-mixed-fem.svg",
+  "heading": "7.11 混合有限元",
+  "alt": "混合有限元同时逼近多个场，稳定性取决于 LBB 条件",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 12,
+  "slug": "nonconforming-element",
+  "file": "kp-106-12-nonconforming-element.svg",
+  "heading": "7.12 非协调元",
+  "alt": "非协调元放松单元边界连续性，函数在接缝处可轻微脱节",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 13,
+  "slug": "lax-milgram",
+  "file": "kp-106-13-lax-milgram.svg",
+  "heading": "7.13 Lax-Milgram 引理",
+  "alt": "Lax-Milgram 引理用连续性与强制性保证弱解存在唯一",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 14,
+  "slug": "cea-lemma-theorem",
+  "file": "kp-106-14-cea-lemma-theorem.svg",
+  "heading": "7.14 Céa 引理的证明",
+  "alt": "Céa 引理的证明由 Galerkin 正交性与连续性、强制性共同完成",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 15,
+  "slug": "fem-error-estimate",
+  "file": "kp-106-15-fem-error-estimate.svg",
+  "heading": "7.15 有限元逼近的误差估计",
+  "alt": "有限元误差随网格尺寸 h 的 p 次方缩小",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 16,
+  "slug": "inverse-estimate",
+  "file": "kp-106-16-inverse-estimate.svg",
+  "heading": "7.16 逆估计与离散正则性",
+  "alt": "逆估计限制有限元空间内梯度的尖锐程度，离散正则性约束数值解",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 106,
+  "idx": 17,
+  "slug": "adaptive-a-posteriori",
+  "file": "kp-106-17-adaptive-a-posteriori.svg",
+  "heading": "7.17 自适应后验误差估计",
+  "alt": "自适应后验误差估计用指示器驱动网格在误差大的地方加密",
+  "md": "src/07-应用数学/第106级-有限元方法.md"
+ },
+ {
+  "level": 107,
+  "idx": 1,
+  "slug": "ivp-ode",
+  "file": "kp-107-1-ivp-ode.svg",
+  "heading": "7.1 给一个起点，算出整条路",
+  "alt": "初值问题示意：由起点与变化规律逐步展开整条轨迹",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 2,
+  "slug": "euler-method",
+  "file": "kp-107-2-euler-method.svg",
+  "heading": "7.2 顺着当前方向直走一小步",
+  "alt": "欧拉法示意：用一连串沿切线方向的小直线段逼近真解",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 3,
+  "slug": "runge-kutta",
+  "file": "kp-107-3-runge-kutta.svg",
+  "heading": "7.3 多探几步再决定落脚点",
+  "alt": "龙格-库塔示意：一步之内多次取样斜率再加权平均",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 4,
+  "slug": "linear-multistep",
+  "file": "kp-107-4-linear-multistep.svg",
+  "heading": "7.4 借上几步的历史算下一步",
+  "alt": "线性多步法示意：用前几步的历史值共同外推下一个点",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 5,
+  "slug": "stability",
+  "file": "kp-107-5-stability.svg",
+  "heading": "7.5 步子太大，误差会滚雪球",
+  "alt": "稳定性示意：步长适中时误差衰减，过大时误差被放大发散",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 6,
+  "slug": "stiff-equations",
+  "file": "kp-107-6-stiff-equations.svg",
+  "heading": "7.6 快慢悬殊，显式方法容易翻车",
+  "alt": "刚性方程示意：快慢分量相差悬殊，显式步长被最快分量卡死",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 7,
+  "slug": "finite-difference",
+  "file": "kp-107-7-finite-difference.svg",
+  "heading": "7.7 把导数换成差商",
+  "alt": "有限差分示意：用相邻网格点之差近似导数",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 8,
+  "slug": "finite-volume",
+  "file": "kp-107-8-finite-volume.svg",
+  "heading": "7.8 盯住每块小格子里的守恒量",
+  "alt": "有限体积示意：逐格计算通量的进出以保持总量守恒",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 9,
+  "slug": "spectral-method",
+  "file": "kp-107-9-spectral-method.svg",
+  "heading": "7.9 用光滑的波拼出整条解",
+  "alt": "谱方法示意：用少量光滑基函数叠加逼近整条解",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 10,
+  "slug": "cfl-condition",
+  "file": "kp-107-10-cfl-condition.svg",
+  "heading": "7.10 一步的信息不能跑太远",
+  "alt": "CFL 条件示意：每步推进的距离不能超过一个网格间距",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 11,
+  "slug": "conservation-godunov",
+  "file": "kp-107-11-conservation-godunov.svg",
+  "heading": "7.11 让交界面上的通量自己说话",
+  "alt": "守恒律与 Godunov 方法示意：通过求解交界面通量确定流动",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 12,
+  "slug": "rk-order",
+  "file": "kp-107-12-rk-order.svg",
+  "heading": "7.12 让展开式一路对上真解",
+  "alt": "Runge-Kutta 阶条件示意：方法展开式与真解泰勒级数逐项对齐",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 13,
+  "slug": "dahlquist",
+  "file": "kp-107-13-dahlquist.svg",
+  "heading": "7.13 相容加稳定才等于收敛",
+  "alt": "Dahlquist 等价定理示意：相容性与稳定性共同构成收敛",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 14,
+  "slug": "von-neumann",
+  "file": "kp-107-14-von-neumann.svg",
+  "heading": "7.14 给误差做一次傅里叶体检",
+  "alt": "von Neumann 分析示意：将误差分解为傅里叶模态并逐一检查放大因子",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 15,
+  "slug": "lax-equivalence",
+  "file": "kp-107-15-lax-equivalence.svg",
+  "heading": "7.15 相容加稳定，收敛水到渠成",
+  "alt": "Lax 等价定理示意：相容且稳定当且仅当收敛",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 107,
+  "idx": 16,
+  "slug": "cfl-theorem",
+  "file": "kp-107-16-cfl-theorem.svg",
+  "heading": "7.16 显式格式的硬性上限",
+  "alt": "CFL 条件定理示意：显式格式要求 Courant 数不超过安全上限",
+  "md": "src/07-应用数学/第107级-微分方程数值解.md"
+ },
+ {
+  "level": 108,
+  "idx": 1,
+  "slug": "symbol-computation",
+  "file": "kp-108-1-symbol-computation.svg",
+  "heading": "7.1 符号计算：把字母当字母，绝不偷偷取近似",
+  "alt": "符号计算把字母表达式原样变形而不取近似值",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 2,
+  "slug": "polynomial-arithmetic",
+  "file": "kp-108-2-polynomial-arithmetic.svg",
+  "heading": "7.2 多项式运算：加减乘除都按纸笔规则来",
+  "alt": "多项式按合并同类项和带余除法逐项精确运算",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 3,
+  "slug": "groebner-basis",
+  "file": "kp-108-3-groebner-basis.svg",
+  "heading": "7.3 Gröbner 基：把纠缠的方程组削成三角形",
+  "alt": "Gröbner 基把多变量方程组整理成可逐层回代的三角形",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 4,
+  "slug": "buchberger-algorithm",
+  "file": "kp-108-4-buchberger-algorithm.svg",
+  "heading": "7.4 Buchberger 算法：把“削三角形”变成机器能跑的步骤",
+  "alt": "Buchberger 算法不断用 S-多项式补漏直到生成 Gröbner 基",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 5,
+  "slug": "polynomial-factorization",
+  "file": "kp-108-5-polynomial-factorization.svg",
+  "heading": "7.5 多项式因子分解：把式子拆成不可再分的积",
+  "alt": "多项式被分解为若干不可再分因式的乘积",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 6,
+  "slug": "risch-integration",
+  "file": "kp-108-6-risch-integration.svg",
+  "heading": "7.6 符号积分（Risch 算法）：判断能不能积出初等函数",
+  "alt": "Risch 算法判断积分能否表示为初等函数并给出具体表达式",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 7,
+  "slug": "symbolic-summation",
+  "file": "kp-108-7-symbolic-summation.svg",
+  "heading": "7.7 符号求和（Gosper 算法）：把一大串加法压成一个式子",
+  "alt": "符号求和算法把冗长的级数求和压缩为简洁的闭形式",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 8,
+  "slug": "exact-linear-algebra",
+  "file": "kp-108-8-exact-linear-algebra.svg",
+  "heading": "7.8 精确线性代数：解方程组不让分数变成小数",
+  "alt": "精确线性代数用有理数消元避免舍入误差累积",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 9,
+  "slug": "rational-functions",
+  "file": "kp-108-9-rational-functions.svg",
+  "heading": "7.9 有理函数：两个多项式的商也能精确摆弄",
+  "alt": "有理函数通过部分分式和带余除法被精确化简",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 10,
+  "slug": "symbolic-equation-solving",
+  "file": "kp-108-10-symbolic-equation-solving.svg",
+  "heading": "7.10 方程的符号求解：求出带参数的根，而不是数",
+  "alt": "方程符号求解给出含参数的精确根而非近似数值",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 11,
+  "slug": "differential-algebra",
+  "file": "kp-108-11-differential-algebra.svg",
+  "heading": "7.11 微分代数：把求导也变成一套代数运算",
+  "alt": "微分代数把求导抽象为满足固定规则的代数算子",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 12,
+  "slug": "computational-commutative-algebra",
+  "file": "kp-108-12-computational-commutative-algebra.svg",
+  "heading": "7.12 计算交换代数：用理想和 Gröbner 基回答代数几何问题",
+  "alt": "计算交换代数用理想和 Gröbner 基回答几何问题",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 13,
+  "slug": "groebner-existence",
+  "file": "kp-108-13-groebner-existence.svg",
+  "heading": "7.13 定理 1：Gröbner 基一定存在（Buchberger 算法保证）",
+  "alt": "Buchberger 算法有限步内必得到一组 Gröbner 基",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 14,
+  "slug": "hilbert-basis-theorem",
+  "file": "kp-108-14-hilbert-basis-theorem.svg",
+  "heading": "7.14 定理 2：Hilbert 基定理——理想总是有限生成的",
+  "alt": "Hilbert 基定理保证多项式理想总由有限个多项式生成",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 15,
+  "slug": "buchberger-criterion",
+  "file": "kp-108-15-buchberger-criterion.svg",
+  "heading": "7.15 定理 3：Buchberger 准则——怎样判断已经是 Gröbner 基",
+  "alt": "Buchberger 准则用 S-多项式可整除性判定是否为 Gröbner 基",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 16,
+  "slug": "risch-fundamental-theorem",
+  "file": "kp-108-16-risch-fundamental-theorem.svg",
+  "heading": "7.16 定理 4：Risch 算法——符号积分存在性的判定",
+  "alt": "Risch 算法判定初等函数的积分是否存在并可给出精确结果",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 108,
+  "idx": 17,
+  "slug": "gosper-correctness",
+  "file": "kp-108-17-gosper-correctness.svg",
+  "heading": "7.17 定理 5：Gosper 算法正确性——找到的闭形式确实正确",
+  "alt": "Gosper 算法返回的闭形式精确等于原求和",
+  "md": "src/07-应用数学/第108级-计算机代数.md"
+ },
+ {
+  "level": 109,
+  "idx": 1,
+  "slug": "convex-set",
+  "file": "kp-109-1-convex-set.svg",
+  "heading": "7.1 凸集：没有坑洼的果冻",
+  "alt": "凸集里任意两点的连线都落在集合内部",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 2,
+  "slug": "convex-function",
+  "file": "kp-109-2-convex-function.svg",
+  "heading": "7.2 凸函数：一只开口朝上的碗",
+  "alt": "凸函数图像像开口朝上的碗，弦总在曲线之上",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 3,
+  "slug": "convex-optimization",
+  "file": "kp-109-3-convex-optimization.svg",
+  "heading": "7.3 凸优化问题：好踢的一场球",
+  "alt": "凸优化问题里局部最优就是全局最优",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 4,
+  "slug": "linear-programming",
+  "file": "kp-109-4-linear-programming.svg",
+  "heading": "7.4 线性规划：在笔直围栏里挑最亮的角",
+  "alt": "线性规划的可行域是多边形，最优解常在顶点",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 5,
+  "slug": "quadratic-programming",
+  "file": "kp-109-5-quadratic-programming.svg",
+  "heading": "7.5 二次规划：碗状目标加直线围栏",
+  "alt": "二次规划在直线约束下求碗状目标的最低点",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 6,
+  "slug": "kkt-conditions",
+  "file": "kp-109-6-kkt-conditions.svg",
+  "heading": "7.6 KKT 条件：最优解的四道通关标准",
+  "alt": "KKT 条件把最优性拆成四条可核对的判据",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 7,
+  "slug": "lagrange-duality",
+  "file": "kp-109-7-lagrange-duality.svg",
+  "heading": "7.7 拉格朗日对偶：换个角度看同一个问题",
+  "alt": "原问题与对偶问题从两侧夹住同一个最优值",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 8,
+  "slug": "slater-condition",
+  "file": "kp-109-8-slater-condition.svg",
+  "heading": "7.8 Slater 条件：让强对偶成立的宽松前提",
+  "alt": "存在严格满足所有约束的点时强对偶成立",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 9,
+  "slug": "strong-duality",
+  "file": "kp-109-9-strong-duality.svg",
+  "heading": "7.9 强对偶性：上下界在最优处会师",
+  "alt": "强对偶下原问题与对偶问题最优值相等",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 10,
+  "slug": "unconstrained-optimization",
+  "file": "kp-109-10-unconstrained-optimization.svg",
+  "heading": "7.10 无约束优化：没有围栏时的下山",
+  "alt": "无约束优化沿负梯度方向迭代逼近最低点",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 11,
+  "slug": "constrained-methods",
+  "file": "kp-109-11-constrained-methods.svg",
+  "heading": "7.11 约束优化方法：把围栏变成罚单",
+  "alt": "罚函数法把越界约束折算成额外惩罚添进目标",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 12,
+  "slug": "sdp-conic",
+  "file": "kp-109-12-sdp-conic.svg",
+  "heading": "7.12 半定规划与锥规划：把直尺换成光锥",
+  "alt": "锥规划与半定规划在锥形可行域中寻找最优",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 13,
+  "slug": "interior-point",
+  "file": "kp-109-13-interior-point.svg",
+  "heading": "7.13 内点法：从区域内部穿向最优",
+  "alt": "内点法从可行域内部穿过中心逼近最优解",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 14,
+  "slug": "optimization-applications",
+  "file": "kp-109-14-optimization-applications.svg",
+  "heading": "7.14 运筹学中的优化应用：把决策变成算式",
+  "alt": "把排产运输等现实决策写成目标与约束再求解",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 15,
+  "slug": "thm-kkt",
+  "file": "kp-109-15-thm-kkt.svg",
+  "heading": "7.15 KKT 条件的充分性与必要性",
+  "alt": "凸问题下 KKT 条件同时是充分与必要条件",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 16,
+  "slug": "thm-strong-duality",
+  "file": "kp-109-16-thm-strong-duality.svg",
+  "heading": "7.16 强对偶定理（Slater 条件）",
+  "alt": "满足 Slater 条件时凸问题强对偶成立",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 17,
+  "slug": "thm-lp-duality",
+  "file": "kp-109-17-thm-lp-duality.svg",
+  "heading": "7.17 线性规划的对偶定理",
+  "alt": "线性规划原问题与对偶问题的最优值恒相等",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 18,
+  "slug": "thm-gd-convergence",
+  "file": "kp-109-18-thm-gd-convergence.svg",
+  "heading": "7.18 梯度下降的收敛性（强凸情形）",
+  "alt": "强凸情形下梯度下降误差按固定比例稳定缩小",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 109,
+  "idx": 19,
+  "slug": "thm-newton-convergence",
+  "file": "kp-109-19-thm-newton-convergence.svg",
+  "heading": "7.19 牛顿法的局部二次收敛性",
+  "alt": "牛顿法在最优解附近误差平方级缩小",
+  "md": "src/07-应用数学/第109级-优化理论.md"
+ },
+ {
+  "level": 110,
+  "idx": 1,
+  "slug": "linear-programming",
+  "file": "kp-110-1-linear-programming.svg",
+  "heading": "6.1 千万个方案里，答案常藏在“顶点”",
+  "alt": "线性规划的可行域与落在顶点上的最优解",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 2,
+  "slug": "integer-programming",
+  "file": "kp-110-2-integer-programming.svg",
+  "heading": "6.2 分东西不能切半：整数规划",
+  "alt": "整数规划：变量只能取整数值，非整数的候选点被排除",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 3,
+  "slug": "network-flow",
+  "file": "kp-110-3-network-flow.svg",
+  "heading": "6.3 让货自己找出路：网络流",
+  "alt": "网络流：从源点流向汇点，每条边有容量上限",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 4,
+  "slug": "dynamic-programming",
+  "file": "kp-110-4-dynamic-programming.svg",
+  "heading": "6.4 拆成小问题，一步步攒出大答案：动态规划",
+  "alt": "动态规划：把多阶段问题拆成一层层小局面并记录最优值",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 5,
+  "slug": "shortest-path",
+  "file": "kp-110-5-shortest-path.svg",
+  "heading": "6.5 导航里的那条最优路线：最短路径",
+  "alt": "最短路径：从起点到终点总权重最小的一条路线",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 6,
+  "slug": "minimum-spanning-tree",
+  "file": "kp-110-6-minimum-spanning-tree.svg",
+  "heading": "6.6 用最少的线把所有点连起来：最小生成树",
+  "alt": "最小生成树：用权重总和最小的边把所有点连成一棵无回路的树",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 7,
+  "slug": "other-concepts",
+  "file": "kp-110-7-other-concepts.svg",
+  "heading": "6.7 运筹学里还有哪些趁手的招",
+  "alt": "运筹学的其他工具：排程、库存、博弈与决策分析各管一类问题",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 8,
+  "slug": "strong-duality",
+  "file": "kp-110-8-strong-duality.svg",
+  "heading": "6.8 对偶：同一件事的两种算法（强对偶定理）",
+  "alt": "强对偶定理：原问题求最大值与对偶问题求最小值共享同一最优值",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 9,
+  "slug": "max-flow-min-cut",
+  "file": "kp-110-9-max-flow-min-cut.svg",
+  "heading": "6.9 能送多少，卡在最小的一道窄口（最大流最小割定理）",
+  "alt": "最大流最小割：最大可行流量等于切断源汇所需的最小割容量",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 10,
+  "slug": "dijkstra-correctness",
+  "file": "kp-110-10-dijkstra-correctness.svg",
+  "heading": "6.10 为什么 Dijkstra 每次都能挑对（Dijkstra 算法的正确性）",
+  "alt": "Dijkstra 正确性：边权非负时，每次取出的最近点距离不会再被改小",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 11,
+  "slug": "optimality-principle",
+  "file": "kp-110-11-optimality-principle.svg",
+  "heading": "6.11 全局最优由局部最优拼成（动态规划的最优性原理）",
+  "alt": "最优性原理：整体最优方案中任意一段子路径也是最优的",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 110,
+  "idx": 12,
+  "slug": "branch-and-bound",
+  "file": "kp-110-12-branch-and-bound.svg",
+  "heading": "6.12 分支定界为什么总能停下来（分支定界算法的收敛性）",
+  "alt": "分支定界收敛性：不断细分并用界剪枝，搜索树最终收缩到最优解",
+  "md": "src/07-应用数学/第110级-运筹学.md"
+ },
+ {
+  "level": 111,
+  "idx": 1,
+  "slug": "queue-elements",
+  "file": "kp-111-1-queue-elements.svg",
+  "heading": "6.1 排队这件事，能拆成四样东西",
+  "alt": "排队系统的四大要素：到达、服务、排队规则与服务台数",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 2,
+  "slug": "kendall-notation",
+  "file": "kp-111-2-kendall-notation.svg",
+  "heading": "6.2 给每个队列发一张“身份证”",
+  "alt": "Kendall 记号用 A、B、m 三个位置描述队列类型",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 3,
+  "slug": "littles-law",
+  "file": "kp-111-3-littles-law.svg",
+  "heading": "6.3 一条等式锁住三个量",
+  "alt": "Little 定律：平均人数等于到达率乘以平均逗留时间",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 4,
+  "slug": "mm1-queue",
+  "file": "kp-111-4-mm1-queue.svg",
+  "heading": "6.4 最简单的队列：一个窗口",
+  "alt": "M/M/1 单服务台队列：到达、排队与一个服务台",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 5,
+  "slug": "mmc-queue",
+  "file": "kp-111-5-mmc-queue.svg",
+  "heading": "6.5 多开几个窗口",
+  "alt": "M/M/c 多服务台队列：多个窗口共享一条队伍",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 6,
+  "slug": "mg1-queue",
+  "file": "kp-111-6-mg1-queue.svg",
+  "heading": "6.6 服务时间不稳定会怎样",
+  "alt": "M/G/1 队列：服务时间服从一般分布的单服务台排队",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 7,
+  "slug": "other-concepts",
+  "file": "kp-111-7-other-concepts.svg",
+  "heading": "6.7 还有哪些常用工具",
+  "alt": "排队论的其他概念：PASTA、Erlang-B、Jackson 网络与重尾分布",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 8,
+  "slug": "littles-law-proof",
+  "file": "kp-111-8-littles-law-proof.svg",
+  "heading": "6.8 为什么 Little 定律总成立",
+  "alt": "用样本路径的面积法证明 Little 定律",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 9,
+  "slug": "mm1-steady-state",
+  "file": "kp-111-9-mm1-steady-state.svg",
+  "heading": "6.9 队长的分布是算出来的",
+  "alt": "M/M/1 队列的生灭过程与稳态分布",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 10,
+  "slug": "pollaczek-khinchin",
+  "file": "kp-111-10-pollaczek-khinchin.svg",
+  "heading": "6.10 服务的波动会把队伍拉长",
+  "alt": "Pollaczek-Khinchin 公式揭示服务时间波动对等待的放大作用",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 11,
+  "slug": "erlang-b",
+  "file": "kp-111-11-erlang-b.svg",
+  "heading": "6.11 线路全忙就直接拒绝",
+  "alt": "Erlang-B 公式：没有等待位置时系统的阻塞概率",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 111,
+  "idx": 12,
+  "slug": "jackson-network",
+  "file": "kp-111-12-jackson-network.svg",
+  "heading": "6.12 把许多队列连成一张网",
+  "alt": "Jackson 网络：多个队列相连时稳态分布可写成乘积",
+  "md": "src/07-应用数学/第111级-排队论.md"
+ },
+ {
+  "level": 112,
+  "idx": 1,
+  "slug": "entropy",
+  "file": "kp-112-1-entropy.svg",
+  "heading": "6.1 越难猜，信息越多",
+  "alt": "不确定性越大信息越多，公平硬币的熵达到最大",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 2,
+  "slug": "joint-conditional-entropy",
+  "file": "kp-112-2-joint-conditional-entropy.svg",
+  "heading": "6.2 两个变量合起来的信息",
+  "alt": "已知一个变量后剩下的不确定就是条件熵",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 3,
+  "slug": "mutual-information",
+  "file": "kp-112-3-mutual-information.svg",
+  "heading": "6.3 一个变量透露了另一个多少",
+  "alt": "互信息度量两个变量彼此透露的信息量",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 4,
+  "slug": "kl-divergence",
+  "file": "kp-112-4-kl-divergence.svg",
+  "heading": "6.4 用错分布要多付的代价",
+  "alt": "KL散度度量用错分布所需付出的额外信息代价",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 5,
+  "slug": "entropy-rate",
+  "file": "kp-112-5-entropy-rate.svg",
+  "heading": "6.5 一长串消息平均带多少信息",
+  "alt": "熵率衡量长序列平均每个符号携带多少信息",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 6,
+  "slug": "information-inequality-fano",
+  "file": "kp-112-6-information-inequality-fano.svg",
+  "heading": "6.6 信息也有不等式",
+  "alt": "信息不等式与Fano不等式把出错概率和剩余不确定绑在一起",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 7,
+  "slug": "data-compression-source-coding",
+  "file": "kp-112-7-data-compression-source-coding.svg",
+  "heading": "6.7 常见的用短码，罕见的用长码",
+  "alt": "按出现频率分配长短不同的编码来压缩数据",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 8,
+  "slug": "channel-capacity",
+  "file": "kp-112-8-channel-capacity.svg",
+  "heading": "6.8 噪声里的可靠传输上限",
+  "alt": "信道容量是可靠传输速率的理论上限",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 9,
+  "slug": "rate-distortion",
+  "file": "kp-112-9-rate-distortion.svg",
+  "heading": "6.9 允许一点失真能省多少",
+  "alt": "率失真函数给出允许失真下的最低压缩速率",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 10,
+  "slug": "differential-entropy",
+  "file": "kp-112-10-differential-entropy.svg",
+  "heading": "6.10 连续世界的熵",
+  "alt": "连续随机变量的微分熵由积分定义",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 11,
+  "slug": "error-correcting-codes-network-information-theory",
+  "file": "kp-112-11-error-correcting-codes-network-information-theory.svg",
+  "heading": "6.11 从纠错码到网络信息论",
+  "alt": "纠错码与多用户网络把信息论推向真实通信",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 12,
+  "slug": "shannon-source-coding-theorem",
+  "file": "kp-112-12-shannon-source-coding-theorem.svg",
+  "heading": "6.12 香农信源编码定理：压缩的下界",
+  "alt": "香农信源编码定理：压缩码长以熵为下界",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 13,
+  "slug": "shannon-channel-coding-theorem",
+  "file": "kp-112-13-shannon-channel-coding-theorem.svg",
+  "heading": "6.13 香农信道编码定理：可靠的上限",
+  "alt": "香农信道编码定理：速率低于容量即可靠传输",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 14,
+  "slug": "fano-inequality",
+  "file": "kp-112-14-fano-inequality.svg",
+  "heading": "6.14 Fano 不等式：出错与无知",
+  "alt": "Fano不等式把解码错误概率与剩余不确定绑定",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 15,
+  "slug": "data-processing-inequality",
+  "file": "kp-112-15-data-processing-inequality.svg",
+  "heading": "6.15 数据处理不等式：信息不会凭空增加",
+  "alt": "数据处理不等式：加工数据不会增加信息",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 112,
+  "idx": 16,
+  "slug": "channel-capacity-dual-representation",
+  "file": "kp-112-16-channel-capacity-dual-representation.svg",
+  "heading": "6.16 信道容量的对偶表示",
+  "alt": "信道容量的另一种等价表示形式",
+  "md": "src/07-应用数学/第112级-信息论.md"
+ },
+ {
+  "level": 113,
+  "idx": 1,
+  "slug": "encoding-decoding",
+  "file": "kp-113-1-encoding-decoding.svg",
+  "heading": "7.1 编码与译码",
+  "alt": "发送方把信息编成码字、经信道后由接收方译回原信息的流水线",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 2,
+  "slug": "hamming-distance",
+  "file": "kp-113-2-hamming-distance.svg",
+  "heading": "7.2 汉明距离与最小距离",
+  "alt": "两串比特逐位比较，数出对应位置不同的位数",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 3,
+  "slug": "linear-codes",
+  "file": "kp-113-3-linear-codes.svg",
+  "heading": "7.3 线性码",
+  "alt": "生成矩阵把信息映射成码字、校验矩阵负责验算",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 4,
+  "slug": "classic-codes",
+  "file": "kp-113-4-classic-codes.svg",
+  "heading": "7.4 经典码型",
+  "alt": "几种经典码各自守护不同的出错场景",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 5,
+  "slug": "weight-distribution",
+  "file": "kp-113-5-weight-distribution.svg",
+  "heading": "7.5 重量分布",
+  "alt": "按非零重量统计码字个数得到的分布表",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 6,
+  "slug": "bounds-motivation",
+  "file": "kp-113-6-bounds-motivation.svg",
+  "heading": "7.6 为什么需要几条界",
+  "alt": "多条上界共同圈定纠错能力所能达到的范围",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 7,
+  "slug": "why-important",
+  "file": "kp-113-7-why-important.svg",
+  "heading": "7.7 为什么重要",
+  "alt": "界作为标尺衡量具体编码离理论极限的距离",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 8,
+  "slug": "singleton-bound",
+  "file": "kp-113-8-singleton-bound.svg",
+  "heading": "7.8 Singleton 界",
+  "alt": "码长、信息位与最小距离之间满足 d 不超过 n 减 k 加一",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 9,
+  "slug": "hamming-bound",
+  "file": "kp-113-9-hamming-bound.svg",
+  "heading": "7.9 Hamming 界",
+  "alt": "以码字为中心、半径为 t 的纠错球互不重叠地铺满空间",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 10,
+  "slug": "gilbert-varshamov-bound",
+  "file": "kp-113-10-gilbert-varshamov-bound.svg",
+  "heading": "7.10 Gilbert-Varshamov 界",
+  "alt": "只要空间还没占满就总能继续塞入新码字的存在性论证",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 11,
+  "slug": "macwilliams-identity",
+  "file": "kp-113-11-macwilliams-identity.svg",
+  "heading": "7.11 MacWilliams 恒等式",
+  "alt": "原码与对偶码的重量分布通过变换彼此确定",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 113,
+  "idx": 12,
+  "slug": "bch-error-correction",
+  "file": "kp-113-12-bch-error-correction.svg",
+  "heading": "7.12 BCH 码的纠错能力",
+  "alt": "通过指定连续的根使 BCH 码达到预定的纠错能力",
+  "md": "src/07-应用数学/第113级-编码理论.md"
+ },
+ {
+  "level": 114,
+  "idx": 1,
+  "slug": "symmetric-cipher",
+  "file": "kp-114-1-symmetric-cipher.svg",
+  "heading": "7.1 对称密码",
+  "alt": "对称密码：加密与解密共用同一把钥匙",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 2,
+  "slug": "asymmetric-cipher",
+  "file": "kp-114-2-asymmetric-cipher.svg",
+  "heading": "7.2 非对称密码",
+  "alt": "非对称密码：公开的公钥上锁，私藏的私钥开锁",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 3,
+  "slug": "public-key-infrastructure",
+  "file": "kp-114-3-public-key-infrastructure.svg",
+  "heading": "7.3 公钥基础设施",
+  "alt": "公钥基础设施：由证书与认证机构为公钥背书",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 4,
+  "slug": "signature-hash",
+  "file": "kp-114-4-signature-hash.svg",
+  "heading": "7.4 数字签名与哈希函数",
+  "alt": "数字签名与哈希：先取消息指纹，再用私钥盖章",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 5,
+  "slug": "key-exchange",
+  "file": "kp-114-5-key-exchange.svg",
+  "heading": "7.5 密钥交换",
+  "alt": "密钥交换：双方各公开一部分信息，算出相同的共享密钥",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 6,
+  "slug": "ecc",
+  "file": "kp-114-6-ecc.svg",
+  "heading": "7.6 椭圆曲线密码",
+  "alt": "椭圆曲线密码：曲线上一点反复自加容易，反推倍数极难",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 7,
+  "slug": "advanced-protocols",
+  "file": "kp-114-7-advanced-protocols.svg",
+  "heading": "7.7 高级密码学协议",
+  "alt": "高级密码学协议：不必暴露秘密就能合作与证明",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 8,
+  "slug": "quantum-crypto",
+  "file": "kp-114-8-quantum-crypto.svg",
+  "heading": "7.8 量子密码学",
+  "alt": "量子密码学：量子计算冲击旧难题，催生后量子方案",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 9,
+  "slug": "rsa-correctness",
+  "file": "kp-114-9-rsa-correctness.svg",
+  "heading": "7.9 RSA 密码的正确性",
+  "alt": "RSA 正确性：指数关系保证解密还原原文",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 10,
+  "slug": "rabin-security",
+  "file": "kp-114-10-rabin-security.svg",
+  "heading": "7.10 Rabin 密码的安全性",
+  "alt": "Rabin 密码：破解难度与整数因子分解等价",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 11,
+  "slug": "dh-security",
+  "file": "kp-114-11-dh-security.svg",
+  "heading": "7.11 Diffie-Hellman 密钥交换的安全性",
+  "alt": "Diffie-Hellman 安全性：破解等价于求解离散对数难题",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 12,
+  "slug": "elgamal-security",
+  "file": "kp-114-12-elgamal-security.svg",
+  "heading": "7.12 ElGamal 加密的安全性",
+  "alt": "ElGamal 加密：随机化密文，安全归约到 DDH 假设",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 114,
+  "idx": 13,
+  "slug": "rsa-oaep-security",
+  "file": "kp-114-13-rsa-oaep-security.svg",
+  "heading": "7.13 RSA-OAEP 的安全性",
+  "alt": "RSA-OAEP 安全性：随机化填充达成抗选择密文攻击",
+  "md": "src/07-应用数学/第114级-密码学.md"
+ },
+ {
+  "level": 115,
+  "idx": 1,
+  "slug": "complexity",
+  "file": "kp-115-1-complexity.svg",
+  "heading": "7.1 算得快不快，先看\"规模\"的脸色",
+  "alt": "算法复杂度随问题规模增长的对比曲线",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 2,
+  "slug": "floating-point-error",
+  "file": "kp-115-2-floating-point-error.svg",
+  "heading": "7.2 计算机的小数，是\"四舍五入\"出来的",
+  "alt": "浮点数在小数位上的舍入示意",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 3,
+  "slug": "numerical-stability",
+  "file": "kp-115-3-numerical-stability.svg",
+  "heading": "7.3 有的算法一身\"稳\"，有的却一点就炸",
+  "alt": "稳定算法与不稳定算法的误差传播对比",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 4,
+  "slug": "algorithm-paradigms",
+  "file": "kp-115-4-algorithm-paradigms.svg",
+  "heading": "7.4 面对新难题，先翻\"解法工具箱\"",
+  "alt": "分治、动态规划等算法范式示意",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 5,
+  "slug": "monte-carlo",
+  "file": "kp-115-5-monte-carlo.svg",
+  "heading": "7.5 高维算不动？那就撒点去\"数\"",
+  "alt": "在方形区域内撒随机点来估计结果",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 6,
+  "slug": "parallel-gpu",
+  "file": "kp-115-6-parallel-gpu.svg",
+  "heading": "7.6 一个人的活，分给成千上万只手",
+  "alt": "多个计算核心并行处理任务",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 7,
+  "slug": "sparse-matrix",
+  "file": "kp-115-7-sparse-matrix.svg",
+  "heading": "7.7 矩阵虽大，却大多空着",
+  "alt": "稀疏矩阵中非零元素零星分布",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 8,
+  "slug": "adaptive-multiscale",
+  "file": "kp-115-8-adaptive-multiscale.svg",
+  "heading": "7.8 哪里难算，就在哪里多下功夫",
+  "alt": "自适应网格在关键区域局部加密",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 9,
+  "slug": "error-analysis",
+  "file": "kp-115-9-error-analysis.svg",
+  "heading": "7.9 结果最多错多少，能不能事先说清",
+  "alt": "误差在运算链条上逐级累积的示意",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 10,
+  "slug": "fmm-error-bound",
+  "file": "kp-115-10-fmm-error-bound.svg",
+  "heading": "7.10 用可控的近似，换十倍百倍的速度",
+  "alt": "用多极展开近似远处的相互作用",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 11,
+  "slug": "monte-carlo-convergence",
+  "file": "kp-115-11-monte-carlo-convergence.svg",
+  "heading": "7.11 随机撒点，凭什么保证会收敛",
+  "alt": "样本量增大时估计值逐步收敛",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 12,
+  "slug": "master-theorem",
+  "file": "kp-115-12-master-theorem.svg",
+  "heading": "7.12 分治算法的复杂度，一张表就能查",
+  "alt": "分治递推关系对应不同的复杂度情形",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 115,
+  "idx": 13,
+  "slug": "adaptive-convergence",
+  "file": "kp-115-13-adaptive-convergence.svg",
+  "heading": "7.13 一边算一边加密，收敛与代价都算得准",
+  "alt": "自适应迭代中误差逐轮下降",
+  "md": "src/07-应用数学/第115级-计算数学.md"
+ },
+ {
+  "level": 116,
+  "idx": 1,
+  "slug": "data-preprocessing",
+  "file": "kp-116-1-data-preprocessing.svg",
+  "heading": "7.1 先把数据洗干净",
+  "alt": "数据预处理：缺失值填补、去重与标准化",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 2,
+  "slug": "exploratory-data-analysis",
+  "file": "kp-116-2-exploratory-data-analysis.svg",
+  "heading": "7.2 先看图再动手",
+  "alt": "探索性数据分析：直方图、散点图与统计摘要",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 3,
+  "slug": "statistical-modeling",
+  "file": "kp-116-3-statistical-modeling.svg",
+  "heading": "7.3 用概率的语言描述世界",
+  "alt": "统计建模：规律项加随机噪声项",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 4,
+  "slug": "feature-selection",
+  "file": "kp-116-4-feature-selection.svg",
+  "heading": "7.4 挑出最有用的几个指标",
+  "alt": "特征选择：从众多特征中挑出关键变量",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 5,
+  "slug": "feature-engineering",
+  "file": "kp-116-5-feature-engineering.svg",
+  "heading": "7.5 把原料加工成好用的样子",
+  "alt": "特征工程：由原始字段构造更有用的新特征",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 6,
+  "slug": "dimensionality-reduction",
+  "file": "kp-116-6-dimensionality-reduction.svg",
+  "heading": "7.6 十几个指标压成一两个",
+  "alt": "降维：把高维数据投影到少数主方向",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 7,
+  "slug": "clustering",
+  "file": "kp-116-7-clustering.svg",
+  "heading": "7.7 物以类聚，自动分组",
+  "alt": "聚类：把相近样本自动聚成若干组",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 8,
+  "slug": "classification",
+  "file": "kp-116-8-classification.svg",
+  "heading": "7.8 贴上对号入座的标签",
+  "alt": "分类：根据特征把样本判入不同类别",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 9,
+  "slug": "regression",
+  "file": "kp-116-9-regression.svg",
+  "heading": "7.9 预测一个具体的数",
+  "alt": "回归：用一条拟合曲线预测连续数值",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 10,
+  "slug": "ensemble-methods",
+  "file": "kp-116-10-ensemble-methods.svg",
+  "heading": "7.10 三个臭皮匠顶个诸葛亮",
+  "alt": "集成方法：多个弱模型投票汇成一个强模型",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 11,
+  "slug": "model-evaluation",
+  "file": "kp-116-11-model-evaluation.svg",
+  "heading": "7.11 光看准确率会骗人",
+  "alt": "模型评估：用混淆矩阵与多项指标衡量好坏",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 12,
+  "slug": "overfitting-regularization",
+  "file": "kp-116-12-overfitting-regularization.svg",
+  "heading": "7.12 别把噪声当成规律背下来",
+  "alt": "过拟合与正则化：在复杂度与误差之间权衡",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 13,
+  "slug": "hyperparameter-tuning",
+  "file": "kp-116-13-hyperparameter-tuning.svg",
+  "heading": "7.13 调火候，找到最合适的那一档",
+  "alt": "超参数调优：在验证集上搜索最佳参数组合",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 14,
+  "slug": "data-visualization",
+  "file": "kp-116-14-data-visualization.svg",
+  "heading": "7.14 让数据自己开口说话",
+  "alt": "数据可视化：用图形呈现数据的结构与趋势",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 15,
+  "slug": "pca-optimality",
+  "file": "kp-116-15-pca-optimality.svg",
+  "heading": "7.15 选对方向，保留最多信息",
+  "alt": "PCA 最优性：第一主方向使投影方差最大",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 16,
+  "slug": "kmeans-convergence",
+  "file": "kp-116-16-kmeans-convergence.svg",
+  "heading": "7.16 分组越换越稳，终会停下",
+  "alt": "K-means 收敛：每次迭代都使组内误差不增",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 17,
+  "slug": "logistic-convexity",
+  "file": "kp-116-17-logistic-convexity.svg",
+  "heading": "7.17 只有一个谷底，不怕走丢",
+  "alt": "逻辑回归凸性：损失曲面只有一个全局最低点",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 18,
+  "slug": "random-forest-generalization",
+  "file": "kp-116-18-random-forest-generalization.svg",
+  "heading": "7.18 树越多、越独立，越不容易出错",
+  "alt": "随机森林泛化误差：随树数增加趋于稳定上界",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 116,
+  "idx": 19,
+  "slug": "xgboost-convergence",
+  "file": "kp-116-19-xgboost-convergence.svg",
+  "heading": "7.19 一小步一小步，稳步逼近最优",
+  "alt": "XGBoost 梯度提升：每加一棵树都降低损失",
+  "md": "src/07-应用数学/第116级-数据科学.md"
+ },
+ {
+  "level": 117,
+  "idx": 1,
+  "slug": "modeling-process",
+  "file": "kp-117-1-modeling-process.svg",
+  "heading": "7.1 建模是个来回改的循环",
+  "alt": "建模在现实与数学之间反复修正的循环",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 2,
+  "slug": "deterministic-model",
+  "file": "kp-117-2-deterministic-model.svg",
+  "heading": "7.2 同样的输入，永远得到同样的输出",
+  "alt": "确定输入对应唯一输出的确定关系",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 3,
+  "slug": "stochastic-model",
+  "file": "kp-117-3-stochastic-model.svg",
+  "heading": "7.3 带骰子的世界，结果只能谈概率",
+  "alt": "用概率分布描述不确定结果的宽度",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 4,
+  "slug": "differential-equation-model",
+  "file": "kp-117-4-differential-equation-model.svg",
+  "heading": "7.4 算不出总量，就先给变化率记账",
+  "alt": "把变化率写成方程来推演系统演化",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 5,
+  "slug": "optimization-model",
+  "file": "kp-117-5-optimization-model.svg",
+  "heading": "7.5 在人人受限的约束里，找出最好的那个点",
+  "alt": "在可行区域内寻找最优的那个点",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 6,
+  "slug": "discrete-model",
+  "file": "kp-117-6-discrete-model.svg",
+  "heading": "7.6 不必连续，一步一步数着走",
+  "alt": "按离散步点递推演化的状态链",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 7,
+  "slug": "statistical-model",
+  "file": "kp-117-7-statistical-model.svg",
+  "heading": "7.7 从一堆数据里，摸出背后的规律",
+  "alt": "从一堆数据中描出趋势与规律",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 8,
+  "slug": "simulation-model",
+  "file": "kp-117-8-simulation-model.svg",
+  "heading": "7.8 实在算不动，就让它自己跑一遍",
+  "alt": "反复随机试验逼近难以计算的答案",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 9,
+  "slug": "sensitivity-analysis",
+  "file": "kp-117-9-sensitivity-analysis.svg",
+  "heading": "7.9 哪个旋钮一动，结果就跟着抖",
+  "alt": "微调参数看结果变化的幅度",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 10,
+  "slug": "model-validation",
+  "file": "kp-117-10-model-validation.svg",
+  "heading": "7.10 模型说得再好，也得拿现实验一验",
+  "alt": "把模型预测与真实观测摆在一起对照",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 11,
+  "slug": "dimensional-analysis",
+  "file": "kp-117-11-dimensional-analysis.svg",
+  "heading": "7.11 先看单位，能不能凑出答案",
+  "alt": "靠量纲一致筛出可能成立的组合",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 12,
+  "slug": "similarity-theory",
+  "file": "kp-117-12-similarity-theory.svg",
+  "heading": "7.12 大小不同，只要比例对，规律就一样",
+  "alt": "按比例缩放的模型与原系统规律一致",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 13,
+  "slug": "parameter-estimation",
+  "file": "kp-117-13-parameter-estimation.svg",
+  "heading": "7.13 从数据里，反推模型的那些旋钮",
+  "alt": "用观测数据反估模型的未知参数",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 14,
+  "slug": "model-selection",
+  "file": "kp-117-14-model-selection.svg",
+  "heading": "7.14 越复杂，不一定越好",
+  "alt": "在拟合好坏与模型复杂度之间权衡",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 15,
+  "slug": "buckingham-pi-theorem",
+  "file": "kp-117-15-buckingham-pi-theorem.svg",
+  "heading": "7.15 量纲世界里的万能钥匙",
+  "alt": "用无量纲组合减少变量个数",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 16,
+  "slug": "gauss-markov-theorem",
+  "file": "kp-117-16-gauss-markov-theorem.svg",
+  "heading": "7.16 最小二乘为什么这么靠谱",
+  "alt": "最小二乘估计在线性无偏估计中最优",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 17,
+  "slug": "newton-similarity-criterion",
+  "file": "kp-117-17-newton-similarity-criterion.svg",
+  "heading": "7.17 让模型与实物，说同一种语言",
+  "alt": "动力相似要求牛顿数相等",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 18,
+  "slug": "sensitivity-condition-number",
+  "file": "kp-117-18-sensitivity-condition-number.svg",
+  "heading": "7.18 输入的小误差，会不会被放大",
+  "alt": "条件数衡量误差被放大的倍数",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 117,
+  "idx": 19,
+  "slug": "aic-asymptotic",
+  "file": "kp-117-19-aic-asymptotic.svg",
+  "heading": "7.19 选模型的尺子，为何算得住",
+  "alt": "样本量增大时 AIC 的渐近表现",
+  "md": "src/07-应用数学/第117级-数学建模.md"
+ },
+ {
+  "level": 118,
+  "idx": 1,
+  "slug": "continuity-equation",
+  "file": "kp-118-1-continuity-equation.svg",
+  "heading": "7.1 一根水管里的水，不会凭空多也不会凭空少",
+  "alt": "管道里水流进流出保持质量守恒",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 2,
+  "slug": "navier-stokes-equation",
+  "file": "kp-118-2-navier-stokes-equation.svg",
+  "heading": "7.2 流体的“牛顿第二定律”",
+  "alt": "流体微团受力与加速度的平衡关系",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 3,
+  "slug": "euler-equation",
+  "file": "kp-118-3-euler-equation.svg",
+  "heading": "7.3 把黏性先抹掉：理想流体的方程",
+  "alt": "无黏理想流体微团受力示意",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 4,
+  "slug": "bernoulli-equation",
+  "file": "kp-118-4-bernoulli-equation.svg",
+  "heading": "7.4 流得快的地方，压强反而低",
+  "alt": "沿流线速度与压强的能量守恒",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 5,
+  "slug": "vorticity-circulation",
+  "file": "kp-118-5-vorticity-circulation.svg",
+  "heading": "7.5 水里的“打转”怎么量",
+  "alt": "流体局部旋转与闭合回路的环量",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 6,
+  "slug": "potential-flow",
+  "file": "kp-118-6-potential-flow.svg",
+  "heading": "7.6 无旋流动：一切由“势”决定",
+  "alt": "绕圆柱的无旋势流速度场",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 7,
+  "slug": "boundary-layer",
+  "file": "kp-118-7-boundary-layer.svg",
+  "heading": "7.7 黏性只挤在贴着壁面的一薄层",
+  "alt": "壁面附近速度渐增的边界层剖面",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 8,
+  "slug": "turbulence",
+  "file": "kp-118-8-turbulence.svg",
+  "heading": "7.8 乱成一团的流动",
+  "alt": "充满随机涡旋的湍流流动",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 9,
+  "slug": "reynolds-averaging",
+  "file": "kp-118-9-reynolds-averaging.svg",
+  "heading": "7.9 把湍流的“平均”和“脉动”拆开",
+  "alt": "湍流速度分解为平均与脉动",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 10,
+  "slug": "laminar-turbulent",
+  "file": "kp-118-10-laminar-turbulent.svg",
+  "heading": "7.10 整齐的层流，混乱的湍流",
+  "alt": "层流整齐流线与湍流混乱流线对比",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 11,
+  "slug": "reynolds-number",
+  "file": "kp-118-11-reynolds-number.svg",
+  "heading": "7.11 一个数判断流得“规矩”还是“乱”",
+  "alt": "低雷诺数与高雷诺数流动对比",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 12,
+  "slug": "mach-number",
+  "file": "kp-118-12-mach-number.svg",
+  "heading": "7.12 比音速快几倍",
+  "alt": "亚音速与超音速流动及激波",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 13,
+  "slug": "compressible-incompressible",
+  "file": "kp-118-13-compressible-incompressible.svg",
+  "heading": "7.13 水几乎压不动，空气却能压缩",
+  "alt": "不可压缩流与可压缩流的密度变化",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 14,
+  "slug": "viscous-inviscid",
+  "file": "kp-118-14-viscous-inviscid.svg",
+  "heading": "7.14 有没有内摩擦，两套世界",
+  "alt": "粘性流与无粘流的速度剖面对比",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 15,
+  "slug": "stream-function",
+  "file": "kp-118-15-stream-function.svg",
+  "heading": "7.15 用一条函数画出所有流线",
+  "alt": "流函数的等值线即流线",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 16,
+  "slug": "stokes-flow",
+  "file": "kp-118-16-stokes-flow.svg",
+  "heading": "7.16 黏性说了算的“慢动作”流动",
+  "alt": "低雷诺数下绕过小球的缓慢流动",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 17,
+  "slug": "kutta-joukowski-theorem",
+  "file": "kp-118-17-kutta-joukowski-theorem.svg",
+  "heading": "7.17 有环量就有升力",
+  "alt": "绕翼型环量与升力的关系",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 18,
+  "slug": "ns-derivation",
+  "file": "kp-118-18-ns-derivation.svg",
+  "heading": "7.18 Navier-Stokes 方程是怎么推出来的",
+  "alt": "从守恒律推导纳维-斯托克斯方程",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 19,
+  "slug": "bernoulli-theorem",
+  "file": "kp-118-19-bernoulli-theorem.svg",
+  "heading": "7.19 伯努利定理：沿流线能量守恒",
+  "alt": "沿流线积分得到伯努利关系",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 20,
+  "slug": "kutta-joukowski-lift",
+  "file": "kp-118-20-kutta-joukowski-lift.svg",
+  "heading": "7.20 升力定理：为什么机翼能飞",
+  "alt": "翼型压力分布与升力定理",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 21,
+  "slug": "stokes-drag",
+  "file": "kp-118-21-stokes-drag.svg",
+  "heading": "7.21 小球在黏性流里受多大阻力",
+  "alt": "小球在低雷诺数流中受到的阻力",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 118,
+  "idx": 22,
+  "slug": "kelvin-circulation",
+  "file": "kp-118-22-kelvin-circulation.svg",
+  "heading": "7.22 环量守恒：旋涡随流走而来不消失",
+  "alt": "随流体运动的闭合回路环量保持不变",
+  "md": "src/07-应用数学/第118级-流体力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 1,
+  "slug": "continuum-hypothesis",
+  "file": "kp-119-1-continuum-hypothesis.svg",
+  "heading": "把万物都看成\"连续的一片\"",
+  "alt": "从离散颗粒到连续介质",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 2,
+  "slug": "deformation-gradient",
+  "file": "kp-119-2-deformation-gradient.svg",
+  "heading": "给每一点配一张\"变形说明书\"",
+  "alt": "变形前后的网格与变形梯度",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 3,
+  "slug": "strain-tensor",
+  "file": "kp-119-3-strain-tensor.svg",
+  "heading": "拉伸、剪切有多大，量出来",
+  "alt": "拉伸与剪切对应的应变",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 4,
+  "slug": "stress-tensor",
+  "file": "kp-119-4-stress-tensor.svg",
+  "heading": "一点受力，各个方向都不同",
+  "alt": "一点在不同方向面上的应力",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 5,
+  "slug": "conservation-laws",
+  "file": "kp-119-5-conservation-laws.svg",
+  "heading": "质量、动量、能量三本账",
+  "alt": "质量、动量、能量三条守恒",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 6,
+  "slug": "constitutive-equation",
+  "file": "kp-119-6-constitutive-equation.svg",
+  "heading": "给材料填上\"个性\"",
+  "alt": "不同材料对同一变形的不同响应",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 7,
+  "slug": "material-classification",
+  "file": "kp-119-7-material-classification.svg",
+  "heading": "固体、流体、弹性、塑性",
+  "alt": "弹性、塑性、流体、粘弹性",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 8,
+  "slug": "cauchy-theorem",
+  "file": "kp-119-8-cauchy-theorem.svg",
+  "heading": "为什么一定存在应力张量",
+  "alt": "任意斜面的应力由应力张量决定",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 9,
+  "slug": "polar-decomposition",
+  "file": "kp-119-9-polar-decomposition.svg",
+  "heading": "变形可拆成\"拉伸加转动\"",
+  "alt": "变形梯度分解为旋转与拉伸",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 10,
+  "slug": "cauchy-motion-law",
+  "file": "kp-119-10-cauchy-motion-law.svg",
+  "heading": "受力就加速的运动定律",
+  "alt": "体积元受力与加速度",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 11,
+  "slug": "isotropic-representation",
+  "file": "kp-119-11-isotropic-representation.svg",
+  "heading": "各向同性的材料只剩极少自由",
+  "alt": "各向同性材料与主不变量",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 119,
+  "idx": 12,
+  "slug": "hyperelasticity",
+  "file": "kp-119-12-hyperelasticity.svg",
+  "heading": "应变能一求导，应力就出来",
+  "alt": "应变能决定应力的超弹性",
+  "md": "src/07-应用数学/第119级-连续介质力学.md"
+ },
+ {
+  "level": 120,
+  "idx": 1,
+  "slug": "game-elements",
+  "file": "kp-120-1-game-elements.svg",
+  "heading": "一场博弈的三样东西",
+  "alt": "一场博弈的玩家、策略与收益",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 2,
+  "slug": "nash-equilibrium",
+  "file": "kp-120-2-nash-equilibrium.svg",
+  "heading": "谁都不愿先动的稳定局面",
+  "alt": "没人愿单独改变策略的稳定局面",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 3,
+  "slug": "mixed-strategy",
+  "file": "kp-120-3-mixed-strategy.svg",
+  "heading": "猜不透时，随机反而最稳",
+  "alt": "纯策略与按概率随机的混合策略",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 4,
+  "slug": "game-types",
+  "file": "kp-120-4-game-types.svg",
+  "heading": "先认清这是哪一类博弈",
+  "alt": "按同时或先后、零和或非零和给博弈分类",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 5,
+  "slug": "shapley-value",
+  "file": "kp-120-5-shapley-value.svg",
+  "heading": "合伙分钱，按缺了你会少赚多少",
+  "alt": "按边际贡献平均分配合作收益",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 6,
+  "slug": "core",
+  "file": "kp-120-6-core.svg",
+  "heading": "谁都没兴趣单干的分配",
+  "alt": "无人愿意脱离大联盟的稳定分配集合",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 7,
+  "slug": "bargaining",
+  "file": "kp-120-7-bargaining.svg",
+  "heading": "谈崩时你手里还握着什么",
+  "alt": "两人分蛋糕的可行收益与威胁点",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 8,
+  "slug": "subgame-perfect",
+  "file": "kp-120-8-subgame-perfect.svg",
+  "heading": "让每一步承诺都经得起检验",
+  "alt": "从每个子局面往后都要最优",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 9,
+  "slug": "nash-existence",
+  "file": "kp-120-9-nash-existence.svg",
+  "heading": "有限博弈的均衡一定存在",
+  "alt": "最佳响应映射的不动点给出均衡",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 10,
+  "slug": "minimax-theorem",
+  "file": "kp-120-10-minimax-theorem.svg",
+  "heading": "零和博弈里那个压不住的值",
+  "alt": "零和博弈中上下界咬合成一个鞍点值",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 11,
+  "slug": "shapley-axioms",
+  "file": "kp-120-11-shapley-axioms.svg",
+  "heading": "几条公理把公平唯一定死",
+  "alt": "几条公理唯一确定 Shapley 值",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 12,
+  "slug": "nash-bargaining",
+  "file": "kp-120-12-nash-bargaining.svg",
+  "heading": "最讲理的谈判解",
+  "alt": "最大化双方收益增量的乘积",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 120,
+  "idx": 13,
+  "slug": "subgame-existence",
+  "file": "kp-120-13-subgame-existence.svg",
+  "heading": "有限动态博弈总有解",
+  "alt": "逆推归纳构造子博弈完美均衡",
+  "md": "src/07-应用数学/第120级-博弈论.md"
+ },
+ {
+  "level": 121,
+  "idx": 1,
+  "slug": "state-space",
+  "file": "kp-121-1-state-space.svg",
+  "heading": "状态空间模型：给系统建一份内部档案",
+  "alt": "用一组状态变量刻画系统的内部变化",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 2,
+  "slug": "transfer-function",
+  "file": "kp-121-2-transfer-function.svg",
+  "heading": "传递函数：只看进、看出的放大标签",
+  "alt": "系统对不同频率输入的放大与相位变化",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 3,
+  "slug": "controllability",
+  "file": "kp-121-3-controllability.svg",
+  "heading": "可控性：方向盘能不能把系统开到任何地方",
+  "alt": "控制输入能否把状态驱动到任意目标",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 4,
+  "slug": "observability",
+  "file": "kp-121-4-observability.svg",
+  "heading": "可观性：从仪表读数能不能看清全部内部",
+  "alt": "能否从输出测量反推出内部状态",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 5,
+  "slug": "lyapunov-stability",
+  "file": "kp-121-5-lyapunov-stability.svg",
+  "heading": "Lyapunov 稳定性：看能量是否一路下滑",
+  "alt": "能量函数沿系统轨迹单调下降趋于平衡",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 6,
+  "slug": "lqr",
+  "file": "kp-121-6-lqr.svg",
+  "heading": "LQR：既要稳住，又要少花力气",
+  "alt": "在状态偏差与控制能量之间权衡取最优",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 7,
+  "slug": "kalman-filter",
+  "file": "kp-121-7-kalman-filter.svg",
+  "heading": "Kalman 滤波：预测和测量，各信几分",
+  "alt": "按可信度加权融合模型预测与现场测量",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 8,
+  "slug": "pontryagin",
+  "file": "kp-121-8-pontryagin.svg",
+  "heading": "Pontryagin 极大值原理：让 Hamiltonian 取极值",
+  "alt": "通过 Hamiltonian 取极值来寻找最优控制",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 9,
+  "slug": "hjb-equation",
+  "file": "kp-121-9-hjb-equation.svg",
+  "heading": "HJB 方程：把最优策略解成一张价值地图",
+  "alt": "价值函数满足的偏微分方程刻画最优策略",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 10,
+  "slug": "kalman-rank",
+  "file": "kp-121-10-kalman-rank.svg",
+  "heading": "Kalman 秩条件：一张矩阵就能判可控",
+  "alt": "可控性矩阵满秩则系统可控",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 11,
+  "slug": "duality",
+  "file": "kp-121-11-duality.svg",
+  "heading": "对偶原理：看得清和控得住本是同一件事",
+  "alt": "可控性与可观性通过转置互为对偶",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 12,
+  "slug": "lyapunov-theorem",
+  "file": "kp-121-12-lyapunov-theorem.svg",
+  "heading": "Lyapunov 定理：能量下降就稳",
+  "alt": "正定能量函数导数负定则渐近稳定",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 13,
+  "slug": "lqr-optimal",
+  "file": "kp-121-13-lqr-optimal.svg",
+  "heading": "LQR 最优反馈：解一枚 Riccati 方程",
+  "alt": "由 Riccati 方程解出的最优反馈增益",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ },
+ {
+  "level": 121,
+  "idx": 14,
+  "slug": "pontryagin-max",
+  "file": "kp-121-14-pontryagin-max.svg",
+  "heading": "极大值原理：最优控制的必要条件",
+  "alt": "最优控制使 Hamiltonian 逐点取极值",
+  "md": "src/07-应用数学/第121级-控制论.md"
+ }
+]
