@@ -401,7 +401,7 @@ z
    </g>
    <g id="text_2">
     <!-- α -->
-    <g style="fill: #55a868" transform="translate(109.071 184.96736) scale(0.085 -0.085)">
+    <g style="fill: #55a868" transform="translate(126 186.6) scale(0.085 -0.085)">
      <defs>
       <path id="NotoSansCJKsc-Regular-119" d="M 1664 -83 
 C 2118 -83 2483 154 2746 621 
@@ -433,7 +433,7 @@ z
    </g>
    <g id="text_3">
     <!-- β -->
-    <g style="fill: #c44e52" transform="translate(117.22068 168.668) scale(0.085 -0.085)">
+    <g style="fill: #c44e52" transform="translate(113 166.3) scale(0.085 -0.085)">
      <defs>
       <path id="NotoSansCJKsc-Regular-11a" d="M 570 -1280 
 L 1158 -1280 
@@ -2054,6 +2054,15 @@ z
      <use xlink:href="#NotoSansCJKsc-Regular-2a9d" transform="translate(200 0)"/>
      <use xlink:href="#NotoSansCJKsc-Regular-430b" transform="translate(300 0)"/>
     </g>
+   </g>
+   <g id="axis_x">
+    <path d="M 26 190.40048 
+L 170 190.40048 
+" style="fill: none; stroke: #222222; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 166 188.40048 
+L 170 190.40048 
+L 166 192.40048 
+" style="fill: #222222; stroke: #222222; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
   </g>
  </g>
