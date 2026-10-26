@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="700" viewBox="0 0 1000 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>用平面截对顶圆锥得到圆、椭圆、抛物线、双曲线，并标出母线与准线</title>
+<style>
+  text { font-family: 'Noto Sans CJK SC', 'Source Han Sans SC', 'Microsoft YaHei', sans-serif; }
+  .panel { fill: #fcfcfe; stroke: #e3e7ee; stroke-width: 1; }
+  .axis { stroke: #ccd4df; stroke-width: 1; stroke-dasharray: 5 4; }
+  .base { fill: none; stroke: #9aa7b8; stroke-width: 1.1; stroke-dasharray: 4 3; }
+  .cone { fill: none; stroke: #6b7c93; stroke-width: 1.6; }
+  .cut { fill: #e05a5a; fill-opacity: 0.13; stroke: #d9534f; stroke-width: 1; stroke-dasharray: 5 3; }
+  .section { fill: none; stroke: #d0342c; stroke-width: 2.4; }
+  .curve-fill { fill: #e05a5a; fill-opacity: 0.06; stroke: #d0342c; stroke-width: 2.4; }
+  .gen { stroke: #e8813a; stroke-width: 2.2; stroke-dasharray: 7 4; }
+  .gen-text { font-size: 12px; fill: #c96a20; }
+  .dir { stroke: #2f9e6e; stroke-width: 1.6; stroke-dasharray: 6 4; }
+  .dir-text { font-size: 11px; fill: #22845b; }
+  .dir3d { stroke: #2f9e6e; stroke-width: 1.5; stroke-dasharray: 5 3; }
+  .dir3d-text { font-size: 9.5px; fill: #22845b; }
+  .focus { fill: #1f6fb2; }
+  .focus-text { font-size: 12px; fill: #1f6fb2; }
+  .title { font-size: 14.5px; font-weight: bold; fill: #2f3a4a; }
+  .note { font-size: 12.5px; fill: #37414f; }
+  .divider { stroke: #e8ecf3; stroke-width: 1; stroke-dasharray: 6 5; }
+</style>
+
+<text x="500" y="36" text-anchor="middle" font-size="19" font-weight="bold" fill="#26313f">用平面截对顶圆锥：四种圆锥曲线的切法与母线、准线</text>
+
+<!-- ============ 面板 1：圆 ============ -->
+<g transform="translate(10,70)">
+  <rect class="panel" x="0" y="0" width="240" height="560" rx="10"/>
+  <text class="title" x="120" y="30" text-anchor="middle">① 水平截 → 圆</text>
+
+  <line class="axis" x1="120" y1="42" x2="120" y2="258"/>
+  <ellipse class="base" cx="120" cy="65" rx="66" ry="15"/>
+  <ellipse class="base" cx="120" cy="235" rx="66" ry="15"/>
+  <path class="cone" d="M120 150 L54 65 M120 150 L186 65 M120 150 L54 235 M120 150 L186 235"/>
+
+  <ellipse class="cut" cx="120" cy="105" rx="55" ry="14"/>
+
+  <ellipse class="section" cx="120" cy="105" rx="35" ry="8"/>
+
+  <line class="gen" x1="120" y1="150" x2="186" y2="65"/>
+  <text class="gen-text" x="186" y="50" text-anchor="middle">母线</text>
+  <text class="dir3d-text" x="212" y="132" text-anchor="end">准线 → ∞</text>
+  <circle cx="120" cy="150" r="3" fill="#6b7c93"/>
+
+  <line class="divider" x1="16" y1="290" x2="224" y2="290"/>
+
+  <circle class="curve-fill" cx="120" cy="415" r="52"/>
+  <circle class="focus" cx="120" cy="415" r="2.8"/>
+  <text class="focus-text" x="128" y="408">O</text>
+  <text class="note" x="120" y="535" text-anchor="middle">e = 0：准线退到无穷远</text>
+</g>
+
+<!-- ============ 面板 2：椭圆 ============ -->
+<g transform="translate(255,70)">
+  <rect class="panel" x="0" y="0" width="240" height="560" rx="10"/>
+  <text class="title" x="120" y="30" text-anchor="middle">② 斜截 → 椭圆</text>
+
+  <line class="axis" x1="120" y1="42" x2="120" y2="258"/>
+  <ellipse class="base" cx="120" cy="65" rx="66" ry="15"/>
+  <ellipse class="base" cx="120" cy="235" rx="66" ry="15"/>
+  <path class="cone" d="M120 150 L54 65 M120 150 L186 65 M120 150 L54 235 M120 150 L186 235"/>
+
+  <ellipse class="cut" cx="120" cy="110" rx="85" ry="20" transform="rotate(-19.3 120 110)"/>
+
+  <ellipse class="section" cx="120" cy="110" rx="55" ry="7" transform="rotate(-19.3 120 110)"/>
+
+  <line class="gen" x1="120" y1="150" x2="186" y2="65"/>
+  <text class="gen-text" x="186" y="50" text-anchor="middle">母线</text>
+  <line class="dir3d" x1="192.4" y1="105.8" x2="179.2" y2="68"/>
+  <line class="dir3d" x1="60.8" y1="152" x2="47.6" y2="114.2"/>
+  <text class="dir3d-text" x="197" y="120" text-anchor="middle">准线</text>
+  <circle cx="120" cy="150" r="3" fill="#6b7c93"/>
+
+  <line class="divider" x1="16" y1="290" x2="224" y2="290"/>
+
+  <ellipse class="curve-fill" cx="120" cy="415" rx="78" ry="48"/>
+
+  <line class="dir" x1="21" y1="345" x2="21" y2="485"/>
+  <line class="dir" x1="219" y1="345" x2="219" y2="485"/>
+  <text class="dir-text" x="21" y="338" text-anchor="middle">准线</text>
+  <text class="dir-text" x="219" y="338" text-anchor="middle">准线</text>
+
+  <circle class="focus" cx="58.5" cy="415" r="3.4"/>
+  <circle class="focus" cx="181.5" cy="415" r="3.4"/>
+  <text class="focus-text" x="58.5" y="405" text-anchor="middle">F₁</text>
+  <text class="focus-text" x="181.5" y="405" text-anchor="middle">F₂</text>
+
+  <text class="note" x="120" y="535" text-anchor="middle">0 &lt; e &lt; 1：两焦点、两准线</text>
+</g>
+
+<!-- ============ 面板 3：抛物线 ============ -->
+<g transform="translate(500,70)">
+  <rect class="panel" x="0" y="0" width="240" height="560" rx="10"/>
+  <text class="title" x="120" y="28" text-anchor="middle">③ 平行于母线截 → 抛物线</text>
+  <text x="120" y="46" text-anchor="middle" font-size="10.5" fill="#c96a20">（截平面 ∥ 母线）</text>
+
+  <line class="axis" x1="120" y1="42" x2="120" y2="258"/>
+  <ellipse class="base" cx="120" cy="65" rx="66" ry="15"/>
+  <ellipse class="base" cx="120" cy="235" rx="66" ry="15"/>
+  <path class="cone" d="M120 150 L54 65 M120 150 L186 65 M120 150 L54 235 M120 150 L186 235"/>
+
+  <ellipse class="cut" cx="120" cy="120" rx="80" ry="13" transform="rotate(-52.2 120 120)"/>
+
+  <path class="section" d="M104.7 118.9 Q119 110 132.3 104.2 Q133 120 124.9 134.5"/>
+
+  <line class="gen" x1="120" y1="150" x2="186" y2="65"/>
+  <text class="gen-text" x="186" y="50" text-anchor="middle">母线</text>
+  <line class="dir3d" x1="156" y1="99.8" x2="130.6" y2="80.2"/>
+  <text class="dir3d-text" x="136" y="72" text-anchor="middle">准线</text>
+  <circle cx="120" cy="150" r="3" fill="#6b7c93"/>
+
+  <line class="divider" x1="16" y1="290" x2="224" y2="290"/>
+
+  <path class="curve-fill" d="M40 495.6 Q120 424.4 200 495.6" fill="none"/>
+
+  <line class="dir" x1="32" y1="415" x2="208" y2="415"/>
+  <text class="dir-text" x="120" y="406" text-anchor="middle">准线</text>
+
+  <circle class="focus" cx="120" cy="505" r="3.4"/>
+  <text class="focus-text" x="129" y="498">F</text>
+
+  <text class="note" x="120" y="552" text-anchor="middle">e = 1</text>
+</g>
+
+<!-- ============ 面板 4：双曲线 ============ -->
+<g transform="translate(745,70)">
+  <rect class="panel" x="0" y="0" width="240" height="560" rx="10"/>
+  <text class="title" x="120" y="30" text-anchor="middle">④ 同时截两叶 → 双曲线</text>
+
+  <line class="axis" x1="120" y1="42" x2="120" y2="258"/>
+  <ellipse class="base" cx="120" cy="65" rx="66" ry="15"/>
+  <ellipse class="base" cx="120" cy="235" rx="66" ry="15"/>
+  <path class="cone" d="M120 150 L54 65 M120 150 L186 65 M120 150 L54 235 M120 150 L186 235"/>
+
+  <ellipse class="cut" cx="132" cy="150" rx="74" ry="13" transform="rotate(-73.3 132 150)"/>
+
+  <path class="section" d="M140 80 Q145 102 141 120"/>
+  <path class="section" d="M141 120 Q150 104 163 88"/>
+  <path class="section" d="M124 220 Q119 198 123 180"/>
+  <path class="section" d="M123 180 Q112 196 101 212"/>
+
+  <line class="gen" x1="120" y1="150" x2="186" y2="65"/>
+  <text class="gen-text" x="186" y="50" text-anchor="middle">母线</text>
+  <line class="dir3d" x1="154.4" y1="138" x2="120" y2="127.6"/>
+  <line class="dir3d" x1="144" y1="172.4" x2="109.6" y2="162"/>
+  <text class="dir3d-text" x="166" y="152" text-anchor="start">准线</text>
+  <circle cx="120" cy="150" r="3" fill="#6b7c93"/>
+
+  <line class="divider" x1="16" y1="290" x2="224" y2="290"/>
+
+  <path class="curve-fill" d="M168 415 Q196 367 222 330" fill="none"/>
+  <path class="curve-fill" d="M168 415 Q196 463 222 500" fill="none"/>
+  <path class="curve-fill" d="M72 415 Q44 367 18 330" fill="none"/>
+  <path class="curve-fill" d="M72 415 Q44 463 18 500" fill="none"/>
+
+  <line class="dir" x1="83" y1="345" x2="83" y2="485"/>
+  <line class="dir" x1="157" y1="345" x2="157" y2="485"/>
+  <text class="dir-text" x="83" y="338" text-anchor="end">准线</text>
+  <text class="dir-text" x="157" y="338" text-anchor="start">准线</text>
+
+  <circle class="focus" cx="57.5" cy="415" r="3.4"/>
+  <circle class="focus" cx="182.5" cy="415" r="3.4"/>
+  <text class="focus-text" x="57.5" y="405" text-anchor="middle">F₁</text>
+  <text class="focus-text" x="182.5" y="405" text-anchor="middle">F₂</text>
+
+  <text class="note" x="120" y="535" text-anchor="middle">e &gt; 1：两焦点、两准线</text>
+</g>
+
+<!-- ============ 图注 ============ -->
+<text x="500" y="650" text-anchor="middle" font-size="12.5" fill="#5a6473">上排：用平面截对顶圆锥的四种方式（橙色虚线为母线，绿色虚线为截平面内的准线）　下排：截面内看到的曲线（蓝点为焦点 F，绿色虚线为准线 l）</text>
+<text x="500" y="672" text-anchor="middle" font-size="12.5" fill="#5a6473">准线 = 截平面与丹德林球切圆所在平面的交线；圆可看作 e = 0 的极限，准线退到无穷远</text>
+</svg>
