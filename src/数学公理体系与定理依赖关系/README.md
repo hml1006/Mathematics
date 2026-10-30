@@ -1,6 +1,6 @@
 # 数学公理体系与定理依赖关系
 
-> 本文档梳理了从初等数学到数学系研究生水平的数学公理体系和重要定理，按项目层级（第 01 级 ~ 第 151 级）分级列出。每个定理包含：定理名称、定理内容、证明该定理所需的前置定理（或公理）。
+> 本文档梳理了从初等数学到数学系研究生水平的数学公理体系和重要定理，按项目层级（第 01 级 ~ 第 159 级）分级列出。每个定理包含：定理名称、定理内容、证明该定理所需的前置定理（或公理）。
 
 ---
 
@@ -181,7 +181,15 @@
     ├── 第148级-算术几何前沿/
     ├── 第149级-拓扑量子场论/
     ├── 第150级-数学物理/
-    └── 第151级-娱乐数学/
+    ├── 第151级-娱乐数学/
+    ├── 第152级-最优传输与度量几何/
+    ├── 第153级-顶点代数与共形场论/
+    ├── 第154级-随机偏微分方程/
+    ├── 第155级-量子信息与量子计算/
+    ├── 第156级-微局部分析与半经典分析/
+    ├── 第157级-算术动力系统/
+    ├── 第158级-同伦代数与高阶结构/
+    └── 第159级-双有理几何与极小模型纲领/
 ```
 
 ---
@@ -1808,6 +1816,12 @@
 | [Grothendieck 群 K0 的泛性质](定理/第74级-代数K理论/Grothendieck群K0的泛性质.md) | $K_0(R)$ 由有限生成射影模符号生成且满足加法型映射的泛性质 | 有限生成射影模、自由阿贝尔群与商群、群同态基本定理、泛性质 |
 | [Matsumoto 定理](定理/第74级-代数K理论/Matsumoto定理.md) | $K_2(F)$ 由符号 $\{a,b\}$ 生成，仅需双线性与 Steinberg 关系 $\{a,1-a\}=1$ | Steinberg 群与初等矩阵群、$K_2(F)$ 的定义、Steinberg 关系、群同态的泛性质 |
 | [Bass-Heller-Swan 定理](定理/第74级-代数K理论/Bass-Heller-Swan定理.md) | $K_n(R[t,t^{-1}])\cong K_n(R)\oplus K_{n-1}(R)\oplus NK_n(R)\oplus NK_n(R)$ | 代数 K 群 $K_0$、$K_1$、局部化正合序列、Nil-K 群、多项式环的同伦不变性 |
+| [Quillen 的 Q 构造](定理/第74级-代数K理论/Quillen的Q构造.md) | $K_i(A)=\pi_i(\Omega BQA)$，其中 $Q$ 构造把正合范畴变为环路空间，给出高阶 K 群的定义 | 代数 K 理论、单纯集、同伦群 |
+| [Milnor $K_2$ 与 Steinberg 符号](定理/第74级-代数K理论/MilnorK2与Steinberg符号.md) | $K_2^M(F)$ 由符号 $\{a,b\}$ 生成，满足双线性、斜对称与 Steinberg 关系，并同构于 $K_2(F)$ | 域论、$K_1$、符号 |
+| [负 K 群](定理/第74级-代数K理论/负K群.md) | Bass 用环的"负维"构造定义 $K_{-n}(A)$，使局部化正合序列向负方向延伸 | $K_0$、$K_1$、局部化 |
+| [K 理论的乘法结构](定理/第74级-代数K理论/K理论的乘法结构.md) | $K_*(A)=\bigoplus_iK_i(A)$ 带上 cup 积构成交换分次环，$K_0$ 为幺元 | Q 构造、环结构 |
+| [Chern 特征与循环同调](定理/第74级-代数K理论/Chern特征与循环同调.md) | Connes-Karoubi 的 Chern 特征 $K_*(A)\to HC_*(A)$ 把 K 理论映到循环同调，是有理同构的一部分 | 循环同调、K 理论 |
+| [Borel 定理与 K 理论的秩](定理/第74级-代数K理论/Borel定理与K理论的秩.md) | 数域整数环的 $K_i$ 的秩由 Borel 用 Bernoulli 数给出：$\mathrm{rank}\,K_{2j-1}(\mathbb Z)=1$（$j$ 偶）等 | K 理论、Bernoulli 数、 regulator |
 
 ### 第 75 级：解析数论
 
@@ -1842,6 +1856,13 @@
 | [Mordell-Weil 定理](定理/第77级-算术几何/Mordell-Weil定理.md) | 椭圆曲线在数域上的有理点构成有限生成阿贝尔群 | 椭圆曲线及其群结构、弱 Mordell-Weil 定理与 Kummer 理论、Galois 上同调、Néron-Tate 高度、无限下降法 |
 | [椭圆曲线的 Weil 猜想](定理/第77级-算术几何/椭圆曲线的Weil猜想.md) | 有限域上椭圆曲线的点数为 $N_m=1+q^m-(\alpha^m+\bar\alpha^m)$，$|\alpha|=\sqrt q$ | 有限域与 Frobenius 态射、$\ell$-进 Tate 模、对偶同态、Zeta 函数、Lefschetz迹公式|
 | [Faltings 定理](定理/第77级-算术几何/Faltings定理.md) | 亏格 $\ge2$ 的曲线在数域上只有有限多个有理点 | 曲线的亏格与 Jacobi 簇、Mordell-Weil 定理、Faltings 高度、Tate 猜想与等源分类、$\ell$-进 Tate 模 |
+| [弱 Mordell-Weil 定理](定理/第77级-算术几何/弱Mordell-Weil定理.md) | 若 $E(K)/mE(K)$ 对某 $m\ge2$ 有限，则 $E(K)$ 有限生成，故 Mordell-Weil 定理归结为有限性 | Galois 上同调、Kummer 配对 |
+| [Néron-Tate 高度](定理/第77级-算术几何/Néron-Tate高度.md) | 典范高度 $\hat h$ 是 $E(K)$ 上的二次型，$\langle P,Q\rangle=\tfrac12(\hat h(P+Q)-\hat h(P)-\hat h(Q))$ 为非退化配对，其秩等于 $E(K)$ 的秩 | 高度函数、Weil 猜想（Hasse 界） |
+| [椭圆曲线的模曲线](定理/第77级-算术几何/椭圆曲线的模曲线.md) | $Y_0(N)$ 的参数空间参数化带 $N$-同源的椭圆曲线对，模性定理即 $X_0(N)\to E$ 的存在性 | 模形式、模空间、椭圆曲线 |
+| [平展上同调](定理/第77级-算术几何/平展上同调.md) | $\ell$-adic 平展上同调 $H^i_{\text{ét}}(X,\mathbb Q_\ell)$ 满足 Poincaré 对偶、Künneth 公式与基变换，是 Weil 猜想的载体 | 概形、Galois 表示、层上同调 |
+| [Néron 模型](定理/第77级-算术几何/Néron模型.md) | 局部域上椭圆曲线存在极小正则整模型，其特殊纤维的约化类型（良好/乘性/加性）由 $j$ 不变量的赋值决定 | 整概形、奇点消解、椭圆曲线 |
+| [Tate-Shafarevich 群与 Selmer 群](定理/第77级-算术几何/Tate-Shafarevich群与Selmer群.md) | $\mathrm{Sel}_m(E/K)\to E(K)/mE(K)\to Ш(E/K)[m]$ 正合，Selmer 群可计算而 $Ш$ 度量局部-整体障碍 | Galois 上同调、弱 Mordell-Weil 定理 |
+| [Schlessinger 形变理论](定理/第77级-算术几何/Schlessinger形变理论.md) | 形变函子可表（有形式 moduli）当且仅当满足 Schlessinger 条件 $H_0$–$H_2$ | 范畴论、Artin 局部环、上同调 |
 
 ### 第 78 级：丢番图逼近
 
@@ -2147,6 +2168,12 @@
 | [Pickands-Balkema-de Haan 定理](定理/第101级-极值概率论/Pickands-Balkema-de_Haan定理.md) | 大阈值之上超额量条件分布趋向广义帕累托分布（GPD） | 条件分布、尾部分布、MDA、一致收敛、极限比值 |
 | [极值指标估计的渐近性质](定理/第101级-极值概率论/极值指标估计的渐近性质.md) | Hill 估计量相合，波动渐近正态、方差 $\xi^2/k$ | 顺序统计量、Rényi 表示、弱收敛与大数定律、中心极限定理 |
 | [极值指数与 MDA 的刻画（von Mises 条件）](定理/第101级-极值概率论/极值指数与MDA的刻画（von_Mises条件）.md) | 尾商 $r(x)$ 在右端点增长率决定最大吸引域属哪一类 | 分布函数、右端点、反函数求导、缓变函数、三大极值分布 |
+| [von Mises 条件与吸引域](定理/第101级-极值概率论/vonMises条件与吸引域.md) | $F$ 属于 Fréchet/Weibull/Gumbel 吸引域当且仅当相应的尾函数满足正则变差条件（von Mises 条件） | 极值分布、正则变差 |
+| [超阈值方法与广义 Pareto 分布](定理/第101级-极值概率论/超阈值方法与广义Pareto分布.md) | 对充分高的阈值 $u$，超出量 $(X-u)^+$ 的条件分布近似为广义 Pareto 分布（Pickands-Balkema-de Haan） | Pickands-Balkema-de Haan 定理 |
+| [极值 copula 与多元极值](定理/第101级-极值概率论/极值copula与多元极值.md) | 多元极值的极限分布由极值 copula 刻画，$C(u)=u_1+\cdots+u_d$ 的凸函数表示给出相依结构 | copula、极值分布 |
+| [极值过程的谱测度表示](定理/第101级-极值概率论/极值过程的谱测度表示.md) | 平稳极值过程可由谱测度表示，极值指标与谱测度的质量互为倒数 | 点过程、极值理论 |
+| [Karamata 正则变差理论](定理/第101级-极值概率论/Karamata正则变差理论.md) | 慢变函数 $L$ 满足 $L(tx)/L(t)\to1$，尾分布正则变差指数决定极值指标 $\xi=1/\alpha$ | 极值指数、渐近分析 |
+| [Hüsler-Reiss 模型](定理/第101级-极值概率论/Hüsler-Reiss模型.md) | 高斯过程极值的极限是 Hüsler-Reiss 分布，参数由协方差函数的变差给出 | 高斯过程、极值 copula |
 
 ### 第 102 级：大偏差理论
 
@@ -2621,6 +2648,12 @@
 | [GL(1) 的几何 Langlands 对应](定理/第142级-几何朗兰兹/GL（1）的几何Langlands对应.md) | $\mathrm{Pic}(X)$ 上 D-模与一秩局部系统层的 Fourier 互变 | Abel 簇、Picard 簇、Poincaré 线丛、Fourier-Mukai、D-模 |
 | [Hecke 特征值的几何构造](定理/第142级-几何朗兰兹/Hecke特征值的几何构造.md) | 从 $\mathrm{Bun}_G$ 的 D-模与 Hecke 算子直接解出特征值局部系统 | Hecke 算子与本征条件、系数层族、D-模理论 |
 | [Beilinson-Drinfeld 定理（几何 Langlands 对应）](定理/第142级-几何朗兰兹/Beilinson-Drinfeld定理（几何Langlands对应）.md) | 曲线上的 Hecke 本征 D-模与局部系统拟凝聚层是一回事 | Hecke 对应、D-模、LocSys 模空间、Fourier-Mukai、Opers |
+| [几何 Satake 等价](定理/第142级-几何朗兰兹/几何Satake等价.md) | $\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Gr}_G)$ 的 $\mathrm{Rep}(\check G)$-等变层范畴与 $\mathrm{Rep}(\check G)$ 等价，是几何 Langlands 的局部基石 | 仿射 Grassmann 流形、D-模、表示论 |
+| [Hitchin 纤维化与可积系统](定理/第142级-几何朗兰兹/Hitchin纤维化与可积系统.md) | Higgs 丛的 Hitchin 映射 $\mathrm{Higgs}\to\bigoplus H^0(X,K_X^{\otimes i})$ 给出完全可积系统，其纤维是 Jacobian 型的阿贝尔簇 | Higgs 丛、辛几何、谱曲线 |
+| [Whittaker 层与几何 Langlands](定理/第142级-几何朗兰兹/Whittaker层与几何Langlands.md) | Whittaker 层给出几何 Langlands 的"谱侧"到"自守侧"的函子，其非零性等价于对应存在（Gaitsgory） | 几何 Satake 等价、D-模 |
+| [Opers 理论](定理/第142级-几何朗兰兹/Opers理论.md) | $\check G$-opers 参数化局部系统的"规范形式"，Hecke 特征值由 opers 给出，是几何 Langlands 谱侧的核心 | 主丛、联络、模空间 |
+| [Arinkin-Gaitsgory 谱分解](定理/第142级-几何朗兰兹/Arinkin-Gaitsgory谱分解.md) | 几何 Langlands 的谱侧按奇异支撑分解，得到整体几何 Langlands 猜想的一个证明框架 | 导出范畴、奇异支撑、几何 Langlands |
+| [几何 Langlands 的量子化](定理/第142级-几何朗兰兹/几何Langlands的量子化.md) | 量子几何 Langlands 把对应提升到量子群/Yangian 层面，与 Kapustin-Witten 对偶的 $\hbar$ 形变相符 | 量子群、几何 Langlands、Chern-Simons |
 
 ### 第 143 级：椭圆曲线与模形式
 
@@ -2701,6 +2734,12 @@
 | [TQFT 与 Donaldson 不变量](定理/第149级-拓扑量子场论/TQFT与Donaldson不变量.md) | Donaldson 瞬子不变量可纳入四维 TQFT 框架 | 自对偶 Yang-Mills、瞬子模空间、交积、instanton Floer 同调 |
 | [三维 Chern-Simons 理论与 Jones 多项式](定理/第149级-拓扑量子场论/三维Chern-Simons理论与Jones多项式.md) | Jones 多项式是 $SU(2)$ Chern-Simons 中沿纽结 Wilson 圈的期望（Witten） | Chern-Simons 作用量、路径积分、Wilson 圈、skein 关系、量子群 R-矩阵 |
 | [Reshetikhin-Turaev 构造](定理/第149级-拓扑量子场论/Reshetikhin-Turaev构造.md) | 从量子群根单位表示论构造三维流形与纽结不变量及 TQFT | 量子群 $U_q(\mathfrak g)$、R-矩阵与辫结、模块化张量范畴、Dehn 手术 |
+| [Atiyah 的 TQFT 公理](定理/第149级-拓扑量子场论/Atiyah的TQFT公理.md) | $d$ 维 TQFT 是协边范畴 $\mathrm{Cob}_d$ 到向量空间范畴的对称幺半函子，$Z(\emptyset)=\mathbb C$，$Z(M_1\sqcup M_2)=Z(M_1)\otimes Z(M_2)$ | 范畴论、协边、张量积 |
+| [Dijkgraaf-Witten 理论](定理/第149级-拓扑量子场论/Dijkgraaf-Witten理论.md) | 有限群 $G$ 与上同调类 $\alpha\in H^d(BG;U(1))$ 给出 $d$ 维 TQFT，$Z(M)=\sum_{[A]}\alpha([A])$ | 群上同调、TQFT 公理 |
+| [因子化同调](定理/第149级-拓扑量子场论/因子化同调.md) | 因子化同调把 TQFT 推广为流形层，$E_n$ 代数与 $\mathrm{Disk}_n$ 代数的同调给出不变量（Ayala-Francis） | $\infty$-范畴、层论、operad |
+| [Chern-Simons 微扰展开](定理/第149级-拓扑量子场论/Chern-Simons微扰展开.md) | Chern-Simons 路径积分的微扰展开由 Axelrod-Singer 用 Feynman 图给出，与 WRT 不变量一致 | Chern-Simons 理论、Feynman 图 |
+| [边界 TQFT 与拓扑边界条件](定理/第149级-拓扑量子场论/边界TQFT与拓扑边界条件.md) | $d$ 维 TQFT 的边界理论由 $(d-1)$ 维模张量范畴描述，边界条件对应其中的对象 | TQFT 公理、模张量范畴 |
+| [Witten-Reshetikhin-Turaev 不变量](定理/第149级-拓扑量子场论/Witten-Reshetikhin-Turaev不变量.md) | 三维流形的 WRT 不变量由量子群 $U_q(\mathfrak{sl}_2)$ 的表示与手术表示给出，是 Chern-Simons 路径积分的严格化 | Reshetikhin-Turaev 构造、量子群 |
 
 ### 第 150 级：数学物理
 
@@ -2726,6 +2765,110 @@
 | [Siamese构造算法](定理/第151级-娱乐数学/Siamese构造算法.md) | 对任意奇数 $n$，"把 1 放在第一行正中、然后一路往右上角走（越界就绕回来），撞到已填的格子就往下挪一格"——这条走路规矩就能填满整张 $n\times n$ 方阵，并且每行、每列、每条对角线之和都等于幻和 $S=n(n^2+1)/2$。 | 正整数求和公式、等差数列求和公式、排列公式、中国剩余定理 |
 
 ---
+
+### 第 152 级：最优传输与度量几何
+
+| 定理名称 | 定理内容 | 前置定理/公理 |
+|---------|---------|:------------:|
+| [Monge 问题与 Kantorovich 松弛](定理/第152级-最优传输与度量几何/Monge问题与Kantorovich松弛.md) | Monge 问题求映射 $T$ 使 $\int c(x,T(x))\,\mathrm d\mu$ 最小；Kantorovich 把它松弛为耦合 $\pi\in\Pi(\mu,\nu)$ 上的线性规划，最优值相同 | 测度论、弱收敛、线性规划对偶 |
+| [Kantorovich 对偶定理](定理/第152级-最优传输与度量几何/Kantorovich对偶定理.md) | $\min_{\pi}\int c\,\mathrm d\pi=\sup_{\varphi\oplus\psi\le c}\left(\int\varphi\,\mathrm d\mu+\int\psi\,\mathrm d\nu\right)$ | Monge 问题与 Kantorovich 松弛、Fenchel 对偶 |
+| [Brenier 定理](定理/第152级-最优传输与度量几何/Brenier定理.md) | 二次成本 $c=|x-y|^2$ 下最优耦合唯一且由凸函数梯度给出：$T=\nabla\varphi$，$\nabla\varphi_\#\mu=\nu$ | Kantorovich 对偶、凸分析、Rademacher 定理 |
+| [Wasserstein 距离的度量性质](定理/第152级-最优传输与度量几何/Wasserstein距离的度量性质.md) | $W_p(\mu,\nu)=\left(\inf_{\pi\in\Pi(\mu,\nu)}\int|x-y|^p\,\mathrm d\pi\right)^{1/p}$ 是度量，且 $W_p(\mu_n,\mu)\to0$ 当且仅当弱收敛且 $p$ 阶矩收敛 | Kantorovich 松弛、弱收敛、gluing 引理 |
+| [Kantorovich-Rubinstein 对偶](定理/第152级-最优传输与度量几何/Kantorovich-Rubinstein对偶.md) | $W_1(\mu,\nu)=\sup_{\mathrm{Lip}(f)\le1}\int f\,\mathrm d(\mu-\nu)$ | Wasserstein 距离、Lipschitz 函数 |
+| [Benamou-Brenier 公式](定理/第152级-最优传输与度量几何/Benamou-Brenier公式.md) | $W_2^2(\mu_0,\mu_1)=\inf\left\{\int_0^1\!\!\int|v_t|^2\,\mathrm d\mu_t\,\mathrm dt:\ \partial_t\mu_t+\nabla\!\cdot(v_t\mu_t)=0\right\}$ | Wasserstein 距离、连续性方程 |
+| [JKO 格式（Wasserstein 梯度流）](定理/第152级-最优传输与度量几何/JKO格式.md) | 隐式欧拉 $\mu_{k+1}=\arg\min_\mu\frac{1}{2\tau}W_2^2(\mu,\mu_k)+\mathcal F(\mu)$ 在 $\tau\to0$ 时收敛到 $\mathcal F$ 的 $W_2$ 梯度流，取 $\mathcal F$ 为相对熵即得 Fokker-Planck 方程 | Benamou-Brenier 公式、相对熵、Fokker-Planck 方程 |
+| [RCD 空间与 Gromov-Hausdorff 稳定性](定理/第152级-最优传输与度量几何/RCD空间与Gromov-Hausdorff稳定性.md) | 曲率维数条件 $\mathrm{RCD}(K,N)$ 在测度 Gromov-Hausdorff 极限下封闭，因而给出"黎曼流形的极限"这一度量测度空间类 | Wasserstein 距离、Gromov-Hausdorff 收敛、最优传输 |
+
+### 第 153 级：顶点代数与共形场论
+
+| 定理名称 | 定理内容 | 前置定理/公理 |
+|---------|---------|:------------:|
+| [顶点代数的定义与 Borcherds 恒等式](定理/第153级-顶点代数与共形场论/顶点代数的定义与Borcherds恒等式.md) | 顶点代数 $(V,Y,\mathbf 1,\omega)$ 的状态-场对应 $Y(a,z)=\sum a_{(n)}z^{-n-1}$ 满足 Borcherds 恒等式 $\sum_{j\ge0}\binom{m}{j}(a_{(n+j)}b)_{(m+k-j)}=\sum_{j\ge0}(-1)^j\binom{n}{j}(a_{(m+n-j)}b_{(k+j)}-\dots)$ | 线性代数、形式幂级数、域算子 |
+| [Virasoro 代数与中心荷](定理/第153级-顶点代数与共形场论/Virasoro代数与中心荷.md) | $[L_m,L_n]=(m-n)L_{m+n}+\frac{c}{12}(m^3-m)\delta_{m+n,0}$，$c$ 为中心荷，决定共形场论的"尺度反常" | 李代数、Witt 代数 |
+| [顶点算子代数与模不变性](定理/第153级-顶点代数与共形场论/顶点算子代数与模不变性.md) | VOA 的配分函数 $Z(\tau)=\mathrm{tr}_{V}(q^{L_0-c/24})$ 在 $\mathrm{SL}_2(\mathbb Z)$ 下（投影）不变 | 顶点代数、模形式 |
+| [Zhu 代数与 $C_2$ 余有限性](定理/第153级-顶点代数与共形场论/Zhu代数与C2余有限性.md) | $C_2$ 余有限（$\dim V/C_2(V)<\infty$）的 VOA 是有理的：模有限、半单，且 Zhu 代数为有限维半单代数 | 顶点算子代数、Zhu 代数 |
+| [有理顶点算子代数的模张量范畴](定理/第153级-顶点代数与共形场论/有理顶点算子代数的模张量范畴.md) | 有理 VOA 的模范畴构成模张量范畴，融合规则由模不变性与 Verlinde 公式给出 | 顶点算子代数、张量范畴 |
+| [Verlinde 公式](定理/第153级-顶点代数与共形场论/Verlinde公式.md) | 融合系数 $N_{ij}^{k}=\sum_{l}\frac{S_{il}S_{jl}\overline{S_{kl}}}{S_{0l}}$，其中 $S$ 为模变换矩阵 | 模张量范畴、模不变性 |
+| [Monstrous Moonshine 与 Borcherds 证明](定理/第153级-顶点代数与共形场论/MonstrousMoonshine与Borcherds证明.md) | $j(\tau)-744=\sum_{n\ge-1}c(n)q^n$ 的系数 $c(n)$ 是 Monster 群不可约表示维数之和，由月光模 $V^\natural$ 的 graded 维数实现 | 顶点算子代数、有限群表示、模函数 |
+| [自由场实现与 Fock 空间](定理/第153级-顶点代数与共形场论/自由场实现与Fock空间.md) | 自由玻色子 Fock 空间上的顶点算子 $Y(a,z)=\exp(\dots)$ 构成 Heisenberg VOA，其 Virasoro 元素由 Sugawara 构造给出 | 顶点代数、Fock 空间 |
+
+### 第 154 级：随机偏微分方程
+
+| 定理名称 | 定理内容 | 前置定理/公理 |
+|---------|---------|:------------:|
+| [无穷维 Brown 运动与柱测度](定理/第154级-随机偏微分方程/无穷维Brown运动与柱测度.md) | 无限维 Hilbert 空间上的柱测度不可数可加，$Q$-Wiener 过程只能取值于 $Q^{1/2}H$ 的更大空间 | 概率论、Hilbert 空间、Gaussian 测度 |
+| [随机热方程的存在唯一性](定理/第154级-随机偏微分方程/随机热方程的存在唯一性.md) | $\mathrm dX=(AX+f(X))\,\mathrm dt+B\,\mathrm dW$ 在温和解意义下存在唯一解（Da Prato-Zabczyk） | 算子半群、Itô 积分 |
+| [二维随机 Navier-Stokes 方程的适定性](定理/第154级-随机偏微分方程/二维随机Navier-Stokes方程的适定性.md) | 二维随机 Navier-Stokes 方程对任意初值存在唯一全局强解 | Navier-Stokes 方程、随机分析 |
+| [Freidlin-Wentzell 大偏差原理](定理/第154级-随机偏微分方程/Freidlin-Wentzell大偏差原理.md) | 小噪声扩散 $\mathrm dX^\varepsilon=b(X^\varepsilon)\mathrm dt+\sqrt\varepsilon\sigma\,\mathrm dW$ 满足 $\varepsilon\log P(\cdot)\to-I(\varphi)$，速率函数为作用量泛函 | 大偏差原理、Itô 公式 |
+| [KPZ 方程与正则性结构](定理/第154级-随机偏微分方程/KPZ方程与正则性结构.md) | $h_t=\partial_x^2h+(\partial_xh)^2+\xi$ 需重正化后才能局部适定，Hairer 的正则性结构给出统一框架 | 随机热方程、正则性结构 |
+| [随机量化与 $\Phi^4_3$ 测度](定理/第154级-随机偏微分方程/随机量化与Φ4测度.md) | 三维 $\Phi^4$ 测度经质量重正化后可构造，对应 $\Phi^4_3$ 量子场论的数学实现 | 正则性结构、Gaussian 测度 |
+| [遍及理论与受控粗糙路径](定理/第154级-随机偏微分方程/遍及理论与受控粗糙路径.md) | Gubinelli 的受控粗糙路径/遍及分布把 SPDE 的解写成"粗糙项 + 光滑修正"，给出统一的适定性判据 | 粗糙路径、Littlewood-Paley 分解 |
+| [随机波动方程与 Strichartz 估计](定理/第154级-随机偏微分方程/随机波动方程与Strichartz估计.md) | 随机波动方程借助 Strichartz 估计与随机卷积得到局部适定性与正则性提升 | 波动方程、随机卷积 |
+
+### 第 155 级：量子信息与量子计算
+
+| 定理名称 | 定理内容 | 前置定理/公理 |
+|---------|---------|:------------:|
+| [密度矩阵与纯化](定理/第155级-量子信息与量子计算/密度矩阵与纯化.md) | 量子态由 $\rho\ge0,\ \mathrm{tr}\rho=1$ 描述；任意混合态都可纯化为更大系统上的纯态 $|\Psi\rangle$，且 $\rho=\mathrm{tr}_B|\Psi\rangle\langle\Psi|$ | 线性代数、Hilbert 空间 |
+| [量子信道与 Kraus 表示](定理/第155级-量子信息与量子计算/量子信道与Kraus表示.md) | 完全正迹 preserving 映射可写为 $\Phi(\rho)=\sum_iK_i\rho K_i^\dagger$，$\sum_iK_i^\dagger K_i=I$ | 密度矩阵、完全正性 |
+| [量子不可克隆定理](定理/第155级-量子信息与量子计算/量子不可克隆定理.md) | 不存在 CPTP 映射把任意未知 $|\psi\rangle$ 复制为 $|\psi\rangle|\psi\rangle$ | 量子信道、线性性 |
+| [Bell 不等式与 CHSH](定理/第155级-量子信息与量子计算/Bell不等式与CHSH.md) | 局域隐变量模型满足 $|S|\le2$，而量子力学取 $S=2\sqrt2$，违反 CHSH 不等式 | 密度矩阵、张量积、测量 |
+| [von Neumann 熵与量子相对熵](定理/第155级-量子信息与量子计算/vonNeumann熵与量子相对熵.md) | $S(\rho)=-\mathrm{tr}\rho\log\rho$，$D(\rho\|\sigma)=\mathrm{tr}\rho(\log\rho-\log\sigma)\ge0$，且满足数据处理不等式 | 密度矩阵、算子不等式 |
+| [Holevo 界与量子信道容量](定理/第155级-量子信息与量子计算/Holevo界与量子信道容量.md) | 经典信息经量子信道传输的可达速率受 $\chi=\sum_ip_iS(\rho_i)-S(\sum_ip_i\rho_i)$ 约束 | von Neumann 熵、量子信道 |
+| [量子纠错码与 Knill-Laflamme 条件](定理/第155级-量子信息与量子计算/量子纠错码与Knill-Laflamme条件.md) | 子空间 $\mathcal C$ 可纠错误集 $\{E_a\}$ 当且仅当 $P E_a^\dagger E_bP=C_{ab}P$ | 量子信道、编码理论 |
+| [Shor 算法与量子 Fourier 变换](定理/第155级-量子信息与量子计算/Shor算法与量子Fourier变换.md) | 整数分解归约为求阶问题，量子 Fourier 变换在 $O((\log N)^2)$ 门内完成周期提取，给出指数加速 | 量子线路、模算术、量子 Fourier 变换 |
+
+### 第 156 级：微局部分析与半经典分析
+
+| 定理名称 | 定理内容 | 前置定理/公理 |
+|---------|---------|:------------:|
+| [拟微分算子的象征演算](定理/第156级-微局部分析与半经典分析/拟微分算子的象征演算.md) | 拟微分算子复合的象征满足 $p\#q\sim\sum_{\alpha}\frac{(-i)^{|\alpha|}}{\alpha!}\partial_\xi^\alpha p\,\partial_x^\alpha q$ | Fourier 分析、象征、分布 |
+| [波前集与奇性传播定理](定理/第156级-微局部分析与半经典分析/波前集与奇性传播定理.md) | $\mathrm{WF}(u)\subset T^*X\setminus0$ 刻画奇性的位置与方向；椭圆算子不改变 $\mathrm{WF}$，双曲算子沿 Hamilton 流传播奇性 | 分布、拟微分算子、Hamilton 流 |
+| [Hörmander 亚椭圆性定理](定理/第156级-微局部分析与半经典分析/Hörmander亚椭圆性定理.md) | 若主象征 $p_m$ 满足亚椭圆条件（$p_m=0\Rightarrow \mathrm d p_m\ne0$ 且 $\mathrm{Im}p_m$ 的符号条件），则 $Pu\in C^\infty\Rightarrow u\in C^\infty$ | 波前集、主象征 |
+| [半经典 Weyl 定律](定理/第156级-微局部分析与半经典分析/半经典Weyl定律.md) | 计数函数满足 $N(\lambda)\sim(2\pi)^{-n}\mathrm{vol}(\Omega)\lambda^{n/2}$，即特征值"均匀铺满"相空间 | 谱理论、Weyl 渐近 |
+| [Egorov 定理](定理/第156级-微局部分析与半经典分析/Egorov定理.md) | 量子演化与经典流共轭：$\mathrm{Op}(a)\circ U(t)\approx U(t)\circ\mathrm{Op}(a\circ\phi_t)$，是量子遍历性的出发点 | 拟微分算子、Hamilton 流 |
+| [Gutzwiller 迹公式](定理/第156级-微局部分析与半经典分析/Gutzwiller迹公式.md) | $\mathrm{tr}\,e^{-itH/\hbar}\sim\sum_{\gamma}\frac{T_\gamma}{i\hbar^{1/2}|\det(I-P_\gamma)|^{1/2}}e^{iS_\gamma/\hbar}$，谱由周期轨道求和给出 | 半经典分析、驻相法 |
+| [半经典测度与量子极限](定理/第156级-微局部分析与半经典分析/半经典测度与量子极限.md) | 半经典测度的聚点必为 Laplacian 不变的经典概率测度，量子极限与经典不变测度由此对应 | Egorov 定理、遍历理论 |
+| [复 WKB 与 Stokes 现象](定理/第156级-微局部分析与半经典分析/复WKB与Stokes现象.md) | 复相位下的渐近解在 Stokes 线两侧取不同线性组合，指数小的项在穿越时"突然出现" | 渐近分析、WKB 近似 |
+
+### 第 157 级：算术动力系统
+
+| 定理名称 | 定理内容 | 前置定理/公理 |
+|---------|---------|:------------:|
+| [高度函数与 Northcott 有限性定理](定理/第157级-算术动力系统/高度函数与Northcott有限性定理.md) | 对数 Weil 高度 $h$ 满足：给定次数上界 $d$ 与高度上界 $B$，$\{P:h(P)\le B,\ [\mathbb Q(P):\mathbb Q]\le d\}$ 有限 | 数域、绝对值、射影空间 |
+| [算术动力系统的典范高度](定理/第157级-算术动力系统/算术动力系统的典范高度.md) | 对次数 $d\ge2$ 的态射 $f$，$\hat h_f(P)=\lim_{n\to\infty}h(f^n(P))/d^n$ 存在，且 $\hat h_f(f(P))=d\,\hat h_f(P)$（Call-Silverman） | 高度函数、Northcott 有限性定理 |
+| [算术等分布定理](定理/第157级-算术动力系统/算术等分布定理.md) | 射影空间中高度趋于 $0$ 的无穷点列在 Julia 集上按平衡测度等分布（Bilu） | 典范高度、势论、平衡测度 |
+| [良好约化与算术动力系统](定理/第157级-算术动力系统/良好约化与算术动力系统.md) | 除有限个素点外 $f$ 有良好约化，且周期点在这些素点下约化为周期点（Silverman） | 算术动力系统、整模型 |
+| [Morton-Silverman 一致有界性猜想](定理/第157级-算术动力系统/Morton-Silverman一致有界性猜想.md) | 固定次数 $d\ge2$ 与数域 $K$，$K$ 上次数 $d$ 态射的预周期点个数应一致有界（未决猜想） | 典范高度、Northcott 有限性定理 |
+| [Baker-DeMarco 有界轨道定理](定理/第157级-算术动力系统/Baker-DeMarco有界轨道定理.md) | 代数曲线上的态射族，若逃逸速率一致有界，则该族参数空间中存在稠密开集使轨道有界 | 典范高度、算术等分布定理 |
+| [$p$ 进动力系统的约化与 Julia 集](定理/第157级-算术动力系统/p进动力系统的约化与Julia集.md) | $p$ 进 Julia 集的填补性质与典范约化，给出非阿基米德情形下"小高度点"的分布 | 非阿基米德绝对值、p 进动力系统 |
+| [动力系统 Mordell-Lang 猜想](定理/第157级-算术动力系统/动力系统Mordell-Lang猜想.md) | 半阿贝尔簇上有限生成子群的动力轨道与子簇的交应为有限个轨道的并（部分情形已证） | Mordell-Lang 定理、典范高度 |
+
+### 第 158 级：同伦代数与高阶结构
+
+| 定理名称 | 定理内容 | 前置定理/公理 |
+|---------|---------|:------------:|
+| [单纯集与 Quillen 模型结构](定理/第158级-同伦代数与高阶结构/单纯集与Quillen模型结构.md) | 单纯集范畴上以弱等价（几何实现后同伦等价）、Kan 纤维化、余纤维化为三类态射构成模型结构 | 范畴论、单纯集 |
+| [Joyal 模型结构与拟范畴](定理/第158级-同伦代数与高阶结构/Joyal模型结构与拟范畴.md) | 单纯集上的 Joyal 模型结构以"内 Kan 复形"为对象，其纤维化给出拟范畴的 $\infty$-范畴语义 | 单纯集、模型范畴 |
+| [$A_\infty$ 代数与最小模型定理](定理/第158级-同伦代数与高阶结构/A∞代数与最小模型定理.md) | $A_\infty$ 结构在同伦等价下可迁移；每个 $A_\infty$ 代数同构于唯一（到同构）的最小模型 | 微分分次代数、同伦扰动 |
+| [$E_\infty$ 代数与 May 识别定理](定理/第158级-同伦代数与高阶结构/E∞代数与May识别定理.md) | 多重环路空间 $\Omega^nX$ 同伦等价于 $E_n$ 代数的群状对象，$n\to\infty$ 给出 $E_\infty$ 结构 | operad、环路空间 |
+| [谱代数几何的基础](定理/第158级-同伦代数与高阶结构/谱代数几何的基础.md) | 以 $E_\infty$ 环谱为"函数环"的仿射对象构成谱概形，导出概形是其局部模型 | 导出代数几何、稳定同伦论 |
+| [同伦极限与同伦余极限](定理/第158级-同伦代数与高阶结构/同伦极限与同伦余极限.md) | 拟范畴中的同伦 (co)limit 由万有性质刻画，可借助单纯模型或 Bousfield-Kan 公式计算 | $\infty$-范畴、单纯集 |
+| [Grothendieck 构造与 $\infty$-函子](定理/第158级-同伦代数与高阶结构/Grothendieck构造与∞函子.md) | 纤维化/余纤维化对应函子，Lurie 的 unstraightening 把这一对应提升到 $\infty$-范畴 | 范畴论、$\infty$-范畴 |
+| [Waldhausen $S_\bullet$ 构造与代数 K 理论](定理/第158级-同伦代数与高阶结构/Waldhausen-S构造与代数K理论.md) | Waldhausen 的 $S_\bullet$ 构造给出 Waldhausen 范畴的 K 理论谱，且与 Quillen Q 构造一致（一致性定理） | 代数 K 理论、单纯集 |
+
+### 第 159 级：双有理几何与极小模型纲领
+
+| 定理名称 | 定理内容 | 前置定理/公理 |
+|---------|---------|:------------:|
+| [Hironaka 奇点消解定理](定理/第159级-双有理几何与极小模型纲领/Hironaka奇点消解定理.md) | 特征零域上的代数簇可经一串容许的 blow-up 得到光滑簇，且除子处于简单正规交叉位置 | 代数几何、概形、blow-up |
+| [Mori 锥定理与收缩定理](定理/第159级-双有理几何与极小模型纲领/Mori锥定理与收缩定理.md) | $K_X$ 负的极值射线可由收缩态射压缩，收缩的类型（纤维/除子/点）由极值射线的性质决定 | 相交理论、典范除子、锥定理 |
+| [Kawamata-Viehweg 消失定理](定理/第159级-双有理几何与极小模型纲领/Kawamata-Viehweg消失定理.md) | 若 $D$ 是半丰沛 $\mathbb Q$-除子且 $D-\lfloor D\rfloor$ 的支撑为简单正规交叉，则 $H^i(X,K_X+D)=0\ (i>0)$ | Kodaira 消失定理、相交理论 |
+| [Kawamata 基点自由定理](定理/第159级-双有理几何与极小模型纲领/Kawamata基点自由定理.md) | 对 klt 对数对 $(X,\Delta)$，若 $K_X+\Delta$ 丰沛，则 $|m(K_X+\Delta)|$ 对某 $m$ 基点自由 | Kawamata-Viehweg 消失定理、锥定理 |
+| [翻转的存在性（BCHM）](定理/第159级-双有理几何与极小模型纲领/翻转的存在性.md) | 特征零域上 klt 对数对的收缩翻转（flip）存在，且由有限生成环的有限生成性推出 | 极值射线、对数对、有限生成 |
+| [极小模型纲领的存在性](定理/第159级-双有理几何与极小模型纲领/极小模型纲领的存在性.md) | 特征零域上任意 klt 对数对可运行 MMP 并终止于极小模型或 Mori 纤维空间（BCHM） | 翻转的存在性、锥定理、终止性 |
+| [三维极小模型纲领](定理/第159级-双有理几何与极小模型纲领/三维极小模型纲领.md) | 三维代数簇的翻转与极小模型存在（Mori 1988），由此得到三维双有理分类 | 三维几何、翻转、锥定理 |
+| [双有理几何中的有界性](定理/第159级-双有理几何与极小模型纲领/双有理几何中的有界性.md) | 固定维数与体积下界，klt 簇构成有界族（Birkar），即只有有限多个形变族 | MMP、有界性、奇点 |
 
 ## 定理依赖关系图（拓扑结构）
 
@@ -3679,6 +3822,84 @@ Hopf代数与量子群（第 73 级）
   ├── 按位异或与二进制 ──→ Nim 游戏的必胜策略
   ├── 平面嵌入与欧拉公式 ──→ 四色定理
   └── 公平组合博弈与 mex ──→ Sprague-Grundy 定理
+
+最优传输与度量几何（第 152 级）
+  ├── 测度论与弱收敛 ──→ Monge 问题与 Kantorovich 松弛
+  ├── Kantorovich 松弛 + Fenchel 对偶 ──→ Kantorovich 对偶定理
+  ├── Kantorovich 对偶 + 凸分析 ──→ Brenier 定理
+  ├── Kantorovich 松弛 + gluing 引理 ──→ Wasserstein 距离的度量性质
+  ├── Wasserstein 距离 + 连续性方程 ──→ Benamou-Brenier 公式
+  ├── Benamou-Brenier 公式 + 相对熵 ──→ JKO 格式
+  └── Wasserstein 距离 + Gromov-Hausdorff 收敛 ──→ RCD 空间与 Gromov-Hausdorff 稳定性
+
+顶点代数与共形场论（第 153 级）
+  ├── 形式幂级数与域算子 ──→ 顶点代数的定义与 Borcherds 恒等式
+  ├── Witt 代数与李代数 ──→ Virasoro 代数与中心荷
+  ├── 顶点代数 + 模形式 ──→ 顶点算子代数与模不变性
+  ├── Zhu 代数 ──→ Zhu 代数与 C2 余有限性
+  ├── 模不变性 + 张量范畴 ──→ Verlinde 公式
+  ├── 顶点算子代数 + 有限群表示 ──→ Monstrous Moonshine 与 Borcherds 证明
+  └── 顶点代数 + Fock 空间 ──→ 自由场实现与 Fock 空间
+
+随机偏微分方程（第 154 级）
+  ├── Gaussian 测度与 Hilbert 空间 ──→ 无穷维 Brown 运动与柱测度
+  ├── 算子半群 + Itô 积分 ──→ 随机热方程的存在唯一性
+  ├── Navier-Stokes 方程 + 随机分析 ──→ 二维随机 Navier-Stokes 方程的适定性
+  ├── 大偏差原理 + Itô 公式 ──→ Freidlin-Wentzell 大偏差原理
+  ├── 随机热方程 + 正则性结构 ──→ KPZ 方程与正则性结构
+  ├── 正则性结构 + Gaussian 测度 ──→ 随机量化与 Φ4 测度
+  ├── 粗糙路径 + Littlewood-Paley 分解 ──→ 遍及理论与受控粗糙路径
+  └── 波动方程 + 随机卷积 ──→ 随机波动方程与 Strichartz 估计
+
+量子信息与量子计算（第 155 级）
+  ├── 线性代数 + Hilbert 空间 ──→ 密度矩阵与纯化
+  ├── 密度矩阵 + 完全正性 ──→ 量子信道与 Kraus 表示
+  ├── 量子信道 + 线性性 ──→ 量子不可克隆定理
+  ├── 密度矩阵 + 张量积 ──→ Bell 不等式与 CHSH
+  ├── 密度矩阵 + 算子不等式 ──→ von Neumann 熵与量子相对熵
+  ├── von Neumann 熵 + 量子信道 ──→ Holevo 界与量子信道容量
+  ├── 量子信道 + 编码理论 ──→ 量子纠错码与 Knill-Laflamme 条件
+  └── 量子线路 + 量子 Fourier 变换 ──→ Shor 算法与量子 Fourier 变换
+
+微局部分析与半经典分析（第 156 级）
+  ├── Fourier 分析与象征 ──→ 拟微分算子的象征演算
+  ├── 拟微分算子 + Hamilton 流 ──→ 波前集与奇性传播定理
+  ├── 波前集 + 主象征 ──→ Hörmander 亚椭圆性定理
+  ├── 谱理论 + Weyl 渐近 ──→ 半经典 Weyl 定律
+  ├── 拟微分算子 + Hamilton 流 ──→ Egorov 定理
+  ├── 半经典分析 + 驻相法 ──→ Gutzwiller 迹公式
+  ├── Egorov 定理 + 遍历理论 ──→ 半经典测度与量子极限
+  └── 渐近分析 + WKB 近似 ──→ 复 WKB 与 Stokes 现象
+
+算术动力系统（第 157 级）
+  ├── 数域与射影空间 ──→ 高度函数与 Northcott 有限性定理
+  ├── 高度函数 + Northcott 有限性定理 ──→ 算术动力系统的典范高度
+  ├── 典范高度 + 势论 ──→ 算术等分布定理
+  ├── 算术动力系统 + 整模型 ──→ 良好约化与算术动力系统
+  ├── 典范高度 + Northcott 有限性定理 ──→ Morton-Silverman 一致有界性猜想
+  ├── 典范高度 + 算术等分布定理 ──→ Baker-DeMarco 有界轨道定理
+  ├── 非阿基米德绝对值 ──→ p 进动力系统的约化与 Julia 集
+  └── Mordell-Lang 定理 + 典范高度 ──→ 动力系统 Mordell-Lang 猜想
+
+同伦代数与高阶结构（第 158 级）
+  ├── 范畴论 + 单纯集 ──→ 单纯集与 Quillen 模型结构
+  ├── 单纯集 + 模型范畴 ──→ Joyal 模型结构与拟范畴
+  ├── 微分分次代数 + 同伦扰动 ──→ A∞ 代数与最小模型定理
+  ├── operad + 环路空间 ──→ E∞ 代数与 May 识别定理
+  ├── 导出代数几何 + 稳定同伦论 ──→ 谱代数几何的基础
+  ├── ∞-范畴 + 单纯集 ──→ 同伦极限与同伦余极限
+  ├── 范畴论 + ∞-范畴 ──→ Grothendieck 构造与 ∞-函子
+  └── 代数 K 理论 + 单纯集 ──→ Waldhausen S 构造与代数 K 理论
+
+双有理几何与极小模型纲领（第 159 级）
+  ├── 代数几何 + blow-up ──→ Hironaka 奇点消解定理
+  ├── 相交理论 + 典范除子 ──→ Mori 锥定理与收缩定理
+  ├── Kodaira 消失定理 + 相交理论 ──→ Kawamata-Viehweg 消失定理
+  ├── 消失定理 + 锥定理 ──→ Kawamata 基点自由定理
+  ├── 极值射线 + 对数对 ──→ 翻转的存在性
+  ├── 翻转的存在性 + 终止性 ──→ 极小模型纲领的存在性
+  ├── 三维几何 + 翻转 ──→ 三维极小模型纲领
+  └── MMP + 有界性 ──→ 双有理几何中的有界性
 ```
 
 ---
@@ -3693,6 +3914,6 @@ Hopf代数与量子群（第 73 级）
 
 2. **公理的地位**：公理是数学体系的出发点，不需要证明。公理文档中的"证明过程"部分主要讨论其合理性和与其他公理的关系。
 
-3. **分级依据**：按照项目中各文件的层级编号（第 01 级 ~ 第 151 级）进行分级，对应从初等数学到数学系研究生水平的完整范围。其中第 01 级 ~ 第 30 级为本科数学专业核心内容，第 31 级 ~ 第 70 级为研究生级别核心内容，第 71 级 ~ 第 151 级为博士及科研前沿内容。
+3. **分级依据**：按照项目中各文件的层级编号（第 01 级 ~ 第 159 级）进行分级，对应从初等数学到数学系研究生水平的完整范围。其中第 01 级 ~ 第 30 级为本科数学专业核心内容，第 31 级 ~ 第 70 级为研究生级别核心内容，第 71 级 ~ 第 159 级为博士及科研前沿内容。
 
 4. **前置定理**：仅列出最直接的前置定理或公理，省略了可进一步回溯的间接依赖。例如"拉格朗日中值定理"的前置是"罗尔定理"，而罗尔定理的前置"极值定理"和"费马引理"不再重复列出。
