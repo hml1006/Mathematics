@@ -8,6 +8,12 @@
 
 Picard 大定理（Picard's great theorem）是复分析中关于本性奇点附近函数行为的深刻定理，由 Charles Émile Picard 在 1879 年证明。该定理是 Casorati–Weierstrass 定理的巨大加强：在本性奇点的任意邻域内，亚纯函数不仅稠密地取所有值（Casorati–Weierstrass），而且最多遗漏一个值（Picard）。这揭示了本性奇点附近函数行为的极端复杂性。
 
+## 几何直观
+
+![奇点旁的环域映射后几乎铺满复平面，仅有一处白色小洞标为例外值](images/th-042-11-picard-great.svg)
+
+图意在说明：本性奇点的任意小邻域里，函数取遍复平面除至多一点之外的全部值。
+
 ## 分析
 
 **前置依赖**：Picard 小定理、本性奇点、Casorati–Weierstrass 定理、孤立奇点、亚纯函数。

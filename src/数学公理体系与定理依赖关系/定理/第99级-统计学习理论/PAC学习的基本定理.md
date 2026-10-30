@@ -14,6 +14,12 @@ m_\mathcal{H}(\varepsilon,\delta)=O\left(\frac{d}{\varepsilon}\log\frac1\varepsi
 $$
 它确立了"可学习性与假设空间储量"之间的等价关系。
 
+## 几何直观
+
+![蓝色曲线随精度 ε 变小而急速上升，绿色阴影标出足够学习的样本量区域](images/th-099-03-pac.svg)
+
+图意在说明：PAC 可学习性与有限 VC 维等价，所需样本量按 d/ε 的量级增长。
+
 ## 二、原理思路
 
 充分性方向：由 VC 维泛化界得到"对所有 $h$ 一致成立"的界，再取 $h=\hat h_n$（ERM 解）与最优假设 $h^\ast$ 比较，因 $\hat R_n(\hat h_n)\le\hat R_n(h^\ast)$，把 $R(\hat h_n)$ 控制为 $R(h^\ast)+2\varepsilon_{\text{comp}}(n)$，从而解得样本复杂度。必要性方向：若 $d=\infty$，构造被 $\mathcal{H}$ 打散的任意大点集与对抗分布，使任意算法对未观测点的误差至少 $1/2$，与 PAC 定义矛盾。

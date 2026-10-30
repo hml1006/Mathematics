@@ -20,6 +20,12 @@ $$
 
 本条目给出三件事：$\Delta$ 的散度形式与自伴性、热方程的存在唯一性、以及 Bochner 恒等式导出的梯度估计，它们是"热核与共轭热方程""热核与反向热方程"及各单调公式的技术前提。
 
+## 几何直观
+
+![三条逐渐变矮变宽的高斯曲线表示初始尖峰随时间摊开，峰值下降而积分总量保持不变](images/th-059-06-heat-equation.svg)
+
+图意在说明：曲面上的热方程让初值迅速平滑，最大值不增、总热量守恒，解存在且唯一。
+
 ## 二、原理思路
 
 1. **几何不变的定义**：局部坐标中 $\Delta f=\mathrm{div}(\nabla f)=\frac{1}{\sqrt{\lvert g\rvert}}\partial_i\big(\sqrt{\lvert g\rvert}\,g^{ij}\partial_jf\big)$，散度定义含体积元 $\sqrt{\lvert g\rvert}$，故不依赖坐标系。

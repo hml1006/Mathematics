@@ -10,6 +10,12 @@
 
 Sarkaria 定理由 Karanbir Sarkaria 于 1991–1992 年在研究 Tverberg 型问题与 van Kampen–Flores 定理时提出。其核心是所谓的"张量技巧"（Sarkaria's tensor trick）：把一张仿射映射提升为一个定义在 $r$ 份单形 join 上的 $\mathbb{Z}_r$-等变映射，于是 Tverberg 的"存在共享点"被等价地改写为"不存在某个等变球面映射"。这把离散几何的计数问题完全转化为群作用的同伦/同调问题，使 Borsuk–Ulam 与 Dold 定理可以直接用于 Tverberg、彩色 Carathéodory、van Kampen–Flores 等一大批结果。它是拓扑组合学的枢纽定理，也是"素数幂 $r$ 情形可证、非素数幂情形失效"这一现象的统一解释框架。
 
+## 几何直观
+
+![左侧三角形外画橙色循环箭头，中间箭头标 F，右侧三叶对称的靶空间](images/th-087-06-sarkaria-equivariant.svg)
+
+图意在说明：把点集张量提升后，Tverberg 问题等价于某个循环对称的球面映射不存在。
+
 ## 二、原理思路
 
 1. 张量提升：取 $\mathbb{Z}_r$ 的约化正则表示 $W$（维数 $r-1$，由循环置换 $\tau$ 作用）。把映射与齐次化 $\mathbb{R}^{d+1}\to\mathbb{R}^d$ 结合，构造等变映射 $F:(\Delta_N)^{*r}\to\mathbb{R}^{d+1}\otimes W$。

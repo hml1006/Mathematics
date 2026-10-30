@@ -18,6 +18,12 @@ X=\mathrm{Proj}\Big(\bigoplus_{n\ge0} B_{\mathrm{cris}}^{\varphi=p^n}\Big).
 $$
 其闭点参数化（分级的）p-adic 局部域的完美化特征 p 域；其结构承载混合特征 p/0，被用作 p-adic Langlands 与 Hodge 理论的"基础曲线"。
 
+## 几何直观
+
+![曲线横贯中部，上方周期环经 untilt 落到线上再倾斜](images/th-148-01-fargues-fontaine-curve.svg)
+
+图意在说明：曲线的每个闭点都是一个 untilt，把特征 0 的周期环与特征 p 的完美化空间缝在同一条射影曲线上。
+
 ## 二、原理思路
 
 构造基于 $B_\mathrm{dR}$ 与 $B_\mathrm{cris}$ 的结构：对维度/完美化等 J. 置的加法集的不可约子概，用 $\varphi$-结构（同理 $p^n$ 特征）定义分次环。它同时（i）从根上连接了特征 p（完美空间）与特征 0（p-adic 域）——经 $k\to B_\mathrm{cris}^{\varphi=p^n}$ 的映射——且（ii）其几何（拟凝聚层、向量丛）由分级模刻画，故自然产生线丛$\mathcal O(1)$，模合 p-adic 平移。

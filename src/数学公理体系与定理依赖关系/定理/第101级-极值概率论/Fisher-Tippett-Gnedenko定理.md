@@ -10,6 +10,12 @@
 
 设 $X_1,\dots,X_n$ 为 i.i.d. 随机变量，分布函数 $F$，$M_n=\max\{X_1,\dots,X_n\}$。若存在归一化常数 $a_n>0$、$b_n\in\mathbb{R}$ 使 $(M_n-b_n)/a_n\xrightarrow{d}G$（$G$ 非退化），则 $G$ 必属于三种标准类型之一：Gumbel $G_0(x)=e^{-e^{-x}}$、Fréchet $G_{1,\alpha}(x)=e^{-x^{-\alpha}}(x>0)$、Weibull $G_{2,\alpha}(x)=e^{-(-x)^\alpha}(x<0)$。这一分类是极值理论的基础。
 
+## 几何直观
+
+![同一坐标下三条密度曲线，Gumbel 居中最平缓，Fréchet 尖峰长尾，Weibull 在原点截断](images/th-101-01-fisher-tippett.svg)
+
+图意在说明：无论原始分布是什么，最大值归一化后的极限只能是 Gumbel、Fréchet、Weibull 三种之一。
+
 ## 二、原理思路
 
 关键在"可稳定性"。因 $M_{mn}=\max\{M_n^{(1)},\dots,M_n^{(m)}\}$ 且各组独立，极限分布 $G$ 必须满足极值类型方程 $G^m(x)=G(A(m)x+B(m))$。取对数令 $H=-\log G$，得 $mH(x)=H(A(m)x+B(m))$，用函数方程理论分三种情形求解 $H$ 的解析形式，分别对应 Gumbel、Weibull、Fréchet，进而统一为 GEV 分布。

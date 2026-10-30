@@ -10,6 +10,12 @@
 
 Lasso 用 $L_1$ 惩罚进行收缩与变量选择，其估计为 $\hat{\boldsymbol{\beta}}_{\text{Lasso}} = \arg\min_{\boldsymbol{\beta}}\frac{1}{2n}\|\boldsymbol{Y}-\boldsymbol{X}\boldsymbol{\beta}\|^2 + \lambda_n\|\boldsymbol{\beta}\|_1$。在一定条件下，Lasso 具有**变量选择一致性**：以趋于 1 的概率正确识别重要变量的集合。
 
+## 几何直观
+
+![橙色误差等高线向外扩张，第一次接触蓝色菱形的位置恰在坐标轴上的角点](images/th-092-02-lasso-selection.svg)
+
+图意在说明：L1 约束的可行域带尖角，等高线最先进驻角点，于是不重要的系数被精确压成零。
+
 ## 二、原理思路
 
 Lasso 解的 K.K.T. 条件刻画出"非重要变量的内积被约束在 $\lambda_n$ 以内"的机制。关键的**不可表示条件**（Irrepresentable Condition）保证非重要变量对重要变量的"相关性投影"足够小，使得 oracle 估计（已知真实变量）能满足 K.K.T.，从而与 Lasso 解重合，进而实现精确变量选择。

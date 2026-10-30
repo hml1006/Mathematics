@@ -14,6 +14,12 @@ Lickorish–Wallace 手术定理（Lickorish–Wallace surgery theorem）由 And
 
 定理的意义有三个层面。其一，它与 Heegaard 分解、映射类群的 Dehn 扭转生成定理构成三位一体的框架：流形 $\to$ 粘合映射 $\to$ 扭转 $\to$ 手术。其二，它是三维流形量子不变量的入口：Witten–Chern–Simons 理论与 Reshetikhin–Turaev 不变量都以"手术公理"（每个 $\pm1$ 手术分支贡献一个量子维数因子）为基础。其三，它为构造反例、验证不变量（如 Casson 不变量、finite type 不变量）提供统一的演算平台。
 
+## 几何直观
+
+![S³ 球面里的三个带整数框的红色圈，箭头向下指向沿链环手术得到的流形 M](images/th-061-05-lickorish-wallace-surgery.svg)
+
+图意在说明：从三维球面里挖去链环的管状邻域再按整数框粘回实心环，就能造出任意闭可定向三维流形。
+
 ## 二、原理思路
 
 1. **Heegaard 分解**：每个闭可定向三维流形有分解 $M=H_1\cup_h H_2$，其中 $H_i$ 是亏格 $g$ 的柄体，$h$ 是 $\partial H_1=\Sigma_g=\partial H_2$ 上的保定向粘合映射；而 $S^3=H_1\cup_{\operatorname{id}}H_2$。

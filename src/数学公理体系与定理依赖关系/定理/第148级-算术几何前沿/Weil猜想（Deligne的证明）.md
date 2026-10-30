@@ -14,6 +14,12 @@ $$
 
 Weil猜想（Weil 1949）是关于有限域 $\mathbb{F}_q$ 上光滑射影代数簇 $X$ 的 $\mathbb{F}_{q^n}$-有理点计数与 Zeta 函数的一组深刻断言：**有理性**、**函数方程**、**Riemann 假设**（零点/极点位置）与 **Betti 数**（极点阶与复化流形上同调维数）。Grothendieck 用 étale/ℓ-adic 上同调证明前三项，Deligne（1971–1974, Weil II）用芳香纤维、Lefschetz 铅笔等完整证明了 Riemann 假设部分并推广到非固有情形。
 
+## 几何直观
+
+![复平面三个同心圆上散布标记点，模长由权固定](images/th-148-06-weil-conjecture.svg)
+
+图意在说明：zeta 函数是有理函数，且零点与极点的模长被上同调的权完全锁死，正是有限域上的黎曼假设。
+
 ## 二、原理思路
 
 核心是把"数点"翻译成"上同调上 Frobenius 的迹"：记 $H^i(X_{\bar{\mathbb F}_q},\mathbb Q_\ell)$ 为 ℓ-adic 上同调（带 Frobenius 作用），Lefschetz–Grothendieck 迹公式给出

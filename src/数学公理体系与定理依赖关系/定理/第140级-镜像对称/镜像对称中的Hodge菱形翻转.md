@@ -14,6 +14,12 @@ h^{p,q}(M)=h^{n-p,q}(W).
 $$
 它是镜像对称最直接可验证的数值证据——识别镜像对的标准"指纹"。
 
+## 几何直观
+
+![左右两个 Hodge 菱形形状相同，橙色 101 与蓝色 1 在第二三行之间交叉对调](images/th-140-06-hodge-diamond.svg)
+
+图意在说明：镜像不改变 Hodge 菱形的轮廓，只把 h 一一 与 h 二一 对调，于是欧拉数反号。
+
 ## 二、原理思路
 
 镜像映射在复结构模空间 $\mathcal M_{cs}(M)$ 与 Kähler 模空间 $\mathcal M_{\mathrm{K\"ah}}(W)$ 之间建立局部同构。切空间理论给出关键配对：Kodaira-Spencer 表明 $T\mathcal M_{cs}(M)\cong H^{n-1,1}(M)$，而 $T\mathcal M_{\mathrm{K\"ah}}(W)\cong H^{1,1}(W)$，故镜像映射诱导 $H^{n-1,1}(M)\cong H^{1,1}(W)$。高阶 Hodge 数由变化 Hodge 结构（周期映射）推广并由同调镜像对称的 Hochschild 同调一致性最终验证。

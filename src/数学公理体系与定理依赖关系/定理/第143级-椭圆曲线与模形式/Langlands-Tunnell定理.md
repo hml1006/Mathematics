@@ -10,6 +10,12 @@
 
 Langlands–Tunnell 定理（Langlands 1980；Tunnell 1981）证明 Artin 猜想的一个基本情形：**射影像为可解群的奇二维复 Galois 表示都是模的**。即若 $\rho:G_{\mathbb Q}\to GL_2(\mathbb C)$ 连续、不可约、奇（$\det\rho(c)=-1$，其中 $c$ 为复共轭），且其射影像在 $PGL_2(\mathbb C)$ 中可解，则存在权 $1$ 的模形式（Hecke 本征形式）$f$，使 $\rho\cong\rho_f$，从而 $L(s,\rho)=L(s,f)$ 为全纯函数并满足函数方程。它是 Wiles 证明费马大定理时处理 $p=3$ 剩余表示的起点，也是 Serre 模性猜想在可解像情形的经典结论。
 
+## 几何直观
+
+![上方二维伽罗瓦表示向下箭头指向权与水平网格中权 1 的一格](images/th-143-03-langlands-tunnell.svg)
+
+图意在说明：每个二维伽罗瓦表示都在模形式的权与水平网格中占住一格，L 函数逐项相同。
+
 ## 二、原理思路
 
 按射影像（$PGL_2(\mathbb C)$ 的有限子群 $D_n,A_4,S_4$ 或 $A_5$）分类，逐类证明：

@@ -12,6 +12,12 @@ Jacobian 行列式（Jacobian determinant）是多元换元积分公式的倍数
 
 这一工具在多元统计分析中无处不在。当随机向量 $\boldsymbol{X}$ 是 $\boldsymbol{Y}$ 的可微变换时，两个密度之间相差一个 Jacobian 因子；Wishart 分布的密度、Hotelling $T^2$ 的分布、多元正态的最大似然估计，都通过矩阵变量换元（线性变换、Cholesky 分解、谱分解）推出。矩阵情形的 Jacobian 往往带幂次因子，例如 Cholesky 换元 $\boldsymbol{A}=\boldsymbol{T}\boldsymbol{T}'$ 的 Jacobian 含 $\prod_i t_{ii}^{p+1-i}$，它在 Wishart 密度中留下 $|\boldsymbol{T}|^{p-m-1}$ 型（等价地 $|\boldsymbol{W}|^{(m-p-1)/2}$ 型）幂次。
 
+## 几何直观
+
+![左边带网格的单位方格经映射后变成右边斜置的平行四边形，红色小格同步放大](images/th-071-02-jacobian-determinant.svg)
+
+图意在说明：映射把每个面积元按同一个比例放大或翻转，这个比例正是 Jacobian 行列式的绝对值。
+
 ## 二、原理思路
 
 1. **局部线性化**：$\phi$ 在小邻域内近似为其微分 $J_\phi$，而线性映射把单位立方体（体积 $1$）映为体积 $|\det J_\phi|$ 的平行体。

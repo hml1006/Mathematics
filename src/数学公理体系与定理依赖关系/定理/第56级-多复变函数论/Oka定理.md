@@ -16,6 +16,12 @@ Oka 定理（又称 Oka 原理，Oka Principle）由日本数学家 Kiyoshi Oka 
 
 Oka 原理的现代形式（Grauert, 1957–1958）将其推广到全纯向量丛与凝聚层：Stein 流形上全纯向量丛的拓扑分类与全纯分类一致。Forster 与 Ramspott（1966）、Gromov（1989, Oka-Grauert-Gromov 原理）进一步将 Oka 原理推广到极为广泛的"Oka 流形"框架。
 
+## 几何直观
+
+![上一条锯齿的连续解与下一条光滑的全纯解之间用双向箭头连接，下面画带纤维的向量丛](images/th-056-07-oka-principle.svg)
+
+图意在说明：Stein 空间上拓扑障碍就是全纯障碍，连续范畴的解沿同伦总能推到全纯范畴。
+
 ## 二、原理思路
 
 Oka 原理的根本思想是利用 **Stein 流形上 $\bar{\partial}$ 方程的可解性** 将连续解"全纯化"。

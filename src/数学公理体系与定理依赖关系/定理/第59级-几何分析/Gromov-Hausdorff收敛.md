@@ -14,6 +14,12 @@ Gromov-Hausdorff 收敛理论的兴起与 Cheeger、Gromov、Colding 等人对"�
 
 Gromov-Hausdorff 收敛现已成为研究流形收敛、几何群的渐近几何、 Alexandrov 空间理论、Ricci 流奇点分析等问题的标准语言。
 
+## 几何直观
+
+![两个度量空间 X 与 Y 同放在虚线大空间里，红色双箭头标出很小的 Hausdorff 距离](images/th-059-03-gh-convergence.svg)
+
+图意在说明：只要能塞进同一容器且对应点靠得很近，两个空间就近似相同，由此定义收敛。
+
 ## 二、原理思路
 
 **核心思想**：将比较两个度量空间 $X, Y$ 的问题转化为寻找一个公共度量空间 $Z$，使 $X$ 和 $Y$ 在其中的 Hausdorff 距离很小。

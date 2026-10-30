@@ -14,6 +14,12 @@ $$
 $$
 在正则条件下保持一致、渐近正态；当 $\hat W$ 收敛于最优权矩阵 $W=S^{-1}$ 时达到最小渐近方差。
 
+## 几何直观
+
+![三条钟形密度曲线随样本量增大越来越窄，全部以红色虚线标出的真值为中心](images/th-134-02-gmm-asymptotic.svg)
+
+图意在说明：矩条件加权后估计量收敛到真值，样本增大时抽样分布以 1/n 的速率收窄并趋于正态。
+
 ## 二、原理思路
 
 一致性用"目标函数的一致收敛 + 极限目标在真值处唯一取最小"。因 $\bar g\xrightarrow{p}\mathbb{E}g$ 且 $\hat W\xrightarrow{p}W$，目标 $Q_n(\theta)\xrightarrow{p}Q_\infty(\theta)$；矩阵件使 $Q_\infty(\theta_0)=0$，识别条件使 $\theta\ne\theta_0$ 时 $Q_\infty(\theta)>0$，故最小点收敛到 $\theta_0$。渐近正态性对一阶条件做泰勒展开、用 CLT 与 Slutsky 得到正态分布，显式给出"三明治"渐近方差，并指出最优权重消去夹心项。

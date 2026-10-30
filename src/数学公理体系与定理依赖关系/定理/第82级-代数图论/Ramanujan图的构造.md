@@ -10,6 +10,12 @@
 
 Ramanujan 图是"最优展开图"：对于 $d$-正则图，Alon–Boppana 定理指出第二大特征值至少为 $2\sqrt{d-1}-o(1)$，故满足 $|\lambda|\le2\sqrt{d-1}$（除 $\lambda_1=d$）的图达到谱间隙的理论下界。Lubotzky–Phillips–Sarnak 用四元数与数论分支和构造出无穷族此类图。
 
+## 几何直观
+
+![密集的谱棒排在绿色虚线之间，只有最外侧两个红色高棒超出拉马努金界](images/th-082-07-ramanujan.svg)
+
+图意在说明：Ramanujan 图的非平凡特征值全都落在 ±2√(d−1) 之内，谱隙达到理论极限。
+
 ## 二、原理思路
 
 构造把 $PSL(2,q)$ 作为底群、以 Jacobi 四平方和恒等式解 $a_0^2+a_1^2+a_2^2+a_3^2=p$ 得到的 $p+1$ 个元素作生成集，定义 Cayley 图。Cayley 图的特征值可由生成集的不可约特征标求和给出，而这个和恰是可由 Deligne 证明的 Weil 猜想（Ramanujan 猜想的数论版本）以 $2\sqrt p$ 严格控制的 Kloosterman 型指数和。

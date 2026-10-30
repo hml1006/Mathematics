@@ -8,6 +8,12 @@
 
 Riemann Zeta 函数是解析数论中最核心的函数，由 Leonhard Euler 在 18 世纪首次研究，后由 Bernhard Riemann 在 1859 年的著名论文中进行了系统分析。Zeta 函数定义为 $\zeta(s) = \sum_{n=1}^\infty n^{-s}$，对 $\operatorname{Re}(s) > 1$ 绝对收敛。Euler 乘积公式 $\zeta(s) = \prod_{p} (1 - p^{-s})^{-1}$ 将 Zeta 函数与素数分布联系起来，是解析数论的基石之一。
 
+## 几何直观
+
+![蓝色 ζ 曲线在上方，三个素数上界的乘积曲线自下而上逐渐贴向它](images/th-044-03-euler-product.svg)
+
+图意在说明：素数取得越多，Euler 乘积就越贴近 ζ 函数，素数信息被完整装进解析函数。
+
 ## 分析
 
 **前置依赖**：无穷级数、无穷乘积、素数基本性质、复分析基础。

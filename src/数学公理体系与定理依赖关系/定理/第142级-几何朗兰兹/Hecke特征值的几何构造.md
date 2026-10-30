@@ -10,6 +10,12 @@
 
 Hecke特征值的几何构造说明了如何在几何 Langlands 中"从 D-模读出局部系统"：对 $\mathrm{Bun}_G$ 上具 Hecke 本征性质的 D-模，Hecke 算子沿 $X$ 的参数化作用直接给出一个 $^LG$-局部系统（Hecke 特征值），它是构造逆方向函子（从 D-模到 $\mathrm{LocSys}_{{}^LG}$ 上的层）的关键步骤。
 
+## 几何直观
+
+![曲线上的丛 E 在标记点 x 处被修改成 E 撇，下方写明 Hecke 算子把特征层作用成数乘](images/th-142-04-hecke-eigensheaf.svg)
+
+图意在说明：Hecke 算子在一点改动丛，特征层被作用成数乘，而乘数随点变化正是一个局部系统。
+
 ## 二、原理思路
 
 利用 Hecke 对应中包含参数点 $x\in X$ 这一事实：Hecke 算子 $H_x$ 随 $x$ 连续变化，其"本征值"随之给出局部系统。具体地，把 Hecke 本征条件 $H_{x,V}(\mathcal{F})\cong\sigma_V(x)\boxtimes\mathcal{F}$ 视作对任意表示 $V$ 与任意点 $x$ 的定义条件，从而定义一个 $^LG$ 的局部系统 $\sigma$ 的系数层 $\sigma_V$，再由各 $V$ 的值恢复 $\sigma$ 本身。

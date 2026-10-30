@@ -10,6 +10,12 @@
 
 Minkowski 凸体定理是几何数论的中心定理，把"体积足够大的中心对称凸体必含非零格点"这个直觉严格化。它以 Minkowski 命名的几何数论方法，成为代数数论（类数有限、Dirichlet 单位定理）与丢番图逼近的工具。
 
+## 几何直观
+
+![标准方格上画一个中心对称菱形，四个红点落在菱形内部，面积标为 5.12](images/th-079-03-minkowski-convex.svg)
+
+图意在说明：中心对称凸体体积一旦超过 2 的 n 次方倍基本域体积，内部就必然藏有非零格点。
+
 ## 二、原理思路
 
 从 Blichfeldt 定理出发：令 $S=\frac12 K$，则 $\operatorname{vol}(S)=\frac{\operatorname{vol}(K)}{2^n}>\det\Lambda$，故存在不同 $x',y'\in S$ 使 $x'-y'\in\Lambda$。取 $x=2x',\ y=2y'\in K$。因 $K$ 中心对称且凸，$\frac{x-y}{2}=x'-y'\in K$（作为 $x$ 与 $-y$ 的中点），且非零。故 $K$ 含非零格点 $x'-y'$。

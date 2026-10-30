@@ -14,6 +14,12 @@ I(f)=\begin{cases}\frac12\int_0^1|\dot f(t)|^2\,dt, & f\in H_0^1[0,1],\ f(0)=0,\
 $$
 其中 $H_0^1[0,1]$ 为 Cameron-Martin 空间（$f(0)=0$、$\dot f\in L^2$ 的绝对连续函数）。
 
+## 几何直观
+
+![三束幅度递减的布朗路径挤向零路径，红色虚线标出通往远处的直线最优路径](images/th-102-06-schilder.svg)
+
+图意在说明：噪声缩小时布朗路径以 1/ε² 的速率贴近零路径，偏离越远所付的路径能量越大。
+
 ## 二、原理思路
 
 上界用 Pinelis 不等式（$\mathbb P(\|W\|_\infty\ge r)\le2e^{-r^2/2}$）估计"远离紧集 $K_R=\{f:\|f\|_H\le R\}$"的情形，再在 $K_R\cap C$ 上用 Cameron-Martin 公式展开有限覆盖；下界对 $f\in H_0^1$ 引入倾斜测度 $\frac{d\mathbb Q_\varepsilon}{d\mathbb P}=\exp\big(\frac1\varepsilon\int_0^1\dot f\,dW-\frac1{2\varepsilon^2}\|f\|_H^2\big)$，在 $\mathbb Q_\varepsilon$ 下 $W^\varepsilon-f$ 仍是 Brown 运动，从而概率集中在 $f$ 附近。

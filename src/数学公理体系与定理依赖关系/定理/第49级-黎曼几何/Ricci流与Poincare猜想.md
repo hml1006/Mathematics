@@ -14,6 +14,12 @@ $$
 
 其中 $g(t)$ 是随时间演化的 Riemann 度量，$\mathrm{Ric}$ 是 Ricci 曲率张量。Hamilton 引入 Ricci 流的初衷是将其作为证明三维 Poincaré 猜想（即每个单连通闭三维流形同胚于 $S^3$）的工具。2002-2003年，Grigori Perelman 完成了 Hamilton 纲领的最后一步，利用 Ricci 流和手术（surgery）技术证明了 Poincaré 猜想和更一般的 Thurston 几何化猜想。
 
+## 几何直观
+
+![上方哑铃形曲面细颈较粗，箭头向下指到细颈几乎断开的第二个哑铃](images/th-049-12-ricci-flow.svg)
+
+图意在说明：Ricci 流沿负 Ricci 方向收缩度量，细颈先被掐断，流形分裂成两个球面。
+
 ## 分析
 
 **前置依赖**：Ricci 曲率与 Riemann 度量演化、抛物型系统的短时存在、热方程与极大值原理、Perelman 熵泛函与 κ-非坍塌、奇点模型与手术技术。

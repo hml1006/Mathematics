@@ -8,6 +8,12 @@
 
 Hadamard 因子分解定理（Hadamard factorization theorem）是 Weierstrass 因子分解定理在有限阶整函数情形下的精确化，由法国数学家 Jacques Hadamard 在 1893 年建立。该定理表明，对于有限阶整函数，其因子分解中的整函数 $g(z)$ 退化为一个多项式，且初等因子的指数有统一的上界。该定理是整函数值分布理论（Nevanlinna 理论）和数论（Riemann $\zeta$ 函数）的基础工具。
 
+## 几何直观
+
+![复平面上的零点列被虚线圆盘圈住，下方三个因子块相乘拼出整函数](images/th-042-04-hadamard-factorization.svg)
+
+图意在说明：有限阶整函数的零点逐项变成初等因子，余下部分只剩一个次数受阶控制的多项式指数。
+
 ## 分析
 
 **前置依赖**：Weierstrass 因子分解定理、整函数的阶、增长性、亏格。

@@ -10,6 +10,12 @@
 
 局部Langlands对应（Harris–Taylor / Henniart）把局部域 $F$（$\mathbb{R}$、$\mathbb{C}$ 或 $\mathbb{Q}_p$ 的有限扩张）上 $GL_n(F)$ 的不可约（光滑、生成）表示与所谓 $(n$ 维) Langlands 参数——即 $W_F\times SL_2(\mathbb{C})$ 的（半单、在 $SL_2$ 上代数）表示——建立起唯一双射。它是全局对应在单点"纤维化"后的局部版本。
 
+## 几何直观
+
+![同心圆表示局部域的分歧滤链，向右连到 Weil 群方框，再向下指向对偶群的共轭类](images/th-141-05-local-langlands.svg)
+
+图意在说明：局部域上 Weil 群的表示给出 L 参数，参数是朗兰兹对偶群中的共轭类，并定出球函数。
+
 ## 二、原理思路
 
 其基本想法是：每个光滑不可约表示对应一个 $L$-群元，即 $\ell$-adic 参数 $W_F\to{}^L G$。在 $G=GL_n$、$^LG=GL_n$ 时，参数简化为 $W_F\times SL_2(\mathbb{C})$ 的 $n$ 维表示。对应要求保持"秩"— 利用超cuspidal 表示与 Weil 表示之间的先验对应（经 Local Langlands 若尔当分解），并藉由局部 Galois 上同调与 $\varepsilon$-因子的限制来确定唯一性。

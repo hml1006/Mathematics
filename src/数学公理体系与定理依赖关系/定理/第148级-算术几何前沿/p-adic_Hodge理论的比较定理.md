@@ -18,6 +18,12 @@ H^i_{\acute et}(X_{\bar K},\mathbb Q_p)\otimes B_{\mathrm{dR}}\cong H^i_{\mathrm
 $$
 其中 $B_{\mathrm{dR}}$ 为 Fontaine 的 de Rham 周期环。它把算侧的 p-adic Galois 表示与几何侧的 Hodge 结构对接，是 p-adic 几何中"代数→算术"的根本工具。
 
+## 几何直观
+
+![étale 与 de Rham 上同调各乘周期环后汇合](images/th-148-07-padic-hodge-comparison.svg)
+
+图意在说明：两侧上同调乘上 Fontaine 的周期环 B_dR 后重合，过滤再读出 Hodge-Tate 权。
+
 ## 二、原理思路
 
 利用 p-adic 周期环：B := Fontaine 建立的 $B_{\mathrm{dR}}$（完备化 en des e特质经聚合 $B_{\mathrm{cris}}\hookrightarrow B_{\mathrm{dR}}$）具 $G_K$ 作用与过滤。其构造经尚未分裂环的逆极限与形变（天文观测范froben）；比较同构通过把它们“⊗B”后把两个上同调都规范成 $B_{\mathrm{dR}}$ 上的 Hodge 结构，进而严筋同构。光滑情形（对应“filtered crystalline”）与半 stable（log 形）分别用 Faltings / Tsuji 方法。

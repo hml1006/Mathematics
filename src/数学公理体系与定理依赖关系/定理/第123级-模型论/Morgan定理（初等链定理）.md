@@ -10,6 +10,12 @@
 
 Morgan 定理（初等链定理，Elementary Chain Theorem）是模型论中构造初等扩张与"取极限结构"的基本工具。当一族结构组成初等链（沿序数指标逐层初等包含）时，定理保证链并仍是每个成员的初等扩张。它是超穷构造初等扩张、构造饱和模型和代数中模型完备性论证的中坚。
 
+## 几何直观
+
+![三个逐渐变宽的方框用箭头串起，下方针线汇入虚线大框表示的并](images/th-123-02-elementary-chain.svg)
+
+图意在说明：初等扩张排成一条链后，链的并仍然是每一层的初等扩张，初等性沿链条传下去。
+
 ## 二、原理思路
 
 证明本质是对公式复杂度进行归纳。关键是"向上方向"的 $\exists$ 情形：若 $\mathfrak{A}=\bigcup_\alpha\mathfrak{A}_\alpha $ 中某个 $\exists x\psi(x,\bar b)$ 为真（$\bar b\in A_\alpha$），则见证 $b$ 落在某 $\mathfrak{A}_\beta$（$\beta\ge\alpha$）中；利用 $\mathfrak{A}_\beta\preccurlyeq\mathfrak{A}$ 与 $\mathfrak{A}_\alpha\preccurlyeq\mathfrak{A}_\beta$ 逐步"拉回"见证到 $\mathfrak{A}_\alpha$。实践中常用等价的 **Tarski-Vaught 判别法** 使论证更清晰，并对序数指标做超穷归纳。

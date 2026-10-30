@@ -8,6 +8,12 @@
 
 Silver定理（Silver's Theorem）是Jack Silver于1974年证明的关于奇异基数问题的著名结果。该定理断言：若 $\aleph_\omega$ 是强极限基数（即对任意 $n < \omega$，$2^{\aleph_n} < \aleph_\omega$），且 $2^{\aleph_n} = \aleph_{n+1}$ 对所有 $n < \omega$ 成立（即GCH在 $\aleph_\omega$ 以下成立），则 $2^{\aleph_\omega} = \aleph_{\omega+1}$。Silver定理是独立于ZFC的（即不能从ZFC单独证明），但它指出如果GCH在某个奇异基数下方成立，则GCH在该奇异基数处也成立。这一定理揭示了奇异基数问题的深层结构，并开创了PCF理论（Possible Cofinalities Theory）这一重要领域。
 
+## 几何直观
+
+![一条虚线斜线上排着蓝点，红色点在 κ 处仍落在线上，横纵坐标均为幂函数](images/th-046-03-silver-theorem.svg)
+
+图意在说明：奇异基数 κ 以下的每个 δ 都满足 GCH，就足以推出 κ 处也满足。
+
 ## 分析
 
 **前置依赖**：ZFC公理系统、基数、共尾性、奇异基数、强极限基数、GCH、连续统函数、正则基数、Jensen覆盖引理、PCF理论。

@@ -10,6 +10,12 @@
 
 在正态线性回归模型 $\boldsymbol{Y} = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$（$\boldsymbol{\varepsilon} \sim N(\boldsymbol{0}, \sigma^2 \boldsymbol{I}_n)$）下，回归系数的估计量服从正态分布，其可导出用于单个系数检验的 $t$ 统计量与用于整体显著性检验的 $F$ 统计量，二者均可用精确分布做推断。
 
+## 几何直观
+
+![左图 t 密度两侧尾部被染红，右图 F 密度只有右尾被染红，分别标注 2.5% 与 5%](images/th-092-04-t-f-test.svg)
+
+图意在说明：系数估计与残差平方和各自服从已知分布，相除后得到 t 与 F，检验据此查表。
+
 ## 二、原理思路
 
 核心在于残差平方和 $\text{SSE}$ 服从卡方分布且与回归系数估计独立。由 $\hat{\boldsymbol{\beta}} \sim N(\boldsymbol{\beta}, \sigma^2(\boldsymbol{X}^\top\boldsymbol{X})^{-1})$，标准化后的系数是标准正态量；而 $\text{SSE}/\sigma^2 \sim \chi^2_{n-p-1}$，二者相除即得 $t$ 分布。$F$ 统计量则是两个独立卡方量之比，服从 $F$ 分布。

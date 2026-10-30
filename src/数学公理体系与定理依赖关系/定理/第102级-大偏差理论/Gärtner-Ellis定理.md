@@ -17,6 +17,12 @@ $$
 I(x)=\sup_{\theta\in\mathbb R}\{\theta x-\Lambda(\theta)\}.
 $$
 
+## 几何直观
+
+![凸的对数矩母函数曲线上一点引出橙色切线，切线的斜率是 x，截距给出负的速率值](images/th-102-04-gartner-ellis.svg)
+
+图意在说明：速率函数是矩母函数对数的凸共轭，切线的斜率与截距正好把 x 与负的指数速率一起读出。
+
 ## 二、原理思路
 
 思路与 Cramér 平行：上界仍用指数不等式，但以 $\Lambda_n\to\Lambda$ 取极限；下界用倾斜测度 $\frac{d\mathbb Q_n}{d\mathbb P}=\exp(n\theta_aZ_n-n\Lambda_n(\theta_a))$，使新测度下均值趋近 $a$。本质光滑条件保证 $\Lambda'(\theta)$ 在 $\mathcal D_\Lambda^\circ$ 上取遍整个实数轴，从而对每个 $x$ 都能找到 $\theta_x$ 使 $\Lambda'(\theta_x)=x$，下界对所有 $x$ 成立。

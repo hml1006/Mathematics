@@ -10,6 +10,12 @@
 
 Radon 定理断言 $\mathbb{R}^d$ 中 $d+2$ 个点必有 Radon 划分：分成两个不相交子集使凸包相交。它是 Radon-Carathéodory-Helly 理论与 Helly 定理证明的关键引理。
 
+## 几何直观
+
+![凸四边形画出两条对角线，蓝绿两条线段在中间一点交叉并标出红点](images/th-087-05-radon-partition.svg)
+
+图意在说明：把点提升一维后必线性相关，按系数正负分出的两组，其凸包必在同一点相交。
+
 ## 二、原理思路
 
 把点 $x_i$ 提升为 $d+1$ 维向量 $(x_i,1)$：$d+2$ 个 $d+1$ 维向量必线性相关，存在不全为零的 $\lambda_i$ 使 $\sum\lambda_ix_i=0$ 且 $\sum\lambda_i=0$。按 $\lambda_i$ 符号分为 $P,Q$，令 $s=\sum_{\lambda_i>0}\lambda_i=-\sum_{\lambda_i<0}\lambda_i>0$。由 $\sum\lambda_ix_i=0$ 得 $\sum_{\lambda_i>0}\lambda_ix_i=-\sum_{\lambda_i<0}\lambda_ix_i$，同除以 $s$ 得公共点 $p=\sum_{\lambda_i>0}\frac{\lambda_i}{s}x_i=\sum_{\lambda_i<0}\frac{-\lambda_i}{s}x_i$。

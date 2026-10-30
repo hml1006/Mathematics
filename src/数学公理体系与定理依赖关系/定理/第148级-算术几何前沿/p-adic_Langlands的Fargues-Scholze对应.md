@@ -10,6 +10,12 @@
 
 p-adic Langlands 的 Fargues–Scholze 对应（Fargues–Scholze 2021）把 $p$-adic（特征 $p\ne \ell$）局部 Langlands 对应几何化到 Fargues–Fontaine 曲线：拟结出 $(G(K)$ 的光滑表示) 的 $(\infty,\ell)$-范畴到（$Fargues\–Fontaine$ 曲线上 $G$-向量丛的层）的拟凝聚层范畴的等价，并使其 Hecke 作用与 $\ell$-adic 表示一致——成为 p-adic Langlands 的现代几何实现。
 
+## 几何直观
+
+![表示与层两框双向连接，Hecke 对应 L 参数](images/th-148-08-fargues-scholze.svg)
+
+图意在说明：G(K) 的光滑表示范畴与曲线上的拟凝聚层范畴等价，Hecke 作用对应到 L 参数。
+
 ## 二、原理思路
 
 利用 Fargues–Fontaine 曲线的向量丛分类与 $\varphi$-模块：$G(K)$ 的不可约表示经由其 $\mathbf L$-参数（$\varphi$-模块）编码成曲线上 $^LG$-向量丛。定义表示范畴的"解析"核与层范畴的 Hecke 动作（供给层／关键层），经对偶构造得到整体等价：它把对象（如光滑表示、超cuspidal）映为拟凝聚层，并满足 Iwahori 与 orbital 的配方。

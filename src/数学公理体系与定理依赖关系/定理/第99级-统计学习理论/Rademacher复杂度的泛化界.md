@@ -14,6 +14,12 @@ R(h)\le \hat{R}_n(h)+2\mathfrak{R}_n(\mathcal{H})+\sqrt{\frac{\log\frac1\delta}{
 $$
 其中 $\mathfrak{R}_n(\mathcal{H})$ 为 $\mathcal{H}$ 的（总体）Rademacher 复杂度。它比 VC 维界更紧、且是"数据相关"的界。
 
+## 几何直观
+
+![灰色 VC 界曲线位于上方，蓝色 Rademacher 界贴近横轴，两条曲线之间是橙色的差距](images/th-099-04-rademacher.svg)
+
+图意在说明：用随机符号探测假设的拟合能力，得到数据相关的复杂度，通常比 VC 界更紧。
+
 ## 二、原理思路
 
 与 VC 维界一样利用对称化，但用 Rademacher 复杂度而非生长函数来量化 $\sup_{h\in\mathcal{H}}(R(h)-\hat{R}_n(h))$ 的集中性。证明分三步：先用 McDiarmid 不等式证明关键统计量围绕其期望集中；再用对称化把期望控制为 $2\mathfrak{R}_n(\mathcal{H})$；最后合成概率界。

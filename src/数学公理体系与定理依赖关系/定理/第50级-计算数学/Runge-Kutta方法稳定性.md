@@ -8,6 +8,12 @@
 
 Runge-Kutta方法（Runge–Kutta Methods）是求解常微分方程初值问题 $y' = f(t, y)$ 最广泛使用的一类数值方法。Runge-Kutta方法通过在每一步内计算多个中间阶段的斜率来获得高阶精度，其经典形式包括 RK4（四阶 Runge-Kutta）。Runge-Kutta方法的稳定性分析是数值分析的关键内容，它决定了方法在求解刚性方程时的适用性。稳定性分析通常通过将方法应用于线性测试方程 $y' = \lambda y$（$\lambda \in \mathbb{C}$）来研究，得到稳定性函数 $R(z)$ 和稳定性区域。
 
+## 几何直观
+
+![复平面上显式 Euler 的稳定域是负一处的小圆盘，梯形法盖住整个左半平面](images/th-050-04-rk-stability.svg)
+
+图意在说明：把步长乘特征值画到复平面上，落在稳定域内扰动才衰减，显式方法的圆盘很小，步长因此受限。
+
 ## 分析
 
 **前置依赖**：Picard-Lindelöf定理、Runge-Kutta 方法与 Butcher 表、线性测试方程 $y'=\lambda y$、$e^z$ 的 Padé 逼近、$A$-稳定性与 $L$-稳定性概念。

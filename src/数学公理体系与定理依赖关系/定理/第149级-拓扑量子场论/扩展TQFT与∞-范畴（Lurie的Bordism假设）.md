@@ -10,6 +10,12 @@
 
 扩展 TQFT 与 Lurie 的 Bordism 假设（Lurie 2009）给出"扩展TQFT 的值由点在适当高范畴中的像决定"的精确形式：设 $\mathcal C$ 为 $(\infty,d)$-范畴，则对称幺半 $(\infty,d)$-范畴 $\operatorname{Bord}_d^{\mathrm{fr}}$ 的完全扩展 TQFT 的范畴等价于由 $\mathcal C$ 的 $d$-次框架化反复 loop 空间（即"可定向 $d$-对象"）对象组成的位置。本质：Bordmich 范畴是框架化紧流形的自由 $(\infty,d)$-范畴。
 
+## 几何直观
+
+![从点、区间、圆盘到 d 维流形逐层升高，只有最高一层的取值需要指定](images/th-149-05-bordism-hypothesis.svg)
+
+图意在说明：配边范畴由点自由生成，完全扩展 TQFT 的全部取值都由点在最高范畴中的像决定。
+
 ## 二、原理思路
 
 Bordism 假设把"贴拼流形"视为 $(\infty,d)$-范畴的普遍构造：$\operatorname{Bord}_d^{\mathrm{fr}}$ 由（框架化）流形的切割生成，其对象为带框架点（$0$-流形）、态射为 $1$-cobordism……$d$-态射为 $d$-cobordism。取值 $Z:{\rm Bord}\to\mathcal C$ 由在"点"处的值 $Z(*)$ 决定，因为任何流形可分解为把这些"点"的取向按架子帧格起来。

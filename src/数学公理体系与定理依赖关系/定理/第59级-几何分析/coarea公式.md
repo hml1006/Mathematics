@@ -18,6 +18,12 @@ $$\int_M g\,|\nabla f|\,d\mu=\int_{\mathbb R}\Bigl(\int_{f^{-1}(t)}g\,d\mathcal 
 
 coarea 公式是几何分析中被使用最频繁的工具之一。在几何测度论中，它给出 BV 函数的总变差、有限周长集的定义与 De Giorgi 的结构定理，也是证明可求长性与 rectifiability 的手段；在极小曲面与平均曲率流中，它用于把体积单调性、密度估计与水平集的几何量联系起来；在分析中，它是"层饼表示"（layer cake）与 Sobolev、等周不等式证明的标准工具。与它并列的 area formula $\int_M g\,J_f\,d\mu=\int_{\mathbb R^n}\bigl(\int_{f^{-1}(y)}g\,d\mathcal H^{m-n}\bigr)dy$ 是把积分推到像空间；两者互为"对偶"。
 
+## 几何直观
+
+![椭圆区域被水平集切成多层，其中一层涂成橙色，紫色箭头表示梯度模长](images/th-059-09-coarea.svg)
+
+图意在说明：按水平集切片并乘以梯度模长再累加，就还原了整个区域上的积分。
+
 ## 二、原理思路
 
 1. **光滑且无临界点时的标架分解**：若 $\nabla f\ne0$，取正交标架使 $e_1=\nabla f/|\nabla f|$，其余 $e_2,\dots,e_n$ 切于水平集。对偶余标架中 $\theta^1(e_1)=1$、$\theta^1(e_j)=0\,(j\ge2)$，故 $\theta^1=df/|\nabla f|$；而 $\theta^2\wedge\cdots\wedge\theta^n$ 正是水平集的 $(n-1)$ 维面积元。

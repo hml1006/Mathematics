@@ -10,6 +10,12 @@
 
 **BCH 码的纠错能力**：设 $\mathbb F_q$ 特征 $p$、$\gcd(n,q)=1$，$\alpha$ 为 $\mathbb F_{q^m}$ 中 $n$ 次本原单位根。设计距离 $\delta=2t+1$ 的 BCH 码 $\mathcal C$ 以 $\alpha^b,\alpha^{b+1},\dots,\alpha^{b+\delta-2}$ 为根（即 $c(\alpha^{b+i})=0$）。则该码的最小距离 $\ge\delta=2t+1$，故可纠正至多 $t$ 个错误。
 
+## 几何直观
+
+![八个本原根排成一串，中间六个连续根被橙色圈出并加括号标注](images/th-113-01-bch-design-distance.svg)
+
+图意在说明：只要码多项式带上一串连续的本原根，最小距离就被抬到设计距离，纠错位数随之确定。
+
 ## 二、原理思路
 
 设码多项式 $c(x)$ 有 $w$ 个非零系数，且 $c(\alpha^{b+i})=0$（$i=0,\dots,\delta-2$）。把这些零条件写成以非零系数为未知量的线性方程组，其系数矩阵是**Vandermonde 矩阵**（由 $\alpha^{i_1},\dots,\alpha^{i_w}$ 张成），因 $\alpha$ 为本原 $n$ 次根且 $i_1,\dots,i_w$ 互异，该矩阵可逆。于是若 $w\le\delta-1$，则方程组只有零解，与系数非零矛盾；故 $w\ge\delta$，最小距离 $\ge\delta$。

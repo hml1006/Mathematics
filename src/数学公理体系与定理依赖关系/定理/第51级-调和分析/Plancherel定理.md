@@ -14,6 +14,12 @@ Plancherel 定理由 Michel Plancherel 于 1910 年证明，又称傅里叶变�
 
 在本仓库中，Plancherel 定理也是奇异积分理论、Littlewood–Paley 分解与 Bochner–Riesz 平均中一切 $L^2$ 估计的出发点。
 
+## 几何直观
+
+![时域曲线下与频域曲线下的两块阴影面积相等，中间用双向箭头标注相等](images/th-051-09-plancherel-energy.svg)
+
+图意在说明：Fourier 变换把函数搬到频域时不改变 L² 范数，能量、距离与夹角全部原样保留。
+
 ## 二、原理思路
 
 核心想法只有一句话：**先在性质最好的 Schwartz 空间上把恒等式证出来，再用稠密性把算子延拓出去。**

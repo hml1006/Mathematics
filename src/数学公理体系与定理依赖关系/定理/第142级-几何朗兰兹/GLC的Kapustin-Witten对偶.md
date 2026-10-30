@@ -10,6 +10,12 @@
 
 Kapustin–Witten对偶断言：几何 Langlands 对应本质上就是 $\mathcal{N}=4$ 超 Yang–Mills（SYM）理论的 S-对偶（蒙哥马利–电磁对偶 $G\leftrightarrow{}^LG$）在 Wilson–'t Hooft 拓扑约化后的结果。它首次给出几何 Langlands 的物理推导与解释，把层论等价还原为场论的对偶对称性。
 
+## 几何直观
+
+![上排规范群与对偶群由 S 对偶相连，各自向下扭化到 A 模型与 B 模型方框](images/th-142-03-kapustin-witten.svg)
+
+图意在说明：四维规范理论的 S 对偶在扭化后落到 Hitchin 空间的 A 模型与 B 模型上，正是几何朗兰兹。
+
 ## 二、原理思路
 
 考虑四维 $\mathcal{N}=4$ SYM 在形变 $AdS_5\times S^5$ 或一般超嘉grants上，通过沿时间方向做"顶分切"与变分拓扑量子场论约化到二维，得到代数—几何侧的两个"边界条件"。一侧得到 $\mathrm{Bun}_G$ 上的 D-模（来自 A-分支），另一侧得到 $\mathrm{LocSys}_{{}^LG}$ 上的层（来自 B-分支），而 S-对偶把两者交换并连接由 Hecke 算子给出的边界态。

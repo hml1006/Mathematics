@@ -10,6 +10,12 @@
 
 拟三角 Hopf 代数的 $R$-矩阵（Drinfeld 创建于 1985）是量子群结构的核心。该定理断言 $U_q(\mathfrak{sl}_2)$ 存在（在完备化唯一）拟三角结构：$R$ 使余乘法"几乎可换"，同时线性编码了 Yang-Baxter 关系。它是量子群给出纽结不变量与统计模型可积性的代数根源。
 
+## 几何直观
+
+![两股蓝色与绿色线在中间交叉，红圈 R 标出交叉处，上下标签互换](images/th-073-02-r-matrix.svg)
+
+图意在说明：R 矩阵就是把张量积两个因子交换位置的那次翻转，它使余乘的两种次序只差一次共轭。
+
 ## 二、原理思路
 
 $R$ 由两因素构成：指数型原象 $q^{\frac12 H\otimes H}$（来自似幂元素的对称部分）与级数 $\sum_{n\ge0}\frac{(1-q^{-2})^n}{[n]!}q^{\frac{n(n-1)}2}E^n\otimes F^n$（"量子指数"）。三条件需在完备化 $\widehat{\otimes}$ 中验证：$\Delta^{\rm op}(x)R=R\Delta(x)$、$(\Delta\otimes\operatorname{id})(R)=R_{13}R_{23}$、$(\operatorname{id}\otimes\Delta)(R)=R_{13}R_{12}$；关键是用 $q^{\frac12 H\otimes H}$ 与 $E\otimes1$、$1\otimes E$ 的交换关系化简。唯一性由 Drinfeld 量子双的泛性质保证。

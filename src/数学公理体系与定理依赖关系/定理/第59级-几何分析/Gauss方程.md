@@ -16,6 +16,12 @@ $$\langle R^N(X,Y)Z,W\rangle=\langle R^M(X,Y)Z,W\rangle+\langle A(X,Z),A(Y,W)\ra
 
 在几何分析中，Gauss 方程的作用是把"内蕴曲率"与"外在的 $A$"互换，使曲率估计化为对 $|A|^2$ 的分析。Simons 不等式正沿着这条路线：先用 Gauss 方程把内蕴 Ricci 曲率写成 $A$ 的表达式，再用 Ricci 恒等式把 $\nabla\nabla A$ 的交换子化为曲率项，得到 $|A|^2$ 的 Bochner 型恒等式。极小曲面理论、平均曲率流与常平均曲率超曲面的刚性分类，都以 Gauss 方程为第一块基石。
 
+## 几何直观
+
+![子流形曲线悬在外围曲面之上，绿色法向箭头表示第二基本形式，两者相加给出内蕴曲率](images/th-059-02-gauss-equation.svg)
+
+图意在说明：子流形的内蕴曲率等于环境曲率加上第二基本形式的自乘，弯曲被拆成两笔账。
+
 ## 二、原理思路
 
 1. **分解环境联络**（Gauss 公式 + Weingarten 公式）：$\nabla^N_XY=\nabla^M_XY+A(X,Y)$（$X,Y$ 切），$\nabla^N_X\xi=-A_\xi X+\nabla^\perp_X\xi$（$\xi$ 法）。这是全部计算的输入，它把环境联络按切/法分量拆开。

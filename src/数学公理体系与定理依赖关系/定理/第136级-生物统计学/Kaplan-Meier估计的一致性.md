@@ -17,6 +17,12 @@ $$
 \sup_{t\in[0,\tau]}|\hat S(t)-S(t)|\xrightarrow{p}0.
 $$
 
+## 几何直观
+
+![两条阶梯生存曲线分别在事件时刻下降，曲线上带有短竖线表示的删失标记](images/th-136-02-kaplan-meier.svg)
+
+图意在说明：生存率只在事件发生时下一级台阶，删失只缩小风险集，阶梯因此是右连续且逐步下降的。
+
 ## 二、原理思路
 
 乘积限估计通过"逐步更新生存概率"处理删失：在每个事件时刻，存活概率乘上"到这一时刻还没死"的占比，删失者仍计入风险分母 $n_i$ 从而不被误当作死亡。一致性证明用**计数过程鞅**：把 Nelson-Aalen 估计写为鞅积分 $\hat\Lambda(t)-\Lambda(t)=\int_0^t\frac{dM(s)}{Y(s)}$；由其方差 $\mathbb{E}\int_0^t\frac{h(s)}{Y(s)}ds\to0$（$Y(s)\to\infty$）得 $\hat\Lambda\xrightarrow{p}\Lambda$，再由 $\hat S=e^{-\hat\Lambda}$ 与连续映射/乘积积分得以一致收敛。

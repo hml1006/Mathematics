@@ -10,6 +10,12 @@
 
 Beilinson-Drinfeld定理是几何Langlands纲领的核心成果：设 $X$ 为亏格 $g>1$ 的光滑射影曲线，$G$ 为约化群，则 $\mathrm{Bun}_G$ 上（带Hecke本征性质）的D-模的范畴与 $L$-群 $^LG$ 的局部系统模空间 $\mathrm{LocSys}_{{}^LG}$ 上的拟凝聚层的范畴等价。它将算术的 Langlands 对应翻译成层论的范畴等价。
 
+## 几何直观
+
+![Bun 上的 D 模层与平坦联络上的拟凝聚层由双向箭头相连，下方 Hecke 特征层指向本征值](images/th-142-01-beilinson-drinfeld.svg)
+
+图意在说明：丛上的 D 模层与平坦联络上的拟凝聚层彼此等价，等价由 Hecke 算子驱动。
+
 ## 二、原理思路
 
 其核心是构造两个互逆函子：正方向由"给定局部系统 $\sigma\mapsto$ Hecke本征D-模 $\mathcal{F}_\sigma$"给出（经 $D$-模理论中的消去/唯一性）；逆方向把 Hecke本征D-模 $\mathcal{F}$ 映射到 $\mathrm{LocSys}_{{}^LG}$ 上的"谱层"，常经 Fourier–Mukai 型变换实现。等价的关键在于 Hecke 算子的一致性。

@@ -14,6 +14,12 @@ $$
 BF_{12} = \frac{f(\boldsymbol{x}\mid M_1)}{f(\boldsymbol{x}\mid M_2)} = \frac{\int_{\Theta_1} f(\boldsymbol{x}\mid\theta_1,M_1)\pi_1(\theta_1)d\theta_1}{\int_{\Theta_2} f(\boldsymbol{x}\mid\theta_2,M_2)\pi_2(\theta_2)d\theta_2}.
 $$
 
+## 几何直观
+
+![两条边际似然曲线在山峰处错开，红色虚线标出观测数据位置与两点高度](images/th-095-01-bayes-factor.svg)
+
+图意在说明：Bayes 因子是两模型把似然对参数平均后的比值，读出数据更偏袒哪一个模型。
+
 ## 二、原理思路
 
 由贝叶斯定理，模型后验概率比 = 先验概率比 × Bayes 因子。而对每个模型，其边际似然 $f(\boldsymbol{x}\mid M_k)=\int f(\boldsymbol{x}\mid\theta_k,M_k)\pi_k(\theta_k)d\theta_k$ 是对参数求平均后的"模型对数据的总体解释能力"。总概率归一化（$m(\boldsymbol{x})=BF_{12}P(M_1)+P(M_2)$式）后可反解出 Bayes 因子。

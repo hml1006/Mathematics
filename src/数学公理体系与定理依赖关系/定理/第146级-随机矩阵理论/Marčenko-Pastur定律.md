@@ -13,6 +13,12 @@ $$
 
 Marčenko–Pastur定律（MP，Marčenko–Pastur 1967）给出白化样本协方差矩阵经验谱分布在高维极限的极限本征：对 $p\times n$ 数据 $X$（iid 适正：均值零、协方差 $\Sigma$），当 $p,n\to\infty$、$p/n\to c\in(0,\infty)$ 时，$X\Sigma X^{\top}$ 的经验谱收敛到 MP 分布（参数 $c$、密度形如上述）。这是高维统计/随机矩阵协方差谱的基础。
 
+## 几何直观
+
+![直方图上方叠着一条红色密度曲线，两端截断，零点处另有一根紫色原子柱](images/th-146-02-marchenko-pastur.svg)
+
+图意在说明：样本协方差矩阵的谱被压进一个有限区间，形状只由行列比决定，零点还可能留下原子。
+
 ## 二、原理思路
 
 极限谱通过 Stieltjes 变换 / 自由概率（半圆样积）计算：$X X^{\top}/n$ 的特征值对应 $X^{\top}X/n$（$n$ 尖端矩阵）的谱；用 trace 的矩与 Marcinkiewicz 恒等给出 Stieltjes 变换 $m$ 满足的二次方程，解出密度。上下界 $b=(1+\sqrt c)^2$、$a=(1-\sqrt c)^2$ 来自最大的极限特征值之位置。

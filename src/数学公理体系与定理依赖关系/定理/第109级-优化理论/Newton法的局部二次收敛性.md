@@ -10,6 +10,12 @@
 
 **Newton 法局部二次收敛**：设 $f:\mathbb R^n\to\mathbb R$ 二次连续可微，$\nabla^2 f$ 在 $x^*$ 邻域 Lipschitz 连续且 $\nabla^2f(x^*)\succ0$。则 Newton 迭代 $x_{k+1}=x_k-[\nabla^2 f(x_k)]^{-1}\nabla f(x_k)$ 在充分靠近 $x^*$ 处**局部二次收敛**：存在 $\delta,C>0$ 使 $\|x_0-x^*\|<\delta$ 时 $\|x_{k+1}-x^*\|\le C\|x_k-x^*\|^2$。
 
+## 几何直观
+
+![蓝色误差曲线几步内陡降十几个数量级，橙色虚线则是平缓的线性下降](images/th-109-02-newton-quadratic.svg)
+
+图意在说明：在最优点附近误差按平方关系缩短，每步有效数字翻倍，而梯度法只能线性下降。
+
 ## 二、原理思路
 
 Newton 步本质是"用二阶 Taylor 模型求驻点"：$x_{k+1}$ 满足近似驻点方程。误差递推由此而来：把 $\nabla f(x^*)=0$ 在 $x_k$ 展开，用积分型 Taylor 余项 $\nabla f(x^*)=\nabla f(x_k)+\int_0^1\nabla^2 f(x^*+t(x_k-x^*))(x_k-x^*)dt$；两端代入 Newton 迭代，利用 $\nabla^2$ 的 Lipschitz/正定把"模型误差项"量级定为 $\|x_k-x^*\|^2$，即得二次收敛。

@@ -10,6 +10,12 @@
 
 设 $W_t$ 为 $\mathbb{P}$ 下的 $d$ 维 Brown 运动，$\theta_t$ 为适应过程且满足 Novikov 条件。定义指数鞅 $L_t=\exp\{-\int_0^t\theta_s^\top dW_s - \frac12\int_0^t\|\theta_s\|^2ds\}$ 与新测度 $\frac{d\mathbb{Q}}{d\mathbb{P}}\big|_{\mathcal{F}_T}=L_T$。则在 $\mathbb{Q}$ 下，$\tilde{W}_t = W_t + \int_0^t\theta_s ds$ 是 Brown 运动。
 
+## 几何直观
+
+![同一批路径在两种测度下，绿色一族整体沿 θt 抬升，蓝灰一族保持无漂移](images/th-096-04-girsanov.svg)
+
+图意在说明：换测度只平移漂移，抖动与二次变差不动，指数鞅正是这次换尺子的密度。
+
 ## 二、原理思路
 
 Novikov 条件保证 $L_t$ 是一个真鞅，从而 $\mathbb{Q}$ 是概率测度。要证 $\tilde{W}_t$ 是 $\mathbb{Q}$-鞅与二次变差为 $t$，再由 Lévy 鞅刻画定理判定其为 Brown 运动。鞅性通过 Bayes 公式把 $\mathbb{Q}$ 下条件期望转化为 $\mathbb{P}$ 下的比值，配合对 $L_t\tilde{W}_t$ 用 Itô 引理证明其是 $\mathbb{P}$-鞅。

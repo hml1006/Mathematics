@@ -10,6 +10,12 @@
 
 Littlewood-Richardson 规则用一个显式的组合计数给出 Schur 函数乘积的展开系数 $c_{\lambda\mu}^\nu$（Littlewood-Richardson 系数）。这些系数出现在对称函数、$GL_n$ 与 $S_n$ 表示张量积、以及代数簇（Schubert 微）之中，是组合与表示论交汇的中心量。
 
+## 几何直观
+
+![左侧两格杨图外接一个虚线格，两箭头分别指向三格与两行形状，各标系数 1](images/th-080-03-lr.svg)
+
+图意在说明：给 λ 镶上 μ 的格子，每种合法填法对应一个 ν，系数就是填法数。
+
 ## 二、原理思路
 
 将问题化为 Skew Schur 函数 $s_{\nu/\lambda}=\sum_\mu c_{\lambda\mu}^\nu s_\mu$。$s_{\nu/\lambda}$ 是形状 $\nu/\lambda$ 的半标准 Young 表权重和 $s_{\nu/\lambda}=\sum_{T\in\text{SSYT}(\nu/\lambda)}x^T$。获 $c_{\lambda\mu}^\nu$ 需抽取 $s_\mu$ 的系数：逐行读表得词 $w(T)$，当其（右边起）为逆格序词（Yamanouchi 词：任一前缀中 $i$ 的次数 $\ge i+1$ 的次数）时，对应 $s_\mu$ 的贡献，从而 $c_{\lambda\mu}^\nu$ 等于如此 LR 填写的个数。

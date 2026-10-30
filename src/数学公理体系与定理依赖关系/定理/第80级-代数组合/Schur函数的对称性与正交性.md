@@ -10,6 +10,12 @@
 
 Schur 函数（半标准 Young 表的权重）是 $GL(n)$ 不可约表示的特征标，是对称函数环 $\Lambda$ 的一组基。本定理说明：(1) $s_\lambda$ 是对称的（对变量置换不变）；(2) 在 Hall 内积下 $\{s_\lambda\}$ 正交归一（$\langle s_\lambda,s_\mu\rangle=\delta_{\lambda\mu}$）。
 
+## 几何直观
+
+![三行三列的方格矩阵，对角线绿色写 1，其余灰格写 0，行列标出三个划分](images/th-080-08-schur-orthogonal.svg)
+
+图意在说明：Schur 函数两两内积为零、自身内积为一，于是构成一组正交归一的基。
+
 ## 二、原理思路
 
 - **对称性**由 Jacobi-Trudi/行列式比法证明：$s_\lambda=\frac{\det(x_i^{\lambda_j+n-j})}{\det(x_i^{n-j})}$，分子分母同为交替（Vandermonde），对置换作标记变换后比值不变。

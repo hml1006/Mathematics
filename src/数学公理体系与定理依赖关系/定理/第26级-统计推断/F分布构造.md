@@ -8,6 +8,12 @@
 
 F 分布（Fisher-Snedecor F-distribution）是数理统计中用于方差比较的重要分布，由 Ronald Fisher 和 George Snedecor 提出。F 分布的构造基于两个独立卡方变量的比值：若 $V_1 \sim \chi^2_{\nu_1}$ 与 $V_2 \sim \chi^2_{\nu_2}$ 独立，则 $F = \frac{V_1/\nu_1}{V_2/\nu_2}$ 服从自由度为 $(\nu_1, \nu_2)$ 的 F 分布，记为 $F \sim F(\nu_1, \nu_2)$。F 分布是方差分析（ANOVA）、回归分析中整体显著性检验和两正态总体方差比推断的基础。其概率密度函数为 $f(x) = \frac{\Gamma((\nu_1+\nu_2)/2)}{\Gamma(\nu_1/2)\Gamma(\nu_2/2)} \left(\frac{\nu_1}{\nu_2}\right)^{\nu_1/2} x^{\nu_1/2-1} \left(1 + \frac{\nu_1}{\nu_2}x\right)^{-(\nu_1+\nu_2)/2}$。
 
+## 几何直观
+
+![上方两条卡方密度曲线经箭头汇入下方一条右偏的 F 密度，右尾被红色标出](images/th-026-02-f-distribution.svg)
+
+图意在说明：两个独立卡方先各自归一化再相除，尺度被消掉，得到的右偏分布正适合比较方差。
+
 ## 分析
 
 **前置依赖**：正态分布、卡方分布、t 分布、Gamma 函数、随机变量的变换。

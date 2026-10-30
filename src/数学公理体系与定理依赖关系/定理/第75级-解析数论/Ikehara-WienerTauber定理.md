@@ -10,6 +10,12 @@
 
 Ikehara–Wiener Tauber 定理由江原正博（Shikao Ikehara）于 1931 年在 Wiener 的 Tauber 理论与陶伯型定理框架下证明，是把"解析函数的奇性"翻译为"系数累加和的渐近"的关键工具。它断言：若非负系数 Dirichlet 级数 $\sum a_n n^{-s}$ 在 $\operatorname{Re}s>1$ 收敛，且 $f(s)-\frac{A}{s-1}$ 能连续延拓到闭半平面 $\operatorname{Re}s\ge1$，则 $\sum_{n\le x}a_n\sim Ax$。提出它的动机是给素数定理（PNT）提供一个无需显式公式、无需知道零点分布的干净证明路径：只要验证 $\zeta$ 在 $\operatorname{Re}s\ge1$ 无零点，定理立刻给出 $\psi(x)\sim x$。它是 Wiener 一般 Tauber 定理在 Dirichlet 级数上最常用的特例，也是 Chebotarev 密度定理、Dirichlet 定理与许多数论渐近结果的共同引擎。
 
+## 几何直观
+
+![复平面上只剩 s 等于 1 处的一个单极点，下图的阶梯累加和沿斜线稳定增长](images/th-075-03-ikehara-tauber.svg)
+
+图意在说明：Dirichlet 级数在边界上只留一个单极点且余项连续，系数的累加和就恰好按 Ax 增长。
+
 ## 二、原理思路
 
 1. 用 Mellin–Stieltjes 表示把累加和 $A(x)=\sum_{n\le x}a_n$ 与 $f(s)$ 联系起来：$f(s)=s\int_1^\infty A(x)x^{-s-1}dx$。问题化为由 $f$ 的奇性反推 $A$。

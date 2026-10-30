@@ -8,6 +8,12 @@
 
 $\operatorname{Ext}$ 和 $\operatorname{Tor}$ 是同调代数中最重要的导出函子，它们分别由 Hom 函子和张量积函子导出。$\operatorname{Ext}^n_R(A, B)$ 衡量了 Hom 函子 $\operatorname{Hom}_R(A, -)$ 或 $\operatorname{Hom}_R(-, B)$ 的右导出，而 $\operatorname{Tor}_n^R(A, B)$ 衡量了张量积函子 $(-) \otimes_R B$ 或 $A \otimes_R (-)$ 的左导出。这两个函子在模论、代数拓扑、代数几何和表示论中具有核心地位，提供了丰富的同调不变量。
 
+## 几何直观
+
+![上排短正合列，下排经函子后右端断开，红色弧线把缺口接到下一阶](images/th-035-06-derived-functors.svg)
+
+图意在说明：函子保不住整条正合列，断掉的那截由连接同态 δ 接到下一阶，于是只需逐阶计算。
+
 ## 分析
 
 **前置依赖**：模论、投射分解与内射分解、导出函子、正合列。

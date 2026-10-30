@@ -14,6 +14,12 @@ Lagrangian 子流形是辛流形中维数为辛流形一半、且辛形式在其
 
 Lagrangian 子流形的理论包括 Weinstein 邻域定理、Lagrangian 相交的 Hamilton 不变性、Floer 同调的 Lagrangian 版本、Lagrangian 配边理论、displaceability 与 Lagrangian 容量等。它们在镜像对称的 Homological Mirror Symmetry 中作为镜像对象一侧的核心代数结构。
 
+## 几何直观
+
+![绿色倾斜平面里躺着两个蓝色向量，旁边写着辛形式限制到它上面恒为零](images/th-057-07-lagrangian.svg)
+
+图意在说明：Lagrangian 子流形维数正好一半，切空间与辛正交补完全重合，因此 ω 限制上去恒为零。
+
 ## 二、原理思路
 
 Lagrangian 子流形理论的核心原理如下：

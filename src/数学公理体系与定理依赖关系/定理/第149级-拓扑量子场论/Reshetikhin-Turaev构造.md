@@ -10,6 +10,12 @@
 
 Reshetikhin–Turaev 构造（RT，Reshetikhin–Turaev 1991）以量子群（$U_q(\mathfrak g)$、$q=\exp(2\pi i/(k+h^\vee))$）的有限维表示构造出一个模块化张量范畴，再用"手术 + R-矩阵"给出三维定向流形与纽结的量子不变量，并进而得到一个三维 TQFT。它与 Witten 的 Chern–Simons 理论相符，是 Jones 型不变量的严谨代数实现。
 
+## 几何直观
+
+![带框链环经手术得到三维流形，下方两条辫子由 R 矩阵赋值](images/th-149-02-reshetikhin-turaev.svg)
+
+图意在说明：量子群的表示给出 R 矩阵，手术公式再把链环的赋值组装成三维流形的不变量。
+
 ## 二、原理思路
 
 构造分四步：(1) 令 $q$ 为根单位，得半单模数 Tensor 范畴 $\operatorname{Rep}(U_q(\mathfrak g))$（+脊 $\theta$、S-矩阵）；(2) 用范畴的 R-矩阵/辫结数据给 **带边图（tangle）** 赋值（图画演算是范畴的"布线"）；(3)把三维流形表示为沿链环的**手术**（$S^3\setminus$ tubular），其不变量为对这些链接的编织求值经 S-矩阵求和；(4) 验证 Atiyah 公理得 TQFT。

@@ -10,6 +10,12 @@
 
 该定理建立量子群（拟三角 Hopf 代数）与 Yang-Baxter 方程之间的深层联系：拟三角结构的余乘法条件恰等价于 $R$ 在表示上满足 Yang-Baxter 方程。这解释了为何量子群天然产出可积系统的解，并为其提供统一来源。
 
+## 几何直观
+
+![左右两组三股辫的交叉次序相反，中间用等号连接，下方分别标注先左后右](images/th-073-04-yang-baxter.svg)
+
+图意在说明：三股辫两种不同的编织次序给出同一映射，这正是 Yang-Baxter 方程，R 矩阵满足它即可换序。
+
 ## 二、原理思路
 
 把 $R=\sum_i a_i\otimes b_i$ 写成和，则在 $V^{\otimes3}$ 上 $R_{12},R_{13},R_{23}$ 分别对应 $\sum_i a_i\otimes b_i\otimes1$、$\sum_i a_i\otimes1\otimes b_i$、$\sum_i 1\otimes a_i\otimes b_i$。计算 $R_{12}R_{13}R_{23}$ 与 $R_{23}R_{13}R_{12}$ 后，利用拟三角条件 $(\Delta\otimes\operatorname{id})(R)=R_{13}R_{23}$、$(\operatorname{id}\otimes\Delta)(R)=R_{13}R_{12}$ 与 $\Delta^{\rm op}(x)R=R\Delta(x)$ 化简，比较即得二者相等。

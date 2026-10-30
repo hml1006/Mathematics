@@ -14,6 +14,12 @@ $$
 $$
 更一般地，对不必可逆的 $A$，有 $\dfrac{d}{dt}\det A=\operatorname{tr}\big(\operatorname{adj}(A)\,\dot A\big)$，其中 $\operatorname{adj}(A)$ 为伴随矩阵。
 
+## 几何直观
+
+![单位方块被映射成面积放大的平行四边形，上方曲线画出行列式随时间的增长与切线](images/th-119-02-jacobi-formula.svg)
+
+图意在说明：行列式就是变换对体积的缩放倍数，它随时间的导数等于自身乘以速度矩阵的迹。
+
 ## 二、原理思路
 
 把行列式按 **Leibniz 公式** 展开为 $n!$ 项乘积之和，用乘积法则逐项求导。每一项恰好是"把某一行（列）替换成该行的导数、其余不动"所得矩阵的行列式，于是总和可写成这些行列式之和；再按被求导的那一行展开，系数正是伴随矩阵的余子式，从而合并为 $\operatorname{tr}(\operatorname{adj}(A)\dot A)$。当 $A$ 可逆时用 $\operatorname{adj}(A)=\det A\cdot A^{-1}$ 化为 Jacobi 公式。由此还能得到 $(\ln|\det A|)'=\operatorname{tr}(A^{-1}\dot A)$，这正是 Reynolds 输运定理中体积膨胀率的来源。

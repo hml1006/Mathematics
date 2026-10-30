@@ -14,6 +14,12 @@ $$
 
 三微 Chern–Simons 理论与 Jones 多项式（Witten 1989）：$d=3$、规范群 $G$、level $k\in\mathbb Z$ 的 Chern–Simons 理论给出一个三维 TQFT，其对纽结 $L$ 的 Wilson 圈期望值正比于 $L$ 的 Jones 多项式（$G=SU(2)$ 基本表示时）。由此 Jones 多项式获数学意义下的微-几何表述，并作为 $q=e^{2\pi i/(k+2)}$ 处的亏照（值）。
 
+## 几何直观
+
+![紫色纽结投影在上方，下方三个交叉图列出 skein 关系的三种改法](images/th-149-04-chern-simons-jones.svg)
+
+图意在说明：沿纽结的 Wilson 圈期望值正是 Jones 多项式，skein 关系就是它的递推。
+
 ## 二、原理思路
 
 三维 Chern–Simons 作用量 $S_{\mathrm{CS}}=\frac{k}{4\pi}\int_M\operatorname{Tr}(A\wedge dA+\frac23 A\wedge A^3)$ 是拓扑（高规不变、只在 $k\in\mathbb Z$ 时量子化）。其配分函数

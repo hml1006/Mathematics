@@ -16,6 +16,12 @@ $$
 
 其中 $\{\varepsilon_t\}$ 是新息白噪声（$\psi_0=1$，$\sum_j\psi_j^2<\infty$），$V_t$ 是确定性分量，与所有 $\varepsilon_s$ 不相关。
 
+## 几何直观
+
+![上方绿色平滑曲线与中间蓝色抖动曲线叠加，得到下方灰色总序列](images/th-093-04-wold-decomposition.svg)
+
+图意在说明：任何平稳序列都能唯一拆成新息的线性叠加与与之正交的确定性分量。
+
 ## 二、原理思路
 
 在 Hilbert 空间 $\mathcal{H}_t = \overline{\operatorname{span}}\{X_s: s\le t\}$ 中，将 $X_t$ 正交投影到其过去上，残差即新息 $\varepsilon_t$。反复投影可把 $X_t$ 展成新息的历史线性组合，剩下的与所有新息正交的部分即确定性分量 $V_t$。

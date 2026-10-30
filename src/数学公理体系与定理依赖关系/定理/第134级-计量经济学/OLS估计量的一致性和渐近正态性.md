@@ -13,6 +13,12 @@ $$
 \sqrt{n}(\hat\beta_{\text{OLS}}-\beta_0)\xrightarrow{d} N(0,\sigma^2Q^{-1}),\qquad Q=\text{plim}\,\frac1n\sum_i x_ix_i'.
 $$
 
+## 几何直观
+
+![散点围绕蓝色回归线分布，每条红色竖线表示一个样本点到拟合线的残差](images/th-134-03-ols-consistency.svg)
+
+图意在说明：最小二乘挑出残差平方和最小的那条直线，样本变多时斜率估计稳定并趋于正态。
+
 ## 二、原理思路
 
 一致性：把估计误差写为 $S_n^{-1}\sum_i x_i\varepsilon_i$，其中 $S_n=\sum_ix_ix_i'$；由鞅差性质 $\mathbb{E}[x_i\varepsilon_i]=0$，大数定律使样本矩收敛、误差和趋于零，故误差趋于零。渐近正态性：把 $\frac1{\sqrt n}\sum_ix_i\varepsilon_i$ 视为鞅差阵列，用鞅差中心极限定理（条件方差收敛 + Lindeberg 条件）得 $N(0,\sigma^2Q)$，再经 Slutsky 定理得 $N(0,\sigma^2Q^{-1})$。

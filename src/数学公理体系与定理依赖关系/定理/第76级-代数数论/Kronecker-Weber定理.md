@@ -10,6 +10,12 @@
 
 Kronecker-Weber 定理论断：$\mathbb{Q}$ 的每个有限阿贝尔扩张都包含在某个分圆扩张 $\mathbb{Q}(\zeta_m)$ 中。换言之，所有阿贝尔扩张均由单位根生成。此定理是类域论在 $\mathbb{Q}$ 上的特例与优美封顶，也是 Hilbert 胆士"Kronecker 青春之梦"（论想要更多活动元构造更多扩张）的最简单情形。
 
+## 几何直观
+
+![大框标着分圆域，里面嵌着高斯域与实二次域，下面是小框表示的有理数域](images/th-076-02-kronecker-weber.svg)
+
+图意在说明：任意有限阿贝尔扩张都被某个分圆域包住，单位根一张屋顶盖住了所有阿贝尔扩张。
+
 ## 二、原理思路
 
 经典证明借助类域论：$\mathbb{Q}$ 的每个阿贝尔扩张 $K/\mathbb{Q}$ 对应一个"模 $m$ 的射线类群"（即 $\operatorname{Gal}(K/\mathbb{Q})\cong I_K^{\mathfrak m}/P_K^{\mathfrak m}$），而射线类群又可通过分圆域 $\mathbb{Q}(\zeta_m)$ 实现（因 $\operatorname{Gal}(\mathbb{Q}(\zeta_m)/\mathbb{Q})\cong(\mathbb{Z}/m\mathbb{Z})^\times$ 恰为模 $m$ 的互素类群）。由局部 Artin 映射与互反律锁定导子，可证明 $K\subseteq\mathbb{Q}(\zeta_m)$。

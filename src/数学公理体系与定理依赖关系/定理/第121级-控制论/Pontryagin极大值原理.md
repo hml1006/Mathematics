@@ -14,6 +14,12 @@ $$
 $$
 描述，断言最优控制满足 $\mathcal H(\boldsymbol x^*,\boldsymbol u^*,\boldsymbol\lambda^*,t)=\max_{\boldsymbol u}\mathcal H(\boldsymbol x^*,\boldsymbol u,\boldsymbol\lambda^*,t)$，连同状态-协态方程构成两点边值问题。
 
+## 几何直观
+
+![凹曲线 H 的顶点用空心圆标出，落在绿色可行控制区之外，最大值贴在边界红点](images/th-121-03-pontryagin.svg)
+
+图意在说明：逐点最大化 H 时，若顶点不在可行集 U 内，最优控制只能贴在 U 的边界上。
+
 ## 二、原理思路
 
 对控制器施加“变分”扰动，考察其对最优点的影响。由于极值点的一阶变分为零，沿可行扰动方向推出协态方程与顶点条件；再由控制可以自由扰动，得到 Hamiltonian 对控制的最大化条件。

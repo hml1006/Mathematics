@@ -10,6 +10,12 @@
 
 考虑 SDE $dX_t = \mu(t,X_t)dt + \sigma(t,X_t)dW_t$，$X_0=\xi$。在 Lipschitz 条件、线性增长条件与 $\mathbb{E}\|\xi\|^2<\infty$ 下，存在唯一的强解 $X_t$，且 $\mathbb{E}[\sup_{0\le t\le T}\|X_t\|^2]<\infty$。
 
+## 几何直观
+
+![灰色直线是零次迭代，随后橙绿蓝三条曲线逐步添上噪声，最终贴住蓝色真解](images/th-096-08-sde-existence.svg)
+
+图意在说明：Picard 迭代在随机情形依然收敛，Lipschitz 与 Gronwall 把误差一步步压到零。
+
 ## 二、原理思路
 
 采用 Picard 迭代（同常微分方程）并利用 Itô 等距与 Gronwall 引理。先证迭代序列的 $L^2$ 范数一致有界（线性增长条件），再证其差分方差被控制（Lipschitz 条件），进而得到平方收敛与几乎必然一致收敛，极限即为解；唯一性由两条解的差满足的 Gronwall 不等式推出。

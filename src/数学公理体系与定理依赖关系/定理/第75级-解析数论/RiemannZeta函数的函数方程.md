@@ -10,6 +10,12 @@
 
 函数方程是 Zeta 函数最深层的结构性质之一，由 Riemann 于 1859 年给出。它说明"完备化"的 Zeta 函数 $\xi(s)=\frac12 s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 关于直线 $\operatorname{Re}(s)=\frac12$ 对称。该方程同时给出了 $\zeta(s)$ 的解析延拓：由右侧的 $\Gamma$ 与 $\sin$ 因子，右半平面可向左延拓，从而得到整函数（除 $s=1$ 处的简单极点）。
 
+## 几何直观
+
+![临界带被染成浅蓝，红色虚线是临界线，s 与 1 减 s 两点关于中线对称](images/th-075-05-functional-equation.svg)
+
+图意在说明：完备化的 Zeta 函数关于 Re s 等于二分之一对称，函数方程把右半平面的信息原样搬到左半平面。
+
 ## 二、原理思路
 
 关键的桥梁是 Theta 函数 $\theta(t)=\sum_{n=-\infty}^{\infty}e^{-\pi n^2 t}$。由 Poisson 求和公式得 $\theta$ 的变换公式 $\theta(t)=\frac1{\sqrt t}\theta(1/t)$（"娘梅顽皮的自对称"）。将 $\Gamma(s/2)\pi^{-s/2}\zeta(s)$ 写成 $t$ 的积分，利用 $\theta$ 的对称性把积分拆成 $[0,1]$ 与 $[1,\infty)$ 两段重组，得到在 $s\mapsto1-s$ 下不变的表达式，从而导出函数方程与解析延拓。

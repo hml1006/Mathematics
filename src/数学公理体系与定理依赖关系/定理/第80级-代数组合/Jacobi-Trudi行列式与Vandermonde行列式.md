@@ -20,6 +20,12 @@ $$ \det\big(x_i^{\,n-j}\big)_{1\le i,j\le n}=\prod_{1\le i<j\le n}(x_i-x_j). $$
 
 $$ s_\lambda(x_1,\dots,x_n)=\frac{\det\big(x_i^{\lambda_j+n-j}\big)_{i,j=1}^{n}}{\det\big(x_i^{\,n-j}\big)_{i,j=1}^{n}}. $$
 
+## 几何直观
+
+![杨图旁边摆一个两行两列的 h 矩阵，两侧画出行列式竖线，箭头由形状指向矩阵](images/th-080-02-jacobi-trudi.svg)
+
+图意在说明：按划分把完全齐次对称函数错位排成矩阵，其行列式恰是 Schur 函数。
+
 ## 二、原理思路
 
 1. **Vandermonde：用零因子定位符号。** 行列式 $V(x)=\det(x_i^{\,n-j})$ 是交错多项式（交换两个变量变号）。令 $x_i=x_j$ 则两行相同、$V=0$，故每个 $x_j-x_i$ 都整除 $V$；诸因子两两互素，故其乘积整除 $V$。比较次数与首项系数即得公式。

@@ -10,6 +10,12 @@
 
 **Hilbert 基定理**：多项式环 $\mathbb{K}[x_1,\dots,x_n]$ 中的每个理想都是有限生成的，即存在有限个 $f_1,\dots,f_m$ 使 $I=\langle f_1,\dots,f_m\rangle$。换言之，$\mathbb{K}[x_1,\dots,x_n]$ 是 **Noether 环**。它是交换代数的基石，也是保证 Gröbner 基算法有限终止的关键。
 
+## 几何直观
+
+![二维单项式格点中蓝色台阶围出理想区域，三个红色圆圈标出台阶角点](images/th-108-04-hilbert-basis.svg)
+
+图意在说明：单项理想在格点上呈台阶状，台阶只需有限个角点刻画，因此升链在有限步内必然稳定。
+
 ## 二、原理思路
 
 对变元个数 $n$ 归纳。$n=0$ 时 $\mathbb{K}$ 是域，一切理想有限生成。归纳步把 $R[x_n]$（其中 $R=\mathbb{K}[x_1,\dots,x_{n-1}]$ 已 Noether）的理想 $I$ 按 $x_n$ 的最高次系数收集成理想链 $I_0\subseteq I_1\subseteq\cdots$；由 $R$ 的 Noether 性质，链在有限步稳定，再把每段系数对应的有限生成元"抬升"回 $R[x_n]$ 中的多项式，即可有限生成 $I$。

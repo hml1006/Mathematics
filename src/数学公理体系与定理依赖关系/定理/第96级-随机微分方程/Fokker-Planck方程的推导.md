@@ -14,6 +14,12 @@ $$
 \frac{\partial p}{\partial t} = -\frac{\partial}{\partial x}\big(\mu(t,x)p\big) + \frac12\frac{\partial^2}{\partial x^2}\big(\sigma^2(t,x)p\big).
 $$
 
+## 几何直观
+
+![三条密度曲线随时间由窄峰变宽丘，峰位右移，箭头标出漂移与扩散两种作用](images/th-096-03-fokker-planck.svg)
+
+图意在说明：漂移项搬运密度、扩散项抹平尖峰，总概率始终守恒为一。
+
 ## 二、原理思路
 
 用测试函数方法的弱形式推导：对任意紧支光滑 $\phi$，由 Itô 引理得到 $\frac{d}{dt}\mathbb{E}[\phi(X_t)]$ 的表达式，再用用 $p$ 的表示 $\mathbb{E}[\phi(X_t)]=\int\phi(x)p(t,x)dx$ 与其等价代入，经过分部积分把所有的导数从 $\phi$ 搬到 $p$ 上，由 $\phi$ 的任意性得到 $p$ 的偏微分方程。

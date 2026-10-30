@@ -8,6 +8,12 @@
 
 Yang-Mills方程（Yang-Mills Equations）是杨振宁和 Robert Mills 在1954年提出的非Abel规范场论的基本方程，是 Maxwell 方程的非Abel推广。Yang-Mills理论描述了一类由非交换李群（如 $SU(n)$）刻画的规范场（即"杨-米尔斯场"），其方程是规范势的 Euler-Lagrange 方程。Yang-Mills方程在现代物理学中扮演着核心角色——它是标准模型（$SU(3) \times SU(2) \times U(1)$ 规范群）的数学基础，描述了强相互作用和弱相互作用。在数学上，Yang-Mills方程是纤维丛上联络的变分方程，其解（Yang-Mills联络）是规范理论几何研究的核心对象。
 
+## 几何直观
+
+![主丛的纤维与联络线，绕一个小区间平行移动后差出曲率二形式](images/th-048-13-yang-mills.svg)
+
+图意在说明：联络规定平行移动，绕小回路一圈的偏差就是曲率，作用量取曲率模方的积分。
+
 ## 分析
 
 **前置依赖**：主丛与规范变换、联络与曲率、协变外微分与 Bianchi 恒等式、Hodge 星算子、变分原理与 Euler-Lagrange 方程、Stokes 定理。

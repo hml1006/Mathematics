@@ -10,6 +10,12 @@
 
 $GL(2)$ 的Langlands对应（即 Deligne–Milne 定理）断言：对任意数域 $F$，其 $GL_2(\mathbb{A}_F)$ 上的尖点自守表示与 $G_F$ 上的（适当限制了局部行为的）二维 $\ell$-adic Galois表示之间存在双射，且 L-函数匹配 $L(s,\pi)=L(s,\rho_\pi)$。特别地，经典模形式范畴对应的有限维 Galois表示由此被完全构造出来。
 
+## 几何直观
+
+![左右两列对象逐行配对，中间双向箭头，底部两个欧拉因子框以等号相连](images/th-141-01-gl2-correspondence.svg)
+
+图意在说明：二维伽罗瓦表示与 GL(2) 的尖形式一一对应，Frobenius 特征值给出系数，两边 L 函数逐项相同。
+
 ## 二、原理思路
 
 思路在于把模形式嵌入到自守表示的语言，再通过代数簇的 $\ell$-adic 上同调取出 Galois 表示：模形式 $f$ 对应尖点自守表示 $\pi_f$；其 Hecke 特征值等于对应某些代数簇（如 Kuga–Sato 簇）上的自守形式；对这些簇取 $\ell$-adic 上同调即可解出二维 Galois 表示。证明的关键工具是 Langlands 纤维化与 Shimura 簇上同调的自守分解。

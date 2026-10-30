@@ -10,6 +10,12 @@
 
 Post 定理（Post's Theorem）是递归论中连接**算术层次**与**Turing 归约/跳变**的桥梁。它以精确等价方式表明：$\Sigma^0_{n+1}$ 是某 $\Pi^0_n$ 集的可枚举投影；$\Delta^0_{n+1}$ 是相对于跳变 $\varnothing^{(n)}$ 可计算的集类；$\Sigma^0_{n+1}$ 是相对于 $\varnothing^{(n)}$ 的 c.e. 集类。它让层次与相对计算互相转化。
 
+## 几何直观
+
+![四级台阶依次升高，每级下方标出对应量词，层数越深越难判定](images/th-124-01-arithmetic-hierarchy.svg)
+
+图意在说明：算术集合按量词块层数分级，Σ 与 Π 交替上升，停机集恰在最低一层。
+
 ## 二、原理思路
 
 $n=0$ 的基础步：$\Sigma^0_1$ 即"存在 $y$ 使可计算谓词成立"的集合，正好是 c.e. 集；$\Delta^0_1=\Sigma^0_1\cap\Pi^0_1$，一个集与其补都 c.e. 当且仅当可计算。对一般 $n$ 用归纳：把 $A\in\Sigma^0_{n+1}$ 化为 $\exists y\langle x,y\rangle\in B$（$B\in\Pi^0_n$），由归纳假设 $B\le_T\varnothing^{(n)}$，从而 $A$ 是相对于 $\varnothing^{(n)}$ 的可枚举集，再归约回 $\Sigma^0_{n+1}$。

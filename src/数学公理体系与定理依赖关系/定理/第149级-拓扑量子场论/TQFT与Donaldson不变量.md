@@ -10,6 +10,12 @@
 
 TQFT 与 Donaldson 不变量 的关系指 Donaldson 的 $SU(2)$-瞬子不变量（$d=4$，通过自对偶 Yang–Mills 的模空间计数）可被组织成（至少部分）四维 TQFT 般的结构：把四流形沿三流形切开，模板（边界模空间）诱导 $H_*(M)$ 上的线性映射；$d=4$ Seiberg–Witten（OS）被 Witten 嵌入超 TQFT。这一联系是"不变量=四维 TQFT 赋值"的重要实现。
 
+## 几何直观
+
+![四流形沿三流形 Y 切成两块，边界上的向量空间由红色映射相连](images/th-149-03-donaldson-tqft.svg)
+
+图意在说明：沿三流形切开四流形，边界给出线性映射，粘合时把映射复合就得到 Donaldson 型不变量。
+
 ## 二、原理思路
 
 对四流形 $M$，考虑 $SU(2)$-瞬子模空间 $u$的拓扑；Donaldson 用 $\operatorname{Sym}^k(H_2) $计数基本类 $H^*$ 的对置求交。TQFT 视角：把 $M=M_1\cup_Y M_2$ 沿三流形 $Y$ 切开，切面箭头（Fl ower/相对瞬子模）把 $H_*(M_1)$ 映向 $H_*(M_2)$，从而（在适当泛函范畴）拼出四维"TQFT 化"（Witten 的 d=4 拓扑超对称量子场理论）；其对 Borisoidal 假度的联系在各几何变体成立。

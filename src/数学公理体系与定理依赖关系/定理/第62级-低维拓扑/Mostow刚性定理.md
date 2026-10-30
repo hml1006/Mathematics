@@ -14,6 +14,12 @@ Mostow 刚性定理（Mostow rigidity theorem）由 George Mostow 于 1968 年�
 
 定理的重要性体现在多个方面。第一，它把拓扑问题化为代数问题：比较双曲流形只需比较基本群。第二，双曲体积、闭测地线长度谱、cusps 的形状都成为拓扑不变量。第三，它与 Prasad、Margulis 的超刚性定理（superrigidity）共同构成格点理论的基石。第四，它是 Thurston 几何化纲领的最后一块拼图：双曲化定理给出存在性，Mostow 刚性给出唯一性。
 
+## 几何直观
+
+![两个双曲流形由同伦等价箭头相连，下方对比二维的连续形变与三维的孤立点](images/th-062-06-mostow-rigidity.svg)
+
+图意在说明：维数不小于三时同伦等价推出等距同构，双曲结构的形变空间退化成一个点。
+
 ## 二、原理思路
 
 设 $M=\mathbb H^n/\Gamma$，$N=\mathbb H^n/\Lambda$，其中 $\Gamma,\Lambda<\operatorname{Isom}^+(\mathbb H^n)$ 为离散、无挠、余有限（covolume finite）的子群。

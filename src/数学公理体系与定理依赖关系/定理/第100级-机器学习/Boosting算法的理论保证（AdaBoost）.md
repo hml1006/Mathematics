@@ -14,6 +14,12 @@ $$
 $$
 其中 $\gamma_t=1/2-\varepsilon_t$ 为优势。若每个 $\gamma_t\ge\gamma>0$，则 $\hat R_n(H)\le e^{-2\gamma^2T}$。
 
+## 几何直观
+
+![两条训练误差曲线随轮数指数下滑，优势大的那条降得更快，误差被压向零](images/th-100-01-adaboost.svg)
+
+图意在说明：只要每轮弱学习器的优势有一致下界，训练误差就按优势平方的指数速度衰减到零。
+
 ## 二、原理思路
 
 AdaBoost 隐式最小化指数损失 $L(y,F)=e^{-yF(x)}$。利用权重更新与归一化因子 $Z_t$ 的关系，可把训练误差上界化约为 $\prod_t Z_t$；再在最优 $\alpha_t$ 处计算 $Z_t=2\sqrt{\varepsilon_t(1-\varepsilon_t)}$，并由 $\sqrt{1-4\gamma^2}\le e^{-2\gamma^2}$ 得到指数衰减。

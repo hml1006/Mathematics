@@ -10,6 +10,12 @@
 
 Tauberian 定理得名于英国数学家 Alfred Tauber（1897 年关于 Abel 定理逆命题的工作），是一类"由平均行为推断渐近行为"的定理的总称，与 Hardy、Littlewood 以及 Wiener 的工作密切相关。所谓 Abel 定理的方向是"逐项趋于同一极限则平均也趋于该极限"；Tauberian 定理则给出反方向：在附加条件（如 $a_n$ 非负、单调或缓变）下，由生成函数的边界行为反推出部分和的渐近行为。它的现代形式是 Wiener 的 Tauberian 定理与 Ikehara 的定理：若 Dirichlet 级数 $f(s)=\sum a_n n^{-s}$（$a_n\ge0$）在 $\Re s>1$ 收敛，且 $f(s)-\frac{A}{s-1}$ 可连续延拓到闭半平面 $\Re s\ge1$，则 $\sum_{n\le x}a_n\sim Ax$。1932 年 Ikehara 用它给出了素数定理的一个极简证明：只要知道 $\zeta(s)$ 在 $\Re s=1$ 上非零且除 $s=1$ 外解析，取 $a_n=\Lambda(n)$ 即得素数定理。在代数数论中，同样的手段由 Dedekind zeta 函数推出素理想定理与 Chebotarev 密度定理，是解析数论与代数数论之间的桥梁。
 
+## 几何直观
+
+![蓝色点上下跳动，红色曲线是它们的前缀平均，绿色虚线标出极限 L](images/th-053-12-tauberian.svg)
+
+图意在说明：单项决定平均是容易的，Tauber 定理加上一条渐进条件，才把平均反推回单项。
+
 ## 二、原理思路
 
 1. **把部分和写成 Mellin/Laplace 型变换。** 令 $A(x)=\sum_{n\le x}a_n$。对 $\Re s>1$ 分部求和得 $f(s)=s\int_1^\infty A(x)x^{-s-1}\mathrm dx$。于是"$f$ 在 $s=1$ 处的单极点"对应"Mellin 变换在 $x\to\infty$ 端的线性增长"。

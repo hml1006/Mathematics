@@ -8,6 +8,12 @@
 
 Serre 定理（Serre's relations）是李代数理论中由 Jean-Pierre Serre 提出的一个基本结果，它给出了半单李代数的一组简洁的生成元和关系描述。具体而言，Serre 定理表明，每个有限维复半单李代数可以由其 Cartan 矩阵通过一组称为 Serre 关系（Serre relations）的生成元和关系来完全刻画。这一定理为半单李代数的分类和构造提供了统一的代数框架。
 
+## 几何直观
+
+![左上 Cartan 矩阵与右上两点 Dynkin 图对应，下方生成元 e、f、h 围成三元组](images/th-039-05-serre-theorem.svg)
+
+图意在说明：一张 Cartan 矩阵配上一组 Serre 关系，就唯一确定了一个半单李代数。
+
 ## 分析
 
 **前置依赖**：半单李代数、根系统、Cartan 矩阵、单根、根空间分解、$\mathfrak{sl}_2$-三元组、Dynkin 图。

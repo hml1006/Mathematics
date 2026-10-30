@@ -14,6 +14,12 @@ Ky Fan 极小极大不等式由 Ky Fan（樊畿）在 1972 年的论文《A mini
 
 定理的"代价"是它只断言 $\inf_x\sup_y\varphi\le\sup_y\varphi(y,y)$，而不是等号。但当对角项 $\varphi(x,x)\le0$ 恒成立（这正是变分不等式与均衡问题的典型情形）时，右端为 $0$，于是得到 $\inf_x\sup_y\varphi(x,y)\le0$ 这类可直接使用的存在性结论。
 
+## 几何直观
+
+![双曲等值线在中心交成鞍点，橙色箭头沿横轴向内，紫色箭头沿纵轴向外](images/th-060-03-ky-fan-minimax.svg)
+
+图意在说明：先极小后极大与先极大后极小给出两个数，凸紧条件下二者相等，交点就是鞍点。
+
 ## 二、原理思路
 
 1. **把不等式化为"集合相交"**：令 $\gamma=\sup_{y\in X}\varphi(y,y)$，对每个 $y$ 定义 $F(y)=\{x\in X:\varphi(x,y)\le\gamma\}$。只要证明 $\bigcap_{y\in X}F(y)\ne\varnothing$，取出 $x_0$ 就有 $\sup_y\varphi(x_0,y)\le\gamma$，不等式立刻成立。

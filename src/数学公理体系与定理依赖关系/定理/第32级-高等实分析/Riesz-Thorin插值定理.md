@@ -8,6 +8,12 @@
 
 Riesz-Thorin插值定理是调和分析和泛函分析中的一个经典插值定理，由 Marcel Riesz 提出，后由 G. O. Thorin 在 1939 年使用复分析方法完成证明。它断言：如果一个线性算子同时满足 $L^{p_0} \to L^{q_0}$ 和 $L^{p_1} \to L^{q_1}$ 的有界性，则它对中间指数 $L^{p_\theta} \to L^{q_\theta}$ 也是有界的，其中 $1/p_\theta = (1-\theta)/p_0 + \theta/p_1$，$1/q_\theta = (1-\theta)/q_0 + \theta/q_1$。这个定理是 Fourier 分析中许多重要不等式（如 Hausdorff-Young 不等式）的证明基础。
 
+## 几何直观
+
+![三行算子映射框图分别对应两个端点与中间指标，下方直线显示常数的对数凸性](images/th-032-11-riesz-thorin.svg)
+
+图意在说明：两条边界上的算子范数一旦有界，中间指标上的范数就被两端的几何平均压住。
+
 ## 分析
 
 **前置依赖**：三线定理（Phragmén-Lindelöf 原理）、$L^p$ 范数的对偶表示、Hölder 不等式、简单函数逼近

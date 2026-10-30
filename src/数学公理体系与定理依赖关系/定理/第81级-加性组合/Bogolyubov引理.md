@@ -12,6 +12,12 @@ Bogolyubov 引理（Bogolyubov，1939；后由 Ruzsa、Green 等在加性组合�
 
 它是 Freiman 定理证明链条中的核心一步：先在 $\mathbb{Z}_p$ 中把 $A$ 换成 $2A-2A$ 中的 Bohr 集，再把它参数化为广义等差数列。它也是 Ruzsa 关于"密度增量""结构定理"以及 Green–Tao、Gowers 范数理论的基本部件。
 
+## 几何直观
+
+![两排格点上 A 只有四个点，A+A 却填满九个点，其中一段被绿色 Bohr 集框住](images/th-081-01-bogolyubov.svg)
+
+图意在说明：A+A 一旦稠密，内部就含有结构规整的 Bohr 集，即大块等差数列。
+
 ## 二、原理思路
 
 证明是一个纯粹的 Fourier 分析计算。把 $x\in 2A-2A$ 的判定写成卷积

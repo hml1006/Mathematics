@@ -18,6 +18,12 @@ $$
 
 在数论中，Poisson 公式是推导二次互反律、Gauss 和估值、$\zeta(2k)$ 计算、以及 Riemann $\zeta$ 函数函数方程的工具之一；在调和分析中，它是抽样定理（Shannon sampling theorem）与分析学中"尖锐化"（sharpness）论证的基础。它在更高层是局部紧交换群上的 Pontryagin 对偶下 Tate 的局部函数方程的特殊情形。
 
+## 几何直观
+
+![上下两组尖峰曲线分别位于空间侧与频域侧，两条橙色箭头表示 Fourier 变换](images/th-053-11-poisson-summation.svg)
+
+图意在说明：在格点上取样求和，等价于在对偶格上周期化再求和，两侧被 Fourier 变换连在一起。
+
 ## 二、原理思路
 
 证明的思想是"先把和变成周期函数"。定义 $f$ 的**周期化**

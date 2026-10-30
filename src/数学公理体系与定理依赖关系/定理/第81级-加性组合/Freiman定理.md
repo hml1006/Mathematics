@@ -10,6 +10,12 @@
 
 Freiman 定理（Freiman 1973）刻画小和集结构：设 $A\subseteq\mathbb{Z}$，$|A+A|\le C|A|$，则 $A$ 含于一个维数 $\le d(C)$、规模 $\le f(C)|A|$ 的广义等差数列（GAP）内。它回答"什么是和集小"的结构问题，是 additive combinatorics / structure-of-sum-sets 的奠基石。
 
+## 几何直观
+
+![左侧散乱的集合 A 经紫色箭头同态映射，落到右侧规则格点盒的格点上](images/th-081-02-freiman.svg)
+
+图意在说明：|A+A| 只比 |A| 大常数倍时，A 必是低维广义等差数列，可嵌入小盒子。
+
 ## 二、原理思路
 
 路径（经 Ruzsa 建模 + Bogolyubov）：(1) 用 Freiman 同态把 $A$ 提升到 $\mathbb{Z}_p$（素数 $p$ 不大），保和集规模；(2) 在 $\mathbb{Z}_p$ 里 $|S+S|\le C|S|$ ⇒ $2S-2S$ 含大子群 $H$（$|H|\ge p/C$，Bogolyubov 引理）；(3) $H$ 可参数化为 GAP（子群的子集）；(4) 逆映回 $\mathbb{Z}$（Ruzsa 逆向提升/同构），把 $A$ 装进同型 GAP；(5) 控制维数与容解（Green-Ruzsa：$d\le C-1$，$|P|\le\exp(C^{O(1)})|A|$）。

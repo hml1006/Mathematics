@@ -8,6 +8,12 @@
 
 Hardy-Littlewood极大不等式是调和分析和实分析中的基本不等式，由 G. H. Hardy 和 J. E. Littlewood 在 1930 年提出。它断言：函数 $f$ 的 Hardy-Littlewood 极大函数 $M f$ 的分布函数满足一个弱 $(1,1)$ 型不等式。这个不等式是 Lebesgue 微分定理证明的关键，也是奇异积分理论（如 Calderón-Zygmund 理论）的起点，在极大函数方法的发展中具有里程碑意义。
 
+## 几何直观
+
+![蓝色函数与红色极大包络，包络超过阈值 λ 的区段在数轴上被标成短红线](images/th-032-05-maximal-inequality.svg)
+
+图意在说明：极大函数把局部高峰抬成一条包络，而包络超过阈值的点集测度被原函数的积分控制。
+
 ## 分析
 
 **前置依赖**：Vitali 覆盖引理、Lebesgue 测度、分布函数与弱型不等式、Marcinkiewicz 插值定理

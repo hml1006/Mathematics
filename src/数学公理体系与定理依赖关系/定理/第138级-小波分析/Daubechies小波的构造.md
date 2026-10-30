@@ -13,6 +13,12 @@ $$
 \sum_kh_kh_{k+2m}=\delta_{m0},\qquad \sum_k(-1)^kk^m h_k=0\ (m=0,\dots,N-1),\qquad \sum_kh_k=\sqrt2.
 $$
 
+## 几何直观
+
+![灰色虚线是尺度函数，蓝色与绿色是它的两个压缩平移副本，橙色是两者相减得到的小波](images/th-138-01-daubechies.svg)
+
+图意在说明：把尺度函数压缩平移后相减即得小波，正交与消失矩条件则化成对滤波器系数的约束。
+
 ## 二、原理思路
 
 构造靠"从幅度谱到滤波器"的谱分解路线。正交条件等价于 $|H(\omega)|^2+|H(\omega+\pi)|^2=1$；消失矩使传递函数在 $\omega=\pi$ 处有 $N$ 阶零点，故 $|H(\omega)|^2=(\cos^2\frac\omega2)^N Q(\sin^2\frac\omega2)$。待定 $Q$ 由 Bezout 恒等式 $(1-y)^NQ(y)+y^NQ(1-y)=1$ 唯一确定；再经 **Fejér-Riesz 谱分解**把幅度 $|H|^2$ 化为最小相位因果滤波器 $H$，最后用 Cascade 迭代构造尺度函数与小波。

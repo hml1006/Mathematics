@@ -8,6 +8,12 @@
 
 Kan扩张（Kan Extension）是范畴论中一个极为重要的概念，由 Daniel M. Kan 提出。它提供了一种统一的方式来"延伸"一个函子沿着另一个函子，是范畴论中许多构造（如伴随函子、极限、Yoneda嵌入等）的通用框架。粗略地说，给定函子 $F: \mathcal{A} \to \mathcal{E}$ 和 $K: \mathcal{A} \to \mathcal{B}$，$F$ 沿 $K$ 的左Kan扩张是一个函子 $\mathrm{Lan}_K F: \mathcal{B} \to \mathcal{E}$ 以及一个自然变换 $\eta: F \Rightarrow \mathrm{Lan}_K F \circ K$，使得该构造满足泛性质。Kan扩张的普遍性使其被称为"范畴论中所有概念之母"。
 
+## 几何直观
+
+![小圈 C 经箭头 i 进入方框 D，F 沿上方弧线接到 E，虚线箭头标着 Lan](images/th-047-03-kan-extension.svg)
+
+图意在说明：把定义在小范畴上的函子沿嵌入最优地扩到整个范畴，扩张由万有性质唯一确定。
+
 ## 分析
 
 **前置依赖**：函子与自然变换、逗号范畴、余极限、伴随函子。

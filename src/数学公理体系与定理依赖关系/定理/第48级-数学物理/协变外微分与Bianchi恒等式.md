@@ -26,6 +26,12 @@ $$
 
 这些恒等式在微分几何与数学物理中无处不在：它们是 Gauss–Codazzi–Mainardi 方程、Einstein 张量守恒（$\nabla^a G_{ab}=0$）、Yang–Mills 方程的相容性、Chern–Weil 特征类理论的共同代数基础。可以说"曲率不是随便一个 2-形式，它必须满足 Bianchi 恒等式"。
 
+## 几何直观
+
+![绕平行四边形一周平行移动差出曲率，曲率再求协变微分得零](images/th-048-16-covariant-bianchi.svg)
+
+图意在说明：两次协变外微分等于楔上曲率，而曲率本身再求协变微分必为零，这就是 Bianchi 恒等式。
+
 ## 分析
 
 **前置依赖**：向量丛与联络、协变导数、向量值微分形式与外微分、分次（graded）Leibniz 法则、曲率形式、Levi-Civita 联络与挠率张量、Riemann 曲率张量。

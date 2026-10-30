@@ -12,6 +12,12 @@
 
 它是分析中所有紧嵌入定理的技术心脏：Rellich–Kondrachov 定理、Aubin–Lions 紧性引理，都是在某个 Sobolev 空间中验证这三条判据。
 
+## 几何直观
+
+![三块面板分别画出一致有界的带内曲线、平移后重合的鼓包、集中在同一区域的质量](images/th-040-02-frechet-kolmogorov.svg)
+
+图意在说明：有界之外还要平移连续与质量集中，三条齐备时函数族才在 Lp 中相对紧。
+
 ## 分析
 
 **前置依赖**：$L^p$ 空间及其完备性（Riesz–Fischer 定理）、紧支连续函数在 $L^p$ 中的稠密性、平移算子的强连续性、Hölder 不等式与 Young 卷积不等式、Minkowski不等式、Arzelà–Ascoli 定理、度量空间中"完全有界 + 完备 $\Leftrightarrow$ 相对紧"。

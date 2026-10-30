@@ -14,6 +14,12 @@ $$H^{p,q}_{\bar\partial}(X)\cong H^{q}(X,\Omega^{p}),$$
 
 这一定理是 Cauchy–Riemann 方程 $\bar\partial u=f$ 可解性理论的核心：它把"能否整体求解 $\bar\partial$"转化为层上同调的计算，从而可以调动层论（长正合列、消没定理、Serre 对偶）的全部工具。它与 de Rham 定理在光滑情形把 $H^*_{dR}(M)\cong H^*(M;\mathbb R)$ 相对应，是多复变与复代数几何中最重要的计算原理，也是 Hodge 理论（$H^k(X,\mathbb C)=\bigoplus_{p+q=k}H^{p,q}$）的组成部分。
 
+## 几何直观
+
+![三乘三的档式格架，水平箭头使 p 加一，竖直箭头使 q 加一，浅色列是一个复形](images/th-056-04-dolbeault.svg)
+
+图意在说明：沿 q 方向取 ∂̄-同调，恰好消掉恰当部分，剩下的正是全纯 p-形式层的上同调。
+
 ## 二、原理思路
 
 证明由三个部件组成。

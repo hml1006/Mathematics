@@ -12,6 +12,12 @@ Sobolev 嵌入定理告诉我们 $W^{k,p}(\Omega)\hookrightarrow L^q(\Omega)$ �
 
 定理的边界情形说明了"为什么只能 $q<p^*$"：临界指数 $p^*$ 处嵌入不紧，因为临界指数的尺度不变性允许测度集中。这一点与 Sobolev 不等式的最优常数、集中紧性原理（concentration compactness）直接相关。
 
+## 几何直观
+
+![左边圆内散布着蓝色点列，右边圆内的点向红点收拢并画出三层同心小圈](images/th-040-09-rellich-kondrachov.svg)
+
+图意在说明：紧嵌入把 Sobolev 中有界的一列函数升级成 Lq 中强收敛的子列，代价是 q 小于临界指数。
+
 ## 分析
 
 **前置依赖**：Sobolev 空间与弱导数、Sobolev嵌入定理、Morrey 不等式、Fréchet–Kolmogorov 紧性准则、Minkowski不等式、Arzelà–Ascoli 定理、有界区域的延拓（反射）技巧。

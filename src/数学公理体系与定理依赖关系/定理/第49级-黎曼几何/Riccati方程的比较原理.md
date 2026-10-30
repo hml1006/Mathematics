@@ -8,6 +8,12 @@
 
 Riccati 方程得名于意大利数学家 Jacopo Riccati（1724 年研究该方程），形如 $u'+u^2+k(t)=0$ 的方程一般不能初等积出，但它的比较性质极强。在黎曼几何中，Riccati 方程的比较原理是"曲率控制几何"的核心机制：沿测地线的距离函数 $r$ 的 Laplacian $\Delta r$，以及测地极坐标下体积元的对数导数，都满足一条 Riccati 方程或不等式，其中的零阶项恰好是 Ricci 曲率。把它与模型空间（球面、欧氏空间、双曲空间）的精确解比较，就得到 Laplacian 比较定理、Bishop–Gromov 体积比较、Bonnet–Myers 直径估计以及 Cartan–Hadamard 定理。本质上，它把 Jacobi 场方程这一二阶线性方程化为一个一阶非线性方程的比较问题，使几何估计从线性代数转入常微分方程工具。
 
+## 几何直观
+
+![红色解曲线始终低于蓝色模型解，并更早冲向上方，竖虚线标出爆破时刻](images/th-049-11-riccati-comparison.svg)
+
+图意在说明：曲率项更大时 Riccati 方程的解更陡、更早爆破，爆破时刻对应共轭点。
+
 ## 分析
 
 **前置依赖**：测地线与 Jacobi 场、Jacobi方程、Ricci 曲率、Laplace-Beltrami算子与热方程、Picard-Lindelöf定理、Gronwall 不等式。

@@ -18,6 +18,12 @@ $$
 
 本条目补足 LQR 定理中"存在唯一稳定化解"这一关键前提：给出解的 Lyapunov 积分表示、稳定性验证与**唯一性**的严格证明。唯一性依赖一个代数事实——两个 Hurwitz 矩阵的 Sylvester 方程只有零解。
 
+## 几何直观
+
+![残差曲线两次穿过横轴，绿色稳定区只覆盖左边那个根，右根标为不稳定](images/th-121-04-algebraic-riccati.svg)
+
+图意在说明：方程本身给出多个对称解，加上闭环稳定的要求，才筛出唯一的那个半正定解。
+
 ## 二、原理思路
 
 1. **稳定化解满足 Lyapunov 方程**：设 $\boldsymbol P$ 满足 ARE 且 $\boldsymbol A_{\boldsymbol K}=\boldsymbol A-\boldsymbol B\boldsymbol K$ 稳定（$\boldsymbol K=\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P$），把 ARE 改写成 $\boldsymbol A_{\boldsymbol K}^{\top}\boldsymbol P+\boldsymbol P\boldsymbol A_{\boldsymbol K}=-(\boldsymbol Q+\boldsymbol K^{\top}\boldsymbol R\boldsymbol K)$。

@@ -8,6 +8,12 @@
 
 Dirichlet L 函数是 Dirichlet 特征与 Riemann Zeta 函数的结合，定义为 $L(s, \chi) = \sum_{n=1}^\infty \chi(n) n^{-s}$，其中 $\chi$ 是模 $q$ 的 Dirichlet 特征。L 函数是解析数论中研究素数在算术级数中分布的核心工具，也是类数公式、素数定理在算术级数中的推广等许多重要结果的基础。L 函数的理论深刻揭示了数论与复分析之间的内在联系。
 
+## 几何直观
+
+![蓝色部分和收敛到一条红色虚线，橙色主特征的部分和一路攀升](images/th-044-01-dirichlet-l.svg)
+
+图意在说明：非主特征的部分和收敛到非零的 L(1,χ)，主特征却像 log N 一样发散。
+
 ## 分析
 
 **前置依赖**：Riemann Zeta 函数、Dirichlet 特征、群特征标、Euler乘积公式。

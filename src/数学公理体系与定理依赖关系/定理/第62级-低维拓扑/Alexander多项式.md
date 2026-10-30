@@ -10,6 +10,12 @@
 
 Alexander 多项式是 James W. Alexander 于 1928 年引入的经典纽结不变量，是纽结理论中最早被发现也是最有影响力的不变量之一。它通过纽结补集的第一同调覆盖或 Seifert 矩阵构造，是一个单变量 Laurent 多项式，能够区分大量纽结，并在纽结的切片性、纤维性以及三维流形手术研究中发挥关键作用。
 
+## 几何直观
+
+![哑铃形的 Seifert 曲面以红色纽结为边界，下方是 2 乘 2 的 Seifert 矩阵](images/th-062-01-alexander-seifert.svg)
+
+图意在说明：纽结补的循环覆盖同调由 Seifert 矩阵记录，取行列式就得到 Alexander 多项式。
+
 ## 二、原理思路
 
 给定定向纽结 $K \subset S^3$，取其管状邻域 $N(K)$ 的边界 $T = \partial N(K)$。纽结补集 $M_K = S^3 \setminus \mathring{N}(K)$ 的基本群 $G_K = \pi_1(M_K)$ 具有自然的到 $\mathbb{Z}$ 的 Abeleinization 映射

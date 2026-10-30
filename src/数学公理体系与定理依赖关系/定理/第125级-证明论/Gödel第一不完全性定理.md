@@ -10,6 +10,12 @@
 
 Gödel 第一不完全性定理是 20 世纪数学基础最深刻的成果之一：任何包含 Peano 算术的一致可公理化形式系统 $\mathcal{F}$ 都是不完全的——存在算术语句 $G$ 使 $\mathcal{F}\nvdash G$ 且 $\mathcal{F}\nvdash\lnot G$。它终结了 Hilbert 关于"全部数学真理可公理化"的乐观期望。
 
+## 几何直观
+
+![公理与规则把公式送进蓝色定理圈，红色点 G 落在圈外的真语句区域](images/th-125-02-godel-first.svg)
+
+图意在说明：公理与规则生成的定理集只是真语句集的真子集，自指句 G 落在差额里，既不可证也不可否证。
+
 ## 二、原理思路
 
 证明核心是**对角化引理**：对任何含自由变元 $x$ 的公式 $\phi(x)$，存在语句 $\psi$ 使 $\mathcal{F}\vdash\psi\leftrightarrow\phi(\ulcorner\psi\urcorner)$。利用算术的自指能力构造 $G$，使 $G\leftrightarrow\lnot\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)$（"$G$ 不可证"）。再分别反设 $\mathcal{F}\vdash G$ 与 $\mathcal{F}\vdash\lnot G$，导出矛盾（后者需 $\omega$ 一致性，Rosser 后来改进为仅需一致性）。

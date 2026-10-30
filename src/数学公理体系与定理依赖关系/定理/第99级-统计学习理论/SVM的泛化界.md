@@ -13,6 +13,12 @@ $$
 R(f)\le \hat R_n(f)+\frac{2\Lambda}{\sqrt n}+\sqrt{\frac{\log\frac1\delta}{2n}}.
 $$
 
+## 几何直观
+
+![两类样本点被一条实线分开，两侧绿色虚线夹出间隔带，双向箭头标出间隔宽度](images/th-099-05-svm.svg)
+
+图意在说明：间隔越大，权范数越小，泛化界中的复杂度项就越小，且与特征维数无关。
+
 ## 二、原理思路
 
 先计算 RKHS 单位球的 Rademacher 复杂度：利用再生性质把 $\frac1n\sum_i\varepsilon_if(x_i)$ 写成范数内积 $\langle f,\frac1n\sum_i\varepsilon_iK(x_i,\cdot)\rangle_\mathcal{H}$，再由 Cauchy-Schwarz 与核条件 $K(x,x)\le1$ 给出 $\mathfrak{R}_n\le\Lambda/\sqrt n$；最后代入 Rademacher 复杂度的泛化界。

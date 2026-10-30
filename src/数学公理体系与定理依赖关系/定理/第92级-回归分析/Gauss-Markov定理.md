@@ -10,6 +10,12 @@
 
 Gauss-Markov 定理是线性回归统计理论的核心基石。在线性回归模型 $\boldsymbol{Y} = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$ 的经典假设下，最小二乘估计 $\hat{\boldsymbol{\beta}}_{\text{OLS}} = (\boldsymbol{X}^\top \boldsymbol{X})^{-1}\boldsymbol{X}^\top \boldsymbol{Y}$ 是所有线性无偏估计中最"高效"的，即它在协方差矩阵的半正定意义下最小。
 
+## 几何直观
+
+![三条估计量的密度曲线都以真值为中心，最小二乘那条最窄，有偏估计则偏在右侧](images/th-092-01-gauss-markov.svg)
+
+图意在说明：在所有线性无偏估计中，最小二乘的分布最集中，方差矩阵在半正定意义下最小。
+
 ## 二、原理思路
 
 其思想源于将任意线性无偏估计 $\tilde{\boldsymbol{\beta}} = \boldsymbol{A}\boldsymbol{Y}$ 分解为"最小二乘分量＋正交扰动项"。由于无偏性迫使 $\boldsymbol{A}\boldsymbol{X} = \boldsymbol{I}$，扰动项 $\boldsymbol{D}$ 必须满足 $\boldsymbol{D}\boldsymbol{X} = \boldsymbol{0}$，而这个扰动只会额外增加方差而不会带来任何好处，从而证明 OLS 最优。

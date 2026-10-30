@@ -10,6 +10,12 @@
 
 Fisher 线性判别是经典监督分类方法。该定理考虑均值分别为 $\boldsymbol{\mu}_1,\boldsymbol{\mu}_2$、共享协方差矩阵 $\boldsymbol{\Sigma}$ 的两类，断言在使 Fisher 比率最大化（等价于 Mahalanobis 意义下类间距离对类内方差的比值最大）的方向为 $\boldsymbol{a}\propto\boldsymbol{\Sigma}^{-1}(\boldsymbol{\mu}_1-\boldsymbol{\mu}_2)$。它提供了"向一维投影后线性可分离性最优"的严格刻画。
 
+## 几何直观
+
+![两团散点沿斜向投影到同一条轴上，红色判别边界垂直切开两类均值](images/th-071-01-fisher-discriminant.svg)
+
+图意在说明：Fisher 判别找的方向使投影后类间距离最大而类内散布最小，边界就取在两类投影均值的中点。
+
 ## 二、原理思路
 
 Fisher 比率 $J(\boldsymbol{a})=\frac{(\boldsymbol{a}^\top(\boldsymbol{\mu}_1-\boldsymbol{\mu}_2))^2}{\boldsymbol{a}^\top\boldsymbol{\Sigma}\boldsymbol{a}}$ 对 $\boldsymbol{a}$ 的缩放不变，故可在约束 $\boldsymbol{a}^\top\boldsymbol{\Sigma}\boldsymbol{a}=1$ 下最大化分子。运用在 Mahalanobis 内积 $\langle\boldsymbol{u},\boldsymbol{v}\rangle_{\boldsymbol{\Sigma}}=\boldsymbol{u}^\top\boldsymbol{\Sigma}\boldsymbol{v}$ 下的 Cauchy-Schwarz 不等式，可将分子界定为 $\boldsymbol{d}^\top\boldsymbol{\Sigma}^{-1}\boldsymbol{d}$（$\boldsymbol{d}=\boldsymbol{\mu}_1-\boldsymbol{\mu}_2$），等号当且仅当 $\boldsymbol{a}$ 与 $\boldsymbol{\Sigma}^{-1}\boldsymbol{d}$ 在该内积下共线时成立。

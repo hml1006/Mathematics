@@ -17,6 +17,12 @@ $$
 I(\varphi)=\begin{cases}\frac12\int_0^T|\dot\varphi(t)-b(\varphi(t))|^2\,dt, & \varphi\in H_0^1,\ \varphi(0)=x_0,\\ \infty, & \text{其他}.\end{cases}
 $$
 
+## 几何直观
+
+![双井势能曲线上，绿色细管包住井底，红色虚线的稀有路径翻过橙色势垒高度](images/th-102-03-freidlin-wentzell.svg)
+
+图意在说明：噪声趋于零时轨道被关在确定性轨迹的细管内，翻越势垒的概率按势垒高度除以噪声强度指数衰减。
+
 ## 二、原理思路
 
 通过 Girsanov 变换把小噪声 SDE 问题化归为 Schilder 情形：定义测度 $\mathbb Q_\varepsilon$ 使其下漂移项消失，$X^\varepsilon=x_0+\varepsilon\widetilde W$ 恰为 Schilder 缩放 Brown 运动；再用量度变换的指数权重（经 Varadhan 引理）在路径 $\varphi$ 处修正速率函数，合并后恰好得到 $\frac12\int|\dot\varphi-b(\varphi)|^2$。

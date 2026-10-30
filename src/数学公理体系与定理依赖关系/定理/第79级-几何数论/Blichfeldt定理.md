@@ -10,6 +10,12 @@
 
 Blichfeldt 定理是几何数论最基本的"鸽巢"引理，也是 Minkowski 凸体定理的核心构件。它断言体积超过 $\det\Lambda$ 的可测集必含两个不同点其差在格 $\Lambda$ 中。用平方式划定在基本区域上计数，"塞物即撞"是它最本质的表述。
 
+## 几何直观
+
+![格子上一个橙色圆盘罩住两个红点，两点连线正是格向量，蓝色方格为基本域](images/th-079-01-blichfeldt.svg)
+
+图意在说明：体积超过基本域的集合按格折叠后必有两层重叠，重叠两点的差就是格中的非零向量。
+
 ## 二、原理思路
 
 把 $\mathbb{R}^n$ 按格平移 $\mathcal{F}+\lambda$（$\mathcal{F}$ 为基本区域）铺开，把 $S$ 的每一片 $S\cap(\mathcal{F}+\lambda)$ 平移回 $\mathcal{F}$（$\lambda$ 处减去 $\lambda$）。总体积超过 $\mathcal{F}$ 的体积，而它们都被装进 $\mathcal{F}$，故必有重叠：两块叠点之差为某两个格点之差 $\lambda_1-\lambda_2\in\Lambda$。

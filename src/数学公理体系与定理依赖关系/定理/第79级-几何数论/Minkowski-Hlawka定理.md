@@ -10,6 +10,12 @@
 
 Minkowski-Hlawka 定理给出格的行列式与凸体"避开非零点"的存在性：若 $K$ 中心对称凸体且 $\operatorname{vol}(K)<2\zeta(n)$，则存在行列式 1 的格 $\Lambda$ 使 $\Lambda\cap\operatorname{int}(K)=\{0\}$。等价地 $K$ 的临界行列式 $\Delta(K)\le\frac{\operatorname{vol}(K)}{2\zeta(n)}$。这是 Minkowski 在 1905 提出、Hlawka 于 1944 给出的存在性下界。
 
+## 几何直观
+
+![斜置的稀疏格点围绕一个橙色圆盘，圆内除原点外没有任何格点](images/th-079-02-hlawka.svg)
+
+图意在说明：体积小于 2ζ(n) 的中心对称凸体可以配上行列式为 1 的格，使其内部除原点外空空如也。
+
 ## 二、原理思路
 
 采用平均化方法（Siegel 平均公式）。所有行列式 1 的格由 $\operatorname{SL}_n(\mathbb{R})/\operatorname{SL}_n(\mathbb{Z})$ 参数化且带 $\operatorname{SL}_n(\mathbb{R})$-不变测度。Siegel 公式把"求和式" $\sum_{x\in\Lambda\setminus\{0\}}f(x)$ 对格取平均化为整体积分 $\int f$。取 $f$ 为 $K$ 的特征函数，则平均值即 $\operatorname{vol}(K)$。由于 $K$ 对称，非零格点成对（$x,-x$），计数为偶数，平均值小于 $2$（修正后为 $2\zeta(n)$）时必有一个格计数为 0。

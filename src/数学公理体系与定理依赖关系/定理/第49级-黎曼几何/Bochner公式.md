@@ -16,6 +16,12 @@ $$
 
 该公式是曲率进入分析证明的"总闸门"：把它与极大值原理、分部积分结合，能得到 Bochner 消失定理（$\mathrm{Ric}>0$ 的紧流形没有非平凡调和 1-形式，$b_1=0$）、Laplacian 比较定理、特征值估计（Lichnerowicz 定理）、以及 Ricci 流单调量（$\mathcal W$ 熵）的计算。它的推广——对 $p$-形式与旋量的 Weitzenböck 公式——则是 Hodge 理论、Kodaira 消没定理、Dirac 算子指标的证明核心。
 
+## 几何直观
+
+![弯曲曲面上的向量场与由梯度、散度、Ricci 三项拼成的能量分解条](images/th-049-01-bochner-formula.svg)
+
+图意在说明：向量场能量的拉普拉斯可拆成梯度平方、散度与 Ricci 三项，曲率决定其符号。
+
 ## 分析
 
 **前置依赖**：黎曼联络与协变导数、Hessian（第二协变导数）、Laplace-Beltrami算子与热方程、Riemann曲率张量的对称性、Ricci 曲率、Ricci 恒等式（协变导数交换子）、极大值原理。

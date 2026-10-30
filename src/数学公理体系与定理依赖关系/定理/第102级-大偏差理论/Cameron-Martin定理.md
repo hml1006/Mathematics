@@ -16,6 +16,12 @@ H=\Big\{h\in C_0[0,1]:\ h\ \text{绝对连续},\ \dot h\in L^2[0,1]\Big\},\qquad
 $$
 它是 Brown 路径空间的"再生核 Hilbert 空间"，其范数即路径的能量。该定理是所有 Brown 运动测度变换（Girsanov 变换、Schilder 定理、Freidlin–Wentzell 理论）的出发点。
 
+## 几何直观
+
+![布朗路径与它的平移曲线都落在蓝色涨落带内，红色粗糙平移则跑出带外](images/th-102-01-cameron-martin.svg)
+
+图意在说明：维纳测度只沿能量有限的路径平移后仍绝对连续，能源无限的粗糙平移会让两个测度互相奇异。
+
 ## 二、原理思路
 
 1. 先在有限维高斯空间中平移：$\mathbb R^m$ 上的标准 Gauss 测度 $\gamma$ 平移 $a$ 之后仍有密度 $e^{\langle a,x\rangle-|a|^2/2}$，其归一性来自 Gauss 积分的配方技巧。

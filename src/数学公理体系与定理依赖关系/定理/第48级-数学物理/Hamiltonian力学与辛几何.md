@@ -8,6 +8,12 @@
 
 Hamiltonian力学与辛几何（Hamiltonian Mechanics and Symplectic Geometry）是经典力学在辛流形上的几何化表述。Hamiltonian力学由 William Rowan Hamilton 在1833年提出，将 Lagrange 力学中的二阶方程转化为相空间上的一阶方程。辛几何则是这种表述的自然几何框架——相空间是一个辛流形，Hamiltonian 向量场给出了动力学方程，Poisson 括号给出了可观测量的代数结构。这一理论架起了经典力学与几何之间的桥梁，是理解 Noether 定理、可积系统以及几何量子化的基础。
 
+## 几何直观
+
+![相平面上同心等能线与切向流，环形区域被流搬运而面积不变](images/th-048-04-hamiltonian-symplectic.svg)
+
+图意在说明：Hamilton 向量场由 H 的偏导生成，轨道沿等能线流动，且流映射保持相面积。
+
 ## 分析
 
 **前置依赖**：辛流形与非退化闭 2-形式、微分形式与 Lie 导数、Hamiltonian 向量场、Darboux 定理（Moser 方法）、Poisson 括号与 Jacobi 恒等式。

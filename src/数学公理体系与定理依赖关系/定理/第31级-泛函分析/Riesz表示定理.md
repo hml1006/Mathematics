@@ -8,6 +8,12 @@
 
 Riesz表示定理（Riesz Representation Theorem）是泛函分析中关于 Hilbert 空间对偶空间的基本定理。它断言：Hilbert 空间 $H$ 上的每个连续线性泛函都可以唯一地表示为与某个固定向量的内积形式。换言之，Hilbert 空间 $H$ 的对偶空间 $H^*$ 与 $H$ 自身等距同构。这个定理揭示了 Hilbert 空间的自对偶性，是量子力学、偏微分方程和变分法中 Ritz-Galerkin 方法的理论基础。
 
+## 几何直观
+
+![向量 y 垂直于核超平面，多条平行等值线沿 y 方向排开，点 x 落在其中一条上](images/th-031-16-riesz-representation.svg)
+
+图意在说明：泛函的水平集是一族垂直于 y 的平行线，泛函值就是 x 在 y 上的投影长度。
+
 ## 分析
 
 **前置依赖**：Hilbert 空间的完备性、正交投影定理、Cauchy-Schwarz 不等式、连续线性泛函的核是闭子空间

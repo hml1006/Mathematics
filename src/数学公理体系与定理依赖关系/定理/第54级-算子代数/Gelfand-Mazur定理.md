@@ -14,6 +14,12 @@ Gelfand–Mazur 定理（由 Israel Gelfand 与 Stanisław Mazur 于 1938 年证
 
 值得注意的是，定理中"复数域"不可替换为实数域：Frobenius 定理表明，$\mathbb R$ 上的有限维可除代数恰有 $\mathbb R,\mathbb C,\mathbb H$（四元数），它们是 $\mathbb R$ 上的 Banach 代数且可除，但都不等距同构于 $\mathbb C$。这里 $\mathbb H$ 甚至不交换，说明复结构是关键。
 
+## 几何直观
+
+![复平面上红色谱集中取出一点 λ，向下推出 a 等于 λ 乘单位元](images/th-054-04-gelfand-mazur.svg)
+
+图意在说明：谱集非空，取到谱点后元素就是单位元的倍数，可除性使代数只能是复数域。
+
 ## 二、原理思路
 
 证明只有两步，但第一步（谱非空）是核心。

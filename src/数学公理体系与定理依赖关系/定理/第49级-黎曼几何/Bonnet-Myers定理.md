@@ -8,6 +8,12 @@
 
 Bonnet-Myers定理（Bonnet–Myers Theorem）是黎曼几何中最经典的全局定理之一，它给出了 Ricci 曲率正的下界对流形直径和基本群的限制。该定理断言：如果完备 Riemann 流形 $M$ 的 Ricci 曲率满足 $\mathrm{Ric} \ge (n-1)\kappa > 0$（其中 $n = \dim M$），则 $M$ 是紧致的，其直径 $d(M) \le \pi/\sqrt{\kappa}$，且基本群 $\pi_1(M)$ 是有限的。Bonnet-Myers定理是曲率与拓扑之间深刻联系的典范，在几何分析中有着广泛的应用。
 
+## 几何直观
+
+![球面上两点由红色半圆测地线相连，下方括号标出直径不超过 π 除以根号 K](images/th-049-02-bonnet-myers.svg)
+
+图意在说明：Ricci 曲率有正下界时，超过一定长度的测地线必出现共轭点，流形因而紧致。
+
 ## 分析
 
 **前置依赖**：Ricci 曲率、测地线与完备性、第二变分公式、Jacobi 场与平行向量场、Hopf-Rinow 定理与覆盖空间理论。

@@ -12,6 +12,12 @@ Gromov 紧性定理（Gromov compactness theorem，1985 年由 Mikhael Gromov �
 
 该定理是 Gromov–Witten 不变量、Floer 同调、辛拓扑（非挤压定理、辛容量）、以及辛场论（SFT）的基石。它使"曲线模空间"具有紧化 $\overline{\mathcal M}_{g,k}(M,J,A)$（稳定映射空间），从而可以对模空间计数与积分，定义 Gromov–Witten 不变量。
 
+## 几何直观
+
+![三条由虚到实的曲线逐层收敛，主曲线在红点处接出一个红色气泡](images/th-057-05-compactness.svg)
+
+图意在说明：能量有界的曲线列在不炸处收敛，炸开处冒出的气泡要接回极限，模空间才紧。
+
 ## 二、原理思路
 
 紧性是三个独立机制的综合：

@@ -15,6 +15,12 @@ s-m-n 定理由 Kleene 于 1943 年在《Recursive predicates and quantifiers》
 
 由 Rogers 的工作可知：一个编号是可接受的（acceptable）当且仅当它同时满足通用性（Enumeration Theorem）与 s-m-n 定理。因此 s-m-n 定理是“良编号”的公理之一。
 
+## 几何直观
+
+![四层方框自上而下依次是输入、单射 s、新编号与只吃 x 的程序](images/th-124-04-smn.svg)
+
+图意在说明：参数 y 被打包进新编号，新程序只等一个输入，其行为与原二元函数完全一致。
+
 ## 二、原理思路
 
 构造的核心是“硬编码常数 + 通用仿真”：

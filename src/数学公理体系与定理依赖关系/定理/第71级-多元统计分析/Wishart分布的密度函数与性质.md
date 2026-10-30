@@ -10,6 +10,12 @@
 
 Wishart 分布 $W_p(n,\boldsymbol{\Sigma})$ 描述随机矩阵 $\boldsymbol{W}=\sum_{i=1}^n\boldsymbol{X}_i\boldsymbol{X}_i^\top$ 的分布，其中 $\boldsymbol{X}_i\sim N_p(\boldsymbol{0},\boldsymbol{\Sigma})$。它是一元 $\chi^2$ 分布的多维推广，也是多元正态总体协方差矩阵估计、Hotelling $T^2$ 检验以及多元方差分析的理论基础。该定理给出了 Wishart 分布的显式密度函数，并刻画了其期望与可加性等关键性质。
 
+## 几何直观
+
+![半平面内的橙色锥形区域中，几圈椭圆随自由度增大向红点收缩，表示估计更集中](images/th-071-03-wishart.svg)
+
+图意在说明：样本散布矩阵必然半正定，只能落在正定锥内，自由度的增加使它的分布越来越集中在真值附近。
+
 ## 二、原理思路
 
 证明采用矩阵变量的变量变换法：从 $\boldsymbol{X}$ 的密度出发，通过 Cholesky 分解 $\boldsymbol{W}=\boldsymbol{T}^\top\boldsymbol{T}$（$\boldsymbol{T}$ 为上三角、对角元为正），并在 Stiefel 流形 $V_{n,p}=\{\boldsymbol{U}\in\mathbb{R}^{n\times p}:\boldsymbol{U}^\top\boldsymbol{U}=\boldsymbol{I}_p\}$ 上积掉正交部分。关键计算是 Stiefel 流形的体积公式与 Jacobian 行列式 $\prod_{i=1}^p t_{ii}^{n-i}$，最终整合出 Wishart 密度；一般 $\boldsymbol{\Sigma}$ 情形由标准化 $\boldsymbol{Y}_i=\boldsymbol{\Sigma}^{-1/2}\boldsymbol{X}_i$ 与线性变换的 Jacobian 得出。

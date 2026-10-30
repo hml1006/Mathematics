@@ -14,6 +14,12 @@ $$
 $$
 它把"数点"问题控制在刚性区间内，是椭圆曲线算术的基础结果，也是 Weil 猜想在曲线情形的直接体现。
 
+## 几何直观
+
+![各素数对应的 a_p 散点全部落在上下两条正负 2√p 包络曲线之间](images/th-143-02-hasse-bound.svg)
+
+图意在说明：曲线在有限域上的点数几乎就是 p + 1，偏差 a_p 被 2√p 卡死在一条窄带里。
+
 ## 二、原理思路
 
 Hasse 边界本质上是曲线情形 Weil 猜想的特例：Frobenius 自同态 $\mathrm{Frob}_q$ 在 $\ell$-adic 上同调 $H^1$ 上的迹的绝对值被特征值模约束（$|\alpha_i|=\sqrt{q}$）。由迹公式 $N_q=q+1-\alpha-\bar\alpha$（$\alpha$ 为 Frobenius 特征值）立即得到 $|N_q-(q+1)|=|2\Re\alpha|\le2\sqrt{q}$。

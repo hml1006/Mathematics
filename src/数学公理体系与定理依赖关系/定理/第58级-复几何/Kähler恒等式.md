@@ -14,6 +14,12 @@ $$\Delta' = \Delta'' = \frac{1}{2}\Delta_d$$
 
 这一定理是 Hodge 分解定理的基石，也是 Kähler 流形区别于一般 Hermite 流形的关键特征。它将 Kähler 度量上的"调和性"分解为复结构与实结构的调和性之间的精确等价，是连接分析（椭圆算子）、几何（Kähler 度量）与拓扑（de Rham 上同调）的核心桥梁。
 
+## 几何直观
+
+![三个 Laplacian 方框连成三角，边标注二倍关系，底部橙色条写着闭形式条件](images/th-058-07-kahler-identity.svg)
+
+图意在说明：闭性 dω 等于零使 Lefschetz 算子与微分交换，三种 Laplacian 按固定倍数重合。
+
 ## 二、原理思路
 
 ### 基本思想

@@ -8,6 +8,12 @@
 
 Delta 方法（Delta Method）是数理统计中用于推导统计量渐近分布的重要工具。该方法的核心理念是：若一个统计量 $\hat{\theta}$ 渐近正态，则其光滑函数变换 $g(\hat{\theta})$ 也渐近正态，且渐近方差可通过 Delta 方法计算。具体而言，若 $\sqrt{n}(\hat{\theta} - \theta) \xrightarrow{d} N(0, \sigma^2)$，且 $g$ 在 $\theta$ 处可导且 $g'(\theta) \neq 0$，则 $\sqrt{n}(g(\hat{\theta}) - g(\theta)) \xrightarrow{d} N(0, [g'(\theta)]^2\sigma^2)$。Delta 方法在方差稳定化变换、参数估计的渐近分布推导和置信区间构造中广泛应用，是渐近统计理论中最基本的工具之一。
 
+## 几何直观
+
+![曲线上的切线与两段虚线投影，水平小段 Δθ 对应竖直方向被放大的一段](images/th-026-01-delta-method.svg)
+
+图意在说明：估计量在真值附近做一阶线性化，函数值的不确定度就是原方差乘上斜率平方。
+
 ## 分析
 
 **前置依赖**：中心极限定理、连续映射定理、Slutsky定理、Taylor 展开。

@@ -18,6 +18,12 @@ Simons 不等式出自 James Simons 1968 年的论文《Minimal varieties in Rie
 
 它不是一条孤立的技巧，而是"把二阶变分写成 Bochner 型恒等式"这一范式的原型：同样的计算方式后来被推广为 Chern–Yau 对 Codazzi 张量的 Simons 型公式、Nomizu–Smyth 对常平均曲率超曲面的公式，以及各类几何流中的张量极值原理。
 
+## 几何直观
+
+![曲率的平方随时间迅速攀升，红色虚线标出有限时刻 T，曲线在 T 处发散到奇点](images/th-059-07-simons.svg)
+
+图意在说明：Simons 不等式给出曲率平方的微分上界，增长过快就只能在有限时间存在。
+
 ## 二、原理思路
 
 1. **把目标量写成双线性形式**：由 $\tfrac12\Delta|A|^2=|\nabla A|^2+\langle A,\Delta A\rangle$，问题化为计算 $\langle A,\Delta A\rangle$，即要把 $\Delta A$ 用低阶量表达。

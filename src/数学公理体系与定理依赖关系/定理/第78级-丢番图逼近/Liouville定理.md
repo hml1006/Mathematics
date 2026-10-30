@@ -10,6 +10,12 @@
 
 Liouville 定理（1844）给出代数无理数的通用逼近下界 $|\alpha-\frac pq|\ge\frac{c(\alpha)}{q^d}$（$d$ 为次数）。它是"高次代数数不好逼近"的精确刻画，并由此构造出一大类超越数（Liouville 数），开创超越数理论。
 
+## 几何直观
+
+![双对数坐标下两条斜率不同的直线，紫色点远在代数数下界之上方](images/th-078-03-liouville.svg)
+
+图意在说明：代数数的逼近误差至少按 1/q^d 下滑，误差掉得更快的数只能被判定为超越数。
+
 ## 二、原理思路
 
 设 $\alpha$ 的最小多项式 $f\in\mathbb{Z}[x]$，$f(p/q)\neq0$。一方面 $|f(p/q)|=\frac{|a_dp^d+\cdots+a_0q^d|}{q^d}\ge\frac1{q^d}$（分子为非零整数），得不小于分母倒数的下界；另一方面由中值定理 $|f(p/q)|=|f'(\xi)||\alpha-\frac pq|\le M|\alpha-\frac pq|$（在 $\alpha$ 邻域内 $|f'|\le M$）。两结合即得 $\left|\alpha-\frac pq\right|\ge\frac{1}{Mq^d}$。

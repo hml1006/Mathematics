@@ -8,6 +8,12 @@
 
 Monad（单子）是范畴论中一个核心概念，它描述了一个范畴上的"自函子"配备两种自然变换（乘法与单位）所构成的代数结构。Monad理论源于1960年代Huber、Kleisli和Eilenberg-Moore等人对"同调代数中的导出函子"的研究。一个Monad $\mathbf{T} = (T, \eta, \mu)$ 由自函子 $T: \mathcal{C} \to \mathcal{C}$、单位自然变换 $\eta: \mathrm{Id}_{\mathcal{C}} \Rightarrow T$ 和乘法自然变换 $\mu: T^2 \Rightarrow T$ 组成，满足结合律和单位律。Monad 理论提供了将代数结构（如群、环、模）统一处理的语言，也是函数式编程中处理副作用的基础。
 
+## 几何直观
+
+![上方四个节点组成交换方块，下方一行 Kleisli 复合的箭头依次接起](images/th-047-04-monad.svg)
+
+图意在说明：自函子 T 配上乘法与单位，满足结合律后就能把一个对象的两层 T 折叠成一层。
+
 ## 分析
 
 **前置依赖**：自函子与自然变换、伴随函子、三角恒等式、Kleisli 范畴与 Eilenberg-Moore 范畴。

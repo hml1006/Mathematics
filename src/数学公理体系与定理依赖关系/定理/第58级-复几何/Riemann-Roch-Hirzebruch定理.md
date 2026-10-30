@@ -16,6 +16,12 @@ $x_j$ 是 $T^{1,0}X$ 的 Chern 根。
 
 这一定理是复几何与代数几何中最重要的计算工具：它给出上同调维数的交错和（一个解析/代数量）等于拓扑量（Chern 数与 Todd 数）。它是 Atiyah–Singer 指标定理在 $\bar\partial$ 算子情形下的特例与先导；在代数几何中，它与 Serre 对偶、Grothendieck 对偶（Grothendieck–Riemann–Roch）一起构成相交理论与枚举几何的基础。
 
+## 几何直观
+
+![环形曲面上标出三个零点，亏格为一，右侧给出欧拉示性数等于三的算式](images/th-058-08-riemann-roch-hirzebruch.svg)
+
+图意在说明：解析指标只由拓扑数据决定，在曲线上就等于零点数加一减亏格。
+
 ## 二、原理思路
 
 证明（现代方式）借助 Atiyah–Singer 指标定理，分三步：

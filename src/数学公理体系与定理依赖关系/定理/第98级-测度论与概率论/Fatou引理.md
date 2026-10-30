@@ -14,6 +14,12 @@ $$
 \int \liminf_{n\to\infty}f_n\,d\mu \le \liminf_{n\to\infty}\int f_n\,d\mu.
 $$
 
+## 几何直观
+
+![三个等高等宽的方块依次向右平移，每块面积都是 1，逐点极限却处处为零](images/th-098-01-fatou.svg)
+
+图意在说明：非负函数列即便逐点趋于零，积分也可能不跟着降，只能得到不等号。
+
 ## 二、原理思路
 
 构造后阶下确界 $g_n=\inf_{k\ge n}f_k$，它单调递增地收敛到 $\liminf f_n$。由 $g_n\le f_k$（$k\ge n$）可得 $\int g_n\le\inf_{k\ge n}\int f_k$，再对 $g_n$ 用单调收敛定理取极限即得结论。

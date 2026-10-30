@@ -10,6 +10,12 @@
 
 Tracy-Widom 分布是随机矩阵理论中描述最大特征值在适当中心化与缩放后极限分布的一类重要概率分布。与 Wigner 半圆律和 Marchenko-Pastur 定律刻画特征值的宏观 bulk 分布不同，Tracy-Widom 定律关注的是谱边缘的微观涨落。Tracy 与 Widom 在 1990 年代证明了 GUE（Gaussian Unitary Ensemble）的最大特征值在 $N^{-2/3}$ 尺度下收敛到一个由 Painlevé II 方程显式刻画的分布。这一定律后来在大量随机矩阵模型和组合问题中被发现具有惊人的普适性。
 
+## 几何直观
+
+![红色密度曲线左尾厚右尾薄，红色箭头指出迅速衰减的尾部，蓝虚线是累积分布](images/th-064-09-tracy-widom.svg)
+
+图意在说明：最大特征值中心化并按 n 的 2/3 次幂缩放后收敛到同一条歪斜分布，右尾衰减极快。
+
 ## 二、原理思路
 
 考虑一个 $N \times N$ 的 GUE 矩阵 $M_N$，其密度正比于 $\exp(-N \operatorname{Tr}(M_N^2))$。其特征值的联合密度为

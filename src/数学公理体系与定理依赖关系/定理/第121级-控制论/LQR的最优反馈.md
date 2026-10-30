@@ -10,6 +10,12 @@
 
 对线性时不变系统 $\dot{\boldsymbol x}=\boldsymbol A\boldsymbol x+\boldsymbol B\boldsymbol u$ 与二次指标 $J=\int_0^\infty(\boldsymbol x^{\top}\boldsymbol Q\boldsymbol x+\boldsymbol u^{\top}\boldsymbol R\boldsymbol u)\,dt$，LQR 定理给出最优反馈 $\boldsymbol u^*=-\boldsymbol K\boldsymbol x$，其中 $\boldsymbol K=\boldsymbol R^{-1}\boldsymbol B^{\top}\boldsymbol P$，$\boldsymbol P$ 是代数 Riccati 方程唯一正定解。
 
+## 几何直观
+
+![状态平面上三层二次代价等值线，红色闭环轨道螺旋收向原点](images/th-121-01-lqr-feedback.svg)
+
+图意在说明：二次代价的等值线是一圈圈椭圆，最优反馈沿法向把状态推回原点，且增益不随时间变。
+
 ## 二、原理思路
 
 用动态规划（HJB 方程）处理无限时域调优：猜测最优值函数为二次型 $V=\boldsymbol x^{\top}\boldsymbol P\boldsymbol x$，把最优点代入 HJB 得到 Riccati 方程；再以 $V$ 作闭环 Lyapunov 函数证稳定。

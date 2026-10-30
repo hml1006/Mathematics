@@ -16,6 +16,12 @@ $$H^q(X,\, \Omega^p_X \otimes L) = 0, \quad \forall\, p + q > n = \dim_\mathbb{C
 
 其简化形式为 $H^q(X, K_X \otimes L^{\otimes m}) = 0$（$q > 0, m > 0$），其中 $K_X$ 是典则线丛。该定理将度量的正性与上同调的消失联系起来，是 Kähler 几何中 $\bar\partial$-Neumann 问题与 $L^2$ 估计方法的奠基性成果。
 
+## 几何直观
+
+![一排上同调群依次相连，零阶群标非零并填绿，其余各阶都标成零](images/th-058-06-kodaira-vanishing.svg)
+
+图意在说明：曲率正定让正阶的调和形式无法存在，而调和形式代表上同调类，因此正阶上同调群全部消失。
+
 ## 二、原理思路
 
 ### 基本思想

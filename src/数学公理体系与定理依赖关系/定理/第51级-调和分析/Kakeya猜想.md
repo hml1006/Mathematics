@@ -14,6 +14,12 @@ Kakeya 猜想（也称为 Besicovitch 猜想）是几何测度论和调和分析
 
 然而，尽管 Besicovitch 集的 Lebesgue 测度可以为零，Kakeya 猜想断言它们的 Hausdorff 维数必须是满的（等于空间维数 $n$）。这个猜想在 $n = 2$ 时已由 Besicovitch 本人证明，但在 $n \ge 3$ 时仍然开放。它与 Fourier 分析中的限制性猜想、Bochner-Riesz 猜想有深刻的联系。
 
+## 几何直观
+
+![十几根方向各异的单位线段交叠着塞进一个很小的方形区域](images/th-051-06-kakeya-needles.svg)
+
+图意在说明：每个方向都摆一根单位线段，把所有方向都收进一个集合，这个集合的面积却可以任意小。
+
 ## 二、原理思路
 
 **Besicovitch 集的构造**：

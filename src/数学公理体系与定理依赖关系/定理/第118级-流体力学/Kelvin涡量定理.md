@@ -10,6 +10,12 @@
 
 Kelvin 涡量定理（Kelvin's circulation theorem）断言：无粘、正压且体积力有势的流体中，沿封闭物质线的环量 $\Gamma=\oint_C\boldsymbol u\cdot d\boldsymbol l$ 满足 $D\Gamma/Dt=0$。它是涡管、涡线守恒性与许多涡动力学结论的出发点。
 
+## 几何直观
+
+![同一条闭合回路在三个时刻的位置与形状，随流动一起平移和扭变，环量保持相同](images/th-118-02-kelvin-circulation.svg)
+
+图意在说明：无粘、正压且只有保守力时，随流体运动的闭合回路环量对时间的变化率为零。
+
 ## 二、原理思路
 
 交换环量物质导数中的微分与积分次序，把 $D\boldsymbol u/Dt$ 用 Euler 方程替换。第二项因 $\oint\boldsymbol u\cdot d\boldsymbol u=\oint d\big(\frac12|\boldsymbol u|^2\big)=0$ 而消失；正压性把 $\frac1\rho\nabla p$ 写成势函数梯度，闭合积分又为零。

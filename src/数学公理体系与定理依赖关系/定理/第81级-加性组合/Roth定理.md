@@ -10,6 +10,12 @@
 
 Roth 定理（1953）是加法组合的经典结果：对任意 $\delta>0$ 存在 $N_0(\delta)$，使 $N>N_0(\delta)$ 时正密度集 $A\subseteq\{1,\dots,N\}$（$|A|\ge\delta N$）必含非平凡三项算术级数。它是密度算术级数理论的开端，Szemerédi 定理（任意长度）的原型。
 
+## 几何直观
+
+![以首项为横轴、公差为纵轴的格子里，大量格子被涂红表示三元组全在 A 中](images/th-081-05-roth.svg)
+
+图意在说明：只要 A 的密度为正，就一定能找到 a, a+d, a+2d 同时落在 A 里的三元组。
+
 ## 二、原理思路
 
 用傅里叶分析（密度增量策略）。把数嵌入 $\mathbb{Z}_N$，考虑特征函数 $f$。三项级数计数 $\sum_x f(x)f(x+d)f(x+2d)$ 用傅里叶系数表示 $\frac1N\sum_\xi\hat f(\xi)^2\hat f(-2\xi)$。主导项来自 $\xi=0$ 为 $\delta^3N^2$。若无三项级数，则总和 $O(N)$，迫使非零频率系数 $|\hat f(\xi)|\ge c\delta^2N$ 大；按该频率方向分划得一个子算术级数上密度增量 $\delta\to\delta+c\delta^2$。迭代 $O(1/\delta)$ 次（密度不能超 1）得到 $N_0(\delta)\le\exp(\exp(O(1/\delta)))$。

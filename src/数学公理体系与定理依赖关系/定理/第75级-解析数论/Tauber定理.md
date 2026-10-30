@@ -10,6 +10,12 @@
 
 Tauber 定理（Tauberian theorems）是一类"反 Abel 型"定理的总称，由 Alfred Tauber 于 1897 年开启，经 Littlewood（1910）、Hardy–Littlewood、Karamata（1931）与 Wiener（1932）系统发展。Abel 定理是容易的方向：若级数 $\sum a_n$ 收敛到 $S$，则 $\sum a_nx^n\to S$（$x\to1^-$）。Tauber 定理给出反向结论所需的"附加条件"：例如若 $\sum a_nx^n\to S$ 且 $na_n\to0$，则 $\sum a_n$ 收敛到 $S$。提出它的动机是：加权求和的极限往往容易从解析函数得到，而数论真正关心的是不加权的部分和（如素数计数），因此需要一类能把"Abel 极限"升级为"普通极限"的定理。Tauber 理论因此成为解析数论、概率极限定理（Karamata 型）与泛函分析（Wiener 定理）的公共基础。
 
+## 几何直观
+
+![蓝色阶梯在零与一之间往返跳动，绿色点列却稳稳收敛到红色虚线标注的极限](images/th-075-07-tauber-theorem.svg)
+
+图意在说明：Abel 求和总比普通求和容易收敛，只有补上系数衰减这一条，才能从 Abel 极限反推出部分和的极限。
+
 ## 二、原理思路
 
 1. Abelian 方向：由 $\sum a_nx^n$ 的收敛性与 $1-x^n\to0$，把部分和 $s_N$ 与幂级数值 $f(x)$ 作差。

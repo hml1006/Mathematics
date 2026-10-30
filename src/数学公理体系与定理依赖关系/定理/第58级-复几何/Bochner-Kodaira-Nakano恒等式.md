@@ -15,6 +15,12 @@ $$\Box_{\bar\partial}=\Delta' + \bigl[\sqrt{-1}\,\Theta(E),\,\Lambda\bigr].$$
 
 这条恒等式是"正性 ⇒ 消没"的核心机制：对曲率为正的 $E$，$[\sqrt{-1}\Theta(E),\Lambda]$ 在 $(0,q)$-形式上（$q\ge1$）为正向算子，于是 $\Box_{\bar\partial}$ 无调和的 $(0,q)$-形式，得到 **Kodaira–Nakano 消没定理**；取 $E=K_X\otimes L$（$L$ 丰沛）得 **Kodaira 消没定理**，进而得 Kodaira 嵌入定理。它同时是 Hörmander $L^{2}$ 估计、Bochner 公式与 Weitzenböck 公式的复几何版本。
 
+## 几何直观
+
+![柱状图显示曲率算子在各阶形式上的特征值随 q 递增，q 为零处核非零，其余全为正](images/th-058-01-bkn-identity.svg)
+
+图意在说明：二阶与一阶项在 Kähler 条件下全部相消，只剩下曲率交换子这一零阶项，正曲率便让正阶调和形式消失。
+
 ## 二、原理思路
 
 BKN 恒等式源于三类算子的交换关系：

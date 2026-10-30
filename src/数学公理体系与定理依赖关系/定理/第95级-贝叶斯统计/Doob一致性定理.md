@@ -14,6 +14,12 @@ $$
 \pi(\theta\in U\mid\boldsymbol{x}_n) \xrightarrow[n\to\infty]{P_{\theta_0}} 1 \quad\text{对 }\theta_0\text{ 的任何邻域 }U.
 $$
 
+## 几何直观
+
+![四条钟形曲线随样本量增加越来越高、越来越窄，峰顶都压向红色虚线标出的真值](images/th-095-02-doob-consistency.svg)
+
+图意在说明：只要先验不排除真值，后验质量就会越来越集中到真实参数附近。
+
 ## 二、原理思路
 
 依赖关于真实 $\theta_0$ 的似然比鞅与 Kullback-Leibler 散度。固定 $\theta$ 时似然比 $L_n(\theta)$ 是鞅，故几乎必然收敛；由大数定律 $\frac1n\log L_n(\theta)\to -K(\theta_0,\theta)<0$（$\theta\neq\theta_0$），从而 $L_n(\theta)\to0$，说明掉在真实点之外的先验"权重"在似然比的缩放下消失。

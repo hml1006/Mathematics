@@ -18,6 +18,12 @@ Painlevé II 之所以在概率论中声名显赫，是因为 Tracy 与 Widom �
 
 本条目给出 $P_{II}$ 的精确表述、Hastings–McLeod 解的存在唯一性与边界条件、它与 Tracy–Widom 分布的显式关系，以及其 Lax 对与 Riemann–Hilbert 刻画。
 
+## 几何直观
+
+![蓝色解曲线左侧沿根号斜坡下降，向右平滑落到零，橙色虚线标出两端渐近](images/th-064-05-painleve.svg)
+
+图意在说明：二阶非线性方程中只有一条解在两端都不发散，它积分后给出 Tracy-Widom 分布。
+
 ## 二、原理思路
 
 1. **从 Fredholm 行列式出发**。GUE 最大特征值不超过 $s$ 的概率是 Airy 核的 Fredholm 行列式 $D(s)=\det(I-K_{\mathrm{Ai}})_{L^2(s,\infty)}$。分布函数 $F_2(s)$ 就是这个行列式。

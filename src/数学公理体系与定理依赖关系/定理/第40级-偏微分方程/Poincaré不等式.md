@@ -12,6 +12,12 @@ $$\|u-\bar u\|_{L^p(\Omega)}\le C\|\nabla u\|_{L^p(\Omega)}.$$
 
 它是椭圆方程先验估计、Sobolev 空间的范数等价性、Lax–Milgram 方法中强制性（coercivity）验证等大量结论的基础工具。另一常见变体是对满足 $u|_{\partial\Omega}=0$ 的函数直接成立 $\|u\|_{L^p}\le C\|\nabla u\|_{L^p}$，称为 Friedrichs 不等式。
 
+## 几何直观
+
+![正弦曲线与红色平均值虚线之间填出蓝色起伏区域，两条橙色箭头标出上下偏移](images/th-040-07-poincare.svg)
+
+图意在说明：先减去平均值再谈起伏，这部分起伏的大小就被梯度的 Lp 范数控制住了。
+
 ## 分析
 
 **前置依赖**：Sobolev 空间定义、Sobolev 嵌入定理、Rellich–Kondrachov 紧嵌入定理、Hölder 不等式、弱导数与弱收敛。

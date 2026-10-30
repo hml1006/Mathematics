@@ -18,6 +18,12 @@ B(c,a)=\frac{a^c/c!}{\sum_{k=0}^c a^k/k!},\qquad a=\frac{\lambda}{\mu}
 $$
 其中 $\lambda$ 为到达率、$\mu$ 为单台服务率、$a=\lambda/\mu$ 为话务量强度（爱尔兰，Erlang）。
 
+## 几何直观
+
+![五个状态排成一条链，向上箭头为到达、向下箭头为服务，最右全忙态标红](images/th-111-01-erlang-b.svg)
+
+图意在说明：没有等待位的损失制系统里，新到顾客遭遇全忙态的概率就是阻塞率。
+
 ## 二、原理思路
 
 M/M/c/c 是**有限状态生灭过程**，状态空间 $\{0,1,\dots,c\}$：出生率 $\lambda_k=\lambda\ (k<c)$、$\lambda_c=0$；死亡率 $\mu_k=k\mu$。由细致平衡 $\lambda_kP_k=\mu_{k+1}P_{k+1}$ 推出 $P_k=\frac{a^k}{k!}P_0$，归一化定出 $P_0$，阻塞概率即满员概率 $P_c$。

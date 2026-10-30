@@ -8,6 +8,12 @@
 
 Riemann–Roch 定理是 Riemann 面和代数曲线理论中最深刻的定理之一，由 Bernhard Riemann（1857）和他的学生 Gustav Roch（1865）建立。该定理给出了 Riemann 面上具有指定零点和极点的亚纯函数空间维数的计算公式。它统一了 Riemann 面理论中的许多经典结果，是代数几何、复分析和数论交叉领域的基石，其推广（如 Hirzebruch–Riemann–Roch 定理、Grothendieck–Riemann–Roch 定理）在现代数学中影响深远。
 
+## 几何直观
+
+![亏格为二的曲面由两个相切的圆表示，上面分布着红色除子点，下方三块账目方框](images/th-042-14-riemann-roch.svg)
+
+图意在说明：允许指定极点的亚纯函数空间维数，等于除子次数加一再减去亏格，再修正对偶除子项。
+
 ## 分析
 
 **前置依赖**：Riemann 面、除子、线丛、亚纯函数、亏格、层上同调、典范除子。

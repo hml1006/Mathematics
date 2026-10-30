@@ -26,6 +26,12 @@ $$
 
 它使 $\big(C^\infty(M),\{\ ,\ \}\big)$ 成为一个无穷维李代数，是 Hamilton 力学与量子力学对应的代数骨架：经典 Poisson 括号与量子对易子的"$\{\cdot,\cdot\}\to\frac{1}{i\hbar}[\cdot,\cdot]$"对应正是 Dirac 量化规则的表述。
 
+## 几何直观
+
+![相平面上两条等值线族的切向量张成平行四边形，其面积为括号](images/th-048-08-poisson-jacobi.svg)
+
+图意在说明：括号是两个 Hamilton 向量场张成的辛面积，三循环求和为零正是 Jacobi 恒等式。
+
 ## 分析
 
 辛流形与闭的非退化 2-形式、Hamilton 向量场、外微分与 Cartan 公式、乘积求导法则、李括号与向量场的自然性。

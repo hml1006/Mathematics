@@ -14,6 +14,12 @@ $$\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2\pi i x \cdot \xi}\, dx$$
 
 Plancherel 定理是连接经典 Fourier 分析与现代泛函分析的桥梁，在量子力学（位置-动量对偶）、偏微分方程（Sobolev 空间的 Fourier 刻画）、信号处理（Parseval 恒等式）等领域都有根本性的应用。
 
+## 几何直观
+
+![两个大圆分别表示稠密子空间与 L² 像空间，之间用等距与延拓的箭头连接](images/th-051-04-l2-extension.svg)
+
+图意在说明：Schwartz 函数在 L² 中稠密且变换等距，稠密性保证延拓唯一，于是变换可以铺满整个 L²。
+
 ## 二、原理思路
 
 **核心困难**：$L^2(\mathbb{R}^n)$ 中的函数未必属于 $L^1(\mathbb{R}^n)$，因此 Fourier 变换的积分定义对一般的 $L^2$ 函数没有意义。

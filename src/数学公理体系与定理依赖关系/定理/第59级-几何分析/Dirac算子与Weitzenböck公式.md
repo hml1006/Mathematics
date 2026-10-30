@@ -16,6 +16,12 @@ $$D^2=\nabla^*\nabla+\frac14S.$$
 
 这条公式的意义堪称"曲率输入分析"的典范。因为它，Bochner 技巧可以整体地用于旋量：若 $S>0$ 则 $D$ 无零模，进而由指标定理知 Spin 流形的 $\hat A$-亏格为零，给出正标量曲率的拓扑障碍（Lichnerowicz 消失定理）。Witten 用同一公式对 Dirac 算子作 Bochner 论证给出了正质量定理的著名证明；Hitchin 用它构造反例说明某些流形不容许正标量曲率度量；在 Seiberg–Witten 理论、指标定理的局部化证明与旋量几何中，Weitzenböck 公式都是基本工具。
 
+## 几何直观
+
+![球面上的旋量沿闭路平移后变号，公式 D 平方拆成联络 Laplacian 与四分之一标量曲率](images/th-059-01-weitzenbock.svg)
+
+图意在说明：Dirac 算子的平方除分析项外还硬生生多出标量曲率的一份，曲率由代数自动出现。
+
 ## 二、原理思路
 
 1. **把 $D$ 写成 Clifford 乘法与协变导数的组合**：取局部正交标架 $\{e_i\}$，令 $D=\sum_ic(e_i)\nabla_{e_i}$，其平方为 $D^2=\sum_{i,j}c_ic_j\nabla_i\nabla_j$。

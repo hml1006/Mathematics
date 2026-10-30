@@ -10,6 +10,12 @@
 
 HOMFLY 多项式是 Jones 多项式的双参数推广，由 Hoste、Ocneanu、Millett、Freyd、Lickorish 与 Yetter 在 1985 年左右独立发现。通过参数 specialization 后可得到 Jones、Alexander–Conway 等多项式。
 
+## 几何直观
+
+![虚线小盘里的正交叉、负交叉与平滑化三张图，箭头连成一个循环](images/th-061-02-homfly-skein.svg)
+
+图意在说明：三张图只在一个小盘里不同，把它们的多项式按固定系数排成一条拆接方程，就唯一确定了 HOMFLY 多项式。
+
 ## 二、原理思路
 与 Jones 多项式类似，HOMFLY 多项式通过辫群到 Hecke 代数的表示以及两个自由参数的 Ocneanu 型迹来构造；这两个参数分别控制拆接关系中 $L_+$ 与 $L_-$ 的系数。
 

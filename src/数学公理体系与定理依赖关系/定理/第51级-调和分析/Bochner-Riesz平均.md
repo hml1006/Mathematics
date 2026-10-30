@@ -14,6 +14,12 @@ $$T_R^\delta f(x) = \int_{|\xi| \le R} \left(1 - \frac{|\xi|^2}{R^2}\right)^\del
 
 当 $\delta = 0$ 时，这就是简单的球面截断（Fourier 部分和），对应的算子在 $L^p$（$p \ne 2$）上无界（Fefferman 球乘子定理，1971年）。当 $\delta$ 充分大时，Bochner-Riesz 平均在 $L^p$ 上有界。Bochner-Riesz 猜想试图确定使 $T_R^\delta$ 在 $L^p$ 上一致有界的最小 $\delta$，这是调和分析中最著名的未解决问题之一。
 
+## 几何直观
+
+![频率平面上一个橙色圆盘表示截断球，下方三条权函数曲线由陡峭变平缓](images/th-051-01-bochner-riesz.svg)
+
+图意在说明：把频率限制在球内、再按半径乘一个衰减权，δ 越大权越平缓，所得平均也越接近原函数。
+
 ## 二、原理思路
 
 **为什么需要 Bochner-Riesz 平均**：

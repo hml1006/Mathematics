@@ -10,6 +10,12 @@
 
 R-变换（Voiculescu）是自由概率中的"对数特征"— 对自由独立变量，**和的谱**经 R-变换线性化：$\mathcal R_{a+b}=\mathcal R_a+\mathcal R_b$。它把自由卷积的复杂密度操作翻译为函数加法，是把半圆（$\mathcal R_s(z)=z$）与自由独立的谱合成统一处理的工具。
 
+## 几何直观
+
+![三条 R 变换曲线竖直叠加，红线恰是蓝绿之和](images/th-147-01-r-transform-additivity.svg)
+
+图意在说明：自由独立时累积量逐项相加，R 变换因此把自由卷积这一复杂操作翻译成普通的函数加法。
+
 ## 二、原理思路
 
 R-变换对随机变量 $X$ 按矩定义：$\mathcal R_X(z)=\sum_{n\ge0}\alpha_{n+1}z^n$，其中自由累积量 $\alpha_n$（free cumulants）由 $\alpha_{n}\big\vert$ 的非交叉 chord 收缩定义，$\alpha$ 线性作用于自由独立变量。因此对自由独立 $a,b$，其 $n$-累积量相加：$\alpha_{a+b}=\alpha_a+\alpha_b$，累加回 R-生成函数即得加法公式。

@@ -10,6 +10,12 @@
 
 Tracy–Widom分布（TW，Tracy–Widom 1994）描述的是随机矩阵谱的最大特征值（更一般地，谱边缘）经 $n^{-1/6}$ 缩放后的普适极限分布族 $\mathrm{TW}_\beta$（$\beta=1,2,4$ 对应 GOE/GUE/GSE）。它以 Airy 函数/行列式点过程（Fredholm 行列式）表达，是随机矩阵、KPZ 普适类与最值过程的核心对象。
 
+## 几何直观
+
+![橙色分布曲线与蓝色高斯虚线对比，左侧尾部被阴影标出更厚的一段](images/th-146-03-tracy-widom.svg)
+
+图意在说明：最大特征值在谱边抖动，抖动幅度缩到很小之后，分布就固定成尾部更厚的这一条曲线。
+
 ## 二、原理思路
 
 对于 $\beta=2$（GUE 复 Hermite），Gaudin/Mehta 的软边缘公式给出点过程行列式核：Airy 核 $K_{\mathrm{Ai}}(x,y)=\frac{\mathrm{Ai}(x)\mathrm{Ai}'(y)-\mathrm{Ai}'\!\mathrm{Ai}(y)…}{x-y}$。最大特征值的分布即该核的 Fredholm 行列式 $\det(I-\lambda K_{\mathrm{Ai}})$。缩放尺度 $\cdot n^{-1/6}$ 来自边缘的宽度（与 Airy 波形散度 $x\sim n^{1/3}$ 相匹配）。

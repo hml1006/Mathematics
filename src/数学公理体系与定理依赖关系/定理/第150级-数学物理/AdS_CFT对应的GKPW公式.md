@@ -14,6 +14,12 @@ $$
 
 AdS/CFT 对应的 GKPW 公式（Gubser–Klebanov–Polyakov 1998；Witten 1998）给出反de Sitter 空间中量子引力与边界共形场论对偶的精确数学表述：$d+1$ 维 AdS 中场的边界值 $\phi_0$ 作为 $d$ 维 CFT 算子 $\mathcal O$ 的源，且 CFT 生成泛函等于 AdS 配分函数。它是"全息原理"的算符形式。
 
+## 几何直观
+
+![圆盘表示 AdS 体，边界上的源 phi0 沿径向深入体内逐渐衰减](images/th-150-01-gkpw-holography.svg)
+
+图意在说明：边界的场值充当 CFT 算子的源，体内对全部场位形做路径积分，其配分函数恰等于边界的生成泛函。
+
 ## 二、原理思路
 
 对偶链（Maldacena）提示 $\operatorname{String\,on\,AdS_{d+1}\times X}\Leftrightarrow \mathrm{CFT}_d$。把 CFT 生成泛函（对 braket 插 vbl）与 AdS 配分（有边界条件 $\phi_0$）等值：AdS 场 $\phi(z,x)\sim z^{d-\Delta}\phi_0(x)+z^\Delta\phi_1(x)$ 决定共形维数 $\Delta=\frac d2+\sqrt{\frac{d^2}{4}+m^2R^2}$；在半经典极限 $Z\simeq e^{-S_{\mathrm{on-shell}}}$ 给出 CFT 关联函数的 Witten 树计算。

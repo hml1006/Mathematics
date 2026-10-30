@@ -10,6 +10,12 @@
 
 $GL(1)$ 情形的几何Langlands对应是把经典傅里叶对偶（Abel簇与其对偶环面）翻译成"层与表示"的语句：$\mathrm{Pic}(X)$ 上的 D-模的派生范畴与秩一局部系统模空间 $\mathrm{LocSys}_{\mathbb{C}^\times}$ 上拟凝聚层的派生范畴等价。这一等价经 Poincaré 线丛的 Fourier–Mukai 变换实现。
 
+## 几何直观
+
+![左侧蓝色格点表示 Picard 群，右侧绿色圆周上的点表示平坦线丛，中间一支傅里叶箭头](images/th-142-02-gl1-geometric.svg)
+
+图意在说明：GL(1) 时自守侧就是 Picard 群，对应由以 Poincaré 线丛为核的傅里叶变换给出。
+
 ## 二、原理思路
 
 $\mathrm{Bun}_1=\mathrm{Pic}(X)$ 是 $X$ 的 Picard 簇（交换代数群），其对偶是 $\mathrm{Pic}^\vee(X)=\mathrm{Hom}(\pi_1(X),\mathbb{C}^\times)$，即秩一局部系统的模空间 $\mathrm{LocSys}_{\mathbb{C}^\times}$。在 Abel 簇上的 Fourier–Mukai 变换（以 Poincaré 线丛为核）给出对偶环面间派生范畴的等价，其限制到适当子范畴即得几何 Langlands 对应，且 Hecke 算子在该对应下映为"乘以特征"。

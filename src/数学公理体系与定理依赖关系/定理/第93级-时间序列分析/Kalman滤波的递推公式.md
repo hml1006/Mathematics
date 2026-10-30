@@ -10,6 +10,12 @@
 
 在状态空间模型下，Kalman 滤波递推给出在给定观测下的状态条件分布（高斯情形下为条件均值与条件协方差）。它从已知的上一时刻估计出发，通过预测步与更新步循环，得到最小均方误差意义下的实时状态估计。
 
+## 几何直观
+
+![橙色观测点围绕灰色真实轨迹上下跳动，蓝色滤波线更平滑地跟随，下方是预测与更新的循环](images/th-093-03-kalman-filter.svg)
+
+图意在说明：高斯线性模型下只需递推均值与协方差，先预测再用新观测按增益校正，循环向前。
+
 ## 二、原理思路
 
 考虑状态方程 $\boldsymbol{\alpha}_t = \boldsymbol{T}_t\boldsymbol{\alpha}_{t-1} + \boldsymbol{R}_t\boldsymbol{\eta}_t$ 与观测方程 $\boldsymbol{y}_t = \boldsymbol{Z}_t\boldsymbol{\alpha}_t + \boldsymbol{\xi}_t$。在高斯、线性假设下条件分布保持高斯，只需递推其均值与协方差：先由状态方程预测（先验），再用观测的新息通过 Kalman 增益进行校正（后验）。

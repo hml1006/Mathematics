@@ -20,6 +20,12 @@ $$\int_\Omega|\bar\partial u|^{2}e^{-\phi}+\int_\Omega|\bar\partial^{*}_{\phi}u|
 $$\|\bar\partial u\|^{2}_{\phi}+\|\bar\partial^{*}_{\phi}u\|^{2}_{\phi}\ \ge\ \sum_{j,k}\left\|\frac{\partial u_j}{\partial\bar z_k}\right\|^{2}_{\phi},$$
 这就是 $\bar\partial$-Neumann 问题的**基本估计**，由此可证明 Neumann 算子 $N$ 的有界性与 $\bar\partial$ 的 $L^2$ 可解性（Hörmander $L^2$ 存在定理），也是 Kohn 亚椭圆估计、Ohsawa–Takegoshi 延拓定理、乘子理想层理论的出发点。
 
+## 几何直观
+
+![顶部一个总项框向下分成全导数、权重曲率、边界 Levi 三框，再汇成基本估计](images/th-056-06-mkh-identity.svg)
+
+图意在说明：把两项范数平方和分部积分后，权重曲率项与边界 Levi 项都非负，剩下的全导数项就给出基本估计。
+
 ## 二、原理思路
 
 恒等式是一个**分部积分（integration by parts）的结果**，其推导可以概括为：

@@ -10,6 +10,12 @@
 
 Gromov 多项式增长定理刻画了增长性质的代数来源：多项式增长有限生成群 $\Longleftrightarrow$ virtually 幂零群。它一举解决了关于增长型的核心分类问题，是几何群论与李理论交汇的经典成果。
 
+## 几何直观
+
+![三条增长曲线对比：线性、二次与指数，指数曲线迅速冲高，多项式曲线缓慢上升](images/th-090-03-gromov-polynomial.svg)
+
+图意在说明：球内元素按多项式增长，缩放取极限后必是幂零 Lie 群，于是原群 virtually 幂零。
+
 ## 二、原理思路
 
 多项式增长 $\Rightarrow$ virtually 幂零的方向最难：把单位球按半径缩放，得到一族度量空间，靠 Gromov–Hausdorff 收敛得极限空间（渐近锥）$X$。多项式增长保证 $X$ 完备、齐次、连通、测地；Montgomery–Zippin 与 Gleason–Yamabe 定理说明其对等距的连通 Lie 群；再借 Lipschitz 同态 $\varphi:G\to\operatorname{Iso}(X)$ 证 $\ker\varphi$ 有限而商幂零。反方向：幂零群的下中心列给出 $\beta(n)\le Cn^c$。

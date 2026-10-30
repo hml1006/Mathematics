@@ -14,6 +14,12 @@ $$
 $$
 连接了闭形式乘法与周期微商，常被用来计算超曲面上有理曲线计数。
 
+## 几何直观
+
+![左侧计数柱随次数迅速增高，箭头指向右侧对数增长的周期曲线，展开系数就是计数](images/th-140-01-gw-periods.svg)
+
+图意在说明：镜像侧的周期满足 Picard–Fuchs 方程，在镜像点展开后，系数恰好是 A 模型的 GW 计数。
+
 ## 二、原理思路
 
 以五次超曲面为例。五次 $M\subset\mathbb P^4$ 是 Calabi-Yau 3-重（$h^{1,1}=1$，$h^{2,1}=101$），其镜像 $W$ 由轨道折叠（orbifolding）$W=M/(\mathbb Z_5)^3$ 得（$h^{1,1}=101$，$h^{2,1}=1$）。周期 $\Pi(\psi)=\int_\gamma\Omega(\psi)$ 满足 Picard-Fuchs 方程，其幂级数保证供镜像映射 $t=\Pi_1/\Pi_0$；B-模型 Yukawa $\kappa_{ttt}=\frac{d^3}{dt^3}\Pi$，A-模型 Yukawa $\kappa_{ttt}^A=\sum_dN_d\frac{d^3q^d}{1-q^d}$，镜像令相等解出 $N_d$。

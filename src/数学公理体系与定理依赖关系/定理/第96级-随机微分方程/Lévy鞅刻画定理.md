@@ -10,6 +10,12 @@
 
 Lévy 鞅刻画定理（Lévy's characterization of Brownian motion）断言：若连续局部鞅 $M$ 满足 $M_0=0$ 且二次变差 $[M]_t=t$，则 $M$ 是标准布朗运动。它由 Paul Lévy 于 1948 年在研究布朗运动的鞅性质时给出，是随机分析中"用二次变差识别布朗运动"的奠基结果。其证明思路——直接验证 $e^{i\lambda M_t+\lambda^2t/2}$ 是鞅从而定出高斯特征函数——成为鞅问题（martingale problem）理论的模板，并催生了刻画跳跃过程的 Lévy–Itô 分解。该定理在扩散过程、随机微分方程弱解的存在唯一性以及 Tanaka 公式中反复被引用。
 
+## 几何直观
+
+![上图画连续鞅路径，下图对应二次变差为斜率一的直线，红色阶梯是带跳过程的反例](images/th-096-07-levy-characterization.svg)
+
+图意在说明：连续且二次变差恰为 t 的鞅只能是布朗运动，两条指纹把它完全认出来。
+
 ## 二、原理思路
 
 1. 对固定 $\lambda$，用 Itô 公式作用于 $Z_t=\exp(i\lambda M_t+\lambda^2t/2)$，因 $d\langle M\rangle_t=dt$ 使二阶项与漂移相消，得 $dZ_t=Z_t\cdot i\lambda\,dM_t$，故 $Z$ 是局部鞅。

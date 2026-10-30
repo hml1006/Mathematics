@@ -10,6 +10,12 @@
 
 对 AR($p$) 过程 $X_t = \phi_1X_{t-1} + \cdots + \phi_pX_{t-p} + \varepsilon_t$，其自协方差 $\gamma(h)$ 满足 Yule-Walker 方程。特别当 $h=1,\dots,p$ 时写成矩阵形式 $\boldsymbol{\Gamma}_p\boldsymbol{\phi} = \boldsymbol{\gamma}_p$，且解存在唯一当且仅当自协方差矩阵 $\boldsymbol{\Gamma}_p$ 正定。
 
+## 几何直观
+
+![一排高度逐次衰减的蓝色柱表示各阶自相关，红色虚线穿过柱顶勾出几何衰减](images/th-093-05-yule-walker.svg)
+
+图意在说明：自协方差之间满足同一组线性递推，取前若干阶写成矩阵即可解出系数。
+
 ## 二、原理思路
 
 将 AR 方程两边同乘以 $X_{t-h}$ 并取期望，由因果性可知 $\varepsilon_t$ 与过去值正交，从而得到 $\gamma(h)$ 的线性递推关系。取 $h=1,\dots,p$ 即得矩阵方程组，正定的 $\boldsymbol{\Gamma}_p$ 保证了系数可逆求解。

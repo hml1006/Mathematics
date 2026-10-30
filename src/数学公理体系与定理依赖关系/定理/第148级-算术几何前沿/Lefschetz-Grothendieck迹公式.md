@@ -12,6 +12,12 @@ Grothendieck-Lefschetz 迹公式是 étale 上同调理论的核心定理（SGA 
 
 本条目与"椭圆曲线与模形式"层级的 Lefschetz 迹公式形成对照：那里用同调上的线性迹数不动点，这里把同调换成 étale（紧支）上同调、把映射换成 Frobenius 对应，是同一原理在算术世界的化身。
 
+## 几何直观
+
+![左侧椭圆内散落点，右侧三层上同调的迹交错相加](images/th-148-03-grothendieck-trace.svg)
+
+图意在说明：曲线在有限域上的点数，等于 Frobenius 在每层上同调上作用的迹的交错和。
+
 ## 二、原理思路
 
 1. **有理点即不动点**：$x\in X(\mathbb{F}_{q^n})$ 当且仅当表示 $x$ 的闭点在几何 Frobenius 下不变，等价地图像 $\Gamma_{\mathrm{Frob}^n}$ 与对角 $\Delta_{\bar X}$ 在 $\bar X\times\bar X$ 中的相交只含该点。

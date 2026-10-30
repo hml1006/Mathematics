@@ -10,6 +10,12 @@
 
 主成分分析（PCA）寻找使投影后方差最大的正交方向。该定理用 Lagrange 乘子法证明：单位方向 $\boldsymbol w$ 上投影方差 $\boldsymbol w^\top\boldsymbol S\boldsymbol w$ 的最大值正是协方差矩阵 $\boldsymbol S$ 的最大特征值，极值方向即对应特征向量。
 
+## 几何直观
+
+![斜置的点云沿蓝色主轴展开，橙色虚线把点垂直投到主轴上，投影点铺得最开](images/th-116-02-pca-variance.svg)
+
+图意在说明：在所有候选方向中，投影方差最大的那个方向正是协方差矩阵最大特征值对应的特征向量。
+
 ## 二、原理思路
 
 把“方差最大”写成带约束的优化问题，用 Lagrange 乘子法求驻点，得到的驻点方程恰是特征值方程 $\boldsymbol S\boldsymbol w=\lambda\boldsymbol w$。最大特征值给出最大方差，其对应特征向量即第一主成分方向，后续方向据正交约束依次取最大特征值。

@@ -16,6 +16,12 @@ Portmanteau 定理（名字来自法语的"portemanteau"，衣帽架，取"把�
 
 推论是极其有用的：证明一个序列弱收敛时，只需在最方便的版本下工作；证明紧性定理（Prokhorov）时，"$\nu\mapsto\nu(G)$ 对开集下半连续"这样的语句直接来自 (b)；而"连续集上测度收敛"是导出极限分布唯一性、Skorokhod 表示、以及各种极限定理的标准接口。
 
+## 几何直观
+
+![四行概率质量随 n 增大不断挤向零点，全部落在右侧绿色开集内](images/th-041-10-portmanteau.svg)
+
+图意在说明：开集给下极限、闭集给上极限，只有边界为零测集的集合才保证测度收敛。
+
 ## 分析
 
 **前置依赖**：弱收敛的定义（对 $C_b(S)$ 积分收敛）、Borel 测度的定义与 $\sigma$-可加性、单调收敛与控制收敛定理、单调类定理、集合边界 $\partial A=\overline{A}\setminus\mathring A$、距离函数 $x\mapsto d(x,A)$ 的连续性（Lipschitz）、度量空间中的 Urysohn 型构造。

@@ -14,6 +14,12 @@ $$
 dY_t = \Big(\frac{\partial f}{\partial t} + \mu_t\frac{\partial f}{\partial x} + \frac12\sigma_t^2\frac{\partial^2 f}{\partial x^2}\Big)dt + \sigma_t\frac{\partial f}{\partial x}dW_t.
 $$
 
+## 几何直观
+
+![蓝色 W 平方路径带有向上漂移，绿色虚线减去 t 后变成鞅，中间橙色阴影宽度等于 t](images/th-096-05-ito-lemma.svg)
+
+图意在说明：二次变差把二阶项变成 dt，修正之后随机链式法则才恢复鞅性。
+
 ## 二、原理思路
 
 关键在于布朗运动的二次变差 $(dW_t)^2 = dt$（$L^2$ 意义下）。对 $f$ 作二阶 Taylor 展开并代入 $dX_t$，二阶项 $(dX_t)^2=\sigma_t^2dt+o(dt)$ 的贡献不能忽略（量级仍为 $dt$），而 $(dt)^2$、$dt\,dW_t$ 为高阶无穷小，从而得到带二阶修正的微分公式。

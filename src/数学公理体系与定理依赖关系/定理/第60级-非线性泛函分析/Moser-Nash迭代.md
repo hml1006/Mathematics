@@ -12,6 +12,12 @@ Moser-Nash 迭代（Moser-Nash Iteration）是由 Jürgen Moser（1960-61，用�
 
 Moser 迭代成为现代偏微分方程理论中证明弱解有界性、Hölder 连续性、Harnack 不等式与正则性提升的核心技术，被 De Giorgi、Stampacchia 等进一步发展，构成所谓 De Giorgi-Nash-Moser 理论。其思想也深刻影响了几何分析、调和分析、随机分析等领域。
 
+## 几何直观
+
+![抛物线上从右侧出发画三条切线，交点逐个逼近横轴上的根，切点标成橙色](images/th-060-05-moser-nash.svg)
+
+图意在说明：牛顿法每步损失导数，先光滑化再取切线，损失被补回，迭代仍然收敛到解。
+
 ## 二、原理思路
 
 Moser-Nash 迭代的核心思想可以概括为：

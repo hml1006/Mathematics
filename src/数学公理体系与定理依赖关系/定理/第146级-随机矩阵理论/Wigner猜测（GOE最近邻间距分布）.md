@@ -14,6 +14,12 @@ p(s)=\frac{\pi s}{2}e^{-\pi s^2/4},
 $$
 其依据是 $2\times 2$ 正交约化的精确计算。对 GOE 在 $n\to\infty$ 极限，该分布确实是精确的极限（由 sine-核点过程的 EFP with $\beta=1$ 得到），且在 $s\to0$ 时线性排斥 $p(s)\sim s$ — 与泊松不同。
 
+## 几何直观
+
+![间距直方图上叠着 Wigner 曲线与泊松虚线，零点附近 Wigner 曲线贴地而泊松很高](images/th-146-05-level-spacing.svg)
+
+图意在说明：能级间距的分布不是指数型，零点附近概率趋零，说明能级之间确实在互相排斥。
+
 ## 二、原理思路
 
 用行列式/Pfaffian 点过程表达 GOE 边界间距。GOE 的特征值是 $\beta=1$ 的 Pfaffian 点过程，其 gap 概率由某核（含广义 sine 核与积分项）的 Fredholm/Pfaffian 行列式表出。对 $s\to0$ 展开与适当地改写给出 $p(s)\sim s$；对较大 $n$ 的精确可积 GOE 极限密度由该核算到实用精度，数值与 surmise 接近。

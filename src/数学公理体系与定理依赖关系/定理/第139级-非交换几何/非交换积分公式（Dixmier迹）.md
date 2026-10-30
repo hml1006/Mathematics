@@ -14,6 +14,12 @@ $$
 $$
 其中 $\lim_\omega$ 沿自由超滤子 $\omega$ 的广义一致极限。Dixmier 迹是迹（满足 $\mathrm{Tr}_\omega(TS)=\mathrm{Tr}_\omega(ST)$、$\mathrm{Tr}_\omega(T^+)\ge0$、$\mathrm{Tr}_\omega(I)=+\infty$），与普通有限迹两者互相补充。借助它，非交换积分写作 $\int a=\mathrm{Tr}_\omega(a|D|^{-d})$。
 
+## 几何直观
+
+![特征值部分和随 log N 沿一条直线振荡上升，红色小三角标出斜率，斜率即积分](images/th-139-07-dixmier-trace.svg)
+
+图意在说明：特征值按 1/k 衰减时部分和只按 log N 增长，这个对数发散的系数就是可用的非交换积分。
+
 ## 二、原理思路
 
 普通迹对紧算子的对角和收敛，但对 $I$（单位）与许多非紧算子发散。观测到奇异值之和对 $\log$ 的规范：若 $\lambda_n(T)\approx C(\log n)^{-1}$，则 $\frac1{\log N}\sum_1^N\lambda_n$ 有界地逼近 $C$。把有限和沿自由超滤子取极限，"聪明地求平均"砍掉振荡，得到与"求和顺序无关"的数值。这给非交换留数 $=$ 迹公式 $(\mathrm{Res}_{s=0})$ 提供基础，也用于度量 $d$ 维谱三元组中算子的维度信息。

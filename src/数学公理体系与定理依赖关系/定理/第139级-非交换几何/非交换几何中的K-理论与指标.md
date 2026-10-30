@@ -10,6 +10,12 @@
 
 K-理论与指标理论断言：C*-代数的短正合列诱导一个**六边形正合序列（Bott 周期序列）**，其连接映射 $\partial$ 由 Toeplitz 算子自然诱导，从而把指标定理（如 Toeplitz 指标）纳入 K-理论的代数框架，并展示 Bott 周期性 $K_i(\mathcal A)\cong K_{i+2}(\mathcal A)$。
 
+## 几何直观
+
+![K 零与 K 一两个方框由 Bott 周期双向箭头相连，随后经迹箭头汇入整数 Z](images/th-139-05-k-theory-index.svg)
+
+图意在说明：非交换环面的 K 群由投影与酉元生成，Bott 周期让它只看下标奇偶，配对最终把它送到整数。
+
 ## 二、原理思路
 
 对 $\mathcal A$ 的短正合列 $0\to J\to\mathcal A\xrightarrow\pi\mathcal B\to0$，K-函子给出长正合列，因 Bott 周期为 2 呈现为六边形。连接映射 $\partial:K_1(\mathcal B)\to K_0(J)$：把 $\mathcal B$ 的酉 $u$ 提升为 $\mathcal A$ 中的 $v$（非酉），用 $v^*v,vv^*$ 构造投影 $e$，其与固定投影之差在 $J$ 中定义 $K_0$ 类；对偶地 $\partial:K_0(\mathcal B)\to K_1(J)$ 用 $2p-1$ 的可逆化构造酉类。证明分解为良定义性 + 六边形正合性 + Toeplitz 指标对应。

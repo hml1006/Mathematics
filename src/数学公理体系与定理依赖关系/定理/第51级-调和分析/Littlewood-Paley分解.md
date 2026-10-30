@@ -12,6 +12,12 @@ Littlewood-Paley 分解理论是现代调和分析中最重要的工具之一，
 
 Littlewood-Paley 理论最初由 Littlewood 和 Paley 在 1930 年代提出，后经 Marcinkiewicz、Zygmund、Stein 等人发展完善。它不仅是调和分析的基础工具，还在偏微分方程（特别是非线性 PDE 的先验估计）、函数空间理论（Besov 空间、Triebel-Lizorkin 空间的定义）和信号处理（小波分析的前身）中发挥着核心作用。
 
+## 几何直观
+
+![频率轴被切成四段等比彩条，下方是带细密振荡的信号与各频带的能量柱](images/th-051-07-lp-dyadic.svg)
+
+图意在说明：把频率按 2 的幂切成互不重叠的环带，每带只保留一个尺度的振荡，各带相加又还原整个函数。
+
 ## 二、原理思路
 
 **频率分解的直觉**：一个函数 $f$ 可以看作由不同频率的成分叠加而成。Littlewood-Paley 分解将频率空间 $\mathbb{R}^n$ 分成一系列环形区域（annuli）：

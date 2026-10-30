@@ -10,6 +10,12 @@
 
 Helly 定理是离散凸几何的三大根基定理之一：在 $\mathbb{R}^d$ 中，一族凸集的整体相交性由"任意 $d+1$ 个"的局部相交性完全决定。它是覆盖与相交问题的核心工具。
 
+## 几何直观
+
+![四个彩色凸集互相叠压，重叠的中心处用一个红点标出公共交点](images/th-087-04-helly-common-point.svg)
+
+图意在说明：只要任意 d+1 个凸集都有公共点，整族凸集就会共享同一个点。
+
 ## 二、原理思路
 
 对集合数 $n>d+1$ 归纳。设 $A_i=\bigcap_{j\ne i}C_j\ne\varnothing$ 并选 $a_i\in A_i$，得到 $n$ 个点。由 Radon 定理，$n$ 个点可分成 $P,Q$ 使 $\operatorname{conv}(P)\cap\operatorname{conv}(Q)\ne\varnothing$，取 $x$ 在交中。对任意 $i$，$P\cup Q$ 中除 $a_i$ 外全在 $C_i$ 中且 $a_i$ 归属的那组在其余凸集里，又凸性保证 $\operatorname{conv}(P)\subseteq C_i$ 或 $\operatorname{conv}(Q)\subseteq C_i$，故 $x\in C_i$。

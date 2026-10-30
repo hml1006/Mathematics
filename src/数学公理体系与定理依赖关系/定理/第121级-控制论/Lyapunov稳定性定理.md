@@ -10,6 +10,12 @@
 
 Lyapunov 稳定性定理给出自治系统 $\dot{\boldsymbol x}=\boldsymbol f(\boldsymbol x)$（$\boldsymbol f(\boldsymbol 0)=\boldsymbol 0$）稳定性的充分条件：若存在正定函数 $V$ 使 $\dot V\le0$，则原点 Lyapunov 稳定；若 $\dot V<0$ 则渐近稳定；并结合 LaSalle 不变原理处理 $\dot V$ 仅半负定的情形。
 
+## 几何直观
+
+![同心椭圆等值线被橙色虚线 ε 球包住，红色轨道从内层出发向内收拢](images/th-121-02-lyapunov.svg)
+
+图意在说明：正定 V 的等值线层层包围原点，V 沿轨道不增，轨道便无法穿出 ε 球。
+
 ## 二、原理思路
 
 用“能量水平”刻画：$V$ 正定、在球面有正下界，且沿轨道递减，故轨道无法逃离等值线所围区域。渐近稳定性需证明 $V\to0$，反设下界 $c>0$ 并利用紧集上的负定导出矛盾；LaSalle 原理用 $\omega$-极限集处理半负定。

@@ -10,6 +10,12 @@
 
 Toën–Vezzosi 的导出代数几何基本定理（见《Homotopical Algebraic Geometry》）提供了以 $k$-模块与谱环构造导出 stack 与概形的系统方案：定义了 $\mathbb{E}_\infty$-概形、Ketchen（派生）stack、cotangent complex 及其对偶切复形，并证明了它们在其仿射/局部化下满足经典几何的全部性质适应——这就是"导出代数几何存在性/相容"的基本定理群。
 
+## 几何直观
+
+![dg 代数取谱得到 dg 谱，两块谱沿交叠粘合成导出叠，下方标出局部仿射](images/th-145-02-tv-foundation.svg)
+
+图意在说明：把环升级成 dg 代数再取谱，所得仿射片可以粘成导出叠，粘合数据带着高阶信息。
+
 ## 二、原理思路
 
 用 model 及 $\infty$-范畴语言：以 $k$-模块谱（$E_\infty$）与 Hopf 的局部化定义 $\mathbb{E}_\infty$-概形为具 affine 覆盖的层，取其相对 stack 织入 $\mathrm{dg}$。cotangent complex $\mathbb{L}$ 经"mor利润最优切化"(Quillen/Lurie) 定义，掌切空间、形变与带偏差结构。基本定理监管：对 stack $X$，$\mathbb{L}_X$ 存在且相应 $T^i$ 刻画障碍，并对 hallmark 反 iter、平稳交、推前有良好行为。

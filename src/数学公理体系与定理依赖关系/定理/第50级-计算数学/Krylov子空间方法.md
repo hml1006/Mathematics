@@ -8,6 +8,12 @@
 
 Krylov子空间方法（Krylov Subspace Methods）是求解大型稀疏线性方程组 $Ax = b$ 和特征值问题的一类最有效的迭代方法。Krylov子空间方法的理论基础是 Krylov 子空间 $\mathcal{K}_k(A, v) = \mathrm{span}\{v, Av, A^2v, \ldots, A^{k-1}v\}$。通过在此子空间中寻找近似解，Krylov 方法只需使用矩阵-向量乘积，不需要显式访问矩阵元素，特别适合大型稀疏问题。最重要的 Krylov 方法包括：共轭梯度法（CG，对称正定）、GMRES（一般非对称）、MINRES（对称不定）、BiCGSTAB（非对称）和 Lanczos 方法（特征值问题）。
 
+## 几何直观
+
+![从初始残差出发，Krylov 子空间像同心椭圆逐层扩大，解被包在中心](images/th-050-02-krylov-nested.svg)
+
+图意在说明：反复用 A 作用在残差上，张成的子空间不断嵌套扩大，最优解就被一层层夹在越来越小的椭圆里。
+
 ## 分析
 
 **前置依赖**：Krylov 子空间的定义、Gram-Schmidt 正交化与 Arnoldi 过程、Lanczos 三对角化、最小二乘与 QR 分解、条件数与预处理。

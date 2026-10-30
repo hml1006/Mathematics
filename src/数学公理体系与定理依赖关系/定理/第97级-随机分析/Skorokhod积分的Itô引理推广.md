@@ -16,6 +16,12 @@ $$
 
 进一步，对 Skorokhod 过程 $X_t$，$Y_t=f(t,X_t)$ 有推广的 Itô 引理。
 
+## 几何直观
+
+![时空平面被对角线分成可料与未来两块，橙点落在未来区，箭头把它投影回对角线](images/th-097-07-skorokhod-trace.svg)
+
+图意在说明：允许被积过程偷看未来，Skorokhod 积分就比 Itô 积分多出一项对角线的迹修正。
+
 ## 二、原理思路
 
 分部积分公式本质上是 $D$ 与 $\delta$ 的对偶恒等式的直接推论：$\mathbb{E}[F\delta(u)]=\mathbb{E}\int_0^T D_tF\cdot u_t dt$。对 $X_t$ 用推广的 Itô 公式时，由于微分的积分是不适应积分，会出现来自 $[D,\delta]$ 交换产生的修正项（含 $D_t\sigma_s$ 与 $D_s(\partial_xf\,\sigma_t)$ 的积分），体现非因果性。

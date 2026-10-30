@@ -10,6 +10,12 @@
 
 Möbius 反演公式是"包含-排除/累加"的偏序推广：在局部有限偏序集 $(P,\le)$ 上，若 $g(x)=\sum_{y\le x}f(y)$，则 $f(x)=\sum_{y\le x}\mu(y,x)g(y)$，其中 $\mu$ 由递归 $\mu(x,x)=1$、$\sum_{x\le z\le y}\mu(x,z)=0\ (x<y)$ 定义。它与关联代数中 $\mu=\zeta^{-1}$ 等价。
 
+## 几何直观
+
+![整除偏序的六点哈斯图由下向上连线，每个结点旁注红色 Möbius 函数值](images/th-080-04-mobius.svg)
+
+图意在说明：累加与反解由互为逆元的 Zeta 函数与 Möbius 函数给出，反演只差乘一个 μ。
+
 ## 二、原理思路
 
 在关联代数 $I(P)$（函数 $\alpha:\{(x,y):x\le y\}\to\mathbb{C}$，卷积 $(\alpha*\beta)(x,y)=\sum_{x\le z\le y}\alpha(x,z)\beta(z,y)$）中，Zeta 函数 $\zeta(x,y)=1_{x\le y}$，Möbius 函数 $\mu=\zeta^{-1}$。关系 $g=\sum_{y\le x}f(y)$ 即 $g=f*\zeta$，故 $f=g*\mu=f*\zeta*\mu$，展开得到反演公式。

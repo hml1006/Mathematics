@@ -18,6 +18,12 @@ $$
 $$
 其中 $\mathcal F(M)$ 是 $M$ 的 Fukaya 范畴（A-模型），$D^b\mathrm{Coh}(W)$ 是 $W$ 上凝聚层的有界导出范畴（B-模型）。即 $M$ 的辛几何与 $W$ 的代数几何在范畴层面等价。
 
+## 几何直观
+
+![两侧导出范畴方框由 Fourier–Mukai 双向箭头相连，下方核对象以虚线指向上方函子](images/th-140-02-homological-mirror.svg)
+
+图意在说明：镜像两侧的导出范畴由 Fourier–Mukai 核给出等价，Hom 与 Ext 群逐一同构。
+
 ## 二、原理思路
 
 两大范畴各有所长。Fukaya 范畴的对象是满足 Maslov/相条件与平直酉丛的 Lagra ngian 子流形，态射为 Floer 链复形 $CF^*(L_0,L_1)=\bigoplus_{p\in L_0\cap L_1}\mathbb Cp$，$A_\infty$-运算 $\mathfrak m_k$ 由计数伪全纯圆盘的模空间（以横截交点为标记）给出，$A_\infty$-关系源于模空间边界退化。导出范畴 $D^b\mathrm{Coh}(W)$ 建于凝聚层的链复形，态射为拟同构类。证明靠构造镜像函子 $\Phi$ 并验证全忠实与本质满射；五次超曲面情形通过矩阵因子化与 Landau-Ginzburg 对应显式验证。

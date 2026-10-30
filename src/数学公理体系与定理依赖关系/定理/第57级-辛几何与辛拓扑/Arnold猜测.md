@@ -14,6 +14,12 @@ Arnold 猜想由 Vladimir Arnold 于 20 世纪 60 年代提出，是辛拓扑与
 
 Arnold 猜想由 Andreas Floer 在 1988 年左右通过他创立的 Floer 同调理论证明（在 $\pi_2(M) = 0$ 或 $\omega|_{\pi_2} = 0$ 等假设下），这是 Floer 同调的诞生地。后续由 Fukaya-Ono、Liu-Tian、Hofer-Salamon 等推广至一般闭辛流形。
 
+## 几何直观
+
+![环面上的波形函数标出四个红色临界点，下面三个 Betti 数框合计为四](images/th-057-01-arnold-conjecture.svg)
+
+图意在说明：Hamilton 流推过整个流形，被压住不动的点数量下界正是 Betti 数之和。
+
 ## 二、原理思路
 
 Arnold 猜想的原理思路如下：

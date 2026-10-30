@@ -10,6 +10,12 @@
 
 导出Hilbert概形的光滑性讨论了把经典 Hilbert 概形派生化之后所得的导出对象在合适意义下的 smoothness。经典 Hilbert 概形常有 nilpotent/多余切结构；其派生版本（以导出张积/导出 universal family 构造）在导形态射资格下（切锥、cotangent complex 零阶）呈现光滑性，即全部多余切即压制。
 
+## 几何直观
+
+![模空间圆盘中心一点向八个方向伸出形变箭头，下方红框标出障碍群为零](images/th-145-03-hilbert-smoothness.svg)
+
+图意在说明：每个形变方向都能继续走下去，因为二阶障碍所在的群为零，模空间自然光滑。
+
 ## 二、原理思路
 
 用派生形变理论审视：$\mathrm{Hilb}^\mathrm{der}_X$ 的 cotangent complex 由 universal family 与 push-forward 组合而来；其"多余"部分源于分解族（作为 quotient）的 kernel。导出结构把这一切用 $\pi_{<0}\Omega$ 承载，而光滑性即意味着这些同伦群消失且基本无组合障碍——使 moduli "派生光滑"。

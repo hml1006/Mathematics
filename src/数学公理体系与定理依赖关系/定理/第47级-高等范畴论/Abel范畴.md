@@ -8,6 +8,12 @@
 
 Abel范畴（Abelian Category）是范畴论中一种重要的范畴类型，它结合了加性范畴和某些良好性质，使得可以在其中进行同调代数运算。Abel范畴的概念由 Alexandre Grothendieck 在其1957年的里程碑论文《Sur quelques points d'algèbre homologique》中系统阐述。Abel范畴是核与余核都存在且满足某些相容性条件的加性范畴，其核心性质是：每个态射都有核和余核，且每个单态射都是余核，每个满态射都是核。典型例子包括：Abel群范畴 $\mathbf{Ab}$、环上的模范畴 $\mathbf{R\text{-}Mod}$、以及某些函子范畴。
 
+## 几何直观
+
+![一行对象 0 到 A 到 B 到 C 到 0，下方三个方框分别标出核、像与余核](images/th-047-01-abelian-category.svg)
+
+图意在说明：Abel 范畴里每个箭头都有核与余核，像等于下一个核，正合与同调才有意义。
+
 ## 分析
 
 **前置依赖**：加性范畴、核与余核、单态射与满态射、正合序列。

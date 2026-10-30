@@ -8,6 +8,12 @@
 
 Weitzenböck 公式由奥地利数学家 Roland Weitzenböck 在 1923 年研究旋量场时给出，后经 Bochner、Lichnerowicz、Gårding 等人推广。它断言：Hodge–de Rham 拉普拉斯算子 $\Delta_H=\mathrm d\delta+\delta\mathrm d$ 与联络拉普拉斯算子 $\nabla^*\nabla$（"粗糙拉普拉斯"）只相差一个由曲率构成的零阶算子，即 $\Delta_H=\nabla^*\nabla+\mathcal R$。这个恒等式是黎曼几何与指标理论的枢纽。它的作用在于：$\Delta_H$ 的核是调和形式（其维数就是 Betti 数），而 $\nabla^*\nabla$ 的核是平行形式（往往只有常数）；Weitzenböck 项 $\mathcal R$ 定量刻画了两者的差别。当曲率项正定（例如 $\mathrm{Ric}>0$ 且讨论 1-形式），由最大值原理便可知没有非平凡调和形式，得到 Bochner 消没定理。对旋量丛则得到 Lichnerowicz 公式 $D^2=\nabla^*\nabla+\frac{1}{4}\mathrm{Scal}$，它是 Lichnerowicz 特征值估计、Atiyah–Singer 指标定理与 Seiberg–Witten 理论中"曲率强制指标消失"的技术核心。
 
+## 几何直观
+
+![曲面上的一形式箭头，下方三个方框把总拉普拉斯拆成粗糙二阶导与曲率修正](images/th-049-14-weitzenboeck-formula.svg)
+
+图意在说明：形式上的 Hodge 拉普拉斯等于粗糙拉普拉斯加一个零阶曲率项。
+
 ## 分析
 
 **前置依赖**：黎曼联络与协变导数、外微分与余微分、Hodge Laplacian、Riemann曲率张量的对称性、Clifford 代数与 Dirac 算子、Bochner 公式。

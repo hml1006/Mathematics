@@ -18,6 +18,12 @@ $$g^B_{j\bar{k}}(z) = \frac{\partial^2 \log K_\Omega(z)}{\partial z_j \partial \
 
 在单复变中，Bergman 度量在单连通严格凸域上与 Poincaré 度量重合；在多复变中，Bergman 度量是研究双全纯刚性、等价问题的核心工具。Lu Qi-Keng 猜测、Bergman 度量的齐性空间分类等是当代多复变研究热点。
 
+## 几何直观
+
+![单位圆盘里核在 z 处隆起一个峰，下方小图显示核权重随半径急剧上升](images/th-056-01-bergman-kernel.svg)
+
+图意在说明：Bergman 核像一只水龙头，把整个平方可积全纯函数空间按点抽出数值，其对角值又是度量的权重。
+
 ## 二、原理思路
 
 Bergman 核理论的根本思想是利用 $L^2$ 全纯函数空间的 Hilbert 空间结构再生点赋值。

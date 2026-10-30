@@ -14,6 +14,12 @@ $$
 
 Yang–Mills 存在性与质量间隙问题（Clay 千禧年问题）要求严格证明：对 $\mathbb R^4$ 上的 $SU(2)$ Yang–Mills，存在满足 Wightman 公理（质量隙/非线性收敛）的量子场论 $\{H,P,J,\Gamma\}$，Hamiltonian 谱在零与 $\Delta>0$（质量间隙）之间有隙。数十年涌动格点 QCD 证据强力支持，但严格证明仍未完成。
 
+## 几何直观
+
+![能量谱上基态贴着零，之后一段空白，再往上是连续铺开的激发态](images/th-150-04-mass-gap.svg)
+
+图意在说明：Yang-Mills 的 Hamiltonian 谱若在零与某个正数 Delta 之间没有态，理论就具有正的质量间隙。
+
 ## 二、原理思路
 
 其核心策略是格点规范理论：将 $\mathbb R^4$ 正则化为格点 $\Lambda=a\mathbb Z^4\cap[0,L]^4$，链接变量 $U_\ell=P\exp(i\int_\ell A)$ 代离散规范；取 Wilson 作用量 $S_W$ 后强耦合（$\beta\ll1$）的 Wilson 圈期望呈面积律 $\langle W(C)\rangle\sim e^{-A\cdot\text{Area}(C)}$，此即质量隙征兆。然后试图取连续极限/重整化并验证 Wightman 公理。

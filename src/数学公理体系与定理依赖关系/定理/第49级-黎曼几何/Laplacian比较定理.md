@@ -10,6 +10,12 @@ Laplacian 比较定理（Laplacian Comparison Theorem，亦称距离函数的 Bo
 
 它把"曲率如何影响体积与平均值"这一直观量化出来：距离函数的拉普拉斯等于测地球面的平均曲率，而平均曲率在测地线沿径向随曲率演化。若 $\mathrm{Ric}\ge(n-1)k$，则 $\Delta\rho$ 至多等于常曲率 $k$ 的模型空间（球面 $k>0$、欧氏 $k=0$、双曲 $k<0$）中相应距离函数的拉普拉斯。此定理是 Bishop–Gromov 体积比较、Cheeger–Gromoll 分裂定理、Bonnet–Myers 定理、以及强极大值原理与特征值估计的共同基础。
 
+## 几何直观
+
+![以 p 为心的同心圆中，蓝色实际球面比灰色欧氏参照圆略小](images/th-049-08-laplacian-comparison.svg)
+
+图意在说明：Ricci 曲率非负时距离函数的拉普拉斯不超过平直值，球面面积增长变慢。
+
 ## 分析
 
 **前置依赖**：Ricci 曲率、测地线与指数映射、Jacobi 场与第二变分公式、距离函数与 cut locus、Hessian 与 Laplace–Beltrami 算子、Bochner 公式、Riccati 方程的比较原理。

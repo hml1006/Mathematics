@@ -10,6 +10,12 @@
 
 Hausdorff 维数（精确但难算）与盒维数（直观但粗略）是两种最重要的分形维数定义。本定理建立了它们之间的基本不等式，给出了两种维数的相对位置，并指出反向不等式的失效原因。
 
+## 几何直观
+
+![六乘六的盒子网格覆盖一个稀疏点集，十六个盒子被染蓝，右上角一格标出边长 δ](images/th-089-03-box-dimension.svg)
+
+图意在说明：盒覆盖给出 s 维测度的上界，因此 Hausdorff 维数总不超过下盒维数，也不超过上盒维数。
+
 ## 二、原理思路
 
 核心思想是用盒覆盖给出的粗估计去控制 $s$ 维 Hausdorff 测度：若用 $N_\delta(F)$ 个直径为 $\delta$ 的集合覆盖 $F$，则该覆盖对 $\mathcal{H}^s_\delta(F)$ 的贡献不超过 $N_\delta(F)\cdot\delta^s$。当 $s<\dim_H F$ 时 $\mathcal{H}^s(F)=\infty$，迫使 $N_\delta(F)\delta^s>1$，从而把 $\log N_\delta/-\log\delta$ 压低在 $s$ 之上。

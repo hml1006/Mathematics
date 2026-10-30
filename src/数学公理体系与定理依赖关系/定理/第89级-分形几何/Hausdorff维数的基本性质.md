@@ -10,6 +10,12 @@
 
 Hausdorff 维数是刻画分形"填充空间程度"的核心不变量。本节给出它的一组基本性质，包括单调性、可数稳定性、Lipschitz 不变性、等距不变性与开集性，这些性质是后续计算所有经典分形维数的基石。
 
+## 几何直观
+
+![线段里嵌着 Cantor 集，下方三个小 Cantor 集维数各异，括号标出并集取最大](images/th-089-04-dimension-properties.svg)
+
+图意在说明：子集维数不超过母集，可数并取上确界，Lipschitz 映射不会把维数放大。
+
 ## 二、原理思路
 
 Hausdorff 维数基于 $s$ 维 Hausdorff 外测度 $\mathcal{H}^s$：对 $s<\dim_H F$ 有 $\mathcal{H}^s(F)=\infty$，而 $s>\dim_H F$ 时有 $\mathcal{H}^s(F)=0$。各性质的证明都归约为：在临界指数处利用测度的单调性、可数次可加性与 Lipschitz 常数对直径的放大来控制 $\mathcal{H}^s$，从而比较维数。

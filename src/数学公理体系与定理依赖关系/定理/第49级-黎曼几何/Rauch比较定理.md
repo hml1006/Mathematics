@@ -8,6 +8,12 @@
 
 Rauch比较定理（Rauch Comparison Theorem）是黎曼几何中最重要的比较定理之一，由 H. E. Rauch 在1951年提出。该定理通过比较不同流形上的 Jacobi 场来建立截面曲率与测地线偏离速度之间的关系。具体地说，如果两个 Riemann 流形 $M$ 和 $\tilde{M}$ 沿测地线的截面曲率满足 $K_M \ge K_{\tilde{M}}$，则 $M$ 上的 Jacobi 场增长不超过 $\tilde{M}$ 上的 Jacobi 场。Rauch比较定理是后续许多比较定理（如 Toponogov 比较定理、Bishop–Gromov 体积比较定理）的基础，在几何分析中有着广泛的应用。
 
+## 几何直观
+
+![左右两束测地线，左侧曲率较大使偏离更短，右侧平坦空间偏离更长](images/th-049-10-rauch-comparison.svg)
+
+图意在说明：曲率更大时 Jacobi 场增长更慢，测地线散开得更缓，共轭点来得更早。
+
 ## 分析
 
 **前置依赖**：测地线与Jacobi场、Jacobi方程、截面曲率、测地线与弧长参数化、共轭点、Riccati方程的比较原理。

@@ -23,6 +23,12 @@ $$
 
 当 $n=3$ 时即经典形式 $\bar u_{tt}=c^2\bigl(\bar u_{rr}+\frac{2}{r}\bar u_r\bigr)$。更一般地，形如 $u_{tt}+\frac{k}{t}u_t=c^2\Delta u$ 的方程（称为广义 EPD 方程）也属于同类。方程在 $r=0$ 处奇异，但通过 $z=r\,\bar u$ 可化为一维波动方程，从而获得显式解——这正是 Kirchhoff 公式的核心步骤。
 
+## 几何直观
+
+![同一列波在三个时刻的波形逐次变矮，下方曲线画出振幅随时间的衰减](images/th-068-01-euler-poisson-darboux.svg)
+
+图意在说明：阻尼项只压小振幅而不改变波形与波速，波动随时间的衰减速率为幂律。
+
 ## 二、原理思路
 
 1. **导出 EPD**：球面平均把 $\Delta u$ 的球面平均写成 $\bigl(r^{\,n-1}\bar u_r\bigr)_r/r^{\,n-1}$，代回 $u_{tt}=c^2\Delta u$ 即得 EPD 方程。

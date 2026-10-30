@@ -12,6 +12,12 @@
 $$Z(E/\mathbb{F}_q,T)=\frac{1-aT+qT^2}{(1-T)(1-qT)},$$
 配合多项式根的模条件 $|\alpha|=\sqrt q$。这是 Weil 猜想体系中最基础又完整的样例。
 
+## 几何直观
+
+![蓝色点列沿着 q 的 m 次幂虚线攀升，全部落在橙色偏差带之内](images/th-077-03-weil-conjecture.svg)
+
+图意在说明：有限域上的点数由 q 的 m 次幂主导，误差不超过两倍平方根，这正是有限域的黎曼假设。
+
 ## 二、原理思路
 
 核心对象是 Frobenius 态射。$\mathbb{F}_q$-Frobenius 映射 $\operatorname{Frob}_q$（$(x:y:z)\mapsto(x^q:y^q:z^q)$）作用在 Tate 模 $T_\ell(E)\cong\mathbb{Z}_\ell^2$ 上得到一个 $\mathbb{Z}_\ell$-线性变换 $F$。由 Lefschetz 不动点（在 $\ell$-进上同调中的类比）得 $N_m=1-\operatorname{Tr}(F^m)+q^m$。证明 $|\alpha|=\sqrt q$ 用对偶化：$F\circ\hat F=q$ 且 $F,\hat F$ 特征多项式相同，故若 $\alpha$ 是 $F$ 的特征值，则 $q/\alpha=\bar\alpha$，从而 $|\alpha|=\sqrt q$。

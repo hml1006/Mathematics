@@ -10,6 +10,12 @@
 
 GUE 特征值关联函数给出了厄米矩阵（GUE）特征值的有限阶联合统计的行列式结构：谱点构造成行列式点过程，其 $k$-点关联（连同边缘）由 Hermite 多项式的核 $K_{n}(x,y)$ 表达。当缩放转变（bulk → sine 核、edge → Airy 核）时给出普适行为，是 Mehta 公式在数学上的核心产物。
 
+## 几何直观
+
+![关联函数曲线在零点落到零，随后振荡回升到一，零点附近的低谷被阴影标出](images/th-146-01-gue-correlation.svg)
+
+图意在说明：两个能级靠得越近出现得越少，关联函数在零点归零，正是能级排斥的统计痕迹。
+
 ## 二、原理思路
 
 GUE 特征值联合密度具有 Vandermonde 形式 $\propto e^{-\frac{n}{2}\sum \lambda_i^2}\prod_{i<j}(\lambda_i-\lambda_j)^2$。用 Hermite 多项式（正交多项式）展开 Vandermonde 行列式，得到行列式核表示：对任意 $k$，$k$-点关联 $R_k$ 等于相应 $k\times k$ 行列式 $\det[K_n]$。`K_n` 被写成 Christoffel–Darboux 核，缩放后收敛到 sine/Airy 核。

@@ -14,6 +14,12 @@ W_{\mathcal C^\perp}(x,y)=\frac{1}{|\mathcal C|}W_{\mathcal C}\big(y-x,\ y+(q-1)
 $$
 等价地逐系数用 **Krawtchouk 多项式** $P_j(i;n,q)$ 表示。
 
+## 几何直观
+
+![左侧蓝色柱状为原码重量分布，右侧橙色柱状为对偶码分布，中间箭头相连](images/th-113-04-macwilliams.svg)
+
+图意在说明：原码与对偶码的重量分布由一个 Fourier 型变换互相决定，算清一边就等于算清另一边。
+
 ## 二、原理思路
 
 用**有限 Fourier 分析**。引入非平凡加法特征 $\chi$，把指示函数 $\mathbf 1_{\mathcal C}$ 做 Fourier 变换：因 $\mathcal C$ 是子空间，$\widehat{\mathbf1}_{\mathcal C}(u)=|\mathcal C|\,\mathbf1_{\mathcal C^\perp}(u)$（在 $\mathcal C^\perp$ 上为 $|\mathcal C|$、否则为 0）。对 $g(v)=x^{w(v)}y^{n-w(v)}$ 用 **Poisson 求和公式**：$\sum_{v\in\mathcal C}g(v)=\frac1{|\mathcal C^\perp|}\sum_{u\in\mathcal C^\perp}\hat g(u)$。计算 $\hat g(u)=(y-x)^{w(u)}(y+(q-1)x)^{n-w(u)}$，代回并整理即得恒等式。

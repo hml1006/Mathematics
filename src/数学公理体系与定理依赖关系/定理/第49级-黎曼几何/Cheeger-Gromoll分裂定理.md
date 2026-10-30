@@ -12,6 +12,12 @@ Cheeger-Gromoll 分裂定理是 Riemann 几何中的基本定理，由 Jeff Chee
 
 分裂定理是比较几何的核心结果，与 Bonnet-Myers 定理、Cartan-Hadamard 定理一起构成了曲率与拓扑关系的完整图景。它在几何分析、广义相对论和群论中有重要应用。
 
+## 几何直观
+
+![柱面上一条笔直的红色直线穿过各层截面，截面都是同一个 N](images/th-049-04-cheeger-gromoll-splitting.svg)
+
+图意在说明：非负 Ricci 曲率且含一条直线时，流形等距分裂为 N 与直线的乘积。
+
 ## 二、原理思路
 
 **核心思想**：非负 Ricci 曲率下，直线（totally geodesic line）的存在迫使流形分裂为积结构。

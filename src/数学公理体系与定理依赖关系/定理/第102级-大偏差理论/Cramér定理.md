@@ -17,6 +17,12 @@ $$
 \mathbb P(\overline X_n\in B)\approx\exp\big(-n\inf_{x\in B}I(x)\big).
 $$
 
+## 几何直观
+
+![凸的速率函数曲线在均值处触底为零，偏离点处的高度标出指数衰减速率](images/th-102-02-cramer.svg)
+
+图意在说明：样本均值偏离到 a 的概率按指数衰减，指数由速率函数在 a 处的高度给出。
+
 ## 二、原理思路
 
 上界用 Chebyshev 型指数（切尔诺夫）不等式：$\mathbb P(S_n\ge na)\le e^{-\theta na}\mathbb E[e^{\theta S_n}]=e^{-n(\theta a-\Lambda(\theta))}$，对 $\theta>0$ 取下确界。下界用指数鞅与 Esscher 测度 $\frac{d\mathbb Q_\theta}{d\mathbb P}=e^{\theta S_n-n\Lambda(\theta)}$ 倾斜，使新测度下均值 $\Lambda'(\theta_a)=a$，配合中心极限定理得到精确的指数下界。

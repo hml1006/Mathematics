@@ -14,6 +14,12 @@ $$
 $$
 满秩（$\mathrm{rank}\,\mathcal C=n$）。它把“可控”从动态可达性化为一个纯粹的线性代数检验。
 
+## 几何直观
+
+![从原点出发的七条蓝色轨道指向各方向的圆周点，红色粗箭头指向目标 x1](images/th-121-05-kalman-rank.svg)
+
+图意在说明：可控性矩阵满秩时可达集是整个状态空间，任何目标状态都能用某个输入把它送到。
+
 ## 二、原理思路
 
 可控性等价于可控性 Gramian $\boldsymbol W_c(t)$ 的可逆性。借助 Cayley-Hamilton 定理把 $e^{\boldsymbol A\tau}$ 表为 $\boldsymbol A^0,\dots,\boldsymbol A^{n-1}$ 的组合，进而证明 Gramian 可逆 $\iff$ 可控性矩阵满秩。

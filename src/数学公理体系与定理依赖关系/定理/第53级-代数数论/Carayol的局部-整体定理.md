@@ -10,6 +10,12 @@
 
 Carayol 的局部-整体定理（théorème local-global）由 Henri Carayol 在 1986 年关于模 $\ell$ 伽罗瓦表示的论文中证明，是 Serre 模性猜想研究过程中的关键一步。背景是 Serre 在 1970 年代提出的猜想：任何一个连续的、奇异的（odd）、不可约的模 $\ell$ 伽罗瓦表示 $\bar\rho:G_{\mathbb Q}\to\mathrm{GL}_2(\bar{\mathbb F}_\ell)$ 都来自一个权为 $k(\bar\rho)$、水平为 $N(\bar\rho)$ 的模形式，其中 $k,N$ 由所谓"局部配方"（Serre 的 recipe）从 $\bar\rho$ 在分解群 $G_{\mathbb Q_p}$ 上的限制算出。要证明这样的全局提升存在，必须先弄清局部条件与全局模形式的关系。Carayol 的定理给出了答案：模 $\ell$ 伽罗瓦表示的局部数据（$p\ne\ell$ 处的分解群类型、$\ell$ 处惯性群给出的权）与模形式的局部成分在局部 Langlands 对应下完全相容，因此 Serre 的局部配方是"正确且可实现"的。这一定理把全局模性问题归约为逐素数的局部问题，并与局部 Langlands 对应、Hecke 算子的作用、模形式空间的 multiplicity one 性质深度结合。它是后来 Breuil–Conrad–Diamond–Taylor 与 Khare–Wintenberger 完整证明 Serre 猜想（并由此给出 Fermat 大定理的新证明）的基础环节。
 
+## 几何直观
+
+![底部四个小圆代表各素点的局部表示，绿色箭头一起汇入上方的大圆](images/th-053-02-carayol-local-global.svg)
+
+图意在说明：每个素点给出一份局部表示，只要它们彼此相容，就能拼成一个整体的自守表示。
+
 ## 二、原理思路
 
 1. **把全局表示分解为局部表示。** 由限制映射，$\bar\rho$ 的信息完全由各 $\bar\rho_p:=\bar\rho|_{G_{\mathbb Q_p}}$ 组成；要说明 $\bar\rho$ 来自模 $\ell$ 模形式，只需逐个素数与局部条件匹配。

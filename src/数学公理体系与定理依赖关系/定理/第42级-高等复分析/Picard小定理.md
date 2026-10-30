@@ -8,6 +8,12 @@
 
 Picard 小定理（Picard's little theorem）是复分析中最深刻的定理之一，由 Charles Émile Picard 在 1879 年证明。该定理断言：非常数整函数的值域要么是整个复平面 $\mathbb{C}$，要么是 $\mathbb{C}$ 去掉一个点（即最多有一个例外值）。这是 Liouville 定理（有界整函数为常数）的巨大推广，深刻地揭示了整函数的本质。
 
+## 几何直观
+
+![整个复平面被绿色阴影铺满表示取到的值，原点处只留一个红色小洞](images/th-042-12-picard-little.svg)
+
+图意在说明：非常数整函数的值域覆盖整个复平面，至多只遗漏一个点，Liouville 定理只是它的特例。
+
 ## 分析
 
 整函数、Liouville定理、Casorati–Weierstrass 定理、模函数、单值化定理。

@@ -14,6 +14,12 @@ $$
 $$
 即每个二维定向 TQFT $Z:\mathrm{Cob}_2^{\mathrm{or}}\to\mathrm{Vect}_{\mathbb C}$ 确定一个交换 Frobenius 代数 $A=Z(S^1)$（同 $Z(D)$ 的 $-{e}$ 迹），反之每个交换 Frobenius 代数给出唯一 TQFT。这是 TQFT 最经典且完整的分类结果。
 
+## 几何直观
+
+![裤子曲面给乘法，帽子曲面给迹，两者都被送进同一个向量空间](images/th-149-01-2d-tqft-frobenius.svg)
+
+图意在说明：把裤子与帽子分别赋值为乘法与迹，二维 TQFT 就与交换 Frobenius 代数一一对应。
+
 ## 二、原理思路
 
 识别的关键是二维曲面的"手术/分解引理"：任何二维定向闭曲面可由圆盘、裤子（pair of pants）与圆柱（帽）粘合而成，而 TQFT 把"S与帽"赋予代数结构。于是定义 $A=Z(S^1)$，乘法 $m=Z(\text{裤子}):A\otimes A\to A$、单位 $u=Z(\text{圆盘}):\mathbb C\to A$、迹 $\varepsilon=Z(\text{帽}):A\to\mathbb C$，Frobenius 关系由曲面上的拓扑恒等（割/拼）保证。

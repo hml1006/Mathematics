@@ -16,6 +16,12 @@ $$(\omega+\sqrt{-1}\partial\bar\partial\varphi)^n=e^F\,\omega^n,\qquad \omega+\s
 
 这个方程是 Calabi 猜想（1954 年提出）的分析形式，1978 年由丘成桐在**先验估计 + 连续性方法**的框架下完全解决，其结论即为 Calabi-Yau定理。方程的历史原型是实 Monge–Ampère 方程 $\det(D^2u)=f$（Minkowski、Alexandrov 研究过），而它的解法（$C^0$、$C^2$ 估计，Evans–Krylov–Safonov 正则性，Schauder 自举）后来成为整个非线性椭圆方程理论的范式，并直接启发了 Ricci 流与 Kähler–Einstein 度量存在性（Yau–Tian–Donaldson 猜想）的研究。
 
+## 几何直观
+
+![圆盘内三层同心等位线由中心向外扩张，中心区域着色较深并标出最小值点](images/th-058-10-complex-monge-ampere.svg)
+
+图意在说明：方程把势函数的复 Hessian 行列式指定为给定密度，解出一个多次调和势，度量随之确定。
+
 ## 二、原理思路
 
 1. **从 Ricci 形式导出方程**：Ricci 形式是 $\mathrm{Ric}(\omega_\varphi)-\mathrm{Ric}(\omega)=-\sqrt{-1}\partial\bar\partial\log\det$ 型的量，把"指定 Ricci 形式"翻译为"指定 $\det(g_{ij}+\varphi_{ij})/\det(g_{ij})$"，即得到方程。

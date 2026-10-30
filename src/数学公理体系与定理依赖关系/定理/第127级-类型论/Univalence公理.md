@@ -14,6 +14,12 @@ $$
 $$
 即"等价 $(A\simeq B)$"与"在宇宙 $\mathcal{U}$ 中的相等 $(A=_\mathcal{U}B)$"构成等价。它极大扩展了类型论的表达能力，使证明在结构等价下可代换，是同构经济学与数学结构观念的革新。
 
+## 几何直观
+
+![两个等价类型被一条红色路径连在类型宇宙上，下方写等价与相等互相同构](images/th-127-03-univalence.svg)
+
+图意在说明：类型间的等价可以提升为宇宙中的路径，于是同构的类型在类型论里可以互相替换。
+
 ## 二、原理思路
 
 构造从相等到等价的映射 $\text{IdToEquiv}:(A=_\mathcal{U}B)\to(A\simeq B)$：由 J 规则，对 $p:A=_\mathcal{U}B$ 取 $\text{IdToEquiv}(p)=J(\lambda X.\,(A\simeq X),\text{id}_A,B,p)$。Univalence 公理断言 $\text{IdToEquiv}$ 本身是等价（具双射逆函子），从而有逆 $\text{EquivToId}$。一致性由 Voevodsky 在单纯集模型中验证。

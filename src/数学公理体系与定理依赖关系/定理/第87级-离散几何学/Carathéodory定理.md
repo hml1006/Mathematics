@@ -10,6 +10,12 @@
 
 Carathéodory 定理说明凸包中的点都能用最少的（至多 $d+1$ 个）点线性表示，是 Carathéodory、Radon、Helly "三合一组"定理的支柱，也是"极小的凸内部表示"的结果。
 
+## 几何直观
+
+![三角形内一点 x 用三条橙色虚线连到三个顶点，三角形外的灰点未被使用](images/th-087-01-caratheodory-convex-combination.svg)
+
+图意在说明：凸包中的点总能写成至多 d+1 个原点的凸组合，多出来的项可由线性相关删去。
+
 ## 二、原理思路
 
 取 $x\in\operatorname{conv}(S)$ 的一个最短凸组合表示 $x=\sum_{i=1}^m\lambda_ix_i$（$\sum\lambda_i=1$，最小 $m$）。若 $m>d+1$，向量系 $x_i-x$（在 $\mathbb{R}^d$ 中，共 $m$ 个，$\ge d+2>d$ 个）必线性相关，存在不全为零的 $\mu_i$ 使 $\sum\mu_i=0$、$\sum\mu_ix_i=0$。取 $t=\min\{\lambda_i/\mu_i:\mu_i>0\}$ 使 $\lambda_i-t\mu_i\ge0$ 且至少一项向零，得到更短表示，与最小性矛盾。

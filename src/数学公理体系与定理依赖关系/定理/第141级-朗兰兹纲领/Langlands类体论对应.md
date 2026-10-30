@@ -10,6 +10,12 @@
 
 类体论（class field theory）是朗兰兹纲领在 $GL(1)$ 情形的经典形态。它断言，对任意数域（或全局域）$F$，其最大Abel扩张 $F^{\mathrm{ab}}$ 的Galois群与商 $\mathbb{A}_F^\times/F^\times$ 之间存在典范同构。这一同构把所有局部位上的互反映射拼合起来，形成了不可约 Abel 扩张的完整分类。
 
+## 几何直观
+
+![idèle 类群与阿贝尔扩张两个方框由 Artin 互反双向箭头相连，下方分别接 Hecke 特征与一维表示](images/th-141-03-class-field-theory.svg)
+
+图意在说明：阿贝尔情形下，idèle 类群与阿贝尔伽罗瓦群由 Artin 映射同构，局部互反逐处拼成整体。
+
 ## 二、原理思路
 
 核心思想是把"Abel 扩张"这个算术对象翻译成"乘法群的商"。每个位 $v$（有限或无穷）给出一个局部位：对 $p$-adic 位，由范数群与 Frobenius 元素构造互反映射 $\theta_v:F_v^\times\to\text{Gal}(F_v^{\mathrm{ab}}/F_v)$；把这些局部映射嵌入 adele 环的乘法群，得到一个全局互反映射，其核恰为对角嵌入的 $F^\times$。于是 Galois 群的 Abel 化被实现为 adele-idele 类群上的自守商。

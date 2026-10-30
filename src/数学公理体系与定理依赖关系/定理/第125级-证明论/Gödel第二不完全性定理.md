@@ -10,6 +10,12 @@
 
 Gödel 第二不完全性定理是首不完备定理的深化：不仅存在不可判定的算术语句，系统中"自身一致性" $\text{Con}_\mathcal{F}$ 也恰恰不可证明。它是 Hilbert 纲领（在系统内证明系统一致）的终极致命伤，标定了"自箱自证的一致性"不可能。
 
+## 几何直观
+
+![从 F 证明 Con(F) 出发的链条经可证性条件落到 F 证明 G，与第一定理冲突](images/th-125-03-godel-second.svg)
+
+图意在说明：若系统能证明自身一致，可证性条件会推出它也能证明 G，与第一定理冲突，故一致性不可自证。
+
 ## 二、原理思路
 
 证明依赖 Hilbert-Bernays **可证性条件**：证明谓词 $\text{Prov}_\mathcal{F}$ 满足三条内化规则（前面内化、可证性封闭、可证性的可证性）。在系统内形式化第一不完全性证明，推出 $\mathcal{F}\vdash\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)\to\lnot\text{Con}_\mathcal{F}$，从而 $\text{Con}_\mathcal{F}\to\lnot\text{Prov}_\mathcal{F}(\ulcorner G\urcorner)\leftrightarrow G$。若 $\mathcal{F}\vdash\text{Con}_\mathcal{F}$ 则 $\mathcal{F}\vdash G$，与第一定理矛盾。

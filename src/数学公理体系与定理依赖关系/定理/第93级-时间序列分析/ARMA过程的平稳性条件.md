@@ -10,6 +10,12 @@
 
 考虑 ARMA($p,q$) 过程 $\phi(B)X_t = \theta(B)\varepsilon_t$，其中 $\varepsilon_t$ 为白噪声，$\phi(z) = 1 - \phi_1z - \cdots - \phi_pz^p$。过程平稳的充分必要条件是 $\phi(z)$ 的所有根都落在单位圆外（模大于 1）。
 
+## 几何直观
+
+![复平面上单位圆内被浅蓝覆盖，三处红色叉号标出落在圆外的特征根](images/th-093-01-stationarity.svg)
+
+图意在说明：只有特征根全在单位圆外，滤波系数才几何衰减，冲击才不会把波动越滚越大。
+
 ## 二、原理思路
 
 将 ARMA 过程改写为线性滤波 $X_t = \psi(B)\varepsilon_t = \sum_{j=0}^{\infty}\psi_j\varepsilon_{t-j}$。只要系数序列 $\{\psi_j\}$ 绝对可和，过程就是平稳的。而 $\psi_j$ 的衰减性由特征根决定：所有根在单位圆外等价于 $|\lambda_k|<1$，从而 $\psi_j$ 以几何速度衰减。

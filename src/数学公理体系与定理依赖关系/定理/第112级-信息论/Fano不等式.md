@@ -14,6 +14,12 @@ H(X|\hat X)\le H(P_e)+P_e\log(|\mathcal X|-1)\le1+P_e\log|\mathcal X|.
 $$
 它把"估计误差概率"与"剩余不确定性（条件熵）"绑定，是信息论中估计/决策误差下界的核心工具。
 
+## 几何直观
+
+![横轴为条件熵、纵轴为错误概率，红色下界曲线之上是允许区域](images/th-112-01-fano-inequality.svg)
+
+图意在说明：要从观测猜回原变量，剩余的条件熵越大，错误概率就必须越大。
+
 ## 二、原理思路
 
 引入误差指示变量 $E=\mathbf1_{\{X\neq\hat X\}}$。用链式法则拆分条件熵 $H(X|\hat X)=H(E|\hat X)+H(X|E,\hat X)$：$H(E|\hat X)\le H(E)=H(P_e)$；而给定 $E=1$（出错）时 $X$ 至多有 $|\mathcal X|-1$ 个取值，故该项 $\le P_e\log(|\mathcal X|-1)$。相加即得上界。再由 $H(P_e)\le1$ 得简化形式。

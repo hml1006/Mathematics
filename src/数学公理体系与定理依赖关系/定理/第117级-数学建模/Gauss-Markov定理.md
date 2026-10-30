@@ -10,6 +10,12 @@
 
 Gauss-Markov 定理是线性模型估计理论的基石。它断言：在线性模型 $\boldsymbol Y=\boldsymbol X\boldsymbol\beta+\boldsymbol\varepsilon$ 满足零均值、同方差、无自相关且 $\boldsymbol X$ 满秩时，最小二乘估计量 $\hat{\boldsymbol\beta}_{\mathrm{OLS}}$ 为 BLUE，即在所有线性无偏估计中方差最小（矩阵意义下）。
 
+## 几何直观
+
+![两条以真值为中心的钟形分布曲线，蓝色最小二乘明显更瘦，橙色另一无偏估计更宽](images/th-117-02-gauss-markov.svg)
+
+图意在说明：所有线性无偏估计都以真值为中心，最小二乘的方差最小，所以在同类估计中最优。
+
 ## 二、原理思路
 
 先证 $\hat{\boldsymbol\beta}$ 线性且无偏、协方差 $\sigma^2(\boldsymbol X^\top\boldsymbol X)^{-1}$；再取任意线性无偏估计 $\boldsymbol C\boldsymbol Y$，无偏性给出 $\boldsymbol C\boldsymbol X=\boldsymbol I_p$，最后用半正定矩阵方法证明其协方差与 OLS 之差半正定。

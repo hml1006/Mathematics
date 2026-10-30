@@ -18,6 +18,12 @@ $$c(E)=\left[\det\left(I+\frac{\sqrt{-1}}{2\pi}\Omega\right)\right],$$
 $$\pi^*:H^*(M;\mathbb Z)\longrightarrow H^*(Fl(E);\mathbb Z)$$
 是**单射**，且 $\pi^*E$ 同构于若干线丛的直和 $L_1\oplus\cdots\oplus L_n$。因此，任何关于特征类的恒等式只需在"完全分裂"的情形验证；由于 $\pi^*$ 单射，"在 $Fl(E)$ 上成立"可回推到 $M$ 上。分裂原理是 Whitney 和公式、Riemann–Roch 定理中特征类计算、以及 K 理论中 Chern 特征标定义的技术基石。
 
+## 几何直观
+
+![底空间上扭着的丛经箭头 f 拉到旗丛，在旗丛中变成三条平行的线丛](images/th-055-04-splitting-principle.svg)
+
+图意在说明：把丛拉回到旗丛后总能裂成线丛之和，而拉回在上同调上是单射，故线丛上验证即可。
+
 ## 二、原理思路
 
 分裂原理由两个相互配合的结果构成。
