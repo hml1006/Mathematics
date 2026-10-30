@@ -34,7 +34,7 @@ $$
 
 弱收敛（$\Rightarrow$，即依分布收敛）在 Polish 空间上由 Prokhorov 定理刻画：**有限维分布收敛 + 胎紧性（tightness）$\iff$ 弱收敛**。Donsker 定理的证明就沿这条路线：
 
-**1. 有限维分布收敛。** 固定 $0\le t_1<\cdots<t_d\le1$，向量 $\bigl(S_n(t_1),\dots,S_n(t_d)\bigr)$ 的各分量是"部分和"的线性组合。由经典中心极限定理与 Cramér–Wold 定理，该向量依分布收敛到多元正态 $\bigl(B(t_1),\dots,B(t_d)\bigr)$——协方差为 $\min(t_i,t_j)$。这一步只用到中心极限定理与布朗运动的有限维分布（后者由[Brown运动的存在性](./Brown运动的存在性.md)给出）。
+**1. 有限维分布收敛。** 固定 $0\le t_1<\cdots<t_d\le1$，向量 $\bigl(S_n(t_1),\dots,S_n(t_d)\bigr)$ 的各分量是"部分和"的线性组合。由经典中心极限定理与 Cramér–Wold 定理，该向量依分布收敛到多元正态 $\bigl(B(t_1),\dots,B(t_d)\bigr)$——协方差为 $\min(t_i,t_j)$。这一步只用到中心极限定理与布朗运动的有限维分布（后者由[Brown运动的存在性](../第41级-随机过程/Brown运动的存在性.md)给出）。
 
 **2. 胎紧性。** 需要证明：对任意 $\varepsilon>0$，存在紧集 $K\subseteq\mathcal C[0,1]$ 使 $\sup_n P(S_n\notin K)<\varepsilon$。由 Arzelà–Ascoli，紧集由"一致有界 + 等度连续"刻画，故只需控制增量：
 
@@ -104,7 +104,7 @@ $$
 \bigl(S_n(t_1),\dots,S_n(t_d)\bigr)\ \Longrightarrow\ \bigl(B(t_1),\dots,B(t_d)\bigr),
 $$
 
-即有限维分布收敛到布朗运动的对应分布（布朗运动的协方差 $\mathbb E B(s)B(t)=\min(s,t)$，见[Brown运动的存在性](./Brown运动的存在性.md)）。
+即有限维分布收敛到布朗运动的对应分布（布朗运动的协方差 $\mathbb E B(s)B(t)=\min(s,t)$，见[Brown运动的存在性](../第41级-随机过程/Brown运动的存在性.md)）。
 
 **步骤 2：胎紧性（增量估计）。**
 
