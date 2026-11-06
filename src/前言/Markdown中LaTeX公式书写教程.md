@@ -920,4 +920,4 @@ $$
 3. 用 `cases` 写出符号函数 $\operatorname{sgn}(x)$ 的定义。
 4. 用 `aligned` 写出 $\cos 2\theta = \cos^2\theta - \sin^2\theta$ 的推导。
 
-> 本教程配合课程 [README](README.md) 使用，是本教程书写所有数学笔记的通用公式规范。
+> 本教程配合课程 [README](../index.md) 使用，是本教程书写所有数学笔记的通用公式规范。
