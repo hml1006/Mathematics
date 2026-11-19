@@ -86,3 +86,4 @@ $$
 - [Riemann 曲率张量](../第33级-微分几何/Riemann曲率张量.md)：张量极值原理作用的对象。
 - [极大值原理](../第49级-黎曼几何/极大值原理.md)：标量极值原理，是张量版本的出发点。
 - [Bochner公式](../第49级-黎曼几何/Bochner公式.md)：确定扩散项（Weitzenböck 型公式）的符号结构。
+- [Laplace-Beltrami 算子与热方程](Laplace-Beltrami算子与热方程.md)：直接前置依赖。

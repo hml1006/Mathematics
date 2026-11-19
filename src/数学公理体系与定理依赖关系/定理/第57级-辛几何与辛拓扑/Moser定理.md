@@ -170,3 +170,10 @@ $$\frac{d}{dt}\varphi_t^*\omega_t=\varphi_t^*\bigl(\mathcal L_{X_t}\omega_t+\tfr
 **老师（拓展）**：Moser 定理的哲学意义是什么？
 
 **学生**：它说明辛几何的局部几何完全由上同调类决定——固定上同调类中辛形式没有局部模空间（离散的凸锥 $\subset H^2(M;\mathbb R)$），这与 Riemann 度量有无限维模空间（曲率连续变化）形成鲜明对比。它是 Darboux 定理、Weinstein 邻域定理、Gray 接触稳定性定理的统一工具，也是 Hamilton 向量场定义 $\iota_{X_t}\omega=dH$ 的来源。
+
+## 相关条目
+
+- [de Rham 上同调](../第33级-微分几何/deRham上同调.md)：直接前置依赖。
+- [Cartan 公式](../第33级-微分几何/Cartan公式.md)：直接前置依赖。
+- [Poincaré 引理](../第34级-代数拓扑/Poincaré引理.md)：直接前置依赖。
+- [解的存在唯一性定理（Picard-Lindelöf）](../第23级-常微分方程/Picard-Lindelöf定理.md)：直接前置依赖。

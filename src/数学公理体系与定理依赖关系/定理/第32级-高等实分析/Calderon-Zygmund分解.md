@@ -134,3 +134,7 @@ Calderón-Zygmund 分解在现代分析中有广泛应用：
 **老师（拓展）**：那弱 $(1,1)$ 估计里好、坏两部分各自怎么"付费"？
 
 **学生**：好部分用 $L^2$ 有界加 Chebyshev：$|\{|Tg|>\alpha/2\}|\le\frac{4}{\alpha^2}\|Tg\|_2^2\le\frac{C}{\alpha}\|f\|_1$；坏部分只在 $\Omega^*=\bigcup_j 3Q_j$ 内用测度 $\sum_j|3Q_j|\le 3^n\|f\|_1/\alpha$ 承担，在其外用核衰减得 $\|Tb\|_{L^1((\Omega^*)^c)}\le C\|f\|_1$，两段合并即得弱 $(1,1)$。
+
+## 相关条目
+
+- [Vitali 覆盖引理](Vitali覆盖引理.md)：直接前置依赖。

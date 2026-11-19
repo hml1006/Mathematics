@@ -104,3 +104,9 @@ $$\cdots\to H_n(U\cap V)\xrightarrow{(i_*,j_*)}H_n(U)\oplus H_n(V)\xrightarrow{k
 **老师（拓展）**：用它怎么算球面同调？
 
 **学生**：取 $U=S^n\setminus\{N\}$、$V=S^n\setminus\{S\}$，各自可缩，$U\cap V\simeq S^{n-1}$，归纳得 $H_k(S^n)=\mathbb Z$（$k=0,n$）其余为零。常见误区是忘了 $U,V$ 必须是开集并覆盖 $X$，否则同伦等价那一步不成立。
+
+## 相关条目
+
+- [奇异同调群](奇异同调群.md)：直接前置依赖。
+- [蛇形引理（Snake Lemma）](../第35级-同调代数/蛇形引理.md)：直接前置依赖。
+- [细分引理](细分引理.md)：直接前置依赖。

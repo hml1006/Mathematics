@@ -85,3 +85,7 @@ $$\cdots \to H^i(X, \bigoplus \mathcal{O}_X(-m_i + n)) \to H^i(X, \mathcal{F}(n)
 **老师（拓展）**：更一般地，高阶上同调在什么时候整体消失？
 
 **学生**：与 Serre 对偶结合可得 $H^i(X,\mathcal{F})=0$ 对 $i>\dim X$。要强调这只是"足够正扭转后"的消失，原层 $\mathcal{F}$ 本身未必消失。
+
+## 相关条目
+
+- [层与层上同调](层与层上同调.md)：直接前置依赖。

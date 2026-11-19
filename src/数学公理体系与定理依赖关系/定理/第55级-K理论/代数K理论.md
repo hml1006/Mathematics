@@ -319,3 +319,9 @@ $$\text{ch}: K_n(A) \to HC_n(A)$$
 **老师（拓展）**：拓扑与代数 K 理论怎么挂钩？
 
 **学生**：结论：Swan 定理给出 $K(X)\cong K_0(C(X))$；高阶群用 Quillen 的 + 构造 $K_n(R)=\pi_n(BGL(R)^+)$。典型计算如 $K_0(\mathbb Z)=\mathbb Z$、$K_1(\mathbb Z)=\mathbb Z/2$、$K_3(\mathbb Z)=\mathbb Z/48$，其中 $K_3$ 与 Dedekind zeta 函数特殊值相关。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

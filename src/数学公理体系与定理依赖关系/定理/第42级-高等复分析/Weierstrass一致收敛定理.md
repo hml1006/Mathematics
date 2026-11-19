@@ -110,3 +110,5 @@ $$f_n'(z)-f'(z)=\frac{1}{2\pi i}\oint_{|\zeta-z|=r}\frac{f_n(\zeta)-f(\zeta)}{(\
 - [Montel定理](./Montel定理.md)：正规族的定义与定理的证明都依赖"内闭一致收敛极限仍全纯"。
 - [Arzelà-Ascoli定理](./Arzelà-Ascoli定理.md)：提供收敛子列的存在性，与本定理的"极限保持全纯"互补。
 - [Weierstrass因子分解定理](./Weierstrass因子分解定理.md)：无穷乘积的收敛性与可微性由本定理保证。
+- [柯西积分公式](../第18级-复分析/柯西积分公式.md)：直接前置依赖。
+- [Morera定理](Morera定理.md)：直接前置依赖。

@@ -108,3 +108,8 @@ $$
 **老师（拓展）**：为什么它是结构定理的入口？
 
 **学生**：只有先确认所有多重和差集都受 $K$ 控制，才能放心用 Ruzsa 建模、Bogolyubov 逐步提取结构。它是 Freiman 定理、sum-product、算术级数结构定理与 additive energy 估计的常用技术引理；注意 Plünnecke 不等式对非阿贝尔群失效，须用 Petridis 的耦合版本。
+
+## 相关条目
+
+- [Plünnecke 不等式](Plünnecke不等式.md)：直接前置依赖。
+- [Ruzsa 三角不等式](Ruzsa三角不等式.md)：直接前置依赖。

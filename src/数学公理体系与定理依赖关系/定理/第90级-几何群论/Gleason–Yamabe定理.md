@@ -86,3 +86,4 @@ $$
 - [李群与李代数的对应](../第39级-李群与李代数/李群与李代数的对应.md)：本定理结论所在的 Lie 群–Lie 代数框架。
 - [Cartan判别法](../第39级-李群与李代数/Cartan判别法.md)：Lie 代数可解/半单的判别，用于分析所得 Lie 群。
 - [Stallings端定理](./Stallings端定理.md)：同属几何群论中"结构被几何条件强制"的典范。
+- [Montgomery–Zippin 定理](Montgomery-Zippin定理.md)：直接前置依赖。

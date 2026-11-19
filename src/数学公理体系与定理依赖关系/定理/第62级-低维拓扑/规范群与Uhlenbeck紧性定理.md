@@ -109,3 +109,4 @@ $$\lim_{k\to\infty}\lVert F_{A_k}\rVert_{L^2(M)}^2=\lVert F_{A_\infty}\rVert_{L^
 - [Sobolev嵌入定理](../第40级-偏微分方程/Sobolev嵌入定理.md)：四维临界嵌入 $W^{1,2}\subset L^4$ 与非紧性（气泡）的来源。
 - [椭圆正则性定理](../第40级-偏微分方程/椭圆正则性定理.md)：步骤 2 中把曲率界提升为 $W^{1,2}$ 界。
 - [Fréchet-Kolmogorov紧性准则](../第40级-偏微分方程/Fréchet-Kolmogorov紧性准则.md)：紧性判据在取收敛子列时的使用。
+- [Yang-Mills 方程](../第48级-数学物理/Yang-Mills方程.md)：直接前置依赖。

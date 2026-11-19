@@ -102,3 +102,5 @@ $\nabla v=0$ 于 $\Omega$（连通；若不连通可对每个连通分支重复�
 - [Sobolev空间定义](./Sobolev空间定义.md)：不等式两边正是 $W^{1,p}$ 范数的两个组成部分。
 - [Sobolev嵌入定理](./Sobolev嵌入定理.md)：紧嵌入 $W^{1,p}\hookrightarrow\hookrightarrow L^p$ 是证明的核心输入。
 - [Lax-Milgram定理PDE应用](./Lax-Milgram定理PDE应用.md)：椭圆算子的强制性估计依赖 Poincaré 不等式。
+- [Rellich-Kondrachov紧嵌入定理](Rellich-Kondrachov紧嵌入定理.md)：直接前置依赖。
+- [Hölder 不等式](../第17级-实分析/Hölder不等式.md)：直接前置依赖。

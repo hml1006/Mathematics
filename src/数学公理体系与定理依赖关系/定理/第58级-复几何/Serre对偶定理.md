@@ -248,3 +248,9 @@ $$Rf_* R\mathcal{H}om(F, f^!\mathcal{O}_Y) \cong R\mathcal{H}om(Rf_* F, \mathcal
 **老师（拓展）**：在现代导出范畴里 Serre 对偶是什么形态？
 
 **学生**：函子 $E\mapsto E^*\otimes K_X[n]$ 给出 $D^b(\mathrm{Coh}(X))$ 上的 Serre 函子，是 Calabi-Yau 范畴的定义基础：当 $K_X\cong\mathcal O_X$ 时它只是平移 $[n]$，正体现 CY 流形 $c_1=0$ 的"自对偶"。这也说明 Serre 对偶是 Grothendieck-Serre 对偶在 $f:X\to\mathrm{pt}$、$f^!\mathcal O=K_X[n]$ 处的特例。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

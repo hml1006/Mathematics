@@ -60,3 +60,9 @@ König 定理在基数理论中用途广泛：推出 Cantor 定理、证明 $\ka
 **老师（拓展）**：由它能推出哪些著名基数结论？
 
 **学生**：取 $I=\omega$、$\kappa_i=\aleph_0$、$\lambda_i=2^{\aleph_0}$，得 $\aleph_0<\big(2^{\aleph_0}\big)^{\aleph_0}=2^{\aleph_0}$；对连续统作共尾表示再用定理，即得 $\operatorname{cf}(2^{\aleph_0})>\aleph_0$。它还是证明 $\kappa<\kappa^{\operatorname{cf}\kappa}$、研究 $\aleph_\omega$ 等奇异基数的核心引擎。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

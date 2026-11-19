@@ -131,3 +131,7 @@ $$H^{q}\bigl(X,\Omega^{n}\otimes L\bigr)=0\qquad(q\ge1),$$
 **老师（拓展）**：如果流形不是 Kähler，这条恒等式会变成什么样？
 
 **学生**：非 Kähler（一般 Hermite）时 Kähler 恒等式多出与挠率（$d\omega$）相关的项，二阶一阶项不再完全相消，于是得到带一阶 torsion 项的 Demailly 型 BKN 不等式：除曲率项外还得处理挠率，消没定理便需要额外的正性/紧性条件。把 $E=\mathcal O$（$\Theta=0$）代回，恒等式退化为 Kähler 恒等式 $\Box_{\bar\partial}=\Delta'$，即 $\Delta_d=2\Delta_{\bar\partial}=2\Delta_\partial$。
+
+## 相关条目
+
+- [Kähler 恒等式](Kähler恒等式.md)：直接前置依赖。

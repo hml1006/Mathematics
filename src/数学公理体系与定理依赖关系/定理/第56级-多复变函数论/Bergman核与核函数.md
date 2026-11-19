@@ -158,3 +158,9 @@ $$K_{\Omega_2}(\Phi(z),\Phi(w))\det\Phi'(z)\overline{\det\Phi'(w)}=K_{\Omega_1}(
 由此 $\log K$ 的混合二阶导数 $\log|\det\Phi'|^2$ 项因纯粹全纯 $+$ 反全纯而消失，故 Bergman 度量
 $$g^B_{j\bar k}(z)=\frac{\partial^2\log K_\Omega(z)}{\partial z_j\partial\bar z_k}$$
 是双全纯不变量，且在严格伪凸边界附近满足 Fefferman 渐近 $K_\Omega(z,z)\sim\varphi(z)/\mathrm{dist}(z,\partial\Omega)^{n+1}$——这正是双全纯映射光滑延拓到边界定理的分析根基。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

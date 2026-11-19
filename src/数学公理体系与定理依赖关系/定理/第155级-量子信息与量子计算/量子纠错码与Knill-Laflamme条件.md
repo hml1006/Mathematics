@@ -102,3 +102,7 @@ $$
 **老师（拓展）**：Knill-Laflamme 条件与量子 Singleton 界是什么关系？
 
 **学生**：Knill-Laflamme 是"可纠性"的判据，Singleton 界是可纠维数的计数上界：编码 $k$ 个逻辑比特、纠正 $t$ 个错误、物理比特数 $n$ 满足 $n\ge2t+k$。两者的分工是，Singleton 界告诉你码不可能太小，Knill-Laflamme 检验一个具体子空间是否真的合格。五比特码恰好取到 $n=5$、$t=1$、$k=1$ 的等号，是满足该界的最短完美码。
+
+## 相关条目
+
+- [Singleton 界](../第113级-编码理论/Singleton界.md)：直接前置依赖。

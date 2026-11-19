@@ -136,3 +136,7 @@ de Rham 上同调的推广包括：带系数的上同调、紧支集上同调、
 **老师（拓展）**：如何真正"算出"上同调？它与奇异上同调什么关系？
 
 **学生**：用 Mayer-Vietoris 长正合序列把 $M=U\cup V$ 的 $H^k$ 由 $U,V,U\cap V$ 拼出来：$\cdots\to H^k(M)\to H^k(U)\oplus H^k(V)\to H^k(U\cap V)\xrightarrow{\delta}H^{k+1}(M)\to\cdots$，连接同态 $\delta(\omega)=d(\rho_V\omega)$。de Rham 定理进一步给出 $H^k_{dR}(M)\cong H^k(M;\mathbb{R})$，且杯积对应楔积——这把微分几何与代数拓扑接通。
+
+## 相关条目
+
+- [Poincaré 引理](../第34级-代数拓扑/Poincaré引理.md)：直接前置依赖。

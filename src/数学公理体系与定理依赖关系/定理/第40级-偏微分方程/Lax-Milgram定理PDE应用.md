@@ -90,3 +90,9 @@ $$\int_\Omega (\nabla u \cdot \nabla v + cuv) \, dx = \int_\Omega fv \, dx,\quad
 **老师（拓展）**：对 $-\Delta u+cu=f$ 怎么落地？
 
 **学生**：在 $H_0^1(\Omega)$ 上取 $a(u,v)=\int_\Omega(\nabla u\cdot\nabla v+cuv)\,dx$。由 Poincaré 不等式 $\|u\|_{L^2}\le C\|\nabla u\|_{L^2}$ 得强制性 $a(u,u)\ge\min(1,1/C^2)\|u\|_{H^1}^2$，$c\ge0$ 保证有界性，于是对任意 $f\in L^2$，$-\Delta u+cu=f$ 有唯一弱解。常见误区是以为必须对称才可用——Lax–Milgram 并不要求对称，只要求强制；对称时它退化为 Riesz 表示，并可由能量泛函取极小得到。
+
+## 相关条目
+
+- [Sobolev 空间定义](Sobolev空间定义.md)：直接前置依赖。
+- [Lax-Milgram 定理](../第31级-泛函分析/Lax-Milgram定理.md)：直接前置依赖。
+- [Riesz 表示定理（Hilbert 空间）](../第31级-泛函分析/Riesz表示定理.md)：直接前置依赖。

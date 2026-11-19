@@ -55,3 +55,9 @@ $$\operatorname{vol}(T^{-1}(K))=\frac{\operatorname{vol}(K)}{|\det A|}=\frac{2^n
 **老师（拓展）**：齐次形式与推广呢？
 
 **学生**：当 $c_1\cdots c_n\ge|\det A|$ 时可得 $|L_i(x)|\le c_i$。它是 Dirichlet 逼近的多维推广（Diophantine 存在性），并可推广到复数线性型与多组线性型（与 Littlewood 猜想研究相关）。误区是漏掉绝对值 $|\det A|$；$A$ 奇异时需改用秩陈述。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

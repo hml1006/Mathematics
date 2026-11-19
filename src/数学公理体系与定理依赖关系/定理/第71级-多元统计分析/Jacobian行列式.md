@@ -103,3 +103,9 @@ $$
 **老师（拓展）**：谱分解换元的 Jacobian 为什么出现 Vandermonde 因子 $\prod_{i<j}|\lambda_i-\lambda_j|$？
 
 **学生**：在对角基下用反对称扰动 $\boldsymbol{\Omega}$ 做一阶展开，$\delta\boldsymbol{A}$ 的交叉项含 $[\boldsymbol{\Omega},\boldsymbol{\Lambda}]$，其 $(i,j)$ 分量为 $(\lambda_j-\lambda_i)\Omega_{ij}$，系数矩阵的行列式模给出 $\prod_{i<j}|\lambda_i-\lambda_j|$。特征值重根时该 Jacobian 为零、映射退化，这正是随机矩阵中特征值"相互排斥"的代数根源。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

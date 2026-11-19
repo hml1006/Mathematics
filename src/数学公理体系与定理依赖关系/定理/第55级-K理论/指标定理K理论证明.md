@@ -299,3 +299,7 @@ $$\text{ind}(D) = \text{sign}(M) = \int_M L(TM)$$
 **老师（拓展）**：显式公式长什么样？
 
 **学生**：结论：$\mathrm{ind}(D)=(-1)^n\int_{T^*M}\mathrm{ch}([\sigma(D)])\cdot\mathrm{td}(T^*M\otimes\mathbb C)$。特例：de Rham 算子给出 Gauss-Bonnet，Dirac 算子给出 $\hat A$ 亏格，signature 算子给出 $L$ 类，三者分别对应 Euler 类、$\hat A$ 类与 Hirzebruch $L$ 类。
+
+## 相关条目
+
+- [Atiyah-Singer 指标定理](../第48级-数学物理/Atiyah-Singer指标定理.md)：直接前置依赖。

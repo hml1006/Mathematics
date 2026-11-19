@@ -80,3 +80,9 @@ Beilinson–Drinfeld 的量子化理论把 opers 与临界水平的中心特征�
 **老师（拓展）**：opers 与量子化、Hitchin 系统之间是什么关系？
 
 **学生**：opers 是 Hitchin 可积系统的经典极限对象：Hitchin 底参数化特征多项式，而 oper 把其中的系数解释成联络的规范形式，两者维数相同。沿这个方向作 Beilinson–Drinfeld 量子化，就把 opers 上的函数变成临界水平的中心，把 Hitchin 的 Hamilton 量变成 Hecke 算子。于是谱侧的一个 oper 就对应自守侧的一个 Hecke 本征层，这正是几何 Langlands 在 opers 这一子集上的具体实现；一般局部系统并不都是 opers，只有带正则奇性的那部分才落在其中。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

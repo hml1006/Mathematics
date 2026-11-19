@@ -82,3 +82,9 @@ $$\int_\Omega u^{(\alpha)} \varphi \, dx = \lim_{m \to \infty} \int_\Omega D^\al
 **老师（拓展）**：$H^k$ 与 $W_0^{k,p}$ 各扮演什么角色？
 
 **学生**：$p=2$ 时 $H^k=W^{k,2}$ 是 Hilbert 空间，内积为 $(u,v)_{H^k}=\sum_{|\alpha|\le k}\int_\Omega D^\alpha u\,D^\alpha v$，这让变分与投影方法可用；$W_0^{k,p}$ 是 $C_c^\infty$ 在范数下的闭包，是 Dirichlet 问题的自然空间，$H_0^1$ 上 $\int\nabla u\cdot\nabla v$ 与自身范数等价。常见误区是把 $C^k$ 当成完备空间——它在 $W^{k,p}$ 范数下不完备，而 $W^{k,p}$ 正是其完备化。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

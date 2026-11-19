@@ -159,3 +159,4 @@ $$\mu(G\setminus A)=\mu(K^c\cap A)=\mu\big(A\cap K^c\big)=\mu(A^c\setminus K)<\e
 - [紧性准则](./紧性准则.md)：Prokhorov 定理以本定理为出发点（"紧 $\Rightarrow$ 胎紧"与单个测度胎紧）。
 - [Portmanteau定理](./Portmanteau定理.md)：提供开集的测度下半连续性，用于把胎紧性升级为弱相对紧。
 - [Kolmogorov扩张定理](./Kolmogorov扩张定理.md)：扩张定理给出的路径测度在本定理保证下才具备弱收敛子列。
+- [单调类定理](单调类定理.md)：直接前置依赖。

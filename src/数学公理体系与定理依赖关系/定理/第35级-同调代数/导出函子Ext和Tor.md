@@ -120,3 +120,7 @@ $$
 **老师（拓展）**：给两个能背下来的例子。
 
 **学生**：$\operatorname{Ext}^1_{\mathbb{Z}}(\mathbb{Z}/n,\mathbb{Z})\cong\mathbb{Z}/n$，$\operatorname{Tor}_1^{\mathbb{Z}}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\mathbb{Z}/\gcd(m,n)$。几何上 $\operatorname{Ext}^1(A,B)$ 分类 $B$ 被 $A$ 的扩张，而 $\operatorname{Tor}_1$ 度量张量积的非正合性。域 $k$ 上向量空间一切模自由平坦，故高阶 $\operatorname{Ext}$、$\operatorname{Tor}$ 全为零。
+
+## 相关条目
+
+- [投射分解与内射分解](投射分解与内射分解.md)：直接前置依赖。

@@ -145,3 +145,9 @@ Gromov-Hausdorff 收敛理论的引入从根本上改变了我们研究几何对
 **老师（拓展）**：为什么 Ricci 曲率下有界加直径有界就蕴含紧性？
 
 **学生**：由 Bishop-Gromov 体积比较，$\mathrm{Ric}\ge(n-1)k$ 使 $r\mapsto\mathrm{vol}(B(p,r))/V_k^n(r)$ 非增，于是 $\varepsilon$-分离集基数的 packing 估计有统一上界，正好满足 Gromov 紧性定理的 totally bounded 条件。常见误区是以为极限必定是同维流形：Ricci 下有界时可能发生坍塌，极限维数可严格小于 $n$，这正是 Cheeger-Fukaya-Gromov 坍塌理论的内容。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

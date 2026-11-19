@@ -131,3 +131,8 @@ $$
 **老师（拓展）**：曲率张量如何"降维"成截面曲率、Ricci、标量曲率，又怎样在物理里出现？
 
 **学生**：截面曲率是二维平面 $\Pi$ 上的 $K(\Pi)=\dfrac{g(R(v,w)w,v)}{g(v,v)g(w,w)-g(v,w)^2}$，它完全决定曲率张量；Ricci 是迹 $\operatorname{Ric}(X,Y)=\sum_i g(R(e_i,X)Y,e_i)$，标量曲率再取迹 $R=g^{ij}R_{ij}$。广义相对论中 Einstein 场方程 $\operatorname{Ric}-\tfrac12Rg=8\pi T$ 把曲率与物质分布挂钩，Bianchi 恒等式对应能量-动量守恒。
+
+## 相关条目
+
+- [Levi-Civita 联络](Levi-Civita联络.md)：直接前置依赖。
+- [Jacobi 恒等式](Jacobi恒等式.md)：直接前置依赖。

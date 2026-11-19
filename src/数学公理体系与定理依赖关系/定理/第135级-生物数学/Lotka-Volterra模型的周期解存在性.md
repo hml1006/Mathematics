@@ -75,3 +75,7 @@ $$
 **老师（拓展）**：这个系统的几何本质是什么，为什么它对扰动很脆弱？
 
 **学生**：令 $u=\ln x$、$v=\ln y$，系统化为 Hamiltonian 形式 $\dot u=\partial_vH$、$\dot v=-\partial_uH$，相体积守恒（Liouville），故无吸引子、轨道即等能线。正因如此，任何非保守扰动（密度依赖、Holling 型功能反应、随机扰动）都常把中心变成极限环或稳定点，这是更一般 Lotka–Volterra 推广研究的起点。
+
+## 相关条目
+
+- [Liouville 定理](../第78级-丢番图逼近/Liouville定理.md)：直接前置依赖。

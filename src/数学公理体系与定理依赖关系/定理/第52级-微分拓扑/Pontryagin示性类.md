@@ -201,3 +201,9 @@ Novikov 证明了 Pontryagin 类在有理同伦意义下是不变的。
 **老师（拓展）**：这些上同调类是怎么变成能算的"数"的？
 
 **学生**：在 $4k$ 维定向闭流形上取基本类 $[M]$，得 Pontryagin 数 $\langle p_{i_1}\cdots p_{i_r},[M]\rangle$，它只依赖定向配边类，这是 Thom-Pontryagin 定理的内容。Hirzebruch 符号差定理把交形式的符号差写成 $L$ 多项式 $\sigma(M)=\langle L_k(p_1,\dots,p_k),[M]\rangle$，如 $L_1=\frac13 p_1$，据此 $\sigma(\mathbb{CP}^2)=1$、$p_1(\mathbb{CP}^2)=3$ 正好吻合。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

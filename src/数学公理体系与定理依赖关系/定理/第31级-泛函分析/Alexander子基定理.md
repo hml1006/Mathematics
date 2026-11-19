@@ -82,3 +82,4 @@ $$x\in S_1\cap\cdots\cap S_n\subseteq O.$$
 - [Banach-Alaoglu定理](./Banach-Alaoglu定理.md)：借助乘积拓扑的紧性与本定理得到对偶空间闭单位球的弱星紧性。
 - [Krein-Milman定理](./Krein-Milman定理.md)：其证明依赖弱星紧性，可追溯到子基定理。
 - [一致有界性原理](./一致有界性原理.md)：与紧性论证同属泛函分析中"局部化"技巧的典型。
+- [Zorn 引理](../第09级-集合论基础/Zorn引理.md)：直接前置依赖。

@@ -161,3 +161,5 @@ $$
 
 - [Artin互反律](./Artin互反律.md)：Chebotarev 定理给出 Artin 映射的满射性，是其证明的定量支柱。
 - [DedekindZeta函数](./DedekindZeta函数.md)：平凡特征标的 Artin L 函数即 $\zeta_K$，其 $s=1$ 留数决定主项密度。
+- [数域与整数环](数域与整数环.md)：直接前置依赖。
+- [Tauberian定理](Tauberian定理.md)：直接前置依赖。

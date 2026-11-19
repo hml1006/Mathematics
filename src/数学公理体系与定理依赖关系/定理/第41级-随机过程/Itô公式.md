@@ -88,3 +88,7 @@ $$\int_0^tB_s\,dB_s=\tfrac12B_t^2-\tfrac12t.$$
 **老师（拓展）**：几何 Brown 运动 $dS_t=\mu S_t\,dt+\sigma S_t\,dB_t$ 的解里为什么出现 $-\sigma^2/2$？
 
 **学生**：对 $\ln S$ 用 Itô 公式：$f=\ln x$ 时 $f_{xx}=-1/x^2$，二阶项为 $\tfrac12\sigma^2S_t^2\cdot(-1/S_t^2)=-\tfrac12\sigma^2$。故 $d(\ln S_t)=(\mu-\tfrac{\sigma^2}{2})dt+\sigma\,dB_t$，积分并取指数即得 $S_t=S_0\exp\big((\mu-\tfrac{\sigma^2}{2})t+\sigma B_t\big)$。这解释了资产对数收益的漂移低于相对漂移 $\mu$——随机波动本身"拖累"了复合增长，这是 Itô 公式的严格结论而非离散化误差。
+
+## 相关条目
+
+- [Itô 积分](Itô积分.md)：直接前置依赖。

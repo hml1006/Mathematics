@@ -107,3 +107,4 @@ $$I[i,j):\ (I[i,j))_t=k\ \text{当}\ i\leq t<j,\ \text{否则}\ 0,\ \text{箭头
 - [单纯复形与simplicial同调](./单纯复形与simplicial同调.md)：filtration 与同调群是持久模的具体来源。
 - [Mapper算法](./Mapper算法.md)：以拓扑数据分析中的分块与聚类为出发点的算法，其代数背景与持久模相关。
 - [稳定性定理](./稳定性定理.md)：barcode 的稳定性使 Gabriel 定理给出的分解在扰动下可比较。
+- [Krull-Schmidt 定理](../第19级-抽象代数基础/Krull-Schmidt定理.md)：直接前置依赖。

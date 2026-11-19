@@ -73,3 +73,7 @@ $$
 **老师（拓展）**：为什么强调参数范围？
 
 **学生**：幂指数 $(n-p-1)/2$ 要求自由度 $n$ 足够大（典型 $n\ge p$）才使密度在 $\boldsymbol{W}\succ0$ 上可积、非退化，否则测度落在低秩流形上。可加性 $W_p(n_1,\boldsymbol{\Sigma})+W_p(n_2,\boldsymbol{\Sigma})\sim W_p(n_1+n_2,\boldsymbol{\Sigma})$ 使大自由度可拆成小自由度之和，是 Hotelling $T^2$ 检验与 Wilks $\Lambda$ 分布的基础。
+
+## 相关条目
+
+- [Jacobian 行列式](Jacobian行列式.md)：直接前置依赖。

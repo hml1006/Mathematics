@@ -54,3 +54,8 @@
 **老师（拓展）**：正确性呢？为什么一停就对了？
 
 **学生**：终止时对一切 $p\ne q\in G$ 都有 $S(p,q)\xrightarrow{G}0$，正好满足 Buchberger 准则的充分性方向，故 $G$ 是 Gröbner 基。常见误区是把"算法停机"直接当成"得到约化 Gröbner 基"：约化还需额外做首项互不整除的化简，但停机本身已给出 Gröbner 基。
+
+## 相关条目
+
+- [Hilbert 基定理](Hilbert基定理.md)：直接前置依赖。
+- [Buchberger 准则](Buchberger准则.md)：直接前置依赖。

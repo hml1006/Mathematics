@@ -118,3 +118,7 @@ $$\|\Phi(\lambda)\|=\|\lambda I\|=|\lambda|\,\|I\|=|\lambda|,$$
 **老师（拓展）**：这条定理怎么成为 Gelfand 理论的枢纽？
 
 **学生**：结论：它给出交换 Banach 代数的特征标。对极大理想 $M$，$B/M$ 是含单位可除 Banach 代数，故 $B/M\cong\mathbb C$，得到特征标 $\varphi_M$，进而 Gelfand 变换 $b\mapsto\widehat b$ 把 $B$ 实现为极大理想空间上的连续函数代数。
+
+## 相关条目
+
+- [Liouville 定理](../第78级-丢番图逼近/Liouville定理.md)：直接前置依赖。

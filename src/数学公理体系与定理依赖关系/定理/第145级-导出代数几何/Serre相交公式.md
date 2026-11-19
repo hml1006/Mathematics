@@ -101,3 +101,7 @@ $$i(X,Y;z)=\sum_{i\ge0}(-1)^i\,\ell_A\big(\mathrm{Tor}_i^A(\mathcal{O}_{X,z},\ma
 **学生**：导出纤维积 $X\times^{\mathbb{R}}_PY$ 的结构层就是 $\mathcal{O}_{X,z}\otimes^{\mathbb{L}}_A\mathcal{O}_{Y,z}$，其第 $i$ 个同调为 $\mathrm{Tor}_i$；于是
 $$i(X,Y;z)=\chi\big(\mathcal{O}_{X,z}\otimes^{\mathbb{L}}_A\mathcal{O}_{Y,z}\big)=\big[\mathcal{O}_{X\times^{\mathbb{R}}_PY,z}\big]\in K_0.$$
 即"几何相交重数 = 导出相交层的 $K_0$ 类"。推论给出 Bézout：$\sum_z i(X,Y;z)=\deg X\cdot\deg Y$。这把过相交（excess intersection）与形变理论统一处理。
+
+## 相关条目
+
+- [正则局部环](../第37级-交换代数/正则局部环.md)：直接前置依赖。

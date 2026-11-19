@@ -105,3 +105,7 @@ $$
 **老师（拓展）**：这套格式能处理哪些方程？边界在哪里？
 
 **学生**：取 $\mathcal F$ 为内能 $\int U(\rho)$ 得多孔介质方程 $\partial_t\rho=\Delta\rho^m$；取 $\mathcal F$ 为相对熵得 Fokker–Planck；取 $\mathcal F$ 为交互能量得聚集–扩散方程；取 $\mathcal F$ 为指示函数（硬约束）得 Hele-Shaw 型自由边界问题。边界在于：$\mathcal F$ 必须下有界且下半连续，若 $\mathcal F$ 无下界（如某些非凸泛函），格式可能不收敛，需要改用更细的粘性结构或限制在子类测度上。
+
+## 相关条目
+
+- [Benamou-Brenier 公式](Benamou-Brenier公式.md)：直接前置依赖。

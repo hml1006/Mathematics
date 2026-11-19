@@ -143,3 +143,9 @@ $\mathbb P(E)\to M$ 的纤维为 $\mathbb{CP}^{n-1}$，$H^*(\mathbb{CP}^{n-1};\m
 **老师（拓展）**：最重要的推论是什么？
 
 **学生**：结论：射影丛定理 $H^*(\mathbb P(E))\cong H^*(M)\otimes\mathbb Z[\xi]/(\xi^n+c_1\xi^{n-1}+\cdots+c_n)$，基为 $1,\xi,\dots,\xi^{n-1}$。Grothendieck 正是用它定义 Chern 类，Thom 同构与 Euler 类的定义也源自这条自由模结构。
+
+## 相关条目
+
+- [拓扑 K 理论定义](拓扑K理论定义.md)：直接前置依赖。
+- [Swan 定理](Swan定理.md)：直接前置依赖。
+- [覆盖同伦定理](覆盖同伦定理.md)：直接前置依赖。

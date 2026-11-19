@@ -57,3 +57,7 @@ Weil 猜想是二十世纪代几何/数论里程碑：确立 Zeta 函数与上�
 **老师（拓展）**：Deligne 的关键招数是什么？
 
 **学生**：**混合权论**（Weil II）：追踪 Frobenius 作用的"权"滤波，用 Lefschetz 铅笔把一般簇归约到曲线/曲面，再结合 Hodge 指数定理与良约化证明特征值纯度；由此推出 $\ell$-无关性与 Betti 数比较，从而完整证得 Riemann 假设。 一句话：迹公式给有理性，Poincaré 对偶给函数方程，Deligne 的权论给 Riemann 假设。
+
+## 相关条目
+
+- [Lefschetz-Grothendieck迹公式](Lefschetz-Grothendieck迹公式.md)：直接前置依赖。

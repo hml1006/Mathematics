@@ -128,3 +128,7 @@ $$\left|\int a(x)b(x)\,dx\right| = \left|\int a(x)(b(x) - b_Q)\,dx\right| \le \|
 **老师（拓展）**：为什么 $H^p$ 与 $L^p$ 的关系在 $p=1$ 处断开？
 
 **学生**：因为 $p>1$ 时极大函数算子 $L^p$ 有界，$\mathcal Nf\in L^p\iff f\in L^p$；而 $p=1$ 时极大函数只弱 (1,1) 型，故 $H^1\subsetneq L^1$。$p<1$ 时 $H^p\subset\mathcal S'$ 但不再嵌入 $L^p$。
+
+## 相关条目
+
+- [Calderón-Zygmund 分解](../第32级-高等实分析/Calderon-Zygmund分解.md)：直接前置依赖。

@@ -72,3 +72,7 @@ $$
 **老师（拓展）**：周期本身满足什么方程？又怎么从等式解出一个个整数？
 
 **学生**：周期 $\Pi(\psi)=\int_\gamma\Omega(\psi)$ 满足四阶 Picard-Fuchs 方程 $[\theta^4-5\psi\prod_{i=1}^4(5\theta+i)]\Pi=0$（其中 $\theta=\psi\frac d{d\psi}$），在 $\psi=0$ 附近有幂级数解 $\Pi_0=\sum_n\frac{(5n)!}{(n!)^5}\psi^{5n}$ 与对数解 $\Pi_1=\frac1{2\pi i}\Pi_0\log\psi^5+\text{正则}$。比较 $\kappa^A=\kappa^B$ 两侧的 $q$ 幂次系数，逐项即解出 $N_1=2875,N_2=609250,N_3=317206375,\dots$，恰为五次超曲面上 $d$ 次有理曲线的真实数目。
+
+## 相关条目
+
+- [Picard-Fuchs方程](Picard-Fuchs方程.md)：直接前置依赖。

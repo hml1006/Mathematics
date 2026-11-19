@@ -118,3 +118,4 @@ $$\nabla_mR_{ijkl}+\nabla_kR_{ijlm}+\nabla_lR_{ijmk}=0,$$
 - [Bochner公式](./Bochner公式.md)：Weitzenböck/Bochner 型恒等式的推导要反复交换协变导数，用到本恒等式。
 - [Ricci流与Poincare猜想](./Ricci流与Poincare猜想.md)：Einstein 张量散度为零是 Ricci 流方程与孤立子分析的基本恒等式。
 - [截面曲率Ricci曲率标量曲率](./截面曲率Ricci曲率标量曲率.md)：缩并形式的左侧即 Ricci 与标量曲率，本定理给出它们的微分关系。
+- [Levi-Civita 联络](../第33级-微分几何/Levi-Civita联络.md)：直接前置依赖。

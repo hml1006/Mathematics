@@ -160,3 +160,9 @@ $$\operatorname{osc}_{B_{r_{k+1}}} u \leq \theta \operatorname{osc}_{B_{r_k}} u,
 **老师（拓展）**：为什么说这套迭代"不依赖系数的光滑性"？它与 Harnack 不等式是什么关系？
 
 **学生**：因为能量估计只用到一致椭圆性 $\lambda|\xi|^2\le\xi^TA\xi\le\Lambda|\xi|^2$ 与 Sobolev 嵌入，从不微分系数 $A(x)$，故系数可测即可——这正是 De Giorgi-Nash-Moser 理论与 Schauder 理论（需 Hölder 系数）的本质差别。同一套迭代对正解同时控制上确界与下确界，得到 Harnack 不等式 $\sup_{B_R}u\le C\inf_{B_R}u$，进而由振荡估计 $\mathrm{osc}_{B_{r_{k+1}}}u\le\theta\,\mathrm{osc}_{B_{r_k}}u$ 得 Hölder 连续性。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

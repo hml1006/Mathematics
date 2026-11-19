@@ -162,3 +162,7 @@ Kawamata-Viehweg 消没定理是 Kodaira 消没定理在 $(\mathbb{Q})$-除子�
 **老师（拓展）**：消没定理除了服务嵌入定理，还怎样简化 Riemann-Roch？
 
 **学生**：因为 $q>0$ 时 $h^q=0$，Hirzebruch-Riemann-Roch 里的交错和塌缩成单项：$h^0(X,L^{\otimes m})=\chi(X,L^{\otimes m})=\int_X\mathrm{ch}(L^{\otimes m})\mathrm{td}(X)$，右端是 $m$ 的多项式，主项 $\frac{m^n}{n!}\int_X c_1(L)^n$。这既保证截面足够多来嵌入，又把上同调维数变成纯代数计算。它的代数推广 Kawamata-Viehweg 消没，更是极小模型纲领中基点自由定理与锥定理的基石。
+
+## 相关条目
+
+- [Bochner-Kodaira-Nakano 恒等式](Bochner-Kodaira-Nakano恒等式.md)：直接前置依赖。

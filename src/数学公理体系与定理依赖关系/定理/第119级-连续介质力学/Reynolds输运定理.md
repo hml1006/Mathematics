@@ -153,3 +153,9 @@ $$
 **老师（拓展）**：随体导数与积分能自由交换吗？
 
 **学生**：仅当等容（$\nabla\cdot\boldsymbol u=0$）时才行，此时 $\dot J=0$，$\frac{D}{Dt}\int\phi\,dV=\int\frac{D\phi}{Dt}dV$。反之若对一切 $\phi$ 可交换，取 $\phi=1$ 便由局域化引理推出 $\nabla\cdot\boldsymbol u=0$，故等容性是交换成立的充要条件。常见错误是默认它总成立。
+
+## 相关条目
+
+- [多重 Riemann 积分与换元公式](多重Riemann积分与换元公式.md)：直接前置依赖。
+- [Jacobi 行列式与 Jacobi 公式](Jacobi行列式与Jacobi公式.md)：直接前置依赖。
+- [高斯散度定理](../第12级-多变量微积分/高斯散度定理.md)：直接前置依赖。

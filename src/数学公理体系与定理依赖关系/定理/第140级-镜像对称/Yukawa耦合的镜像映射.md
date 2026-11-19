@@ -85,3 +85,9 @@ $$
 **老师（拓展）**：镜像映射 $s(t)$ 从哪里来？等式又为何成立？
 
 **学生**：由周期之比定义 $s^i=\Pi_i(t)/\Pi_0(t)$。两组函数满足同一 Picard-Fuchs 方程 $\mathcal L_i\mathbf\Pi=0$，由 Schwarz 定理只差一个单值性变换，故镜像映射良定义。代入链式法则并用大复结构极限处的边界条件匹配两侧 Yukawa，即得 $\kappa^A=\kappa^B\frac{\partial s}{\partial t}\frac{\partial s}{\partial t}\frac{\partial s}{\partial t}$，于是"难算的曲线数"化为"好算的周期微商"。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

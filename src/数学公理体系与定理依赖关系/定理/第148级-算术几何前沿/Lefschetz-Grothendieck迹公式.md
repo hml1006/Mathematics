@@ -100,3 +100,9 @@ $$\log Z(X,t)=\sum_i(-1)^i\big(-\log\det(1-t\,\mathrm{Frob}_q\mid H^i_c)\big)=\s
 **老师（拓展）**：由此怎么得到 Zeta 函数的有理性？
 
 **学生**：代入 $Z(X,t)=\exp\big(\sum_{n\ge1}\#X(\mathbb{F}_{q^n})\frac{t^n}{n}\big)$，用 $-\log\det(1-tA)=\sum_n\frac{\mathrm{tr}(A^n)}{n}t^n$ 得 $Z(X,t)=\prod_{i\ge0}\det(1-t\,\mathrm{Frob}_q\mid H^i_c)^{(-1)^{i+1}}$。因 $H^i_c$ 有限维、$i>2\dim X$ 时为零，故是 $\mathbb{Q}(t)$ 里的有理函数。 这正是 Weil 猜想证明框架的技术核心：有理性来自迹公式，函数方程来自 Poincaré 对偶，特征值界则是 Deligne 的 Weil I/II。
+
+## 相关条目
+
+- [Lefschetz-Verdier 不动点公式](Lefschetz-Verdier不动点公式.md)：直接前置依赖。
+- [Künneth 公式](../第35级-同调代数/Künneth公式.md)：直接前置依赖。
+- [Weil 猜想（Deligne 的证明）](Weil猜想（Deligne的证明）.md)：直接前置依赖。

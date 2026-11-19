@@ -120,3 +120,7 @@ $$\|u\|_\varphi^2\le C\bigl(\|\bar\partial u\|_\varphi^2+\|\bar\partial^*_\varph
 **学生**：子椭圆正则性：对任意 $s\ge0$ 有
 $$\|u\|_{s+1}\le C_s\bigl(\|\Box_q u\|_s+\|u\|_s\bigr),$$
 故 $N_q$ 提升 Sobolev 正则性。这不仅给出 Levi 问题最简洁的证明，也在无边界紧 Kähler 情形退化为 Hodge 理论，是分析与几何（Cartan 定理 B 的分析证明）之间的桥梁。
+
+## 相关条目
+
+- [Sobolev 空间定义](../第40级-偏微分方程/Sobolev空间定义.md)：直接前置依赖。

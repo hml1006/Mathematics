@@ -83,3 +83,9 @@ $$\dim V(\lambda) = \prod_{\alpha > 0} \frac{(\lambda + \rho, \alpha)}{(\rho, \a
 **老师（拓展）**：Weyl 室的可迁性怎么证，用处是什么？
 
 **学生**：取 $v\in C'$，选使 $(w(v),\rho)$ 最大的 $w$ 把 $v$ 推入主室闭包；若不在 $C$ 内，再用相应反射可严格增大，矛盾，故 $w(C')=C$；唯一性由 $w(C)=C\Rightarrow w=1$ 得到。用处是把表示求和化为对 $W$ 的交错和，如 Weyl 特征标公式 $\chi_\lambda=\frac{\sum_{w\in W}\varepsilon(w)e^{w(\lambda+\rho)}}{\prod_{\alpha>0}(e^{\alpha/2}-e^{-\alpha/2})}$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

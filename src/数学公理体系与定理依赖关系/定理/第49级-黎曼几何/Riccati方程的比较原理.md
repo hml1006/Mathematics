@@ -108,3 +108,6 @@ $$
 - [测地线与Jacobi场](./测地线与Jacobi场.md)：Jacobi 场方程取迹后化为这里的 Riccati 方程。
 - [Rauch比较定理](./Rauch比较定理.md)：Jacobi 场长度与模型空间的比较，是 Riccati 比较的 Jacobi 场版本。
 - [Gronwall不等式](../第23级-常微分方程/Gronwall不等式.md)：微分不等式的另一种比较工具，与首次接触点论证互为补充。
+- [Jacobi方程](Jacobi方程.md)：直接前置依赖。
+- [Laplace-Beltrami 算子与热方程](../第59级-几何分析/Laplace-Beltrami算子与热方程.md)：直接前置依赖。
+- [解的存在唯一性定理（Picard-Lindelöf）](../第23级-常微分方程/Picard-Lindelöf定理.md)：直接前置依赖。

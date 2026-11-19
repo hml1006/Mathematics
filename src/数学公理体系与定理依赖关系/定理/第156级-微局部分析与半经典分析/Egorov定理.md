@@ -104,3 +104,7 @@ $$
 \langle A(t)\psi,\psi\rangle=\langle \mathrm{Op}_\hbar(a\circ\phi_t)\psi,\psi\rangle+O(\hbar).
 $$
 左边其实与 $t$ 无关（特征函数是定态），于是量子观测量在时间平均下等于经典时间平均 $\lim_T\frac1T\int_0^T a\circ\phi_t\,\mathrm dt$。若经典流在能量面上遍历，该平均几乎处处等于 $\int a\,\mathrm d\mu_L$，这就把矩阵元的极限锁定为 Liouville 测度，正是 Šnirelman 定理的骨架。
+
+## 相关条目
+
+- [Gronwall 不等式](../第23级-常微分方程/Gronwall不等式.md)：直接前置依赖。

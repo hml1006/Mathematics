@@ -137,3 +137,11 @@ $$\frac{\det(g_{i\bar j}+\varphi_{i\bar j})}{\det(g_{i\bar j})}=e^F\ge\delta>0$$
 **老师（拓展）**：存在性为什么最难？"先验估计加连续性方法"的核心缺口在哪？
 
 **学生**：连续性方法把方程嵌入 $(\omega+\sqrt{-1}\partial\bar\partial\varphi_t)^n=(1-t+te^F)\omega^n$：解集开性靠隐函数定理与线性椭圆理论，闭性靠一致先验界，难点全在 $C^0$、$C^2$ 估计。Yau 的关键是在 $\omega_\varphi$ 的法坐标下计算 $\Delta_{\omega_\varphi}\log u$（$u=\mathrm{tr}_\omega\omega_\varphi$），得 Chern-Lu 型不等式 $\Delta_{\omega_\varphi}\log u\ge-C_1\mathrm{tr}_{\omega_\varphi}\omega-C_2$，配合辅助函数 $\log u-A\varphi$ 的最大值原理得 $\Delta_\omega\varphi\le C$，反推 $\omega_\varphi\ge C^{-1}\omega$，最后由 Evans-Krylov-Safonov 与 Schauder 自举到 $C^\infty$。
+
+## 相关条目
+
+- [Kähler 恒等式](Kähler恒等式.md)：直接前置依赖。
+- [Calabi-Yau 定理](Calabi-Yau定理.md)：直接前置依赖。
+- [椭圆正则性定理](../第40级-偏微分方程/椭圆正则性定理.md)：直接前置依赖。
+- [椭圆型方程最大值原理](../第40级-偏微分方程/椭圆型方程最大值原理.md)：直接前置依赖。
+- [强极大值原理](../第49级-黎曼几何/强极大值原理.md)：直接前置依赖。

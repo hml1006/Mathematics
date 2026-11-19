@@ -135,3 +135,7 @@ $\square$
 - [Poisson求和公式](./Poisson求和公式.md)：解析数论中另一类把局部信息与整体计数联系起来的恒等式。
 - [素数定理](../第44级-解析数论/素数定理.md)：Ikehara Tauberian 定理的经典应用。
 - [RiemannZeta函数与Euler乘积](../第44级-解析数论/RiemannZeta函数与Euler乘积.md)：$\zeta$ 在 $\Re s=1$ 上的非零性是 Tauberian 证明的解析输入。
+- [Mellin 变换](../第75级-解析数论/Mellin变换.md)：直接前置依赖。
+- [Fourier变换与逆变换公式](../第51级-调和分析/Fourier变换与逆变换公式.md)：直接前置依赖。
+- [Riemann-Lebesgue引理](../第51级-调和分析/Riemann-Lebesgue引理.md)：直接前置依赖。
+- [Fubini 定理](../第12级-多变量微积分/Fubini定理.md)：直接前置依赖。

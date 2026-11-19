@@ -85,3 +85,9 @@ Connes 指标定理是非交换几何核心成果，为"无点空间上的指标
 **老师（拓展）**：循环上同调这一层怎么落地？又怎么保证它算出真正的指标？
 
 **学生**：用循环余链 $\phi_D(a_0,\dots,a_n)=\mathrm{Tr}_s(\gamma a_0[D,a_1]\cdots[D,a_n]e^{-tD^2})$ 定义类 $[\phi_D]\in HC^*(\mathcal A)$；JLO 余链 $\mathrm{Ch}_t(D)=\int_{\Delta_n}\mathrm{Tr}_s(\gamma a_0e^{-s_0tD^2}[D,a_1]\cdots[D,a_n]e^{-s_ntD^2})ds$ 证明其上同调类与 $t$ 无关。最后用 Wodzicki 留数与非交换留数把 $[\phi_D]$ 与 K-理论类配对得 $\langle[\phi_D],[a]\rangle=\mathrm{Index}(D_a^+)$，回到几何即 $\hat A$-类，恢复经典 Atiyah-Singer。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

@@ -100,3 +100,5 @@ $$\varphi_{(X_n,Y_n)}(s,t)=\mathbb E\big[e^{isX_n+itY_n}\big]=\mathbb E\big[e^{i
 
 - [Delta方法](./Delta方法.md)：其证明把 $\sqrt n(g(\hat\theta)-g(\theta))$ 的随机斜率换成常数，正是 Slutsky 定理的应用。
 - [似然比检验渐近分布](./似然比检验渐近分布.md)：渐近正态性推导中同样用 Slutsky 定理处理随机分母。
+- [Lévy 连续性定理](../第115级-计算数学/Lévy连续性定理.md)：直接前置依赖。
+- [连续映射定理](连续映射定理.md)：直接前置依赖。

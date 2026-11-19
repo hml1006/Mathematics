@@ -51,3 +51,8 @@ $$\forall r\in R\;\forall m,n\in M\quad r(m+n)=rm+rn$$
 **老师（拓展）**：分配律 I 与分配律 II 合起来，能刻画"标量作用双线性"到什么程度？它如何支撑子模判定？
 
 **学生**：两条合起来说明 $(\sum_i r_i)(\sum_j m_j)=\sum_{i,j}r_im_j$，即标量作用在 $R$ 与 $M$ 两个方向上同时线性，这正是"双线性"的确切内容，也是定义张量积 $M\otimes_R N$ 的出发点。对子模判定：非空子集 $N\subseteq M$ 是子模当且仅当对任意 $r\in R$、$m,n\in N$ 有 $m-n\in N$ 且 $rm\in N$——其中 $rm\in N$ 依赖分配律 I，保证 $r(m+n)=rm+rn$ 仍落在 $N$ 内。
+
+## 相关条目
+
+- [18-模公理索引](index.md)
+- [公理体系总索引](../index.md)

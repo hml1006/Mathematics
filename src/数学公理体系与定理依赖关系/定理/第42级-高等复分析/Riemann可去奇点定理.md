@@ -170,3 +170,5 @@ $$\left|\frac{G(z)-G(z_0)}{z-z_0}\right|=|z-z_0|\,|f(z)|\to0,$$
 - [Casorati–Weierstrass定理](./Casorati–Weierstrass定理.md)：本定理分离出"本性奇点"这一类，其图像稠密性由 Casorati–Weierstrass 定理描述。
 - [Morera定理](./Morera定理.md)：与本定理互补——前者用积分判据确证全纯性，后者用增长条件确证延拓性。
 - [Picard大定理](./Picard大定理.md)：其陈述与证明的前提正是本定理给出的奇点三分（可去/极点/本性）。
+- [全纯函数与 Cauchy 积分公式](全纯函数与Cauchy积分公式.md)：直接前置依赖。
+- [Liouville 定理](../第78级-丢番图逼近/Liouville定理.md)：直接前置依赖。

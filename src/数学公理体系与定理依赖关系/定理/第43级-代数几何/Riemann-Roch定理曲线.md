@@ -97,3 +97,9 @@ $$\chi(C, \mathcal{O}_C(D)) = (1 - g) + \deg D = \deg D + 1 - g$$
 **老师（拓展）**：这个定理在高维有什么推广？
 
 **学生**：Hirzebruch-Riemann-Roch：$\chi(X,\mathcal{F})=\int_X\operatorname{ch}(\mathcal{F})\operatorname{td}(X)$；相对版本是 Grothendieck-Riemann-Roch。它们把曲线上的"次数—维数"关系升级为特征类与拓扑不变量的配对。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

@@ -91,3 +91,4 @@ $$
 - [Radon定理](./Radon定理.md)：$r=2$ 时的特例，对应对经典 Borsuk–Ulam。
 - [Carathéodory定理](./Carathéodory定理.md)：彩色 Carathéodory 与 Tverberg 通过本框架相联系。
 - [Helly定理](./Helly定理.md)：同为离散几何中凸集相交的经典刻画。
+- [Borsuk-Ulam 定理](../第60级-非线性泛函分析/Borsuk-Ulam定理.md)：直接前置依赖。

@@ -182,3 +182,7 @@ $$
 **老师（拓展）**：$GL_n$ 的平行结论是什么？
 
 **学生**：令 $x_n=0$，则 $s_\lambda(x_1,\dots,x_{n-1},0)=\sum s_\mu(x_1,\dots,x_{n-1})$，求和遍及 $\lambda/\mu$ 为垂直条（每行至多一格）的 $\mu$，因为含字母 $n$ 的半标准表格必须每行至多一个。它是 Pieri 规则的特例，与 LR 规则共同支撑对称函数的分支理论。
+
+## 相关条目
+
+- [Robinson-Schensted 对应](Robinson-Schensted对应.md)：直接前置依赖。

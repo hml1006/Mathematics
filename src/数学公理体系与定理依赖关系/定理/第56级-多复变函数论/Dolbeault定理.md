@@ -133,3 +133,7 @@ $$H^{p,q}_{\bar\partial}(X)\cong H^q(X,\Omega^p),$$
 **老师（拓展）**：它对紧 Kähler 流形的 Hodge 理论给出什么？
 
 **学生**：给出 Hodge 分次 $H^k(X,\mathbb C)=\bigoplus_{p+q=k}H^{p,q}_{\bar\partial}(X)$ 与 Hodge 数的解析解释 $h^{p,q}=\dim H^q(X,\Omega^p)$。Kodaira 消没、Riemann–Roch、Kodaira–Spencer 形变 $H^1(X,T_X)$ 都以它为技术前提；取值于向量丛的版本 $H^q(X,\Omega^p\otimes E)\cong H^{p,q}_{\bar\partial}(X,E)$ 是指标定理的标准形式。
+
+## 相关条目
+
+- [Poincaré 引理](../第34级-代数拓扑/Poincaré引理.md)：直接前置依赖。

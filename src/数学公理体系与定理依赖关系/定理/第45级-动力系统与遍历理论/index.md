@@ -11,3 +11,4 @@
 - [Smale马蹄](./Smale马蹄.md)
 - [von Neumann平均遍历定理](./vonNeumann平均遍历定理.md)
 - [稳定流形定理](./稳定流形定理.md)
+- [Poincaré 回复定理](./Poincaré回复定理.md)：有限测度保测系统中，任意可测集合内几乎每一点都会无穷多次返回该集合。

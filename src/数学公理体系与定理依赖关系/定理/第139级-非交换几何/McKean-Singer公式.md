@@ -92,3 +92,9 @@ $$\mathrm{tr}\big(e^{-tD^2}\big|_{\mathcal{H}_\pm}\big)=\int_M\mathrm{tr}\,k_t^\
 **老师（拓展）**：这条恒等式在指标定理里怎么用？分别令 $t\to0^+$ 与 $t\to\infty$ 会看到什么？
 
 **学生**：把超迹写成积分核 $\mathrm{Str}(e^{-tD^2})=\int_M\mathrm{str}\,k_t(x,x)dx$。因与 $t$ 无关，令 $t\to0^+$ 用 Seeley-deWitt 渐近展开即得局部曲率多项式（Atiyah-Singer 的热核证明）；令 $t\to\infty$ 则只保留零模，超迹自动等于 $\dim\ker D_+-\dim\ker D_-$，从另一侧印证公式。两端分别给出局部几何与零模计数，正是谱三元组中导出 Connes 局部指标公式的技术基石。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

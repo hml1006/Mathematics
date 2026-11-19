@@ -71,3 +71,7 @@ $$
 **老师（拓展）**：Jones 与算子代数有何渊源？
 
 **学生**：Jones 最初在 von Neumann 代数指标理论中发现它。用 Hecke 代数或 Temperley–Lieb 代数的 Markov 迹，$\rho(\sigma_i)=t^{1/2}e_i+t^{-1/2}$，闭辫公式为 $V_{\widehat\beta}(t)=(-\frac{t+1}{\sqrt t})^{n-1}\sqrt t^{-e(\beta)}\operatorname{tr}(\rho(\beta))$。这条线索把纽结理论、统计力学与算子代数连成一体，催生了量子不变量与 Khovanov 同调。
+
+## 相关条目
+
+- [Biedenharn-Elliott恒等式](../第62级-低维拓扑/Biedenharn-Elliott恒等式.md)：量子群表示论中量子 $6j$ 符号的五边形一致性方程，是 Jones 多项式通向融合范畴与三维流形不变量的相关主题。

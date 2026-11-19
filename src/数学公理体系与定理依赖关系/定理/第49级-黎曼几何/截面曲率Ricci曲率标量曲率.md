@@ -110,3 +110,9 @@ $$F(\alpha,\beta)=\frac14\big(F(\alpha+\beta,\alpha+\beta)-F(\alpha-\beta,\alpha
 **老师（拓展）**：为何三者用途各异？
 
 **学生**：$K$ 最细、决定 $R$；$\mathrm{Ric}$ 中等，出现在 Bonnet-Myers、体积比较与 Einstein 方程；$S$ 最粗，出现在 Gauss-Bonnet 与 Einstein-Hilbert 作用量。Einstein 流形满足 $\mathrm{Ric}=\lambda g$，由第二 Bianchi 恒等式可推 $\nabla S=0$，即 $S=n\lambda$ 为常数。
+
+## 相关条目
+
+- [Riemann 曲率张量的对称性](Riemann曲率张量的对称性.md)：直接前置依赖。
+- [极化恒等式](../第14级-线性代数/极化恒等式.md)：直接前置依赖。
+- [第二 Bianchi 恒等式](第二Bianchi恒等式.md)：直接前置依赖。

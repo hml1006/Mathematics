@@ -106,4 +106,6 @@ $$\sum_{p \equiv a \pmod{q}} \frac{1}{p^s} \sim \frac{1}{\varphi(q)} \log \frac{
 
 ## 相关条目
 
-- [Dirichlet 算术级数定理（第75级-解析数论）](../第75级-解析数论/Dirichlet算术级数定理.md)：与本条目为同一定理，另收录于第75级-解析数论，可交叉参考。
+- [Dirichlet 算术级数定理（第75级-解析数论）](../第75级-解析数论/Dirichlet算术级数定理.md)：同一定理的跨级版本，另收录于第75级-解析数论，可交叉参考。
+- [Dirichlet $L$-函数](DirichletL函数.md)：直接前置依赖。
+- [Euler 乘积公式](../第75级-解析数论/Euler乘积公式.md)：直接前置依赖。

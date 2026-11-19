@@ -123,3 +123,9 @@ $$
 **老师（拓展）**：举两个"有名"的推论。
 
 **学生**：Leray 谱序列 $E_2^{p,q}=H^p(Y;R^qf_*\mathcal{F})\Rightarrow H^{p+q}(X;\mathcal{F})$（取 $F=f_*$、$G=\Gamma$）；群上同调的 Hochschild-Serre 谱序列 $E_2^{p,q}=H^p(G/H;H^q(H;M))\Rightarrow H^{p+q}(G;M)$。两者都是"先局部、再全局"或"先商、再整群"的次序修正，统一在 Grothendieck 框架下。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

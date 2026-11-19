@@ -133,3 +133,8 @@ $$\sqrt{n}(\text{arctanh}(r) - \text{arctanh}(\rho)) \xrightarrow{d} N(0, 1)$$
 **老师（拓展）**：举一个方差稳定化变换的例子，说明 Delta 方法如何让渐近方差与参数无关。
 
 **学生**：泊松样本 $\bar X$ 满足 $\sqrt n(\bar X-\lambda)\xrightarrow{d}N(0,\lambda)$，方差随 $\lambda$ 变。取 $g(\lambda)=\sqrt\lambda$，$g'(\lambda)=\frac1{2\sqrt\lambda}$，则渐近方差为 $[g'(\lambda)]^2\lambda=\frac{1}{4\lambda}\cdot\lambda=\frac14$，与 $\lambda$ 无关。多变量版相应为 $\sqrt n(g(\hat{\boldsymbol\theta})-g(\boldsymbol\theta))\xrightarrow{d}N(0,\nabla g^T\Sigma\nabla g)$。
+
+## 相关条目
+
+- [Slutsky 定理](Slutsky定理.md)：直接前置依赖。
+- [连续映射定理](连续映射定理.md)：直接前置依赖。

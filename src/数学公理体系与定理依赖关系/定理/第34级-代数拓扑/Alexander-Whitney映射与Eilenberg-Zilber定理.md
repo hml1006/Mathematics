@@ -135,4 +135,4 @@ $$H_n(X\times Y;R)\cong\bigoplus_{p+q=n}H_p(X;R)\otimes_R H_q(Y;R).$$
 - [上同调与杯积结构](./上同调与杯积结构.md)：杯积正是用对角线映射复合 $AW$ 后（转置）在链水平定义的，本定理保证其良定义与乘法结构。
 - [Eilenberg-Steenrod公理](./Eilenberg-Steenrod公理.md)：乘积公理（Künneth）是 Eilenberg–Steenrod 同调公理体系的一条，本定理给出其实现。
 - [奇异同调群](./奇异同调群.md)：本定理的比较对象正是奇异链复形与张量积复形。
-
+- [acyclic models定理](acyclicmodels定理.md)：直接前置依赖。

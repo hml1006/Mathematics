@@ -98,3 +98,4 @@ $$H^k_{dR}(U)=\frac{\ker(d:\Omega^k\to\Omega^{k+1})}{\operatorname{im}(d:\Omega^
 
 - [deRham定理](./deRham定理.md)：de Rham 上同调与奇异上同调的同构以本引理为其局部可缩情形的起点。
 - [奇异同调群](./奇异同调群.md)：本引理给出可缩区域上同调为零，是奇异同调"锥化"论证的微分形式对偶。
+- [Cartan 公式](../第33级-微分几何/Cartan公式.md)：直接前置依赖。

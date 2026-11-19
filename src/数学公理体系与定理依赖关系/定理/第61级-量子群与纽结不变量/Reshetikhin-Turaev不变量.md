@@ -61,3 +61,7 @@ Reshetikhin–Turaev 不变量为 Witten 的 Chern–Simons 路径积分不变�
 **老师（拓展）**：取具体范畴会得到什么？
 
 **学生**：取 $\mathcal C=\mathrm{Rep}(U_q(\mathfrak{sl}_2))$ 在 $q=e^{\pi i/r}$ 处的可积表示范畴，得 $SU(2)$ 量子不变量，$\pm1$-框手术分支按量子维数加权。它与 Turaev–Viro 不变量满足 $TV_{\mathcal C}(M)=|\mathrm{WRT}(M)|^2$，从而把 Chern–Simons 的物理期望值落成可算的组合量。
+
+## 相关条目
+
+- [Biedenharn-Elliott恒等式](../第62级-低维拓扑/Biedenharn-Elliott恒等式.md)：量子 $6j$ 符号与融合范畴 $F$-符号的五边形方程，为相关三维流形不变量提供一致性基础。

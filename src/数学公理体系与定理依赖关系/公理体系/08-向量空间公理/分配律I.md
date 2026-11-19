@@ -50,3 +50,8 @@ $$\forall a\in\mathbb{F}\;\forall u,v\in V\quad a(u+v)=au+av$$
 **学生**：直接由分配律 I：
 $$a\mathbf 0=a(\mathbf 0+\mathbf 0)=a\mathbf 0+a\mathbf 0$$
 两边加上 $-a\mathbf 0$，得 $a\mathbf 0=\mathbf 0$。这说明分配律 I 是让标量对"零"和"和"的运算自洽的关键；至于 $0\cdot v=\mathbf 0$、$(-1)\cdot v=-v$ 这类需要标量加法配合的性质，则要再借分配律 II 来完成。
+
+## 相关条目
+
+- [08-向量空间公理索引](index.md)
+- [公理体系总索引](../index.md)

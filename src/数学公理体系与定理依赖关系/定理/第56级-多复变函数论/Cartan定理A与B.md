@@ -135,3 +135,7 @@ $$0 \to \mathbb{Z} \to \mathcal{O} \to \mathcal{O}^* \to 0,$$
 **学生**：是线丛分类化为拓扑问题。由指数层正合序列 $0\to\mathbb Z\to\mathcal O\to\mathcal O^*\to0$ 与定理 B，得
 $$\mathrm{Pic}(X)\cong H^1(X,\mathcal O^*)\cong H^2(X,\mathbb Z),$$
 即 Stein 流形上全纯线丛分类等价于拓扑分类（Oka–Grauert 原理）。Serre 1953 年把该层论方法移植到代数几何，建立 GAGA 原理，是代数几何层论革命的开端。
+
+## 相关条目
+
+- [Stein 流形理论](Stein流形理论.md)：直接前置依赖。

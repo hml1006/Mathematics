@@ -229,3 +229,9 @@ Kähler 恒等式可推广到完备 Kähler 流形（$L^2$-上同调）与适当
 **老师（拓展）**：由 $\Delta_d$ 与 $L$ 交换，能得到什么拓扑结论？
 
 **学生**：硬 Lefschetz 定理：$L^k:H^{n-k}(X,\mathbb C)\to H^{n+k}(X,\mathbb C)$ 是同构。它源于 $L,\Lambda,H$ 构成 $\mathfrak{sl}_2$ 表示（$[L,\Lambda]=H$，$[H,L]=2L$，$[H,\Lambda]=-2\Lambda$）以及 $[L,\Delta_d]=0$，把调和 $k$-形式按原始形式分解为 $\mathcal A^k=\bigoplus_jL^j\mathcal P^{k-2j}$。这既是 Kähler 流形的强拓扑约束（例如排除 $S^3\times S^3$），也是 Lefschetz 分解与 Hodge-Riemann 双线性关系的代数基础。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

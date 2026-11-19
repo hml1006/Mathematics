@@ -158,3 +158,9 @@ $\square$
 **学生**：Arnold–Lagrangian 相交猜想：$L_1=\varphi(L_0)$ 为 Hamilton 同胚像且横截时
 $$\#(L_0\cap L_1)\ge\dim H_*(L_0;\mathbb Z_2),$$
 由 Floer 在 $\pi_2(M,L)=0$ 时证明。Gromov 不嵌入定理：标准 $\mathbb R^{2n}$ 中不存在闭 Lagrangian 子流形（用 $\omega_0$ 精确与可去奇点导出的能量-边界矛盾）。此外 Audin 猜想、displaceability 与 displacement energy 是活跃主题；在镜像对称中 Fukaya 范畴正以 Lagrangian 为对象。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

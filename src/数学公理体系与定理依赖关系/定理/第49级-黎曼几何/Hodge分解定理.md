@@ -104,4 +104,5 @@ $$\Omega^k(M)=\mathcal H^k(M)\oplus d\Omega^{k-1}(M)\oplus d^*\Omega^{k+1}(M),$$
 
 ## 相关条目
 
-- [Hodge 分解定理（第58级-复几何）](../第58级-复几何/Hodge分解定理.md)：相关条目——本条目为 Riemann 流形上微分形式的 Hodge 分解；第58级条目为紧 Kähler 流形上按 (p,q)-型的细化分解。
+- [Hodge 分解定理（第58级-复几何）](../第58级-复几何/Hodge分解定理.md)：不同领域/推广形式——本条目为 Riemann 流形上微分形式的正交 Hodge 分解；第58级条目为紧 Kähler 流形上按 $(p,q)$-型的上同调细化分解，并非简单重复。
+- [de Rham 上同调](../第33级-微分几何/deRham上同调.md)：直接前置依赖。

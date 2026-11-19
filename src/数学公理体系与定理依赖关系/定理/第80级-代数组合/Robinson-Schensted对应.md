@@ -55,3 +55,8 @@ RSK 对应是组合表示论的核心工具：它给出置换与标准表的双�
 **老师（拓展）**：给个例子与推论？
 
 **学生**：$\pi=3142$ 经算法得 $P=\begin{smallmatrix}1&2\\3&4\end{smallmatrix}$、$Q=\begin{smallmatrix}1&3\\2&4\end{smallmatrix}$，形状 $(2,2)$。由 $\lambda_1=$ 最长递增子序列长度可得 Schensted 定理，连接 RSK 与 Ulam 问题、随机杨表与 Plancherel 测度。
+
+## 相关条目
+
+- [RSK 插入算法](RSK插入算法.md)：直接前置依赖。
+- [钩长公式](钩长公式.md)：直接前置依赖。

@@ -79,3 +79,7 @@ $$
 **老师（拓展）**：它与纽结、流形不变量的关系？
 
 **学生**：YBE 是辫关系的矩阵化身，故 $\rho(\sigma_i)=PR$ 给出 $B_n$ 的表示，闭辫取迹即得 Markov 迹式的链环不变量，Jones、HOMFLY 都是其特化。再把 $R$ 与 $6j$ 符号（五边形方程）组合，就搭出 Reshetikhin–Turaev 与 Turaev–Viro 的三维流形不变量，因此 YBE 是整条量子拓扑链条的起点。
+
+## 相关条目
+
+- [Biedenharn-Elliott恒等式](../第62级-低维拓扑/Biedenharn-Elliott恒等式.md)：量子 $6j$ 符号与融合范畴的五边形方程；它与 Yang–Baxter 方程分别处理结合与换序的一致性。

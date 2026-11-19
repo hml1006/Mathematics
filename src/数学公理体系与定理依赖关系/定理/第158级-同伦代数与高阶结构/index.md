@@ -16,6 +16,7 @@
 - [同伦极限与同伦余极限](./同伦极限与同伦余极限.md)：拟范畴中的同伦 (co)limit 由万有性质刻画，可借助单纯模型或 Bousfield-Kan 公式计算。
 - [Grothendieck 构造与 $\infty$-函子](./Grothendieck构造与∞函子.md)：纤维化/余纤维化对应函子，Lurie 的 unstraightening 把这一对应提升到 $\infty$-范畴。
 - [Waldhausen $S_\bullet$ 构造与代数 K 理论](./Waldhausen-S构造与代数K理论.md)：Waldhausen 的 $S_\bullet$ 构造给出 Waldhausen 范畴的 K 理论谱，且与 Quillen Q 构造一致（一致性定理）。
+- [Dold-Kan 对应](./Dold-Kan对应.md)：任意 Abel 范畴上的单纯对象与非负链复形通过规范化函子 $N$ 和 $\Gamma(C)_n=\bigoplus_{[n]\twoheadrightarrow[k]}C_k$ 互为逆等价，并满足 $\pi_n(A,0)\cong H_n(N(A))$。
 
 ## 前置知识
 

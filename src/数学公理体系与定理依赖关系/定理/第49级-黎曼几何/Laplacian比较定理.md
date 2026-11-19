@@ -148,3 +148,7 @@ $$\Delta\rho\le(n-1)\frac{\mathrm{sn}_k'(\rho)}{\mathrm{sn}_k(\rho)},$$
 - [Bonnet-Myers定理](./Bonnet-Myers定理.md)：由 Laplacian 比较直接推出正 Ricci 曲率下流形紧致、直径有界。
 - [Rauch比较定理](./Rauch比较定理.md)：从 Jacobi 场侧比较测地线散布，是 Laplacian 比较的"线性化"版本。
 - [测地线与Jacobi场](./测地线与Jacobi场.md)：距离函数的 Hessian、Riccati 方程与 Jacobi 场的对应关系。
+- [指数映射](../第39级-李群与李代数/指数映射.md)：直接前置依赖。
+- [第二变分公式](第二变分公式.md)：直接前置依赖。
+- [Bochner 公式](Bochner公式.md)：直接前置依赖。
+- [Riccati方程的比较原理](Riccati方程的比较原理.md)：直接前置依赖。

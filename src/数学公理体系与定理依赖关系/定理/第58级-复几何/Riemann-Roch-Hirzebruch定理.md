@@ -128,3 +128,9 @@ $$\int_X\operatorname{ch}(E)\operatorname{td}(X)=\int_X\left(r+c_1(E)\right)\lef
 **老师（拓展）**：分裂原理在定理证明中扮演什么角色？
 
 **学生**：它把计算从一般丛约化到线丛之和。取旗丛 $Fl(T^{1,0}X)$ 使 $\pi^*(T^{1,0}X)=\bigoplus_jL_j$、$\pi^*(E)=\bigoplus_iM_i$，$c_1(L_j)=x_j$、$c_1(M_i)=y_i$，于是 $\mathrm{ch}(E)=\sum_ie^{y_i}$、$\mathrm{td}(X)=\prod_j\frac{x_j}{1-e^{-x_j}}$，展开取 $2n$ 次分量即得由 Chern 数组成的拓扑不变量。其相对形式 Grothendieck-Riemann-Roch 进一步推广到态射 $f:X\to Y$，成为相交理论的核心。
+
+## 相关条目
+
+- [Dolbeault 定理](../第56级-多复变函数论/Dolbeault定理.md)：直接前置依赖。
+- [Chern 特征标](../第55级-K理论/Chern特征标.md)：直接前置依赖。
+- [Atiyah-Singer 指标定理](../第48级-数学物理/Atiyah-Singer指标定理.md)：直接前置依赖。

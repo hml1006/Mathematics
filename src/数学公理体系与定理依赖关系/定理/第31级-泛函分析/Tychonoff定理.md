@@ -102,3 +102,5 @@ $$\bigcap_{F\in\mathcal A_i}F\ne\varnothing;$$
 
 - [Banach-Alaoglu定理](./Banach-Alaoglu定理.md)：证明中把弱*紧性归约为乘积空间 $\prod_x D_x$ 的紧性，直接用本定理。
 - [Krein-Milman定理](./Krein-Milman定理.md)：其极值点存在性论证以紧凸集为前提，常由本定理提供。
+- [Alexander 子基定理](Alexander子基定理.md)：直接前置依赖。
+- [Zorn 引理](../第09级-集合论基础/Zorn引理.md)：直接前置依赖。

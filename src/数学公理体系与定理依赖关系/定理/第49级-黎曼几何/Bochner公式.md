@@ -144,3 +144,6 @@ $$0=\int_M\frac12\Delta|\nabla f|^2=\int_M\big(|\mathrm{Hess}\,f|^2+\mathrm{Ric}
 - [Bonnet-Myers定理](./Bonnet-Myers定理.md)：第二变分与 Bochner 型计算共同给出正 Ricci 曲率下的直径与拓扑限制。
 - [Laplacian比较定理](./Laplacian比较定理.md)：对距离函数应用 Bochner 公式得到 Riccati 不等式，是体积比较的起点。
 - [Hodge分解定理](./Hodge分解定理.md)：调和形式的 Weitzenböck/Bochner 公式是 Hodge 理论与消没定理的分析核心。
+- [Laplace-Beltrami 算子与热方程](../第59级-几何分析/Laplace-Beltrami算子与热方程.md)：直接前置依赖。
+- [Riemann 曲率张量的对称性](Riemann曲率张量的对称性.md)：直接前置依赖。
+- [极大值原理](极大值原理.md)：直接前置依赖。

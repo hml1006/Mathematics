@@ -63,3 +63,8 @@ Itô 引理是随机分析与金融数学的基石，用于推导资产价格模
 **老师（拓展）**：多维情形这个二阶项怎么组织？
 
 **学生**：二阶项由协方差矩阵给出，$df=(\partial_tf+\sum_i\mu^i\partial_{x_i}f+\frac12\sum_{i,j}(\sigma\sigma^\top)_{ij}\partial_{x_ix_j}f)dt+\sum_i\partial_{x_i}f\sum_j\sigma^{ij}dW^j$，交叉项 $(dW^i)(dW^j)=\delta_{ij}dt$ 使 $\sigma\sigma^\top$ 出现。它正是 Black-Scholes 与 Feynman-Kac 的共同运算引擎。
+
+## 相关条目
+
+- [Itô 积分](../第41级-随机过程/Itô积分.md)：直接前置依赖。
+- [链式法则（多变量）](../第12级-多变量微积分/链式法则多变量.md)：直接前置依赖。

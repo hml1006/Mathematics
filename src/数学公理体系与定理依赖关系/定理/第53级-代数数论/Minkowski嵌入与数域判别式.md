@@ -204,3 +204,8 @@ $$
 **老师（拓展）**：基变换公式和常见误区？
 
 **学生**：换 $\mathbb Q$-基时 $(\beta_i)=(\alpha_j)A$ 给出 $\operatorname{disc}(\beta_1,\dots,\beta_n)=\det(A)^2\operatorname{disc}(\alpha_1,\dots,\alpha_n)$，故整基实现最小判别式；对子格 $\Lambda=\mathbb Z\beta_1\oplus\cdots\oplus\mathbb Z\beta_n\subseteq\mathcal O_K$ 更有 $\operatorname{disc}(\beta)=[\mathcal O_K:\Lambda]^2 d_K$。误区是以为判别式会随基改变——它只差一个平方因子，作为数域的不变量（在选定整基后）完全确定。
+
+## 相关条目
+
+- [本原元素定理](../第36级-伽罗瓦理论/本原元素定理.md)：直接前置依赖。
+- [Minkowski 凸体定理](../第79级-几何数论/Minkowski凸体定理.md)：直接前置依赖。

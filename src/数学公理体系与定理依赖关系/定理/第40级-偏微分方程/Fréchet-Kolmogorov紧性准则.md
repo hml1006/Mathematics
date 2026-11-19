@@ -139,3 +139,8 @@ $$\|u-v_i\|_p\le\|u-u*\rho_\delta\|_p+\|u*\rho_\delta-v_i\|_p<4\epsilon .$$
 - [Sobolev嵌入定理](./Sobolev嵌入定理.md)：紧嵌入所需的"平移估计 + 质量集中"正是本准则的三条判据。
 - [Rellich-Kondrachov紧嵌入定理](./Rellich-Kondrachov紧嵌入定理.md)：以本准则为核心工具证明 $W^{k,p}$ 到 $L^q$ 的紧嵌入。
 - [Aubin-Lions紧性引理](./Aubin-Lions紧性引理.md)：演化方程中把本准则与时间平移估计结合，得到中间空间的强紧性。
+- [Hölder 不等式](../第17级-实分析/Hölder不等式.md)：直接前置依赖。
+- [Young 卷积不等式](../第51级-调和分析/Young卷积不等式.md)：直接前置依赖。
+- [积分不等式](../第11级-单变量微积分/积分不等式.md)：直接前置依赖。
+- [Arzelà-Ascoli 定理](../第42级-高等复分析/Arzelà-Ascoli定理.md)：直接前置依赖。
+- [Minkowski 不等式](../第17级-实分析/Minkowski不等式.md)：直接前置依赖。

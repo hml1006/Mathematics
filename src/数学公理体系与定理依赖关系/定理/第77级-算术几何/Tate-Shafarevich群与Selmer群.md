@@ -77,3 +77,7 @@ $$
 **老师（拓展）**：举一个 Ш 非零的例子，并说明它与 BSD 的关系。
 
 **学生**：Selmer 的曲线 $3X^3+4Y^3+5Z^3=0$ 处处局部有解而无非平凡有理点，其 Jacobian 的 Ш 含非平凡元素。BSD 猜想把 Ш 的阶写进 $L$ 函数在中心的值：$\frac{L^{(r)}(E,1)}{r!}=\frac{\#\text{Ш}(E/\mathbb Q)\cdot\Omega_E\cdot\operatorname{Reg}(E)\cdot\prod_p c_p}{(\#E(\mathbb Q)_{\mathrm{tors}})^2}$，其中 $r$ 是秩，$c_p$ 是局部 Tamagawa 数。正合列中的 $\mathrm{Sel}_m$ 正是检验这个公式的有限可算对象。
+
+## 相关条目
+
+- [弱 Mordell-Weil 定理](弱Mordell-Weil定理.md)：直接前置依赖。

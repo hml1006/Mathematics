@@ -99,3 +99,4 @@ $$
 - [compensated-compactness](./compensated-compactness.md)：Murat 引理是补偿紧性理论中最基本的引理。
 - [熵条件](./熵条件.md)：熵产率的收敛性判定依赖本引理给出的乘积极限。
 - [Glimm格式收敛性](./Glimm格式收敛性.md)：格式的紧性分析使用 Murat 引理处理非线性通量。
+- [守恒律方程基本理论](守恒律方程基本理论.md)：直接前置依赖。

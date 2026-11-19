@@ -135,3 +135,7 @@ $$u(x) = \int_\Omega K(x, y) f(y, u(y))\, dy$$
 **老师（拓展）**：它和 Leray-Schauder、Kakutani 的关系是什么？
 
 **学生**：Leray-Schauder 度把 Schauder 的存在性升级为"度的非零即保证有解"并给出先验界判据（延拓原理），是更精细的工具；Krasnoselskii 处理压缩算子与紧算子之和；Kakutani/Fan-Glicksberg 把它推广到集值映射与自反空间弱紧凸集，是 Arrow-Debreu 一般均衡存在性的核心。它们同属把有限维拓扑（Brouwer）提升到无穷维的技术族。
+
+## 相关条目
+
+- [Brouwer不动点定理](../第34级-代数拓扑/Brouwer不动点定理.md)：直接前置依赖。

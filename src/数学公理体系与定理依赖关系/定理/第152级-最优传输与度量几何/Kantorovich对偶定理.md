@@ -94,3 +94,7 @@ $$
 **老师（拓展）**：这个对偶还给出什么定量信息？
 
 **学生**：它给出最优性判据：$\pi$ 最优当且仅当存在可行对 $(\varphi,\psi)$ 使 $\varphi\oplus\psi=c$ 在所有被运输的 $(x,y)$ 上成立。取 $c$ 为度量 $d$ 时可进一步把两个势合并成一个 Lipschitz 函数，得到 Kantorovich–Rubinstein 公式；取 $c=|x-y|^2$ 时 $c$-凹势的梯度给出 Brenier 映射，对偶因此是全部定量传输理论的出发点。
+
+## 相关条目
+
+- [Monge 问题与 Kantorovich 松弛](Monge问题与Kantorovich松弛.md)：直接前置依赖。

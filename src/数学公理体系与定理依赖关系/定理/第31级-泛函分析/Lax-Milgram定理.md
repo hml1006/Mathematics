@@ -111,3 +111,7 @@ $$
 **老师（拓展）**：应用到什么样的方程？
 
 **学生**：Poisson 方程 $-\Delta u=f$ 的弱形式：$a(u,v)=\int_\Omega\nabla u\cdot\nabla v$ 在 $H_0^1(\Omega)$ 上，由 Poincaré 不等式满足强制性，于是弱解存在唯一。若 $a$ 对称，解还最小化能量泛函 $J(u)=\frac12a(u,u)-f(u)$。
+
+## 相关条目
+
+- [Riesz 表示定理（Hilbert 空间）](Riesz表示定理.md)：直接前置依赖。

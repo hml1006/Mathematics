@@ -122,3 +122,7 @@ $$
 **老师（拓展）**：强形式是怎样归约到弱形式的？
 
 **学生**：用 Rabinowitsch 技巧。设 $f\in I(V(I))$，引入新变量 $y$，取 $J=\langle I,\,1-yf\rangle\subseteq k[x_1,\dots,x_n,y]$。若 $J$ 是真理想，弱零点定理给出点使 $f(a)=0$ 同时 $1-bf(a)=0$，即 $1=0$，矛盾。故 $1\in J$，存在 $1=\sum h_if_i+g(1-yf)$。令 $y\mapsto 1/f$ 并乘以 $f^m$ 消去分母，得 $f^m\in I$，即 $f\in\sqrt{I}$。
+
+## 相关条目
+
+- [Hilbert 基定理](Hilbert基定理.md)：直接前置依赖。

@@ -93,3 +93,4 @@ $$P\bigl(X>\theta E[X]\bigr)\ \ge\ (1-\theta)^2\,\frac{\bigl(E[X]\bigr)^2}{E[X^2
 - [马尔可夫不等式](../第24级-概率论基础/马尔可夫不等式.md)：仅用一阶矩给出尾概率上界，是同类矩方法的起点。
 - [Cauchy-Schwarz不等式](../第14级-线性代数/Cauchy-Schwarz不等式.md)：本定理证明的核心工具（$L^2$ 形式的 Cauchy–Schwarz）。
 - [Banach空间型与余型](./Banach空间型与余型.md)：Khintchine 不等式在 Banach 空间中的推广，与本不等式同源。
+- [Hölder 不等式](../第17级-实分析/Hölder不等式.md)：直接前置依赖。

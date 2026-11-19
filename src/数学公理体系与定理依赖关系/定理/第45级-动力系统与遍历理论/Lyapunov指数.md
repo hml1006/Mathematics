@@ -102,3 +102,7 @@ Oseledets定理同样适用于线性化系统 $v(t) = D\varphi_t(x) \cdot v_0$�
 **老师（拓展）**：遍历性带来什么简化？
 
 **学生**：$\lambda_i$ 与个数 $k$ 在 $\mu$-几乎处处为常数。技术上靠 Kingman 次可加遍历定理处理 $\log\|P_nv\|$ 的次可加性，并用 Furstenberg–Kesten 定理证 $\frac1n\log\|P_n\|$ 几乎处处收敛。
+
+## 相关条目
+
+- [解的存在唯一性定理（Picard-Lindelöf）](../第23级-常微分方程/Picard-Lindelöf定理.md)：直接前置依赖。

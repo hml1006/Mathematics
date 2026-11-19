@@ -117,3 +117,6 @@ $$H_0^1(\Omega)\hookrightarrow\hookrightarrow L^2(\Omega)\hookrightarrow H^{-1}(
 - [Sobolev空间定义](./Sobolev空间定义.md)：$H_0^1,H^{-1}$ 与 Bochner 空间是引理的工作环境。
 - [Navier-Stokes方程弱解存在性](./Navier-Stokes方程弱解存在性.md)：弱解存在性依赖本引理在 $L^2(0,T;L^2)$ 中取强收敛子列。
 - [Sobolev嵌入定理](./Sobolev嵌入定理.md)：紧嵌入 $X\hookrightarrow\hookrightarrow B$ 是引理的核心假设。
+- [Rellich-Kondrachov紧嵌入定理](Rellich-Kondrachov紧嵌入定理.md)：直接前置依赖。
+- [Arzelà-Ascoli 定理](../第42级-高等复分析/Arzelà-Ascoli定理.md)：直接前置依赖。
+- [Fréchet-Kolmogorov紧性准则](Fréchet-Kolmogorov紧性准则.md)：直接前置依赖。

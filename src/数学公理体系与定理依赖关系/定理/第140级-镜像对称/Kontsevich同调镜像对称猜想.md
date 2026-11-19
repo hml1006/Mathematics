@@ -73,3 +73,7 @@ $A_\infty$-关系式对应模空间边界退化。
 **老师（拓展）**：这个等价怎么被验证？它在物理与计算上意味着什么？
 
 **学生**：构造镜像函子 $\Phi:\mathcal F(M)\to D^b\mathrm{Coh}(W)$ 并验证全忠实与本质满射，得 $H^*\mathrm{Hom}_{\mathcal F(M)}(L_0,L_1)\cong\mathrm{Hom}_{D^b\mathrm{Coh}(W)}(\Phi(L_0),\Phi(L_1))$；五次超曲面情形用矩阵因子化与 Landau-Ginzburg 对应显式验证。物理上即 A-模型 D-膜（Lagrangian）与 B-模型 D-膜（凝聚层）谱等价，计算上把 A-模型不变量（难算）迁移到较易的 B-模型。
+
+## 相关条目
+
+- [Floer 同调](../第57级-辛几何与辛拓扑/Floer同调.md)：直接前置依赖。

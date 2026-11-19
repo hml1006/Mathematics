@@ -83,3 +83,7 @@ $\square$
 **老师（拓展）**：秩等式在逻辑上依赖 Mordell-Weil 定理吗？
 
 **学生**：依赖。要先有 $E(K)\cong\mathbb Z^r\oplus T$ 这个有限生成结构，才能把 $\hat h$ 限制到 $\mathbb Z^r$ 上谈正定内积与 regulator；它是有限生成的推论，而不是证明有限生成的工具。若 $E(K)$ 不是有限生成，$\hat h$ 仍可定义，但"秩"与 regulator 都失去意义。
+
+## 相关条目
+
+- [Weil 猜想（Deligne 的证明）](../第148级-算术几何前沿/Weil猜想（Deligne的证明）.md)：直接前置依赖。

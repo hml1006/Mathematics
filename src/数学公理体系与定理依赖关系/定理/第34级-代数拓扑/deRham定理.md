@@ -130,3 +130,7 @@ de Rham 定理的推广包括：带平坦丛系数的 de Rham 定理、等变 de
 **老师（拓展）**：环结构对应怎么证，常见误区在哪？
 
 **学生**：对 $\sigma:\Delta^{p+q}\to M$，有 $\int_\sigma\omega\wedge\eta=\int_{\sigma\circ\lambda_p}\omega\cdot\int_{\sigma\circ\rho_q}\eta=\langle I(\omega)\cup I(\eta),\sigma\rangle$，其中用了 AW 映射。常见误区是以为同构对任意系数成立——它本质是 $\mathbb R$ 系数，整数系数无此对应。
+
+## 相关条目
+
+- [de Rham 上同调](../第33级-微分几何/deRham上同调.md)：直接前置依赖。

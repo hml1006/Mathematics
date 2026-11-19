@@ -65,3 +65,8 @@ K-S 检验是最经典的拟合优度检验，可同时用双侧（偏离）形�
 **老师（拓展）**：极限分布的级数是什么，与 Cramér-von Mises 检验什么关系？
 
 **学生**：$\lim_{n\to\infty}\mathbb{P}(\sqrt{n}D_n\le d)=1-2\sum_{k\ge1}(-1)^{k-1}e^{-2k^2d^2}$，即 Kolmogorov 分布；若换成泛函 $\int\alpha_n^2\,dF$ 则得 Cramér-von Mises 的极限分布，本质都是布朗桥泛函分布。
+
+## 相关条目
+
+- [Donsker 定理](Donsker定理.md)：直接前置依赖。
+- [连续映射定理](../第26级-统计推断/连续映射定理.md)：直接前置依赖。

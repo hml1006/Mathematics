@@ -86,3 +86,7 @@ $$\underbrace{[X,[X,\cdots[X}_{r_1}, \underbrace{[Y,[Y,\cdots[Y}_{s_1}, \cdots \
 **老师（拓展）**：若 $[X,[X,Y]]=[Y,[X,Y]]=0$ 会怎样？
 
 **学生**：级数从第三项起全部截断，得 $Z=X+Y+\frac12[X,Y]$，这正是 Heisenberg 李代数的情形。此时指数乘积精确等于 $\exp(X+Y+\frac12[X,Y])$，不再有高阶修正。
+
+## 相关条目
+
+- [指数映射](指数映射.md)：直接前置依赖。

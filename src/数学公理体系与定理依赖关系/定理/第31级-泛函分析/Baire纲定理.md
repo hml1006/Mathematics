@@ -93,3 +93,4 @@ $$\bigcap_n U_n=X\setminus\bigcup_n\overline{F_n}\subseteq X\setminus\bigcup_n F
 
 - [一致有界性原理](./一致有界性原理.md)：其证明把 Banach 空间写成闭集的可数并，再用本定理取出带内点的集合。
 - [开映射定理](./开映射定理.md)：证明同样以本定理为核心，把"满射"转化为"某个像集含开球"。
+- [闭球套定理](闭球套定理.md)：直接前置依赖。

@@ -109,3 +109,5 @@ $$\Big|\frac{f(z)-f(a)}{1-\overline{f(a)}f(z)}\Big|\le\Big|\frac{z-a}{1-\bar az}
 - [Bloch定理](./Bloch定理.md)：其证明用 Schwarz 引理的反向估计控制单叶子圆盘的半径。
 - [Picard小定理](./Picard小定理.md)：椭圆模函数的存在性论证依赖 Schwarz 引理与正规族。
 - [Montel定理](./Montel定理.md)：局部一致有界 ⇒ 等度连续这一关键步骤以 Schwarz 引理为工具。
+- [最大模原理](../第18级-复分析/最大模原理.md)：直接前置依赖。
+- [Riemann可去奇点定理](Riemann可去奇点定理.md)：直接前置依赖。

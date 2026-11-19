@@ -96,3 +96,4 @@ $$
 - [R=T 定理](./R=T定理.md)：Langlands–Tunnell 为其提供 $p=3$ 的初始模性输入。
 - [谷山-志村定理（模性定理）](./谷山-志村定理（模性定理）.md)：其证明以 Langlands–Tunnell 处理小素数情形。
 - [Fermat 大定理的证明概要](./Fermat大定理的证明概要.md)：Wiles 证明中用到本定理。
+- [GL(2) 的 Langlands 对应](../第141级-朗兰兹纲领/GL（2）的Langlands对应.md)：直接前置依赖。

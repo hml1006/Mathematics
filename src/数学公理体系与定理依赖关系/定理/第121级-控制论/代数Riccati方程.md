@@ -137,3 +137,10 @@ $$
 **老师（拓展）**：积分表示除了证存在性，还告诉我们在什么意义上 $\boldsymbol P$ 是"最优"的？
 
 **学生**：它表明 $\boldsymbol P$ 恰是把闭环轨迹代入二次指标后的值函数系数，即最小代价为 $\boldsymbol x_0^{\top}\boldsymbol P\boldsymbol x_0$；只要 $\boldsymbol Q>\boldsymbol 0$ 或 $(\boldsymbol A,\boldsymbol Q^{1/2})$ 可检测，该积分核非奇异，$\boldsymbol P>\boldsymbol 0$，它同时充当闭环的 Lyapunov 函数，把"最优"与"稳定"绑在同一个 $\boldsymbol P$ 上。
+
+## 相关条目
+
+- [LQR 的最优反馈](LQR的最优反馈.md)：直接前置依赖。
+- [Lyapunov 稳定性定理](Lyapunov稳定性定理.md)：直接前置依赖。
+- [可控性的 Kalman 秩条件](可控性的Kalman秩条件.md)：直接前置依赖。
+- [线性时不变系统的状态响应公式](../第69级-控制理论/线性时不变系统的状态响应公式.md)：直接前置依赖。

@@ -71,3 +71,7 @@ $$
 **老师（拓展）**：六边形正合性怎么验证？它又怎么与指标定理、Bott 周期接上？
 
 **学生**：在每点证 $\mathrm{im}=\ker$：如 $K_0(\mathcal A)\to K_0(\mathcal B)\to K_1(J)$，若 $[p]=\pi_*([e])$ 可提升则相关酉为单位使 $\partial([p])=0$，反之 $\partial([p])=0$ 时可构造 $e\in\mathcal A$ 使 $\pi(e)=p$，故 $\ker\partial=\mathrm{im}\,\pi_*$。取 Toeplitz 序列 $0\to C_0(\mathbb R)\to T\to C(\mathbb T)\to0$，得 $\partial([f])=\mathrm{Index}(T_f)=-\mathrm{wind}(f)$；再由 $K_0(\mathbb C)\cong\mathbb Z$、$K_1(\mathbb C)=0$ 推出 $K_i(\mathcal A)\cong K_{i+2}(\mathcal A)$。
+
+## 相关条目
+
+- [代数 K 理论（$K_0$ 与 $K_1$）](../第55级-K理论/代数K理论.md)：直接前置依赖。

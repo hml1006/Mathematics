@@ -126,3 +126,7 @@ $\square$
 **老师（拓展）**：说出三个经典特例的对应形式。
 
 **学生**：Gauss–Bonnet 给 $\chi(M)=\int_M e(TM)$；Hirzebruch 符号差 $\tau(M)=\frac13\int_M p_1(M)$；Riemann 面上的 $\bar\partial_L$ 给 $\deg L+1-g$。而 de Rham 复形的指标正是 Euler 数。
+
+## 相关条目
+
+- [伪微分算子](../第40级-偏微分方程/伪微分算子.md)：直接前置依赖。

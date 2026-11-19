@@ -117,3 +117,4 @@ $$\int_\Omega\eta^2u^{2\beta}\lvert\nabla u\rvert^2\leq\frac{4}{(2\beta+1)^2}\in
 - [Poincaré不等式](../第40级-偏微分方程/Poincaré不等式.md)：典型使用带 $\varepsilon$ Young 吸收交叉项的不等式。
 - [椭圆正则性定理](../第40级-偏微分方程/椭圆正则性定理.md)：本条目技术组合的最终应用场景。
 - [Jensen不等式](../第24级-概率论基础/Jensen不等式.md)：步骤 2 中凸性证明的依据。
+- [Hölder 不等式](../第17级-实分析/Hölder不等式.md)：直接前置依赖。

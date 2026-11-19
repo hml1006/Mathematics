@@ -153,3 +153,9 @@ Riemann 问题的精确解是构造高分辨率守恒律数值方法（如 Godun
 **老师（拓展）**：交换关系如何"逼出"强收敛？Murat 引理在其中起什么作用？
 
 **学生**：若熵对足够丰富，这些交换关系可迫使 Young 测度 $\nu$ 的支撑退化为 Dirac 测度，于是 $\nu_\varepsilon$ 几乎处处收敛，这就是强收敛的补偿来源。Murat 引理（$u_\varepsilon=v_\varepsilon^1-v_\varepsilon^2$，$v_\varepsilon^1$ 在 $W^{-1,r}$（$r>2$）有界、$v_\varepsilon^2$ 在 $\mathcal M$ 有界、$u_\varepsilon$ 在 $W^{-1,p}$（$p>2$）有界 $\Rightarrow u_\varepsilon$ 在 $H^{-1}_{\mathrm{loc}}$ 紧）常用来验证 div-curl 引理的前提。常见误区是把补偿紧性当成获得逐点收敛的工具：它只给出特定双线性型的收敛。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

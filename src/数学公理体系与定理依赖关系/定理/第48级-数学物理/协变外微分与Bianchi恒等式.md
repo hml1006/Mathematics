@@ -148,3 +148,5 @@ $$
 
 - [Yang-Mills方程](./Yang-Mills方程.md)：以 $d^\nabla F=0$（Bianchi）与 $d^\nabla\ast F=0$（场方程）为基本方程组的规范场理论。
 - [Atiyah-Singer指标定理](./Atiyah-Singer指标定理.md)：特征类理论建立在曲率的 Bianchi 恒等式与 Chern–Weil 同态之上。
+- [Levi-Civita 联络](../第33级-微分几何/Levi-Civita联络.md)：直接前置依赖。
+- [Riemann 曲率张量](../第33级-微分几何/Riemann曲率张量.md)：直接前置依赖。

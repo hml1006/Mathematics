@@ -115,3 +115,9 @@ $$
 **老师（拓展）**：闭环 $(A-BK)$ 为什么必然渐近稳定？这与 Lyapunov 方法如何衔接？
 
 **学生**：取 $V=x^{\mathsf T}Px$ 作 Lyapunov 函数，沿 $\dot x=(A-BK)x$ 求导得 $\dot V=x^{\mathsf T}[(A-BK)^{\mathsf T}P+P(A-BK)]x$，用 ARE 化简为 $\dot V=-x^{\mathsf T}(Q+PBR^{-1}B^{\mathsf T}P)x\le0$。若 $Q\succ0$ 则负定直接渐近稳定；若 $Q\succeq0$ 则用能检测性排除 $\dot V\equiv0$ 于非零轨迹，配合 LaSalle 不变集原理收尾。有限时间情形改用微分 Riccati 方程 $-\dot P=A^{\mathsf T}P+PA-PBR^{-1}B^{\mathsf T}P+Q$，终值 $P(T)=P_f$，最优值 $V(t,x)=x^{\mathsf T}P(t)x$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

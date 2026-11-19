@@ -222,3 +222,9 @@ Chern 特征标可以推广到代数 K 理论，提供从 $K_n(X)$ 到循环上�
 **老师（拓展）**：有理同构怎么证，有什么应用？
 
 **学生**：结论：$\mathrm{ch}:K(X)\otimes\mathbb Q\to H^{\mathrm{even}}(X;\mathbb Q)$ 是同构，用 Atiyah-Hirzebruch 谱序列知核为挠元，再用 Thom 构造证明满射。Chern-Weil 理论给出曲率表示 $\mathrm{ch}(E)=[\mathrm{tr}\exp(\frac{i}{2\pi}\Omega)]$；指标定理、Hirzebruch-Riemann-Roch 与 D-膜电荷都依赖它。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

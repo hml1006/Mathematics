@@ -90,3 +90,8 @@ $$ \forall \mathcal{F} (\emptyset \notin \mathcal{F} \rightarrow \exists f: \mat
 **老师（拓展）**：它的独立性是怎么确立的？
 
 **学生**：Gödel（1938）用可构造宇宙 $L$ 证 $\mathrm{ZF}+\mathrm{AC}$ 相对一致，Cohen（1963）用力迫法证 $\mathrm{ZF}+\neg\mathrm{AC}$ 相对一致，故 AC 独立于 ZF。它与良序定理、Zorn 引理等价。常见误区是把可数选择当成全 AC——$\mathrm{AC}_{\mathrm{countable}}$、$\mathrm{DC}$ 都是更弱却常常够用的形式。
+
+## 相关条目
+
+- [01-ZFC集合论公理索引](index.md)
+- [公理体系总索引](../index.md)

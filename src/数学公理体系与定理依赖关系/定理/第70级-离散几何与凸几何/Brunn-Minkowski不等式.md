@@ -78,3 +78,9 @@ Brunn-Minkowski 不等式是等周不等式、Prékopa-Leindler 不等式以及�
 **老师（拓展）**：Steiner 对称化在这条不等式中起什么作用？
 
 **学生**：它把一般情形化归到球。对称化 $\sigma_u$ 保持体积、改善对称性，且满足相容性 $\sigma_u(A)+\sigma_u(B)\subseteq\sigma_u(A+B)$；迭代一组方向 $(u_k)$ 使对称体逼近与原体积相同的球，沿途 $|{\cdot}|^{1/n}$ 不减。球的情形 $|\lambda A+(1-\lambda)B|^{1/n}=(\omega_n(\lambda r_A+(1-\lambda)r_B)^n)^{1/n}$ 恰好取等，于是对任意凸体成立，一般可测集再用内逼近推广。它是 Aleksandrov–Fenchel 不等式与 Prékopa–Leindler 不等式的基石。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

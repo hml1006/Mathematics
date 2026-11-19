@@ -183,3 +183,7 @@ $$K\omega = \int_0^1 H^*(\omega) dt$$
 **老师（拓展）**：最常见的误区和主要推论是什么？
 
 **学生**：误区是写成 $H^k_{dR}(M)\cong H^k(M;\mathbb Z)$——正确的是实系数 $H^k_{dR}(M)\cong H^k(M;\mathbb R)$，整数系数还要另加挠元。推论有 Poincaré 对偶 $H^k_{dR}(M)\cong H^{n-k}_{dR}(M)^*$、Künneth 公式 $H^*_{dR}(M\times N)\cong H^*_{dR}(M)\otimes H^*_{dR}(N)$；Hodge 理论进一步把每个类唯一表成调和形式。
+
+## 相关条目
+
+- [Poincaré 引理](../第34级-代数拓扑/Poincaré引理.md)：直接前置依赖。

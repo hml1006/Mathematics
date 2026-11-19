@@ -144,3 +144,7 @@ $$\|\bar\partial u\|_\phi^2+\|\bar\partial^*_\phi u\|_\phi^2\ge\sum_{j,k}\left\|
 **老师（拓展）**：这条恒等式在现代复几何里有哪些延伸？
 
 **学生**：它是 Hörmander $L^2$ 存在定理、Kohn 亚椭圆估计的技术核心；把权扭化为 $\phi-\log\eta$ 即得 Ohsawa–Takegoshi $L^2$ 延拓定理，是乘子理想与 Siu 方法的关键。对 $(0,q)$-形式，曲率项含 $q$ 个 Levi 特征值之和，正是一致/弱 $q$-凸性的来源；取值于 Hermite 丛时退化为 Bochner–Kodaira–Nakano 型恒等式。
+
+## 相关条目
+
+- [分部积分法](../第11级-单变量微积分/分部积分法.md)：直接前置依赖。

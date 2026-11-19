@@ -98,3 +98,8 @@ $$L(f)=\sum_{F\subseteq X^f}\int_F\frac{\mathrm{ch}_f(\nu_F)}{\mathrm{euler}(\nu
 **老师（拓展）**：它在模形式与算术几何里有什么推广？
 
 **学生**：把公式用于模曲线 $X_0(N)$ 上的 Hecke 对应 $T_m$，$H^1$ 部分的迹即为 $\mathrm{tr}(T_m\mid S_k(\Gamma_0(N)))$，不动点（椭圆点、CM 点、尖点）与 Eisenstein 部分给出显式修正项，这就是 Eichler–Selberg 迹公式；再把它换成 étale 上同调、$f$ 换成 Frobenius，即得 Grothendieck–Lefschetz 迹公式 $\#X(\mathbb{F}_q)=\sum_i(-1)^i\mathrm{tr}(\mathrm{Frob}\mid H^i_c)$，是 Weil 猜想的证明框架。
+
+## 相关条目
+
+- [奇异同调群](../第34级-代数拓扑/奇异同调群.md)：直接前置依赖。
+- [单纯逼近定理](../第63级-组合代数拓扑与拓扑数据分析/单纯逼近定理.md)：直接前置依赖。

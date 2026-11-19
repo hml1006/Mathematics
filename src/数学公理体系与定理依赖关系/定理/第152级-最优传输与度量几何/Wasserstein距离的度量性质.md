@@ -105,3 +105,7 @@ $$
 **老师（拓展）**：$(\mathcal P_p(X),W_p)$ 还有什么结构？
 
 **学生**：它是完备可分度量空间，$X$ 紧时 $\mathcal P_p(X)$ 也紧（Prokhorov）。$p>1$ 时它还是"形式黎曼流形"：切空间可等同于梯度场，测地线就是位移插值，这给出 Benamou–Brenier 公式；$p=1$ 时结构不同，$W_1$ 由 Kantorovich–Rubinstein 对偶刻画，测地线一般不唯一，因此 $W_2$ 才是研究梯度流的首选。
+
+## 相关条目
+
+- [Kantorovich-Rubinstein 对偶](Kantorovich-Rubinstein对偶.md)：直接前置依赖。

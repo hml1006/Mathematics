@@ -6,8 +6,8 @@
 | --- | --- |
 | [ZFC集合论公理](./01-ZFC集合论公理/index.md) | 含 10 条公理 |
 | [Peano 公理](./02-Peano公理/index.md) | 含 5 条公理 |
-| [实数公理](./03-实数公理/index.md) | 含 4 条公理 |
-| [欧几里得几何公理（Hilbert 公理体系）](./04-欧几里得几何公理/index.md) | 含 21 条公理 |
+| [实数公理](./03-实数公理/index.md) | 含 3 类独立公理，另列 Archimedes 导出性质 |
+| [欧几里得几何公理（Hilbert 公理体系）](./04-欧几里得几何公理/index.md) | 本库 21 个文档条目；合并 III.5/III.6 为 SAS 则 20 条，非最小独立集 |
 | [命题逻辑公理](./05-命题逻辑公理/index.md) | 含 4 条公理 |
 | [一阶逻辑公理](./06-一阶逻辑公理/index.md) | 含 5 条公理 |
 | [概率论公理（Kolmogorov 公理）](./07-概率论公理/index.md) | 含 3 条公理 |
@@ -19,7 +19,7 @@
 | [内积空间公理 (Inner Product Space Axioms)](./13-内积空间公理/index.md) | 含 3 条公理 |
 | [拓扑空间公理 (Topological Space Axioms)](./14-拓扑空间公理/index.md) | 含 3 条公理 |
 | [复数域公理 (Complex Field Axioms)](./15-复数域公理/index.md) | 含 3 条公理 |
-| [度量空间公理 (Metric Space Axioms)](./16-度量空间公理/index.md) | 含 4 条公理 |
+| [度量空间公理 (Metric Space Axioms)](./16-度量空间公理/index.md) | 常用四条款，其中非负性可由其余三条推出 |
 | [非欧几何公理 (Non-Euclidean Geometry Axioms)](./17-非欧几何公理/index.md) | 含 3 条公理 |
 | [模公理 (Module Axioms)](./18-模公理/index.md) | 含 4 条公理 |
 | [范畴论公理 (Category Theory Axioms)](./19-范畴论公理/index.md) | 含 3 条公理 |

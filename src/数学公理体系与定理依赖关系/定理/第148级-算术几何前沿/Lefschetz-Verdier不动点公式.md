@@ -122,3 +122,10 @@ $$
 **老师（拓展）**：Grothendieck–Lefschetz 数点公式怎么成为它的特例？
 
 **学生**：取 $k=\mathbb{F}_q$、$c=\Gamma_{\phi^n}$，则 $c^*=\phi^{n*}$，$\mathrm{Fix}(c)=X(\mathbb{F}_{q^n})$ 且每点孤立；因 Frobenius 在 $\mathbb{F}_{q^n}$-点切空间上微分平凡，局部数为茎迹，求和即得 $\sum_i(-1)^i\mathrm{tr}(\phi^{n*}\mid H^i_c)=\sum_{x\in X(\mathbb{F}_{q^n})}\mathrm{tr}(\mathrm{Frob}_x^n\mid\mathcal F_x)$。 一句话：这条"母版"公式就是"计数即上同调"在算术世界的严格化身。
+
+## 相关条目
+
+- [层与层上同调](../第43级-代数几何/层与层上同调.md)：直接前置依赖。
+- [Poincaré 对偶定理](../第34级-代数拓扑/Poincare对偶定理.md)：直接前置依赖。
+- [Künneth 公式](../第35级-同调代数/Künneth公式.md)：直接前置依赖。
+- [Serre相交公式](../第145级-导出代数几何/Serre相交公式.md)：直接前置依赖。

@@ -121,3 +121,12 @@ $$\tfrac12\Delta|A|^2=|\nabla A|^2-|A|^4+c\,n\,|A|^2 .$$
 **老师（拓展）**：Gauss 方程怎样和 Simons 恒等式接上？
 
 **学生**：对极小超曲面 $H\equiv0$，Gauss 方程的 Ricci 分量给出 $\mathrm{Ric}^M(e_j,e_j)=\sum_k\bar R^N_{jkkj}-\sum_kh_{jk}^2$；在 $\mathbb R^{n+1}$ 中化为 $-\sum_kh_{jk}^2\le0$，于是 $|\mathrm{Ric}^M|\le|A|^2$。把这个"内蕴曲率换成 $A$"的翻译代入 $\frac12\Delta|A|^2$ 的 Bochner 型计算，就得到 $\frac12\Delta|A|^2=|\nabla A|^2-|A|^4+cn|A|^2$。
+
+## 相关条目
+
+- [第一基本形式](../第33级-微分几何/第一基本形式.md)：直接前置依赖。
+- [第二基本形式](../第33级-微分几何/第二基本形式.md)：直接前置依赖。
+- [Riemann 曲率张量](../第33级-微分几何/Riemann曲率张量.md)：直接前置依赖。
+- [Gauss 绝妙定理（Theorema Egregium）](../第33级-微分几何/Gauss绝妙定理.md)：直接前置依赖。
+- [极小曲面理论](极小曲面理论.md)：直接前置依赖。
+- [Simons 不等式](Simons不等式.md)：直接前置依赖。

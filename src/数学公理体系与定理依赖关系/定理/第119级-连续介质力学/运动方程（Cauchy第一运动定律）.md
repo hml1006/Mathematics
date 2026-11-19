@@ -69,3 +69,8 @@ $$
 **老师（拓展）**：它和更熟悉的两类方程什么关系？
 
 **学生**：加速度为零时退化为静力平衡 $\nabla\cdot\boldsymbol\sigma+\rho\boldsymbol b=\boldsymbol 0$；对牛顿流体代入 $\boldsymbol\sigma=-p\boldsymbol I+2\mu\boldsymbol D$ 得 Navier-Stokes；对弹性体代入胡克律得弹性动力学方程。它之所以通用，是因为只依赖守恒律与 Cauchy 应力定理，不依赖具体本构。
+
+## 相关条目
+
+- [牛顿第二定律](../第118级-流体力学/牛顿第二定律.md)：直接前置依赖。
+- [Reynolds输运定理](Reynolds输运定理.md)：直接前置依赖。

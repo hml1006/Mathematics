@@ -145,3 +145,8 @@ $\forall v\,\varphi=\neg\exists v\neg\varphi$，由步骤 4、5 立得。也可�
 **老师（拓展）**：用这个判别法，$\mathbb Q\preccurlyeq\mathbb R$ 该怎样论证？
 
 **学生**：$\mathbb Q$ 是稠密线性序子结构。DLO 具有量词消去，故任意含参数 $\varphi$ 在 $\mathbb R$ 中等价于有限个 $v<a_i$ 或 $a_i<v$ 的布尔组合，其解集是有限个有理端点开区间的布尔组合；若非空，最精细的非退化开分量以某 $a_i\in\mathbb Q$ 或 $\pm\infty$ 为端点，而 $\mathbb Q$ 稠密且无端点，该开区间必含有理数 $b$，即为见证。故判别条件成立。
+
+## 相关条目
+
+- [一阶逻辑的语法与语义](../第30级-数理逻辑/一阶逻辑的语法与语义.md)：直接前置依赖。
+- [Löwenheim-Skolem 定理](Löwenheim-Skolem定理.md)：直接前置依赖。

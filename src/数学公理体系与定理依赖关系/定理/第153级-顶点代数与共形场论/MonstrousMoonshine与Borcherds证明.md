@@ -69,3 +69,9 @@ $$
 **老师（拓展）**：Monster 之外还有别的 Moonshine 吗？
 
 **学生**：有。Conway–Norton 猜想被证明后，人们发现其他散在群也有类似现象，如 Thompson Moonshine、Norton 的 generalized Moonshine，以及后来的 Mathieu Moonshine；它们大多仍以顶点代数或相关结构为实现工具，说明这条思路不是孤例。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

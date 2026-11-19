@@ -181,3 +181,7 @@ KMS 态理论展示了算子代数方法在统计力学中的强大威力，是�
 **老师（拓展）**：它和模理论如何衔接？
 
 **学生**：结论：忠实正规态 $\omega$ 关于模自同构群 $\sigma_t^\omega(x)=\Delta^{it}x\Delta^{-it}$ 恰是 $(1,\sigma^\omega)$-KMS 态，取 $F_{a,b}(z)=\langle\xi_\omega,a\Delta^{iz}b\xi_\omega\rangle$。KMS 态一般不唯一，不同 KMS 态对应不同热力学相，非唯一性即相变。
+
+## 相关条目
+
+- [Tomita-Takesaki 模理论](Tomita-Takesaki模理论.md)：直接前置依赖。

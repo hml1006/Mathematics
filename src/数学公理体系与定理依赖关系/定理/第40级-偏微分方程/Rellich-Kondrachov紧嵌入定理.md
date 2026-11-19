@@ -161,3 +161,7 @@ $$\|u_j\|_{L^{p^*}}=\|\phi\|_{L^{p^*}}>0\qquad\text{对一切 }j .$$
 - [Sobolev嵌入定理](./Sobolev嵌入定理.md)：给出连续嵌入与临界指数 $p^*$，是本定理插值步骤的前提。
 - [Sobolev空间定义](./Sobolev空间定义.md)：弱导数、$W^{k,p}$ 范数与 ACL 性质的来源。
 - [Fréchet-Kolmogorov紧性准则](./Fréchet-Kolmogorov紧性准则.md)：本定理把紧性化归为该准则的三条判据。
+- [Morrey不等式](Morrey不等式.md)：直接前置依赖。
+- [积分不等式](../第11级-单变量微积分/积分不等式.md)：直接前置依赖。
+- [Arzelà-Ascoli 定理](../第42级-高等复分析/Arzelà-Ascoli定理.md)：直接前置依赖。
+- [Minkowski 不等式](../第17级-实分析/Minkowski不等式.md)：直接前置依赖。

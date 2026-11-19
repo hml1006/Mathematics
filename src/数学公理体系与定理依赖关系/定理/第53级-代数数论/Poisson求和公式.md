@@ -153,3 +153,5 @@ $$
 
 - [DedekindZeta函数](./DedekindZeta函数.md)：其函数方程与解析延拓的推导使用 Poisson 求和与 θ 函数变换。
 - [p进数与局部域](./p进数与局部域.md)：局部域的加法自对偶与 Tate 局部函数方程是 Poisson 求和的局部版本。
+- [Fourier变换与逆变换公式](../第51级-调和分析/Fourier变换与逆变换公式.md)：直接前置依赖。
+- [Fubini 定理](../第12级-多变量微积分/Fubini定理.md)：直接前置依赖。

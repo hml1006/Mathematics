@@ -81,3 +81,7 @@ $$\prod_{\chi} L(s, \chi) = \prod_p \prod_{\chi} \frac{1}{1 - \chi(p)p^{-s}}$$
 **老师（拓展）**：$L$ 函数还有哪些深刻用途？
 
 **学生**：主特征 $L(s,\chi_0)$ 在 $s=1$ 有单极点、留数为 $\prod_{p\mid q}(1-p^{-1})$；本原特征满足函数方程，把 $\Lambda(s,\chi)$ 与 $\Lambda(1-s,\bar\chi)$ 联系；类数公式把二次域类数写成 $L(1,\chi)$ 的值，GRH 则断言其非平凡零点都在 $\operatorname{Re}s=1/2$。
+
+## 相关条目
+
+- [Euler 乘积公式](../第75级-解析数论/Euler乘积公式.md)：直接前置依赖。

@@ -146,5 +146,7 @@ $\mathcal S$ 在 $L^2$ 中稠密。对 $f\in L^2$ 取 $f_k\in\mathcal S$，$f_k\
 
 ## 相关条目
 
-- [Fourier变换的L2理论](./Fourier变换的L2理论.md)：以 Plancherel 定理为核心，系统讨论 $L^2$ 上傅里叶变换的构造与性质。
+- [Fourier变换的L2理论](./Fourier变换的L2理论.md)：同一核心定理的近重复版本——本条目侧重 Plancherel 等距性与酉延拓，另一篇系统展开 $L^2$ 理论；两篇保留不同的证明路径与上下文。
 - [奇异积分算子理论](./奇异积分算子理论.md)：借助 Plancherel 定理把奇异积分算子的 $L^2$ 有界性化为乘子估计。
+- [Fourier变换与逆变换公式](Fourier变换与逆变换公式.md)：直接前置依赖。
+- [Fubini 定理](../第12级-多变量微积分/Fubini定理.md)：直接前置依赖。

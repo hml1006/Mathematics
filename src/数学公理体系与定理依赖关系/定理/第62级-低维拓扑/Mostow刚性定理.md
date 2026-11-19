@@ -97,3 +97,4 @@ $$
 - [JSJ分解与环面定理](./JSJ分解与环面定理.md)：几何化的组合骨架，把三维流形化为 atoroidal 的 piece。
 - [Dehn手术定理](./Dehn手术定理.md)：hyperbolic Dehn filling 中体积的收敛性与刚性相关。
 - [曲面映射类群](./曲面映射类群.md)：二维柔性（Teichmüller 形变）与三维刚性形成鲜明对照。
+- [Liouville 定理](../第78级-丢番图逼近/Liouville定理.md)：直接前置依赖。

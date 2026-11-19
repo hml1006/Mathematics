@@ -84,3 +84,7 @@ RCD$(K,N)$（$N<\infty$）蕴含体积 doubling：存在 $C=C(K,N)$ 使 $m(B_{2r
 **老师（拓展）**：$N=\infty$ 与 $N<\infty$ 的情形有什么实质差别？
 
 **学生**：$N=\infty$ 只需 Boltzmann 熵的 $K$-凸性，允许空间在任何尺度上都有无穷维行为，典型例子是 Wiener 空间；$N<\infty$ 则给出 Rényi 熵的带畸变凸性，附带体积 doubling、Bishop–Gromov 体积比较与局部 Poincaré 不等式，正是这些额外结构支撑了 Gromov 紧性定理，因此紧性结论只在 $N<\infty$ 时成立。
+
+## 相关条目
+
+- [Gromov-Hausdorff 收敛](../第59级-几何分析/Gromov-Hausdorff收敛.md)：直接前置依赖。

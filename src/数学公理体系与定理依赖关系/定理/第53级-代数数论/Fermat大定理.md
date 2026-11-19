@@ -218,3 +218,9 @@ Wiles 的证明不仅是 Fermat 大定理的证明，更是整个现代数论的
 **老师（拓展）**：有哪些常见误区与深远影响？
 
 **学生**：误区是以为 Wiles 证明了完整的 Taniyama-Shimura-Weil 猜想——他只证半稳定情形，一般情形由 Breuil-Conrad-Diamond-Taylor 完成。指数可从 $n$ 约化到素因子（$(x^{n/p})^p+\cdots$）。这套"Frey 对象 + 模性"方法被推广到广义 Fermat 方程、Fermat-Catalan 猜想，并成为 Langlands 纲领在 $\operatorname{GL}_2/\mathbb Q$ 上最壮观的验证。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

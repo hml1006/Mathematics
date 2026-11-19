@@ -86,3 +86,7 @@ $\square$
 **老师（拓展）**：正交性凭什么成立？这个方法在数值上真的可靠吗？
 
 **学生**：对 $i<k$，$\langle\mathbf w_k,\mathbf u_i\rangle=\langle\mathbf v_k,\mathbf u_i\rangle-\sum_{j<k}\langle\mathbf v_k,\mathbf u_j\rangle\langle\mathbf u_j,\mathbf u_i\rangle=0$，靠的就是 $\langle\mathbf u_j,\mathbf u_i\rangle=\delta_{ij}$。常见误区是以为它数值稳定——经典 Gram-Schmidt 在向量近乎相关时会严重损失正交性，实践中要用改进版并做再正交化。
+
+## 相关条目
+
+- [投影公式](投影公式.md)：直接前置依赖。

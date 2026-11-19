@@ -120,3 +120,9 @@ $$
 **老师（拓展）**：它和 Fredholm 行列式、可积系统是怎么挂钩的？
 
 **学生**：记 $D(s)=\det(I-K_{\mathrm{Ai}})$ 在 $L^2(s,\infty)$ 上。Airy 核满足 $(\partial_x+\partial_y)K_{\mathrm{Ai}}(x,y)=-\mathrm{Ai}(x)\mathrm{Ai}(y)$，由此 $\log D$ 的各阶导数满足封闭 Hamiltonian 系统，消元即得 $P_{II}$；等价地 $P_{II}$ 是 Lax 对的零曲率条件 $U_\lambda-V_s+[U,V]=0$，即等单值形变。要点是 $\frac{d^2}{ds^2}\log F_2(s)=-q(s)^2$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

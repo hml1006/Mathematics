@@ -205,3 +205,7 @@ Calabi-Yau 定理保证典则丛平凡流形上的 Ricci 平坦度量，使 Hodg
 **老师（拓展）**：Yau 证明的两个支柱是什么？它对后来的 Kähler-Einstein 问题意味着什么？
 
 **学生**：支柱是先验估计与连续性方法：把方程嵌入单参数族 $(\omega+\sqrt{-1}\partial\bar\partial\varphi_t)^n=(1-t+te^F)\omega^n$，解集开（隐函数定理与 $\Delta_{\tilde\omega}$ 椭圆）且闭（$C^0$、$C^2$ 一致先验界），其中 $C^2$ 估计靠 $\Delta_{\tilde\omega}\log\mathrm{tr}_\omega\tilde\omega$ 的 Chern-Lu 型不等式与 $\log(\mathrm{tr}_\omega\tilde\omega)-\lambda\varphi$ 的最大值原理。这套"估计加连续"的范式后来直接催生了 Kähler-Einstein 度量存在性的 Yau-Tian-Donaldson 纲领（$K$-稳定性）与 Ricci 流方法。
+
+## 相关条目
+
+- [复 Monge-Ampère 方程](复Monge-Ampère方程.md)：直接前置依赖。

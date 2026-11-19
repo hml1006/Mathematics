@@ -113,3 +113,9 @@ $r = 1$ 时即主理想定理。
 **老师（拓展）**：$\dim R[x]=\dim R+1$ 的双向不等式怎么证？
 
 **学生**：下界：对 $R$ 中链 $\mathfrak{p}_0\subsetneq\cdots\subsetneq\mathfrak{p}_n$，作链 $\mathfrak{p}_0[x]\subsetneq\cdots\subsetneq\mathfrak{p}_n[x]\subsetneq\mathfrak{p}_n[x]+\langle x\rangle$，长度 $n+1$。上界：把 $R[x]$ 中链收缩到 $R$，注意收缩到同一素理想 $\mathfrak{p}$ 的那些素理想落在 $k(\mathfrak{p})[x]$ 中，而它维数为 $1$，故每处至多添一层，总长不超过 $\dim R+1$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

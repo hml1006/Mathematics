@@ -95,3 +95,8 @@ $$
 **老师（拓展）**：Brenier 定理在更大图景里承担什么角色？
 
 **学生**：它把最优传输从"线性规划"升级为"凸函数的梯度"，于是 $W_2$ 空间的切空间可以等同于梯度场，$W_2$ 测地线就是位移插值 $((1-t)\mathrm{id}+t\nabla u)_\#\mu$，这直接导出 Benamou–Brenier 公式、JKO 格式与 Wasserstein 空间的形式黎曼结构；在偏微分方程里它把最优传输问题化归为 Monge–Ampère 方程 $\det\nabla^2u=\rho/\sigma$，成为研究该方程弱解的标准工具。
+
+## 相关条目
+
+- [Kantorovich 对偶定理](Kantorovich对偶定理.md)：直接前置依赖。
+- [Rademacher 定理](../第17级-实分析/Rademacher定理.md)：直接前置依赖。

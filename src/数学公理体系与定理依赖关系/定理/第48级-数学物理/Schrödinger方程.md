@@ -128,3 +128,5 @@ $$
 - [无界自伴算子的谱定理](./无界自伴算子的谱定理.md)：保证 $\hat H$ 的谱分解与定态完备性，使分离变量法合法。
 - [Hamiltonian力学与辛几何](./Hamiltonian力学与辛几何.md)：经典侧的 $H(q,p)$ 是正则量子化的出发点。
 - [Poisson括号与Jacobi恒等式](./Poisson括号与Jacobi恒等式.md)：提供 $\{\,\cdot\,,\,\cdot\,\}\to\frac{1}{i\hbar}[\,\cdot\,,\,\cdot\,]$ 这一量子化对应。
+- [Lagrangian 力学与作用量原理](Lagrangian力学与作用量原理.md)：直接前置依赖。
+- [Fourier变换与逆变换公式](../第51级-调和分析/Fourier变换与逆变换公式.md)：直接前置依赖。

@@ -7,3 +7,4 @@
 - [后验分布的正则性（Doob 一致性定理）](./Doob一致性定理.md)
 - [MCMC 的收敛性](./MCMC的收敛性.md)
 - [Bayes 因子的边际似然表示](./Bayes因子的边际似然表示.md)
+- [Bernstein–von Mises 定理](./Bernstein-vonMises定理.md)：规则模型中缩尺度后验渐近趋于以有效估计量为中心、由 Fisher 信息决定协方差的正态分布。

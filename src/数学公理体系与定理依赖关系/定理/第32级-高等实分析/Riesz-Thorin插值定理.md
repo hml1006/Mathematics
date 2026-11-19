@@ -156,3 +156,8 @@ $$
 **老师（拓展）**：用它怎么得到 Hausdorff-Young 不等式？
 
 **学生**：Fourier 变换有 $\|\hat f\|_\infty\le\|f\|_1$（$L^1\to L^\infty$）与 Plancherel $\|\hat f\|_2=\|f\|_2$。对这两端做 Riesz-Thorin，即得 $\|\hat f\|_{p'}\le\|f\|_p$，其中 $1\le p\le2$、$1/p+1/p'=1$。
+
+## 相关条目
+
+- [三线定理](三线定理.md)：直接前置依赖。
+- [Hölder 不等式](../第17级-实分析/Hölder不等式.md)：直接前置依赖。

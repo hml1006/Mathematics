@@ -199,3 +199,9 @@ Tomita-Takesaki 模理论展示了 von Neumann 代数中隐藏的深刻对称性
 **老师（拓展）**：它和 KMS 条件如何衔接？
 
 **学生**：结论：$\omega$ 关于 $\sigma_t^\omega$ 恰满足 KMS 条件，取 $F(z)=\langle\xi,x\Delta^{iz}y\xi\rangle$ 在 $0\le\mathrm{Im}\,z\le1$ 上解析。Connes 用它分类 III 型因子（III$_\lambda$），不同态之间靠协循环 $u_{t+s}=u_t\sigma_t^\omega(u_s)$ 联系。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

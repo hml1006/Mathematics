@@ -123,3 +123,9 @@ $(\Leftarrow)$ 设 $\equiv$ 成立。由步骤 2，$da_i\in[0,L]$，故两个和
 **老师（拓展）**：它在 Freiman 证明链中的位置？
 
 **学生**：它是第一环：把 $A$ 搬到 $\mathbb{Z}_p$ 后，才能用 Bogolyubov 引理提取 Bohr 集/子群结构，再把结论逆映射回 $\mathbb{Z}$ 得到广义等差数列。它体现了加性组合"先在友好群求结构、再搬回"的通用范式。
+
+## 相关条目
+
+- [Plünnecke-Ruzsa 引理](Plünnecke-Ruzsa引理.md)：直接前置依赖。
+- [Ruzsa 三角不等式](Ruzsa三角不等式.md)：直接前置依赖。
+- [Bertrand素数定理](../第27级-初等数论/Bertrand素数定理.md)：直接前置依赖。

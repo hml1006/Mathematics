@@ -90,3 +90,4 @@ $$\|x-y\|\ge\frac{d}{\|x_0-y_0\|}>\frac{d}{d/(1-\varepsilon)}=1-\varepsilon.$$
 
 - [Fredholm二择一定理](./Fredholm二择一定理.md)：$T$ 为紧算子时，$\lambda I-T$ 的核为有限维、值域闭等结论依赖本引理。
 - [Riesz表示定理](./Riesz表示定理.md)：同以 Riesz 命名，但刻画的是 Hilbert 空间上连续线性泛函的表示。
+- [20-赋范线性空间公理](../../公理体系/20-赋范线性空间公理/index.md)：直接前置依赖。

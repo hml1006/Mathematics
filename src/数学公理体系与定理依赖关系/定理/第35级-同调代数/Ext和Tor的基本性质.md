@@ -140,3 +140,7 @@ $$
 **老师（拓展）**：怎么用一条性质把"平坦"翻译成同调语言？
 
 **学生**：$B$ 平坦 $\iff$ $\operatorname{Tor}_1^R(-,B)=0$ $\iff$ 所有 $n\ge1$ 的 $\operatorname{Tor}_n(-,B)=0$。充分性看长正合列：$\operatorname{Tor}_1(A'',B)=0$ 使 $A'\otimes B\to A\otimes B\to A''\otimes B\to0$ 正合，即 $\otimes B$ 左正合从而正合，故 $B$ 平坦。这正是"左导出函子度量非正合"的范本。
+
+## 相关条目
+
+- [导出函子 Ext 和 Tor](导出函子Ext和Tor.md)：直接前置依赖。

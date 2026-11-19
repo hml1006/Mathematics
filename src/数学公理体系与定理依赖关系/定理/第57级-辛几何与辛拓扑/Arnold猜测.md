@@ -171,3 +171,8 @@ $$\#\mathrm{Fix}(\varphi_H)\ge\sum_{k=0}^{2n}\dim H_k(M;\mathbb Z_2).$$
 **老师（拓展）**：一般（可能退化）情形怎么处理球气泡？
 
 **学生**：由 Fukaya–Ono、Liu–Tian、Hofer–Salamon 用虚拟模空间技术。扰动 $H$ 为非退化 $H_\varepsilon$，用虚拟基本类替代简单模 2 计数处理球气泡，得到一般情形 $\#\mathrm{Fix}(\varphi_H)\ge\mathrm{SB}(M;\mathbb Z_2)$。它是现代辛拓扑的起点，并推广出量子、Lagrangian、等变与相对 Arnold 猜想。
+
+## 相关条目
+
+- [Floer 同调](Floer同调.md)：直接前置依赖。
+- [Morse 理论](../第52级-微分拓扑/Morse理论.md)：直接前置依赖。

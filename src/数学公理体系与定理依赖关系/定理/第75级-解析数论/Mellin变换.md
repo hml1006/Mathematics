@@ -143,3 +143,4 @@ $$
 - [Ikehara-Wiener Tauber 定理](./Ikehara-WienerTauber定理.md)：其推导依赖 Mellin–Stieltjes 表示与 Perron 公式。
 - [Zeta 函数函数方程（第44级-解析数论）](../第44级-解析数论/Zeta函数函数方程.md)：含同一函数方程的另一种推导，可交叉参考。
 - [Dedekind Zeta 函数](../第53级-代数数论/DedekindZeta函数.md)：其解析延拓与分解同样依赖 Mellin 变换。
+- [留数定理](../第18级-复分析/留数定理.md)：直接前置依赖。

@@ -85,3 +85,7 @@ $$\int_0^r\frac{n(t)}{t}\,dt\le\frac{1}{2\pi}\int_0^{2\pi}\log|f(re^{i\theta})|\
 **老师（拓展）**：举一个漂亮的例子。
 
 **学生**：$\sin(\pi z)$ 的阶为 $1$，零点为一切整数，故 $\sin(\pi z)=\pi z\,e^{P(z)}\prod_{n\ge1}(1-z^2/n^2)$；由它是偶函数以及 $\lim_{z\to0}\sin(\pi z)/z=\pi$，定出 $P\equiv0$，这正是经典的 Euler 乘积。
+
+## 相关条目
+
+- [Weierstrass 因子分解定理](Weierstrass因子分解定理.md)：直接前置依赖。

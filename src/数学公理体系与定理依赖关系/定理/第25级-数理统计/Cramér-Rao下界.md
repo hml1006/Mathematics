@@ -91,3 +91,8 @@ $$\text{Cov}(\hat{\theta}) \geq [n I(\theta)]^{-1}$$
 **老师（拓展）**：等式何时成立？为什么说"只有指数族才有有效估计"？
 
 **学生**：取等当且仅当 $S_n$ 与 $\hat\theta-\theta$ 几乎必然线性相关，即得分函数形如 $a(\theta)(\hat\theta-\theta)$，这正是指数族得分函数的结构，故有效估计的存在性等价于指数族；$N(\mu,\sigma^2)$ 中用 $\bar X$ 估计 $\mu$ 就是典型例子。多参数情形的下界是矩阵不等式 $\operatorname{Cov}(\hat\theta)\geq[nI(\theta)]^{-1}$。
+
+## 相关条目
+
+- [费舍尔信息不等式](费舍尔信息不等式.md)：直接前置依赖。
+- [Cauchy-Schwarz 不等式](../第14级-线性代数/Cauchy-Schwarz不等式.md)：直接前置依赖。

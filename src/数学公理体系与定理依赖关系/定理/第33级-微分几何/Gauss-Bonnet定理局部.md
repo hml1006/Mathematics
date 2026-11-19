@@ -113,3 +113,8 @@ $\square$
 **老师（拓展）**：局部结果如何升到全局？多边形的"外角"被如何处理？
 
 **学生**：各顶点处相邻三角形的角 $\pi-\alpha_i$ 互补配对。对整个曲面三角剖分后把所有局部等式相加，内部边的测地曲率积分两两反向抵消，顶点处角度合计为 $2\pi$，只剩 $\sum_{j,i}\alpha_{ji}-F\pi=2\pi V-\pi F$，再用 $3F=2E$ 与 $V-E+F=\chi(S)$ 得到 $\iint_S K\,dA=2\pi\chi(S)$。
+
+## 相关条目
+
+- [Gauss 绝妙定理（Theorema Egregium）](Gauss绝妙定理.md)：直接前置依赖。
+- [Levi-Civita 联络](Levi-Civita联络.md)：直接前置依赖。

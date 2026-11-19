@@ -137,3 +137,9 @@ BMO 空间的重要推广包括：vmo（vanishing mean oscillation）、CBMO（�
 **老师（拓展）**：既然允许无界，它还能给出多强的"可积性"？
 
 **学生**：John-Nirenberg 不等式给出局部指数可积：$|\{x\in Q:|f-f_Q|>\lambda\}|\le c_1|Q|e^{-c_2\lambda/\|f\|_{\text{BMO}}}$。由此进一步证得 $(H^1)^*\cong\text{BMO}$ 的 Fefferman 对偶，这正是 BMO 与奇异积分算子理论联姻的关键。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

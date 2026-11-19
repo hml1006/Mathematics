@@ -55,3 +55,7 @@ Faltings 定理是算术几何的分水岭：它终结了 Mordell 猜想，并�
 **老师（拓展）**：Faltings 高度与 Tate 猜想/等源分类具体怎样介入？
 
 **学生**：对 Abel 簇定义模空间上的 Faltings 高度 $h_F(A)$，它给固定维数与极化的簇以一致下界，把曲线点的高度压住；再用 Tate 猜想 $\operatorname{End}_K(A)\otimes_\mathbb{Z}\mathbb{Q}_\ell\to\operatorname{End}_{G_K}(T_\ell A)\otimes_{\mathbb{Z}_\ell}\mathbb{Q}_\ell$ 是同构，得固定维数与极化的等源类有限。两者合起来把无穷多有理点逼成有限多个等源类，矛盾。常见误区是以为可直接对 $C$ 下降——但 $C$ 不是群，必须先抬到 $J(C)$。
+
+## 相关条目
+
+- [Mordell-Weil 定理](Mordell-Weil定理.md)：直接前置依赖。

@@ -100,3 +100,9 @@ $$\max_{\alpha \in \text{劣弧}} |S(\alpha)| \ll N (\log N)^{-A}$$
 **老师（拓展）**：主项的形态是什么？
 
 **学生**：$R(N)=\frac12\mathfrak{S}(N)N^2+O\!\left(N^2(\log N)^{-A}\right)$，其中 $\mathfrak{S}(N)=\prod_{p\nmid N}\left(1-\frac{1}{(p-1)^2}\right)\prod_{p\mid N}\left(1+\frac{1}{p-1}\right)$。优弧给出主项，劣弧用 $\max|S(\alpha)|\ll N(\log N)^{-A}$ 压成余项，于是 $R(N)\gg N^2>0$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

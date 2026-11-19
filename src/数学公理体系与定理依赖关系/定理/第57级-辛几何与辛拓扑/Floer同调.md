@@ -178,3 +178,7 @@ $$\partial\widehat{\mathcal M}(x^-,x^+)=\bigsqcup_y\widehat{\mathcal M}(x^-,y)\t
 **学生**：取 $H=\varepsilon f$、$\varepsilon\to0$，$\mathcal A_H$ 逼近 Morse 函数，Floer 方程退化为负梯度流，故
 $$HF_*(M,\omega)\cong MH_{*+n}(M)\cong H_{*+n}(M;\mathbb Z_2),$$
 位移 $n$ 来自 $\mu_{CZ}$ 的规范选取。不变性由 continuation map $\Phi_{H_-H_+}:CF_*(H_-)\to CF_*(H_+)$ 给出：不同 $H,J$ 的 Floer 同调同构，故它只依赖 $(M,\omega)$。
+
+## 相关条目
+
+- [Morse 理论](../第52级-微分拓扑/Morse理论.md)：直接前置依赖。

@@ -127,3 +127,4 @@ $\square$
 - [Fourier变换与逆变换公式](./Fourier变换与逆变换公式.md)：非周期情形的证明依赖逆变换与乘法公式。
 - [Fourier变换的L2理论](./Fourier变换的L2理论.md)：$L^2$ 上 Fourier 变换的完备处理，包含 Parseval 恒等式。
 - [Poisson求和公式](../第53级-代数数论/Poisson求和公式.md)：与 Parseval 型恒等式同源的频率域恒等式。
+- [Bessel 不等式](../第104级-逼近论/Bessel不等式.md)：直接前置依赖。

@@ -127,3 +127,5 @@ $$0=\int_M|D\psi|^2d\mu=\int_M|\nabla\psi|^2d\mu+\frac14\int_MS\,|\psi|^2d\mu.$$
 - [标量曲率的共形变换公式](./标量曲率的共形变换公式.md)：正标量曲率问题与消失定理密切相关。
 - [Hodge分解定理](../第49级-黎曼几何/Hodge分解定理.md)：$p$-形式的 Hodge 理论与 Weitzenböck 公式是同类"一阶算子平方"的比较。
 - [Riemann曲率张量的对称性](../第49级-黎曼几何/Riemann曲率张量的对称性.md)：步骤 3 的 Clifford 收缩依赖曲率张量的对称性与第一 Bianchi 恒等式。
+- [Levi-Civita 联络](../第33级-微分几何/Levi-Civita联络.md)：直接前置依赖。
+- [Riemann 曲率张量](../第33级-微分几何/Riemann曲率张量.md)：直接前置依赖。

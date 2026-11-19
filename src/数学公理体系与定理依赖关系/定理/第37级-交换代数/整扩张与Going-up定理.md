@@ -96,3 +96,9 @@
 **老师（拓展）**：单个素理想的提升（定理一）怎么证？关键工具是什么？
 
 **学生**：局部化 $S=A\setminus\mathfrak{p}$，$B_{\mathfrak{p}}=S^{-1}B$ 是 $A_{\mathfrak{p}}$ 的整扩张。令 $\mathfrak{m}=\mathfrak{p}A_{\mathfrak{p}}$，若 $\mathfrak{m}B_{\mathfrak{p}}=B_{\mathfrak{p}}$，则由整扩张与整性方程可知 $B_{\mathfrak{p}}$ 是有限生成 $A_{\mathfrak{p}}$-模，Nakayama 引理逼出 $B_{\mathfrak{p}}=0$，矛盾。故 $\mathfrak{m}B_{\mathfrak{p}}$ 是真正理想，含于某极大理想，交回 $B$ 即得 $\mathfrak{q}\cap A=\mathfrak{p}$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

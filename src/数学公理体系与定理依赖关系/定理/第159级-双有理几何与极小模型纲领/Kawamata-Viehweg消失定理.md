@@ -94,3 +94,9 @@ $$
 **老师（拓展）**：这条定理与后来 Nadel 的消失定理是什么关系？
 
 **学生**：Nadel 消失是它的推广：对 klt 对 $(X,\Delta)$ 与 nef 且 big 的整除子 $L$，有 $H^i(X,\mathcal J(X,\Delta)\otimes L)=0$，其中 $\mathcal J$ 是乘子理想层。当 $\Delta$ 的系数都小于 $1$ 且支撑 SNC 时乘子理想层就是 $\mathcal O_X$，Nadel 消失立刻退化成 Kawamata-Viehweg。反过来，KV 的证明思路（覆盖 + Kodaira）也是 Nadel 论证的原型，只是后者把覆盖换成了奇点理论语言。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

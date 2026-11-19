@@ -66,4 +66,4 @@ $$\mathrm{Var}(\tilde{\boldsymbol\beta})-\mathrm{Var}(\hat{\boldsymbol\beta})=\s
 
 ## 相关条目
 
-- [Gauss-Markov 定理（第92级-回归分析）](../第92级-回归分析/Gauss-Markov定理.md)：与本条目为同一定理，另收录于第92级-回归分析，可交叉参考。
+- [Gauss-Markov 定理（第92级-回归分析）](../第92级-回归分析/Gauss-Markov定理.md)：同一定理的跨级版本，另收录于第92级-回归分析，可交叉参考。

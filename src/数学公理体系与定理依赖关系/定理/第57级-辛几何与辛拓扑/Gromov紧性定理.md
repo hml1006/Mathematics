@@ -117,3 +117,8 @@ $$\tilde u_k(z)=u_k(p_0(\text{局部坐标})+\epsilon_k z)\quad\text{或}\quad \
 **老师（拓展）**：定义域退化怎么处理？
 
 **学生**：用 Deligne–Mumford 空间 $\overline{\mathcal M}_{g,k}$ 的紧性。亏格固定、带 $k$ 个标记点的 Riemann 面序列在 $\overline{\mathcal M}_{g,k}$ 中有紧化，必要时把"细脖子"收缩为结点得到稳定曲线；再把气泡贴上、由可去奇点补全，就得到定义在稳定曲线上的 $J$-全纯映射，同调类与能量守恒。这是 Gromov–Witten 不变量定义、非挤压定理与 Floer 紧化的基石。
+
+## 相关条目
+
+- [Gromov 单调性引理](Gromov单调性引理.md)：直接前置依赖。
+- [Gromov可去奇点定理](Gromov可去奇点定理.md)：直接前置依赖。

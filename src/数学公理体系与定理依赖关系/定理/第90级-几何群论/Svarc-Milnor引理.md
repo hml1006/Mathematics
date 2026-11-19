@@ -55,3 +55,9 @@ $$
 **老师（拓展）**：两边的不等式长什么样？
 
 **学生**：一边是 $\ell_S(g)\le C\,d(x_0,g\cdot x_0)$，另一边 $d(x_0,g\cdot x_0)\le3R\,\ell_S(g)$，合起来即 $\frac1{3R}d(x_0,g\cdot x_0)\le\ell_S(g)\le C\,d(x_0,g\cdot x_0)$。例如 $\mathbb{Z}^n$ 余紧作用在 $\mathbb{R}^n$ 上，故 $\mathbb{Z}^n\simeq_{\mathrm{QI}}\mathbb{R}^n$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

@@ -106,3 +106,5 @@ $$\mathbb E|S|^p\ge\mathbb P\Big(|S|>\frac{\sigma}{\sqrt2}\Big)\Big(\frac{\sigma
 
 - [Banach空间型与余型](./Banach空间型与余型.md)：型与余型的定义直接以 Khintchine 型估计为范本。
 - [Riesz表示定理](./Riesz表示定理.md)：$L^p$ 范数等价性常与对偶空间的表示配合使用。
+- [Paley-Zygmund 不等式](Paley-Zygmund不等式.md)：直接前置依赖。
+- [Hölder 不等式](../第17级-实分析/Hölder不等式.md)：直接前置依赖。

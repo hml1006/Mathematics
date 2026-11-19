@@ -154,3 +154,4 @@ $$
 
 - [Fermat大定理](./Fermat大定理.md)：Frey 曲线与 Ribet 水平降低定理正是其证明的关键两环。
 - [Artin互反律](./Artin互反律.md)：Galois 表示与 Frobenius 的一般理论是理解 $\bar\rho_{E,\ell}$ 及其局部条件的语言基础。
+- [Carayol的局部-整体定理](Carayol的局部-整体定理.md)：直接前置依赖。

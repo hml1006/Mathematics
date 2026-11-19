@@ -84,3 +84,9 @@ $$
 **老师（拓展）**：由此给出哪些标准推论？
 
 **学生**：共轭点比较——$K_M\ge\kappa$ 时共轭距离不超过常曲率 $\kappa$ 空间者，特别 $K_M\ge1$ 时不超过 $\pi$；以及 Bishop-Gromov 体积比较——$\mathrm{Ric}_M\ge(n-1)\kappa$ 时体积比 $V(p,r)/V_\kappa(r)$ 关于 $r$ 非增。Rauch 是这些全局比较的 Jacobi 场线性化版本。
+
+## 相关条目
+
+- [测地线与 Jacobi 场](测地线与Jacobi场.md)：直接前置依赖。
+- [Jacobi方程](Jacobi方程.md)：直接前置依赖。
+- [Riccati方程的比较原理](Riccati方程的比较原理.md)：直接前置依赖。

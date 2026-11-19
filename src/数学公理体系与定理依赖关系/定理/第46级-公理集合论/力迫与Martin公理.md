@@ -95,3 +95,7 @@ MA最著名的推论之一是：在MA + $\lnot$CH下，$\aleph_1$ 个Lebesgue零
 **老师（拓展）**：MA 的著名推论有哪些？
 
 **学生**：$\mathrm{MA}+\lnot\mathrm{CH}$ 下，$\aleph_1$ 个零测集之并仍是零测集（Lebesgue 测度的 $\aleph_1$-可加性）、Suslin 假设成立（无 Suslin 线）、每个 $\Sigma^1_2$ 集具有 Baire 性质。
+
+## 相关条目
+
+- [01-ZFC集合论公理](../../公理体系/01-ZFC集合论公理/index.md)：直接前置依赖。

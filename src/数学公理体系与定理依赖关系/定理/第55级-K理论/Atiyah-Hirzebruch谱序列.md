@@ -241,3 +241,9 @@ $$E_2^{p,q} = H^{p-q}_{\text{mot}}(X; \mathbb{Z}(-q)) \Rightarrow K_{-p-q}(X)$$
 **老师（拓展）**：有代表性的计算吗？
 
 **学生**：结论：$K^*(\mathbb{CP}^n)=\mathbb Z^{n+1}$（此时 $E_2=E_\infty$），而 $K^0(\mathbb{RP}^n)=\mathbb Z\oplus\mathbb Z_{2^{\lfloor n/2\rfloor}}$（靠 $d_3$ 消灭部分 2-挠）。它可推广到任意广义上同调：$E_2^{p,q}=H^p(X;E^q(pt))\Rightarrow E^{p+q}(X)$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

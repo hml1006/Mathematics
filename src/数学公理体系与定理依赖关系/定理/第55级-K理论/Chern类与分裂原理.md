@@ -140,3 +140,7 @@ $$c(\pi^*(E\oplus F))=\prod_j(1+c_1(L_j))\prod_k(1+c_1(L'_k))=c(\pi^*E)\,c(\pi^*
 **老师（拓展）**：Whitney 和公式怎么得到？
 
 **学生**：结论：分裂情形下 $c(\bigoplus_j L_j)=\prod_j(1+c_1(L_j))$，一般情形由自然性 $\pi^*c(E\oplus F)=\pi^*c(E)\,\pi^*c(F)$ 加 $\pi^*$ 单射得 $c(E\oplus F)=c(E)c(F)$。同一套"分裂 + 单射"逻辑也给出 $c_i(E)=\sigma_i(c_1(L_j))$ 的 Weyl 公式。
+
+## 相关条目
+
+- [Leray-Hirsch 定理](Leray-Hirsch定理.md)：直接前置依赖。

@@ -50,3 +50,8 @@ $$\forall a,b\in\mathbb{F}\;\forall v\in V\quad(a+b)v=av+bv$$
 **学生**：能。对 $a=\sum_i a_i$、向量 $\sum_j v_j$，反复用两条分配律可得 $a(\sum_j v_j)=\sum_j a v_j$ 与 $(\sum_i a_i)v=\sum_i a_i v$，合并即
 $$\left(\sum_i a_i\right)\left(\sum_j v_j\right)=\sum_{i,j}a_i v_j$$
 ——这正是把向量空间运算与域运算"完全对齐"的表达式。它是定义线性组合、证明线性映射基本性质（如 $T(\sum a_iv_i)=\sum a_iT(v_i)$）的代数基础。
+
+## 相关条目
+
+- [08-向量空间公理索引](index.md)
+- [公理体系总索引](../index.md)

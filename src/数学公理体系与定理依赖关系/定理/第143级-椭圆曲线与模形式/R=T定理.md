@@ -119,3 +119,7 @@ $$R\twoheadrightarrow T\ \text{在余切空间上同构}.$$
 **老师（拓展）**：patching 极限做了什么？$p=3$ 与可解像的情形怎么处理？
 
 **学生**：把诸 $(R_Q,T_Q)$ 放入相容逆向系统取极限 $R_\infty=\varprojlim R_Q$、$T_\infty=\varprojlim T_Q$，两者是有限型 $\mathcal{O}[[\Delta]]$-模，$T_\infty$ 自由、两边生成元数相同，故 $R_\infty\cong T_\infty$；再对 $\Delta$ 取余不变（$I$-进完备化）降回 $R\cong T$。$p=3$ 或像落在可解子群时，用 Langlands–Tunnell 保证 $\bar\rho$ 是模的，再由 Wiles 的"3-5 切换"覆盖半稳定椭圆曲线；最终结合 Frey 曲线与 Ribet 水平下降，得 Fermat 大定理。
+
+## 相关条目
+
+- [Langlands-Tunnell定理](Langlands-Tunnell定理.md)：直接前置依赖。

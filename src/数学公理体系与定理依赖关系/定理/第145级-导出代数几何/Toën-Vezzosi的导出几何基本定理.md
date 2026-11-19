@@ -51,3 +51,9 @@ $$\mathbb{L}:\mathrm{dSt}_k^{\mathrm{op}}\to\mathrm{Sp}(\mathrm{QCoh}(\bullet))$
 **老师（拓展）**：它相对 Lurie 的意义在哪？
 
 **学生**：它是导出代数几何的平行实现，用 $\mathbb{E}_\infty$-环 + model 结构刻画导出概形与派生 stack，并强调 cotangent complex 的普适计算。它支撑派生模空间、导出 Hitchin/HD、带 shtuka 的导出概形与几何 Langlands 的派生层面，是现代高级几何的基准框架之一。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

@@ -60,3 +60,8 @@ $$E(K)\cong\mathbb{Z}^{r}\oplus E(K)_{\text{tors}},$$
 **老师（拓展）**：下降引理用高度的哪条性质？秩可计算吗？
 
 **学生**：关键是 $\hat h([m]P)=m^2\hat h(P)$。反复写 $P=m^nP_n+\sum_{k=1}^{n}m^{k-1}Q_{i_k}$，因 $\hat h(P_n)=\hat h(P)/m^{2n}$ 被界住，$P_n$ 只能取有限个值，故全体由有限代表元生成。误区是以为秩 $r$ 可算法求出——一般 $E(K)$ 的秩没有已知算法，其"可计算性"正是 BSD 猜想的内容。
+
+## 相关条目
+
+- [弱 Mordell-Weil 定理](弱Mordell-Weil定理.md)：直接前置依赖。
+- [Néron-Tate 高度](Néron-Tate高度.md)：直接前置依赖。

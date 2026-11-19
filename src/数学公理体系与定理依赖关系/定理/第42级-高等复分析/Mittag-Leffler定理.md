@@ -76,3 +76,7 @@ $$f(z) = \sum_{n=1}^\infty [P_n(z) - Q_n(z)]$$
 **老师（拓展）**：它与 Weierstrass 定理是什么关系？
 
 **学生**：二者是姊妹篇：Weierstrass 用无穷乘积造零点，Mittag-Leffler 用无穷和造极点。推论是任意亚纯函数可写成 $f=g+h$，其中 $g$ 是整函数、$h$ 是全部主部之和。
+
+## 相关条目
+
+- [Runge 逼近定理](Runge逼近定理.md)：直接前置依赖。

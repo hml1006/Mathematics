@@ -125,3 +125,11 @@ $$\ddot J^i+\sum_jR^i_{\ j}(t)J^j=0,\quad R^i_{\ j}(t)=g(R(e_j,\dot\gamma)\dot\g
 **老师（拓展）**：Jacobi 场与共轭点、第二变分有何关系？
 
 **学生**：若非零 Jacobi 场满足 $J(a)=J(b)=0$，则 $\gamma(a),\gamma(b)$ 共轭，此时 $d\exp$ 退化、$\gamma$ 非局部极小。Jacobi 方程又正是指标形式（第二变分）的 Euler-Lagrange 方程，故 Jacobi 场是测地线二阶变分的零化方向，把稳定性纳入统一框架。
+
+## 相关条目
+
+- [测地线与 Jacobi 场](测地线与Jacobi场.md)：直接前置依赖。
+- [测地线方程](../第33级-微分几何/测地线方程.md)：直接前置依赖。
+- [Levi-Civita 联络](../第33级-微分几何/Levi-Civita联络.md)：直接前置依赖。
+- [Riemann 曲率张量](../第33级-微分几何/Riemann曲率张量.md)：直接前置依赖。
+- [第二变分公式](第二变分公式.md)：直接前置依赖。

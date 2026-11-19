@@ -105,3 +105,9 @@ $$
 **老师（拓展）**：那么"离 PID 有多远"这个度量是怎么定义的？
 
 **学生**：用理想类群。非零分式理想在乘法下成群 $\operatorname{Id}(R)$，主分式理想构成子群 $\operatorname{PId}(R)$，商群 $\operatorname{Cl}(R)=\operatorname{Id}(R)/\operatorname{PId}(R)$。于是 $R$ 是 PID 当且仅当 $\operatorname{Cl}(R)=0$。当 $R$ 是数域的整数环时 $\operatorname{Cl}(R)$ 有限（Minkowski 定理的推论），例如 $\mathbb{Z}[\sqrt{-5}]$ 的类群阶为 $2$。
+
+## 相关条目
+
+- 本条使用的基本定义与记号见“分析”。
+- [本级定理索引](./index.md)：查看同级的直接前置与后继条目。
+- [总定理依赖表](../../index.md#定理分级表)：在完整依赖表中定位本条目。

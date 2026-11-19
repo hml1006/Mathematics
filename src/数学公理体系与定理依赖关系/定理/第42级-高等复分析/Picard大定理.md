@@ -67,3 +67,8 @@ $$h(w) = \frac{g(w) - \alpha}{\beta - \alpha}$$
 **老师（拓展）**：给一个最经典的例子。
 
 **学生**：$f(z)=e^{1/z}$。对任意 $c\ne0$，取 $z_n=\frac{1}{\log c+2\pi in}\to0$ 便有 $e^{1/z_n}=c$；而 $c=0$ 恒取不到，正是那唯一的例外值。
+
+## 相关条目
+
+- [Picard 小定理](Picard小定理.md)：直接前置依赖。
+- [Casorati–Weierstrass 定理](Casorati–Weierstrass定理.md)：直接前置依赖。

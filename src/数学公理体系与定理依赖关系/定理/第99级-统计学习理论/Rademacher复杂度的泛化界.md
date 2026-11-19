@@ -85,3 +85,7 @@ $$
 **老师（拓展）**：具体族上这个界能算出多紧的结果？
 
 **学生**：对单位球 RKHS 类，用 Riesz 表示与 Cauchy-Schwarz 可得 $\mathfrak{R}_n\le\Lambda/\sqrt n$，代入后 $R(h)\le\hat{R}_n(h)+O(1/\sqrt n)$，即样本量平方根级收敛。因为它是数据相关、且对 Lipschitz 收缩与核方法都给出简洁界，所以通常比 VC 界更紧也更普适。
+
+## 相关条目
+
+- [McDiarmid 不等式](McDiarmid不等式.md)：直接前置依赖。

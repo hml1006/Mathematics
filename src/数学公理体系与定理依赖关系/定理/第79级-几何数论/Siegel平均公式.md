@@ -113,3 +113,7 @@ $$\int_{\mathcal{L}}\Big(\sum_{v\in\Lambda\setminus\{0\}}f(v)\Big)\,d\mu(\Lambda
 **老师（拓展）**：常数怎么被吸收？为什么会冒出 $\zeta(n)$？
 
 **学生**：对倍数 $k$ 求和时出现 $\sum_{k\ge1}k^{-n}=\zeta(n)$，它与测度规范常数合并，用 Siegel 规范测度把总常数归一为 $1$。它是 Minkowski-Hlawka 定理、随机格极限分布与 Siegel 质量公式的共同基础。误区是忘记测度必须取 Siegel 规范，否则等式两边差一个常数倍。
+
+## 相关条目
+
+- [Fubini 定理](../第12级-多变量微积分/Fubini定理.md)：直接前置依赖。

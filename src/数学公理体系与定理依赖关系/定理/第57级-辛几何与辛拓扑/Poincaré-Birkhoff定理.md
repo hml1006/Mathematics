@@ -123,3 +123,7 @@ $$y=-\frac{\partial h}{\partial x}(x,X),\qquad Y=\frac{\partial h}{\partial X}(x
 **老师（拓展）**：这条定理怎样推广到高维与更一般的尖扭转？
 
 **学生**：Conley–Zehnder 把它推广到高维：$T^{2n}$ 上的扭转映射至少有 $2n+1$（相应计数下更多）个不动点，是 Arnold 猜想的先声。用拓扑方法的 Franks 定理只须扭转条件即给至少两个不动点；生成函数 $+$ 临界点思想则发展成 Aubry–Mather 理论与辛算法（变分积分器）的长期稳定性分析。
+
+## 相关条目
+
+- [Morse 理论](../第52级-微分拓扑/Morse理论.md)：直接前置依赖。

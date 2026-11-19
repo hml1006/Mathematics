@@ -96,3 +96,4 @@ $$z_n=\frac{1}{\operatorname{Log}w+2\pi in}\longrightarrow0,$$
 - [Picard大定理](./Picard大定理.md)：把稠密性加强为"最多遗漏一个点"，其证明常以本定理为起点。
 - [Picard小定理](./Picard小定理.md)：由大定理中"避开奇点"得到整函数的结论。
 - [Montel定理](./Montel定理.md)：正规族理论中的省略值判据与本定理的稠密性思想相通。
+- [Riemann可去奇点定理](Riemann可去奇点定理.md)：直接前置依赖。
