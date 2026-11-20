@@ -21,6 +21,7 @@ smart-punctuation = false
 default-theme = "light"
 preferred-dark-theme = "navy"
 additional-css = ["src/katex/katex.min.css"]
+additional-js = ["src/auto-open-details.js"]
 
 [output.html.fold]
 enable = true
